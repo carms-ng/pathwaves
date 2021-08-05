@@ -141,8 +141,8 @@ const AboutStyles = styled.section`
     }
   }
   @media (min-width: 1024px) {
-    padding-top: 7rem !important;
-    padding-bottom: 5rem !important;
+    padding-top: 10rem !important;
+    padding-bottom: 7rem !important;
     .cards-2b2 {
       grid-template-columns: 1fr 1fr;
       text-align: left;
@@ -229,8 +229,7 @@ const IndexPage = ({ data: { page, collaborators } }) => {
         </SubscribeStyles>
         {/* Section About*/}
         <AboutStyles>
-          <h2>{sectionAbout.header}</h2>
-          <p>{sectionAbout.description}</p>
+          <h6>{sectionAbout.description}</h6>
           <div className="cards-2b2">
             {collabs.map((collab) => {
               return (
@@ -265,7 +264,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    width: 200
+                    width: 160
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )
@@ -281,7 +280,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    width: 150
+                    width: 200
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )
@@ -327,7 +326,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    height: 70
+                    height: 60
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )

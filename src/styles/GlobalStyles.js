@@ -40,9 +40,11 @@ const GlobalStyles = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     line-height: 1.15;
+    max-width: var(--maxWidthText);
   }
   p {
     line-height: 1.6;
+    max-width: var(--maxWidthText);
   }
   a {
     text-decoration: none;
@@ -67,10 +69,15 @@ const GlobalStyles = createGlobalStyle`
   h3 {
     font-size: 1.5rem;
   }
+  h6 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 400;
+  }
   p, small {
     font-size: 1rem;
     white-space: pre-wrap;
-    max-width: var(--maxWidthText);
+
   }
   small {
     font-weight: 500;
@@ -92,12 +99,11 @@ const GlobalStyles = createGlobalStyle`
     h2 {
       font-size: 2.5rem;
     }
-    p {
-      line-height: 2;
-      font-size: 1.25rem;
+    pre, p {
+      font-size: 1.1rem;
     }
     .btn, button, input {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       padding: 12px 0;
     }
   }

@@ -55,4 +55,53 @@ sectionAbout:
   description: Pathwaves is being produced by Envision Management & Production in
     partnership with the Phi Centre and OCAD University, with financial support
     from the Canada Council for the Arts.
+  collaborators:
+    - name: OCAD University
+      description: OCAD U is the largest and most comprehensive art, design and media
+        university in Canada. The Super Ordinary Lab at OCAD University looks at
+        near to market or just-in market technologies to understand their social
+        significance and potentialities. Broad-based trends are tracked for the
+        purposes of meaningful innovation in technologies and ethnographic
+        methods are deployed to understand the originating (and exploratory)
+        cultures of production as well as potential users of these technologies.
+      url: https://www.ocadu.ca/
+      logo:
+        image: /assets/ocad-u.png
+        alt: OCAD U Logo
+    - name: Envision
+      description: We are an artist management and creative production company that
+        works with boundary-breaking, musical and multidisciplinary artists,
+        productions and organizations. We support the creation of records, live
+        shows and tours, as well as more experimental cross-disciplinary works
+        that interface with theatre, film, puppetry and digital technologies. We
+        work with artists on new works as they move from conceptualization,
+        through development, into production on to dissemination, worldwide.
+      url: https://www.envisionmanagement.com/
+      logo:
+        image: /assets/envision.png
+        alt: Envision Logo
+    - description: PHI is a multidisciplinary organization positioned at the
+        intersection of art, film, music, design and technology. Offering a
+        panoramic perspective of radical ideas focused on collective experience,
+        social impact, and audience interactivity, PHI is committed to future
+        generations of art consumption. PHI consists of the PHI Centre, PHI
+        Studio, artist-in-residence programs, and PHI Foundation for
+        Contemporary Art. Through eclectic programming and a strong emphasis on
+        content creation, PHI fosters unexpected encounters between artists and
+        audiences.
+      name: PHI Centre
+      url: https://phi-centre.com/en/
+      logo:
+        image: /assets/phi-logo.png
+        alt: PHI Centre Logo
+    - name: Canada Council for the Arts
+      url: https://canadacouncil.ca/
+      logo:
+        alt: Canada Council for the Arts Logo
+        image: /assets/cca.png
+      description: The Canada Council for the Arts is Canada’s public arts funder,
+        with a mandate to foster and promote the study and enjoyment of, and the
+        production of works in, the arts.
+  contactText: "For more information, contact: Lesya Nakoneczny, Project Manager: "
+  contactEmail: lesya@envisionmanagement.com
 ---

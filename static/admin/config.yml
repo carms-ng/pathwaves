@@ -35,10 +35,11 @@ collections:
     i18n: true
     label_singular: "collaborators"
     summary: "{{name}} - {{url}}"
+    sortable_fields: ['name', 'description']
     fields:
       - {label: Name, name: name, widget: string, i18n: true}
       - {label: Description, name: description, widget: text, i18n: true}
-      - {label: URL, name: url, widget: string, i18n: true}
+      - {label: URL, name: url, widget: string, i18n: duplicate}
       - label: Logo
         name: logo
         widget: object
@@ -119,8 +120,26 @@ collections:
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
           - {label: Description, name: description, widget: text, i18n: true}
+          - label: Collaborators
+            name: collaborators
+            widget: list
+            min: 1
+            i18n: true
+            summary: "{{name}} - {{url}}"
+            fields:
+            - {label: Name, name: name, widget: string, i18n: true}
+            - {label: Description, name: description, widget: text, i18n: true}
+            - {label: URL, name: url, widget: string, i18n: duplicate}
+            - label: Logo
+              name: logo
+              widget: object
+              i18n: true
+              fields:
+                - {label: Image, name: image, widget: image, i18n: duplicate}
+                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+          - {label: Contact Text, name: contactText, widget: text, i18n: true}
+          - {label: Contact Email, name: contactEmail, widget: text, i18n: duplicate}
 
   - name: siteSetting
     label: Site Setting
@@ -144,6 +163,3 @@ collections:
         i18n: true
         fields:
           - {label: Text, name: text, widget: string, i18n: true}
-          - {label: Name, name: Name, widget: string, i18n: duplicate}
-          - {label: Title, name: Title, widget: string, i18n: true}
-          - {label: Email, name: Email, widget: string, i18n: duplicate}
