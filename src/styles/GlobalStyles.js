@@ -39,7 +39,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.15;
     max-width: var(--maxWidthText);
   }
-  p, small {
+  p, small, ul {
     line-height: 1.6;
     max-width: var(--maxWidthText);
   }
@@ -88,6 +88,14 @@ const GlobalStyles = createGlobalStyle`
     padding: 12px 0;
     width: 100%;
   }
+  .btns-group {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: var(--maxWidthText);
+    .btn {
+      margin-bottom: 1rem;
+    }
+  }
   @media (min-width: 640px) {
     html {
       font-size: 16px;
@@ -98,9 +106,15 @@ const GlobalStyles = createGlobalStyle`
     pre, p {
       font-size: 1.1rem;
     }
+
     .btn, button, input {
       font-size: 1.1rem;
       padding: 12px 0;
+    }
+    .btns-group {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 1rem;
     }
   }
 

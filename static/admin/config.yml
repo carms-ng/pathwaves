@@ -47,7 +47,7 @@ collections:
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, i18n: duplicate}
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
               - {label: Image Alt Text, name: alt, widget: string, i18n: true}
           - {label: Pre-header, name: pre, widget: string, i18n: true}
           - {label: Header, name: header, widget: string, i18n: true}
@@ -63,7 +63,7 @@ collections:
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, i18n: duplicate}
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
               - {label: Image Alt Text, name: alt, widget: string, i18n: true}
           - {label: Description, name: description, widget: string, i18n: true}
       - label: Survey Section
@@ -116,10 +116,38 @@ collections:
               widget: object
               i18n: true
               fields:
-                - {label: Image, name: image, widget: image, i18n: duplicate}
+                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
                 - {label: Image Alt Text, name: alt, widget: string, i18n: true}
           - {label: Contact Text, name: contactText, widget: text, i18n: true}
           - {label: Contact Email, name: contactEmail, widget: text, i18n: duplicate}
+  - name: consent
+    label: Consent Page
+    folder: content/consent
+    create: true
+    delete: false
+    i18n: true
+    fields:
+      - {label: Page Title, name: title, widget: string, i18n: true}
+      - label: Policy
+        name: policy
+        widget: markdown
+        buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+        editor_components: []
+        modes: [rich_text]
+        minimal: true
+        i18n: true
+      - label: Consent Options
+        name: consentOptions
+        widget: list
+        min: 2
+        max: 2
+        i18n: true
+        summary: "{{linkText}} - {{linkAddress}}"
+        fields:
+        - {label: Link Text, name: linkText, widget: string}
+        - {label: "Internal Link?", name: isInterenal, widget: boolean, required: false}
+        - {label: Link Address, name: linkAddress, widget: string}
+      - {label: Thank You Note, name: endNote, widget: string, i18n: true}
 
   - name: siteSetting
     label: Site Setting
@@ -135,7 +163,7 @@ collections:
         widget: object
         i18n: true
         fields:
-          - {label: Image, name: image, widget: image, i18n: duplicate}
+          - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
           - {label: Image Alt Text, name: alt, widget: string, i18n: true}
       - label: "Footer (Contact)"
         name: footer
