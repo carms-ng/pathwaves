@@ -10,5 +10,5 @@ description: OCAD U is the largest and most comprehensive art, design and media
 url: https://www.ocadu.ca/
 logo:
   alt: OCAD University Logo
-  image: /assets/ocad-u.jpg
+  image: /assets/ocad-u.png
 ---

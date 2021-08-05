@@ -4,68 +4,101 @@ import Layout from "../components/Layout"
 import styled from "styled-components"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-// TODO: Moved to template
+// TODO: move page to HomePageTemplate.js
+
 const LandingStyles = styled.div`
   section {
     padding: 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
   }
+
+  /* Logo Garden */
+  .horizontal-scroll-wrapper {
+    overflow-x: scroll;
+    white-space: nowrap;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    > a {
+      padding: 20px;
+    }
+    @media (min-width: 1024px) {
+      margin: 80px 0;
+      > a {
+        padding: 40px;
+      }
+    }
+  }
+
+
 `
+const IntroStyles = styled.section`
+  background: var(--linearGradient);
+  > * {
+    margin: 12px 0;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
+
 
 // markup
 const IndexPage = ({ data: { page, collaborators }}) => {
+  // Prepare Content
   const {
-    title,
+    title, // TODO: SEO with helmet
     sectionIntro,
     sectionSecond,
     sectionSubscribe,
     sectionSurvey,
     sectionAbout
   } = page.childMarkdownRemark.frontmatter
-  console.log(page, collaborators)
 
-  const collabs = collaborators.nodes.map((node) => {
-    return node.childMarkdownRemark.frontmatter
-  })
-
-  console.log(collabs)
+  const collabs = collaborators.nodes.map(node => (
+    node.childMarkdownRemark.frontmatter
+  ))
 
   return (
     <Layout>
       <LandingStyles>
         {/* Intro Section */}
-        <section id="intro">
+        <IntroStyles>
           {/* TODO: Replace Logo */}
           <GatsbyImage
             image={sectionIntro.img.image.childImageSharp.gatsbyImageData}
             alt={sectionIntro.img.alt}
-            imgStyle={{ height: `auto` }} />
+            imgStyle={{ height: `auto` }}
+            style={{ maxWidth: `33vw` }}
+          />
           <pre>{sectionIntro.pre}</pre>
           <h1>{sectionIntro.header}</h1>
           <p>{sectionIntro.description}</p>
-          <div id="logo-garden">
-            {collabs.map((collab) => {
-              return (
-                <a href="#">
-                  <GatsbyImage
-                    image={collab.logo.image.childImageSharp.gatsbyImageData}
-                    alt={collab.logo.alt} />
-                </a>
-              )
-            })}
+          <div class="horizontal-scroll-wrapper">
+            {collabs.map((collab) => (
+              <a href={collab.url}>
+                <GatsbyImage
+                  image={collab.logo.image.childImageSharp.gatsbyImageData}
+                  alt={collab.logo.alt}
+                />
+              </a>
+            ))}
           </div>
-        </section>
+        </IntroStyles>
         {/* Second Section */}
         <section id="second">
           <GatsbyImage
             image={sectionSecond.img.image.childImageSharp.gatsbyImageData}
             alt={sectionSecond.img.alt}
-            imgStyle={{ height: `auto` }} />
+            imgStyle={{ maxWidth: `33vw`, height: `auto` }}
+            // style={{ maxWidth: `33vw` }}
+          />
           <p>{sectionSecond.description}</p>
         </section>
         {/* Subscribe section */}
@@ -129,7 +162,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    width: 300
+                    width: 200
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )
@@ -191,7 +224,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    width: 300
+                    width: 150
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )

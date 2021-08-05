@@ -5,7 +5,13 @@ const GlobalStyles = createGlobalStyle`
     --black: #333333;
     --white: #fff;
     --blue: #C1D3EC;
+    --lightblue: #E0E9F5;
+    --xlightblue: #E0E9F5;
     --maxWidth: 1024px;
+    --linearGradient: linear-gradient(217deg, var(--blue), rgba(255,0,0,0) 70.71%),
+                      linear-gradient(127deg, var(--lightblue), rgba(0,255,0,0) 70.71%),
+                      linear-gradient(336deg, var(--xlightblue), rgba(0,0,255,0) 70.71%);
+  }
     /* --bs: 0 12px 24px 0 rgba(0,0,0,0.09); */
     box-sizing: border-box;
     font-size: 18px;
@@ -43,13 +49,6 @@ const GlobalStyles = createGlobalStyle`
     outline: none;
   }
 
-  // Section
-  section {
-    margin: 3rem 0 5rem 0;
-  }
-  .wrapper {
-    margin: 2rem 0;
-  }
   // font sizes
   h1 {
     font-size: 2.25rem;
