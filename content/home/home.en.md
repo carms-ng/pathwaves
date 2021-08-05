@@ -2,7 +2,7 @@
 title: Home
 sectionIntro:
   img:
-    image: /assets/website.png
+    image: /assets/pathwaves-logo.png
     alt: Pavewaves logo
   pre: ANNOUNCING
   header: The Pathwaves Digital Literacy Incubator

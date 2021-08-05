@@ -1,4 +1,4 @@
 ---
 logo:
-  image: /assets/website.png
+  image: /assets/pathwaves-logo.png
 ---

@@ -2,7 +2,7 @@
 title: Acceuil
 sectionIntro:
   img:
-    image: /assets/website.png
+    image: /assets/pathwaves-logo.png
 sectionSecond:
   img:
     image: /assets/squiggle.png
