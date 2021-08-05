@@ -34,10 +34,10 @@ collections:
     create: true
     i18n: true
     label_singular: "collaborators"
-    summary: "{{title}} - {{isVisible}}"
+    summary: "{{name}} - {{url}}"
     fields:
       - {label: Name, name: name, widget: string, i18n: true}
-      - {label: Description, name: description, widget: string, i18n: true}
+      - {label: Description, name: description, widget: text, i18n: true}
       - {label: URL, name: url, widget: string, i18n: true}
       - label: Logo
         name: logo
@@ -70,7 +70,7 @@ collections:
               - {label: Image Alt Text, name: alt, widget: string, i18n: true}
           - {label: Pre-header, name: pre, widget: string, i18n: true}
           - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Description, name: description, widget: string, i18n: true}
+          - {label: Description, name: description, widget: text, i18n: true}
       - label: Second Section
         name: sectionSecond
         widget: object
@@ -92,8 +92,8 @@ collections:
         collapsed: true
         fields:
           - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Description Left, name: descriptionLeft, widget: string, i18n: true}
-          - {label: Description Right, name: descriptionRight, widget: string, i18n: true}
+          - {label: Description Left, name: descriptionLeft, widget: text, i18n: true}
+          - {label: Description Right, name: descriptionRight, widget: text, i18n: true}
           - {label: Pre Link Text, name: preLinkText, widget: string, i18n: true}
           - {label: Link text, name: linkText, widget: string, i18n: true}
           - {label: URL, name: url, widget: string, i18n: true}
@@ -104,7 +104,7 @@ collections:
         collapsed: true
         fields:
           - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Description, name: description, widget: string, i18n: true}
+          - {label: Description, name: description, widget: text, i18n: true}
           - label: Form
             name: form
             widget: object
@@ -120,7 +120,7 @@ collections:
         collapsed: true
         fields:
           - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Description, name: description, widget: string, i18n: true}
+          - {label: Description, name: description, widget: text, i18n: true}
 
   - name: siteSetting
     label: Site Setting
@@ -130,7 +130,7 @@ collections:
     i18n: true
     fields:
       - {label: Site Title, name: title, widget: string, i18n: true}
-      - {label: Site Description, name: description, widget: string, i18n: true}
+      - {label: Site Description, name: description, widget: text, i18n: true}
       - label: Logo
         name: logo
         widget: object
