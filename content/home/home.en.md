@@ -1,12 +1,5 @@
 ---
 title: Home
-intro:
-  img:
-    alt: Pathwaves Logo
-  pre: ANNOUNCING
-  header: The Pathwaves Digital Literacy Incubator
-  description: An initiative aimed at nurturing a diversity of Canadian musicians
-    to lead the shaping of a more equitable music industry.
 sectionIntro:
   img:
     image: /assets/website.png
