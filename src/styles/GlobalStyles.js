@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
     --white: #fff;
     --lightgrey: #C2C3C0;
     --lightgray: var(--lightgrey);
+    --darkblue: #325F9A;
     --blue: #C1D3EC;
     --lightblue: #E0E9F5;
     --xlightblue: #E0E9F5;
@@ -15,8 +16,6 @@ const GlobalStyles = createGlobalStyle`
     --linearGradient: linear-gradient(217deg, var(--blue), rgba(255,0,0,0) 70.71%),
                       linear-gradient(127deg, var(--lightblue), rgba(0,255,0,0) 70.71%),
                       linear-gradient(336deg, var(--xlightblue), rgba(0,0,255,0) 70.71%);
-  }
-    /* --bs: 0 12px 24px 0 rgba(0,0,0,0.09); */
     box-sizing: border-box;
     font-size: 18px;
   }
@@ -25,12 +24,10 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
-
   body {
     font-family: 'Nunito', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0;
     margin: 0;
-    font-size: 1rem;
     color: var(--black);
   }
   h1, h2, h3, h4, h5, h6, pre {
@@ -40,9 +37,11 @@ const GlobalStyles = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     line-height: 1.15;
+    max-width: var(--maxWidthText);
   }
-  p {
+  p, small {
     line-height: 1.6;
+    max-width: var(--maxWidthText);
   }
   a {
     text-decoration: none;
@@ -67,10 +66,14 @@ const GlobalStyles = createGlobalStyle`
   h3 {
     font-size: 1.5rem;
   }
+  h6 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 400;
+  }
   p, small {
     font-size: 1rem;
     white-space: pre-wrap;
-    max-width: var(--maxWidthText);
   }
   small {
     font-weight: 500;
@@ -92,12 +95,11 @@ const GlobalStyles = createGlobalStyle`
     h2 {
       font-size: 2.5rem;
     }
-    p {
-      line-height: 2;
-      font-size: 1.25rem;
+    pre, p {
+      font-size: 1.1rem;
     }
     .btn, button, input {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       padding: 12px 0;
     }
   }
@@ -107,6 +109,6 @@ const GlobalStyles = createGlobalStyle`
       font-size: 18px;
     }
   }
-`
+`;
 
 export default GlobalStyles
