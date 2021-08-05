@@ -142,4 +142,15 @@ collections:
         widget: object
         i18n: true
         fields:
-          - {label: Text, name: text, widget: string, i18n: true}
+          - {label: Copyright To, name: copyright, widget: string, i18n: true}
+          - label: Footer Links
+            name: footerLinks
+            widget: list
+            min: 1
+            max: 2
+            i18n: true
+            summary: "{{linkText}} - {{linkAddress}}"
+            fields:
+            - {label: Link Text, name: linkText, widget: string}
+            - {label: "Internal Link?", name: isInterenal, widget: boolean, required: false}
+            - {label: Link Address, name: linkAddress, widget: string}

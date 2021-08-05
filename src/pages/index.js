@@ -187,7 +187,7 @@ const IndexPage = ({ data: { page } }) => {
           <p>{sectionIntro.description}</p>
           <div className="horizontal-scroll-wrapper">
             {collabs.map((collab) => (
-              <a href={collab.url}>
+              <a key={collab.name} href={collab.url}>
                 <GatsbyImage
                   image={collab.logo.image.childImageSharp.gatsbyImageData}
                   alt={collab.logo.alt}
@@ -237,7 +237,7 @@ const IndexPage = ({ data: { page } }) => {
           <div className="cards-2b2">
             {collabs.map((collab) => {
               return (
-                <div>
+                <div key={collab.name}>
                   <a href={collab.url}>
                     <GatsbyImage
                       image={collab.logo.image.childImageSharp.gatsbyImageData}
@@ -251,7 +251,7 @@ const IndexPage = ({ data: { page } }) => {
           <small>
             {sectionAbout.contactText}
             <br />
-            <a href={sectionAbout.contactEmail}>{sectionAbout.contactEmail}</a>
+            <a href={"mailto:" + sectionAbout.contactEmail}>{sectionAbout.contactEmail}</a>
           </small>
         </AboutStyles>
       </LandingStyles>

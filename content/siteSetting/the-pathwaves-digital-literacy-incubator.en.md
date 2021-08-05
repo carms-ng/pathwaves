@@ -7,8 +7,11 @@ logo:
   image: /assets/pathwaves-logo.png
   alt: Pathwaves Logo
 footer:
-  text: "For more information, contact:"
-  Name: Lesya Nakoneczny
-  Title: Project Manager
-  Email: lesya@envisionmanagement.com
+  copyright: Pathwaves
+  footerLinks:
+    - linkAddress: mailto:lesya@envisionmanagement.com
+      linkText: Contact Us
+    - linkText: Privacy Policy
+      isInterenal: true
+      linkAddress: /privacy
 ---
