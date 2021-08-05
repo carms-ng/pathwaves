@@ -54,9 +54,34 @@ const SecondStyles = styled.section`
   align-content: center;
   justify-items: center;
   grid-gap: 40px;
+`
+const SurveyStyles = styled.section`
+  background: var(--linearGradient);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 12px;
+  p {
+    padding: 6px 0;
+  }
+  > div {
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    grid-gap: 30px;
+    .flex-y-md {
+      display: flex;
+      text-align: left;
+      > p {
+        padding: 20px;
+      }
+    }
+    .btn {
+      margin: 1.5rem 0;
+    }
+  }
 
 `
-
 // markup
 const IndexPage = ({ data: { page, collaborators }}) => {
   // Prepare Content
@@ -87,7 +112,7 @@ const IndexPage = ({ data: { page, collaborators }}) => {
           <pre>{sectionIntro.pre}</pre>
           <h1>{sectionIntro.header}</h1>
           <p>{sectionIntro.description}</p>
-          <div class="horizontal-scroll-wrapper">
+          <div className="horizontal-scroll-wrapper">
             {collabs.map((collab) => (
               <a href={collab.url}>
                 <GatsbyImage
@@ -104,22 +129,21 @@ const IndexPage = ({ data: { page, collaborators }}) => {
             image={sectionSecond.img.image.childImageSharp.gatsbyImageData}
             alt={sectionSecond.img.alt}
             imgStyle={{ maxWidth: `33vw`, height: `auto` }}
-            // style={{ maxWidth: `33vw` }}
           />
           <p>{sectionSecond.description}</p>
         </SecondStyles>
         {/* Subscribe section */}
-        <section id="survey">
+        <SurveyStyles>
           <h2>{sectionSurvey.header}</h2>
-          <div>
+          <div className="flex-y-md">
             <p>{sectionSurvey.descriptionLeft}</p>
             <p>{sectionSurvey.descriptionRight}</p>
           </div>
           <div>
             <small>{sectionSurvey.preLinkText}</small>
-            <a href={sectionSurvey.url}>{sectionSurvey.linkText}</a>
+            <a className="btn" href={sectionSurvey.url}>{sectionSurvey.linkText}</a>
           </div>
-        </section>
+        </SurveyStyles>
         {/* Subscribe Section */}
         <section>
           <h2>{sectionSubscribe.header}</h2>
