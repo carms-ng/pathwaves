@@ -10,8 +10,8 @@ sectionIntro:
     to lead the shaping of a more equitable music industry.
 sectionSecond:
   img:
-    image: /assets/website.png
-    alt: Squiggly
+    image: /assets/squiggle.png
+    alt: Squiggle
   description: "It is in this time of profound change and reflection that we are
     announcing the Pathwaves Digital Literacy Incubator, a groundbreaking
     initiative for Canadian musicians that will help shape the future of the

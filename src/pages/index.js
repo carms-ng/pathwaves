@@ -6,11 +6,13 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 // TODO: Moved to template
 const LandingStyles = styled.div`
-  #intro {
+  section {
     padding: 20px;
     text-align: center;
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
   }
 `
@@ -52,16 +54,61 @@ const IndexPage = ({ data: { page, collaborators }}) => {
                 <a href="#">
                   <GatsbyImage
                     image={collab.logo.image.childImageSharp.gatsbyImageData}
-                    alt={collab.logo.alt}
-                    imgStyle={{ height: `auto` }} />
+                    alt={collab.logo.alt} />
                 </a>
               )
             })}
           </div>
         </section>
         {/* Second Section */}
-        <section id="">
-
+        <section id="second">
+          <GatsbyImage
+            image={sectionSecond.img.image.childImageSharp.gatsbyImageData}
+            alt={sectionSecond.img.alt}
+            imgStyle={{ height: `auto` }} />
+          <p>{sectionSecond.description}</p>
+        </section>
+        {/* Subscribe section */}
+        <section id="survey">
+          <h2>{sectionSurvey.header}</h2>
+          <div>
+            <p>{sectionSurvey.descriptionLeft}</p>
+            <p>{sectionSurvey.descriptionRight}</p>
+          </div>
+          <div>
+            <small>{sectionSurvey.preLinkText}</small>
+            <a href={sectionSurvey.url}>{sectionSurvey.linkText}</a>
+          </div>
+        </section>
+        {/* Subscribe Section */}
+        <section>
+          <h2>{sectionSubscribe.header}</h2>
+          <p>{sectionSubscribe.description}</p>
+          {/* TODO: Wire Netlify Form */}
+          <form>
+            <small>{sectionSubscribe.form.preInputText}</small>
+            <input type="text" placeholder={sectionSubscribe.form.placeholder}/>
+            <button type="submit">{sectionSubscribe.form.buttonText}</button>
+          </form>
+        </section>
+        {/* Section About*/}
+        <section>
+          <h2>{sectionAbout.header}</h2>
+          <p>{sectionAbout.description}</p>
+          <div>
+            {collabs.map((collab) => {
+              return (
+                <div>
+                  <a href="#">
+                    <GatsbyImage
+                      image={collab.logo.image.childImageSharp.gatsbyImageData}
+                      alt={collab.logo.alt} />
+                  </a>
+                  <p>{collab.description}</p>
+                </div>
+              )
+            })}
+          </div>
         </section>
       </LandingStyles>
     </Layout>
@@ -98,7 +145,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    width: 300
+                    width: 150
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )

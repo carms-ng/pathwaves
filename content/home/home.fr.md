@@ -5,5 +5,5 @@ sectionIntro:
     image: /assets/website.png
 sectionSecond:
   img:
-    image: /assets/website.png
+    image: /assets/squiggle.png
 ---
