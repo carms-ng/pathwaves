@@ -1,0 +1,149 @@
+backend:
+  name: git-gateway
+  repo: Carms-dev/pathwaves
+  branch: master
+  commit_messages:
+    create: '[ADD][CMS] {{collection}} “{{slug}}”'
+    update: '[UPD][CMS] {{collection}} “{{slug}}”'
+    delete: '[REM][CMS] {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+
+local_backend: true
+
+media_folder: static/assets
+public_folder: /assets
+
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_files # multiple_folders
+
+  # Required - a list of locales to show in the editor UI
+  locales: [en, fr]
+
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: en
+
+collections:
+  - name: collaborators
+    label: Collaborators
+    folder: content/collaborators
+    create: true
+    i18n: true
+    label_singular: "collaborators"
+    summary: "{{title}} - {{isVisible}}"
+    fields:
+      - {label: Name, name: name, widget: string, i18n: true}
+      - {label: Description, name: description, widget: string, i18n: true}
+      - {label: URL, name: url, widget: string, i18n: true}
+      - label: Logo
+        name: logo
+        widget: object
+        i18n: true
+        fields:
+          - {label: Image, name: image, widget: image, i18n: duplicate}
+          - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
+  - name: home
+    label: Home Page
+    folder: content/home
+    create: false
+    delete: false
+    i18n: true
+    fields:
+      - {label: Page Title, name: title, widget: string, i18n: true}
+      - label: Intro Section
+        name: sectionIntro
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - label: Image
+            name: img
+            widget: object
+            i18n: true
+            fields:
+              - {label: Image, name: image, widget: image, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+          - {label: Pre-header, name: pre, widget: string, i18n: true}
+          - {label: Header, name: header, widget: string, i18n: true}
+          - {label: Description, name: description, widget: string, i18n: true}
+      - label: Second Section
+        name: sectionSecond
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - label: Image
+            name: img
+            widget: object
+            i18n: true
+            fields:
+              - {label: Image, name: image, widget: image, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+          - {label: Description, name: description, widget: string, i18n: true}
+      - label: Survey Section
+        name: sectionSurvey
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - {label: Description Left, name: descriptionLeft, widget: string, i18n: true}
+          - {label: Description Right, name: descriptionRight, widget: string, i18n: true}
+          - {label: Pre Link Text, name: preLinkText, widget: string, i18n: true}
+          - {label: Link text, name: linkText, widget: string, i18n: true}
+          - {label: URL, name: url, widget: string, i18n: true}
+      - label: Subscribe Section
+        name: sectionSubscribe
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - {label: Description, name: description, widget: string, i18n: true}
+          - label: Form
+            name: form
+            widget: object
+            i18n: true
+            fields:
+              - {label: Pre Input Text, name: preInputText, widget: string, i18n: true}
+              - {label: Input Placeholder, name: placeholder, widget: string, i18n: true}
+              - {label: Button Text, name: buttonText, widget: string, i18n: true}
+      - label: About Section
+        name: sectionAbout
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - {label: Description, name: description, widget: string, i18n: true}
+
+  - name: siteSetting
+    label: Site Setting
+    folder: content/siteSetting
+    create: false
+    delete: false
+    i18n: true
+    fields:
+      - {label: Site Title, name: title, widget: string, i18n: true}
+      - {label: Site Description, name: description, widget: string, i18n: true}
+      - label: Logo
+        name: logo
+        widget: object
+        i18n: true
+        fields:
+          - {label: Image, name: image, widget: image, i18n: duplicate}
+          - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+      - label: "Footer (Contact)"
+        name: footer
+        widget: object
+        i18n: true
+        fields:
+          - {label: Text, name: text, widget: string, i18n: true}
+          - {label: Name, name: Name, widget: string, i18n: duplicate}
+          - {label: Title, name: Title, widget: string, i18n: true}
+          - {label: Email, name: Email, widget: string, i18n: duplicate}
