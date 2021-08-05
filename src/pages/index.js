@@ -31,6 +31,7 @@ const IntroStyles = styled.section`
 
   /* Logo Garden */
   .horizontal-scroll-wrapper {
+    max-width: unset;
     overflow-x: scroll;
     white-space: nowrap;
     /* Hide scrollbar for IE, Edge and Firefox */
@@ -70,6 +71,9 @@ const SurveyStyles = styled.section`
   > div {
     width: 100%;
   }
+  .btn {
+    margin-top: 1.5rem;
+  }
   @media (min-width: 1024px) {
     grid-gap: 30px;
     .flex-y-md {
@@ -79,25 +83,24 @@ const SurveyStyles = styled.section`
         padding: 20px;
       }
     }
-    .btn {
-      margin: 1.5rem 0;
-    }
+
   }
 `
 const SubscribeStyles = styled.section`
   display: grid;
   align-content: center;
   justify-items: center;
-  grid-gap: 12px;
+  grid-gap: 1rem;
 
   form {
     width: 100%;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    margin-top: 0.5rem;
   }
   input {
     border-radius: var(--br) 0 0 var(--br);
-    padding: 1rem;
+    padding: 16px;
     border: 1px solid var(--lightgrey);
   }
   button {
@@ -112,8 +115,44 @@ const SubscribeStyles = styled.section`
     }
   }
 `
+const AboutStyles = styled.section`
+  padding-top: 4rem !important;
+  height: unset !important;
+  background: var(--linearGradient);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 1rem;
+
+  .cards-2b2 {
+    padding: 24px 0;
+    display: grid;
+    grid-gap: 1rem;
+    text-align: center;
+    > div {
+      display: grid;
+      grid-template-rows: 120px 1fr;
+      > a {
+        align-self: center;
+      }
+    }
+    p {
+      padding: 12px 0;
+    }
+  }
+  @media (min-width: 1024px) {
+    padding-top: 7rem !important;
+    padding-bottom: 5rem !important;
+    .cards-2b2 {
+      grid-template-columns: 1fr 1fr;
+      text-align: left;
+      grid-gap: 2rem;
+    }
+  }
+`
+
 // markup
-const IndexPage = ({ data: { page, collaborators }}) => {
+const IndexPage = ({ data: { page, collaborators } }) => {
   // Prepare Content
   const {
     title, // TODO: SEO with helmet
@@ -189,10 +228,10 @@ const IndexPage = ({ data: { page, collaborators }}) => {
           </form>
         </SubscribeStyles>
         {/* Section About*/}
-        <section>
+        <AboutStyles>
           <h2>{sectionAbout.header}</h2>
           <p>{sectionAbout.description}</p>
-          <div>
+          <div className="cards-2b2">
             {collabs.map((collab) => {
               return (
                 <div>
@@ -206,7 +245,7 @@ const IndexPage = ({ data: { page, collaborators }}) => {
               )
             })}
           </div>
-        </section>
+        </AboutStyles>
       </LandingStyles>
     </Layout>
   )
@@ -288,7 +327,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    width: 150
+                    height: 70
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )

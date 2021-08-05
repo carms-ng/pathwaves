@@ -70,7 +70,10 @@ const GlobalStyles = createGlobalStyle`
   p, small {
     font-size: 1rem;
     white-space: pre-wrap;
-    max-width: var(---maxWidthText);
+    max-width: var(--maxWidthText);
+  }
+  small {
+    font-weight: 500;
   }
   .btn {
     display: block;
@@ -92,6 +95,10 @@ const GlobalStyles = createGlobalStyle`
     p {
       line-height: 2;
       font-size: 1.25rem;
+    }
+    .btn, button, input {
+      font-size: 1.25rem;
+      padding: 12px 0;
     }
   }
 
