@@ -28,26 +28,6 @@ i18n:
   default_locale: en
 
 collections:
-  - name: collaborators
-    label: Collaborators
-    folder: content/collaborators
-    create: true
-    i18n: true
-    label_singular: "collaborators"
-    summary: "{{name}} - {{url}}"
-    sortable_fields: ['name', 'description']
-    fields:
-      - {label: Name, name: name, widget: string, i18n: true}
-      - {label: Description, name: description, widget: text, i18n: true}
-      - {label: URL, name: url, widget: string, i18n: duplicate}
-      - label: Logo
-        name: logo
-        widget: object
-        i18n: true
-        fields:
-          - {label: Image, name: image, widget: image, i18n: duplicate}
-          - {label: Image Alt Text, name: alt, widget: string, i18n: true}
-
   - name: home
     label: Home Page
     folder: content/home

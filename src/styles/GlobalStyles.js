@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
     --white: #fff;
     --lightgrey: #C2C3C0;
     --lightgray: var(--lightgrey);
+    --darkblue: #325F9A;
     --blue: #C1D3EC;
     --lightblue: #E0E9F5;
     --xlightblue: #E0E9F5;
@@ -42,7 +43,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.15;
     max-width: var(--maxWidthText);
   }
-  p {
+  p, small {
     line-height: 1.6;
     max-width: var(--maxWidthText);
   }

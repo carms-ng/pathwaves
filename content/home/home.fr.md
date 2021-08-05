@@ -8,15 +8,15 @@ sectionSecond:
     image: /assets/squiggle.png
 sectionAbout:
   collaborators:
-    - url: https://www.ocadu.ca/
-      logo:
-        image: /assets/ocad-u.png
-      name: Université OCAD
     - name: Envision
       description: ""
       url: https://www.envisionmanagement.com/
       logo:
         image: /assets/envision.png
+    - url: https://www.ocadu.ca/
+      logo:
+        image: /assets/ocad-u_color.png
+      name: Université OCAD
     - url: https://phi-centre.com/
       name: Centre PHI
       logo:

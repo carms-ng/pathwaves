@@ -14,7 +14,7 @@ const LandingStyles = styled.div`
     > * {
       max-width: var(--maxWidth);
     }
-    > p {
+    > p, h6 {
       max-width: var(--maxWidthText);
     }
   }
@@ -33,6 +33,7 @@ const IntroStyles = styled.section`
   .horizontal-scroll-wrapper {
     max-width: unset;
     overflow-x: scroll;
+    overflow-y: hidden;
     white-space: nowrap;
     /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none;  /* IE and Edge */
@@ -140,11 +141,16 @@ const AboutStyles = styled.section`
       padding: 12px 0;
     }
   }
+  a {
+    color: var(--darkblue);
+  }
   @media (min-width: 1024px) {
-    padding-top: 10rem !important;
-    padding-bottom: 7rem !important;
+    padding-top: 9rem !important;
+    padding-bottom: 5rem !important;
     .cards-2b2 {
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-auto-flow: column;
       text-align: left;
       grid-gap: 2rem;
     }
@@ -152,7 +158,7 @@ const AboutStyles = styled.section`
 `
 
 // markup
-const IndexPage = ({ data: { page, collaborators } }) => {
+const IndexPage = ({ data: { page } }) => {
   // Prepare Content
   const {
     title, // TODO: SEO with helmet
@@ -163,9 +169,7 @@ const IndexPage = ({ data: { page, collaborators } }) => {
     sectionAbout
   } = page.childMarkdownRemark.frontmatter
 
-  const collabs = collaborators.nodes.map(node => (
-    node.childMarkdownRemark.frontmatter
-  ))
+  const collabs = sectionAbout.collaborators
 
   return (
     <Layout>
@@ -234,7 +238,7 @@ const IndexPage = ({ data: { page, collaborators } }) => {
             {collabs.map((collab) => {
               return (
                 <div>
-                  <a href="#">
+                  <a href={collab.url}>
                     <GatsbyImage
                       image={collab.logo.image.childImageSharp.gatsbyImageData}
                       alt={collab.logo.alt} />
@@ -244,6 +248,11 @@ const IndexPage = ({ data: { page, collaborators } }) => {
               )
             })}
           </div>
+          <small>
+            {sectionAbout.contactText}
+            <br />
+            <a href={sectionAbout.contactEmail}>{sectionAbout.contactEmail}</a>
+          </small>
         </AboutStyles>
       </LandingStyles>
     </Layout>
@@ -308,37 +317,31 @@ export const query = graphql`
             }
           }
           sectionAbout {
-            header
             description
-          }
-        }
-      }
-    }
-    collaborators: allFile(filter: {relativeDirectory: {eq: "collaborators"}, base: {regex: "/.en.md$/"}}) {
-      nodes {
-        childMarkdownRemark {
-          frontmatter {
-            description
-            name
-            url
-            logo {
-              alt
-              image {
-                childImageSharp {
-                  gatsbyImageData (
-                    height: 60
-                    placeholder: BLURRED
-                    layout: CONSTRAINED
-                  )
+            collaborators {
+              name
+              url
+              description
+              logo {
+                alt
+                image {
+                  childImageSharp {
+                    gatsbyImageData(
+                      height: 60
+                      placeholder: BLURRED
+                      layout: CONSTRAINED
+                    )
+                  }
                 }
               }
             }
+            contactText
+            contactEmail
           }
         }
       }
     }
   }
-
 `
 // import React, { useEffect } from "react";
 // import { navigate } from "gatsby";
