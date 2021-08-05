@@ -16,8 +16,6 @@ const GlobalStyles = createGlobalStyle`
     --linearGradient: linear-gradient(217deg, var(--blue), rgba(255,0,0,0) 70.71%),
                       linear-gradient(127deg, var(--lightblue), rgba(0,255,0,0) 70.71%),
                       linear-gradient(336deg, var(--xlightblue), rgba(0,0,255,0) 70.71%);
-  }
-    /* --bs: 0 12px 24px 0 rgba(0,0,0,0.09); */
     box-sizing: border-box;
     font-size: 18px;
   }
@@ -26,12 +24,10 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
-
   body {
     font-family: 'Nunito', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0;
     margin: 0;
-    font-size: 1rem;
     color: var(--black);
   }
   h1, h2, h3, h4, h5, h6, pre {
@@ -78,7 +74,6 @@ const GlobalStyles = createGlobalStyle`
   p, small {
     font-size: 1rem;
     white-space: pre-wrap;
-
   }
   small {
     font-weight: 500;
@@ -114,6 +109,6 @@ const GlobalStyles = createGlobalStyle`
       font-size: 18px;
     }
   }
-`
+`;
 
 export default GlobalStyles
