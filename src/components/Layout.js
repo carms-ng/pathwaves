@@ -5,7 +5,7 @@ import Typography from "../styles/Typography"
 import GlobalStyles from "../styles/GlobalStyles"
 import Footer from "./Footer"
 
-const Layout = ({ language, noHeader, children }) => (
+const Layout = ({ children }) => (
   <>
     <Typography />
     <GlobalStyles />

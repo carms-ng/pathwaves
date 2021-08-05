@@ -1,9 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
-  :root {
-
-  }
   html {
     --black: #333333;
     --white: #fff;
@@ -15,6 +12,8 @@ const GlobalStyles = createGlobalStyle`
   }
   *, *:before, *:after {
     box-sizing: inherit;
+    padding: 0;
+    margin: 0;
   }
 
   body {
