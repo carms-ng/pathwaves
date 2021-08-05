@@ -9,8 +9,21 @@ import { GatsbyImage } from "gatsby-plugin-image"
 const LandingStyles = styled.div`
   section {
     padding: 20px;
-    text-align: center;
     height: 100vh;
+    text-align: center;
+    > * {
+      max-width: var(--maxWidth);
+    }
+  }
+`
+const IntroStyles = styled.section`
+  background: var(--linearGradient);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  > * {
+    margin: 12px 0;
   }
 
   /* Logo Garden */
@@ -34,20 +47,15 @@ const LandingStyles = styled.div`
       }
     }
   }
-
-
-`
-const IntroStyles = styled.section`
-  background: var(--linearGradient);
-  > * {
-    margin: 12px 0;
-  }
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 `
 
+const SecondStyles = styled.section`
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 40px;
+
+`
 
 // markup
 const IndexPage = ({ data: { page, collaborators }}) => {
@@ -70,7 +78,6 @@ const IndexPage = ({ data: { page, collaborators }}) => {
       <LandingStyles>
         {/* Intro Section */}
         <IntroStyles>
-          {/* TODO: Replace Logo */}
           <GatsbyImage
             image={sectionIntro.img.image.childImageSharp.gatsbyImageData}
             alt={sectionIntro.img.alt}
@@ -92,7 +99,7 @@ const IndexPage = ({ data: { page, collaborators }}) => {
           </div>
         </IntroStyles>
         {/* Second Section */}
-        <section id="second">
+        <SecondStyles>
           <GatsbyImage
             image={sectionSecond.img.image.childImageSharp.gatsbyImageData}
             alt={sectionSecond.img.alt}
@@ -100,7 +107,7 @@ const IndexPage = ({ data: { page, collaborators }}) => {
             // style={{ maxWidth: `33vw` }}
           />
           <p>{sectionSecond.description}</p>
-        </section>
+        </SecondStyles>
         {/* Subscribe section */}
         <section id="survey">
           <h2>{sectionSurvey.header}</h2>

@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
     --lightblue: #E0E9F5;
     --xlightblue: #E0E9F5;
     --maxWidth: 1024px;
+    --maxWidthText: 784px;
     --linearGradient: linear-gradient(217deg, var(--blue), rgba(255,0,0,0) 70.71%),
                       linear-gradient(127deg, var(--lightblue), rgba(0,255,0,0) 70.71%),
                       linear-gradient(336deg, var(--xlightblue), rgba(0,0,255,0) 70.71%);
@@ -62,6 +63,7 @@ const GlobalStyles = createGlobalStyle`
   p {
     font-size: 1rem;
     white-space: pre-wrap;
+    max-width: var(---maxWidthText);
   }
   .btn {
     text-align: center;
@@ -72,6 +74,10 @@ const GlobalStyles = createGlobalStyle`
   @media (min-width: 640px) {
     html {
       font-size: 16px;
+    }
+    p {
+      line-height: 2;
+      font-size: 1.25rem;
     }
   }
 
