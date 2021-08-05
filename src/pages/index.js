@@ -1,5 +1,17 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import Layout from "../components/Layout"
+import styled from "styled-components"
+
+const LandingStyles = styled.div`
+  #intro {
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+  }
+`
 
 // markup
 const IndexPage = ({ data: { page: { childMarkdownRemark: { frontmatter } } } }) => {
@@ -19,9 +31,16 @@ const IndexPage = ({ data: { page: { childMarkdownRemark: { frontmatter } } } })
     sectionSurvey,
     sectionAbout)
   return (
-    <h1>
-      home
-    </h1>
+    <Layout>
+      <LandingStyles>
+        <section id="intro">
+          {/* Logo */}
+          <pre>{sectionIntro.pre}</pre>
+          <h1>{sectionIntro.header}</h1>
+          <p>{sectionIntro.description}</p>
+        </section>
+      </LandingStyles>
+    </Layout>
   )
 }
 
