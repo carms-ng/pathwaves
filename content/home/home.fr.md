@@ -6,6 +6,8 @@ sectionIntro:
 sectionSecond:
   img:
     image: /assets/squiggle.png
+sectionSurvey:
+  url: /consent
 sectionAbout:
   collaborators:
     - name: Envision
