@@ -4,6 +4,8 @@ const GlobalStyles = createGlobalStyle`
   html {
     --black: #333333;
     --white: #fff;
+    --lightgrey: #C2C3C0;
+    --lightgray: var(--lightgrey);
     --blue: #C1D3EC;
     --lightblue: #E0E9F5;
     --xlightblue: #E0E9F5;
@@ -51,8 +53,8 @@ const GlobalStyles = createGlobalStyle`
   button {
     font-family: 'Nunito', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-  button:focus, button:hover {
-    outline: none;
+  *:focus {
+      outline: none;
   }
 
   // font sizes
@@ -83,6 +85,9 @@ const GlobalStyles = createGlobalStyle`
   @media (min-width: 640px) {
     html {
       font-size: 16px;
+    }
+    h2 {
+      font-size: 2.5rem;
     }
     p {
       line-height: 2;

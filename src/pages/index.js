@@ -14,6 +14,9 @@ const LandingStyles = styled.div`
     > * {
       max-width: var(--maxWidth);
     }
+    > p {
+      max-width: var(--maxWidthText);
+    }
   }
 `
 const IntroStyles = styled.section`
@@ -80,7 +83,34 @@ const SurveyStyles = styled.section`
       margin: 1.5rem 0;
     }
   }
+`
+const SubscribeStyles = styled.section`
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 12px;
 
+  form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  input {
+    border-radius: var(--br) 0 0 var(--br);
+    padding: 1rem;
+    border: 1px solid var(--lightgrey);
+  }
+  button {
+    border-radius: 0 var(--br) var(--br) 0;
+    background: var(--black);
+    color: var(--white);
+  }
+  @media (min-width: 1024px) {
+    grid-gap: 1.5rem;
+    p {
+      padding: 2rem 0;
+    }
+  }
 `
 // markup
 const IndexPage = ({ data: { page, collaborators }}) => {
@@ -145,16 +175,19 @@ const IndexPage = ({ data: { page, collaborators }}) => {
           </div>
         </SurveyStyles>
         {/* Subscribe Section */}
-        <section>
+        <SubscribeStyles>
           <h2>{sectionSubscribe.header}</h2>
           <p>{sectionSubscribe.description}</p>
+          <small>{sectionSubscribe.form.preInputText}</small>
           {/* TODO: Wire Netlify Form */}
-          <form>
-            <small>{sectionSubscribe.form.preInputText}</small>
-            <input type="text" placeholder={sectionSubscribe.form.placeholder}/>
+          <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="email" name="email" id="email" placeholder={sectionSubscribe.form.placeholder} />
             <button type="submit">{sectionSubscribe.form.buttonText}</button>
+            {/* <input type="reset" value="Clear" /> */}
           </form>
-        </section>
+        </SubscribeStyles>
         {/* Section About*/}
         <section>
           <h2>{sectionAbout.header}</h2>
