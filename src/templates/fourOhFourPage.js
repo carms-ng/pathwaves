@@ -1,21 +1,27 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
+import LocalizedLink from "../components/LocalizedLink"
 
 // markup
 export default function NotFoundPageTemplate({ pageContext, data: { page } }) {
   const { title, header, img, linkText } = page.childMarkdownRemark.frontmatter
 
   return (
-    <Layout noFooter={true} lang={pageContext.lang}>
+    <Layout noFooter={true} lang={pageContext.lang} slug={pageContext.slug} >
       <FourOhFourStyles>
         <GatsbyImage
           image={img.image.childImageSharp.gatsbyImageData}
           alt={img.alt} />
         <h1>{header}</h1>
-        <Link className="btn" to="/">{linkText}</Link>
+        <LocalizedLink
+          className="btn"
+          lang={pageContext.lang}
+          to="/"
+          text={linkText}
+        />
       </FourOhFourStyles>
     </Layout>
   )

@@ -1,38 +1,61 @@
-import { graphql, Link, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
+import LocalizedLink from './LocalizedLink'
 
-export default function Footer() {
-  const { file } = useStaticQuery(graphql`
-    {
-      file(relativeDirectory: {eq: "siteSetting"}) {
-        childMarkdownRemark {
-          frontmatter {
-            footer {
-              copyright
-              footerLinks {
-                isInterenal
-                linkAddress
-                linkText
+export default function Footer({ lang }) {
+  const { allFile } = useStaticQuery(graphql`
+    query {
+      allFile(filter: {relativeDirectory: {eq: "siteSetting"}}) {
+        nodes {
+          childMarkdownRemark {
+            frontmatter {
+              templateKey
+              footer {
+                copyright
+                footerLinks {
+                  isInterenal
+                  linkAddress
+                  linkText
+                }
               }
             }
           }
+          base
         }
       }
     }
+
   `)
 
-  const data = file.childMarkdownRemark.frontmatter.footer
+  const data = allFile.nodes.map(node => {
+    const locale = node.base.split('.')[1]
+    const frontmatter = node.childMarkdownRemark.frontmatter.footer
+    return ({
+      locale,
+      frontmatter,
+    })
+  }).find(elem => lang === elem.locale).frontmatter
+
+  const copyrightText = `©️ ${new Date().getFullYear()} ${data.copyright}`
 
   return (
     <FooterStyles>
-      <p>&copy; {new Date().getFullYear()} {data.copyright}</p>
+      <LocalizedLink
+        id="copyright"
+        lang={lang}
+        to='/'
+        text={copyrightText}
+      />
       {data.footerLinks.map(link => {
         if (link.isInterenal) {
           return (
-            <Link key={link.linkAddress} to={link.linkAddress}>
-              {link.linkText}
-            </Link>
+            <LocalizedLink
+              key={link.linkAddress}
+              lang={lang}
+              to={link.linkAddress}
+              text={link.linkText}
+            />
           )
         } else {
           return (
@@ -62,7 +85,7 @@ const FooterStyles = styled.footer`
   @media (min-width: 640px) {
     grid-template-columns: 200px 1fr 200px;
     grid-auto-flow: dense;
-    p {
+    #copyright {
       grid-column: 2 / 3;
     }
   }

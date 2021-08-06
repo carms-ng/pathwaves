@@ -29,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: slug === "home" ? `/${lang}` : `/${lang}/${slug}`,
       component: path.resolve(`./src/templates/${templateFile}`),
-      context: { lang: lang, regx: `/.${lang}.md$/`}
+      context: { slug: slug, lang: lang, regx: `/.${lang}.md$/`}
     })
   })
 }
