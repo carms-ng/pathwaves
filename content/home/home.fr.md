@@ -4,6 +4,7 @@ title: Acceuil
 sectionIntro:
   img:
     image: /assets/pathwaves-logo.png
+    alt: logo
   pre: DÉVOILEMENT DE
   header: L’Incubateur De Littératie Numérique Pathwaves
   description: Initiative visant à favoriser l'émergence d'une diversité de
@@ -12,6 +13,7 @@ sectionIntro:
 sectionSecond:
   img:
     image: /assets/squiggle.png
+    alt: squiggle
   description: "'est en cette période de profonds changements et de réflexion que
     nous annonçons le lancement de l'incubateur de littératie numérique
     Pathwaves, une initiative unique destinée aux musiciens canadiens et qui
@@ -72,9 +74,11 @@ sectionAbout:
       url: https://www.envisionmanagement.com/
       logo:
         image: /assets/envision.png
+        alt: logo
     - url: https://www.ocadu.ca/
       logo:
         image: /assets/ocad-u_color.png
+        alt: logo
       name: Université OCAD
       description: Le Super Ordinary Lab de l'Université OCAD étudie les technologies
         proches du marché ou tout juste commercialisées afin de comprendre leur
@@ -86,6 +90,7 @@ sectionAbout:
       name: Centre PHI
       logo:
         image: /assets/phi-logo.png
+        alt: logo
       description: >-
         Fondé et dirigé par Phoebe Greenberg à Montréal, PHI est un pôle
         artistique multidisciplinaire situé au croisement de l’art, du film, de
@@ -98,6 +103,7 @@ sectionAbout:
     - name: Conseil des arts du Canada
       logo:
         image: /assets/cca.png
+        alt: logo
       url: https://canadacouncil.ca/
       description: Organisme public de soutien aux arts, le Conseil des arts du Canada
         a pour mandat de favoriser et de promouvoir l’étude et la diffusion des

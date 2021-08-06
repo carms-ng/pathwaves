@@ -5,5 +5,5 @@ header: "Désolé, cette page ne semble pas exister. "
 linkText: Retourne a Acceuil
 img:
   image: /assets/squiggle.png
-  alt: Squiggly
+  alt: Squiggle
 ---

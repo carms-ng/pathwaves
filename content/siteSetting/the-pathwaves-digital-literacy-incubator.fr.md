@@ -5,6 +5,7 @@ description: L'incubateur Pathwaves est  produit par Envision Management &
   soutien financier du Conseil des Arts du Canada.
 logo:
   image: /assets/pathwaves-logo.png
+  alt: logo
 footer:
   copyright: Pathwaves
   footerLinks:
