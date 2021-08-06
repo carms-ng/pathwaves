@@ -13,7 +13,7 @@ footer:
       linkText: Contact Us
     - linkText: Survey
       isInterenal: true
-      linkAddress: /consent
+      linkAddress: /survey
 fourOhFour:
   header: "Sorry, this page does not seem to exist. "
   linkText: GO BACK TO HOME PAGE
