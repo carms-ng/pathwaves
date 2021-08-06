@@ -1,64 +1,30 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
-import Layout from "../components/Layout"
-import { GatsbyImage } from "gatsby-plugin-image"
-import styled from "styled-components"
+import { useEffect } from "react";
+import { navigate } from "gatsby";
 
-// markup
-export default function NotFoundPage({ data: { page } }) {
-  const { title, header, img, linkText } = page.childMarkdownRemark.frontmatter
-
-  return (
-    <Layout noFooter={true}>
-      <FourOhFourStyles>
-        <GatsbyImage
-          image={img.image.childImageSharp.gatsbyImageData}
-          alt={img.alt} />
-        <h1>{header}</h1>
-        <Link className="btn" to="/">{linkText}</Link>
-      </FourOhFourStyles>
-    </Layout>
-  )
-}
-
-const FourOhFourStyles = styled.div`
-  background: var(--linearGradient);
-  padding: 20px;
-  height: 100vh;
-  text-align: center;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  grid-gap: 40px;
-  .btn {
-    width: unset;
-    padding-left: 2rem;
-    padding-right: 2rem;
+const getRedirectLanguage = () => {
+  if (typeof navigator === `undefined`) {
+    return "en";
   }
-`
 
-export const query = graphql`
-  {
-    page: file(relativeDirectory: {eq: "fourOhFour"}, base: {regex: "/.en.md$/"}) {
-      childMarkdownRemark {
-        frontmatter {
-          title
-          header
-          linkText
-          img {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData (
-                  width: 200
-                  placeholder: BLURRED
-                  layout: CONSTRAINED
-                )
-              }
-            }
-          }
-        }
-      }
-    }
+  const lang = navigator && navigator.language && navigator.language.split("-")[0];
+  if (!lang) return "en";
+
+  switch (lang) {
+    case "fr":
+      return "fr";
+    default:
+      return "en";
   }
-`
+};
+
+const NotFoundPage = () => {
+  useEffect(() => {
+    const urlLang = getRedirectLanguage();
+
+    navigate(`/${urlLang}/404-page-not-found`);
+  }, []);
+
+  return null;
+};
+
+export default NotFoundPage;
