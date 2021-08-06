@@ -13,9 +13,9 @@ const GlobalStyles = createGlobalStyle`
     --maxWidth: 1024px;
     --maxWidthText: 784px;
     --br: 16px;
-    --linearGradient: linear-gradient(217deg, rgb(161, 189, 226), rgb(161, 189, 226, 0) 70.71%),
-                      linear-gradient(336deg, var(--xlightblue), rgb(239, 244, 250, 0) 70.71%),
-                      linear-gradient(127deg, var(--lightblue), rgb(224, 233, 245, 0) 70.71%);
+    --linearGradient: linear-gradient(127deg, var(--blue), rgb(224, 233, 245, 0) 50%),
+                      linear-gradient(336deg, rgb(239, 244, 250, 0), var(--xlightblue) 50%),
+                      linear-gradient(217deg, rgb(161, 189, 226, 0), var(--lightblue) 50%);
     box-sizing: border-box;
     font-size: 16px;
   }

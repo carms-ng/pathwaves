@@ -1,4 +1,5 @@
 ---
+templateKey: homePage.js
 title: Home
 sectionIntro:
   img:
@@ -34,7 +35,7 @@ sectionSurvey:
     contribute. "
   preLinkText: The short survey will be open from August 9th to September 24th.
   linkText: ACCESS SURVEY
-  url: /consent
+  url: /survey
 sectionSubscribe:
   header: The Pathwaves Program
   description: In September, applications will open for the Pathwaves Digital

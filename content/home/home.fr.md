@@ -1,4 +1,5 @@
 ---
+templateKey: homePage.js
 title: Acceuil
 sectionIntro:
   img:
@@ -7,7 +8,7 @@ sectionSecond:
   img:
     image: /assets/squiggle.png
 sectionSurvey:
-  url: /consent
+  url: /survey
 sectionAbout:
   collaborators:
     - name: Envision

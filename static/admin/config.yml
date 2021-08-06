@@ -35,6 +35,7 @@ collections:
     delete: false
     i18n: true
     fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "homePage.js", i18n: duplicate}
       - {label: Page Title, name: title, widget: string, i18n: true}
       - label: Intro Section
         name: sectionIntro
@@ -123,10 +124,11 @@ collections:
   - name: survey
     label: Survey Page
     folder: content/survey
-    create: true
+    create: false
     delete: false
     i18n: true
     fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "surveyPage.js", i18n: duplicate}
       - {label: Page Title, name: title, widget: string, i18n: true}
       - label: policy
         name: policy
@@ -148,6 +150,24 @@ collections:
         - {label: "Internal Link?", name: isInterenal, widget: boolean, required: false}
         - {label: Link Address, name: linkAddress, widget: string}
       - {label: Thank You Note, name: endNote, widget: string, i18n: true}
+  - name: fourOhFour
+    label: 404 Page
+    folder: content/fourOhFour
+    create: false
+    delete: false
+    i18n: true
+    fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "fourOhFourPage.js", i18n: duplicate}
+      - {label: Page Title, name: title, widget: string, i18n: true}
+      - {label: Header, name: header, widget: string, i18n: true}
+      - {label: Link Text, name: linkText, widget: string, i18n: true}
+      - label: Image
+        name: img
+        widget: object
+        i18n: true
+        fields:
+          - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+          - {label: Image Alt Text, name: alt, widget: string, i18n: true}
 
   - name: siteSetting
     label: Site Setting
@@ -182,17 +202,3 @@ collections:
             - {label: Link Text, name: linkText, widget: string}
             - {label: "Internal Link?", name: isInterenal, widget: boolean, required: false}
             - {label: Link Address, name: linkAddress, widget: string}
-      - label: "404 (Page not found)"
-        name: fourOhFour
-        widget: object
-        i18n: true
-        fields:
-        - {label: Header, name: header, widget: string, i18n: true}
-        - {label: Link Text, name: linkText, widget: string, i18n: true}
-        - label: Image
-          name: img
-          widget: object
-          i18n: true
-          fields:
-            - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-            - {label: Image Alt Text, name: alt, widget: string, i18n: true}

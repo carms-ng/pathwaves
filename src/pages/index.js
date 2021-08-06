@@ -220,9 +220,10 @@ const IntroStyles = styled.section`
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 640px) {
     justify-content: center;
-
+  }
+  @media (min-width: 1024px) {
     #logo-garden {
       margin-top: 4rem;
       grid-template-columns: repeat(4, 1fr);

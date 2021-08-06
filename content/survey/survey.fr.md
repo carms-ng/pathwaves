@@ -1,7 +1,8 @@
 ---
+templateKey: surveyPage.js
 title: Surry Consent en Francais
 policy: >-
-  Principal Investigator: 
+  Principal Investigator:
 
   Suzanne Stein
 
@@ -20,7 +21,7 @@ policy: >-
   As a participant, you will be asked to answer questions about changes that are affecting the music landscape in Canada, including opportunities and barriers to participation with digital technologies. It will inform the content and curriculum of the Pathwaves incubator, a partnership between Envision Management, The Phi Centre, and OCAD University. This research is being conducted by OCAD University, under the supervision of Suzanne Stein, Director, Super Ordinary Lab at OCAD U.
 
 
-  Overall Goals of the Pathwaves incubator: 
+  Overall Goals of the Pathwaves incubator:
 
 
   * To explore the following themes from the perspective of digital innovation or disruption, specifically recorded music, live music performance and creative process.
@@ -50,33 +51,33 @@ policy: >-
   ### POTENTIAL RISKS
 
 
-  There also may be risks associated with participation, which are social in nature. Social risks include feeling or possibly experiencing a loss in status due to the disclosures on issues facing inclusion or exclusion in a thriving music industry in Canada, as well as identifying potential discomforts with technologies. These concerns are addressed in the design of the study, which is anonymous and administered through OCAD University’s secure server. Only researchers named will have access to the data produced. 
+  There also may be risks associated with participation, which are social in nature. Social risks include feeling or possibly experiencing a loss in status due to the disclosures on issues facing inclusion or exclusion in a thriving music industry in Canada, as well as identifying potential discomforts with technologies. These concerns are addressed in the design of the study, which is anonymous and administered through OCAD University’s secure server. Only researchers named will have access to the data produced.
 
 
   ### CONFIDENTIALITY
 
 
-  This survey is anonymous. We will not be collecting any personal identifiers. 
+  This survey is anonymous. We will not be collecting any personal identifiers.
 
   Data collected during this study will be stored on OCAD University secure servers.
 
 
-  Data will be kept for one year after the completion of the study: March 2023, after which time all files will be deleted. 
+  Data will be kept for one year after the completion of the study: March 2023, after which time all files will be deleted.
 
 
-  Access to this data will be restricted to OCAD U researchers names on this project: Suzanne Stein, Rebecca Black, Fran Rawlings, and Ziyan Hossian. 
+  Access to this data will be restricted to OCAD U researchers names on this project: Suzanne Stein, Rebecca Black, Fran Rawlings, and Ziyan Hossian.
 
 
   ### VOLUNTARY PARTICIPATION
 
 
-  Participation in this study is voluntary. If you wish, you may decline to answer any questions or participate in any component of the study.  
+  Participation in this study is voluntary. If you wish, you may decline to answer any questions or participate in any component of the study.
 
 
   Due to the anonymity of the data, withdrawal is not possible: all data entered will be retained but the survey may be discontinued, exiting at any time in the process.
 
 
-  Your choice of whether or not to participate will not influence your future relations with OCAD University or partners Envision Management and Phi Centre. 
+  Your choice of whether or not to participate will not influence your future relations with OCAD University or partners Envision Management and Phi Centre.
 
 
   ### INCENTIVES FOR PARTICIPATION
@@ -88,7 +89,7 @@ policy: >-
   ### PUBLICATION OF RESULTS
 
 
-  Results of this study may be published in professional journals, and presentations to conferences and colloquia. In any publication, data will be presented in aggregate forms. 
+  Results of this study may be published in professional journals, and presentations to conferences and colloquia. In any publication, data will be presented in aggregate forms.
 
 
   Feedback about this study will be available through The Envision Management web site with links to Pathwaves Incubator findings.

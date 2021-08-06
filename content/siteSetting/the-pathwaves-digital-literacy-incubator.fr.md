@@ -9,7 +9,4 @@ footer:
     - linkAddress: /survey
       linkText: Enquête
       isInterenal: true
-fourOhFour:
-  img:
-    image: /assets/squiggle.png
 ---
