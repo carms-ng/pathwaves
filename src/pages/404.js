@@ -5,8 +5,8 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 // markup
-export default function NotFoundPage({ data }) {
-  const { header, img, linkText } = data.file.childMarkdownRemark.frontmatter.fourOhFour
+export default function NotFoundPage({ data: { page } }) {
+  const { title, header, img, linkText } = page.childMarkdownRemark.frontmatter
 
   return (
     <Layout noFooter={true}>
@@ -39,22 +39,21 @@ const FourOhFourStyles = styled.div`
 
 export const query = graphql`
   {
-    file(relativeDirectory: {eq: "siteSetting"}) {
+    page: file(relativeDirectory: {eq: "fourOhFour"}, base: {regex: "/.en.md$/"}) {
       childMarkdownRemark {
         frontmatter {
-          fourOhFour {
-            header
-            linkText
-            img {
-              alt
-              image {
-                childImageSharp {
-                  gatsbyImageData (
-                    width: 200
-                    placeholder: BLURRED
-                    layout: CONSTRAINED
-                  )
-                }
+          title
+          header
+          linkText
+          img {
+            alt
+            image {
+              childImageSharp {
+                gatsbyImageData (
+                  width: 200
+                  placeholder: BLURRED
+                  layout: CONSTRAINED
+                )
               }
             }
           }
