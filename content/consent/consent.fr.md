@@ -1,5 +1,5 @@
 ---
-title: Politique de confidentialité
+title: Surry Consent en Francais
 policy: >-
   Principal Investigator: 
 

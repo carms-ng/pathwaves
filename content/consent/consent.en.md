@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy
+title: "Canada’s Music Landscape Scanning Survey Consent "
 policy: >-
   Principal Investigator: 
 
