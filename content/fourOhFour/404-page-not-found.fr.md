@@ -1,7 +1,7 @@
 ---
 templateKey: fourOhFourPage.js
 title: 404 Fichier introuvable
-header: Desole
+header: "Désolé, cette page ne semble pas exister. "
 linkText: Retourne a Acceuil
 img:
   image: /assets/squiggle.png
