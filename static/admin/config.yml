@@ -35,6 +35,7 @@ collections:
     delete: false
     i18n: true
     fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "homePage.js", i18n: duplicate}
       - {label: Page Title, name: title, widget: string, i18n: true}
       - label: Intro Section
         name: sectionIntro
@@ -123,10 +124,11 @@ collections:
   - name: survey
     label: Survey Page
     folder: content/survey
-    create: true
+    create: false
     delete: false
     i18n: true
     fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "surveyPage.js", i18n: duplicate}
       - {label: Page Title, name: title, widget: string, i18n: true}
       - label: policy
         name: policy
@@ -151,10 +153,11 @@ collections:
   - name: fourOhFour
     label: 404 Page
     folder: content/fourOhFour
-    create: true
+    create: false
     delete: false
     i18n: true
     fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "fourOhFourPage.js", i18n: duplicate}
       - {label: Page Title, name: title, widget: string, i18n: true}
       - {label: Header, name: header, widget: string, i18n: true}
       - {label: Link Text, name: linkText, widget: string, i18n: true}
