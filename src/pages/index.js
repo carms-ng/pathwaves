@@ -5,160 +5,8 @@ import styled from "styled-components"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 // TODO: move page to HomePageTemplate.js
-
-const LandingStyles = styled.div`
-  section {
-    padding: 20px;
-    height: 100vh;
-    text-align: center;
-    > * {
-      max-width: var(--maxWidth);
-    }
-    > p, h6 {
-      max-width: var(--maxWidthText);
-    }
-  }
-`
-const IntroStyles = styled.section`
-  background: var(--linearGradient);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  > * {
-    margin: 12px 0;
-  }
-
-  /* Logo Garden */
-  .horizontal-scroll-wrapper {
-    max-width: unset;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    > a {
-      padding: 20px;
-    }
-    @media (min-width: 1024px) {
-      margin: 80px 0;
-      > a {
-        padding: 40px;
-      }
-    }
-  }
-`
-
-const SecondStyles = styled.section`
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  grid-gap: 40px;
-`
-const SurveyStyles = styled.section`
-  background: var(--linearGradient);
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  grid-gap: 12px;
-  p {
-    padding: 6px 0;
-  }
-  > div {
-    width: 100%;
-  }
-  .btn {
-    margin-top: 1.5rem;
-  }
-  @media (min-width: 1024px) {
-    grid-gap: 30px;
-    .flex-y-md {
-      display: flex;
-      text-align: left;
-      > p {
-        padding: 20px;
-      }
-    }
-
-  }
-`
-const SubscribeStyles = styled.section`
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  grid-gap: 1rem;
-
-  form {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    margin-top: 0.5rem;
-  }
-  input {
-    border-radius: var(--br) 0 0 var(--br);
-    padding: 16px;
-    border: 1px solid var(--lightgrey);
-  }
-  button {
-    border-radius: 0 var(--br) var(--br) 0;
-    background: var(--black);
-    color: var(--white);
-  }
-  @media (min-width: 1024px) {
-    grid-gap: 1.5rem;
-    p {
-      padding: 2rem 0;
-    }
-  }
-`
-const AboutStyles = styled.section`
-  padding-top: 4rem !important;
-  height: unset !important;
-  background: var(--linearGradient);
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  grid-gap: 1rem;
-
-  .cards-2b2 {
-    padding: 24px 0;
-    display: grid;
-    grid-gap: 1rem;
-    text-align: center;
-    > div {
-      display: grid;
-      grid-template-rows: 120px 1fr;
-      > a {
-        align-self: center;
-      }
-    }
-    p {
-      padding: 12px 0;
-    }
-  }
-  a {
-    color: var(--darkblue);
-  }
-  @media (min-width: 1024px) {
-    padding-top: 9rem !important;
-    padding-bottom: 5rem !important;
-    .cards-2b2 {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-auto-flow: column;
-      text-align: left;
-      grid-gap: 2rem;
-    }
-  }
-`
-
 // markup
-const IndexPage = ({ data: { page } }) => {
+export default function IndexPage({ data: { page } }) {
   // Prepare Content
   const {
     title, // TODO: SEO with helmet
@@ -259,8 +107,6 @@ const IndexPage = ({ data: { page } }) => {
   )
 }
 
-export default IndexPage
-
 export const query = graphql`
   {
     page: file(relativeDirectory: {eq: "home"}, base: {regex: "/.en.md$/"}) {
@@ -340,6 +186,156 @@ export const query = graphql`
           }
         }
       }
+    }
+  }
+`
+
+
+const LandingStyles = styled.div`
+  section {
+    padding: 20px;
+    height: 100vh;
+    text-align: center;
+    > * {
+      max-width: var(--maxWidth);
+    }
+    > p, h6 {
+      max-width: var(--maxWidthText);
+    }
+  }
+`
+const IntroStyles = styled.section`
+  background: var(--linearGradient);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  > * {
+    margin: 2vmin 0;
+  }
+
+  /* Logo Garden */
+  .horizontal-scroll-wrapper {
+    max-width: unset;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    > a {
+      padding: 0 2rem;
+    }
+    @media (min-width: 1024px) {
+      > a {
+        padding: 0 3rem;
+      }
+    }
+  }
+`
+
+const SecondStyles = styled.section`
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 40px;
+`
+const SurveyStyles = styled.section`
+  background: var(--linearGradient);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 12px;
+  p {
+    padding: 6px 0;
+  }
+  > div {
+    width: 100%;
+  }
+  .btn {
+    margin-top: 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    grid-gap: 30px;
+    .flex-y-md {
+      display: flex;
+      text-align: left;
+      > p {
+        padding: 20px;
+      }
+    }
+  }
+`
+const SubscribeStyles = styled.section`
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 1rem;
+
+  form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 0.5rem;
+  }
+  input {
+    border-radius: var(--br) 0 0 var(--br);
+    padding: 16px;
+    border: 1px solid var(--lightgrey);
+  }
+  button {
+    border-radius: 0 var(--br) var(--br) 0;
+    background: var(--black);
+    color: var(--white);
+  }
+  @media (min-width: 1024px) {
+    grid-gap: 1.5rem;
+    p {
+      padding: 2rem 0;
+    }
+  }
+`
+const AboutStyles = styled.section`
+  padding-top: 4rem !important;
+  height: unset !important;
+  background: var(--linearGradient);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 1rem;
+
+  .cards-2b2 {
+    padding: 24px 0;
+    display: grid;
+    grid-gap: 1rem;
+    text-align: center;
+    > div {
+      display: grid;
+      grid-template-rows: 120px 1fr;
+      > a {
+        align-self: center;
+      }
+    }
+    p {
+      padding: 12px 0;
+    }
+  }
+  a {
+    color: var(--darkblue);
+  }
+  @media (min-width: 1024px) {
+    padding-top: 9rem !important;
+    padding-bottom: 5rem !important;
+    .cards-2b2 {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-auto-flow: column;
+      text-align: left;
+      grid-gap: 2rem;
     }
   }
 `
