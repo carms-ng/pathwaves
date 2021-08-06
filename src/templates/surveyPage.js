@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import styled from "styled-components"
 import ReactMarkdown from 'react-markdown'
 import LocalizedLink from "../components/LocalizedLink"
+import Seo from "../components/Seo"
 
 // markup
 export default function SurveyPageTemplate({ pageContext, data: { page } }) {
@@ -16,6 +17,7 @@ export default function SurveyPageTemplate({ pageContext, data: { page } }) {
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} >
+      <Seo title={title} lang={pageContext.lang} />
       <ConsentStyles>
         <h1>{title}</h1>
         <ReactMarkdown>{policy}</ReactMarkdown>

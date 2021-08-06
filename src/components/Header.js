@@ -4,8 +4,8 @@ import LocalizedLink from './LocalizedLink'
 
 
 export default function Header({ lang, slug }) {
+  // Language Switcher
   const toLang = lang === 'en' ? 'fr' : 'en'
-
   const to = slug === "home" ? "/" : `/${slug}`
 
   return (

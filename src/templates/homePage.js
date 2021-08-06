@@ -4,13 +4,13 @@ import Layout from "../components/Layout"
 import styled from "styled-components"
 import { GatsbyImage } from "gatsby-plugin-image"
 import LocalizedLink from "../components/LocalizedLink"
+import Seo from "../components/Seo"
 
-// TODO: move page to HomePageTemplate.js
 // markup
 export default function HomePageTemplate({ pageContext, data: { page } }) {
   // Prepare Content
   const {
-    title, // TODO: SEO with helmet
+    title,
     sectionIntro,
     sectionSecond,
     sectionSubscribe,
@@ -22,6 +22,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} >
+      <Seo title={title} lang={pageContext.lang} />
       <LandingStyles>
         {/* Intro Section */}
         <IntroStyles>
@@ -195,7 +196,7 @@ export const query = graphql`
   }
 `
 
-
+// styling
 const LandingStyles = styled.div`
   section {
     padding: 20px;
@@ -256,7 +257,6 @@ const IntroStyles = styled.section`
     }
   } */
 `
-
 const SecondStyles = styled.section`
   display: grid;
   align-content: center;
@@ -357,33 +357,3 @@ const AboutStyles = styled.section`
     }
   }
 `
-// import React, { useEffect } from "react";
-// import { navigate } from "gatsby";
-
-// const getRedirectLanguage = () => {
-//   if (typeof navigator === `undefined`) {
-//     return "en";
-//   }
-
-//   const lang = navigator && navigator.language && navigator.language.split("-")[0];
-//   if (!lang) return "en";
-
-//   switch (lang) {
-//     case "fr":
-//       return "fr";
-//     default:
-//       return "en";
-//   }
-// };
-
-// const IndexPage = () => {
-//   useEffect(() => {
-//     const urlLang = getRedirectLanguage();
-
-//     navigate(`/${urlLang}`);
-//   }, []);
-
-//   return null;
-// };
-
-// export default IndexPage;
