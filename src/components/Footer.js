@@ -42,6 +42,7 @@ export default function Footer({ lang }) {
   return (
     <FooterStyles>
       <LocalizedLink
+        id="copyright"
         lang={lang}
         to='/'
         text={copyrightText}
@@ -84,7 +85,7 @@ const FooterStyles = styled.footer`
   @media (min-width: 640px) {
     grid-template-columns: 200px 1fr 200px;
     grid-auto-flow: dense;
-    p {
+    #copyright {
       grid-column: 2 / 3;
     }
   }

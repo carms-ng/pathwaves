@@ -1,4 +1,3 @@
-import { graphql, Link, useStaticQuery } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import LocalizedLink from './LocalizedLink'
