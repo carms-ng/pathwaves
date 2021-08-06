@@ -4,12 +4,12 @@ import { getRedirectLanguage } from '../utils/helper'
 
 const IndexPage = () => {
   useEffect(() => {
-    const urlLang = getRedirectLanguage();
+    const urlLang = getRedirectLanguage()
 
-    navigate(`/${urlLang}`);
+    navigate(`/${urlLang}`, { replace: true })
   }, []);
 
   return null;
 };
 
-export default IndexPage;
+export default IndexPage
