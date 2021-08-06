@@ -58,7 +58,7 @@ const GlobalStyles = createGlobalStyle`
 
   // font sizes
   h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
   h2 {
     font-size: 1.75rem;
@@ -100,7 +100,7 @@ const GlobalStyles = createGlobalStyle`
     html {
       font-size: 16px;
     }
-    h2 {
+    h1, h2 {
       font-size: 2.5rem;
     }
     pre, p {
