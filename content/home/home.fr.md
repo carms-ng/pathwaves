@@ -1,4 +1,5 @@
 ---
+templateKey: homePage.js
 title: Acceuil
 sectionIntro:
   img:
