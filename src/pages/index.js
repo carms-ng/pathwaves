@@ -49,7 +49,6 @@ export default function IndexPage({ data: { page } }) {
           <GatsbyImage
             image={sectionSecond.img.image.childImageSharp.gatsbyImageData}
             alt={sectionSecond.img.alt}
-            imgStyle={{ maxWidth: `33vw`, height: `auto` }}
           />
           <p>{sectionSecond.description}</p>
         </SecondStyles>
@@ -119,7 +118,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    width: 160
+                    width: 120
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )
@@ -135,7 +134,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    width: 200
+                    width: 160
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )
@@ -173,7 +172,7 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      height: 60
+                      height: 50
                       placeholder: BLURRED
                       layout: CONSTRAINED
                     )
@@ -231,6 +230,7 @@ const IntroStyles = styled.section`
       padding: 0 2rem;
     }
     @media (min-width: 1024px) {
+      margin-top: 3rem;
       > a {
         padding: 0 3rem;
       }
@@ -309,7 +309,7 @@ const AboutStyles = styled.section`
   grid-gap: 1rem;
 
   .cards-2b2 {
-    padding: 24px 0;
+    padding: 2rem 0 4rem 0;
     display: grid;
     grid-gap: 1rem;
     text-align: center;

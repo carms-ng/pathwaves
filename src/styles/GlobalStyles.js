@@ -9,15 +9,15 @@ const GlobalStyles = createGlobalStyle`
     --darkblue: #325F9A;
     --blue: #C1D3EC;
     --lightblue: #E0E9F5;
-    --xlightblue: #E0E9F5;
+    --xlightblue: #EFF4FA;
     --maxWidth: 1024px;
     --maxWidthText: 784px;
     --br: 16px;
-    --linearGradient: linear-gradient(217deg, var(--blue), rgba(255,0,0,0) 70.71%),
-                      linear-gradient(127deg, var(--lightblue), rgba(0,255,0,0) 70.71%),
-                      linear-gradient(336deg, var(--xlightblue), rgba(0,0,255,0) 70.71%);
+    --linearGradient: linear-gradient(217deg, rgb(161, 189, 226), rgb(161, 189, 226, 0) 70.71%),
+                      linear-gradient(336deg, var(--xlightblue), rgb(239, 244, 250, 0) 70.71%),
+                      linear-gradient(127deg, var(--lightblue), rgb(224, 233, 245, 0) 70.71%);
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 16px;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -40,7 +40,7 @@ const GlobalStyles = createGlobalStyle`
     max-width: var(--maxWidthText);
   }
   p, small, ul {
-    line-height: 1.6;
+    line-height: 1.5;
     max-width: var(--maxWidthText);
   }
   a {
@@ -104,7 +104,8 @@ const GlobalStyles = createGlobalStyle`
       font-size: 2.5rem;
     }
     pre, p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      line-height: 1.6;
     }
 
     .btn, button, input {
@@ -118,11 +119,6 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  @media (min-width: 1024px) {
-    html {
-      font-size: 18px;
-    }
-  }
 `;
 
 export default GlobalStyles
