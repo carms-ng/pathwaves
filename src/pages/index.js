@@ -33,7 +33,7 @@ export default function IndexPage({ data: { page } }) {
           <pre>{sectionIntro.pre}</pre>
           <h1>{sectionIntro.header}</h1>
           <p>{sectionIntro.description}</p>
-          <div className="horizontal-scroll-wrapper">
+          <div id="logo-garden">
             {collabs.map((collab) => (
               <a key={collab.name} href={collab.url}>
                 <GatsbyImage
@@ -208,21 +208,33 @@ const IntroStyles = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   > * {
     margin: 2vmin 0;
   }
 
   /* Logo Garden */
-  .horizontal-scroll-wrapper {
+  #logo-garden {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  @media (min-width: 1024px) {
+    justify-content: center;
+
+    #logo-garden {
+      margin-top: 4rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  /* .horizontal-scroll-wrapper {
     max-width: unset;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    /* Hide scrollbar for Chrome, Safari and Opera */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
     }
@@ -235,7 +247,7 @@ const IntroStyles = styled.section`
         padding: 0 3rem;
       }
     }
-  }
+  } */
 `
 
 const SecondStyles = styled.section`
@@ -312,7 +324,7 @@ const AboutStyles = styled.section`
     padding: 2rem 0 4rem 0;
     display: grid;
     grid-gap: 1rem;
-    text-align: center;
+    text-align: left;
     > div {
       display: grid;
       grid-template-rows: 120px 1fr;
@@ -334,7 +346,6 @@ const AboutStyles = styled.section`
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-auto-flow: column;
-      text-align: left;
       grid-gap: 2rem;
     }
   }
