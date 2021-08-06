@@ -11,7 +11,13 @@ footer:
   footerLinks:
     - linkAddress: mailto:lesya@envisionmanagement.com
       linkText: Contact Us
-    - linkText: Privacy Policy
+    - linkText: Survey
       isInterenal: true
-      linkAddress: /privacy
+      linkAddress: /consent
+fourOhFour:
+  header: "Sorry, this page does not seem to exist. "
+  linkText: GO BACK TO HOME PAGE
+  img:
+    image: /assets/squiggle.png
+    alt: Squiggle pattern
 ---

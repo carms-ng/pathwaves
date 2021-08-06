@@ -6,7 +6,10 @@ footer:
   footerLinks:
     - linkAddress: mailto:lesya@envisionmanagement.com
       linkText: Nous contacter
-    - linkAddress: /privacy
-      linkText: Politique de confidentialité
+    - linkAddress: /consent
+      linkText: Enquête
       isInterenal: true
+fourOhFour:
+  img:
+    image: /assets/squiggle.png
 ---
