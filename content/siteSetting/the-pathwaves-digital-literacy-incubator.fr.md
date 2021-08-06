@@ -6,7 +6,7 @@ footer:
   footerLinks:
     - linkAddress: mailto:lesya@envisionmanagement.com
       linkText: Nous contacter
-    - linkAddress: /consent
+    - linkAddress: /survey
       linkText: Enquête
       isInterenal: true
 fourOhFour:

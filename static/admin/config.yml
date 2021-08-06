@@ -120,15 +120,15 @@ collections:
                 - {label: Image Alt Text, name: alt, widget: string, i18n: true}
           - {label: Contact Text, name: contactText, widget: text, i18n: true}
           - {label: Contact Email, name: contactEmail, widget: text, i18n: duplicate}
-  - name: consent
-    label: Consent Page
-    folder: content/consent
+  - name: survey
+    label: Survey Page
+    folder: content/survey
     create: true
     delete: false
     i18n: true
     fields:
       - {label: Page Title, name: title, widget: string, i18n: true}
-      - label: Policy
+      - label: policy
         name: policy
         widget: markdown
         buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]

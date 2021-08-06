@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown'
 
 
 // markup
-export default function ConsentPage({ data: { page } }) {
+export default function SurveyPage({ data: { page } }) {
   const {
     title,
     policy,
@@ -72,7 +72,7 @@ const ConsentStyles = styled.div`
 
 export const query = graphql`
   {
-    page: file(relativeDirectory: {eq: "consent"}, base: {regex: "/.en.md$/"}) {
+    page: file(relativeDirectory: {eq: "survey"}, base: {regex: "/.en.md$/"}) {
       childMarkdownRemark {
         frontmatter {
           title
