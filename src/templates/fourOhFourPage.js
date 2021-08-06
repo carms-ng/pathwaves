@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import LocalizedLink from "../components/LocalizedLink"
+import Seo from "../components/Seo"
 
 // markup
 export default function NotFoundPageTemplate({ pageContext, data: { page } }) {
@@ -12,6 +13,7 @@ export default function NotFoundPageTemplate({ pageContext, data: { page } }) {
   return (
     <Layout noFooter={true} lang={pageContext.lang} slug={pageContext.slug} >
       <FourOhFourStyles>
+        <Seo title={title} lang={pageContext.lang} />
         <GatsbyImage
           image={img.image.childImageSharp.gatsbyImageData}
           alt={img.alt} />

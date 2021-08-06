@@ -10,7 +10,6 @@ export default function Footer({ lang }) {
         nodes {
           childMarkdownRemark {
             frontmatter {
-              templateKey
               footer {
                 copyright
                 footerLinks {
@@ -25,7 +24,6 @@ export default function Footer({ lang }) {
         }
       }
     }
-
   `)
 
   const data = allFile.nodes.map(node => {

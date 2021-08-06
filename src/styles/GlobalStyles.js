@@ -118,7 +118,6 @@ const GlobalStyles = createGlobalStyle`
       grid-gap: 1rem;
     }
   }
-
 `;
 
 export default GlobalStyles
