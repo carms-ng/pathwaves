@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 import styled from "styled-components"
 import ReactMarkdown from 'react-markdown'
+import LocalizedLink from "../components/LocalizedLink"
 
 // markup
 export default function SurveyPageTemplate({ pageContext, data: { page } }) {
@@ -14,7 +15,7 @@ export default function SurveyPageTemplate({ pageContext, data: { page } }) {
   } = page.childMarkdownRemark.frontmatter
 
   return (
-    <Layout lang={pageContext.lang}>
+    <Layout lang={pageContext.lang} slug={pageContext.slug} >
       <ConsentStyles>
         <h1>{title}</h1>
         <ReactMarkdown>{policy}</ReactMarkdown>
@@ -22,9 +23,13 @@ export default function SurveyPageTemplate({ pageContext, data: { page } }) {
           {consentOptions.map(opt => {
             if (opt.isInterenal) {
               return (
-                <Link className="btn" key={opt.linkAddress} to={opt.linkAddress}>
-                  {opt.linkText}
-                </Link>
+                <LocalizedLink
+                  className="btn"
+                  key={opt.linkAddress}
+                  lang={pageContext.lang}
+                  to={opt.linkAddress}
+                  text={opt.linkText}
+                />
               )
             } else {
               return (

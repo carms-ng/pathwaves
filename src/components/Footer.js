@@ -1,8 +1,9 @@
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
+import LocalizedLink from './LocalizedLink'
 
-export default function Footer() {
+export default function Footer({ lang }) {
   const { file } = useStaticQuery(graphql`
     {
       file(relativeDirectory: {eq: "siteSetting"}) {
@@ -30,9 +31,12 @@ export default function Footer() {
       {data.footerLinks.map(link => {
         if (link.isInterenal) {
           return (
-            <Link key={link.linkAddress} to={link.linkAddress}>
-              {link.linkText}
-            </Link>
+            <LocalizedLink
+              key={link.linkAddress}
+              lang={lang}
+              to={link.linkAddress}
+              text={link.linkText}
+            />
           )
         } else {
           return (

@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import styled from "styled-components"
 import { GatsbyImage } from "gatsby-plugin-image"
+import LocalizedLink from "../components/LocalizedLink"
 
 // TODO: move page to HomePageTemplate.js
 // markup
@@ -20,7 +21,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
   const collabs = sectionAbout.collaborators
 
   return (
-    <Layout lang={pageContext.lang}>
+    <Layout lang={pageContext.lang} slug={pageContext.slug} >
       <LandingStyles>
         {/* Intro Section */}
         <IntroStyles>
@@ -61,7 +62,12 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
           </div>
           <div>
             <small>{sectionSurvey.preLinkText}</small>
-            <a className="btn" href={sectionSurvey.url}>{sectionSurvey.linkText}</a>
+            <LocalizedLink
+              className="btn"
+              to={sectionSurvey.url}
+              lang={pageContext.lang}
+              text={sectionSurvey.linkText}
+            />
           </div>
         </SurveyStyles>
         {/* Subscribe Section */}
