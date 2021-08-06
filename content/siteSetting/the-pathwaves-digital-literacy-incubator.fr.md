@@ -9,4 +9,7 @@ footer:
     - linkAddress: /consent
       linkText: Enquête
       isInterenal: true
+fourOhFour:
+  img:
+    image: /assets/squiggle.png
 ---

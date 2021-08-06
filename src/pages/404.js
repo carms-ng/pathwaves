@@ -1,54 +1,65 @@
-import * as React from "react"
-import { Link } from "gatsby"
-
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import React from "react"
+import { graphql, Link } from "gatsby"
+import Layout from "../components/Layout"
+import { GatsbyImage } from "gatsby-plugin-image"
+import styled from "styled-components"
 
 // markup
-const NotFoundPage = () => {
+export default function NotFoundPage({ data }) {
+  const { header, img, linkText } = data.file.childMarkdownRemark.frontmatter.fourOhFour
+
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <Layout noFooter={true}>
+      <FourOhFourStyles>
+        <GatsbyImage
+          image={img.image.childImageSharp.gatsbyImageData}
+          alt={img.alt} />
+        <h1>{header}</h1>
+        <Link className="btn" to="/">{linkText}</Link>
+      </FourOhFourStyles>
+    </Layout>
   )
 }
 
-export default NotFoundPage
+const FourOhFourStyles = styled.div`
+  background: var(--linearGradient);
+  padding: 20px;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 40px;
+  .btn {
+    width: unset;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+`
+
+export const query = graphql`
+  {
+    file(relativeDirectory: {eq: "siteSetting"}) {
+      childMarkdownRemark {
+        frontmatter {
+          fourOhFour {
+            header
+            linkText
+            img {
+              alt
+              image {
+                childImageSharp {
+                  gatsbyImageData (
+                    width: 200
+                    placeholder: BLURRED
+                    layout: CONSTRAINED
+                  )
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
