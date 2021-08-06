@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
                       linear-gradient(127deg, var(--lightblue), rgba(0,255,0,0) 70.71%),
                       linear-gradient(336deg, var(--xlightblue), rgba(0,0,255,0) 70.71%);
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 16px;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -40,7 +40,7 @@ const GlobalStyles = createGlobalStyle`
     max-width: var(--maxWidthText);
   }
   p, small, ul {
-    line-height: 1.6;
+    line-height: 1.5;
     max-width: var(--maxWidthText);
   }
   a {
@@ -104,7 +104,8 @@ const GlobalStyles = createGlobalStyle`
       font-size: 2.5rem;
     }
     pre, p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      line-height: 1.6;
     }
 
     .btn, button, input {
@@ -118,11 +119,6 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  @media (min-width: 1024px) {
-    html {
-      font-size: 18px;
-    }
-  }
 `;
 
 export default GlobalStyles
