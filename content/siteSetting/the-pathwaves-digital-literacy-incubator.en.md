@@ -11,7 +11,7 @@ footer:
   footerLinks:
     - linkAddress: mailto:lesya@envisionmanagement.com
       linkText: Contact Us
-    - linkText: Privacy Policy
+    - linkText: Survey
       isInterenal: true
-      linkAddress: /privacy
+      linkAddress: /consent
 ---
