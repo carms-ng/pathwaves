@@ -4,9 +4,8 @@ import Layout from "../components/Layout"
 import styled from "styled-components"
 import ReactMarkdown from 'react-markdown'
 
-
 // markup
-export default function SurveyPage({ data: { page } }) {
+export default function SurveyPageTemplate({ pageContext, data: { page } }) {
   const {
     title,
     policy,
@@ -15,7 +14,7 @@ export default function SurveyPage({ data: { page } }) {
   } = page.childMarkdownRemark.frontmatter
 
   return (
-    <Layout>
+    <Layout lang={pageContext.lang}>
       <ConsentStyles>
         <h1>{title}</h1>
         <ReactMarkdown>{policy}</ReactMarkdown>
@@ -71,8 +70,8 @@ const ConsentStyles = styled.div`
 `
 
 export const query = graphql`
-  {
-    page: file(relativeDirectory: {eq: "survey"}, base: {regex: "/.en.md$/"}) {
+  query($regx: String) {
+    page: file(relativeDirectory: {eq: "survey"}, base: {regex: $regx}) {
       childMarkdownRemark {
         frontmatter {
           title

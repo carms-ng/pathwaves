@@ -5,11 +5,11 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 // markup
-export default function NotFoundPage({ data: { page } }) {
+export default function NotFoundPageTemplate({ pageContext, data: { page } }) {
   const { title, header, img, linkText } = page.childMarkdownRemark.frontmatter
 
   return (
-    <Layout noFooter={true}>
+    <Layout noFooter={true} lang={pageContext.lang}>
       <FourOhFourStyles>
         <GatsbyImage
           image={img.image.childImageSharp.gatsbyImageData}

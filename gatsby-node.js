@@ -7,7 +7,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     query {
-      allFile(filter: {relativeDirectory: {in: ["fourOhFour"]}}) {
+      allFile(filter: {relativeDirectory: {in: ["home", "survey", "fourOhFour"]}}) {
         distinct(field: relativeDirectory)
         nodes {
           childMarkdownRemark {
@@ -27,7 +27,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const templateFile = node.childMarkdownRemark.frontmatter.templateKey
 
     createPage({
-      path: node.slug === "home" ? `/${lang}` : `/${lang}/${slug}`,
+      path: slug === "home" ? `/${lang}` : `/${lang}/${slug}`,
       component: path.resolve(`./src/templates/${templateFile}`),
       context: { lang: lang, regx: `/.${lang}.md$/`}
     })
