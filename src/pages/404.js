@@ -1,27 +1,14 @@
-import { useEffect } from "react";
-import { navigate } from "gatsby";
-
-const getRedirectLanguage = () => {
-  if (typeof navigator === `undefined`) {
-    return "en";
-  }
-
-  const lang = navigator && navigator.language && navigator.language.split("-")[0];
-  if (!lang) return "en";
-
-  switch (lang) {
-    case "fr":
-      return "fr";
-    default:
-      return "en";
-  }
-};
+import { useEffect } from 'react'
+import { navigate } from 'gatsby'
+import { getRedirectLanguage } from '../utils/helper'
 
 const NotFoundPage = () => {
+  const slug = "404-page-not-found"
+
   useEffect(() => {
     const urlLang = getRedirectLanguage();
 
-    navigate(`/${urlLang}/404-page-not-found`);
+    navigate(`/${urlLang}/${slug}`);
   }, []);
 
   return null;
