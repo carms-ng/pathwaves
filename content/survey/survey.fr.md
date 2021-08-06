@@ -1,113 +1,113 @@
 ---
 templateKey: surveyPage.js
-title: Surry Consent en Francais
+title: Consentement à le sondage d'analyse du paysage musical canadien
 policy: >-
-  Principal Investigator:
+  Enquêteur principal :
 
   Suzanne Stein
 
-  Associate Professor
+  Professeure agrégée
 
-  OCAD University
+  Université OCAD
 
   sstein@faculty.ocadu.ca
 
   (416)315-1896
 
 
-  ### PURPOSE
+  ### OBJECT
 
 
-  As a participant, you will be asked to answer questions about changes that are affecting the music landscape in Canada, including opportunities and barriers to participation with digital technologies. It will inform the content and curriculum of the Pathwaves incubator, a partnership between Envision Management, The Phi Centre, and OCAD University. This research is being conducted by OCAD University, under the supervision of Suzanne Stein, Director, Super Ordinary Lab at OCAD U.
+  En tant que participant, vous serez invité à répondre à des questions sur les changements qui affectent le paysage musical au Canada, y compris les possibilités et les obstacles à sa participation à l'aide des technologies numériques. Cette recherche permettra d'orienter le contenu et le programme d'études de l'incubateur Pathwaves, un partenariat entre Envision Management, le Centre Phi et l'Université OCAD. Cette recherche est menée par l'Université OCAD, sous la supervision de Suzanne Stein, directrice du Super Ordinary Lab de l'Université OCAD.
 
 
-  Overall Goals of the Pathwaves incubator:
+  Objectifs généraux de l'incubateur Pathwaves :
 
 
-  * To explore the following themes from the perspective of digital innovation or disruption, specifically recorded music, live music performance and creative process.
+  * Explorer les thèmes suivants sous l'angle de l'innovation et de la perturbation numérique, en particulier la musique enregistrée, les performances musicales en direct ainsi que leur processus créatif ;
 
-  * To empower artists to drive and dialogue with technological developments challenging systemic inequality and inaccessibility in current models.
+  * Donner aux artistes les moyens de piloter et de dialoguer avec les évolutions technologiques en remettant en cause l'inégalité systémique et l'inaccessibilité des modèles actuels ;
 
-  * To identify potential opportunities.
+  * Identifier les opportunités potentielles ;
 
-  * To prototype new models for a more equitable model of creation, production and distribution.
-
-
-  ### WHAT’S INVOLVED
+  * Prototyper de nouveaux modèles, plus équitables dans la création, la production et la distribution.
 
 
-  As a participant, you will be asked to answer questions about changes that are affecting the music landscape in Canada, including opportunities and barriers to participation with digital technologies.
 
 
-  Participation will take approximately 20 minutes of your time.
+  ### VOTRE IMPLICATION
 
 
-  ### POTENTIAL BENEFITS
+  En tant que participant, vous serez invité à répondre à des questions sur les changements qui affectent le paysage musical au Canada, y compris les possibilités et les obstacles à sa participation à l'aide des technologies numériques.
 
 
-  Possible benefits of participation include curriculum development for the incubator as well as further research into areas of concern and interest. Results will help us understand the changing environment of the Music Industry in Canada. We aim to understand how technologies may help musicians in Canada in their experimentation in recorded music,  live performance,and creative processes.
+  Cette participation vous prendra environ 20 minutes.
 
 
-  ### POTENTIAL RISKS
+  ### AVANTAGES POSSIBLES
 
 
-  There also may be risks associated with participation, which are social in nature. Social risks include feeling or possibly experiencing a loss in status due to the disclosures on issues facing inclusion or exclusion in a thriving music industry in Canada, as well as identifying potential discomforts with technologies. These concerns are addressed in the design of the study, which is anonymous and administered through OCAD University’s secure server. Only researchers named will have access to the data produced.
+  Les avantages possibles comprennent l'élaboration d'un programme d'études pour l'incubateur ainsi que des recherches plus approfondies sur des sujets de préoccupation et d'intérêt. Les résultats nous aideront à mieux comprendre l'environnement changeant de l'industrie de la musique au Canada. Nous souhaitons comprendre comment les technologies peuvent aider les musiciens canadiens à expérimenter autour de la musique enregistrée, les performances musicales en direct ainsi que leur processus créatif.
 
 
-  ### CONFIDENTIALITY
+  ### RISQUES POTENTIELS
 
 
-  This survey is anonymous. We will not be collecting any personal identifiers.
-
-  Data collected during this study will be stored on OCAD University secure servers.
+  La participation peut cependant engendrer des risques de nature sociale. Ces risques comprennent le sentiment ou la possibilité d'un rabaissement de statut en raison des révélations sur les problèmes d'inclusion ou d'exclusion dans l’industrie musicale au Canada, ainsi que l'identification des inconforts potentiels liés aux technologies. Ces préoccupations sont prises en compte dans la conception de l'étude, qui est anonyme et administrée par le serveur sécurisé de l'Université OCAD. Seuls les chercheurs nommés auront accès aux données qui en ressortiront.
 
 
-  Data will be kept for one year after the completion of the study: March 2023, after which time all files will be deleted.
+  ### CONFIDENTIALITÉ
 
 
-  Access to this data will be restricted to OCAD U researchers names on this project: Suzanne Stein, Rebecca Black, Fran Rawlings, and Ziyan Hossian.
+  Cette sondage est anonyme. Nous ne recueillerons aucun identifiant personnel.
+
+  Les données recueillies au cours de cette étude seront stockées sur des serveurs sécurisés de l'Université OCAD.
 
 
-  ### VOLUNTARY PARTICIPATION
+  Les données seront conservées pendant un an après la fin de l'étude (Mars 2023), après quoi tous les fichiers seront supprimés. L'accès à ces données sera strictement limité aux chercheurs de l'Université OCAD nommés sur ce projet : Suzanne Stein, Rebecca Black, Fran Rawlings et Ziyan Hossian.
 
 
-  Participation in this study is voluntary. If you wish, you may decline to answer any questions or participate in any component of the study.
+  ### PARTICIPATION VOLONTAIRE
 
 
-  Due to the anonymity of the data, withdrawal is not possible: all data entered will be retained but the survey may be discontinued, exiting at any time in the process.
+  La participation à cette étude est volontaire. Si vous le souhaitez, vous pouvez refuser de répondre à toute question ou de participer à tout élément de l'étude.  
 
 
-  Your choice of whether or not to participate will not influence your future relations with OCAD University or partners Envision Management and Phi Centre.
+  En raison de l'anonymat des données, le retrait n'est pas possible: toutes les données saisies seront conservées mais le sondage peut être interrompue, en quittant le processus quand vous le souhaitez.
 
 
-  ### INCENTIVES FOR PARTICIPATION
+  Votre choix de participer ou non n'influencera pas vos relations futures avec l'Université OCAD, le Centre Phi ou Envision Management.
 
 
-  Participants will not be paid to participate in this study.
+  ### INCITATIONS À LA PARTICIPATION
 
 
-  ### PUBLICATION OF RESULTS
+  Les participants ne seront pas payés pour participer à cette étude.
 
 
-  Results of this study may be published in professional journals, and presentations to conferences and colloquia. In any publication, data will be presented in aggregate forms.
+  ### PUBLICATION DES RÉSULTATS
 
 
-  Feedback about this study will be available through The Envision Management web site with links to Pathwaves Incubator findings.
+  Les résultats de cette étude pourront être publiés dans des revues professionnelles et présentés lors de conférences et de colloques. Dans toute publication, les données seront présentées sous forme agrégée.
 
 
-  ### CONTACT INFORMATION AND ETHICS CLEARANCE
+  Un retour d'information sur cette étude sera disponible sur le site web d' Envision Management avec des liens vers les résultats de l'incubateur Pathwaves.
 
 
-  If you have any questions about this study or require further information, please ask. If you have questions later about the research, you may contact the Principal Investigator Suzanne Stein using the contact information provided above. This study has been reviewed and received ethics clearance through the Research Ethics Board at OCAD University (2021-48).
+  ### CONTACT ET AUTORISATION ÉTHIQUE
 
 
-  If you have questions regarding your rights as a participant in this study please contact:
+  Si vous avez des questions sur cette étude ou si vous souhaitez obtenir des informations complémentaires, n'hésitez pas à nous contacter. Si vous avez des questions ultérieures sur la recherche, vous pouvez contacter la chercheuse principale Suzanne Stein en utilisant les coordonnées fournies ci-dessus. Cette étude a été examinée et a reçu l'approbation éthique du Comité d'éthique de la recherche de l'Université OCAD (numéro d'approbation du CER: 2021-48). 
 
-  Research Ethics Board c/o Office of the Vice President, Research and Innovation
 
-  OCAD University
+  Si vous avez des questions concernant vos droits en tant que participant à cette étude, veuillez contacter:
 
-  100 McCaul Street
+
+  Comité d'éthique de la recherche c/o Bureau du Vice-président, Recherche et Innovation
+
+  Université OCAD
+
+  100, rue McCaul
 
   Toronto, M5T1W1
 
@@ -116,16 +116,18 @@ policy: >-
   research@ocadu.ca
 
 
-  ### AGREEMENT
 
 
-  I agree to participate in this study described above. I have made this decision based on the information I have read in the Information-Consent Letter.  I have had the opportunity to receive any additional details I wanted about the study and understand that I may ask questions in the future.
+  ### ACCORD
+
+
+  J'accepte de participer à l'étude décrite ci-dessus. J'ai pris cette décision sur la base des informations que j'ai lu dans le texte d'information et de consentement.  J'ai eu l'occasion de recevoir tous les détails supplémentaires que je souhaitais sur l'étude et je comprends que je peux poser des questions dans le futur.
 consentOptions:
-  - linkText: J'ACCEPTE
+  - linkText: JE SUIS D'ACCORD
     linkAddress: https://www.google.com/
   - linkText: JE REFUSE
     isInterenal: true
     linkAddress: /
-endNote: Merci pour votre aide dans ce projet. Veuillez conserver une copie de
-  ce formulaire pour vos dossiers.
+endNote: Nous vous remercions pour votre aide et votre collaboration.\ Veuillez
+  conserver une copie de ce formulaire pour vos dossiers.
 ---

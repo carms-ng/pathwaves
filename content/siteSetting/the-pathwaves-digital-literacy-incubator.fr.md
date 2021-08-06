@@ -1,4 +1,8 @@
 ---
+title: DÉVOILEMENT DE L’INCUBATEUR DE LITTÉRATIE NUMÉRIQUE PATHWAVES
+description: L'incubateur Pathwaves est  produit par Envision Management &
+  Production en partenariat avec le Centre Phi et l'Université OCAD, et avec le
+  soutien financier du Conseil des Arts du Canada.
 logo:
   image: /assets/pathwaves-logo.png
 footer:
