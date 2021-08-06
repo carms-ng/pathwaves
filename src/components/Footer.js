@@ -1,33 +1,51 @@
-import { graphql, Link, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import LocalizedLink from './LocalizedLink'
 
 export default function Footer({ lang }) {
-  const { file } = useStaticQuery(graphql`
-    {
-      file(relativeDirectory: {eq: "siteSetting"}) {
-        childMarkdownRemark {
-          frontmatter {
-            footer {
-              copyright
-              footerLinks {
-                isInterenal
-                linkAddress
-                linkText
+  const { allFile } = useStaticQuery(graphql`
+    query {
+      allFile(filter: {relativeDirectory: {eq: "siteSetting"}}) {
+        nodes {
+          childMarkdownRemark {
+            frontmatter {
+              templateKey
+              footer {
+                copyright
+                footerLinks {
+                  isInterenal
+                  linkAddress
+                  linkText
+                }
               }
             }
           }
+          base
         }
       }
     }
+
   `)
 
-  const data = file.childMarkdownRemark.frontmatter.footer
+  const data = allFile.nodes.map(node => {
+    const locale = node.base.split('.')[1]
+    const frontmatter = node.childMarkdownRemark.frontmatter.footer
+    return ({
+      locale,
+      frontmatter,
+    })
+  }).find(elem => lang === elem.locale).frontmatter
+
+  const copyrightText = `©️ ${new Date().getFullYear()} ${data.copyright}`
 
   return (
     <FooterStyles>
-      <p>&copy; {new Date().getFullYear()} {data.copyright}</p>
+      <LocalizedLink
+        lang={lang}
+        to='/'
+        text={copyrightText}
+      />
       {data.footerLinks.map(link => {
         if (link.isInterenal) {
           return (
