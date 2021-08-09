@@ -25,7 +25,7 @@ sectionSurvey:
     scan open to anyone operating in Canada’s music industry. Its intent is to
     listen to a diversity of perspectives on the industry, especially as they
     pertain to digital tools and services. The survey results will inform the
-    issues tackled during the Incubator and the outcomes which will be shared
+    topics tackled during the Incubator and the outcomes which will be shared
     with the public.
   descriptionRight: "Those active in the Canadian music industry, working in all
     genres, from all geographies, of all origins, at all stages of their careers
