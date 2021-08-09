@@ -67,7 +67,7 @@ sectionAbout:
         creation and sharing of works, and has produced tours on 6 continents.
       url: https://www.envisionmanagement.com/
       logo:
-        image: /assets/envision.png
+        image: /assets/envision_rgb_primary_long_text_colour_900ox-2-.png
         alt: Envision Logo
     - name: OCAD University
       description: OCAD U is the largest and most comprehensive art, design and media
