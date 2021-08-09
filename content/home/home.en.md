@@ -57,13 +57,14 @@ sectionAbout:
     from the Canada Council for the Arts.
   collaborators:
     - name: Envision
-      description: We are an artist management and creative production company that
-        works with boundary-breaking, musical and multidisciplinary artists,
-        productions and organizations. We support the creation of records, live
-        shows and tours, as well as more experimental cross-disciplinary works
-        that interface with theatre, film, puppetry and digital technologies. We
-        work with artists on new works as they move from conceptualization,
-        through development, into production on to dissemination, worldwide.
+      description: Envision is an artist management and cultural production company
+        that works with boundary-breaking, musical and multidisciplinary
+        artists, productions and organizations. Envision works with artists to
+        conceive, develop, produce and manage musical projects, often in the
+        realm where music intersects with film, animation, theatre, literature
+        and technology. Recognizing the potential of meaningful collaborations,
+        Envision builds partnerships worldwide and across sectors for the
+        creation and sharing of works, and has produced tours on 6 continents.
       url: https://www.envisionmanagement.com/
       logo:
         image: /assets/envision.png
