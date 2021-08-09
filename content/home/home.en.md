@@ -7,8 +7,8 @@ sectionIntro:
     alt: Pavewaves logo
   pre: ANNOUNCING
   header: The Pathwaves Digital Literacy Incubator
-  description: An initiative aimed at nurturing a diversity of Canadian musicians
-    to lead the shaping of a more equitable music industry.
+  description: An initiative aimed at empowering Canadian musicians to make
+    lifelong careers in music more possible and equitable.
 sectionSecond:
   img:
     image: /assets/squiggle.png
