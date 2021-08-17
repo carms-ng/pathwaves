@@ -124,7 +124,7 @@ policy: >-
   J'accepte de participer à l'étude décrite ci-dessus. J'ai pris cette décision sur la base des informations que j'ai lu dans le texte d'information et de consentement.  J'ai eu l'occasion de recevoir tous les détails supplémentaires que je souhaitais sur l'étude et je comprends que je peux poser des questions dans le futur.
 consentOptions:
   - linkText: JE SUIS D'ACCORD
-    linkAddress: https://www.google.com/
+    linkAddress: https://forms.office.com/r/WLbBZZTkSB
   - linkText: JE REFUSE
     isInterenal: true
     linkAddress: /
