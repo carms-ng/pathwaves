@@ -124,7 +124,7 @@ policy: >-
   J'accepte de participer à l'étude décrite ci-dessus. J'ai pris cette décision sur la base des informations que j'ai lu dans le texte d'information et de consentement.  J'ai eu l'occasion de recevoir tous les détails supplémentaires que je souhaitais sur l'étude et je comprends que je peux poser des questions dans le futur.
 consentOptions:
   - linkText: JE SUIS D'ACCORD
-    linkAddress: https://forms.office.com/pages/responsepage.aspx?id=0WnkBiotj0aum33wlo6212FUZUKmI8NPl8uGp2eGRjZUN1NEU0pSUUsxSzNFT01WREJVUlY0TDBLMy4u
+    linkAddress: "https://forms.office.com/r/Nb3bss2axM "
   - linkText: JE REFUSE
     isInterenal: true
     linkAddress: /
