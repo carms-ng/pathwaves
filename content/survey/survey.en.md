@@ -122,7 +122,7 @@ policy: >-
   I agree to participate in this study described above. I have made this decision based on the information I have read in the Information-Consent Letter.  I have had the opportunity to receive any additional details I wanted about the study and understand that I may ask questions in the future.
 consentOptions:
   - linkText: I AGREE
-    linkAddress: https://www.google.com/
+    linkAddress: https://forms.office.com/r/Nb3bss2axM
   - linkText: I DECLINE
     isInterenal: true
     linkAddress: /
