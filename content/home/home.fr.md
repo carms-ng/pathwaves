@@ -7,9 +7,9 @@ sectionIntro:
     alt: logo
   pre: DÉVOILEMENT DE
   header: L’Incubateur De Littératie Numérique Pathwaves
-  description: Initiative visant à favoriser l'émergence d'une diversité de
-    musiciens canadiens pour mener à bien la création d'une industrie musicale
-    plus équitable.
+  description: >
+    Une initiative visant à aider les musiciens canadiens à développer une
+    carrière durable et équitable.
 sectionSecond:
   img:
     image: /assets/squiggle.png
