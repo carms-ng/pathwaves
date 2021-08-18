@@ -14,14 +14,14 @@ sectionSecond:
   img:
     image: /assets/squiggle.png
     alt: squiggle
-  description: "'est en cette période de profonds changements et de réflexion que
+  description: C'est en cette période de profonds changements et de réflexion que
     nous annonçons le lancement de l'incubateur de littératie numérique
     Pathwaves, une initiative unique destinée aux musiciens canadiens et qui
     contribuera à façonner l'avenir de l'industrie musicale. En donnant à divers
     musiciens les moyens d'exploiter les possibilités offertes par les outils
     numériques et en leur permettant de se faire entendre en tant que chefs de
     file, nous voulons faciliter les carrières musicales et les rendre plus
-    équitables."
+    équitables.
 sectionSurvey:
   url: /survey
   header: Le Sondage Pathwaves
