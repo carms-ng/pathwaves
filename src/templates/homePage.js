@@ -29,8 +29,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
           <GatsbyImage
             image={sectionIntro.img.image.childImageSharp.gatsbyImageData}
             alt={sectionIntro.img.alt}
-            imgStyle={{ height: `auto` }}
-            style={{ maxWidth: `33vw` }}
+            imgStyle={{ objectFit: 'contain' }}
           />
           <pre>{sectionIntro.pre}</pre>
           <h1>{sectionIntro.header}</h1>
@@ -41,6 +40,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
                 <GatsbyImage
                   image={collab.logo.image.childImageSharp.gatsbyImageData}
                   alt={collab.logo.alt}
+                  imgStyle={{ objectFit: 'contain' }}
                 />
               </a>
             ))}
@@ -51,6 +51,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
           <GatsbyImage
             image={sectionSecond.img.image.childImageSharp.gatsbyImageData}
             alt={sectionSecond.img.alt}
+            imgStyle={{ objectFit: 'contain' }}
           />
           <p>{sectionSecond.description}</p>
         </SecondStyles>
@@ -125,7 +126,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    width: 120
+                    width: 150
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )
@@ -141,7 +142,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    width: 160
+                    width: 150
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )
@@ -225,7 +226,7 @@ const IntroStyles = styled.section`
     margin: 1rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 1.25rem;
   }
   @media (min-width: 640px) {
     justify-content: center;
@@ -234,6 +235,7 @@ const IntroStyles = styled.section`
     #logo-garden {
       margin-top: 4rem;
       grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
     }
   }
   /* .horizontal-scroll-wrapper {
