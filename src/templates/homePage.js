@@ -29,8 +29,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
           <GatsbyImage
             image={sectionIntro.img.image.childImageSharp.gatsbyImageData}
             alt={sectionIntro.img.alt}
-            imgStyle={{ height: `auto` }}
-            style={{ maxWidth: `33vw` }}
+            imgStyle={{ objectFit: 'contain' }}
           />
           <pre>{sectionIntro.pre}</pre>
           <h1>{sectionIntro.header}</h1>
@@ -41,6 +40,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
                 <GatsbyImage
                   image={collab.logo.image.childImageSharp.gatsbyImageData}
                   alt={collab.logo.alt}
+                  imgStyle={{ objectFit: 'contain' }}
                 />
               </a>
             ))}
@@ -51,6 +51,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
           <GatsbyImage
             image={sectionSecond.img.image.childImageSharp.gatsbyImageData}
             alt={sectionSecond.img.alt}
+            imgStyle={{ objectFit: 'contain' }}
           />
           <p>{sectionSecond.description}</p>
         </SecondStyles>
@@ -125,7 +126,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    width: 120
+                    width: 150
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )
@@ -141,7 +142,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData (
-                    width: 160
+                    width: 150
                     placeholder: BLURRED
                     layout: CONSTRAINED
                   )
@@ -208,6 +209,15 @@ const LandingStyles = styled.div`
     > p, h6 {
       max-width: var(--maxWidthText);
     }
+    h6 {
+      font-size: 1.25rem;
+    }
+    @media (min-width: 640px) {
+      h6 {
+        font-size: 1.5rem;
+      }
+
+    }
   }
 `
 const IntroStyles = styled.section`
@@ -225,7 +235,7 @@ const IntroStyles = styled.section`
     margin: 1rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 1.25rem;
   }
   @media (min-width: 640px) {
     justify-content: center;
@@ -234,6 +244,7 @@ const IntroStyles = styled.section`
     #logo-garden {
       margin-top: 4rem;
       grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
     }
   }
   /* .horizontal-scroll-wrapper {
@@ -266,9 +277,10 @@ const SecondStyles = styled.section`
 const SurveyStyles = styled.section`
   background: var(--linearGradient);
   display: grid;
-  align-content: center;
+  align-items: flex-start;
   justify-items: center;
   grid-gap: 12px;
+  overflow-y: auto;
   p {
     padding: 6px 0;
   }
@@ -276,7 +288,10 @@ const SurveyStyles = styled.section`
     width: 100%;
   }
   .btn {
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  @media (min-width: 440px) {
+    align-content: center;
   }
   @media (min-width: 1024px) {
     grid-gap: 30px;
@@ -291,15 +306,18 @@ const SurveyStyles = styled.section`
 `
 const SubscribeStyles = styled.section`
   display: grid;
-  align-content: center;
+  align-items: flex-start;
   justify-items: center;
   grid-gap: 1rem;
+  overflow-y: auto;
 
   form {
     width: 100%;
     display: grid;
     grid-template-columns: 3fr 1fr;
     margin-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
   }
   input {
     border-radius: var(--br) 0 0 var(--br);
@@ -310,6 +328,9 @@ const SubscribeStyles = styled.section`
     border-radius: 0 var(--br) var(--br) 0;
     background: var(--black);
     color: var(--white);
+  }
+  @media (min-width: 440px) {
+    align-content: center;
   }
   @media (min-width: 1024px) {
     grid-gap: 1.5rem;
