@@ -31,7 +31,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
           {`
             window.interdeal = {
               "sitekey": "6050992760fa0c0f9679c316e5eff8ab",
-              "Position": "Left",
+              "Position": "Right",
               "Menulang": "EN-CA",
               "domains": {
                 "js": "https://cdn.equalweb.com/",
@@ -48,7 +48,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
                 ],
                 "icon": {
                   "type": 11,
-                  "shape": "semicircle",
+                  "shape": "circle",
                   "outline": false
                 }
               }
