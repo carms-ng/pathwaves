@@ -1,6 +1,6 @@
 ---
 templateKey: surveyPage.js
-title: Consentement à le sondage d'analyse du paysage musical canadien
+title: Consentement au sondage d'analyse du paysage musical canadien
 policy: >-
   Enquêteur principal :
 
@@ -33,8 +33,6 @@ policy: >-
   * Prototyper de nouveaux modèles, plus équitables dans la création, la production et la distribution.
 
 
-
-
   ### VOTRE IMPLICATION
 
 
@@ -59,7 +57,7 @@ policy: >-
   ### CONFIDENTIALITÉ
 
 
-  Cette sondage est anonyme. Nous ne recueillerons aucun identifiant personnel.
+  Ce sondage est anonyme. Nous ne recueillerons aucun identifiant personnel.
 
   Les données recueillies au cours de cette étude seront stockées sur des serveurs sécurisés de l'Université OCAD.
 
@@ -114,8 +112,6 @@ policy: >-
   416 977 6000 x4368
 
   research@ocadu.ca
-
-
 
 
   ### ACCORD
