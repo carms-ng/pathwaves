@@ -2,7 +2,7 @@
 templateKey: surveyPage.js
 title: Consentement au sondage d'analyse du paysage musical canadien
 policy: >-
-  Enquêteur principal :
+  Enquêteuse principale :
 
   Suzanne Stein
 
