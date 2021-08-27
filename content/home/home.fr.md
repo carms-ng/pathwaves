@@ -40,7 +40,7 @@ sectionSurvey:
     contribuer. Ce sondage est anonyme et la participation prendra environ 20
     minutes de votre temps.
   preLinkText: " Le sondage sera disponible ici du 9 août au 24 septembre."
-  linkText: " ACCÈS LE SONDAGE"
+  linkText: " ACCÈS AU SONDAGE"
 sectionSubscribe:
   header: Le Programme Pathwaves
   description: En septembre, les candidatures seront ouvertes pour l'incubateur de
