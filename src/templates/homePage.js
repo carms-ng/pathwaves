@@ -24,7 +24,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} >
-      <Seo title={title} lang={pageContext.lang} />
+      <Seo title={`${title}`} lang={pageContext.lang} />
       {/* Equal Web Widget */}
       <Helmet defer={true} >
         <script>
