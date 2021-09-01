@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import ogImage from "../../static/assets/og-pathwaves.png"
 
 function Seo({ description, lang, meta, title }) {
   // query site data from CMS
@@ -55,6 +56,11 @@ function Seo({ description, lang, meta, title }) {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          // TODO: Add Site URL to site setting in CRM
+          content: `https://www.pathwaves.ca/${ogImage}`,
         },
         {
           property: `og:type`,
