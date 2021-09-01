@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "pathwaves",
+    siteUrl: "https://www.pathwaves.ca",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",

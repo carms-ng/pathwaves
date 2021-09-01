@@ -6,7 +6,7 @@ import ogImage from "../../static/assets/og-pathwaves.png"
 
 function Seo({ description, lang, meta, title }) {
   // query site data from CMS
-  const { siteSetting } = useStaticQuery(
+  const { site, siteSetting } = useStaticQuery(
     graphql`
       query {
         siteSetting: allFile(filter: {relativeDirectory: {eq: "siteSetting"}}) {
@@ -18,6 +18,11 @@ function Seo({ description, lang, meta, title }) {
               }
             }
             base
+          }
+        }
+        site {
+          siteMetadata {
+            siteUrl
           }
         }
       }
@@ -59,8 +64,11 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          // TODO: Add Site URL to site setting in CRM
-          content: `https://www.pathwaves.ca/${ogImage}`,
+          content: `${site.siteMetadata.siteUrl}${ogImage}`,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
         },
         {
           property: `og:type`,
