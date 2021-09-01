@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import ogImage from "../../static/assets/og-pathwaves.png"
+import ogImage from "../assets/images/og-pathwaves.png"
 
 function Seo({ description, lang, meta, title }) {
   // query site data from CMS
@@ -39,8 +39,9 @@ function Seo({ description, lang, meta, title }) {
     })
   }).find(elem => lang === elem.locale).frontmatter
 
+
   const metaDescription = description || siteInfo.description
-  const defaultTitle = siteInfo?.title
+  const defaultTitle = siteInfo.title
 
   return (
     <Helmet
@@ -48,7 +49,7 @@ function Seo({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={title ? `${title} | ${defaultTitle}` : null}
       meta={[
         {
           name: `description`,
@@ -56,7 +57,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: defaultTitle,
         },
         {
           property: `og:description`,
@@ -84,7 +85,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: defaultTitle,
         },
         {
           name: `twitter:description`,
