@@ -2,10 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import ogImage from "../../static/assets/og-pathwaves.png"
 
 function Seo({ description, lang, meta, title }) {
   // query site data from CMS
-  const { siteSetting } = useStaticQuery(
+  const { site, siteSetting } = useStaticQuery(
     graphql`
       query {
         siteSetting: allFile(filter: {relativeDirectory: {eq: "siteSetting"}}) {
@@ -17,6 +18,11 @@ function Seo({ description, lang, meta, title }) {
               }
             }
             base
+          }
+        }
+        site {
+          siteMetadata {
+            siteUrl
           }
         }
       }
@@ -55,6 +61,14 @@ function Seo({ description, lang, meta, title }) {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: `${site.siteMetadata.siteUrl}${ogImage}`,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
         },
         {
           property: `og:type`,
