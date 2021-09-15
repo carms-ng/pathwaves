@@ -6,7 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import ReactMarkdown from 'react-markdown'
 
 import Layout from "../components/Layout"
-import { LandingStyles, IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles } from "../styles/HomePageStyles"
+import { IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles } from "../styles/HomePageStyles"
 
 import LocalizedLink from "../components/LocalizedLink"
 import Seo from "../components/Seo"
@@ -34,142 +34,140 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
       <Helmet defer={true} >
         {/* <script>{EqualWeb}</script> */}
       </Helmet >
-      <LandingStyles>
 
-        <IntroStyles>
-          <GatsbyImage
-            image={sectionIntro.img.image.childImageSharp.gatsbyImageData}
-            alt={sectionIntro.img.alt}
-            imgStyle={{ objectFit: 'contain' }}
-          />
-          <h1>{sectionIntro.header}</h1>
-          <p>{sectionIntro.description}</p>
+      <IntroStyles>
+        <GatsbyImage
+          image={sectionIntro?.img?.image.childImageSharp.gatsbyImageData}
+          alt={sectionIntro?.img?.alt}
+          imgStyle={{ objectFit: 'contain' }}
+        />
+        <h1>{sectionIntro?.header}</h1>
+        <p>{sectionIntro?.description}</p>
+        <LocalizedLink
+          className="btn"
+          to={sectionIntro?.button?.url}
+          lang={pageContext.lang}
+          text={sectionIntro?.button?.linkText}
+        />
+        <div id="logo-garden">
+          {collabs?.map((collab) => (
+            <a key={collab.name} href={collab.url} target="_blank" rel="noreferrer">
+              <GatsbyImage
+                image={collab.logo.image.childImageSharp.gatsbyImageData}
+                alt={collab.logo.alt}
+                imgStyle={{ objectFit: 'contain' }}
+              />
+            </a>
+          ))}
+        </div>
+      </IntroStyles>
+
+      <SecondStyles>
+        <GatsbyImage
+          image={sectionSecond?.img?.image.childImageSharp.gatsbyImageData}
+          alt={sectionSecond?.img?.alt}
+          imgStyle={{ objectFit: 'contain', width: 'unset' }}
+          className="bg-image__left"
+        />
+        <div className="text__right">
+          <ReactMarkdown>{sectionSecond?.description}</ReactMarkdown>
+        </div>
+      </SecondStyles>
+
+      <ThirdStyles>
+        <ReactMarkdown>{sectionThird?.description}</ReactMarkdown>
+      </ThirdStyles>
+
+      <ForthStyles>
+        <div className="grid-wrapper">
+          <div>
+            <ReactMarkdown>{sectionForth?.leftComponent?.description}</ReactMarkdown>
+          </div>
           <LocalizedLink
             className="btn"
-            to={sectionIntro.button.url}
+            to={sectionForth?.leftComponent?.button?.url}
             lang={pageContext.lang}
-            text={sectionIntro.button.linkText}
+            text={sectionForth?.leftComponent?.button?.linkText}
           />
-          <div id="logo-garden">
-            {collabs.map((collab) => (
-              <a key={collab.name} href={collab.url} target="_blank" rel="noreferrer">
-                <GatsbyImage
-                  image={collab.logo.image.childImageSharp.gatsbyImageData}
-                  alt={collab.logo.alt}
-                  imgStyle={{ objectFit: 'contain' }}
-                />
-              </a>
+          <div>
+            <ReactMarkdown>{sectionForth?.rightComponent?.description}</ReactMarkdown>
+          </div>
+          <LocalizedLink
+            className="btn"
+            to={sectionForth?.rightComponent?.button?.url}
+            lang={pageContext.lang}
+            text={sectionForth?.rightComponent?.button?.linkText}
+          />
+        </div>
+        <GatsbyImage
+          image={sectionForth?.leftComponent?.img?.image.childImageSharp.gatsbyImageData}
+          alt={sectionForth?.leftComponent?.img?.alt}
+          imgStyle={{ objectFit: 'contain', width: 'unset' }}
+          className="bg-image__bl"
+        />
+        <GatsbyImage
+          image={sectionForth?.rightComponent?.img?.image.childImageSharp.gatsbyImageData}
+          alt={sectionForth?.rightComponent?.img?.alt}
+          imgStyle={{ objectFit: 'contain', width: 'unset' }}
+          className="bg-image__tr"
+        />
+      </ForthStyles>
+
+      <FifthStyles>
+        <div className="text__left">
+          <h2>{sectionFifth?.header}</h2>
+          <div id="phases">
+            {sectionFifth?.phases?.map(phase => (
+              <div key={phase.header}>
+                <h3>{phase.header}</h3>
+                <small>{phase.date}</small>
+                <p>{phase.description}</p>
+              </div>
             ))}
           </div>
-        </IntroStyles>
+          <p>{sectionFifth?.endNote}</p>
+        </div>
+        <GatsbyImage
+          image={sectionFifth?.img?.image.childImageSharp.gatsbyImageData}
+          alt={sectionFifth?.img?.alt}
+          imgStyle={{ objectFit: 'contain', width: 'unset' }}
+          className="bg-image__right"
+        />
+      </FifthStyles>
 
-        <SecondStyles>
-          <GatsbyImage
-            image={sectionSecond.img.image.childImageSharp.gatsbyImageData}
-            alt={sectionSecond.img.alt}
-            imgStyle={{ objectFit: 'contain', width: 'unset' }}
-            className="bg-image__left"
-          />
-          <div className="text__right">
-            <ReactMarkdown>{sectionSecond.description}</ReactMarkdown>
-          </div>
-        </SecondStyles>
+      <SixthStyles>
+        <ReactMarkdown>{sectionSixth?.description}</ReactMarkdown>
+        <LocalizedLink
+          className="btn"
+          to={sectionSixth?.button?.url}
+          lang={pageContext.lang}
+          text={sectionSixth?.button?.linkText}
+        />
+      </SixthStyles>
 
-        <ThirdStyles>
-          <ReactMarkdown>{sectionThird.description}</ReactMarkdown>
-        </ThirdStyles>
-
-        <ForthStyles>
-          <div className="grid-wrapper">
-            <div>
-              <ReactMarkdown>{sectionForth.leftComponent.description}</ReactMarkdown>
-            </div>
-            <LocalizedLink
-              className="btn"
-              to={sectionForth.leftComponent.button.url}
-              lang={pageContext.lang}
-              text={sectionForth.leftComponent.button.linkText}
-            />
-            <div>
-              <ReactMarkdown>{sectionForth.rightComponent.description}</ReactMarkdown>
-            </div>
-            <LocalizedLink
-              className="btn"
-              to={sectionForth.rightComponent.button.url}
-              lang={pageContext.lang}
-              text={sectionForth.rightComponent.button.linkText}
-            />
-          </div>
-          <GatsbyImage
-            image={sectionForth.leftComponent.img.image.childImageSharp.gatsbyImageData}
-            alt={sectionForth.leftComponent.img.alt}
-            imgStyle={{ objectFit: 'contain', width: 'unset' }}
-            className="bg-image__bl"
-          />
-          <GatsbyImage
-            image={sectionForth.rightComponent.img.image.childImageSharp.gatsbyImageData}
-            alt={sectionForth.rightComponent.img.alt}
-            imgStyle={{ objectFit: 'contain', width: 'unset' }}
-            className="bg-image__tr"
-          />
-        </ForthStyles>
-
-        <FifthStyles>
-          <div className="text__left">
-            <h2>{sectionFifth.header}</h2>
-            <div id="phases">
-              {sectionFifth.phases.map(phase => (
-                <div key={phase.header}>
-                  <h3>{phase.header}</h3>
-                  <small>{phase.date}</small>
-                  <p>{phase.description}</p>
-                </div>
-              ))}
-            </div>
-            <p>{sectionFifth.endNote}</p>
-          </div>
-          <GatsbyImage
-            image={sectionFifth.img.image.childImageSharp.gatsbyImageData}
-            alt={sectionFifth.img.alt}
-            imgStyle={{ objectFit: 'contain', width: 'unset' }}
-            className="bg-image__right"
-          />
-        </FifthStyles>
-
-        <SixthStyles>
-          <ReactMarkdown>{sectionSixth.description}</ReactMarkdown>
-          <LocalizedLink
-            className="btn"
-            to={sectionSixth.button.url}
-            lang={pageContext.lang}
-            text={sectionSixth.button.linkText}
-          />
-        </SixthStyles>
-
-        {/* Section About*/}
-        <AboutStyles>
-          <p>{sectionAbout.description}</p>
-          <div className="cards-2b2">
-            {collabs.map((collab) => {
-              return (
-                <div key={collab.name}>
-                  <a href={collab.url}>
-                    <GatsbyImage
-                      image={collab.logo.image.childImageSharp.gatsbyImageData}
-                      alt={collab.logo.alt} />
-                  </a>
-                  <p>{collab.description}</p>
-                </div>
-              )
-            })}
-          </div>
-          <p>
-            {sectionAbout.contactText}
-            <br />
-            <a href={"mailto:" + sectionAbout.contactEmail}>{sectionAbout.contactEmail}</a>
-          </p>
-        </AboutStyles>
-      </LandingStyles>
+      {/* Section About*/}
+      <AboutStyles>
+        <p>{sectionAbout.description}</p>
+        <div className="cards-2b2">
+          {collabs.map((collab) => {
+            return (
+              <div key={collab.name}>
+                <a href={collab.url}>
+                  <GatsbyImage
+                    image={collab.logo.image.childImageSharp.gatsbyImageData}
+                    alt={collab.logo.alt} />
+                </a>
+                <p>{collab.description}</p>
+              </div>
+            )
+          })}
+        </div>
+        <p>
+          {sectionAbout.contactText}
+          <br />
+          <a href={"mailto:" + sectionAbout.contactEmail}>{sectionAbout.contactEmail}</a>
+        </p>
+      </AboutStyles>
     </Layout>
   )
 }

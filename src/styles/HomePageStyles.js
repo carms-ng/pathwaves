@@ -1,7 +1,5 @@
 import styled from "styled-components"
 
-// section styles
-const LandingStyles = styled.div``
 const IntroStyles = styled.section`
   padding: var(--padSm);
   background: radial-gradient(94.49% 94.49% at 50% 50%, #C1D3EC 26.31%, rgba(237, 197, 221, 0.8) 52.6%, #FBD77E 96.35%, rgba(193, 211, 236, 0.5) 100%);
@@ -275,4 +273,4 @@ const AboutStyles = styled.section`
 `
 
 
-export { LandingStyles, IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles }
+export { IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles }
