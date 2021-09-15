@@ -12,7 +12,7 @@ sectionIntro:
     carrière durable et équitable.
 sectionSecond:
   img:
-    image: /assets/squiggle.png
+    image: /assets/vector.png
     alt: squiggle
   description: C'est en cette période de profonds changements et de réflexion que
     nous annonçons le lancement de l'incubateur de littératie numérique
@@ -22,6 +22,9 @@ sectionSecond:
     numériques et en leur permettant de se faire entendre en tant que chefs de
     file, nous voulons faciliter les carrières musicales et les rendre plus
     équitables.
+sectionFifth:
+  img:
+    image: /assets/vector_reverse.png
 sectionSurvey:
   url: /survey
   header: Le Sondage Pathwaves

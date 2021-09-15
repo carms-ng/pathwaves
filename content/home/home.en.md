@@ -9,16 +9,92 @@ sectionIntro:
   header: The Pathwaves Digital Literacy Incubator
   description: An initiative aimed at empowering Canadian musicians to make
     lifelong careers in music more possible and equitable.
+  button:
+    linkText: Apply Now
+    url: /apply
 sectionSecond:
   img:
-    image: /assets/squiggle.png
-    alt: Squiggle
+    image: /assets/vector.png
+    alt: waves
+    descriptions:
+      - description: An initiative aimed at empowering Canadian musicians to make
+          lifelong careers in music more possible and equitable.  An initiative
+          aimed at empowering Canadian musicians to make lifelong careers in
+          music more possible and equitable.
+        colorHighlight: "#f5ce7a"
+      - description: An initiative aimed at empowering Canadian musicians to make
+          lifelong careers in music more possible and equitable.  An initiative
+          aimed at empowering Canadian musicians to make lifelong careers in
+          music more possible and equitable.
+        colorHighlight: rgba(123, 171, 245, 0.4)
+      - description: An initiative aimed at empowering Canadian musicians to make
+          lifelong careers in music more possible and equitable.  An initiative
+          aimed at empowering Canadian musicians to make lifelong careers in
+          music more possible and equitable.
+        colorHighlight: rgba(237, 197, 221, 0.8)
   description: "It is in this time of profound change and reflection that we are
     announcing the Pathwaves Digital Literacy Incubator, a groundbreaking
     initiative for Canadian musicians that will help shape the future of the
     music industry. By empowering a diversity of musicians to harness the
     opportunities of the digital era, and elevating their voices as leaders, we
     aim to make lifelong careers in music more possible and equitable. "
+sectionThird:
+  description: An initiative aimed at empowering Canadian musicians to make
+    `<span>lifelong careers</span>` in music more possible and equitable.  An
+    initiative aimed at empowering Canadian musicians to make lifelong careers
+    in music more possible and equitable.
+sectionForth:
+  leftComponent:
+    description: An initiative aimed at empowering Canadian musicians to make
+      lifelong careers in music more possible and equitable.  An initiative
+      aimed at empowering Canadian musicians to make lifelong careers in music
+      more possible and equitable.
+    colorHighlight: "#f5ce7a"
+    button:
+      linkText: Apply Now
+      url: /apply
+  rightComponent:
+    description: An initiative aimed at empowering Canadian musicians to make
+      lifelong careers in music more possible and equitable.  An initiative
+      aimed at empowering Canadian musicians to make lifelong careers in music
+      more possible and equitable.
+    colorHighlight: rgba(123, 171, 245, 0.4)
+    button:
+      linkText: Access Survey
+      url: /survey
+sectionFifth:
+  header: The Pathwaves Incubator Program
+  phases:
+    - header: The KickOff Conference
+      date: January 2022
+      description: An initiative aimed at empowering Canadian musicians to make
+        lifelong careers in music more possible and equitable.  An initiative
+        aimed at empowering Canadian musicians to make lifelong careers in music
+        more possible and equitable.
+    - header: The Learning Engine
+      date: February - March 2022
+      description: An initiative aimed at empowering Canadian musicians to make
+        lifelong careers in music more possible and equitable.  An initiative
+        aimed at empowering Canadian musicians to make lifelong careers in music
+        more possible and equitable.
+    - header: The Learning Exchange
+      date: March 2022
+      description: An initiative aimed at empowering Canadian musicians to make
+        lifelong careers in music more possible and equitable.  An initiative
+        aimed at empowering Canadian musicians to make lifelong careers in music
+        more possible and equitable.
+  endNote: An initiative aimed at empowering Canadian musicians to make lifelong
+    careers in music more possible and equitable.  An initiative aimed at
+    empowering Canadian musicians to make lifelong careers in music more
+    possible and equitable.
+  img:
+    image: /assets/vector_reverse.png
+    alt: waves reversed
+sectionSixth:
+  description: An initiative aimed at empowering Canadian musicians to make
+    lifelong careers in music more possible and equitable.  An initiative aimed
+    at empowering Canadian musicians to make lifelong careers in music more
+    possible and equitable.
 sectionSurvey:
   header: The Pathwaves Survey
   descriptionLeft: The initiative begins with the Pathwaves Survey, a nation-wide
@@ -105,4 +181,5 @@ sectionAbout:
         production of works in, the arts.
   contactText: "For more information, contact: Lesya Nakoneczny, Project Manager: "
   contactEmail: lesya@envisionmanagement.com
+  header: About
 ---
