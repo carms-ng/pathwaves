@@ -36,6 +36,9 @@ collections:
     i18n: true
     fields:
       - {label: Template Key, name: templateKey, widget: hidden, default: "homePage.js", i18n: duplicate}
+      # - label: Test markdown
+      #   name: test
+      #   widget: markdown
       - {label: Page Title, name: title, widget: string, i18n: true}
       - label: Intro Section
         name: sectionIntro
@@ -66,20 +69,14 @@ collections:
         i18n: true
         collapsed: true
         fields:
-          - label: Descriptions
-            name: descriptions
-            widget: list
-            summary: '{{fields.description}} - {{fields.colorHighlight}}'
-            fields:
-              - label: Description
-                name: description
-                widget: markdown
-                buttons: [code, bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
-                editor_components: []
-                modes: [rich_text]
-                minimal: true
-                i18n: true
-              - { label: Highlight Color, name: colorHighlight, widget: color, enableAlpha: true, allowInput: true }
+          - label: Description
+            name: description
+            widget: markdown
+            buttons: [code, bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+            editor_components: []
+            modes: [rich_text]
+            minimal: true
+            i18n: true
           - label: Image
             name: img
             widget: object
@@ -123,7 +120,6 @@ collections:
               modes: [rich_text]
               minimal: true
               i18n: true
-            - { label: Highlight Color, name: colorHighlight, widget: color, enableAlpha: true, allowInput: true }
             - label: Button
               name: button
               widget: object
@@ -132,6 +128,14 @@ collections:
               fields:
                 - {label: Link text, name: linkText, widget: string, i18n: true}
                 - {label: URL, name: url, widget: string, i18n: true}
+            - label: Image
+              name: img
+              widget: object
+              i18n: true
+              fields:
+                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
           - label: Right Component
             name: rightComponent
             widget: object
@@ -146,7 +150,6 @@ collections:
               modes: [rich_text]
               minimal: true
               i18n: true
-            - { label: Highlight Color, name: colorHighlight, widget: color, enableAlpha: true, allowInput: true }
             - label: Button
               name: button
               widget: object
@@ -155,6 +158,13 @@ collections:
               fields:
                 - {label: Link text, name: linkText, widget: string, i18n: true}
                 - {label: URL, name: url, widget: string, i18n: true}
+            - label: Image
+              name: img
+              widget: object
+              i18n: true
+              fields:
+                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
 
       - label: Fifth Section
         name: sectionFifth
@@ -194,35 +204,14 @@ collections:
             modes: [rich_text]
             minimal: true
             i18n: true
-
-      - label: Survey Section
-        name: sectionSurvey
-        widget: object
-        i18n: true
-        collapsed: true
-        fields:
-          - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Description Left, name: descriptionLeft, widget: text, i18n: true}
-          - {label: Description Right, name: descriptionRight, widget: text, i18n: true}
-          - {label: Pre Link Text, name: preLinkText, widget: string, i18n: true}
-          - {label: Link text, name: linkText, widget: string, i18n: true}
-          - {label: URL, name: url, widget: string, i18n: true}
-      - label: Subscribe Section
-        name: sectionSubscribe
-        widget: object
-        i18n: true
-        collapsed: true
-        fields:
-          - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Description, name: description, widget: text, i18n: true}
-          - label: Form
-            name: form
+          - label: Button
+            name: button
             widget: object
             i18n: true
+            collapsed: true
             fields:
-              - {label: Pre Input Text, name: preInputText, widget: string, i18n: true}
-              - {label: Input Placeholder, name: placeholder, widget: string, i18n: true}
-              - {label: Button Text, name: buttonText, widget: string, i18n: true}
+              - {label: Link text, name: linkText, widget: string, i18n: true}
+              - {label: URL, name: url, widget: string, i18n: true}
 
       - label: About Section
         name: sectionAbout
@@ -230,7 +219,6 @@ collections:
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
           - {label: Description, name: description, widget: text, i18n: true}
           - label: Collaborators
             name: collaborators
