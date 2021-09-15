@@ -6,7 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import ReactMarkdown from 'react-markdown'
 
 import Layout from "../components/Layout"
-import { LandingStyles, IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles, HightlightedStyles } from "../styles/HomePageStyles"
+import { LandingStyles, IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles } from "../styles/HomePageStyles"
 
 import LocalizedLink from "../components/LocalizedLink"
 import Seo from "../components/Seo"
@@ -35,7 +35,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
         {/* <script>{EqualWeb}</script> */}
       </Helmet >
       <LandingStyles>
-        {/* Intro Section */}
+
         <IntroStyles>
           <GatsbyImage
             image={sectionIntro.img.image.childImageSharp.gatsbyImageData}
@@ -52,7 +52,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
           />
           <div id="logo-garden">
             {collabs.map((collab) => (
-              <a key={collab.name} href={collab.url}>
+              <a key={collab.name} href={collab.url} target="_blank" rel="noreferrer">
                 <GatsbyImage
                   image={collab.logo.image.childImageSharp.gatsbyImageData}
                   alt={collab.logo.alt}
@@ -63,18 +63,16 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
           </div>
         </IntroStyles>
 
-        {/* Second Section */}
         <SecondStyles>
           <GatsbyImage
             image={sectionSecond.img.image.childImageSharp.gatsbyImageData}
             alt={sectionSecond.img.alt}
-            imgStyle={{ objectFit: 'contain' }}
+            imgStyle={{ objectFit: 'contain', width: 'unset' }}
+            className="bg-image__left"
           />
-          {sectionSecond.descriptions.map(({ description, colorHighlight }) => (
-            <HightlightedStyles colorHighlight={colorHighlight}>
-              <ReactMarkdown>{description}</ReactMarkdown>
-            </HightlightedStyles>
-          ))}
+          <div className="text__right">
+            <ReactMarkdown>{sectionSecond.description}</ReactMarkdown>
+          </div>
         </SecondStyles>
 
         <ThirdStyles>
@@ -82,21 +80,19 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
         </ThirdStyles>
 
         <ForthStyles>
-          <div>
-            <HightlightedStyles colorHighlight={sectionForth.leftComponent.colorHighlight}>
+          <div className="grid-wrapper">
+            <div>
               <ReactMarkdown>{sectionForth.leftComponent.description}</ReactMarkdown>
-            </HightlightedStyles>
+            </div>
             <LocalizedLink
               className="btn"
               to={sectionForth.leftComponent.button.url}
               lang={pageContext.lang}
               text={sectionForth.leftComponent.button.linkText}
             />
-          </div>
-          <div>
-            <HightlightedStyles colorHighlight={sectionForth.rightComponent.colorHighlight}>
+            <div>
               <ReactMarkdown>{sectionForth.rightComponent.description}</ReactMarkdown>
-            </HightlightedStyles>
+            </div>
             <LocalizedLink
               className="btn"
               to={sectionForth.rightComponent.button.url}
@@ -104,14 +100,26 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
               text={sectionForth.rightComponent.button.linkText}
             />
           </div>
+          <GatsbyImage
+            image={sectionForth.leftComponent.img.image.childImageSharp.gatsbyImageData}
+            alt={sectionForth.leftComponent.img.alt}
+            imgStyle={{ objectFit: 'contain', width: 'unset' }}
+            className="bg-image__bl"
+          />
+          <GatsbyImage
+            image={sectionForth.rightComponent.img.image.childImageSharp.gatsbyImageData}
+            alt={sectionForth.rightComponent.img.alt}
+            imgStyle={{ objectFit: 'contain', width: 'unset' }}
+            className="bg-image__tr"
+          />
         </ForthStyles>
 
         <FifthStyles>
-          <div>
+          <div className="text__left">
             <h2>{sectionFifth.header}</h2>
-            <div>
+            <div id="phases">
               {sectionFifth.phases.map(phase => (
-                <div>
+                <div key={phase.header}>
                   <h3>{phase.header}</h3>
                   <small>{phase.date}</small>
                   <p>{phase.description}</p>
@@ -123,18 +131,24 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
           <GatsbyImage
             image={sectionFifth.img.image.childImageSharp.gatsbyImageData}
             alt={sectionFifth.img.alt}
-            imgStyle={{ objectFit: 'contain' }}
+            imgStyle={{ objectFit: 'contain', width: 'unset' }}
+            className="bg-image__right"
           />
         </FifthStyles>
 
         <SixthStyles>
           <ReactMarkdown>{sectionSixth.description}</ReactMarkdown>
+          <LocalizedLink
+            className="btn"
+            to={sectionSixth.button.url}
+            lang={pageContext.lang}
+            text={sectionSixth.button.linkText}
+          />
         </SixthStyles>
 
         {/* Section About*/}
         <AboutStyles>
-          <h2>{sectionAbout.header}</h2>
-          <h6>{sectionAbout.description}</h6>
+          <p>{sectionAbout.description}</p>
           <div className="cards-2b2">
             {collabs.map((collab) => {
               return (
@@ -149,11 +163,11 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
               )
             })}
           </div>
-          <small>
+          <p>
             {sectionAbout.contactText}
             <br />
             <a href={"mailto:" + sectionAbout.contactEmail}>{sectionAbout.contactEmail}</a>
-          </small>
+          </p>
         </AboutStyles>
       </LandingStyles>
     </Layout>
@@ -183,14 +197,15 @@ export const query = graphql`
             }
           }
           sectionSecond {
-            descriptions {
-              colorHighlight
-              description
-            }
+            description
             img {
               image {
                 childImageSharp {
-                  gatsbyImageData(width: 150, placeholder: BLURRED, layout: CONSTRAINED)
+                  gatsbyImageData(
+                    width: 500,
+                    placeholder: TRACED_SVG,
+                    layout: CONSTRAINED,
+                  )
                 }
               }
               alt
@@ -213,7 +228,6 @@ export const query = graphql`
             }
             contactText
             contactEmail
-            header
           }
           sectionThird {
             description
@@ -221,18 +235,40 @@ export const query = graphql`
           sectionForth {
             leftComponent {
               description
-              colorHighlight
               button {
                 linkText
                 url
               }
+              img {
+                image {
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 500,
+                      placeholder: TRACED_SVG,
+                      layout: CONSTRAINED,
+                    )
+                  }
+                }
+                alt
+              }
             }
             rightComponent {
               description
-              colorHighlight
               button {
                 linkText
                 url
+              }
+              img {
+                image {
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 500,
+                      placeholder: TRACED_SVG,
+                      layout: CONSTRAINED,
+                    )
+                  }
+                }
+                alt
               }
             }
           }
@@ -247,7 +283,11 @@ export const query = graphql`
             img {
               image {
                 childImageSharp {
-                  gatsbyImageData
+                  gatsbyImageData(
+                    width: 450,
+                    placeholder: TRACED_SVG,
+                    layout: CONSTRAINED,
+                  )
                 }
               }
               alt
@@ -255,6 +295,10 @@ export const query = graphql`
           }
           sectionSixth {
             description
+            button {
+              linkText
+              url
+            }
           }
         }
       }
