@@ -66,6 +66,20 @@ collections:
         i18n: true
         collapsed: true
         fields:
+          - label: Descriptions
+            name: descriptions
+            widget: list
+            summary: '{{fields.description}} - {{fields.colorHighlight}}'
+            fields:
+              - label: Description
+                name: description
+                widget: markdown
+                buttons: [code, bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+                editor_components: []
+                modes: [rich_text]
+                minimal: true
+                i18n: true
+              - { label: Highlight Color, name: colorHighlight, widget: color, enableAlpha: true, allowInput: true }
           - label: Image
             name: img
             widget: object
@@ -73,21 +87,6 @@ collections:
             fields:
               - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
               - {label: Image Alt Text, name: alt, widget: string, i18n: true}
-
-              - label: Descriptions
-                name: descriptions
-                widget: list
-                summary: '{{fields.description}} - {{fields.colorHighlight}}'
-                fields:
-                  - label: Description
-                    name: description
-                    widget: markdown
-                    buttons: [code, bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
-                    editor_components: []
-                    modes: [rich_text]
-                    minimal: true
-                    i18n: true
-                  - { label: Highlight Color, name: colorHighlight, widget: color, enableAlpha: true, allowInput: true }
 
       - label: Third Section
         name: sectionThird

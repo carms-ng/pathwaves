@@ -5,7 +5,6 @@ sectionIntro:
   img:
     image: /assets/pathwaves-logo.png
     alt: logo
-  pre: DÉVOILEMENT DE
   header: L’Incubateur De Littératie Numérique Pathwaves
   description: >
     Une initiative visant à aider les musiciens canadiens à développer une
@@ -14,14 +13,6 @@ sectionSecond:
   img:
     image: /assets/vector.png
     alt: squiggle
-  description: C'est en cette période de profonds changements et de réflexion que
-    nous annonçons le lancement de l'incubateur de littératie numérique
-    Pathwaves, une initiative unique destinée aux musiciens canadiens et qui
-    contribuera à façonner l'avenir de l'industrie musicale. En donnant à divers
-    musiciens les moyens d'exploiter les possibilités offertes par les outils
-    numériques et en leur permettant de se faire entendre en tant que chefs de
-    file, nous voulons faciliter les carrières musicales et les rendre plus
-    équitables.
 sectionFifth:
   img:
     image: /assets/vector_reverse.png
