@@ -2,9 +2,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
+// import { EqualWeb } from "../components/EqualWeb"
+import ReactMarkdown from 'react-markdown'
 
 import Layout from "../components/Layout"
-import styled from "styled-components"
+import { LandingStyles, IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles, HightlightedStyles } from "../styles/HomePageStyles"
+
 import LocalizedLink from "../components/LocalizedLink"
 import Seo from "../components/Seo"
 
@@ -15,8 +18,10 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
     title,
     sectionIntro,
     sectionSecond,
-    sectionSubscribe,
-    sectionSurvey,
+    sectionThird,
+    sectionForth,
+    sectionFifth,
+    sectionSixth,
     sectionAbout
   } = page.childMarkdownRemark.frontmatter
 
@@ -27,43 +32,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
       <Seo title={`${title}`} lang={pageContext.lang} />
       {/* Equal Web Widget */}
       <Helmet defer={true} >
-        <script>
-          {`
-            window.interdeal = {
-              "sitekey": "6050992760fa0c0f9679c316e5eff8ab",
-              "Position": "Right",
-              "Menulang": "EN-CA",
-              "domains": {
-                "js": "https://cdn.equalweb.com/",
-                "acc": "https://access.equalweb.com/"
-              },
-              "btnStyle": {
-                "vPosition": [
-                  "80%",
-                  null
-                ],
-                "scale": [
-                  "0.8",
-                  "0.8"
-                ],
-                "icon": {
-                  "type": 11,
-                  "shape": "circle",
-                  "outline": false
-                }
-              }
-            };
-            (function(doc, head, body){
-              const coreCall             = doc.createElement('script');
-              coreCall.src             = 'https://cdn.equalweb.com/core/3.0.3/accessibility.js';
-              coreCall.defer           = true;
-              coreCall.integrity       = 'sha512-7eVrsWwFQXxbr/QB7Zt+wVSQqLq8ulYJHplOZ5rv/8cre3RPseIPBmSERndeTFrpHRX8eDnIzwNckqynpi6IfA==';
-              coreCall.crossOrigin     = 'anonymous';
-              coreCall.setAttribute('data-cfasync', true );
-              body? body.appendChild(coreCall) : head.appendChild(coreCall);
-            })(document, document.head, document.body);
-          `}
-        </script>
+        {/* <script>{EqualWeb}</script> */}
       </Helmet >
       <LandingStyles>
         {/* Intro Section */}
@@ -73,9 +42,14 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
             alt={sectionIntro.img.alt}
             imgStyle={{ objectFit: 'contain' }}
           />
-          <pre>{sectionIntro.pre}</pre>
           <h1>{sectionIntro.header}</h1>
           <p>{sectionIntro.description}</p>
+          <LocalizedLink
+            className="btn"
+            to={sectionIntro.button.url}
+            lang={pageContext.lang}
+            text={sectionIntro.button.linkText}
+          />
           <div id="logo-garden">
             {collabs.map((collab) => (
               <a key={collab.name} href={collab.url}>
@@ -88,6 +62,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
             ))}
           </div>
         </IntroStyles>
+
         {/* Second Section */}
         <SecondStyles>
           <GatsbyImage
@@ -95,41 +70,70 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
             alt={sectionSecond.img.alt}
             imgStyle={{ objectFit: 'contain' }}
           />
-          <p>{sectionSecond.description}</p>
+          {sectionSecond.descriptions.map(({ description, colorHighlight }) => (
+            <HightlightedStyles colorHighlight={colorHighlight}>
+              <ReactMarkdown>{description}</ReactMarkdown>
+            </HightlightedStyles>
+          ))}
         </SecondStyles>
-        {/* Subscribe section */}
-        <SurveyStyles>
-          <h2>{sectionSurvey.header}</h2>
-          <div className="flex-y-md">
-            <p>{sectionSurvey.descriptionLeft}</p>
-            <p>{sectionSurvey.descriptionRight}</p>
-          </div>
+
+        <ThirdStyles>
+          <ReactMarkdown>{sectionThird.description}</ReactMarkdown>
+        </ThirdStyles>
+
+        <ForthStyles>
           <div>
-            <small>{sectionSurvey.preLinkText}</small>
+            <HightlightedStyles colorHighlight={sectionForth.leftComponent.colorHighlight}>
+              <ReactMarkdown>{sectionForth.leftComponent.description}</ReactMarkdown>
+            </HightlightedStyles>
             <LocalizedLink
               className="btn"
-              to={sectionSurvey.url}
+              to={sectionForth.leftComponent.button.url}
               lang={pageContext.lang}
-              text={sectionSurvey.linkText}
+              text={sectionForth.leftComponent.button.linkText}
             />
           </div>
-        </SurveyStyles>
-        {/* Subscribe Section */}
-        <SubscribeStyles>
-          <h2>{sectionSubscribe.header}</h2>
-          <p>{sectionSubscribe.description}</p>
-          <small>{sectionSubscribe.form.preInputText}</small>
-          {/* TODO: Wire Netlify Form */}
-          <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="email" name="email" id="email" placeholder={sectionSubscribe.form.placeholder} />
-            <button type="submit">{sectionSubscribe.form.buttonText}</button>
-            {/* <input type="reset" value="Clear" /> */}
-          </form>
-        </SubscribeStyles>
+          <div>
+            <HightlightedStyles colorHighlight={sectionForth.rightComponent.colorHighlight}>
+              <ReactMarkdown>{sectionForth.rightComponent.description}</ReactMarkdown>
+            </HightlightedStyles>
+            <LocalizedLink
+              className="btn"
+              to={sectionForth.rightComponent.button.url}
+              lang={pageContext.lang}
+              text={sectionForth.rightComponent.button.linkText}
+            />
+          </div>
+        </ForthStyles>
+
+        <FifthStyles>
+          <div>
+            <h2>{sectionFifth.header}</h2>
+            <div>
+              {sectionFifth.phases.map(phase => (
+                <div>
+                  <h3>{phase.header}</h3>
+                  <small>{phase.date}</small>
+                  <p>{phase.description}</p>
+                </div>
+              ))}
+            </div>
+            <p>{sectionFifth.endNote}</p>
+          </div>
+          <GatsbyImage
+            image={sectionFifth.img.image.childImageSharp.gatsbyImageData}
+            alt={sectionFifth.img.alt}
+            imgStyle={{ objectFit: 'contain' }}
+          />
+        </FifthStyles>
+
+        <SixthStyles>
+          <ReactMarkdown>{sectionSixth.description}</ReactMarkdown>
+        </SixthStyles>
+
         {/* Section About*/}
         <AboutStyles>
+          <h2>{sectionAbout.header}</h2>
           <h6>{sectionAbout.description}</h6>
           <div className="cards-2b2">
             {collabs.map((collab) => {
@@ -167,48 +171,29 @@ export const query = graphql`
               alt
               image {
                 childImageSharp {
-                  gatsbyImageData (
-                    width: 150
-                    placeholder: BLURRED
-                    layout: CONSTRAINED
-                  )
+                  gatsbyImageData(width: 150, placeholder: BLURRED, layout: CONSTRAINED)
                 }
               }
             }
-            pre
             header
             description
+            button {
+              linkText
+              url
+            }
           }
           sectionSecond {
+            descriptions {
+              colorHighlight
+              description
+            }
             img {
               image {
                 childImageSharp {
-                  gatsbyImageData (
-                    width: 150
-                    placeholder: BLURRED
-                    layout: CONSTRAINED
-                  )
+                  gatsbyImageData(width: 150, placeholder: BLURRED, layout: CONSTRAINED)
                 }
               }
               alt
-            }
-            description
-          }
-          sectionSurvey {
-            header
-            descriptionLeft
-            descriptionRight
-            preLinkText
-            linkText
-            url
-          }
-          sectionSubscribe {
-            header
-            description
-            form {
-              preInputText
-              placeholder
-              buttonText
             }
           }
           sectionAbout {
@@ -221,202 +206,58 @@ export const query = graphql`
                 alt
                 image {
                   childImageSharp {
-                    gatsbyImageData(
-                      height: 50
-                      placeholder: BLURRED
-                      layout: CONSTRAINED
-                    )
+                    gatsbyImageData(height: 50, placeholder: BLURRED, layout: CONSTRAINED)
                   }
                 }
               }
             }
             contactText
             contactEmail
+            header
+          }
+          sectionThird {
+            description
+          }
+          sectionForth {
+            leftComponent {
+              description
+              colorHighlight
+              button {
+                linkText
+                url
+              }
+            }
+            rightComponent {
+              description
+              colorHighlight
+              button {
+                linkText
+                url
+              }
+            }
+          }
+          sectionFifth {
+            header
+            phases {
+              header
+              date
+              description
+            }
+            endNote
+            img {
+              image {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+              alt
+            }
+          }
+          sectionSixth {
+            description
           }
         }
       }
-    }
-  }
-`
-
-// styling
-const LandingStyles = styled.div`
-  section {
-    padding: 20px;
-    height: 100vh;
-    text-align: center;
-    > * {
-      max-width: var(--maxWidth);
-    }
-    > p, h6 {
-      max-width: var(--maxWidthText);
-    }
-    h6 {
-      font-size: 1.25rem;
-    }
-    @media (min-width: 640px) {
-      h6 {
-        font-size: 1.5rem;
-      }
-
-    }
-  }
-`
-const IntroStyles = styled.section`
-  background: var(--linearGradient);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  > * {
-    margin: 2vmin 0;
-  }
-
-  /* Logo Garden */
-  #logo-garden {
-    margin: 1rem 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.25rem;
-  }
-  @media (min-width: 640px) {
-    justify-content: center;
-  }
-  @media (min-width: 1024px) {
-    #logo-garden {
-      margin-top: 4rem;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
-    }
-  }
-  /* .horizontal-scroll-wrapper {
-    max-width: unset;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    > a {
-      padding: 0 2rem;
-    }
-    @media (min-width: 1024px) {
-      margin-top: 3rem;
-      > a {
-        padding: 0 3rem;
-      }
-    }
-  } */
-`
-const SecondStyles = styled.section`
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  grid-gap: 40px;
-`
-const SurveyStyles = styled.section`
-  background: var(--linearGradient);
-  display: grid;
-  align-items: flex-start;
-  justify-items: center;
-  grid-gap: 12px;
-  overflow-y: auto;
-  p {
-    padding: 6px 0;
-  }
-  > div {
-    width: 100%;
-  }
-  .btn {
-    margin: 1.5rem 0;
-  }
-  @media (min-width: 440px) {
-    align-content: center;
-  }
-  @media (min-width: 1024px) {
-    grid-gap: 30px;
-    .flex-y-md {
-      display: flex;
-      text-align: left;
-      > p {
-        padding: 20px;
-      }
-    }
-  }
-`
-const SubscribeStyles = styled.section`
-  display: grid;
-  align-items: flex-start;
-  justify-items: center;
-  grid-gap: 1rem;
-  overflow-y: auto;
-
-  form {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    margin-top: 0.5rem;
-    padding-bottom: 1.5rem;
-    font-size: 1rem;
-  }
-  input {
-    border-radius: var(--br) 0 0 var(--br);
-    padding: 16px;
-    border: 1px solid var(--lightgrey);
-  }
-  button {
-    border-radius: 0 var(--br) var(--br) 0;
-    background: var(--black);
-    color: var(--white);
-  }
-  @media (min-width: 440px) {
-    align-content: center;
-  }
-  @media (min-width: 1024px) {
-    grid-gap: 1.5rem;
-    p {
-      padding: 2rem 0;
-    }
-  }
-`
-const AboutStyles = styled.section`
-  padding-top: 4rem !important;
-  height: unset !important;
-  background: var(--linearGradient);
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  grid-gap: 1rem;
-
-  .cards-2b2 {
-    padding: 2rem 0 4rem 0;
-    display: grid;
-    grid-gap: 1rem;
-    text-align: left;
-    > div {
-      display: grid;
-      grid-template-rows: 120px 1fr;
-      > a {
-        align-self: center;
-      }
-    }
-    p {
-      padding: 12px 0;
-    }
-  }
-  a {
-    color: var(--darkblue);
-  }
-  @media (min-width: 1024px) {
-    padding-top: 9rem !important;
-    padding-bottom: 5rem !important;
-    .cards-2b2 {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-auto-flow: column;
-      grid-gap: 2rem;
     }
   }
 `
