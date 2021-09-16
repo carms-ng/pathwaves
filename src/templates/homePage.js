@@ -1,8 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
-// import { EqualWeb } from "../components/EqualWeb"
 import ReactMarkdown from 'react-markdown'
 
 import Layout from "../components/Layout"
@@ -12,7 +10,7 @@ import LocalizedLink from "../components/LocalizedLink"
 import Seo from "../components/Seo"
 
 // markup
-export default function HomePageTemplate({ pageContext, data: { page } }) {
+export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
   const {
     title,
@@ -23,17 +21,14 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
     sectionFifth,
     sectionSixth,
     sectionAbout
-  } = page.childMarkdownRemark.frontmatter
+  } = data.page.childMarkdownRemark.frontmatter
 
   const collabs = sectionAbout.collaborators
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} >
       <Seo title={`${title}`} lang={pageContext.lang} />
-      {/* Equal Web Widget */}
-      <Helmet defer={true} >
-        {/* <script>{EqualWeb}</script> */}
-      </Helmet >
+
 
       <IntroStyles>
         <GatsbyImage
@@ -56,6 +51,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
                 image={collab.logo.image.childImageSharp.gatsbyImageData}
                 alt={collab.logo.alt}
                 imgStyle={{ objectFit: 'contain' }}
+                style={{ height: '100%' }}
               />
             </a>
           ))}
@@ -197,11 +193,7 @@ export const query = graphql`
             img {
               image {
                 childImageSharp {
-                  gatsbyImageData(
-                    width: 500,
-                    placeholder: TRACED_SVG,
-                    layout: CONSTRAINED,
-                  )
+                  gatsbyImageData(width: 500, placeholder: TRACED_SVG, layout: CONSTRAINED)
                 }
               }
               alt
@@ -217,7 +209,11 @@ export const query = graphql`
                 alt
                 image {
                   childImageSharp {
-                    gatsbyImageData(height: 50, placeholder: BLURRED, layout: CONSTRAINED)
+                    gatsbyImageData(
+                      height: 80,
+                      placeholder: TRACED_SVG,
+                      layout: CONSTRAINED
+                    )
                   }
                 }
               }
