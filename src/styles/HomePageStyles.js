@@ -20,14 +20,14 @@ const IntroStyles = styled.section`
   /* Logo Garden */
   #logo-garden {
     max-width: var(--maxWidth);
-    max-height: 20vh;
+    max-height: 16vh;
     margin: 1rem auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     grid-gap: 1rem 2rem;
     > a {
-      max-height: 10vh;
+      max-height: 8vh;
       width: fit-content;
     }
   }
@@ -42,7 +42,6 @@ const IntroStyles = styled.section`
   }
   @media (min-width: 768px) {
     #logo-garden {
-      margin-top: 4rem;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 6rem;
     }
