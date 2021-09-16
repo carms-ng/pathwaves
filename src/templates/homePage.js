@@ -42,7 +42,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
           imgStyle={{ objectFit: 'contain' }}
         />
         <h1>{sectionIntro?.header}</h1>
-        <p>{sectionIntro?.description}</p>
+        <p className="font-lg">{sectionIntro?.description}</p>
         <LocalizedLink
           className="btn"
           to={sectionIntro?.button?.url}
@@ -75,7 +75,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
       </SecondStyles>
 
       <ThirdStyles>
-        <ReactMarkdown>{sectionThird?.description}</ReactMarkdown>
+        <ReactMarkdown className="font-lg">{sectionThird?.description}</ReactMarkdown>
       </ThirdStyles>
 
       <ForthStyles>
@@ -125,18 +125,18 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
               </div>
             ))}
           </div>
-          <p>{sectionFifth?.endNote}</p>
+          <p className="font-lg">{sectionFifth?.endNote}</p>
         </div>
         <GatsbyImage
           image={sectionFifth?.img?.image.childImageSharp.gatsbyImageData}
           alt={sectionFifth?.img?.alt}
-          imgStyle={{ objectFit: 'contain', width: 'unset' }}
+          imgStyle={{ }}
           className="bg-image__right"
         />
       </FifthStyles>
 
       <SixthStyles>
-        <ReactMarkdown>{sectionSixth?.description}</ReactMarkdown>
+        <ReactMarkdown className="font-lg">{sectionSixth?.description}</ReactMarkdown>
         <LocalizedLink
           className="btn"
           to={sectionSixth?.button?.url}
@@ -147,7 +147,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
 
       {/* Section About*/}
       <AboutStyles>
-        <p>{sectionAbout.description}</p>
+        <p className="font-lg">{sectionAbout.description}</p>
         <div className="cards-2b2">
           {collabs.map((collab) => {
             return (
@@ -162,7 +162,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
             )
           })}
         </div>
-        <p>
+        <p className="font-lg">
           {sectionAbout.contactText}
           <br />
           <a href={"mailto:" + sectionAbout.contactEmail}>{sectionAbout.contactEmail}</a>
@@ -282,7 +282,7 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData(
-                    width: 450,
+                    width: 500,
                     placeholder: TRACED_SVG,
                     layout: CONSTRAINED,
                   )
