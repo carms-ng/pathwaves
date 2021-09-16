@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     --blue: #C1D3EC;
     --lightblue: #E0E9F5;
     --xlightblue: #EFF4FA;
-    --maxWidth: 1280px;
+    --maxWidth: 1024px;
     --maxWidthText: 980px;
     --br: 16px;
     --linearGradient: linear-gradient(127deg, var(--blue), rgb(224, 233, 245, 0) 50%),
@@ -86,14 +86,14 @@ const GlobalStyles = createGlobalStyle`
 
   @media (min-width: 640px) {
     body {
-      font-size: 2rem;
+      font-size: 1.8rem;
       line-height: 1.8;
     }
     h1, h2 {
       font-size: 4rem;
     }
     .font-lg {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     .btns-group {
       grid-template-columns: 1fr 1fr;
@@ -102,14 +102,14 @@ const GlobalStyles = createGlobalStyle`
   }
   @media (min-width: 1024px) {
     body {
-      font-size: 2.4rem;
-      line-height: 2;
+      font-size: 2rem;
+      line-height: 1.7;
     }
     h1, h2 {
       font-size: 5rem;
     }
     .font-lg {
-      font-size: 3rem;
+      font-size: 2.4rem;
     }
   }
 `;
