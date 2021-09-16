@@ -60,13 +60,14 @@ const HeaderStyles = styled.header`
   align-items: center;
   justify-content: flex-end;
   padding: 2vmin;
-  font-size: 2rem;
 
   > a {
+    font-size: 1.6rem;
     backdrop-filter: blur(2em);
   }
 
   .switcher {
+    font-size: 2rem;
     width: 5rem;
     height: 5rem;
     display: grid;
@@ -85,7 +86,7 @@ const HeaderStyles = styled.header`
   .btn {
     display: none;
     font-weight: 400;
-    padding: 0.25rem 2.5rem;
+    padding: 0.25rem 2rem;
   }
 
   @media (min-width: 1024px) {
