@@ -304,6 +304,21 @@ collections:
         fields:
           - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
           - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
+      - label: Navigation
+        name: nav
+        widget: object
+        i18n: true
+        fields:
+          - label: Button
+            name: button
+            widget: object
+            i18n: true
+            collapsed: true
+            fields:
+              - {label: Link text, name: linkText, widget: string, i18n: true}
+              - {label: URL, name: url, widget: string, i18n: true}
+
       - label: "Footer (Contact)"
         name: footer
         widget: object
