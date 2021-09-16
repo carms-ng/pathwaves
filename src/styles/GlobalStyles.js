@@ -74,6 +74,9 @@ const GlobalStyles = createGlobalStyle`
   h1, h2 {
     font-size: 2.6rem;
   }
+  .btn {
+    font-size: 1.6rem;
+  }
   .font-lg {
     font-size: 1.7rem;
   }
