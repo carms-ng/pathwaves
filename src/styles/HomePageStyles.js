@@ -7,7 +7,6 @@ const IntroStyles = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-
   > * {
     margin: 2vmin 0;
     text-align: center;
@@ -15,8 +14,9 @@ const IntroStyles = styled.section`
 
   /* Logo Garden */
   #logo-garden {
+    max-width: var(--maxWidth);
     max-height: 20vh;
-    margin: 1rem 0;
+    margin: 1rem auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem 2rem;
@@ -37,14 +37,8 @@ const IntroStyles = styled.section`
     #logo-garden {
       margin-top: 4rem;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 6vw;
+      grid-gap: 2rem;
     }
-  }
-  @media (min-width: 1024px) {
-    #logo-garden {
-
-    }
-
   }
 `
 const SecondStyles = styled.section`
@@ -83,9 +77,7 @@ const SecondStyles = styled.section`
       grid-column: auto;
       max-width: calc(var(--maxWidth) / 5 * 3 );
     }
-
   }
-
 `
 
 const ThirdStyles = styled.section`
@@ -104,7 +96,7 @@ const ForthStyles = styled.section`
   .bg-image__bl, .bg-image__tr {
     position: absolute;
     opacity: 0.2;
-    @media (min-width: 1536px) {
+    @media (min-width: 1024px) {
       opacity: 1;
     }
   }
@@ -115,7 +107,6 @@ const ForthStyles = styled.section`
   .bg-image__tr {
     top: 0;
     right: 0;
-
   }
 
   .grid-wrapper {
@@ -194,13 +185,24 @@ const FifthStyles = styled.section`
     margin-left: 1rem;
     padding-left: 3rem;
     border-left: 2px solid var(--black);
-
+    position: relative;
     > * {
       display: grid;
       grid-gap: 1rem;
     }
     small {
       text-transform: uppercase;
+    }
+    &:before {
+      content: "";
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: var(--black);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
     }
   }
 

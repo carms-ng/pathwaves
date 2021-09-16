@@ -210,11 +210,9 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 240,
-                      height: 120,
+                      height: 80,
                       placeholder: TRACED_SVG,
                       layout: CONSTRAINED
-                      transformOptions: {fit: CONTAIN, cropFocus: ATTENTION}
                     )
                   }
                 }
