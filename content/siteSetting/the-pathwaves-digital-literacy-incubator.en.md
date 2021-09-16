@@ -9,7 +9,7 @@ logo:
 nav:
   button:
     linkText: Apply now
-    url: /apply
+    url: https://www.google.com/
 footer:
   copyright: Pathwaves
   footerLinks:

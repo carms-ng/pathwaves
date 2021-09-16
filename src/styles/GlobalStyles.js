@@ -19,9 +19,9 @@ const GlobalStyles = createGlobalStyle`
                       linear-gradient(217deg, rgb(161, 189, 226, 0), var(--lightblue) 50%);
     box-sizing: border-box;
     font-size: 62.5%;
-    --padSm: 20px;
-    --padMd: 8rem 20px;
-    --padLg: 16rem 40px;
+    --padSm: 3rem;
+    --padMd: 8rem 3rem;
+    --padLg: 16rem 4rem;
     --trans: all 0.7s ease;
   }
   *, *:before, *:after {
@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
   body {
-    font-family: 'Nunito', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     padding: 0;
@@ -38,7 +38,6 @@ const GlobalStyles = createGlobalStyle`
     color: var(--black);
   }
   h1, h2, h3, h4, h5, h6, pre {
-    font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.2;
   }
   h2, h3, h4, h5, h6 {
@@ -51,9 +50,6 @@ const GlobalStyles = createGlobalStyle`
   }
   a {
     text-decoration: none;
-  }
-  button {
-    font-family: 'Nunito', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   *:focus {
       outline: none;
@@ -75,9 +71,11 @@ const GlobalStyles = createGlobalStyle`
       color: var(--white);
     }
   }
-
   h1, h2 {
     font-size: 2.6rem;
+  }
+  .font-lg {
+    font-size: 1.7rem;
   }
   .btns-group {
     display: grid;
@@ -86,8 +84,7 @@ const GlobalStyles = createGlobalStyle`
 
   @media (min-width: 640px) {
     body {
-      font-size: 1.8rem;
-      line-height: 1.8;
+      font-size: 1.7rem;
     }
     h1, h2 {
       font-size: 4rem;
@@ -102,10 +99,10 @@ const GlobalStyles = createGlobalStyle`
   }
   @media (min-width: 1024px) {
     body {
-      font-size: 2rem;
-      line-height: 1.7;
+      font-size: 1.8rem;
+      line-height: 1.6;
     }
-    h1, h2 {
+    h1 {
       font-size: 5rem;
     }
     .font-lg {

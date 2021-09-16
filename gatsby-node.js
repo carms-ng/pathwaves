@@ -7,7 +7,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     query {
-      allFile(filter: {relativeDirectory: {in: ["home", "survey", "apply", "fourOhFour"]}}) {
+      allFile(filter: {relativeDirectory: {in: ["home", "survey", "fourOhFour"]}}) {
         distinct(field: relativeDirectory)
         nodes {
           childMarkdownRemark {

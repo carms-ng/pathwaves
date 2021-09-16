@@ -41,12 +41,8 @@ export default function Header({ lang, slug }) {
   return (
     <HeaderStyles>
       {/* Header button */}
-      <LocalizedLink
-        className="btn"
-        to={data?.button?.url}
-        lang={lang}
-        text={data?.button?.linkText}
-      />
+      <a className="btn" href={data?.button?.url}>{data?.button?.linkText}</a>
+
       {/* Language Switcher */}
       <LocalizedLink className="switcher" lang={toLang} to={to} text={toLang} />
     </HeaderStyles>
@@ -63,7 +59,7 @@ const HeaderStyles = styled.header`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 1.5vw;
+  padding: 2vmin;
   font-size: 2rem;
 
   > a {
@@ -89,7 +85,7 @@ const HeaderStyles = styled.header`
   .btn {
     display: none;
     font-weight: 400;
-    padding: 0.5rem 3rem;
+    padding: 0.25rem 2.5rem;
   }
 
   @media (min-width: 1024px) {

@@ -29,7 +29,6 @@ export default function HomePageTemplate({ pageContext, data }) {
     <Layout lang={pageContext.lang} slug={pageContext.slug} >
       <Seo title={`${title}`} lang={pageContext.lang} />
 
-
       <IntroStyles>
         <GatsbyImage
           image={sectionIntro?.img?.image.childImageSharp.gatsbyImageData}
@@ -38,12 +37,7 @@ export default function HomePageTemplate({ pageContext, data }) {
         />
         <h1>{sectionIntro?.header}</h1>
         <p className="font-lg">{sectionIntro?.description}</p>
-        <LocalizedLink
-          className="btn"
-          to={sectionIntro?.button?.url}
-          lang={pageContext.lang}
-          text={sectionIntro?.button?.linkText}
-        />
+        <a className="btn" href={sectionIntro?.button?.url}>{sectionIntro?.button?.linkText}</a>
         <div id="logo-garden">
           {collabs?.map((collab) => (
             <a key={collab.name} href={collab.url} target="_blank" rel="noreferrer">
@@ -79,12 +73,10 @@ export default function HomePageTemplate({ pageContext, data }) {
           <div>
             <ReactMarkdown>{sectionForth?.leftComponent?.description}</ReactMarkdown>
           </div>
-          <LocalizedLink
-            className="btn"
-            to={sectionForth?.leftComponent?.button?.url}
-            lang={pageContext.lang}
-            text={sectionForth?.leftComponent?.button?.linkText}
-          />
+          <a className="btn" href={sectionForth?.leftComponent?.button?.url}>
+            {sectionForth?.leftComponent?.button?.linkText}
+          </a>
+
           <div>
             <ReactMarkdown>{sectionForth?.rightComponent?.description}</ReactMarkdown>
           </div>
@@ -131,12 +123,9 @@ export default function HomePageTemplate({ pageContext, data }) {
 
       <SixthStyles>
         <ReactMarkdown className="font-lg">{sectionSixth?.description}</ReactMarkdown>
-        <LocalizedLink
-          className="btn"
-          to={sectionSixth?.button?.url}
-          lang={pageContext.lang}
-          text={sectionSixth?.button?.linkText}
-        />
+        <a className="btn" href={sectionSixth?.button?.url}>
+          {sectionSixth?.button?.linkText}
+        </a>
       </SixthStyles>
 
       {/* Section About*/}
@@ -156,7 +145,7 @@ export default function HomePageTemplate({ pageContext, data }) {
             )
           })}
         </div>
-        <p className="font-lg">
+        <p>
           {sectionAbout.contactText}
           <br />
           <a href={"mailto:" + sectionAbout.contactEmail}>{sectionAbout.contactEmail}</a>
@@ -209,11 +198,7 @@ export const query = graphql`
                 alt
                 image {
                   childImageSharp {
-                    gatsbyImageData(
-                      height: 80,
-                      placeholder: TRACED_SVG,
-                      layout: CONSTRAINED
-                    )
+                    gatsbyImageData(height: 80, placeholder: TRACED_SVG, layout: CONSTRAINED)
                   }
                 }
               }

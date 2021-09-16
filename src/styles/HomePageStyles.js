@@ -11,7 +11,9 @@ const IntroStyles = styled.section`
     margin: 2vmin 0;
     text-align: center;
   }
-
+  h1 {
+    font-weight: 400;
+  }
   /* Logo Garden */
   #logo-garden {
     max-width: var(--maxWidth);
@@ -19,12 +21,15 @@ const IntroStyles = styled.section`
     margin: 1rem auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     grid-gap: 1rem 2rem;
     > a {
       max-height: 10vh;
+      width: fit-content;
     }
   }
   @media (min-width: 640px) {
+    padding: var(--padMd);
     justify-content: center;
     #logo-garden {
       max-height: unset;
@@ -49,7 +54,7 @@ const SecondStyles = styled.section`
   .bg-image__left {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    opacity: 0.2;
+    opacity: 0.1;
     z-index: 1;
     max-height: 100vh;
   }
@@ -88,6 +93,7 @@ const ThirdStyles = styled.section`
   }
   @media (min-width: 1024px) {
     padding: var(--padLg);
+    text-align: center;
   }
 `
 const ForthStyles = styled.section`
@@ -95,7 +101,7 @@ const ForthStyles = styled.section`
 
   .bg-image__bl, .bg-image__tr {
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.1;
     @media (min-width: 1024px) {
       opacity: 1;
     }
@@ -118,7 +124,7 @@ const ForthStyles = styled.section`
     grid-gap: 1rem;
     place-items: flex-start;
     .btn {
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
       width: 100%;
     }
     @media (min-width: 640px) {
@@ -176,7 +182,7 @@ const FifthStyles = styled.section`
   .bg-image__right {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    opacity: 0.2;
+    opacity: 0.1;
   }
 
   #phases {
@@ -192,17 +198,6 @@ const FifthStyles = styled.section`
     }
     small {
       text-transform: uppercase;
-    }
-    &:before {
-      content: "";
-      width: 1.5rem;
-      height: 1.5rem;
-      border-radius: 50%;
-      background: var(--black);
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(-50%, -50%);
     }
   }
 
@@ -249,6 +244,7 @@ const SixthStyles = styled.section`
   }
   @media (min-width: 1024px) {
     padding: var(--padLg);
+    text-align: center;
   }
 `
 
@@ -283,6 +279,7 @@ const AboutStyles = styled.section`
       text-align: center;
     }
     padding: var(--padLg);
+    padding-bottom: 4rem;
 
     .cards-2b2 {
       grid-template-columns: 1fr 1fr;

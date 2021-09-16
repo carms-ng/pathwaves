@@ -54,7 +54,7 @@ sectionAbout:
     - url: https://phi-centre.com/
       name: Centre PHI
       logo:
-        image: /assets/phi-logo.png
+        image: /assets/phi.png
         alt: logo
       description: >-
         Fondé et dirigé par Phoebe Greenberg à Montréal, PHI est un pôle
