@@ -7,17 +7,17 @@ import LocalizedLink from "../components/LocalizedLink"
 import Seo from "../components/Seo"
 
 // markup
-export default function SurveyPageTemplate({ pageContext, data }) {
+export default function ApplyPageTemplate({ pageContext, data }) {
   const {
     frontmatter,
     rawMarkdownBody,
   } = data.page.childMarkdownRemark
-  const { title, options, endNote } = frontmatter
+  const { title, options } = frontmatter
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} >
       <Seo title={title} lang={pageContext.lang} />
-      <SurveyStyles>
+      <ApplyStyles>
         <h1>{title}</h1>
         <ReactMarkdown>{rawMarkdownBody}</ReactMarkdown>
         <div className="btns-group">
@@ -34,31 +34,25 @@ export default function SurveyPageTemplate({ pageContext, data }) {
               )
             } else {
               return (
-                <a
-                  className="btn"
-                  key={opt.linkAddress}
-                  href={opt.linkAddress}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a className="btn" key={opt.linkAddress} href={opt.linkAddress}>
                   {opt.linkText}
                 </a>
               )
             }
           })}
         </div>
-        <p>{endNote}</p>
-      </SurveyStyles>
+      </ApplyStyles>
     </Layout>
   )
 }
 
-const SurveyStyles = styled.div`
+const ApplyStyles = styled.div`
   background: var(--linearGradient);
   padding: 10vmin 20px;
+
   > * {
-    margin: 0 auto;
     max-width: var(--maxWidthText);
+    margin: 0 auto;
   }
   h1 {
     text-align: center;
@@ -81,16 +75,15 @@ const SurveyStyles = styled.div`
 
 export const query = graphql`
   query($regx: String) {
-    page: file(relativeDirectory: {eq: "survey"}, base: {regex: $regx}) {
+    page: file(relativeDirectory: {eq: "apply"}, base: {regex: $regx}) {
       childMarkdownRemark {
         frontmatter {
           title
           options {
             linkText
-            linkAddress
             isInterenal
+            linkAddress
           }
-          endNote
         }
         rawMarkdownBody
       }
