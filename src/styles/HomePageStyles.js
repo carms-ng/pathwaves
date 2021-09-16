@@ -32,7 +32,6 @@ const IntroStyles = styled.section`
     }
   }
   @media (min-width: 640px) {
-    padding: var(--padMd);
     justify-content: center;
     #logo-garden {
       max-height: unset;
