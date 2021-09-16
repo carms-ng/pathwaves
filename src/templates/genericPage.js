@@ -7,7 +7,7 @@ import LocalizedLink from "../components/LocalizedLink"
 import Seo from "../components/Seo"
 
 // markup
-export default function SurveyPageTemplate({ pageContext, data }) {
+export default function GenericPageTemplate({ pageContext, data }) {
   const {
     frontmatter,
     rawMarkdownBody,
@@ -17,7 +17,7 @@ export default function SurveyPageTemplate({ pageContext, data }) {
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} >
       <Seo title={title} lang={pageContext.lang} />
-      <SurveyStyles>
+      <GenericStyles>
         <h1>{title}</h1>
         <ReactMarkdown>{rawMarkdownBody}</ReactMarkdown>
         <div className="btns-group">
@@ -48,12 +48,12 @@ export default function SurveyPageTemplate({ pageContext, data }) {
           })}
         </div>
         <p>{endNote}</p>
-      </SurveyStyles>
+      </GenericStyles>
     </Layout>
   )
 }
 
-const SurveyStyles = styled.div`
+const GenericStyles = styled.div`
   background: var(--linearGradient);
   padding: 10vmin 20px;
   > * {
@@ -80,8 +80,8 @@ const SurveyStyles = styled.div`
 `
 
 export const query = graphql`
-  query($regx: String) {
-    page: file(relativeDirectory: {eq: "survey"}, base: {regex: $regx}) {
+  query($regx: String, $slug: String) {
+    page: file(relativeDirectory: {eq: $slug}, base: {regex: $regx}) {
       childMarkdownRemark {
         frontmatter {
           title

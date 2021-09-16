@@ -1,6 +1,6 @@
 ---
-templateKey: applyPage.js
-title: Apply
+templateKey: genericPage.js
+title: Application Information
 options:
   - linkText: Go to form
     isInterenal: false

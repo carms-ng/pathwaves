@@ -1,3 +1,3 @@
 ---
-templateKey: applyPage.js
+templateKey: genericPage.js
 ---

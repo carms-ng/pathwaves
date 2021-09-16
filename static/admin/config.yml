@@ -247,7 +247,7 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "surveyPage.js", i18n: duplicate}
+      - {label: Template Key, name: templateKey, widget: hidden, default: "genericPage.js", i18n: duplicate}
       - {label: Page Title, name: title, widget: string, i18n: true}
       - label: Policy
         name: body
@@ -285,7 +285,7 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "applyPage.js", i18n: duplicate}
+      - {label: Template Key, name: templateKey, widget: hidden, default: "genericPage.js", i18n: duplicate}
       - {label: Page Title, name: title, widget: string, i18n: true}
       - label: Application
         name: body

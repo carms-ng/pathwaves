@@ -1,5 +1,5 @@
 ---
-templateKey: surveyPage.js
+templateKey: genericPage.js
 title: Consentement au sondage d'analyse du paysage musical canadien
 options:
   - linkText: JE SUIS D'ACCORD

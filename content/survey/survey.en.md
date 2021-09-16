@@ -1,5 +1,5 @@
 ---
-templateKey: surveyPage.js
+templateKey: genericPage.js
 title: "Canada’s Music Landscape Scanning Survey Consent "
 options:
   - linkText: I AGREE
