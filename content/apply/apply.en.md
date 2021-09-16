@@ -1,14 +1,13 @@
 ---
-templateKey: surveyPage.js
-title: "Canada’s Music Landscape Scanning Survey Consent "
+templateKey: applyPage.js
+title: Apply
 options:
-  - linkText: I AGREE
-    linkAddress: "https://forms.office.com/r/Nb3bss2axM "
-  - linkText: I DECLINE
+  - linkText: Go to form
+    isInterenal: false
+    linkAddress: https://www.google.com/
+  - linkText: Go back home
     isInterenal: true
     linkAddress: /
-endNote: Thank you for your assistance in this project.  Please keep a copy of
-  this form for your records.
 ---
 Principal Investigator:
 Suzanne Stein
