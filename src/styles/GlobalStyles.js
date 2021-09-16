@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
     --lightblue: #E0E9F5;
     --xlightblue: #EFF4FA;
     --maxWidth: 1280px;
-    --maxWidthText: 768px;
+    --maxWidthText: 980px;
     --br: 16px;
     --linearGradient: linear-gradient(127deg, var(--blue), rgb(224, 233, 245, 0) 50%),
                       linear-gradient(336deg, rgb(239, 244, 250, 0), var(--xlightblue) 50%),
@@ -21,8 +21,8 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
     --padSm: 20px;
     --padMd: 8rem 20px;
-    --padLg: 16rem 20px;
-    --fontLg: 2.5rem;
+    --padLg: 16rem 40px;
+    --trans: all 0.7s ease;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -41,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   }
-  h1, h2, h3, h4, h5, h6 {
+  h2, h3, h4, h5, h6 {
     max-width: var(--maxWidthText);
   }
   p {
@@ -69,18 +69,42 @@ const GlobalStyles = createGlobalStyle`
     text-transform: uppercase;
     font-weight: bold;
     white-space: nowrap;
-    transition: all 0.7s ease;
+    transition: var(--trans);
     &:hover {
       background: var(--black);
       color: var(--white);
     }
   }
 
+  h1, h2 {
+    font-size: 3rem;
+  }
+  .font-lg {
+    font-size: 20px;
+  }
 
   @media (min-width: 640px) {
     body {
       font-size: 2rem;
+      line-height: 1.8;
+    }
+    h1, h2 {
+      font-size: 4rem;
+    }
+    .font-lg {
+      font-size: 2.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    body {
+      font-size: 2.4rem;
       line-height: 2;
+    }
+    h1, h2 {
+      font-size: 5rem;
+    }
+    .font-lg {
+      font-size: 3rem;
     }
   }
 `;
