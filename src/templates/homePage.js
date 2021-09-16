@@ -102,13 +102,11 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
         <GatsbyImage
           image={sectionForth?.leftComponent?.img?.image.childImageSharp.gatsbyImageData}
           alt={sectionForth?.leftComponent?.img?.alt}
-          imgStyle={{ objectFit: 'contain', width: 'unset' }}
           className="bg-image__bl"
         />
         <GatsbyImage
           image={sectionForth?.rightComponent?.img?.image.childImageSharp.gatsbyImageData}
           alt={sectionForth?.rightComponent?.img?.alt}
-          imgStyle={{ objectFit: 'contain', width: 'unset' }}
           className="bg-image__tr"
         />
       </ForthStyles>
@@ -130,7 +128,7 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
         <GatsbyImage
           image={sectionFifth?.img?.image.childImageSharp.gatsbyImageData}
           alt={sectionFifth?.img?.alt}
-          imgStyle={{ }}
+          imgStyle={{ objectFit: 'contain', width: 'unset' }}
           className="bg-image__right"
         />
       </FifthStyles>

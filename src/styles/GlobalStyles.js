@@ -39,7 +39,7 @@ const GlobalStyles = createGlobalStyle`
   }
   h1, h2, h3, h4, h5, h6, pre {
     font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    line-height: 1.2;
   }
   h2, h3, h4, h5, h6 {
     max-width: var(--maxWidthText);
@@ -77,10 +77,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
-  .font-lg {
-    font-size: 20px;
+  .btns-group {
+    display: grid;
+    grid-gap: 1rem;
   }
 
   @media (min-width: 640px) {
@@ -93,6 +94,10 @@ const GlobalStyles = createGlobalStyle`
     }
     .font-lg {
       font-size: 2.5rem;
+    }
+    .btns-group {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
     }
   }
   @media (min-width: 1024px) {

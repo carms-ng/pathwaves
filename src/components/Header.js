@@ -38,16 +38,14 @@ export default function Header({ lang, slug }) {
     })
   }).find(elem => lang === elem.locale).frontmatter
 
-  console.log(data);
-
   return (
     <HeaderStyles>
       {/* Header button */}
       <LocalizedLink
         className="btn"
-        to="/apply"
+        to={data?.button?.url}
         lang={lang}
-        text="apply now"
+        text={data?.button?.linkText}
       />
       {/* Language Switcher */}
       <LocalizedLink className="switcher" lang={toLang} to={to} text={toLang} />

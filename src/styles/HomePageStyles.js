@@ -11,9 +11,7 @@ const IntroStyles = styled.section`
     margin: 2vmin 0;
     text-align: center;
   }
-  h1 {
-    line-height: 1.15;
-  }
+
   /* Logo Garden */
   #logo-garden {
     margin: 1rem 0;
@@ -64,6 +62,7 @@ const SecondStyles = styled.section`
     }
     .text__right {
       padding: var(--padLg);
+      padding-left: 0;
       grid-column: auto;
       max-width: calc(var(--maxWidth) / 5 * 3 );
     }
@@ -195,7 +194,7 @@ const FifthStyles = styled.section`
       padding: var(--padLg);
       padding-right: 0;
       grid-column: unset;
-      margin-left: calc((100vw - 1024px) / 2 - 40px);
+      margin-left: calc((100vw - 1024px) / 2);
     }
     .bg-image__right {
       grid-column: unset;

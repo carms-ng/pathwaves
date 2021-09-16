@@ -72,7 +72,7 @@ const FooterStyles = styled.footer`
   grid-gap: 0.5rem;
   background: var(--black);
   color: var(--white);
-  padding: 1vw 2vw;
+  padding: 1vh 2vw;
   font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   a {
