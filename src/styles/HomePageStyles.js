@@ -14,6 +14,9 @@ const IntroStyles = styled.section`
   h1 {
     font-weight: 400;
   }
+  .btn {
+    margin: 4vmin 0;
+  }
   /* Logo Garden */
   #logo-garden {
     max-width: var(--maxWidth);
@@ -42,7 +45,7 @@ const IntroStyles = styled.section`
     #logo-garden {
       margin-top: 4rem;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
+      grid-gap: 6rem;
     }
   }
 `
@@ -56,7 +59,6 @@ const SecondStyles = styled.section`
     grid-row: 1 / -1;
     opacity: 0.1;
     z-index: 1;
-    max-height: 100vh;
   }
   .text__right {
     padding: var(--padMd);
@@ -74,7 +76,6 @@ const SecondStyles = styled.section`
     .bg-image__left {
       grid-column: auto;
       opacity: 1;
-      max-height: 120vh;
     }
     .text__right {
       padding: var(--padLg);
