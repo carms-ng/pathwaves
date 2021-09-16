@@ -73,7 +73,7 @@ const FooterStyles = styled.footer`
   background: var(--black);
   color: var(--white);
   padding: 1vh 2vw;
-
+  font-size: 1.6rem;
   a {
     padding: 0.5rem;
     color: var(--white);
