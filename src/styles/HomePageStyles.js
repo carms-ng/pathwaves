@@ -92,6 +92,8 @@ const ThirdStyles = styled.section`
 `
 const ForthStyles = styled.section`
   position: relative;
+  padding: var(--padMd);
+
 
   .bg-image__bl, .bg-image__tr {
     position: absolute;
