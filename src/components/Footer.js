@@ -69,22 +69,34 @@ export default function Footer({ lang }) {
 
 const FooterStyles = styled.footer`
   display: grid;
-  grid-auto-flow: row;
-  place-items: center;
   grid-gap: 0.5rem;
   background: var(--black);
   color: var(--white);
-  padding: 1.5rem;
+  padding: 1vh 2vw;
   font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   a {
+    padding: 0.5rem;
     color: var(--white);
+    white-space: nowrap;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  a:last-child {
+    opacity: 0.7;
   }
   @media (min-width: 640px) {
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: dense;
     #copyright {
       grid-column: 2 / 3;
+    }
+    a:first-child {
+      justify-self: center;
+    }
+    a:last-child {
+      justify-self: flex-end;
     }
   }
 `
