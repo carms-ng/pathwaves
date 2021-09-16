@@ -51,6 +51,7 @@ export default function HomePageTemplate({ pageContext, data }) {
                 image={collab.logo.image.childImageSharp.gatsbyImageData}
                 alt={collab.logo.alt}
                 imgStyle={{ objectFit: 'contain' }}
+                style={{ height: '100%' }}
               />
             </a>
           ))}
@@ -192,11 +193,7 @@ export const query = graphql`
             img {
               image {
                 childImageSharp {
-                  gatsbyImageData(
-                    width: 500,
-                    placeholder: TRACED_SVG,
-                    layout: CONSTRAINED,
-                  )
+                  gatsbyImageData(width: 500, placeholder: TRACED_SVG, layout: CONSTRAINED)
                 }
               }
               alt
@@ -212,7 +209,13 @@ export const query = graphql`
                 alt
                 image {
                   childImageSharp {
-                    gatsbyImageData(height: 50, placeholder: BLURRED, layout: CONSTRAINED)
+                    gatsbyImageData(
+                      width: 240,
+                      height: 120,
+                      placeholder: TRACED_SVG,
+                      layout: CONSTRAINED
+                      transformOptions: {fit: CONTAIN, cropFocus: ATTENTION}
+                    )
                   }
                 }
               }

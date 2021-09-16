@@ -7,6 +7,7 @@ const IntroStyles = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+
   > * {
     margin: 2vmin 0;
     text-align: center;
@@ -14,20 +15,36 @@ const IntroStyles = styled.section`
 
   /* Logo Garden */
   #logo-garden {
+    max-height: 20vh;
     margin: 1rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.25rem;
+    grid-gap: 1rem 2rem;
+    > a {
+      max-height: 10vh;
+    }
   }
   @media (min-width: 640px) {
     justify-content: center;
+    #logo-garden {
+      max-height: unset;
+      > a {
+        max-height: unset;
+      }
+    }
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     #logo-garden {
       margin-top: 4rem;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
+      grid-gap: 6vw;
     }
+  }
+  @media (min-width: 1024px) {
+    #logo-garden {
+
+    }
+
   }
 `
 const SecondStyles = styled.section`
