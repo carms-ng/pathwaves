@@ -45,7 +45,7 @@ export default function HomePageTemplate({ pageContext, data }) {
                 image={collab.logo.image.childImageSharp.gatsbyImageData}
                 alt={collab.logo.alt}
                 imgStyle={{ objectFit: 'contain' }}
-                style={{ height: '100%' }}
+                style={{ height: '100%', maxWidth: `300px` }}
               />
             </a>
           ))}
@@ -116,7 +116,7 @@ export default function HomePageTemplate({ pageContext, data }) {
         <GatsbyImage
           image={sectionFifth?.img?.image.childImageSharp.gatsbyImageData}
           alt={sectionFifth?.img?.alt}
-          imgStyle={{ objectFit: 'contain', width: 'unset' }}
+          imgStyle={{ objectFit: 'contain', width: 'unset', left: 'unset' }}
           className="bg-image__right"
         />
       </FifthStyles>
@@ -138,7 +138,9 @@ export default function HomePageTemplate({ pageContext, data }) {
                 <a href={collab.url}>
                   <GatsbyImage
                     image={collab.logo.image.childImageSharp.gatsbyImageData}
-                    alt={collab.logo.alt} />
+                    alt={collab.logo.alt}
+                    style={{ maxWidth: `300px`}}
+                  />
                 </a>
                 <p>{collab.description}</p>
               </div>
@@ -198,7 +200,12 @@ export const query = graphql`
                 alt
                 image {
                   childImageSharp {
-                    gatsbyImageData(height: 80, placeholder: TRACED_SVG, layout: CONSTRAINED)
+                    gatsbyImageData(
+                      height: 80,
+                      placeholder: TRACED_SVG,
+                      layout: CONSTRAINED,
+                      transformOptions: {fit: CONTAIN}
+                    )
                   }
                 }
               }
@@ -220,7 +227,7 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 500,
+                      width: 400,
                       placeholder: TRACED_SVG,
                       layout: CONSTRAINED,
                     )
@@ -239,7 +246,7 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 500,
+                      width: 400,
                       placeholder: TRACED_SVG,
                       layout: CONSTRAINED,
                     )
