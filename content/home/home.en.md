@@ -10,7 +10,7 @@ sectionIntro:
     musicians to make lifelong careers in music more possible and equitable.
   button:
     linkText: Apply Now
-    url: /apply
+    url: https://www.google.com/
 sectionSecond:
   img:
     image: /assets/waves-l.png
@@ -47,7 +47,7 @@ sectionForth:
     colorHighlight: "#f5ce7a"
     button:
       linkText: Apply Now
-      url: /apply
+      url: https://www.google.com/
     img:
       image: /assets/waves-bl.png
       alt: waves bottom left
@@ -102,7 +102,7 @@ sectionSixth:
     widely!
   button:
     linkText: Apply Now
-    url: /about
+    url: https://www.google.com/
 sectionAbout:
   description: Pathwaves is being produced by Envision Management & Production in
     partnership with the Phi Centre and OCAD University, with financial support

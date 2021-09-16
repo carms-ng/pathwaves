@@ -278,35 +278,6 @@ collections:
         - {label: Link Address, name: linkAddress, widget: string}
       - {label: Thank You Note, name: endNote, widget: string, i18n: true}
 
-  - name: apply
-    label: Apply Page
-    folder: content/apply
-    create: false
-    delete: false
-    i18n: true
-    fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "genericPage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
-      - label: Application
-        name: body
-        widget: markdown
-        buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
-        editor_components: []
-        modes: [rich_text]
-        minimal: true
-        i18n: true
-      - label: options
-        name: options
-        widget: list
-        min: 2
-        max: 2
-        i18n: true
-        summary: "{{linkText}} - {{linkAddress}}"
-        fields:
-        - {label: Link Text, name: linkText, widget: string}
-        - {label: "Internal Link?", name: isInterenal, widget: boolean, required: false}
-        - {label: Link Address, name: linkAddress, widget: string}
-
   - name: fourOhFour
     label: 404 Page
     folder: content/fourOhFour
