@@ -11,7 +11,9 @@ const IntroStyles = styled.section`
     margin: 2vmin 0;
     text-align: center;
   }
-
+  h1 {
+    font-weight: 400;
+  }
   /* Logo Garden */
   #logo-garden {
     max-width: var(--maxWidth);

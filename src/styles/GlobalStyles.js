@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
   body {
-    font-family: 'Nunito', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     padding: 0;
@@ -38,7 +38,6 @@ const GlobalStyles = createGlobalStyle`
     color: var(--black);
   }
   h1, h2, h3, h4, h5, h6, pre {
-    font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.2;
   }
   h2, h3, h4, h5, h6 {
@@ -51,9 +50,6 @@ const GlobalStyles = createGlobalStyle`
   }
   a {
     text-decoration: none;
-  }
-  button {
-    font-family: 'Nunito', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   *:focus {
       outline: none;
@@ -105,7 +101,7 @@ const GlobalStyles = createGlobalStyle`
       font-size: 2rem;
       line-height: 1.7;
     }
-    h1, h2 {
+    h1 {
       font-size: 5rem;
     }
     .font-lg {
