@@ -116,7 +116,7 @@ export default function HomePageTemplate({ pageContext, data }) {
         <GatsbyImage
           image={sectionFifth?.img?.image.childImageSharp.gatsbyImageData}
           alt={sectionFifth?.img?.alt}
-          imgStyle={{ objectFit: 'contain', width: 'unset' }}
+          imgStyle={{ objectFit: 'contain', width: 'unset', left: 'unset' }}
           className="bg-image__right"
         />
       </FifthStyles>
@@ -184,7 +184,7 @@ export const query = graphql`
             img {
               image {
                 childImageSharp {
-                  gatsbyImageData(width: 360, placeholder: TRACED_SVG, layout: CONSTRAINED)
+                  gatsbyImageData(width: 500, placeholder: TRACED_SVG, layout: CONSTRAINED)
                 }
               }
               alt
@@ -227,7 +227,7 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 500,
+                      width: 400,
                       placeholder: TRACED_SVG,
                       layout: CONSTRAINED,
                     )
@@ -246,7 +246,7 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 500,
+                      width: 400,
                       placeholder: TRACED_SVG,
                       layout: CONSTRAINED,
                     )

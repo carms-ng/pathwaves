@@ -49,37 +49,32 @@ const IntroStyles = styled.section`
 `
 const SecondStyles = styled.section`
   position: relative;
-  display: grid;
-  align-items: center;
+  padding: var(--padMd);
 
   .bg-image__left {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
     opacity: 0.1;
-    z-index: 1;
+
   }
   .text__right {
-    padding: var(--padMd);
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    z-index: 2;
-
+    position: relative;
+    margin-left: auto;
+    max-width: calc(var(--maxWidth) / 2);
     > * {
-      padding: 1.5rem 0;
+      margin-bottom: 2rem;
     }
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: 2fr 3fr;
+    padding: var(--padLg);
     .bg-image__left {
-      grid-column: auto;
       opacity: 1;
     }
     .text__right {
-      padding: var(--padLg);
-      padding-left: 0;
-      grid-column: auto;
-      max-width: calc(var(--maxWidth) / 5 * 3 );
+      margin-left: 45vw;
     }
   }
 `
@@ -101,9 +96,6 @@ const ForthStyles = styled.section`
   .bg-image__bl, .bg-image__tr {
     position: absolute;
     opacity: 0.1;
-    @media (min-width: 1024px) {
-      opacity: 1;
-    }
   }
   .bg-image__bl {
     bottom: 0;
@@ -116,7 +108,6 @@ const ForthStyles = styled.section`
 
   .grid-wrapper {
     position: relative;
-    padding: var(--padMd);
     max-width: var(--maxWidth);
     margin: 0 auto;
     display: grid;
@@ -126,21 +117,19 @@ const ForthStyles = styled.section`
       margin-bottom: 5rem;
       width: 100%;
     }
-    @media (min-width: 640px) {
-      .btn {
-        width: fit-content;
-        margin: 0 auto;
-      }
+  }
+  @media (min-width: 640px) {
+    padding: var(--padLg);
+    .btn {
+      width: fit-content;
+      margin: 0 auto;
     }
-    @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+    .grid-wrapper {
       grid-template-columns: 1fr 1fr;
       grid-gap: 2rem 0;
 
-      .btn {
-        margin-bottom: unset;
-        width: unset;
-        margin: unset;
-      }
       > *:first-child {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -157,30 +146,35 @@ const ForthStyles = styled.section`
         grid-column: 2 / -1;
         grid-row: 3 / 4;
       }
+      .btn {
+        margin-bottom: unset;
+        width: unset;
+        margin: unset;
+      }
     }
-    @media (min-width: 1024px) {
-      padding: var(--padLg);
+  }
+  @media (min-width: 1024px) {
+    .bg-image__bl, .bg-image__tr {
+      opacity: 1;
     }
   }
 `
 const FifthStyles = styled.section`
   background: radial-gradient(108.19% 108.19% at 50% 50%, rgba(251, 215, 126, 0.7) 0%, rgba(220, 213, 185, 0.5) 18.23%, rgba(193, 211, 236, 0.8) 33.85%, #EDC5DD 59.38%, #C1D3EC 96.35%);  display: grid;
-  justify-items: flex-end;
-  align-items: center;
-
+  position: relative;
+  padding: var(--padMd);
   .text__left {
-    padding: var(--padMd);
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    justify-self: center;
-    align-self: center;
-
+    position: relative;
     display: grid;
     grid-gap: 5rem;
+    max-width: calc(var(--maxWidth) / 5 * 3);
   }
   .bg-image__right {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.1;
     opacity: 0.1;
   }
 
@@ -200,31 +194,23 @@ const FifthStyles = styled.section`
     }
   }
 
-
   @media (min-width: 1024px) {
-    grid-template-columns: 3fr 2fr;
+    padding: var(--padLg);
     .text__left {
-      padding: var(--padLg);
-      padding-right: 0;
-      grid-column: unset;
-      margin-left: calc((100vw - 1024px) / 2);
     }
     .bg-image__right {
-      grid-column: unset;
       opacity: 1;
+    }
+  }
+  @media (min-width: 1024px) {
+    .text__left {
+      margin-left: calc((100vw - var(--maxWidth)) / 2);
     }
     #phases {
       margin-left: 5rem;
       padding-left: 5rem;
     }
   }
-  @media (min-width: 1280px) {
-    .text__left {
-      margin-left: calc((100vw - var(--maxWidth)) / 2 - 40px);
-    }
-
-  }
-
 `
 const SixthStyles = styled.section`
   padding: var(--padMd);

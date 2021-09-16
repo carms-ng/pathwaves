@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
     --padSm: 3rem;
     --padMd: 8rem 3rem;
-    --padLg: 16rem 4rem;
+    --padLg: 20rem 4rem;
     --trans: all 0.7s ease;
   }
   *, *:before, *:after {
