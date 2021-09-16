@@ -1,8 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
-// import { EqualWeb } from "../components/EqualWeb"
 import ReactMarkdown from 'react-markdown'
 
 import Layout from "../components/Layout"
@@ -12,7 +10,7 @@ import LocalizedLink from "../components/LocalizedLink"
 import Seo from "../components/Seo"
 
 // markup
-export default function HomePageTemplate({ pageContext, data: { page } }) {
+export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
   const {
     title,
@@ -23,17 +21,14 @@ export default function HomePageTemplate({ pageContext, data: { page } }) {
     sectionFifth,
     sectionSixth,
     sectionAbout
-  } = page.childMarkdownRemark.frontmatter
+  } = data.page.childMarkdownRemark.frontmatter
 
   const collabs = sectionAbout.collaborators
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} >
       <Seo title={`${title}`} lang={pageContext.lang} />
-      {/* Equal Web Widget */}
-      <Helmet defer={true} >
-        {/* <script>{EqualWeb}</script> */}
-      </Helmet >
+
 
       <IntroStyles>
         <GatsbyImage

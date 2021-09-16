@@ -9,7 +9,7 @@ const EqualWeb = `
     },
     "btnStyle": {
       "vPosition": [
-        "80%",
+        "84%",
         null
       ],
       "scale": [
