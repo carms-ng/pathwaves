@@ -19,9 +19,9 @@ const GlobalStyles = createGlobalStyle`
                       linear-gradient(217deg, rgb(161, 189, 226, 0), var(--lightblue) 50%);
     box-sizing: border-box;
     font-size: 62.5%;
-    --padSm: 20px;
-    --padMd: 8rem 20px;
-    --padLg: 16rem 40px;
+    --padSm: 3rem;
+    --padMd: 8rem 3rem;
+    --padLg: 16rem 4rem;
     --trans: all 0.7s ease;
   }
   *, *:before, *:after {
@@ -71,9 +71,11 @@ const GlobalStyles = createGlobalStyle`
       color: var(--white);
     }
   }
-
   h1, h2 {
     font-size: 2.6rem;
+  }
+  .font-lg {
+    font-size: 1.7rem;
   }
   .btns-group {
     display: grid;
@@ -82,8 +84,7 @@ const GlobalStyles = createGlobalStyle`
 
   @media (min-width: 640px) {
     body {
-      font-size: 1.8rem;
-      line-height: 1.8;
+      font-size: 1.7rem;
     }
     h1, h2 {
       font-size: 4rem;
@@ -98,8 +99,8 @@ const GlobalStyles = createGlobalStyle`
   }
   @media (min-width: 1024px) {
     body {
-      font-size: 2rem;
-      line-height: 1.7;
+      font-size: 1.8rem;
+      line-height: 1.6;
     }
     h1 {
       font-size: 5rem;

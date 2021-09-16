@@ -145,7 +145,7 @@ sectionAbout:
       name: PHI Centre
       url: https://phi-centre.com/en/
       logo:
-        image: /assets/phi-logo.png
+        image: /assets/phi.png
         alt: PHI Centre Logo
     - name: Canada Council for the Arts
       url: https://canadacouncil.ca/
