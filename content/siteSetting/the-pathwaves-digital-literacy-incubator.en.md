@@ -6,12 +6,16 @@ description: Pathwaves is being produced by Envision Management & Production in
 logo:
   image: /assets/pathwaves-logo.png
   alt: Pathwaves Logo
+nav:
+  button:
+    linkText: Apply now
+    url: /apply
 footer:
   copyright: Pathwaves
   footerLinks:
     - linkAddress: mailto:lesya@envisionmanagement.com
       linkText: Contact Us
-    - linkText: Survey
-      isInterenal: true
-      linkAddress: /survey
+    - linkText: Made by Mutual Design
+      isInterenal: false
+      linkAddress: https://www.mutualdesign.cc/
 ---
