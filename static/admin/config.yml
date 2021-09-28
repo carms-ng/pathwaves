@@ -176,6 +176,7 @@ collections:
           - label: Phases
             name: phases
             widget: list
+            i18n: true
             summary: '{{fields.header}} - {{fields.date}}'
             fields:
               - {label: Header, name: header, widget: string, i18n: true}
