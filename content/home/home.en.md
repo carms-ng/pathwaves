@@ -6,8 +6,8 @@ sectionIntro:
     image: /assets/pathwaves-logo.png
     alt: Pavewaves logo
   header: The Pathwaves Digital Literacy Incubator
-  description: Applications open now for initiative aimed at empowering Canadian
-    musicians to make lifelong careers in music more possible and equitable.
+  description: An initiative aimed at empowering Canadian musicians to make
+    lifelong careers in music more possible and equitable.
   button:
     linkText: Apply Now
     url: https://www.google.com/
