@@ -41,7 +41,14 @@ export default function Header({ lang, slug }) {
   return (
     <HeaderStyles>
       {/* Header button */}
-      <a className="btn" href={data?.button?.url}>{data?.button?.linkText}</a>
+      <a
+        className="btn"
+        href={data?.button?.url}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {data?.button?.linkText}
+      </a>
 
       {/* Language Switcher */}
       <LocalizedLink className="switcher" lang={toLang} to={to} text={toLang} />

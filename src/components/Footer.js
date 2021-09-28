@@ -57,7 +57,12 @@ export default function Footer({ lang }) {
           )
         } else {
           return (
-            <a key={link.linkAddress} href={link.linkAddress}>
+            <a
+              key={link.linkAddress}
+              href={link.linkAddress}
+              target="_blank"
+              rel="noreferrer"
+            >
               {link.linkText}
             </a>
           )

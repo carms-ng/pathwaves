@@ -37,7 +37,10 @@ export default function HomePageTemplate({ pageContext, data }) {
         />
         <h1>{sectionIntro?.header}</h1>
         <p className="font-lg">{sectionIntro?.description}</p>
-        <a className="btn" href={sectionIntro?.button?.url}>{sectionIntro?.button?.linkText}</a>
+        <a className="btn" href={sectionIntro?.button?.url} target="_blank" rel="noreferrer">
+          {sectionIntro?.button?.linkText}
+        </a>
+
         <div id="logo-garden">
           {collabs?.map((collab) => (
             <a key={collab.name} href={collab.url} target="_blank" rel="noreferrer">
@@ -73,7 +76,12 @@ export default function HomePageTemplate({ pageContext, data }) {
           <div>
             <ReactMarkdown>{sectionForth?.leftComponent?.description}</ReactMarkdown>
           </div>
-          <a className="btn" href={sectionForth?.leftComponent?.button?.url}>
+          <a
+            className="btn"
+            href={sectionForth?.leftComponent?.button?.url}
+            target="_blank"
+            rel="noreferrer"
+          >
             {sectionForth?.leftComponent?.button?.linkText}
           </a>
 
@@ -123,7 +131,7 @@ export default function HomePageTemplate({ pageContext, data }) {
 
       <SixthStyles>
         <ReactMarkdown className="font-lg">{sectionSixth?.description}</ReactMarkdown>
-        <a className="btn" href={sectionSixth?.button?.url}>
+        <a className="btn" href={sectionSixth?.button?.url} target="_blank" rel="noreferrer">
           {sectionSixth?.button?.linkText}
         </a>
       </SixthStyles>
@@ -135,7 +143,7 @@ export default function HomePageTemplate({ pageContext, data }) {
           {collabs.map((collab) => {
             return (
               <div key={collab.name}>
-                <a href={collab.url}>
+                <a href={collab.url} target="_blank" rel="noreferrer">
                   <GatsbyImage
                     image={collab.logo.image.childImageSharp.gatsbyImageData}
                     alt={collab.logo.alt}
@@ -150,7 +158,13 @@ export default function HomePageTemplate({ pageContext, data }) {
         <p>
           {sectionAbout.contactText}
           <br />
-          <a href={"mailto:" + sectionAbout.contactEmail}>{sectionAbout.contactEmail}</a>
+          <a
+            href={"mailto:" + sectionAbout.contactEmail}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {sectionAbout.contactEmail}
+          </a>
         </p>
       </AboutStyles>
     </Layout>
