@@ -13,8 +13,8 @@ const EqualWeb = `
         null
       ],
       "scale": [
-        "0.8",
-        "0.8"
+        "0.7",
+        "0.7"
       ],
       "icon": {
         "type": 11,
