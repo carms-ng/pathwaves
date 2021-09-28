@@ -9,20 +9,81 @@ sectionIntro:
   description: >
     Une initiative visant à aider les musiciens canadiens à développer une
     carrière durable et équitable.
+  button:
+    linkText: Postuler maintenant
+    url: https://docs.google.com/forms/d/e/1FAIpQLScTSRShhZgI9-_ZefiAMy1MlNWb-tvQyjkYAKSh7JiCPNdf6g/viewform
 sectionSecond:
   img:
     image: /assets/waves-l.png
     alt: squiggle
+  description: >-
+    C'est en cette période de profonds changements et de réflexion que nous
+    annonçons le lancement de l'incubateur de littératie numérique Pathwaves,
+    **une initiative unique destinée aux musiciens canadiens et qui contribuera
+    à façonner l'avenir de l'industrie musicale**. En donnant à divers musiciens
+    les moyens d'exploiter les possibilités offertes par les outils numériques
+    et en leur permettant de se faire entendre en tant que chefs de file, nous
+    voulons faciliter les carrières musicales et les rendre plus équitables.
+
+
+    Offert virtuellement de janvier à mars 2022, **l'incubateur Pathwaves se compose de conférences, de mentorat, de classes de maître, d’ateliers, de sessions de travail individuel et d’échanges**. Cette initiative est produite par Envision Management & Production en partenariat avec le Centre Phi et l'Université OCAD, et avec le soutien financier du Conseil des arts du Canada.
+
+
+    **Dix-huit musiciens** reflétant les nombreux axes de la diversité au Canada seront sélectionnés et rémunérés pour leur participation. Ensemble, ils exploreront des questions liées aux nouvelles technologies - logiciels de streaming, spectacles VR, NFTs (jetons non fongibles) et composition assistée par l'IA - dans le but de susciter une nouvelle réflexion axée sur les solutions entourant la création et le partage de la musique.
+sectionThird:
+  description: Les personnes actives dans l'industrie musicale canadienne,
+    explorant tous genres musicaux, de toutes les régions géographiques, de
+    toutes les origines, à tous les stades de leur carrière (émergents,
+    mi-carrière et établis), et en particulier, les membres des communautés
+    sous-représentées, y compris, mais sans s'y limiter, les BIPOC, 2SLGBTQ+,
+    les nouveaux arrivants et les personnes handicapées, sont invités à déposer
+    leur candidature.
 sectionForth:
   leftComponent:
     img:
       image: /assets/waves-bl.png
+    description: >-
+      Le comité de sélection favorisera des musiciens ayant démontré leur
+      intérêt à adopter les nouvelles technologies et à transmettre les
+      connaissances, les compétences et les idées acquises à leur communauté une
+      fois le programme terminé. 
+
+
+
+
+      **Le portail de candidature sera ouvert du 27 septembre au 24 octobre.**
+    button:
+      linkText: Postuler maintenant
+      url: https://docs.google.com/forms/d/e/1FAIpQLScTSRShhZgI9-_ZefiAMy1MlNWb-tvQyjkYAKSh7JiCPNdf6g/viewform
   rightComponent:
     img:
       image: /assets/waves-tr.png
+    description: Parallèlement aux candidatures, **toute personne travaillant dans
+      le secteur de la musique au Canada est invitée à répondre à l'enquête
+      Pathwaves**, une analyse des diverses perspectives du Canada sur le
+      secteur, notamment en ce qui concerne les outils et services numériques.
+      Les résultats de l'enquête serviront de base aux questions que les
+      participants aborderont au cours de l'incubateur Pathwaves ainsi qu’aux
+      résultats qui seront partagés avec le public.
+    button:
+      linkText: ACCÈS AU SONDAGE
+      url: /fr/survey
 sectionFifth:
   img:
     image: /assets/waves-r.png
+  header: LE PROGRAMME DE L'INCUBATEUR PATHWAVES
+  endNote: L'héritage Pathwaves clôturera le programme avec la publication et la
+    distribution des apprentissages dans plusieurs formats médiatiques aux
+    communautés créatives du Canada.
+sectionSixth:
+  description: La transformation numérique rapide de l'industrie musicale et les
+    nouveaux obstacles déclenchés par la pandémie de COVID-19 ont exacerbé les
+    défis des carrières musicales, mais cette période tumultueuse a également
+    montré qu'avec une énergie collective, il est possible de renverser la
+    vapeur. Posez votre candidature dès maintenant et partagez l’information !
+  button:
+    url: https://docs.google.com/forms/d/e/1FAIpQLScTSRShhZgI9-_ZefiAMy1MlNWb-tvQyjkYAKSh7JiCPNdf6g/viewform
+    linkText: Postuler maintenant
 sectionAbout:
   collaborators:
     - name: Envision

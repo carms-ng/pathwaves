@@ -10,7 +10,7 @@ sectionIntro:
     lifelong careers in music more possible and equitable.
   button:
     linkText: Apply Now
-    url: https://www.google.com/
+    url: https://docs.google.com/forms/d/1EP9ZCgHu9tsUONnzLFD49epeq8AkFiIrf3TjIPu-a-M/viewform?edit_requested=true
 sectionSecond:
   img:
     image: /assets/waves-l.png
@@ -25,16 +25,16 @@ sectionSecond:
     more possible and equitable. 
 
 
-    Delivered virtually from January to March 2022, the Pathwaves Incubator consists of conferences, mentorship, master classes, workshops, individual work, and knowledge-exchange — an initiative produced by **Envision Management & Production** in partnership with the **Phi Centre** and **OCAD University**, with financial support from the **Canada Council for the Arts**.
+    Delivered virtually from January to March 2022, **the Pathwaves Incubator consists of conferences, mentorship, master classes, workshops, individual work, and knowledge-exchange** — an initiative produced by Envision Management & Production in partnership with the Phi Centre and OCAD University, with financial support from the Canada Council for the Arts.
 
 
-    A cohort of 18 musicians reflecting the many axes of diversity in this country will be selected and paid for their participation. Together they will dive into today’s new technologies — from streaming software and VR live shows to NFTs and AI-assisted composition — with the goal of sparking new solutions-oriented thought surrounding the creation and sharing of music.
+    **A cohort of 18 musicians** reflecting the many axes of diversity in this country will be selected and paid for their participation. Together they will dive into today’s new technologies — from streaming software and VR live shows to NFTs and AI-assisted composition — with the goal of sparking new solutions-oriented thought surrounding the creation and sharing of music.
 sectionThird:
   description: Canadian musicians working in all genres, from all geographies, of
     all origins, at all stages of their careers (emerging, mid-career, and
     established), and especially members from underrepresented communities,
     including, but not limited to, BIPOC, 2SLGBTQ+, newcomers, and People with
-    Disabilities, are invited to apply at Pathwaves.ca.
+    Disabilities, are invited to apply.
 sectionForth:
   leftComponent:
     description: >-
@@ -43,11 +43,11 @@ sectionForth:
       insights gained to their communities once the program ends.
 
 
-      **The application portal will be open from September 20 — CLOSING DATE.**
+      **The application portal will be open from September 20 — October 24.**
     colorHighlight: "#f5ce7a"
     button:
       linkText: Apply Now
-      url: https://www.google.com/
+      url: https://docs.google.com/forms/d/1EP9ZCgHu9tsUONnzLFD49epeq8AkFiIrf3TjIPu-a-M/viewform?edit_requested=true
     img:
       image: /assets/waves-bl.png
       alt: waves bottom left
@@ -60,7 +60,7 @@ sectionForth:
       will be shared with the public.
     colorHighlight: rgba(123, 171, 245, 0.4)
     button:
-      linkText: Access Survey
+      linkText: ACCESS SURVEY
       url: /survey
     img:
       image: /assets/waves-tr.png
@@ -102,7 +102,7 @@ sectionSixth:
     widely!
   button:
     linkText: Apply Now
-    url: https://www.google.com/
+    url: https://docs.google.com/forms/d/1EP9ZCgHu9tsUONnzLFD49epeq8AkFiIrf3TjIPu-a-M/viewform?edit_requested=true
 sectionAbout:
   description: Pathwaves is being produced by Envision Management & Production in
     partnership with the Phi Centre and OCAD University, with financial support
