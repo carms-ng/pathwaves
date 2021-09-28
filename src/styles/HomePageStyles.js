@@ -94,10 +94,10 @@ const ForthStyles = styled.section`
   position: relative;
   padding: var(--padMd);
 
-
   .bg-image__bl, .bg-image__tr {
     position: absolute;
     opacity: 0.1;
+    z-index: -1;
   }
   .bg-image__bl {
     bottom: 0;
