@@ -37,7 +37,10 @@ export default function HomePageTemplate({ pageContext, data }) {
         />
         <h1>{sectionIntro?.header}</h1>
         <p className="font-lg">{sectionIntro?.description}</p>
-        <a className="btn" href={sectionIntro?.button?.url}>{sectionIntro?.button?.linkText}</a>
+        <a className="btn" href={sectionIntro?.button?.url} target="_blank" rel="noreferrer">
+          {sectionIntro?.button?.linkText}
+        </a>
+
         <div id="logo-garden">
           {collabs?.map((collab) => (
             <a key={collab.name} href={collab.url} target="_blank" rel="noreferrer">
