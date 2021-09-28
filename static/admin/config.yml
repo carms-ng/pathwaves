@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: Carms-dev/pathwaves
-  branch: master
+  branch: dev
   commit_messages:
     create: '[ADD][CMS] {{collection}} “{{slug}}”'
     update: '[UPD][CMS] {{collection}} “{{slug}}”'
@@ -36,6 +36,9 @@ collections:
     i18n: true
     fields:
       - {label: Template Key, name: templateKey, widget: hidden, default: "homePage.js", i18n: duplicate}
+      # - label: Test markdown
+      #   name: test
+      #   widget: markdown
       - {label: Page Title, name: title, widget: string, i18n: true}
       - label: Intro Section
         name: sectionIntro
@@ -50,15 +53,30 @@ collections:
             fields:
               - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
               - {label: Image Alt Text, name: alt, widget: string, i18n: true}
-          - {label: Pre-header, name: pre, widget: string, i18n: true}
           - {label: Header, name: header, widget: string, i18n: true}
           - {label: Description, name: description, widget: text, i18n: true}
+          - label: Button
+            name: button
+            widget: object
+            i18n: true
+            collapsed: true
+            fields:
+              - {label: Link text, name: linkText, widget: string, i18n: true}
+              - {label: URL, name: url, widget: string, i18n: true}
       - label: Second Section
         name: sectionSecond
         widget: object
         i18n: true
         collapsed: true
         fields:
+          - label: Description
+            name: description
+            widget: markdown
+            buttons: [code, bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+            editor_components: []
+            modes: [rich_text]
+            minimal: true
+            i18n: true
           - label: Image
             name: img
             widget: object
@@ -66,35 +84,136 @@ collections:
             fields:
               - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
               - {label: Image Alt Text, name: alt, widget: string, i18n: true}
-          - {label: Description, name: description, widget: string, i18n: true}
-      - label: Survey Section
-        name: sectionSurvey
+
+      - label: Third Section
+        name: sectionThird
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - label: Description
+            name: description
+            widget: markdown
+            buttons: [code, bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+            editor_components: []
+            modes: [rich_text]
+            minimal: true
+            i18n: true
+
+      - label: Forth Section
+        name: sectionForth
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - label: Left Component
+            name: leftComponent
+            widget: object
+            i18n: true
+            collapsed: true
+            fields:
+            - label: Description
+              name: description
+              widget: markdown
+              buttons: [code, bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+              editor_components: []
+              modes: [rich_text]
+              minimal: true
+              i18n: true
+            - label: Button
+              name: button
+              widget: object
+              i18n: true
+              collapsed: true
+              fields:
+                - {label: Link text, name: linkText, widget: string, i18n: true}
+                - {label: URL, name: url, widget: string, i18n: true}
+            - label: Image
+              name: img
+              widget: object
+              i18n: true
+              fields:
+                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
+          - label: Right Component
+            name: rightComponent
+            widget: object
+            i18n: true
+            collapsed: true
+            fields:
+            - label: Description
+              name: description
+              widget: markdown
+              buttons: [code, bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+              editor_components: []
+              modes: [rich_text]
+              minimal: true
+              i18n: true
+            - label: Button
+              name: button
+              widget: object
+              i18n: true
+              collapsed: true
+              fields:
+                - {label: Link text, name: linkText, widget: string, i18n: true}
+                - {label: URL, name: url, widget: string, i18n: true}
+            - label: Image
+              name: img
+              widget: object
+              i18n: true
+              fields:
+                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
+      - label: Fifth Section
+        name: sectionFifth
         widget: object
         i18n: true
         collapsed: true
         fields:
           - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Description Left, name: descriptionLeft, widget: text, i18n: true}
-          - {label: Description Right, name: descriptionRight, widget: text, i18n: true}
-          - {label: Pre Link Text, name: preLinkText, widget: string, i18n: true}
-          - {label: Link text, name: linkText, widget: string, i18n: true}
-          - {label: URL, name: url, widget: string, i18n: true}
-      - label: Subscribe Section
-        name: sectionSubscribe
-        widget: object
-        i18n: true
-        collapsed: true
-        fields:
-          - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Description, name: description, widget: text, i18n: true}
-          - label: Form
-            name: form
+          - label: Phases
+            name: phases
+            widget: list
+            i18n: true
+            summary: '{{fields.header}} - {{fields.date}}'
+            fields:
+              - {label: Header, name: header, widget: string, i18n: true}
+              - {label: Date, name: date, widget: string, i18n: true}
+              - {label: Description, name: description, widget: text, i18n: true}
+          - {label: End Note, name: endNote, widget: text, i18n: true}
+          - label: Image
+            name: img
             widget: object
             i18n: true
             fields:
-              - {label: Pre Input Text, name: preInputText, widget: string, i18n: true}
-              - {label: Input Placeholder, name: placeholder, widget: string, i18n: true}
-              - {label: Button Text, name: buttonText, widget: string, i18n: true}
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
+      - label: Sixth Section
+        name: sectionSixth
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - label: Description
+            name: description
+            widget: markdown
+            buttons: [code, bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+            editor_components: []
+            modes: [rich_text]
+            minimal: true
+            i18n: true
+          - label: Button
+            name: button
+            widget: object
+            i18n: true
+            collapsed: true
+            fields:
+              - {label: Link text, name: linkText, widget: string, i18n: true}
+              - {label: URL, name: url, widget: string, i18n: true}
+
       - label: About Section
         name: sectionAbout
         widget: object
@@ -121,6 +240,7 @@ collections:
                 - {label: Image Alt Text, name: alt, widget: string, i18n: true}
           - {label: Contact Text, name: contactText, widget: text, i18n: true}
           - {label: Contact Email, name: contactEmail, widget: text, i18n: duplicate}
+
   - name: survey
     label: Survey Page
     folder: content/survey
@@ -128,9 +248,17 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "surveyPage.js", i18n: duplicate}
+      - {label: Template Key, name: templateKey, widget: hidden, default: "genericPage.js", i18n: duplicate}
       - {label: Page Title, name: title, widget: string, i18n: true}
-      - label: policy
+      - label: Policy
+        name: body
+        widget: markdown
+        buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+        editor_components: []
+        modes: [rich_text]
+        minimal: true
+        i18n: true
+      - label: Policy
         name: policy
         widget: markdown
         buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
@@ -138,8 +266,8 @@ collections:
         modes: [rich_text]
         minimal: true
         i18n: true
-      - label: Consent Options
-        name: consentOptions
+      - label: Options
+        name: options
         widget: list
         min: 2
         max: 2
@@ -150,6 +278,7 @@ collections:
         - {label: "Internal Link?", name: isInterenal, widget: boolean, required: false}
         - {label: Link Address, name: linkAddress, widget: string}
       - {label: Thank You Note, name: endNote, widget: string, i18n: true}
+
   - name: fourOhFour
     label: 404 Page
     folder: content/fourOhFour
@@ -185,6 +314,21 @@ collections:
         fields:
           - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
           - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
+      - label: Navigation
+        name: nav
+        widget: object
+        i18n: true
+        fields:
+          - label: Button
+            name: button
+            widget: object
+            i18n: true
+            collapsed: true
+            fields:
+              - {label: Link text, name: linkText, widget: string, i18n: true}
+              - {label: URL, name: url, widget: string, i18n: true}
+
       - label: "Footer (Contact)"
         name: footer
         widget: object

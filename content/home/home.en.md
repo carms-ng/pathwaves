@@ -5,52 +5,104 @@ sectionIntro:
   img:
     image: /assets/pathwaves-logo.png
     alt: Pavewaves logo
-  pre: ANNOUNCING
   header: The Pathwaves Digital Literacy Incubator
   description: An initiative aimed at empowering Canadian musicians to make
     lifelong careers in music more possible and equitable.
+  button:
+    linkText: Apply Now
+    url: https://docs.google.com/forms/d/1EP9ZCgHu9tsUONnzLFD49epeq8AkFiIrf3TjIPu-a-M/viewform?edit_requested=true
 sectionSecond:
   img:
-    image: /assets/squiggle.png
-    alt: Squiggle
-  description: "It is in this time of profound change and reflection that we are
-    announcing the Pathwaves Digital Literacy Incubator, a groundbreaking
-    initiative for Canadian musicians that will help shape the future of the
-    music industry. By empowering a diversity of musicians to harness the
-    opportunities of the digital era, and elevating their voices as leaders, we
-    aim to make lifelong careers in music more possible and equitable. "
-sectionSurvey:
-  header: The Pathwaves Survey
-  descriptionLeft: The initiative begins with the Pathwaves Survey, a nation-wide
-    scan open to anyone operating in Canada’s music industry. Its intent is to
-    listen to a diversity of perspectives on the industry, especially as they
-    pertain to digital tools and services. The survey results will inform the
-    topics tackled during the Incubator and the outcomes which will be shared
-    with the public.
-  descriptionRight: "Those active in the Canadian music industry, working in all
-    genres, from all geographies, of all origins, at all stages of their careers
-    (emerging, mid-career, and established), and especially members from
-    underrepresented communities, including, but not limited to, BIPOC,
-    2SLGBTQ+, newcomers, and people with disabilities, are invited to
-    contribute. "
-  preLinkText: The short survey will be open from August 9th to September 24th.
-  linkText: ACCESS SURVEY
-  url: /survey
-sectionSubscribe:
-  header: The Pathwaves Program
-  description: In September, applications will open for the Pathwaves Digital
-    Literacy Incubator — a 3-phase virtual program consisting of conferences,
-    mentorship, masterclasses, workshops, individual work and exchange that take
-    musicians deep into today’s digital music world, from streaming software and
-    VR live shows to non-fungible tokens and AI-assisted composition. Curated to
-    facilitate digital exploration, nurture leadership, and spark new
-    solutions-oriented thought surrounding the creation and sharing of music,
-    the Pathwaves Incubator will run January – March 2022.
-  form:
-    preInputText: If you wish to be notified when applications open for the
-      Pathwaves Incubator, sign up below.
-    placeholder: Email Address
-    buttonText: SUBMIT
+    image: /assets/waves-l.png
+    alt: waves
+  description: >-
+    In this time of profound change and reflection, the **Pathwaves Digital
+    Literacy Incubator — a groundbreaking three-phase virtual development
+    program — is seeking applications from Canadian musicians who want to help
+    shape the future of the music industry**. By empowering a diversity of
+    musicians to harness the opportunities of the digital era, and elevating
+    their voices as leaders, Pathwaves aim to make lifelong careers in music
+    more possible and equitable. 
+
+
+    Delivered virtually from January to March 2022, **the Pathwaves Incubator consists of conferences, mentorship, master classes, workshops, individual work, and knowledge-exchange** — an initiative produced by Envision Management & Production in partnership with the Phi Centre and OCAD University, with financial support from the Canada Council for the Arts.
+
+
+    **A cohort of 18 musicians** reflecting the many axes of diversity in this country will be selected and paid for their participation. Together they will dive into today’s new technologies — from streaming software and VR live shows to NFTs and AI-assisted composition — with the goal of sparking new solutions-oriented thought surrounding the creation and sharing of music.
+sectionThird:
+  description: Canadian musicians working in all genres, from all geographies, of
+    all origins, at all stages of their careers (emerging, mid-career, and
+    established), and especially members from underrepresented communities,
+    including, but not limited to, BIPOC, 2SLGBTQ+, newcomers, and People with
+    Disabilities, are invited to apply.
+sectionForth:
+  leftComponent:
+    description: >-
+      The selection committee will choose musicians with a demonstrated interest
+      in embracing new technologies and in passing on the knowledge, skills, and
+      insights gained to their communities once the program ends.
+
+
+      **The application portal will be open from September 20 — October 24.**
+    colorHighlight: "#f5ce7a"
+    button:
+      linkText: Apply Now
+      url: https://docs.google.com/forms/d/1EP9ZCgHu9tsUONnzLFD49epeq8AkFiIrf3TjIPu-a-M/viewform?edit_requested=true
+    img:
+      image: /assets/waves-bl.png
+      alt: waves bottom left
+  rightComponent:
+    description: Alongside the applications, **anyone operating in Canada’s music
+      industry is invited to take the Pathwaves Survey**, a scan of the nation’s
+      diverse perspectives on the industry, especially as they pertain to
+      digital tools and services. The survey results will inform the issues that
+      participants tackle during the Pathwaves Incubator and the outcomes which
+      will be shared with the public.
+    colorHighlight: rgba(123, 171, 245, 0.4)
+    button:
+      linkText: ACCESS SURVEY
+      url: /survey
+    img:
+      image: /assets/waves-tr.png
+      alt: waves top left
+sectionFifth:
+  header: The Pathwaves Incubator Program
+  phases:
+    - header: The KickOff Conference
+      date: January 2022
+      description: "Unites musicians, tech professionals, and music industry
+        professionals for three days of cross-pollinating dialogue in a virtual
+        laboratory. The conference will delve into the forces shaping music
+        creation, performance, and business in today’s digital world, while
+        equipping musicians with the tools, knowledge, and resources to conceive
+        trailblazing projects that reimagine the way music is made and shared in
+        Canada and around the world.  "
+    - header: The Learning Engine
+      date: February - March 2022
+      description: Takes musicians on a two-month guided journey to develop their
+        projects. Participants will work in small teams with the help of
+        mentors, and will receive master classes and workshops to spark
+        innovative advancements in their digital literacy.
+    - header: The Learning Exchange
+      date: March 2022
+      description: Convenes participants once more to share their results and
+        learnings, leading to the creation of an accessible repository of
+        collaboratively-created knowledge.
+  endNote: The Pathwaves Legacy closes the program with the publication and
+    distribution of learnings in several media formats to creative communities
+    across the country.
+  img:
+    image: /assets/waves-r.png
+    alt: waves right
+sectionSixth:
+  description: The rapid digital transformation of today’s music industry and the
+    new obstacles triggered by the COVID-19 pandemic have exacerbated the
+    challenges of musical careers, but this tumultuous time has also shown that
+    with collective energy it's possible to turn tides. Apply now and share
+    widely!
+  button:
+    linkText: Apply Now
+    url: https://docs.google.com/forms/d/1EP9ZCgHu9tsUONnzLFD49epeq8AkFiIrf3TjIPu-a-M/viewform?edit_requested=true
 sectionAbout:
   description: Pathwaves is being produced by Envision Management & Production in
     partnership with the Phi Centre and OCAD University, with financial support
@@ -93,7 +145,7 @@ sectionAbout:
       name: PHI Centre
       url: https://phi-centre.com/en/
       logo:
-        image: /assets/phi-logo.png
+        image: /assets/phi.png
         alt: PHI Centre Logo
     - name: Canada Council for the Arts
       url: https://canadacouncil.ca/

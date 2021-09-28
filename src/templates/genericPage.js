@@ -7,22 +7,21 @@ import LocalizedLink from "../components/LocalizedLink"
 import Seo from "../components/Seo"
 
 // markup
-export default function SurveyPageTemplate({ pageContext, data: { page } }) {
+export default function GenericPageTemplate({ pageContext, data }) {
   const {
-    title,
-    policy,
-    consentOptions,
-    endNote
-  } = page.childMarkdownRemark.frontmatter
+    frontmatter,
+    rawMarkdownBody,
+  } = data.page.childMarkdownRemark
+  const { title, options, endNote } = frontmatter
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} >
       <Seo title={title} lang={pageContext.lang} />
-      <ConsentStyles>
+      <GenericStyles>
         <h1>{title}</h1>
-        <ReactMarkdown>{policy}</ReactMarkdown>
+        <ReactMarkdown>{rawMarkdownBody}</ReactMarkdown>
         <div className="btns-group">
-          {consentOptions.map(opt => {
+          {options?.map(opt => {
             if (opt.isInterenal) {
               return (
                 <LocalizedLink
@@ -35,7 +34,13 @@ export default function SurveyPageTemplate({ pageContext, data: { page } }) {
               )
             } else {
               return (
-                <a className="btn" key={opt.linkAddress} href={opt.linkAddress}>
+                <a
+                  className="btn"
+                  key={opt.linkAddress}
+                  href={opt.linkAddress}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {opt.linkText}
                 </a>
               )
@@ -43,16 +48,17 @@ export default function SurveyPageTemplate({ pageContext, data: { page } }) {
           })}
         </div>
         <p>{endNote}</p>
-      </ConsentStyles>
+      </GenericStyles>
     </Layout>
   )
 }
 
-const ConsentStyles = styled.div`
+const GenericStyles = styled.div`
   background: var(--linearGradient);
   padding: 10vmin 20px;
   > * {
     margin: 0 auto;
+    max-width: var(--maxWidthText);
   }
   h1 {
     text-align: center;
@@ -71,25 +77,22 @@ const ConsentStyles = styled.div`
   li {
     padding-bottom: 0.5rem;
   }
-  a {
-
-  }
 `
 
 export const query = graphql`
-  query($regx: String) {
-    page: file(relativeDirectory: {eq: "survey"}, base: {regex: $regx}) {
+  query($regx: String, $slug: String) {
+    page: file(relativeDirectory: {eq: $slug}, base: {regex: $regx}) {
       childMarkdownRemark {
         frontmatter {
           title
-          policy
-          consentOptions {
+          options {
             linkText
             linkAddress
             isInterenal
           }
           endNote
         }
+        rawMarkdownBody
       }
     }
   }

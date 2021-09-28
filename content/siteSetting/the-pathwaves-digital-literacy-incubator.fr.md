@@ -11,7 +11,7 @@ footer:
   footerLinks:
     - linkAddress: mailto:lesya@envisionmanagement.com
       linkText: Nous contacter
-    - linkAddress: /survey
-      linkText: Enquête
+    - linkAddress: https://www.mutualdesign.cc/
+      linkText: Par Mutual Design
       isInterenal: true
 ---

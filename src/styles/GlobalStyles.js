@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyles = createGlobalStyle`
   html {
     --black: #333333;
+    --offWhite: rgba(255, 255, 255, 0.5);
     --white: #fff;
     --lightgrey: #C2C3C0;
     --lightgray: var(--lightgrey);
@@ -11,13 +12,17 @@ const GlobalStyles = createGlobalStyle`
     --lightblue: #E0E9F5;
     --xlightblue: #EFF4FA;
     --maxWidth: 1024px;
-    --maxWidthText: 784px;
+    --maxWidthText: 980px;
     --br: 16px;
     --linearGradient: linear-gradient(127deg, var(--blue), rgb(224, 233, 245, 0) 50%),
                       linear-gradient(336deg, rgb(239, 244, 250, 0), var(--xlightblue) 50%),
                       linear-gradient(217deg, rgb(161, 189, 226, 0), var(--lightblue) 50%);
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 62.5%;
+    --padSm: 3rem;
+    --padMd: 8rem 3rem;
+    --padLg: 20rem 4rem;
+    --trans: all 0.7s ease;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -25,97 +30,86 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
   body {
-    font-family: 'Nunito', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
     padding: 0;
     margin: 0;
     color: var(--black);
   }
   h1, h2, h3, h4, h5, h6, pre {
-    font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    line-height: 1.2;
   }
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    line-height: 1.15;
+  h2, h3, h4, h5, h6 {
     max-width: var(--maxWidthText);
   }
-  p, small, ul {
-    line-height: 1.5;
+  p {
     max-width: var(--maxWidthText);
+    margin: 0 auto;
+    padding-bottom: 1rem;
   }
   a {
     text-decoration: none;
   }
-  a:hover {
-    text-decoration: underline;
-  }
-  button {
-    font-family: 'Nunito', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
   *:focus {
       outline: none;
-  }
-
-  // font sizes
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
-  h6 {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    font-weight: 400;
-  }
-  p, small {
-    font-size: 1rem;
-    white-space: pre-wrap;
-  }
-  small {
-    font-weight: 500;
   }
   .btn {
     display: block;
     text-align: center;
     border-radius: 16px;
-    width: 100%;
-    background: var(--black);
-    color: var(--white);
-    padding: 12px 0;
-    width: 100%;
+    background: var(--offWhite);
+    color: var(--black);
+    padding: 0.5rem 6rem;
+    border: 2px solid var(--black);
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: var(--trans);
+    &:hover {
+      background: var(--black);
+      color: var(--white);
+    }
+  }
+  h1, h2 {
+    font-size: 2.6rem;
+  }
+  .btn {
+    font-size: 1.6rem;
+  }
+  .font-lg {
+    font-size: 1.7rem;
   }
   .btns-group {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    max-width: var(--maxWidthText);
-    .btn {
-      margin-bottom: 1rem;
-    }
+    display: grid;
+    grid-gap: 1rem;
   }
+
   @media (min-width: 640px) {
-    html {
-      font-size: 16px;
+    body {
+      font-size: 1.7rem;
     }
     h1, h2 {
-      font-size: 2.5rem;
+      font-size: 4rem;
     }
-    pre, p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-
-    .btn, button, input {
-      font-size: 1.1rem;
-      padding: 12px 0;
+    .font-lg {
+      font-size: 2rem;
     }
     .btns-group {
-      display: grid;
-      grid-auto-flow: column;
-      grid-gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    body {
+      font-size: 1.8rem;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    .font-lg {
+      font-size: 2.4rem;
     }
   }
 `;

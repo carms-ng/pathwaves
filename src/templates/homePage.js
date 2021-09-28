@@ -1,157 +1,158 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
+import ReactMarkdown from 'react-markdown'
 
 import Layout from "../components/Layout"
-import styled from "styled-components"
+import { IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles } from "../styles/HomePageStyles"
+
 import LocalizedLink from "../components/LocalizedLink"
 import Seo from "../components/Seo"
 
 // markup
-export default function HomePageTemplate({ pageContext, data: { page } }) {
+export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
   const {
     title,
     sectionIntro,
     sectionSecond,
-    sectionSubscribe,
-    sectionSurvey,
+    sectionThird,
+    sectionForth,
+    sectionFifth,
+    sectionSixth,
     sectionAbout
-  } = page.childMarkdownRemark.frontmatter
+  } = data.page.childMarkdownRemark.frontmatter
 
   const collabs = sectionAbout.collaborators
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} >
       <Seo title={`${title}`} lang={pageContext.lang} />
-      {/* Equal Web Widget */}
-      <Helmet defer={true} >
-        <script>
-          {`
-            window.interdeal = {
-              "sitekey": "6050992760fa0c0f9679c316e5eff8ab",
-              "Position": "Right",
-              "Menulang": "EN-CA",
-              "domains": {
-                "js": "https://cdn.equalweb.com/",
-                "acc": "https://access.equalweb.com/"
-              },
-              "btnStyle": {
-                "vPosition": [
-                  "80%",
-                  null
-                ],
-                "scale": [
-                  "0.8",
-                  "0.8"
-                ],
-                "icon": {
-                  "type": 11,
-                  "shape": "circle",
-                  "outline": false
-                }
-              }
-            };
-            (function(doc, head, body){
-              const coreCall             = doc.createElement('script');
-              coreCall.src             = 'https://cdn.equalweb.com/core/3.0.3/accessibility.js';
-              coreCall.defer           = true;
-              coreCall.integrity       = 'sha512-7eVrsWwFQXxbr/QB7Zt+wVSQqLq8ulYJHplOZ5rv/8cre3RPseIPBmSERndeTFrpHRX8eDnIzwNckqynpi6IfA==';
-              coreCall.crossOrigin     = 'anonymous';
-              coreCall.setAttribute('data-cfasync', true );
-              body? body.appendChild(coreCall) : head.appendChild(coreCall);
-            })(document, document.head, document.body);
-          `}
-        </script>
-      </Helmet >
-      <LandingStyles>
-        {/* Intro Section */}
-        <IntroStyles>
-          <GatsbyImage
-            image={sectionIntro.img.image.childImageSharp.gatsbyImageData}
-            alt={sectionIntro.img.alt}
-            imgStyle={{ objectFit: 'contain' }}
+
+      <IntroStyles>
+        <GatsbyImage
+          image={sectionIntro?.img?.image.childImageSharp.gatsbyImageData}
+          alt={sectionIntro?.img?.alt}
+          imgStyle={{ objectFit: 'contain' }}
+        />
+        <h1>{sectionIntro?.header}</h1>
+        <p className="font-lg">{sectionIntro?.description}</p>
+        <a className="btn" href={sectionIntro?.button?.url}>{sectionIntro?.button?.linkText}</a>
+        <div id="logo-garden">
+          {collabs?.map((collab) => (
+            <a key={collab.name} href={collab.url} target="_blank" rel="noreferrer">
+              <GatsbyImage
+                image={collab.logo.image.childImageSharp.gatsbyImageData}
+                alt={collab.logo.alt}
+                imgStyle={{ objectFit: 'contain' }}
+                style={{ height: '100%', maxWidth: `300px` }}
+              />
+            </a>
+          ))}
+        </div>
+      </IntroStyles>
+
+      <SecondStyles>
+        <GatsbyImage
+          image={sectionSecond?.img?.image.childImageSharp.gatsbyImageData}
+          alt={sectionSecond?.img?.alt}
+          imgStyle={{ objectFit: 'contain', width: 'unset' }}
+          className="bg-image__left"
+        />
+        <div className="text__right">
+          <ReactMarkdown>{sectionSecond?.description}</ReactMarkdown>
+        </div>
+      </SecondStyles>
+
+      <ThirdStyles>
+        <ReactMarkdown className="font-lg">{sectionThird?.description}</ReactMarkdown>
+      </ThirdStyles>
+
+      <ForthStyles>
+        <div className="grid-wrapper">
+          <div>
+            <ReactMarkdown>{sectionForth?.leftComponent?.description}</ReactMarkdown>
+          </div>
+          <a className="btn" href={sectionForth?.leftComponent?.button?.url}>
+            {sectionForth?.leftComponent?.button?.linkText}
+          </a>
+
+          <div>
+            <ReactMarkdown>{sectionForth?.rightComponent?.description}</ReactMarkdown>
+          </div>
+          <LocalizedLink
+            className="btn"
+            to={sectionForth?.rightComponent?.button?.url}
+            lang={pageContext.lang}
+            text={sectionForth?.rightComponent?.button?.linkText}
           />
-          <pre>{sectionIntro.pre}</pre>
-          <h1>{sectionIntro.header}</h1>
-          <p>{sectionIntro.description}</p>
-          <div id="logo-garden">
-            {collabs.map((collab) => (
-              <a key={collab.name} href={collab.url}>
-                <GatsbyImage
-                  image={collab.logo.image.childImageSharp.gatsbyImageData}
-                  alt={collab.logo.alt}
-                  imgStyle={{ objectFit: 'contain' }}
-                />
-              </a>
+        </div>
+        <GatsbyImage
+          image={sectionForth?.leftComponent?.img?.image.childImageSharp.gatsbyImageData}
+          alt={sectionForth?.leftComponent?.img?.alt}
+          className="bg-image__bl"
+        />
+        <GatsbyImage
+          image={sectionForth?.rightComponent?.img?.image.childImageSharp.gatsbyImageData}
+          alt={sectionForth?.rightComponent?.img?.alt}
+          className="bg-image__tr"
+        />
+      </ForthStyles>
+
+      <FifthStyles>
+        <div className="text__left">
+          <h2>{sectionFifth?.header}</h2>
+          <div id="phases">
+            {sectionFifth?.phases?.map(phase => (
+              <div key={phase.header}>
+                <h3>{phase.header}</h3>
+                <small>{phase.date}</small>
+                <p>{phase.description}</p>
+              </div>
             ))}
           </div>
-        </IntroStyles>
-        {/* Second Section */}
-        <SecondStyles>
-          <GatsbyImage
-            image={sectionSecond.img.image.childImageSharp.gatsbyImageData}
-            alt={sectionSecond.img.alt}
-            imgStyle={{ objectFit: 'contain' }}
-          />
-          <p>{sectionSecond.description}</p>
-        </SecondStyles>
-        {/* Subscribe section */}
-        <SurveyStyles>
-          <h2>{sectionSurvey.header}</h2>
-          <div className="flex-y-md">
-            <p>{sectionSurvey.descriptionLeft}</p>
-            <p>{sectionSurvey.descriptionRight}</p>
-          </div>
-          <div>
-            <small>{sectionSurvey.preLinkText}</small>
-            <LocalizedLink
-              className="btn"
-              to={sectionSurvey.url}
-              lang={pageContext.lang}
-              text={sectionSurvey.linkText}
-            />
-          </div>
-        </SurveyStyles>
-        {/* Subscribe Section */}
-        <SubscribeStyles>
-          <h2>{sectionSubscribe.header}</h2>
-          <p>{sectionSubscribe.description}</p>
-          <small>{sectionSubscribe.form.preInputText}</small>
-          {/* TODO: Wire Netlify Form */}
-          <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="email" name="email" id="email" placeholder={sectionSubscribe.form.placeholder} />
-            <button type="submit">{sectionSubscribe.form.buttonText}</button>
-            {/* <input type="reset" value="Clear" /> */}
-          </form>
-        </SubscribeStyles>
-        {/* Section About*/}
-        <AboutStyles>
-          <h6>{sectionAbout.description}</h6>
-          <div className="cards-2b2">
-            {collabs.map((collab) => {
-              return (
-                <div key={collab.name}>
-                  <a href={collab.url}>
-                    <GatsbyImage
-                      image={collab.logo.image.childImageSharp.gatsbyImageData}
-                      alt={collab.logo.alt} />
-                  </a>
-                  <p>{collab.description}</p>
-                </div>
-              )
-            })}
-          </div>
-          <small>
-            {sectionAbout.contactText}
-            <br />
-            <a href={"mailto:" + sectionAbout.contactEmail}>{sectionAbout.contactEmail}</a>
-          </small>
-        </AboutStyles>
-      </LandingStyles>
+          <p className="font-lg">{sectionFifth?.endNote}</p>
+        </div>
+        <GatsbyImage
+          image={sectionFifth?.img?.image.childImageSharp.gatsbyImageData}
+          alt={sectionFifth?.img?.alt}
+          imgStyle={{ objectFit: 'contain', width: 'unset', left: 'unset' }}
+          className="bg-image__right"
+        />
+      </FifthStyles>
+
+      <SixthStyles>
+        <ReactMarkdown className="font-lg">{sectionSixth?.description}</ReactMarkdown>
+        <a className="btn" href={sectionSixth?.button?.url}>
+          {sectionSixth?.button?.linkText}
+        </a>
+      </SixthStyles>
+
+      {/* Section About*/}
+      <AboutStyles>
+        <p className="font-lg">{sectionAbout.description}</p>
+        <div className="cards-2b2">
+          {collabs.map((collab) => {
+            return (
+              <div key={collab.name}>
+                <a href={collab.url}>
+                  <GatsbyImage
+                    image={collab.logo.image.childImageSharp.gatsbyImageData}
+                    alt={collab.logo.alt}
+                    style={{ maxWidth: `300px`}}
+                  />
+                </a>
+                <p>{collab.description}</p>
+              </div>
+            )
+          })}
+        </div>
+        <p>
+          {sectionAbout.contactText}
+          <br />
+          <a href={"mailto:" + sectionAbout.contactEmail}>{sectionAbout.contactEmail}</a>
+        </p>
+      </AboutStyles>
     </Layout>
   )
 }
@@ -167,48 +168,26 @@ export const query = graphql`
               alt
               image {
                 childImageSharp {
-                  gatsbyImageData (
-                    width: 150
-                    placeholder: BLURRED
-                    layout: CONSTRAINED
-                  )
+                  gatsbyImageData(width: 150, placeholder: BLURRED, layout: CONSTRAINED)
                 }
               }
             }
-            pre
             header
             description
+            button {
+              linkText
+              url
+            }
           }
           sectionSecond {
+            description
             img {
               image {
                 childImageSharp {
-                  gatsbyImageData (
-                    width: 150
-                    placeholder: BLURRED
-                    layout: CONSTRAINED
-                  )
+                  gatsbyImageData(width: 500, placeholder: TRACED_SVG, layout: CONSTRAINED)
                 }
               }
               alt
-            }
-            description
-          }
-          sectionSurvey {
-            header
-            descriptionLeft
-            descriptionRight
-            preLinkText
-            linkText
-            url
-          }
-          sectionSubscribe {
-            header
-            description
-            form {
-              preInputText
-              placeholder
-              buttonText
             }
           }
           sectionAbout {
@@ -222,9 +201,10 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      height: 50
-                      placeholder: BLURRED
-                      layout: CONSTRAINED
+                      height: 80,
+                      placeholder: TRACED_SVG,
+                      layout: CONSTRAINED,
+                      transformOptions: {fit: CONTAIN}
                     )
                   }
                 }
@@ -233,190 +213,79 @@ export const query = graphql`
             contactText
             contactEmail
           }
+          sectionThird {
+            description
+          }
+          sectionForth {
+            leftComponent {
+              description
+              button {
+                linkText
+                url
+              }
+              img {
+                image {
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 400,
+                      placeholder: TRACED_SVG,
+                      layout: CONSTRAINED,
+                    )
+                  }
+                }
+                alt
+              }
+            }
+            rightComponent {
+              description
+              button {
+                linkText
+                url
+              }
+              img {
+                image {
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 400,
+                      placeholder: TRACED_SVG,
+                      layout: CONSTRAINED,
+                    )
+                  }
+                }
+                alt
+              }
+            }
+          }
+          sectionFifth {
+            header
+            phases {
+              header
+              date
+              description
+            }
+            endNote
+            img {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 500,
+                    placeholder: TRACED_SVG,
+                    layout: CONSTRAINED,
+                  )
+                }
+              }
+              alt
+            }
+          }
+          sectionSixth {
+            description
+            button {
+              linkText
+              url
+            }
+          }
         }
       }
-    }
-  }
-`
-
-// styling
-const LandingStyles = styled.div`
-  section {
-    padding: 20px;
-    height: 100vh;
-    text-align: center;
-    > * {
-      max-width: var(--maxWidth);
-    }
-    > p, h6 {
-      max-width: var(--maxWidthText);
-    }
-    h6 {
-      font-size: 1.25rem;
-    }
-    @media (min-width: 640px) {
-      h6 {
-        font-size: 1.5rem;
-      }
-
-    }
-  }
-`
-const IntroStyles = styled.section`
-  background: var(--linearGradient);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  > * {
-    margin: 2vmin 0;
-  }
-
-  /* Logo Garden */
-  #logo-garden {
-    margin: 1rem 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.25rem;
-  }
-  @media (min-width: 640px) {
-    justify-content: center;
-  }
-  @media (min-width: 1024px) {
-    #logo-garden {
-      margin-top: 4rem;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
-    }
-  }
-  /* .horizontal-scroll-wrapper {
-    max-width: unset;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    > a {
-      padding: 0 2rem;
-    }
-    @media (min-width: 1024px) {
-      margin-top: 3rem;
-      > a {
-        padding: 0 3rem;
-      }
-    }
-  } */
-`
-const SecondStyles = styled.section`
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  grid-gap: 40px;
-`
-const SurveyStyles = styled.section`
-  background: var(--linearGradient);
-  display: grid;
-  align-items: flex-start;
-  justify-items: center;
-  grid-gap: 12px;
-  overflow-y: auto;
-  p {
-    padding: 6px 0;
-  }
-  > div {
-    width: 100%;
-  }
-  .btn {
-    margin: 1.5rem 0;
-  }
-  @media (min-width: 440px) {
-    align-content: center;
-  }
-  @media (min-width: 1024px) {
-    grid-gap: 30px;
-    .flex-y-md {
-      display: flex;
-      text-align: left;
-      > p {
-        padding: 20px;
-      }
-    }
-  }
-`
-const SubscribeStyles = styled.section`
-  display: grid;
-  align-items: flex-start;
-  justify-items: center;
-  grid-gap: 1rem;
-  overflow-y: auto;
-
-  form {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    margin-top: 0.5rem;
-    padding-bottom: 1.5rem;
-    font-size: 1rem;
-  }
-  input {
-    border-radius: var(--br) 0 0 var(--br);
-    padding: 16px;
-    border: 1px solid var(--lightgrey);
-  }
-  button {
-    border-radius: 0 var(--br) var(--br) 0;
-    background: var(--black);
-    color: var(--white);
-  }
-  @media (min-width: 440px) {
-    align-content: center;
-  }
-  @media (min-width: 1024px) {
-    grid-gap: 1.5rem;
-    p {
-      padding: 2rem 0;
-    }
-  }
-`
-const AboutStyles = styled.section`
-  padding-top: 4rem !important;
-  height: unset !important;
-  background: var(--linearGradient);
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  grid-gap: 1rem;
-
-  .cards-2b2 {
-    padding: 2rem 0 4rem 0;
-    display: grid;
-    grid-gap: 1rem;
-    text-align: left;
-    > div {
-      display: grid;
-      grid-template-rows: 120px 1fr;
-      > a {
-        align-self: center;
-      }
-    }
-    p {
-      padding: 12px 0;
-    }
-  }
-  a {
-    color: var(--darkblue);
-  }
-  @media (min-width: 1024px) {
-    padding-top: 9rem !important;
-    padding-bottom: 5rem !important;
-    .cards-2b2 {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-auto-flow: column;
-      grid-gap: 2rem;
     }
   }
 `
