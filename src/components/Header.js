@@ -1,55 +1,44 @@
-import { graphql, useStaticQuery } from 'gatsby'
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 import LocalizedLink from './LocalizedLink'
 
+import { Link } from 'gatsby';
+import { IdentityContext } from '../../identity-context';
 
 export default function Header({ lang, slug }) {
-  // Language Switcher
+  const { user, identity: netlifyIdentity } = useContext(IdentityContext)
+
+  // Prep Data for Language Switcher
   const toLang = lang === 'en' ? 'fr' : 'en'
   const to = slug === "home" ? "/" : `/${slug}`
 
-  const { allFile } = useStaticQuery(graphql`
-    query {
-      allFile(filter: {relativeDirectory: {eq: "siteSetting"}}) {
-        nodes {
-          childMarkdownRemark {
-            frontmatter {
-              nav {
-                button {
-                  linkText
-                  url
-                }
-              }
-            }
-          }
-          base
-        }
-      }
-    }
-  `)
-
-  const data = allFile.nodes.map(node => {
-    const locale = node.base.split('.')[1]
-    const frontmatter = node.childMarkdownRemark.frontmatter.nav
-    return ({
-      locale,
-      frontmatter,
-    })
-  }).find(elem => lang === elem.locale).frontmatter
+  console.log(user, netlifyIdentity)
 
   return (
     <HeaderStyles>
       {/* Header button */}
-      <a
-        className="btn"
-        href={data?.button?.url}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {data?.button?.linkText}
-      </a>
+      <nav>
+        {/* Open Login Modal  */}
+        {
+          !user &&
+          <button className="btn" onClick={() => {
+            netlifyIdentity.open()
+          }}>Log In</button>
+        }
 
+        {/* Log user out */}
+        {
+          user &&
+          <>
+            <Link to="/app" className="btn">Calendar</Link>
+            <Link to="/app/resource" className="btn">Resource</Link>
+
+            <button className="btn" onClick={() => {
+              netlifyIdentity.logout()
+            }}>Log Out</button>
+          </>
+        }
+      </nav>
       {/* Language Switcher */}
       <LocalizedLink className="switcher" lang={toLang} to={to} text={toLang} />
     </HeaderStyles>
@@ -65,7 +54,7 @@ const HeaderStyles = styled.header`
   padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 2vmin;
 
   > a {
@@ -91,15 +80,9 @@ const HeaderStyles = styled.header`
     }
   }
   .btn {
-    display: none;
+    display: block;
     font-weight: 400;
-    padding: 0.25rem 2rem;
-  }
-
-  @media (min-width: 1024px) {
-    justify-content: space-between;
-    .btn {
-      display: block;
-    }
+    padding: 0.5rem 2rem;
+    cursor: pointer;
   }
 `
