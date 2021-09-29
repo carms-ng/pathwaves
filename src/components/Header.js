@@ -12,8 +12,6 @@ export default function Header({ lang, slug }) {
   const toLang = lang === 'en' ? 'fr' : 'en'
   const to = slug === "home" ? "/" : `/${slug}`
 
-  console.log(user, netlifyIdentity)
-
   return (
     <HeaderStyles>
       {/* Header button */}
