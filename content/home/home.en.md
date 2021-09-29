@@ -43,7 +43,7 @@ sectionForth:
       insights gained to their communities once the program ends.
 
 
-      **The application portal will be open from September 20 — October 24.**
+      **The application portal will be open from September 27 — October 24.**
     colorHighlight: "#f5ce7a"
     button:
       linkText: Apply Now
