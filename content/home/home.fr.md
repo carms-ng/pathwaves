@@ -26,7 +26,7 @@ sectionSecond:
     voulons faciliter les carrières musicales et les rendre plus équitables.
 
 
-    Offert virtuellement de janvier à mars 2022, **l'incubateur Pathwaves se compose de conférences, de mentorat, de classes de maître, d’ateliers, de sessions de travail individuel et d’échanges**. Cette initiative est produite par Envision Management & Production en partenariat avec le Centre Phi et l'Université OCAD, et avec le soutien financier du Conseil des arts du Canada.
+    Offert virtuellement de janvier à mars 2022, **l'incubateur Pathwaves se compose de conférences, de mentorat, de classes de maître, d’ateliers, de sessions de travail individuel et d’échanges**.
 
 
     **Dix-huit musiciens** reflétant les nombreux axes de la diversité au Canada seront sélectionnés et rémunérés pour leur participation. Ensemble, ils exploreront des questions liées aux nouvelles technologies - logiciels de streaming, spectacles VR, NFTs (jetons non fongibles) et composition assistée par l'IA - dans le but de susciter une nouvelle réflexion axée sur les solutions entourant la création et le partage de la musique.

@@ -25,7 +25,7 @@ sectionSecond:
     more possible and equitable. 
 
 
-    Delivered virtually from January to March 2022, **the Pathwaves Incubator consists of conferences, mentorship, master classes, workshops, individual work, and knowledge-exchange** — an initiative produced by Envision Management & Production in partnership with the Phi Centre and OCAD University, with financial support from the Canada Council for the Arts.
+    Delivered virtually from January to March 2022, **the Pathwaves Incubator consists of conferences, mentorship, master classes, workshops, individual work, and knowledge-exchange**.
 
 
     **A cohort of 18 musicians** reflecting the many axes of diversity in this country will be selected and paid for their participation. Together they will dive into today’s new technologies — from streaming software and VR live shows to NFTs and AI-assisted composition — with the goal of sparking new solutions-oriented thought surrounding the creation and sharing of music.
