@@ -1,13 +1,15 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-import ReactMarkdown from 'react-markdown'
+import React from 'react';
+import { graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import ReactMarkdown from 'react-markdown';
 
-import Layout from "../components/Layout"
-import { IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles } from "../styles/HomePageStyles"
+import Layout from '../components/Layout';
+import {
+  IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles,
+} from '../styles/HomePageStyles';
 
-import LocalizedLink from "../components/LocalizedLink"
-import Seo from "../components/Seo"
+import LocalizedLink from '../components/LocalizedLink';
+import Seo from '../components/Seo';
 
 // markup
 export default function HomePageTemplate({ pageContext, data }) {
@@ -20,13 +22,13 @@ export default function HomePageTemplate({ pageContext, data }) {
     sectionForth,
     sectionFifth,
     sectionSixth,
-    sectionAbout
-  } = data.page.childMarkdownRemark.frontmatter
+    sectionAbout,
+  } = data.page.childMarkdownRemark.frontmatter;
 
-  const collabs = sectionAbout.collaborators
+  const collabs = sectionAbout.collaborators;
 
   return (
-    <Layout lang={pageContext.lang} slug={pageContext.slug} >
+    <Layout lang={pageContext.lang} slug={pageContext.slug}>
       <Seo title={`${title}`} lang={pageContext.lang} />
 
       <IntroStyles>
@@ -48,7 +50,7 @@ export default function HomePageTemplate({ pageContext, data }) {
                 image={collab.logo.image.childImageSharp.gatsbyImageData}
                 alt={collab.logo.alt}
                 imgStyle={{ objectFit: 'contain' }}
-                style={{ height: '100%', maxWidth: `300px` }}
+                style={{ height: '100%', maxWidth: '300px' }}
               />
             </a>
           ))}
@@ -111,7 +113,7 @@ export default function HomePageTemplate({ pageContext, data }) {
         <div className="text__left">
           <h2>{sectionFifth?.header}</h2>
           <div id="phases">
-            {sectionFifth?.phases?.map(phase => (
+            {sectionFifth?.phases?.map((phase) => (
               <div key={phase.header}>
                 <h3>{phase.header}</h3>
                 <small>{phase.date}</small>
@@ -136,30 +138,28 @@ export default function HomePageTemplate({ pageContext, data }) {
         </a>
       </SixthStyles>
 
-      {/* Section About*/}
+      {/* Section About */}
       <AboutStyles>
         <p className="font-lg">{sectionAbout.description}</p>
         <div className="cards-2b2">
-          {collabs.map((collab) => {
-            return (
-              <div key={collab.name}>
-                <a href={collab.url} target="_blank" rel="noreferrer">
-                  <GatsbyImage
-                    image={collab.logo.image.childImageSharp.gatsbyImageData}
-                    alt={collab.logo.alt}
-                    style={{ maxWidth: `300px`}}
-                  />
-                </a>
-                <p>{collab.description}</p>
-              </div>
-            )
-          })}
+          {collabs.map((collab) => (
+            <div key={collab.name}>
+              <a href={collab.url} target="_blank" rel="noreferrer">
+                <GatsbyImage
+                  image={collab.logo.image.childImageSharp.gatsbyImageData}
+                  alt={collab.logo.alt}
+                  style={{ maxWidth: '300px' }}
+                />
+              </a>
+              <p>{collab.description}</p>
+            </div>
+          ))}
         </div>
         <p>
           {sectionAbout.contactText}
           <br />
           <a
-            href={"mailto:" + sectionAbout.contactEmail}
+            href={`mailto:${sectionAbout.contactEmail}`}
             target="_blank"
             rel="noreferrer"
           >
@@ -168,7 +168,7 @@ export default function HomePageTemplate({ pageContext, data }) {
         </p>
       </AboutStyles>
     </Layout>
-  )
+  );
 }
 
 export const query = graphql`
@@ -302,4 +302,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
