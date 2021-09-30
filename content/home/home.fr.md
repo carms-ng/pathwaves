@@ -35,7 +35,7 @@ sectionThird:
     explorant tous genres musicaux, de toutes les régions géographiques, de
     toutes les origines, à tous les stades de leur carrière (émergents,
     mi-carrière et établis), et en particulier, les membres des communautés
-    sous-représentées, y compris, mais sans s'y limiter, personnes Noirs et
+    sous-représentées, y compris, mais sans s'y limiter, personnes Noirs.es et
     Autochtones, personnes de Couleur, 2SLGBTQ+, les nouveaux arrivants et les
     personnes handicapées, sont invités à déposer leur candidature.
 sectionForth:
