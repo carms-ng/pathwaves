@@ -33,8 +33,9 @@ sectionThird:
   description: Canadian musicians working in all genres, from all geographies, of
     all origins, at all stages of their careers (emerging, mid-career, and
     established), and especially members from underrepresented communities,
-    including, but not limited to, BIPOC, 2SLGBTQ+, newcomers, and People with
-    Disabilities, are invited to apply.
+    including, but not limited to, Black and Indigenous People, People of
+    Colour, 2SLGBTQ+, newcomers, and People with Disabilities, are invited to
+    apply.
 sectionForth:
   leftComponent:
     description: >-
