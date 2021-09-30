@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: Carms-dev/pathwaves
-  branch: master
+  branch: dev
   commit_messages:
     create: '[ADD][CMS] {{collection}} “{{slug}}”'
     update: '[UPD][CMS] {{collection}} “{{slug}}”'
@@ -362,6 +362,5 @@ collections:
         default: ""
         date_format: "DD.MM.YYYY" # e.g. 24.12.2021
         time_format: "HH:mm" # e.g. 21:07
-        format: "LLL"
         picker_utc: false
         i18n: duplicate
