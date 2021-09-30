@@ -1,17 +1,36 @@
 import React, { useState } from 'react';
-import DatePicker, { CalendarContainer } from 'react-datepicker';
+import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import styled from 'styled-components';
-
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import Clipboard from '../components/Clipbroad';
 
-export default function CalendarPage({ pageContext, data }) {
+export default function CalendarPage({ data }) {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
   const dateFormatOptions = {
     weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
   };
 
+  // Group activities by Date
+  const dateGroups = data.allFile.nodes.reduce((groups, node) => {
+    const obj = node.childMarkdownRemark.frontmatter;
+    const date = obj.start.split('T')[0];
+    // Create Empty Array if Date key doesn't exist
+    if (!groups[date]) { groups[date] = []; }
+    // Push artivity to the array
+    groups[date].push(obj);
+    return groups;
+  }, {});
+
+  // Get Activities on the selected date
+  const selectedDateString = selectedDate.toISOString().split('T')[0];
+  const selectedDateGroup = dateGroups[selectedDateString]
+    ? dateGroups[selectedDateString].sort((a, b) => new Date(b.start) - new Date(a.start))
+    : [];
+
+  console.log(selectedDateGroup);
   return (
     <Layout>
       <CalendarPageStyles>
@@ -28,13 +47,46 @@ export default function CalendarPage({ pageContext, data }) {
           onChange={(date) => {
             setSelectedDate(date);
           }}
-          dayClassName={(date) => (date.getDay() < Math.random() * 31 ? 'underlined' : '')}
+          dayClassName={(date) => {
+            const dateString = date.toISOString().split('T')[0];
+            const hasEvent = Object.keys(dateGroups).includes(dateString);
+            return (hasEvent ? 'underlined' : '');
+          }}
           inline
         />
+        <div>
+          {selectedDateGroup?.map((activity) => (
+            <div key={activity.start}>
+              <p>{new Date(activity.start).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
+              <h3>{activity.title}</h3>
+              <Clipboard copyText={activity.activity_link} />
+            </div>
+          ))}
+        </div>
       </CalendarPageStyles>
     </Layout>
   );
 }
+
+export const query = graphql`
+  {
+    allFile(
+      filter: {relativeDirectory: {eq: "activity"}, base: {regex: "/^.*en\\.md$/"}}
+      sort: {fields: childMarkdownRemark___frontmatter___start}
+    ) {
+      nodes {
+        childMarkdownRemark {
+          frontmatter {
+            title
+            activity_link
+            start
+          }
+        }
+      }
+    }
+  }
+
+`;
 
 const CalendarPageStyles = styled.div`
   min-height: 100vh;
@@ -64,7 +116,6 @@ const CalendarPageStyles = styled.div`
     width: 3rem;
     line-height: 3rem;
     margin: 0.5rem;
-    color: #333333;
     border-radius: 50%;
   }
   .react-datepicker__day--selected {

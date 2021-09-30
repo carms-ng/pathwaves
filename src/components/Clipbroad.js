@@ -1,8 +1,7 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
 
-export default function Clipboard() {
-  const textPlaceholder = 'TEXT TO BE COPIED';
+export default function Clipboard({ copyText }) {
   const copyRef = useRef();
   const copyToClipBoard = () => {
     navigator.clipboard.writeText(copyRef.current.innerText);
@@ -10,12 +9,12 @@ export default function Clipboard() {
   return (
     <ClipboardStyles>
       <a
-        href={textPlaceholder}
+        href={copyText}
         ref={copyRef}
         target="_blank"
         rel="noreferrer"
       >
-        {textPlaceholder}
+        {copyText}
       </a>
       <button type="button" onClick={copyToClipBoard}>
         📋
