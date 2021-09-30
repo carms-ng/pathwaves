@@ -36,7 +36,7 @@ sectionThird:
     toutes les origines, à tous les stades de leur carrière (émergents,
     mi-carrière et établis), et en particulier, les membres des communautés
     sous-représentées, y compris, mais sans s'y limiter, personnes Noirs et
-    Autochtones, personnes de couleur, 2SLGBTQ+, les nouveaux arrivants et les
+    Autochtones, personnes de Couleur, 2SLGBTQ+, les nouveaux arrivants et les
     personnes handicapées, sont invités à déposer leur candidature.
 sectionForth:
   leftComponent:
