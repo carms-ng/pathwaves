@@ -84,7 +84,9 @@ const GlobalStyles = createGlobalStyle`
     display: grid;
     grid-gap: 1rem;
   }
-
+  img {
+    pointer-events: none;
+  }
   @media (min-width: 640px) {
     body {
       font-size: 1.7rem;
