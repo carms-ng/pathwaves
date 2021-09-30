@@ -1,37 +1,39 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { EqualWeb } from "../components/EqualWeb"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import EqualWeb from './EqualWeb';
 
-import Typography from "../styles/Typography"
-import GlobalStyles from "../styles/GlobalStyles"
-import Footer from "./Footer"
-import Header from "./Header"
+import Typography from '../styles/Typography';
+import GlobalStyles from '../styles/GlobalStyles';
+import Footer from './Footer';
+import Header from './Header';
 
-function Layout({ children, noFooter, lang, slug }) {
+function Layout({
+  children, noFooter, lang, slug,
+}) {
   return (
     <>
       {/* Equal Web Widget */}
-      <Helmet defer={true} >
+      <Helmet defer>
         <script>{EqualWeb}</script>
-      </Helmet >
+      </Helmet>
       <Typography />
       <GlobalStyles />
       <Header lang={lang} slug={slug} />
       <main>{children}</main>
       {!noFooter && <Footer lang={lang} />}
     </>
-  )
+  );
 }
-
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   noFooter: PropTypes.bool,
-}
+  lang: PropTypes.string,
+};
 
 Layout.defaultProps = {
   noFooter: false,
   lang: 'en',
-}
-export default Layout
+};
+export default Layout;

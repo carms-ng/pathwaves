@@ -1,13 +1,15 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-import ReactMarkdown from 'react-markdown'
+import React from 'react';
+import { graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import ReactMarkdown from 'react-markdown';
 
-import Layout from "../components/Layout"
-import { IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles } from "../styles/HomePageStyles"
+import Layout from '../components/Layout';
+import {
+  IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles,
+} from '../styles/HomePageStyles';
 
-import LocalizedLink from "../components/LocalizedLink"
-import Seo from "../components/Seo"
+import LocalizedLink from '../components/LocalizedLink';
+import Seo from '../components/Seo';
 
 // markup
 export default function HomePageTemplate({ pageContext, data }) {
@@ -20,13 +22,13 @@ export default function HomePageTemplate({ pageContext, data }) {
     sectionForth,
     sectionFifth,
     sectionSixth,
-    sectionAbout
-  } = data.page.childMarkdownRemark.frontmatter
+    sectionAbout,
+  } = data.page.childMarkdownRemark.frontmatter;
 
-  const collabs = sectionAbout.collaborators
+  const collabs = sectionAbout.collaborators;
 
   return (
-    <Layout lang={pageContext.lang} slug={pageContext.slug} >
+    <Layout lang={pageContext.lang} slug={pageContext.slug}>
       <Seo title={`${title}`} lang={pageContext.lang} />
 
       <IntroStyles>
@@ -37,7 +39,10 @@ export default function HomePageTemplate({ pageContext, data }) {
         />
         <h1>{sectionIntro?.header}</h1>
         <p className="font-lg">{sectionIntro?.description}</p>
-        <a className="btn" href={sectionIntro?.button?.url}>{sectionIntro?.button?.linkText}</a>
+        <a className="btn" href={sectionIntro?.button?.url} target="_blank" rel="noreferrer">
+          {sectionIntro?.button?.linkText}
+        </a>
+
         <div id="logo-garden">
           {collabs?.map((collab) => (
             <a key={collab.name} href={collab.url} target="_blank" rel="noreferrer">
@@ -45,7 +50,7 @@ export default function HomePageTemplate({ pageContext, data }) {
                 image={collab.logo.image.childImageSharp.gatsbyImageData}
                 alt={collab.logo.alt}
                 imgStyle={{ objectFit: 'contain' }}
-                style={{ height: '100%', maxWidth: `300px` }}
+                style={{ height: '100%', maxWidth: '300px' }}
               />
             </a>
           ))}
@@ -73,7 +78,12 @@ export default function HomePageTemplate({ pageContext, data }) {
           <div>
             <ReactMarkdown>{sectionForth?.leftComponent?.description}</ReactMarkdown>
           </div>
-          <a className="btn" href={sectionForth?.leftComponent?.button?.url}>
+          <a
+            className="btn"
+            href={sectionForth?.leftComponent?.button?.url}
+            target="_blank"
+            rel="noreferrer"
+          >
             {sectionForth?.leftComponent?.button?.linkText}
           </a>
 
@@ -103,7 +113,7 @@ export default function HomePageTemplate({ pageContext, data }) {
         <div className="text__left">
           <h2>{sectionFifth?.header}</h2>
           <div id="phases">
-            {sectionFifth?.phases?.map(phase => (
+            {sectionFifth?.phases?.map((phase) => (
               <div key={phase.header}>
                 <h3>{phase.header}</h3>
                 <small>{phase.date}</small>
@@ -123,38 +133,42 @@ export default function HomePageTemplate({ pageContext, data }) {
 
       <SixthStyles>
         <ReactMarkdown className="font-lg">{sectionSixth?.description}</ReactMarkdown>
-        <a className="btn" href={sectionSixth?.button?.url}>
+        <a className="btn" href={sectionSixth?.button?.url} target="_blank" rel="noreferrer">
           {sectionSixth?.button?.linkText}
         </a>
       </SixthStyles>
 
-      {/* Section About*/}
+      {/* Section About */}
       <AboutStyles>
         <p className="font-lg">{sectionAbout.description}</p>
         <div className="cards-2b2">
-          {collabs.map((collab) => {
-            return (
-              <div key={collab.name}>
-                <a href={collab.url}>
-                  <GatsbyImage
-                    image={collab.logo.image.childImageSharp.gatsbyImageData}
-                    alt={collab.logo.alt}
-                    style={{ maxWidth: `300px`}}
-                  />
-                </a>
-                <p>{collab.description}</p>
-              </div>
-            )
-          })}
+          {collabs.map((collab) => (
+            <div key={collab.name}>
+              <a href={collab.url} target="_blank" rel="noreferrer">
+                <GatsbyImage
+                  image={collab.logo.image.childImageSharp.gatsbyImageData}
+                  alt={collab.logo.alt}
+                  style={{ maxWidth: '300px' }}
+                />
+              </a>
+              <p>{collab.description}</p>
+            </div>
+          ))}
         </div>
         <p>
           {sectionAbout.contactText}
           <br />
-          <a href={"mailto:" + sectionAbout.contactEmail}>{sectionAbout.contactEmail}</a>
+          <a
+            href={`mailto:${sectionAbout.contactEmail}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {sectionAbout.contactEmail}
+          </a>
         </p>
       </AboutStyles>
     </Layout>
-  )
+  );
 }
 
 export const query = graphql`
@@ -288,4 +302,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

@@ -8,8 +8,8 @@
 - Netlify CMS
 - Netlify Identity (Auth)
 
-## Links
-- [Staging](https://pathwaves.netlify.app/)
+## Sites
+- [Development](https://pathwaves-dev.netlify.app/)
 - [Production](https://www.pathwaves.ca/)
 
 ## Attribution

@@ -346,3 +346,21 @@ collections:
             - {label: Link Text, name: linkText, widget: string}
             - {label: "Internal Link?", name: isInterenal, widget: boolean, required: false}
             - {label: Link Address, name: linkAddress, widget: string}
+
+  - name: activity
+    label: Activity
+    folder: content/activity
+    create: true
+    delete: false
+    i18n: true
+    fields:
+      - {label: Title, name: title, widget: string, i18n: true}
+      - {label: Zoom Link, name: activity_link, widget: string, i18n: duplicate}
+      - label: Start time
+        name: start
+        widget: datetime
+        default: ""
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        picker_utc: false
+        i18n: duplicate

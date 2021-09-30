@@ -1,27 +1,27 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import styled from "styled-components"
-import ReactMarkdown from 'react-markdown'
-import LocalizedLink from "../components/LocalizedLink"
-import Seo from "../components/Seo"
+import React from 'react';
+import { graphql } from 'gatsby';
+import styled from 'styled-components';
+import ReactMarkdown from 'react-markdown';
+import Layout from '../components/Layout';
+import LocalizedLink from '../components/LocalizedLink';
+import Seo from '../components/Seo';
 
 // markup
 export default function GenericPageTemplate({ pageContext, data }) {
   const {
     frontmatter,
     rawMarkdownBody,
-  } = data.page.childMarkdownRemark
-  const { title, options, endNote } = frontmatter
+  } = data.page.childMarkdownRemark;
+  const { title, options, endNote } = frontmatter;
 
   return (
-    <Layout lang={pageContext.lang} slug={pageContext.slug} >
+    <Layout lang={pageContext.lang} slug={pageContext.slug}>
       <Seo title={title} lang={pageContext.lang} />
       <GenericStyles>
         <h1>{title}</h1>
         <ReactMarkdown>{rawMarkdownBody}</ReactMarkdown>
         <div className="btns-group">
-          {options?.map(opt => {
+          {options?.map((opt) => {
             if (opt.isInterenal) {
               return (
                 <LocalizedLink
@@ -31,26 +31,25 @@ export default function GenericPageTemplate({ pageContext, data }) {
                   to={opt.linkAddress}
                   text={opt.linkText}
                 />
-              )
-            } else {
-              return (
-                <a
-                  className="btn"
-                  key={opt.linkAddress}
-                  href={opt.linkAddress}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {opt.linkText}
-                </a>
-              )
+              );
             }
+            return (
+              <a
+                className="btn"
+                key={opt.linkAddress}
+                href={opt.linkAddress}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {opt.linkText}
+              </a>
+            );
           })}
         </div>
         <p>{endNote}</p>
       </GenericStyles>
     </Layout>
-  )
+  );
 }
 
 const GenericStyles = styled.div`
@@ -77,7 +76,7 @@ const GenericStyles = styled.div`
   li {
     padding-bottom: 0.5rem;
   }
-`
+`;
 
 export const query = graphql`
   query($regx: String, $slug: String) {
@@ -96,4 +95,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

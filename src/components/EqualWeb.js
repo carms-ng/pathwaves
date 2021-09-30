@@ -13,8 +13,8 @@ const EqualWeb = `
         null
       ],
       "scale": [
-        "0.8",
-        "0.8"
+        "0.7",
+        "0.7"
       ],
       "icon": {
         "type": 11,
@@ -32,5 +32,6 @@ const EqualWeb = `
     coreCall.setAttribute('data-cfasync', true );
     body? body.appendChild(coreCall) : head.appendChild(coreCall);
   })(document, document.head, document.body);
-`
-export { EqualWeb }
+`;
+
+export default EqualWeb;

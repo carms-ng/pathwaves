@@ -1,13 +1,12 @@
-import { graphql, useStaticQuery } from 'gatsby'
-import React from 'react'
-import styled from 'styled-components'
-import LocalizedLink from './LocalizedLink'
-
+import { graphql, useStaticQuery } from 'gatsby';
+import React from 'react';
+import styled from 'styled-components';
+import LocalizedLink from './LocalizedLink';
 
 export default function Header({ lang, slug }) {
   // Language Switcher
-  const toLang = lang === 'en' ? 'fr' : 'en'
-  const to = slug === "home" ? "/" : `/${slug}`
+  const toLang = lang === 'en' ? 'fr' : 'en';
+  const to = slug === 'home' ? '/' : `/${slug}`;
 
   const { allFile } = useStaticQuery(graphql`
     query {
@@ -27,26 +26,33 @@ export default function Header({ lang, slug }) {
         }
       }
     }
-  `)
+  `);
 
-  const data = allFile.nodes.map(node => {
-    const locale = node.base.split('.')[1]
-    const frontmatter = node.childMarkdownRemark.frontmatter.nav
+  const data = allFile.nodes.map((node) => {
+    const locale = node.base.split('.')[1];
+    const frontmatter = node.childMarkdownRemark.frontmatter.nav;
     return ({
       locale,
       frontmatter,
-    })
-  }).find(elem => lang === elem.locale).frontmatter
+    });
+  }).find((elem) => lang === elem.locale).frontmatter;
 
   return (
     <HeaderStyles>
       {/* Header button */}
-      <a className="btn" href={data?.button?.url}>{data?.button?.linkText}</a>
+      <a
+        className="btn"
+        href={data?.button?.url}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {data?.button?.linkText}
+      </a>
 
       {/* Language Switcher */}
       <LocalizedLink className="switcher" lang={toLang} to={to} text={toLang} />
     </HeaderStyles>
-  )
+  );
 }
 
 const HeaderStyles = styled.header`
@@ -95,4 +101,4 @@ const HeaderStyles = styled.header`
       display: block;
     }
   }
-`
+`;
