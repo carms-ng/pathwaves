@@ -35,9 +35,9 @@ sectionThird:
     explorant tous genres musicaux, de toutes les régions géographiques, de
     toutes les origines, à tous les stades de leur carrière (émergents,
     mi-carrière et établis), et en particulier, les membres des communautés
-    sous-représentées, y compris, mais sans s'y limiter, les BIPOC, 2SLGBTQ+,
-    les nouveaux arrivants et les personnes handicapées, sont invités à déposer
-    leur candidature.
+    sous-représentées, y compris, mais sans s'y limiter, personnes Noirs et
+    Autochtones, personnes de couleur, 2SLGBTQ+, les nouveaux arrivants et les
+    personnes handicapées, sont invités à déposer leur candidature.
 sectionForth:
   leftComponent:
     img:
