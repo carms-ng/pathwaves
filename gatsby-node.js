@@ -1,9 +1,9 @@
-const { graphql } = require("gatsby")
-const path = require(`path`)
+const { graphql } = require('gatsby');
+const path = require('path');
 
 // create homePage dynamically
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   const result = await graphql(`
     query {
@@ -19,17 +19,26 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `)
+  `);
 
-  result.data.allFile.nodes.forEach(node => {
-    const slug = node.base.split('.')[0]
-    const lang = node.base.split('.')[1]
-    const templateFile = node.childMarkdownRemark.frontmatter.templateKey
+  result.data.allFile.nodes.forEach((node) => {
+    const slug = node.base.split('.')[0];
+    const lang = node.base.split('.')[1];
+    const templateFile = node.childMarkdownRemark.frontmatter.templateKey;
 
     createPage({
-      path: slug === "home" ? `/${lang}` : `/${lang}/${slug}`,
+      path: slug === 'home' ? `/${lang}` : `/${lang}/${slug}`,
       component: path.resolve(`./src/templates/${templateFile}`),
-      context: { slug: slug, lang: lang, regx: `/.${lang}.md$/`}
-    })
-  })
-}
+      context: { slug, lang, regx: `/.${lang}.md$/` },
+    });
+  });
+};
+
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions;
+
+  if (page.path.match(/^\/account/)) {
+    page.matchPath = '/account/*';
+    createPage(page);
+  }
+};
