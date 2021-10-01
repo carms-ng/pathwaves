@@ -29,8 +29,9 @@ export default function GenericPageTemplate({ pageContext, data }) {
                   key={opt.linkAddress}
                   lang={pageContext.lang}
                   to={opt.linkAddress}
-                  text={opt.linkText}
-                />
+                >
+                  {opt.linkText}
+                </LocalizedLink>
               );
             }
             return (

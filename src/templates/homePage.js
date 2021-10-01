@@ -94,8 +94,9 @@ export default function HomePageTemplate({ pageContext, data }) {
             className="btn"
             to={sectionForth?.rightComponent?.button?.url}
             lang={pageContext.lang}
-            text={sectionForth?.rightComponent?.button?.linkText}
-          />
+          >
+            {sectionForth?.rightComponent?.button?.linkText}
+          </LocalizedLink>
         </div>
         <GatsbyImage
           image={sectionForth?.leftComponent?.img?.image.childImageSharp.gatsbyImageData}

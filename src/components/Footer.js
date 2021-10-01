@@ -43,8 +43,9 @@ export default function Footer({ lang }) {
         id="copyright"
         lang={lang}
         to="/"
-        text={copyrightText}
-      />
+      >
+        {copyrightText}
+      </LocalizedLink>
       {data.footerLinks.map((link) => {
         if (link.isInterenal) {
           return (
@@ -52,8 +53,9 @@ export default function Footer({ lang }) {
               key={link.linkAddress}
               lang={lang}
               to={link.linkAddress}
-              text={link.linkText}
-            />
+            >
+              {link.linkText}
+            </LocalizedLink>
           );
         }
         return (
