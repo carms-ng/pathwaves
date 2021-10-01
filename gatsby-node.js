@@ -1,6 +1,21 @@
 const { graphql } = require('gatsby');
 const path = require('path');
 
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (['build-html', 'develop-html'].includes(stage)) {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /auth-sdk/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    });
+  }
+};
+
 // create homePage dynamically
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
