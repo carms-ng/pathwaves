@@ -30,7 +30,6 @@ export default function CalendarPage({ data }) {
     ? dateGroups[selectedDateString].sort((a, b) => new Date(b.start) - new Date(a.start))
     : [];
 
-  console.log(selectedDateGroup);
   return (
     <Layout>
       <CalendarPageStyles>
@@ -111,6 +110,7 @@ const CalendarPageStyles = styled.div`
   }
   .react-datepicker__day--keyboard-selected {
     background: 0;
+    color: #333333
   }
   .react-datepicker__day-name, .react-datepicker__day {
     width: 3rem;
