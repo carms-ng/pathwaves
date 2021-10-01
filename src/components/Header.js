@@ -1,54 +1,23 @@
-import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
 import styled from 'styled-components';
 import LocalizedLink from './LocalizedLink';
+import LogoutButton from './LogoutButton';
+import LoginButton from './LoginButton';
 
 export default function Header({ lang, slug }) {
+  const { isAuthenticated } = useAuth0();
+
   // Language Switcher
   const toLang = lang === 'en' ? 'fr' : 'en';
   const to = slug === 'home' ? '/' : `/${slug}`;
 
-  const { allFile } = useStaticQuery(graphql`
-    query {
-      allFile(filter: {relativeDirectory: {eq: "siteSetting"}}) {
-        nodes {
-          childMarkdownRemark {
-            frontmatter {
-              nav {
-                button {
-                  linkText
-                  url
-                }
-              }
-            }
-          }
-          base
-        }
-      }
-    }
-  `);
-
-  const data = allFile.nodes.map((node) => {
-    const locale = node.base.split('.')[1];
-    const frontmatter = node.childMarkdownRemark.frontmatter.nav;
-    return ({
-      locale,
-      frontmatter,
-    });
-  }).find((elem) => lang === elem.locale).frontmatter;
-
   return (
     <HeaderStyles>
       {/* Header button */}
-      <a
-        className="btn"
-        href={data?.button?.url}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {data?.button?.linkText}
-      </a>
-
+      {isAuthenticated
+        ? <LogoutButton className="btn" />
+        : <LoginButton className="btn" />}
       {/* Language Switcher */}
       <LocalizedLink className="switcher" lang={toLang} to={to}>
         {toLang}
@@ -66,7 +35,7 @@ const HeaderStyles = styled.header`
   padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 2vmin;
 
   > a {
@@ -92,15 +61,7 @@ const HeaderStyles = styled.header`
     }
   }
   .btn {
-    display: none;
     font-weight: 400;
     padding: 0.25rem 2rem;
-  }
-
-  @media (min-width: 1024px) {
-    justify-content: space-between;
-    .btn {
-      display: block;
-    }
   }
 `;
