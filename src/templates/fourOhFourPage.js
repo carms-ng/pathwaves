@@ -21,12 +21,9 @@ export default function NotFoundPageTemplate({ pageContext, data: { page } }) {
           alt={img.alt}
         />
         <h1>{header}</h1>
-        <LocalizedLink
-          className="btn"
-          lang={pageContext.lang}
-          to="/"
-          text={linkText}
-        />
+        <LocalizedLink className="btn" lang={pageContext.lang} to="/">
+          {linkText}
+        </LocalizedLink>
       </FourOhFourStyles>
     </Layout>
   );

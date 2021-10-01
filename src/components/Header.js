@@ -50,7 +50,9 @@ export default function Header({ lang, slug }) {
       </a>
 
       {/* Language Switcher */}
-      <LocalizedLink className="switcher" lang={toLang} to={to} text={toLang} />
+      <LocalizedLink className="switcher" lang={toLang} to={to}>
+        {toLang}
+      </LocalizedLink>
     </HeaderStyles>
   );
 }
