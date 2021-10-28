@@ -49,9 +49,7 @@ sectionForth:
       fois le programme terminé. 
 
 
-
-
-      **Le portail de candidature sera ouvert du 27 septembre au 24 octobre.**
+      **Le portail de candidature sera ouvert du 27 septembre au 31 octobre.**
     button:
       linkText: Postuler maintenant
       url: https://docs.google.com/forms/d/e/1FAIpQLScTSRShhZgI9-_ZefiAMy1MlNWb-tvQyjkYAKSh7JiCPNdf6g/viewform
