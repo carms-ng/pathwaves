@@ -9,7 +9,7 @@ sectionIntro:
   description: An initiative aimed at empowering Canadian musicians to make
     lifelong careers in music more possible and equitable.
   button:
-    linkText: Apply Now
+    linkText: Applications closed
     url: https://docs.google.com/forms/d/1EP9ZCgHu9tsUONnzLFD49epeq8AkFiIrf3TjIPu-a-M/viewform?edit_requested=true
 sectionSecond:
   img:
@@ -22,7 +22,7 @@ sectionSecond:
     shape the future of the music industry**. By empowering a diversity of
     musicians to harness the opportunities of the digital era, and elevating
     their voices as leaders, Pathwaves aim to make lifelong careers in music
-    more possible and equitable. 
+    more possible and equitable.
 
 
     Delivered virtually from January to March 2022, **the Pathwaves Incubator consists of conferences, mentorship, master classes, workshops, individual work, and knowledge-exchange**.
@@ -47,7 +47,7 @@ sectionForth:
       **The application portal will be open from September 27 — October 31.**
     colorHighlight: "#f5ce7a"
     button:
-      linkText: Apply Now
+      linkText: Applications closed
       url: https://docs.google.com/forms/d/1EP9ZCgHu9tsUONnzLFD49epeq8AkFiIrf3TjIPu-a-M/viewform?edit_requested=true
     img:
       image: /assets/waves-bl.png
@@ -102,7 +102,7 @@ sectionSixth:
     with collective energy it's possible to turn tides. Apply now and share
     widely!
   button:
-    linkText: Apply Now
+    linkText: Applications closed
     url: https://docs.google.com/forms/d/1EP9ZCgHu9tsUONnzLFD49epeq8AkFiIrf3TjIPu-a-M/viewform?edit_requested=true
 sectionAbout:
   description: Pathwaves is being produced by Envision Management & Production in

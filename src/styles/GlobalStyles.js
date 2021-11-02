@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
-  body {
+  body, button {
     font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -103,7 +103,7 @@ const GlobalStyles = createGlobalStyle`
     }
   }
   @media (min-width: 1024px) {
-    body {
+    body, button {
       font-size: 1.8rem;
       line-height: 1.6;
     }

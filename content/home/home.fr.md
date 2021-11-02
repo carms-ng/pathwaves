@@ -10,7 +10,7 @@ sectionIntro:
     Une initiative visant à aider les musiciens canadiens à développer une
     carrière durable et équitable.
   button:
-    linkText: Postuler maintenant
+    linkText: Candidatures fermées
     url: https://docs.google.com/forms/d/e/1FAIpQLScTSRShhZgI9-_ZefiAMy1MlNWb-tvQyjkYAKSh7JiCPNdf6g/viewform
 sectionSecond:
   img:
@@ -46,12 +46,12 @@ sectionForth:
       Le comité de sélection favorisera des musiciens ayant démontré leur
       intérêt à adopter les nouvelles technologies et à transmettre les
       connaissances, les compétences et les idées acquises à leur communauté une
-      fois le programme terminé. 
+      fois le programme terminé.
 
 
       **Le portail de candidature sera ouvert du 27 septembre au 31 octobre.**
     button:
-      linkText: Postuler maintenant
+      linkText: Candidatures fermées
       url: https://docs.google.com/forms/d/e/1FAIpQLScTSRShhZgI9-_ZefiAMy1MlNWb-tvQyjkYAKSh7JiCPNdf6g/viewform
   rightComponent:
     img:
@@ -106,7 +106,7 @@ sectionSixth:
     vapeur. Posez votre candidature dès maintenant et partagez l’information !
   button:
     url: https://docs.google.com/forms/d/e/1FAIpQLScTSRShhZgI9-_ZefiAMy1MlNWb-tvQyjkYAKSh7JiCPNdf6g/viewform
-    linkText: Postuler maintenant
+    linkText: Candidatures fermées
 sectionAbout:
   collaborators:
     - name: Envision
