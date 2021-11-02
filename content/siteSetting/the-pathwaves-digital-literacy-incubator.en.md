@@ -8,7 +8,7 @@ logo:
   alt: Pathwaves Logo
 nav:
   button:
-    linkText: Apply now
+    linkText: Applications closed
     url: https://docs.google.com/forms/d/1EP9ZCgHu9tsUONnzLFD49epeq8AkFiIrf3TjIPu-a-M/viewform?edit_requested=true
 footer:
   copyright: Pathwaves
