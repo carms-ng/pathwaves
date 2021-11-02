@@ -37,9 +37,9 @@ export default function HomePageTemplate({ pageContext, data }) {
         />
         <h1>{sectionIntro?.header}</h1>
         <p className="font-lg">{sectionIntro?.description}</p>
-        <a className="btn" href={sectionIntro?.button?.url} target="_blank" rel="noreferrer">
+        <button className="btn" disabled>
           {sectionIntro?.button?.linkText}
-        </a>
+        </button>
 
         <div id="logo-garden">
           {collabs?.map((collab) => (
@@ -76,14 +76,17 @@ export default function HomePageTemplate({ pageContext, data }) {
           <div>
             <ReactMarkdown>{sectionForth?.leftComponent?.description}</ReactMarkdown>
           </div>
-          <a
+          {/* <a
             className="btn"
             href={sectionForth?.leftComponent?.button?.url}
             target="_blank"
             rel="noreferrer"
           >
             {sectionForth?.leftComponent?.button?.linkText}
-          </a>
+          </a> */}
+          <button className="btn" disabled>
+            {sectionForth?.leftComponent?.button?.linkText}
+          </button>
 
           <div>
             <ReactMarkdown>{sectionForth?.rightComponent?.description}</ReactMarkdown>
@@ -131,9 +134,10 @@ export default function HomePageTemplate({ pageContext, data }) {
 
       <SixthStyles>
         <ReactMarkdown className="font-lg">{sectionSixth?.description}</ReactMarkdown>
-        <a className="btn" href={sectionSixth?.button?.url} target="_blank" rel="noreferrer">
+        <button className="btn" disabled>
           {sectionSixth?.button?.linkText}
-        </a>
+        </button>
+
       </SixthStyles>
 
       {/* Section About*/}

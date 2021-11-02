@@ -41,14 +41,14 @@ export default function Header({ lang, slug }) {
   return (
     <HeaderStyles>
       {/* Header button */}
-      <a
+      {/* <a
         className="btn"
         href={data?.button?.url}
         target="_blank"
         rel="noreferrer"
       >
         {data?.button?.linkText}
-      </a>
+      </a> */}
 
       {/* Language Switcher */}
       <LocalizedLink className="switcher" lang={toLang} to={to} text={toLang} />
@@ -90,14 +90,14 @@ const HeaderStyles = styled.header`
       color: var(--white);
     }
   }
-  .btn {
+  /* .btn {
     display: none;
     font-weight: 400;
     padding: 0.25rem 2rem;
-  }
+  } */
 
   @media (min-width: 1024px) {
-    justify-content: space-between;
+    /* justify-content: space-between; */
     .btn {
       display: block;
     }
