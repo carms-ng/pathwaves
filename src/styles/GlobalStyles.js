@@ -66,6 +66,7 @@ const GlobalStyles = createGlobalStyle`
     font-weight: bold;
     white-space: nowrap;
     transition: var(--trans);
+    cursor: pointer;
     &:hover {
       background: var(--black);
       color: var(--white);

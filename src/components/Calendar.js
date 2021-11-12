@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import styled from 'styled-components';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import Clipboard from '../components/Clipbroad';
+import Clipboard from './Clipbroad';
 
-export default function CalendarPage({ data }) {
+export default function Calendar({ data }) {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
   const dateFormatOptions = {
@@ -31,63 +29,41 @@ export default function CalendarPage({ data }) {
     : [];
 
   return (
-    <Layout>
-      <CalendarPageStyles>
-        <h1>Calendar</h1>
-        <p>
-          Selected Date:
-          {' '}
-          {selectedDate.toLocaleDateString('en-US', dateFormatOptions)}
-        </p>
+    <CalendarStyles>
+      <h1>Calendar</h1>
+      <p>
+        Selected Date:
+        {' '}
+        {selectedDate.toLocaleDateString('en-US', dateFormatOptions)}
+      </p>
 
-        <DatePicker
-          locale="en"
-          selected={selectedDate}
-          onChange={(date) => {
-            setSelectedDate(date);
-          }}
-          dayClassName={(date) => {
-            const dateString = date.toISOString().split('T')[0];
-            const hasEvent = Object.keys(dateGroups).includes(dateString);
-            return (hasEvent ? 'underlined' : '');
-          }}
-          inline
-        />
-        <div>
-          {selectedDateGroup?.map((activity) => (
-            <div key={activity.start}>
-              <p>{new Date(activity.start).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
-              <h3>{activity.title}</h3>
-              <Clipboard copyText={activity.activity_link} />
-            </div>
-          ))}
-        </div>
-      </CalendarPageStyles>
-    </Layout>
+      <DatePicker
+        locale="en"
+        selected={selectedDate}
+        onChange={(date) => {
+          setSelectedDate(date);
+        }}
+        dayClassName={(date) => {
+          const dateString = date.toISOString().split('T')[0];
+          const hasEvent = Object.keys(dateGroups).includes(dateString);
+          return (hasEvent ? 'underlined' : '');
+        }}
+        inline
+      />
+      <div>
+        {selectedDateGroup?.map((activity) => (
+          <div key={activity.start}>
+            <p>{new Date(activity.start).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
+            <h3>{activity.title}</h3>
+            <Clipboard copyText={activity.activity_link} />
+          </div>
+        ))}
+      </div>
+    </CalendarStyles>
   );
 }
 
-export const query = graphql`
-  {
-    allFile(
-      filter: {relativeDirectory: {eq: "activity"}, base: {regex: "/^.*en\\.md$/"}}
-      sort: {fields: childMarkdownRemark___frontmatter___start}
-    ) {
-      nodes {
-        childMarkdownRemark {
-          frontmatter {
-            title
-            activity_link
-            start
-          }
-        }
-      }
-    }
-  }
-
-`;
-
-const CalendarPageStyles = styled.div`
+const CalendarStyles = styled.div`
   min-height: 100vh;
   display: grid;
   place-content: center;
