@@ -240,7 +240,7 @@ collections:
   - name: incubator
     label: Incubator Page
     folder: content/incubator
-    create: true
+    create: false
     delete: false
     i18n: true
     fields:
@@ -281,7 +281,7 @@ collections:
   - name: team
     label: Team Page
     folder: content/team
-    create: true
+    create: false
     delete: false
     i18n: true
     fields:
@@ -373,7 +373,7 @@ collections:
   - name: musicians
     label: Musicians Page
     folder: content/musicians
-    create: true
+    create: false
     delete: false
     i18n: true
     fields:
@@ -419,7 +419,7 @@ collections:
   - name: presenters
     label: Presenters Page
     folder: content/presenters
-    create: true
+    create: false
     delete: false
     i18n: true
     fields:
