@@ -1,11 +1,15 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import styled from 'styled-components';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import LocalizedLink from './LocalizedLink';
 import LogoutButton from './LogoutButton';
 import LoginButton from './LoginButton';
 
-export default function Header({ lang, slug }) {
+export default function Header({
+  lang, slug, logo, navItems,
+}) {
+  console.log(logo, navItems);
   const { isAuthenticated } = useAuth0();
 
   // Language Switcher
@@ -14,10 +18,36 @@ export default function Header({ lang, slug }) {
 
   return (
     <HeaderStyles>
-      {/* Header button */}
+      {/* Logo */}
+      <GatsbyImage
+        image={logo.image.childImageSharp.gatsbyImageData}
+        alt={logo.alt}
+        imgStyle={{ objectFit: 'contain' }}
+      />
+
+      {/* Auth button */}
       {isAuthenticated
         ? <LogoutButton className="btn" />
         : <LoginButton className="btn" />}
+      {/* Nav Items */}
+      {navItems.map((item) => {
+        const {
+          show, linkAddress, linkText, childNavItems,
+        } = item;
+        if (show === 'public' || show === 'both') {
+          if (linkAddress) {
+            // it's a link
+            return (
+              <LocalizedLink lang={lang} to={linkAddress}>{linkText}</LocalizedLink>
+            );
+          }
+          // it's a dropdown
+          return (
+            <button type="button">{linkText}</button>
+          );
+        }
+      })}
+
       {/* Language Switcher */}
       <LocalizedLink className="switcher" lang={toLang} to={to}>
         {toLang}

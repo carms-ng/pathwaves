@@ -25,10 +25,12 @@ export default function HomePageTemplate({ pageContext, data }) {
     sectionAbout,
   } = data.page.childMarkdownRemark.frontmatter;
 
+  const settings = data.settings.childMarkdownRemark.frontmatter;
+
   const collabs = sectionAbout.collaborators;
 
   return (
-    <Layout lang={pageContext.lang} slug={pageContext.slug}>
+    <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
       <Seo title={`${title}`} lang={pageContext.lang} />
 
       <IntroStyles>
@@ -174,6 +176,31 @@ export default function HomePageTemplate({ pageContext, data }) {
 
 export const query = graphql`
   query($regx: String) {
+    settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+      childMarkdownRemark {
+        frontmatter {
+          logo {
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 150, placeholder: BLURRED, layout: CONSTRAINED)
+              }
+            }
+            alt
+          }
+          nav {
+            navItems {
+              linkAddress
+              linkText
+              show
+              childNavItems {
+                linkAddress
+                linkText
+              }
+            }
+          }
+        }
+      }
+    }
     page: file(relativeDirectory: {eq: "home"}, base: {regex: $regx}) {
       childMarkdownRemark {
         frontmatter {

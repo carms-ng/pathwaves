@@ -561,14 +561,30 @@ collections:
         widget: object
         i18n: true
         fields:
-          - label: Button
-            name: button
-            widget: object
+          - label: Nav Items
+            name: navItems
+            widget: list
             i18n: true
-            collapsed: true
+            summary: "{{linkText}}"
             fields:
-              - {label: Link text, name: linkText, widget: string, i18n: true}
-              - {label: URL, name: url, widget: string, i18n: true}
+            - {label: Link Text, name: linkText, widget: string}
+            - {label: Link Address, name: linkAddress, widget: string, required: false, hint: "Not applicable for dropdown menu"}
+            - label: Show
+              name: show
+              widget: select
+              hint: Show different nav items if user is authenticated.
+              options:
+              - { label: "Public Only", value: "public" }
+              - { label: "Private Only", value: "private" }
+              - { label: "Both", value: "both" }
+            - label: Nested Nav Items
+              name: childNavItems
+              widget: list
+              i18n: true
+              summary: "{{linkText}} - {{linkAddress}}"
+              fields:
+              - {label: Link Text, name: linkText, widget: string}
+              - {label: Link Address, name: linkAddress, widget: string}
 
       - label: "Footer (Contact)"
         name: footer
