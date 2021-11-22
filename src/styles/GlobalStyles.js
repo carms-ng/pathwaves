@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
     --xlightblue: #EFF4FA;
     --maxWidth: 1024px;
     --maxWidthText: 980px;
+    --maxWidthSm: 600px;
     --br: 16px;
     --linearGradient: linear-gradient(127deg, var(--blue), rgb(224, 233, 245, 0) 50%),
                       linear-gradient(336deg, rgb(239, 244, 250, 0), var(--xlightblue) 50%),
@@ -111,7 +112,7 @@ const GlobalStyles = createGlobalStyle`
     body {
       font-size: 1.7rem;
     }
-    h1, h2 {
+    h1, h2, .h2 {
       font-size: 4rem;
     }
     .font-lg {
