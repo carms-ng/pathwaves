@@ -62,13 +62,6 @@ sectionTwo:
   subHeader: Content de ....
   header: L'equipe de co-design
 sectionThree:
-  members:
-    name: null
-    portrait:
-      ? image
-  header: Contributeurs
-  subHeader: Content de ....
-sectionFour:
   header: FR Land Acknowledgements
   description: FR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

@@ -54,12 +54,9 @@ sectionOne:
         with a mandate to foster and promote the study and enjoyment of, and the
         production of works in, the arts.
 sectionTwo:
-  header: Co-design Team
+  header: Team
   subHeader: Glad you're taking the time to get to know us better
 sectionThree:
-  header: Contributors
-  subHeader: Glad you're taking the time to get to know us better
-sectionFour:
   header: Land Acknowledgements
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
