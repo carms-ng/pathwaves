@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
-  body {
+  body, button {
     font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -85,6 +85,27 @@ const GlobalStyles = createGlobalStyle`
     display: grid;
     grid-gap: 1rem;
   }
+  .btn-blur {
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    display: grid;
+    place-content: center;
+    text-transform: uppercase;
+    color: var(--black);
+    border-radius: var(--br);
+    background: transparent;
+    transition: var(--trans);
+    backdrop-filter: blur(2em);
+
+
+    &:hover {
+      background: var(--black);
+      color: var(--white);
+      cursor: pointer;
+    }
+  }
 
   @media (min-width: 640px) {
     body {
@@ -102,7 +123,7 @@ const GlobalStyles = createGlobalStyle`
     }
   }
   @media (min-width: 1024px) {
-    body {
+    body, button {
       font-size: 1.8rem;
       line-height: 1.6;
     }
