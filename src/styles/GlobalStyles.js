@@ -55,6 +55,7 @@ const GlobalStyles = createGlobalStyle`
       outline: none;
   }
   .btn {
+    z-index: 2;
     display: block;
     text-align: center;
     border-radius: 16px;

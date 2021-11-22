@@ -11,6 +11,9 @@ import {
 import LocalizedLink from '../components/LocalizedLink';
 import Seo from '../components/Seo';
 
+// import Ball from '../components/Ball';
+import Gradient from '../components/Gradient';
+
 // markup
 export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
@@ -30,7 +33,7 @@ export default function HomePageTemplate({ pageContext, data }) {
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug}>
       <Seo title={`${title}`} lang={pageContext.lang} />
-
+      <Gradient />
       <IntroStyles>
         <GatsbyImage
           image={sectionIntro?.img?.image.childImageSharp.gatsbyImageData}
