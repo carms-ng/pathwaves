@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
                       linear-gradient(217deg, rgb(161, 189, 226, 0), var(--lightblue) 50%);
     box-sizing: border-box;
     font-size: 62.5%;
-    --padSm: 1rem;
+    --padSm: 5rem 1rem;
     --padMd: 8rem 3rem;
     --padLg: 20rem 4rem;
     --trans: all 0.7s ease;
@@ -63,7 +63,7 @@ const GlobalStyles = createGlobalStyle`
     border-radius: 16px;
     background: var(--offWhite);
     color: var(--black);
-    padding: 0.5rem 6rem;
+    padding: 0.5rem 2rem;
     border: 2px solid var(--black);
     text-transform: uppercase;
     font-weight: bold;
@@ -73,6 +73,18 @@ const GlobalStyles = createGlobalStyle`
     &:hover {
       background: var(--black);
       color: var(--white);
+    }
+  }
+  .link {
+    color: var(--black);
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0.7;
+
+    &:hover {
+      color: var(--black);
+      opacity: 1;
     }
   }
   h1, h2 {

@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-// import { GatsbyImage } from 'gatsby-plugin-image';
-// import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from 'react-markdown';
 
 import styled from 'styled-components';
 import Layout from '../components/Layout';
@@ -16,6 +15,7 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
     title,
     sectionOne,
     sectionTwo,
+    sectionThree,
   } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
@@ -46,6 +46,10 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
             ))}
           </div>
           <p className="font-lg">{sectionTwo.endNote}</p>
+        </section>
+        <section>
+          <h2>{sectionThree.header}</h2>
+          <ReactMarkdown>{sectionThree.landAcknowledgement}</ReactMarkdown>
         </section>
       </IncubatorPageStyles>
 
@@ -203,21 +207,25 @@ export const query = graphql`
     page: file(relativeDirectory: {eq: "incubator"}, base: {regex: $regx}) {
       childMarkdownRemark {
         frontmatter {
-                  title
-        sectionOne {
-          header
-          descriptions {
-            description
-          }
-        }
-        sectionTwo {
-          header
-          phases {
+          title
+          sectionOne {
             header
-            description
-            date
+            descriptions {
+              description
+            }
           }
-          endNote
+          sectionTwo {
+            header
+            phases {
+              header
+              description
+              date
+            }
+            endNote
+          }
+          sectionThree {
+            header
+            landAcknowledgement
           }
         }
       }

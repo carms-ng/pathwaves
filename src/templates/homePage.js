@@ -1,175 +1,106 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import ReactMarkdown from 'react-markdown';
 
 import Layout from '../components/Layout';
-import {
-  IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles,
-} from '../styles/HomePageStyles';
 
 import LocalizedLink from '../components/LocalizedLink';
 import Seo from '../components/Seo';
+import LogoGarden from '../components/LogoGarden';
+import Carousel from '../components/Carousel';
+import { SectionOneStyles, SectionThreeStyles, SectionFourStyles } from '../styles/HomePageStyles';
 
 // markup
 export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
   const {
     title,
-    sectionIntro,
-    sectionSecond,
-    sectionThird,
-    sectionForth,
-    sectionFifth,
-    sectionSixth,
-    sectionAbout,
+    sectionOne,
+    sectionTwo,
+    sectionThree,
+    sectionFour,
   } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
-  const collabs = sectionAbout.collaborators;
+  const collabs = data.logos.childMarkdownRemark.frontmatter.sectionOne.collaborators;
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
       <Seo title={`${title}`} lang={pageContext.lang} />
 
-      <IntroStyles>
-        <GatsbyImage
-          image={sectionIntro?.img?.image.childImageSharp.gatsbyImageData}
-          alt={sectionIntro?.img?.alt}
-          imgStyle={{ objectFit: 'contain' }}
-        />
-        <h1>{sectionIntro?.header}</h1>
-        <p className="font-lg">{sectionIntro?.description}</p>
-        <a className="btn" href={sectionIntro?.button?.url} target="_blank" rel="noreferrer">
-          {sectionIntro?.button?.linkText}
-        </a>
-
-        <div id="logo-garden">
-          {collabs?.map((collab) => (
-            <a key={collab.name} href={collab.url} target="_blank" rel="noreferrer">
-              <GatsbyImage
-                image={collab.logo.image.childImageSharp.gatsbyImageData}
-                alt={collab.logo.alt}
-                imgStyle={{ objectFit: 'contain' }}
-                style={{ height: '100%', maxWidth: '300px' }}
-              />
-            </a>
-          ))}
-        </div>
-      </IntroStyles>
-
-      <SecondStyles>
-        <GatsbyImage
-          image={sectionSecond?.img?.image.childImageSharp.gatsbyImageData}
-          alt={sectionSecond?.img?.alt}
-          imgStyle={{ objectFit: 'contain', width: 'unset' }}
-          className="bg-image__left"
-        />
-        <div className="text__right">
-          <ReactMarkdown>{sectionSecond?.description}</ReactMarkdown>
-        </div>
-      </SecondStyles>
-
-      <ThirdStyles>
-        <ReactMarkdown className="font-lg">{sectionThird?.description}</ReactMarkdown>
-      </ThirdStyles>
-
-      <ForthStyles>
-        <div className="grid-wrapper">
-          <div>
-            <ReactMarkdown>{sectionForth?.leftComponent?.description}</ReactMarkdown>
-          </div>
-          <a
-            className="btn"
-            href={sectionForth?.leftComponent?.button?.url}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {sectionForth?.leftComponent?.button?.linkText}
-          </a>
-
-          <div>
-            <ReactMarkdown>{sectionForth?.rightComponent?.description}</ReactMarkdown>
-          </div>
-          <LocalizedLink
-            className="btn"
-            to={sectionForth?.rightComponent?.button?.url}
-            lang={pageContext.lang}
-          >
-            {sectionForth?.rightComponent?.button?.linkText}
-          </LocalizedLink>
-        </div>
-        <GatsbyImage
-          image={sectionForth?.leftComponent?.img?.image.childImageSharp.gatsbyImageData}
-          alt={sectionForth?.leftComponent?.img?.alt}
-          className="bg-image__bl"
-        />
-        <GatsbyImage
-          image={sectionForth?.rightComponent?.img?.image.childImageSharp.gatsbyImageData}
-          alt={sectionForth?.rightComponent?.img?.alt}
-          className="bg-image__tr"
-        />
-      </ForthStyles>
-
-      <FifthStyles>
-        <div className="text__left">
-          <h2>{sectionFifth?.header}</h2>
-          <div id="phases">
-            {sectionFifth?.phases?.map((phase) => (
-              <div key={phase.header}>
-                <h3>{phase.header}</h3>
-                <small>{phase.date}</small>
-                <p>{phase.description}</p>
-              </div>
+      {/* Hero */}
+      <SectionOneStyles>
+        <div className="hero-content">
+          <h1>{sectionOne.header}</h1>
+          <p>{sectionOne.description}</p>
+          <GatsbyImage
+            image={sectionOne.backgroundImage.image.childImageSharp.gatsbyImageData}
+            alt={sectionOne.backgroundImage.alt}
+            className="background"
+          />
+          <div className="hero-buttons">
+            {sectionOne.buttons.map(({ linkText, url }) => (
+              <LocalizedLink
+                className="btn"
+                key={url}
+                to={url}
+                lang={pageContext.lang}
+              >
+                {linkText}
+              </LocalizedLink>
             ))}
           </div>
-          <p className="font-lg">{sectionFifth?.endNote}</p>
         </div>
+      </SectionOneStyles>
+
+      {/* Carousel */}
+      <Carousel
+        items={sectionTwo.carouselItems}
+        lang={pageContext.lang}
+        buttonLabel={sectionTwo.buttonLabel}
+      />
+
+      {/* Survey */}
+      <SectionThreeStyles>
+        <div className="text__left">
+          <h2>{sectionThree.header}</h2>
+          <p>{sectionThree.descriptionPrimary}</p>
+          <LocalizedLink
+            className="btn"
+            to={sectionThree.button.url}
+            lang={pageContext.lang}
+          >
+            {sectionThree.button.linkText}
+          </LocalizedLink>
+          <p>{sectionThree.descriptionSecondary}</p>
+        </div>
+
         <GatsbyImage
-          image={sectionFifth?.img?.image.childImageSharp.gatsbyImageData}
-          alt={sectionFifth?.img?.alt}
+          image={sectionThree.backgroundImage.image.childImageSharp.gatsbyImageData}
+          alt={sectionThree.backgroundImage.alt}
           imgStyle={{ objectFit: 'contain', width: 'unset', left: 'unset' }}
           className="bg-image__right"
         />
-      </FifthStyles>
+      </SectionThreeStyles>
 
-      <SixthStyles>
-        <ReactMarkdown className="font-lg">{sectionSixth?.description}</ReactMarkdown>
-        <a className="btn" href={sectionSixth?.button?.url} target="_blank" rel="noreferrer">
-          {sectionSixth?.button?.linkText}
-        </a>
-      </SixthStyles>
+      {/* Newsletter */}
+      <SectionFourStyles>
+        <h2>{sectionFour.header}</h2>
+        <p>{sectionFour.description}</p>
+        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="name" name="name" id="name" placeholder={sectionFour.form.inputPlaceholderName} />
+          <input type="email" name="email" id="email" placeholder={sectionFour.form.inputPlaceholderEmail} />
+          <button type="submit">{sectionFour.form.buttonText}</button>
+          {/* <input type="reset" value="Clear" /> */}
+        </form>
+      </SectionFourStyles>
 
-      {/* Section About */}
-      <AboutStyles>
-        <p className="font-lg">{sectionAbout.description}</p>
-        <div className="cards-2b2">
-          {collabs.map((collab) => (
-            <div key={collab.name}>
-              <a href={collab.url} target="_blank" rel="noreferrer">
-                <GatsbyImage
-                  image={collab.logo.image.childImageSharp.gatsbyImageData}
-                  alt={collab.logo.alt}
-                  style={{ maxWidth: '300px' }}
-                />
-              </a>
-              <p>{collab.description}</p>
-            </div>
-          ))}
-        </div>
-        <p>
-          {sectionAbout.contactText}
-          <br />
-          <a
-            href={`mailto:${sectionAbout.contactEmail}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {sectionAbout.contactEmail}
-          </a>
-        </p>
-      </AboutStyles>
+      {/* Logo Garden */}
+      <LogoGarden logos={collabs} />
+
     </Layout>
   );
 }
@@ -206,108 +137,65 @@ export const query = graphql`
       childMarkdownRemark {
         frontmatter {
           title
-          sectionIntro {
-            img {
-              alt
+          sectionOne {
+            header
+            backgroundImage {
               image {
                 childImageSharp {
-                  gatsbyImageData(width: 150, placeholder: BLURRED, layout: CONSTRAINED)
+                  gatsbyImageData(
+                    placeholder: TRACED_SVG,
+                    layout: FULL_WIDTH,
+                    transformOptions: {fit: COVER},
+                    quality: 100
+                  )
                 }
               }
+              alt
             }
-            header
             description
-            button {
+            buttons {
               linkText
               url
             }
           }
-          sectionSecond {
-            description
-            img {
-              image {
-                childImageSharp {
-                  gatsbyImageData(width: 500, placeholder: TRACED_SVG, layout: CONSTRAINED)
-                }
-              }
-              alt
-            }
-          }
-          sectionAbout {
-            description
-            collaborators {
+          sectionTwo {
+            buttonLabel
+            carouselItems {
               name
-              url
+              type
+              nameAlt
               description
-              logo {
-                alt
-                image {
-                  childImageSharp {
-                    gatsbyImageData(
-                      height: 80,
-                      placeholder: TRACED_SVG,
-                      layout: CONSTRAINED,
-                      transformOptions: {fit: CONTAIN}
-                    )
-                  }
-                }
-              }
-            }
-            contactText
-            contactEmail
-          }
-          sectionThird {
-            description
-          }
-          sectionForth {
-            leftComponent {
-              description
-              button {
-                linkText
-                url
-              }
               img {
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 400,
+                      width: 500,
+                      height: 500,
                       placeholder: TRACED_SVG,
                       layout: CONSTRAINED,
+                      transformOptions: {fit: COVER},
+                      quality: 100
                     )
                   }
                 }
                 alt
               }
-            }
-            rightComponent {
-              description
               button {
                 linkText
                 url
               }
-              img {
-                image {
-                  childImageSharp {
-                    gatsbyImageData(
-                      width: 400,
-                      placeholder: TRACED_SVG,
-                      layout: CONSTRAINED,
-                    )
-                  }
-                }
-                alt
-              }
             }
           }
-          sectionFifth {
+          sectionThree {
             header
-            phases {
-              header
-              date
-              description
+            descriptionPrimary
+            button {
+              linkText
+              url
             }
-            endNote
-            img {
+            descriptionSecondary
+            backgroundImage {
+              alt
               image {
                 childImageSharp {
                   gatsbyImageData(
@@ -317,14 +205,41 @@ export const query = graphql`
                   )
                 }
               }
-              alt
             }
           }
-          sectionSixth {
+          sectionFour {
+            header
             description
-            button {
-              linkText
+            form {
+              inputPlaceholderName
+              inputPlaceholderEmail
+              buttonText
+            }
+          }
+        }
+      }
+    }
+    logos: file(relativeDirectory: {eq: "team"}, base: {regex: $regx}) {
+      childMarkdownRemark {
+        frontmatter {
+          sectionOne {
+            collaborators {
+              name
               url
+              logo {
+                alt
+                image {
+                  childImageSharp {
+                    gatsbyImageData(
+                      height: 80,
+                      placeholder: TRACED_SVG,
+                      layout: CONSTRAINED,
+                      transformOptions: {fit: CONTAIN},
+                      quality: 100
+                    )
+                  }
+                }
+              }
             }
           }
         }
