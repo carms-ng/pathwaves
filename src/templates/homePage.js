@@ -2,18 +2,16 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
-import styled from 'styled-components';
 import Layout from '../components/Layout';
 
 import LocalizedLink from '../components/LocalizedLink';
 import Seo from '../components/Seo';
 import LogoGarden from '../components/LogoGarden';
 import Carousel from '../components/Carousel';
+import { SectionOneStyles, SectionThreeStyles, SectionFourStyles } from '../styles/HomePageStyles';
 
 // markup
 export default function HomePageTemplate({ pageContext, data }) {
-  console.log(data);
-
   // Prepare Content
   const {
     title,
@@ -33,23 +31,26 @@ export default function HomePageTemplate({ pageContext, data }) {
 
       {/* Hero */}
       <SectionOneStyles>
-        <h1>{sectionOne.header}</h1>
-        <p>{sectionOne.description}</p>
-        <GatsbyImage
-          image={sectionOne.backgroundImage.image.childImageSharp.gatsbyImageData}
-          alt={sectionOne.backgroundImage.alt}
-        />
-        <div>
-          {sectionOne.buttons.map(({ linkText, url }) => (
-            <LocalizedLink
-              className="btn"
-              key={url}
-              to={url}
-              lang={pageContext.lang}
-            >
-              {linkText}
-            </LocalizedLink>
-          ))}
+        <div className="hero-content">
+          <h1>{sectionOne.header}</h1>
+          <p>{sectionOne.description}</p>
+          <GatsbyImage
+            image={sectionOne.backgroundImage.image.childImageSharp.gatsbyImageData}
+            alt={sectionOne.backgroundImage.alt}
+            className="background"
+          />
+          <div className="hero-buttons">
+            {sectionOne.buttons.map(({ linkText, url }) => (
+              <LocalizedLink
+                className="btn"
+                key={url}
+                to={url}
+                lang={pageContext.lang}
+              >
+                {linkText}
+              </LocalizedLink>
+            ))}
+          </div>
         </div>
       </SectionOneStyles>
 
@@ -103,97 +104,6 @@ export default function HomePageTemplate({ pageContext, data }) {
     </Layout>
   );
 }
-
-const SectionOneStyles = styled.section`
-  display: relative;
-
-  > h1 {
-
-  }
-  > p {
-
-  }
-
-`;
-
-const SectionThreeStyles = styled.section`
-  position: relative;
-  padding: var(--padSm);
-  .text__left {
-    position: relative;
-    display: grid;
-    gap: 5rem;
-    max-width: calc(var(--maxWidth) / 5 * 3);
-  }
-  .bg-image__right {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.1;
-    opacity: 0.1;
-  }
-
-  @media (min-width: 640px) {
-    padding: var(--padLg);
-    .btn {
-      padding: 0.5rem 6rem;
-      justify-self: start;
-    }
-  }
-  @media (min-width: 1024px) {
-    .text__left {
-      margin-left: calc((100vw - var(--maxWidth)) / 2);
-    }
-    .bg-image__right {
-      opacity: 1;
-    }
-  }
-`;
-
-const SectionFourStyles = styled.section`
-  padding: var(--padSm);
-  max-width: var(--maxWidth);
-  margin: 0 auto;
-  text-align: center;
-
-  > * {
-    margin-bottom: 5rem;
-  }
-
-  form {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-top: 0.5rem;
-
-    input {
-      padding: 1rem;
-      border: 1px solid var(--lightgrey);
-      border-radius: var(--br);
-    }
-    button {
-      border-radius: var(--br);
-      background: var(--black);
-      color: var(--white);
-      padding: 0.5rem;
-    }
-  }
-  @media (min-width: 640px) {
-    padding: var(--padLg);
-    form {
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-
-      button {
-        grid-column: 1 / -1;
-        justify-self: center;
-        padding: 0.5rem 6rem;
-      }
-    }
-  }
-`;
 
 export const query = graphql`
   query($regx: String) {
