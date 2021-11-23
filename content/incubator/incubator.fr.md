@@ -45,4 +45,19 @@ sectionTwo:
   endNote: L'héritage Pathwaves clôturera le programme avec la publication et la
     distribution des apprentissages dans plusieurs formats médiatiques aux
     communautés créatives du Canada.
+sectionThree:
+  header: Acknowledgement de land
+  landAcknowledgement: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam
+    phasellus. Eget velit aliquet sagittis id consectetur purus. Pellentesque
+    massa placerat duis ultricies lacus sed. Eu scelerisque felis imperdiet
+    proin fermentum. Posuere ac ut consequat semper viverra nam libero justo
+    laoreet. Eget gravida cum sociis natoque penatibus et magnis dis parturient.
+    Sem integer vitae justo eget. Quis enim lobortis scelerisque fermentum dui
+    faucibus. Iaculis at erat pellentesque adipiscing. Et tortor at risus
+    viverra adipiscing at. Varius morbi enim nunc faucibus a pellentesque sit.
+
+
+    Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Justo donec enim diam vulputate ut pharetra. Turpis massa tincidunt dui ut ornare lectus sit amet. Nullam eget felis eget nunc lobortis mattis. Augue eget arcu dictum varius duis at. Morbi enim nunc faucibus a pellentesque sit. Vulputate enim nulla aliquet porttitor. Maecenas volutpat blandit aliquam etiam erat velit. Volutpat maecenas volutpat blandit aliquam. Facilisi nullam vehicula ipsum a. Neque sodales ut etiam sit amet nisl purus. Porttitor massa id neque aliquam vestibulum. Sit amet porttitor eget dolor morbi. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Pretium quam vulputate dignissim suspendisse.
 ---

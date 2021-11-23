@@ -277,6 +277,21 @@ collections:
               - {label: Date, name: date, widget: string, i18n: true}
               - {label: Description, name: description, widget: text, i18n: true}
           - {label: End Note, name: endNote, widget: text, i18n: true}
+      - label: Land Acknowledgement Section
+        name: sectionThree
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - label: Land Acknowledgement
+            name: landAcknowledgement
+            widget: markdown
+            buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+            editor_components: []
+            modes: [rich_text]
+            minimal: true
+            i18n: true
 
   - name: team
     label: Team Page
