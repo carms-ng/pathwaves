@@ -55,12 +55,16 @@ sectionOne:
     Production en partenariat avec le Centre Phi et l'Université OCAD, et avec
     le soutien financier du Conseil des Arts du Canada.
 sectionTwo:
-  members:
-    name: null
-    portrait:
-      ? image
   subHeader: Content de ....
   header: L'equipe de co-design
+  members:
+    - name: Carms Ng
+      pronouns: fr them/them
+      role: fr Dev
+      entity: fr Some Entity
+      portrait:
+        image: /assets/lines.png
+        alt: placeholder
 sectionThree:
   header: FR Land Acknowledgements
   description: FR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

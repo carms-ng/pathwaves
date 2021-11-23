@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 const IntroStyles = styled.section`
   padding: var(--padSm);
@@ -46,7 +46,7 @@ const IntroStyles = styled.section`
       grid-gap: 6rem;
     }
   }
-`
+`;
 const SecondStyles = styled.section`
   position: relative;
   padding: var(--padMd);
@@ -77,7 +77,7 @@ const SecondStyles = styled.section`
       margin-left: 45vw;
     }
   }
-`
+`;
 
 const ThirdStyles = styled.section`
   background: linear-gradient(259.1deg, #C1D3EC 20.87%, rgba(237, 197, 221, 0.7) 60.06%, rgba(193, 211, 236, 0.5) 87.45%);  padding: var(--padMd);
@@ -89,7 +89,7 @@ const ThirdStyles = styled.section`
     padding: var(--padLg);
     text-align: center;
   }
-`
+`;
 const ForthStyles = styled.section`
   position: relative;
   padding: var(--padMd);
@@ -160,7 +160,7 @@ const ForthStyles = styled.section`
       opacity: 1;
     }
   }
-`
+`;
 const FifthStyles = styled.section`
   background: radial-gradient(108.19% 108.19% at 50% 50%, rgba(251, 215, 126, 0.7) 0%, rgba(220, 213, 185, 0.5) 18.23%, rgba(193, 211, 236, 0.8) 33.85%, #EDC5DD 59.38%, #C1D3EC 96.35%);  display: grid;
   position: relative;
@@ -213,7 +213,7 @@ const FifthStyles = styled.section`
       padding-left: 5rem;
     }
   }
-`
+`;
 const SixthStyles = styled.section`
   padding: var(--padMd);
 
@@ -233,7 +233,7 @@ const SixthStyles = styled.section`
     padding: var(--padLg);
     text-align: center;
   }
-`
+`;
 
 const AboutStyles = styled.section`
   background: linear-gradient(226.88deg, #FBD77E -10.43%, #C1D3EC 33.64%, #C1D3EC 63.46%, rgba(237, 197, 221, 0.5) 107.78%);  padding: var(--padMd);
@@ -275,7 +275,8 @@ const AboutStyles = styled.section`
       grid-gap: 5rem;
     }
   }
-`
+`;
 
-
-export { IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles }
+export {
+  IntroStyles, SecondStyles, ThirdStyles, ForthStyles, FifthStyles, SixthStyles, AboutStyles,
+};

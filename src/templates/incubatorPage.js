@@ -18,8 +18,6 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
     sectionTwo,
   } = data.page.childMarkdownRemark.frontmatter;
 
-  console.log(sectionOne, sectionTwo);
-
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
   return (
@@ -56,7 +54,6 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
 }
 
 const IncubatorPageStyles = styled.div`
-  background: var(--lightblue);
   padding: var(--padMd);
 
   section {
@@ -75,7 +72,7 @@ const IncubatorPageStyles = styled.div`
 
   .font-lg {
     text-align: center;
-    max-width: var(--maxWidthSm);
+    max-width: var(--maxWidthMd);
     margin-top: 6rem;
   }
 

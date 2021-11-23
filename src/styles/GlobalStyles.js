@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
     --maxWidth: 1024px;
     --maxWidthText: 980px;
     --maxWidthSm: 600px;
+    --maxWidthMd: 768px;
     --br: 16px;
     --linearGradient: linear-gradient(127deg, var(--blue), rgb(224, 233, 245, 0) 50%),
                       linear-gradient(336deg, rgb(239, 244, 250, 0), var(--xlightblue) 50%),
@@ -37,6 +38,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     color: var(--black);
+    background: var(--lightblue);
   }
   h1, h2, h3, h4, h5, h6, pre {
     line-height: 1.2;
