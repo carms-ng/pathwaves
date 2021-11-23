@@ -69,6 +69,7 @@ collections:
         i18n: true
         collapsed: true
         fields:
+          - {label: Next Button Label, name: buttonLabel, widget: string, i18n: true}
           - label: Carousel Items
             name: carouselItems
             widget: list

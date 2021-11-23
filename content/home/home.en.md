@@ -47,6 +47,7 @@ sectionTwo:
       img:
         image: /assets/craig-mckay-jmurdhtm7ng-unsplash.jpg
         alt: placeholder
+  buttonLabel: Next
 sectionThree:
   header: Share Your Opinion
   descriptionPrimary: Tell us how you think digital technologies are impacting

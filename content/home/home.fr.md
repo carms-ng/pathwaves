@@ -31,6 +31,7 @@ sectionTwo:
       img:
         image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
         alt: placeholder
+  buttonLabel: Prochain
 sectionThree:
   header: Share Your Opinion
   descriptionPrimary: Tell us how you think digital technologies are impacting
