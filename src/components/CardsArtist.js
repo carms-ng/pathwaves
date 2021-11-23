@@ -2,39 +2,43 @@ import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
-export default function CardsMember({ members }) {
+export default function CardsArtist({ artists }) {
   return (
-    <CardsMemberStyles className="cards-member">
-      {members.map(({
-        name, role, pronouns, portrait, entity,
+    <CardsArtistStyles className="cards-member">
+      {artists?.map(({
+        name, pronouns, artistName, portrait,
       }) => (
-        <div key={name} className="card">
+        <div key={artistName} className="card">
           <GatsbyImage
             image={portrait.image.childImageSharp.gatsbyImageData}
             alt={portrait.alt}
             style={{ borderRadius: 'var(--br)' }}
           />
-          <h3>
-            {name}
-            {' '}
-            <span>{pronouns}</span>
-          </h3>
-          <p style={{ textTransform: 'uppercase' }}>{role}</p>
-          <p>{entity}</p>
+          <h3>{artistName}</h3>
+          <p>
+            <span style={{ textTransform: 'uppercase' }}>
+              {name ? `${name} ` : ''}
+            </span>
+            (
+            {pronouns}
+            )
+          </p>
         </div>
       ))}
-    </CardsMemberStyles>
+    </CardsArtistStyles>
   );
 }
 
-const CardsMemberStyles = styled.div`
+const CardsArtistStyles = styled.div`
   max-width: var(--maxWidth);
+  padding: var(--padSm);
   display: grid;
-  grid-template-columns: repeat( auto-fill, minmax(280px, 1fr) );
+  grid-template-columns: repeat( auto-fill, minmax(260px, 1fr) );
   justify-items: center;
   grid-gap: 3rem;
   text-align: left;
   margin: 0 auto;
+  /* padding: 5rem 0; */
   h3 {
     padding: 0.5rem 0;
   }

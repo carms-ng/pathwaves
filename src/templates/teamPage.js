@@ -61,7 +61,9 @@ export default function TeamPageTemplate({ pageContext, data }) {
 }
 
 const TeamPageStyles = styled.section`
-  padding: var(--padMd);
+  padding: var(--padSm);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 
   section {
     max-width: var(--maxWidth);
@@ -102,7 +104,12 @@ const TeamPageStyles = styled.section`
   section#team {
     text-align: center;
     margin: 0 auto;
-
+    > p {
+      margin-bottom: 5rem;
+    }
+  }
+  @media (min-width: 640px) {
+    padding: var(--padMd);
   }
 
   @media (min-width: 1024px) {
@@ -132,7 +139,7 @@ export const query = graphql`
           logo {
             image {
               childImageSharp {
-                gatsbyImageData(width: 150, placeholder: BLURRED, layout: CONSTRAINED)
+                gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
               }
             }
             alt
@@ -190,7 +197,7 @@ export const query = graphql`
                   childImageSharp {
                     gatsbyImageData(
                       width: 320,
-                      height: 260,
+                      height: 240,
                       placeholder: TRACED_SVG,
                       layout: CONSTRAINED,
                       transformOptions: {fit: COVER},
