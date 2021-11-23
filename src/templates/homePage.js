@@ -182,7 +182,8 @@ export const query = graphql`
           logo {
             image {
               childImageSharp {
-                gatsbyImageData(width: 150, placeholder: BLURRED, layout: CONSTRAINED)
+                gatsbyImageData(
+                  width: 180, placeholder: BLURRED, layout: CONSTRAINED)
               }
             }
             alt

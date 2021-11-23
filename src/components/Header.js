@@ -36,6 +36,7 @@ export default function Header({
         alt={logo?.alt}
         imgStyle={{ objectFit: 'contain' }}
         className="logo"
+        style={{ backdropFilter: 'blur(2em)' }}
       />
 
       {/* Right Nav Items & Lang Switcher */}
@@ -71,6 +72,7 @@ const HeaderStyles = styled.header`
   top: 0;
   left: 0;
   padding: 2vmin;
+  font-size: 16px;
 
   /* layout */
   display: grid;
@@ -94,12 +96,7 @@ const HeaderStyles = styled.header`
 
   grid-template-areas: "logo";
 
-
   /* display only logo and NavMenu */
-
-  @media (min-width: 640px) {
-
-  }
   @media (min-width: 768px) {
     grid-template-columns: 1fr auto auto;
     grid-template-areas: "logo menu auth";
@@ -122,7 +119,6 @@ const HeaderStyles = styled.header`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "auth logo menu";
-
     .logo {
       justify-self: center;
     }
@@ -130,6 +126,5 @@ const HeaderStyles = styled.header`
       display: block;
       justify-self: flex-start;
     }
-
   }
 `;

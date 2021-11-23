@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
                       linear-gradient(217deg, rgb(161, 189, 226, 0), var(--lightblue) 50%);
     box-sizing: border-box;
     font-size: 62.5%;
-    --padSm: 3rem;
+    --padSm: 1rem;
     --padMd: 8rem 3rem;
     --padLg: 20rem 4rem;
     --trans: all 0.7s ease;
@@ -90,7 +90,7 @@ const GlobalStyles = createGlobalStyle`
   }
   .btn-blur {
     border: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding: 0.5rem 1rem;
     margin: 1rem;
     display: grid;
