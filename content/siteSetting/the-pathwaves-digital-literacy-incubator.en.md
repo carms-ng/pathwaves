@@ -17,20 +17,17 @@ nav:
           linkAddress: /incubator
         - linkText: team
           linkAddress: /team
-      show: public
+      show: both
     - linkText: Participants
       childNavItems:
         - linkText: Musicians
           linkAddress: /musicians
         - linkText: Presenters
           linkAddress: /presenters
-      show: public
-    - linkText: Calendar
-      linkAddress: /calendar
-      show: private
-    - linkText: Resources
-      linkAddress: /resources
-      show: private
+      show: both
+    - linkText: Survey
+      linkAddress: /survey
+      show: both
 footer:
   copyright: Pathwaves
   footerLinks:

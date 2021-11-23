@@ -18,20 +18,17 @@ nav:
           linkAddress: /incubator
         - linkText: Equipe
           linkAddress: /team
-      show: public
+      show: both
     - linkText: Participantes
       childNavItems:
         - linkText: Les musiciens
           linkAddress: /musicians
         - linkText: Les présentatrices
           linkAddress: /presenters
-      show: public
-    - linkText: Calendrier
-      linkAddress: /calendar
-      show: public
-    - linkText: Ressources
-      linkAddress: /resources
-      show: private
+      show: both
+    - linkText: sondage
+      linkAddress: /survey
+      show: both
 footer:
   copyright: Pathwaves
   footerLinks:
