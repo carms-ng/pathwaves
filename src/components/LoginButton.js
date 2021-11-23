@@ -8,7 +8,7 @@ const LoginButton = ({ className }) => {
     <button
       className={className}
       type="button"
-      onClick={() => loginWithRedirect()}
+      onClick={() => loginWithRedirect({ ui_locales: 'fr-CA' })}
     >
       Log In
     </button>

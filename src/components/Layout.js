@@ -9,8 +9,9 @@ import Footer from './Footer';
 import Header from './Header';
 
 function Layout({
-  children, noFooter, lang, slug,
+  children, noFooter, lang, slug, settings,
 }) {
+  const { logo, nav: { navItems } } = settings;
   return (
     <>
       {/* Equal Web Widget */}
@@ -19,7 +20,7 @@ function Layout({
       </Helmet>
       <Typography />
       <GlobalStyles />
-      <Header lang={lang} slug={slug} />
+      <Header lang={lang} slug={slug} logo={logo} navItems={navItems} />
       <main>{children}</main>
       {!noFooter && <Footer lang={lang} />}
     </>

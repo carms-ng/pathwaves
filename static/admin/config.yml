@@ -36,9 +36,6 @@ collections:
     i18n: true
     fields:
       - {label: Template Key, name: templateKey, widget: hidden, default: "homePage.js", i18n: duplicate}
-      # - label: Test markdown
-      #   name: test
-      #   widget: markdown
       - {label: Page Title, name: title, widget: string, i18n: true}
       - label: Intro Section
         name: sectionIntro
@@ -224,7 +221,6 @@ collections:
           - label: Collaborators
             name: collaborators
             widget: list
-            min: 1
             i18n: true
             summary: "{{name}} - {{url}}"
             fields:
@@ -241,6 +237,206 @@ collections:
           - {label: Contact Text, name: contactText, widget: text, i18n: true}
           - {label: Contact Email, name: contactEmail, widget: text, i18n: duplicate}
 
+  - name: incubator
+    label: Incubator Page
+    folder: content/incubator
+    create: false
+    delete: false
+    i18n: true
+    fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "incubatorPage.js", i18n: duplicate}
+      - {label: Page Title, name: title, widget: string, i18n: true}
+      - label: Incubator Section
+        name: sectionOne
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - label: Descriptions
+            name: descriptions
+            widget: list
+            i18n: true
+            summary: "{{description}}"
+            fields:
+            - {label: Description, name: description, widget: text, i18n: true}
+      - label: Program Section
+        name: sectionTwo
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - label: Phases
+            name: phases
+            widget: list
+            i18n: true
+            summary: '{{fields.header}} - {{fields.date}}'
+            fields:
+              - {label: Header, name: header, widget: string, i18n: true}
+              - {label: Date, name: date, widget: string, i18n: true}
+              - {label: Description, name: description, widget: text, i18n: true}
+          - {label: End Note, name: endNote, widget: text, i18n: true}
+
+  - name: team
+    label: Team Page
+    folder: content/team
+    create: false
+    delete: false
+    i18n: true
+    fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "teamPage.js", i18n: duplicate}
+      - {label: Page Title, name: title, widget: string, i18n: true}
+      - label: Collaborators Section
+        name: sectionOne
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Description, name: description, widget: text, i18n: true}
+          - label: Collaborators
+            name: collaborators
+            widget: list
+            i18n: true
+            summary: "{{name}} - {{url}}"
+            fields:
+            - {label: Name, name: name, widget: string, i18n: true}
+            - {label: Description, name: description, widget: text, i18n: true}
+            - {label: URL, name: url, widget: string, i18n: duplicate}
+            - label: Logo
+              name: logo
+              widget: object
+              i18n: true
+              fields:
+                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+      - label: Team Section
+        name: sectionTwo
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - {label: Sub Header, name: subHeader, widget: string, i18n: true}
+          - label: Members
+            name: members
+            widget: list
+            i18n: true
+            summary: "{{name}} - {{role}}"
+            fields:
+            - {label: Full Name, name: name, widget: string, i18n: duplicate}
+            - {label: Pronouns, name: pronouns, widget: string, i18n: true}
+            - {label: Role, name: role, widget: string, i18n: true}
+            - {label: Entity, name: entity, widget: string, i18n: true}
+            - label: Portrait
+              name: portrait
+              widget: object
+              i18n: true
+              fields:
+                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+      - label: Land Acknowledgement Section
+        name: sectionThree
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - {label: Description, name: description, widget: text, i18n: true}
+
+  - name: musicians
+    label: Musicians Page
+    folder: content/musicians
+    create: false
+    delete: false
+    i18n: true
+    fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "musiciansPage.js", i18n: duplicate}
+      - {label: Page Title, name: title, widget: string, i18n: true}
+      - label: Hero Section
+        name: sectionOne
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - label: Background Image
+            name: backgroundImage
+            widget: object
+            i18n: true
+            fields:
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+      - label: Artists Section
+        name: sectionTwo
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - label: Members
+            name: members
+            widget: list
+            i18n: true
+            summary: "{{artistName}} - {{Pronouns}}"
+            fields:
+            - {label: Artist Name, name: artistName, widget: string, i18n: duplicate}
+            - {label: Pronouns, name: pronouns, widget: string, i18n: true}
+            - {label: Name, name: name, widget: string, i18n: true, required: false, hint: "Applicable if name defers from artist name"}
+            - label: Portrait
+              name: portrait
+              widget: object
+              i18n: true
+              fields:
+                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
+  - name: presenters
+    label: Presenters Page
+    folder: content/presenters
+    create: false
+    delete: false
+    i18n: true
+    fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "presentersPage.js", i18n: duplicate}
+      - {label: Page Title, name: title, widget: string, i18n: true}
+      - label: Hero Section
+        name: sectionOne
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - label: Background Image
+            name: backgroundImage
+            widget: object
+            i18n: true
+            fields:
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+      - label: Presenters Section
+        name: sectionTwo
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - label: Members
+            name: members
+            widget: list
+            i18n: true
+            summary: "{{name}} - {{role}}"
+            fields:
+            - {label: Full Name, name: name, widget: string, i18n: duplicate}
+            - {label: Pronouns, name: pronouns, widget: string, i18n: true}
+            - {label: Role, name: role, widget: string, i18n: true}
+            - {label: Entity, name: entity, widget: string, i18n: true}
+            - label: Portrait
+              name: portrait
+              widget: object
+              i18n: true
+              fields:
+                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
   - name: survey
     label: Survey Page
     folder: content/survey
@@ -252,14 +448,6 @@ collections:
       - {label: Page Title, name: title, widget: string, i18n: true}
       - label: Policy
         name: body
-        widget: markdown
-        buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
-        editor_components: []
-        modes: [rich_text]
-        minimal: true
-        i18n: true
-      - label: Policy
-        name: policy
         widget: markdown
         buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
         editor_components: []
@@ -320,14 +508,30 @@ collections:
         widget: object
         i18n: true
         fields:
-          - label: Button
-            name: button
-            widget: object
+          - label: Nav Items
+            name: navItems
+            widget: list
             i18n: true
-            collapsed: true
+            summary: "{{linkText}}"
             fields:
-              - {label: Link text, name: linkText, widget: string, i18n: true}
-              - {label: URL, name: url, widget: string, i18n: true}
+            - {label: Link Text, name: linkText, widget: string}
+            - {label: Link Address, name: linkAddress, widget: string, required: false, hint: "Not applicable for dropdown menu"}
+            - label: Show
+              name: show
+              widget: select
+              hint: Show different nav items if user is authenticated.
+              options:
+              - { label: "Public Only", value: "public" }
+              - { label: "Private Only", value: "private" }
+              - { label: "Both", value: "both" }
+            - label: Nested Nav Items
+              name: childNavItems
+              widget: list
+              i18n: true
+              summary: "{{linkText}} - {{linkAddress}}"
+              fields:
+              - {label: Link Text, name: linkText, widget: string}
+              - {label: Link Address, name: linkAddress, widget: string}
 
       - label: "Footer (Contact)"
         name: footer
@@ -338,7 +542,6 @@ collections:
           - label: Footer Links
             name: footerLinks
             widget: list
-            min: 1
             max: 2
             i18n: true
             summary: "{{linkText}} - {{linkAddress}}"

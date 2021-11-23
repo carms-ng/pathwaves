@@ -14,8 +14,10 @@ export default function GenericPageTemplate({ pageContext, data }) {
   } = data.page.childMarkdownRemark;
   const { title, options, endNote } = frontmatter;
 
+  const settings = data.settings.childMarkdownRemark.frontmatter;
+
   return (
-    <Layout lang={pageContext.lang} slug={pageContext.slug}>
+    <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
       <Seo title={title} lang={pageContext.lang} />
       <GenericStyles>
         <h1>{title}</h1>
@@ -81,6 +83,31 @@ const GenericStyles = styled.div`
 
 export const query = graphql`
   query($regx: String, $slug: String) {
+      settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+      childMarkdownRemark {
+        frontmatter {
+          logo {
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
+              }
+            }
+            alt
+          }
+          nav {
+            navItems {
+              linkAddress
+              linkText
+              show
+              childNavItems {
+                linkAddress
+                linkText
+              }
+            }
+          }
+        }
+      }
+    }
     page: file(relativeDirectory: {eq: $slug}, base: {regex: $regx}) {
       childMarkdownRemark {
         frontmatter {

@@ -4,12 +4,30 @@ description: Pathwaves is being produced by Envision Management & Production in
   partnership with the Phi Centre and OCAD University, with financial support
   from the Canada Council for the Arts.
 logo:
-  image: /assets/pathwaves-logo.png
+  image: /assets/pathwaves.png
   alt: Pathwaves Logo
 nav:
-  button:
-    linkText: Apply now
-    url: https://docs.google.com/forms/d/1EP9ZCgHu9tsUONnzLFD49epeq8AkFiIrf3TjIPu-a-M/viewform?edit_requested=true
+  navItems:
+    - linkText: Home
+      linkAddress: /
+      show: both
+    - linkText: About
+      childNavItems:
+        - linkText: Incubator
+          linkAddress: /incubator
+        - linkText: team
+          linkAddress: /team
+      show: both
+    - linkText: Participants
+      childNavItems:
+        - linkText: Musicians
+          linkAddress: /musicians
+        - linkText: Presenters
+          linkAddress: /presenters
+      show: both
+    - linkText: Survey
+      linkAddress: /survey
+      show: both
 footer:
   copyright: Pathwaves
   footerLinks:
