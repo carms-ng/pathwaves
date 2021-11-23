@@ -7,13 +7,15 @@ import LocalizedLink from '../components/LocalizedLink';
 import Seo from '../components/Seo';
 
 // markup
-export default function NotFoundPageTemplate({ pageContext, data: { page } }) {
+export default function NotFoundPageTemplate({ pageContext, data }) {
   const {
     title, header, img, linkText,
-  } = page.childMarkdownRemark.frontmatter;
+  } = data.page.childMarkdownRemark.frontmatter;
+
+  const settings = data.settings.childMarkdownRemark.frontmatter;
 
   return (
-    <Layout noFooter lang={pageContext.lang} slug={pageContext.slug}>
+    <Layout noFooter lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
       <FourOhFourStyles>
         <Seo title={title} lang={pageContext.lang} />
         <GatsbyImage
@@ -47,6 +49,31 @@ const FourOhFourStyles = styled.div`
 
 export const query = graphql`
   query($regx: String) {
+    settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+      childMarkdownRemark {
+        frontmatter {
+          logo {
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 150, placeholder: BLURRED, layout: CONSTRAINED)
+              }
+            }
+            alt
+          }
+          nav {
+            navItems {
+              linkAddress
+              linkText
+              show
+              childNavItems {
+                linkAddress
+                linkText
+              }
+            }
+          }
+        }
+      }
+    }
     page: file(relativeDirectory: {eq: "fourOhFour"}, base: {regex: $regx}) {
       childMarkdownRemark {
         frontmatter {
