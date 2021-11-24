@@ -384,7 +384,7 @@ collections:
   - name: schedule
     label: Schedule Page
     folder: content/schedule
-    create: true
+    create: false
     delete: false
     i18n: true
     fields:
@@ -401,6 +401,7 @@ collections:
         - {label: Zoom Label, name: labelZoom, widget: string, i18n: true}
         - {label: Calendar Label, name: labelCalendar, widget: string, i18n: true}
         - {label: Schedule Button Text, name: labelSchedule, widget: string, i18n: true}
+        - {label: No Courses Text, name: noneText, widget: string, i18n: true}
         - label: Discord Button
           name: button
           widget: object
@@ -442,7 +443,6 @@ collections:
     fields:
       - {label: Template Key, name: templateKey, widget: hidden, default: "archivePage.js", i18n: duplicate}
       - {label: Page Title, name: title, widget: string, i18n: true}
-
 
   - name: fourOhFour
     label: 404 Page
@@ -535,7 +535,6 @@ collections:
             - {label: "Internal Link?", name: isInterenal, widget: boolean, required: false}
             - {label: Link Address, name: linkAddress, widget: string}
 
-
   - name: activity
     label: Activity
     folder: content/activity
@@ -544,6 +543,44 @@ collections:
     i18n: true
     fields:
       - {label: Title, name: title, widget: string, i18n: true}
+      - {label: Add To Calendar Link, name: calendarLink, widget: string, i18n: duplicate}
+      - {label: Zoom Link, name: zoomLink, widget: string, i18n: duplicate}
+      - label: Start time
+        name: start
+        widget: datetime
+        default: ""
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        picker_utc: false
+        i18n: duplicate
+      - label: End time
+        name: end
+        widget: datetime
+        default: ""
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        picker_utc: false
+        i18n: duplicate
+      - label: Phase
+        name: phase
+        widget: number
+        default: 1
+        value_type: "int"
+        min: 1
+        max: 3
+        step: 1
+        i18n: duplicate
+
+  - name: courses
+    label: Courses
+    folder: content/courses
+    create: true
+    delete: true
+    i18n: true
+    fields:
+      - {label: Title, name: title, widget: string, i18n: true}
+      - {label: Description, name: description, widget: text, i18n: true}
+      - {label: Presenter Name, name: presenter, widget: string, i18n: true}
       - {label: Add To Calendar Link, name: calendarLink, widget: string, i18n: duplicate}
       - {label: Zoom Link, name: zoomLink, widget: string, i18n: duplicate}
       - label: Start time

@@ -1,15 +1,16 @@
 ---
 templateKey: schedulePage.js
-title: Calendar
+title: Schedule
 sectionOne:
-  header: "Hello "
+  header: Hello
   description: Here is the schedule for
-  labelZoom: "Zoom link: "
+  labelZoom: Zoom link
   labelCalendar: Add to Calendar
   labelSchedule: See full schedule
   button:
     linkText: Discord
     url: /
+  noneText: Woohoo no classes on your select day!
 sectionTwo:
   header: See full schedule
   labelPhaseOne: Phase 1

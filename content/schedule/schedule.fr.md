@@ -1,15 +1,16 @@
 ---
 templateKey: schedulePage.js
-title: Calendre
+title: Calendrier
 sectionOne:
-  header: "Bonjour "
-  description: " Voici le programme pour"
+  header: Bonjou"
+  description: Voici le programme pour
   labelZoom: Lien zoom
   labelCalendar: Ajouter au calendrier
   labelSchedule: Voir l'horaire complet
   button:
     linkText: Discord
     url: /
+  noneText: Woohoo no classes on your select day! FR
 sectionTwo:
   header: Voir l'horaire complet
   labelPhaseOne: Phase 1

@@ -8,9 +8,6 @@ logo:
   alt: Pathwaves Logo
 nav:
   navItems:
-    - linkText: Home
-      linkAddress: /
-      show: both
     - linkText: About
       childNavItems:
         - linkText: Incubator
@@ -28,6 +25,14 @@ nav:
     - linkText: Survey
       linkAddress: /survey
       show: both
+      childNavItems: []
+    - linkText: My Account
+      show: private
+      childNavItems:
+        - linkText: Schedule
+          linkAddress: /schedule
+        - linkText: Resources
+          linkAddress: /resources
 footer:
   copyright: Pathwaves
   footerLinks:
