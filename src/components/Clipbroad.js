@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
+import { Icon } from '@iconify/react';
 
 export default function Clipboard({ copyText }) {
   const copyRef = useRef();
@@ -17,7 +18,7 @@ export default function Clipboard({ copyText }) {
         {copyText}
       </a>
       <button type="button" onClick={copyToClipBoard}>
-        📋
+        <Icon icon="carbon:copy" />
       </button>
     </ClipboardStyles>
   );
@@ -33,10 +34,12 @@ const ClipboardStyles = styled.div`
   }
   button {
     border: 0;
-    padding: 10px;
     border-radius: var(--br);
     cursor: pointer;
-    background: transparent;
+    background: white;
+    padding: 1rem;
+    display: grid;
+    place-content: center;
   }
   button:hover {
     background: var(--lightgrey);

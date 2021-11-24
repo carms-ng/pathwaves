@@ -5,8 +5,10 @@ const GlobalStyles = createGlobalStyle`
     --black: #333333;
     --offWhite: rgba(255, 255, 255, 0.5);
     --white: #fff;
-    --lightgrey: #C2C3C0;
+    --lightgrey: #EBEBEB;
     --lightgray: var(--lightgrey);
+    --grey: #666666;
+    --gray: var(--grey);
     --darkblue: #325F9A;
     --blue: #C1D3EC;
     --lightblue: #E0E9F5;
@@ -15,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
     --maxWidthText: 980px;
     --maxWidthSm: 600px;
     --maxWidthMd: 768px;
+    --maxWidthLg: 1280px;
     --br: 16px;
     --linearGradient: linear-gradient(127deg, var(--blue), rgb(224, 233, 245, 0) 50%),
                       linear-gradient(336deg, rgb(239, 244, 250, 0), var(--xlightblue) 50%),
@@ -23,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
     --padSm: 5rem 1rem;
     --padMd: 8rem 3rem;
-    --padLg: 20rem 4rem;
+    --padLg: 12rem 3rem;
     --trans: all 0.7s ease;
   }
   *, *:before, *:after {
