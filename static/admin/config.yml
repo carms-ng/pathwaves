@@ -381,6 +381,69 @@ collections:
         - {label: Link Address, name: linkAddress, widget: string}
       - {label: Thank You Note, name: endNote, widget: string, i18n: true}
 
+  - name: schedule
+    label: Schedule Page
+    folder: content/schedule
+    create: true
+    delete: false
+    i18n: true
+    fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "schedulePage.js", i18n: duplicate}
+      - {label: Page Title, name: title, widget: string, i18n: true}
+      - label: Calendar Section
+        name: sectionOne
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+        - {label: Greetings, name: header, widget: string, i18n: true}
+        - {label: "Sub Greetings (Date)", name: description, widget: string, i18n: true}
+        - {label: Zoom Label, name: labelZoom, widget: string, i18n: true}
+        - {label: Calendar Label, name: labelCalendar, widget: string, i18n: true}
+        - {label: Schedule Button Text, name: labelSchedule, widget: string, i18n: true}
+        - label: Discord Button
+          name: button
+          widget: object
+          i18n: true
+          fields:
+            - {label: Link text, name: linkText, widget: string, i18n: true}
+            - {label: URL, name: url, widget: string, i18n: true}
+      - label: Schedule Section
+        name: sectionTwo
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+        - {label: Header, name: header, widget: string, i18n: true}
+        - {label: Description, name: description, widget: text, i18n: true}
+        - {label: Phase One Button Text, name: labelPhaseOne, widget: string, i18n: true}
+        - {label: Phase Two Button Text, name: labelPhaseTwo, widget: string, i18n: true}
+        - {label: Phase Three Button Text, name: labelPhaseThree, widget: string, i18n: true}
+        - {label: Time Label, name: labelTime, widget: string, i18n: true}
+        - {label: Course Label, name: labelCourse, widget: string, i18n: true}
+        - {label: View More Button Text, name: labelViewMore, widget: string, i18n: true}
+
+  - name: resources
+    label: Resources Page
+    folder: content/resources
+    create: false
+    delete: false
+    i18n: true
+    fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "resourcesPage.js", i18n: duplicate}
+      - {label: Page Title, name: title, widget: string, i18n: true}
+
+  - name: archive
+    label: Archive Page
+    folder: content/archive
+    create: false
+    delete: false
+    i18n: true
+    fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "archivePage.js", i18n: duplicate}
+      - {label: Page Title, name: title, widget: string, i18n: true}
+
+
   - name: fourOhFour
     label: 404 Page
     folder: content/fourOhFour
@@ -446,6 +509,14 @@ collections:
               fields:
               - {label: Link Text, name: linkText, widget: string}
               - {label: Link Address, name: linkAddress, widget: string}
+          - label: Nav Items Authenticated
+            name: navItemsAuth
+            widget: list
+            i18n: true
+            summary: "{{linkText}}"
+            fields:
+            - {label: Link Text, name: linkText, widget: string}
+            - {label: Link Address, name: linkAddress, widget: string, required: false, hint: "Not applicable for dropdown menu"}
 
       - label: "Footer (Contact)"
         name: footer
@@ -464,6 +535,7 @@ collections:
             - {label: "Internal Link?", name: isInterenal, widget: boolean, required: false}
             - {label: Link Address, name: linkAddress, widget: string}
 
+
   - name: activity
     label: Activity
     folder: content/activity
@@ -472,7 +544,8 @@ collections:
     i18n: true
     fields:
       - {label: Title, name: title, widget: string, i18n: true}
-      - {label: Zoom Link, name: activity_link, widget: string, i18n: duplicate}
+      - {label: Add To Calendar Link, name: calendarLink, widget: string, i18n: duplicate}
+      - {label: Zoom Link, name: zoomLink, widget: string, i18n: duplicate}
       - label: Start time
         name: start
         widget: datetime
@@ -480,4 +553,21 @@ collections:
         date_format: "DD.MM.YYYY" # e.g. 24.12.2021
         time_format: "HH:mm" # e.g. 21:07
         picker_utc: false
+        i18n: duplicate
+      - label: End time
+        name: end
+        widget: datetime
+        default: ""
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        picker_utc: false
+        i18n: duplicate
+      - label: Phase Number
+        name: phaseNumber
+        widget: number
+        default: 1
+        value_type: "int"
+        min: 1
+        max: 3
+        step: 1
         i18n: duplicate
