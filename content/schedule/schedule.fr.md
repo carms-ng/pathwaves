@@ -2,7 +2,7 @@
 templateKey: schedulePage.js
 title: Calendrier
 sectionOne:
-  header: Bonjou"
+  header: Bonjour
   description: Voici le programme pour
   labelZoom: Lien zoom
   labelCalendar: Ajouter au calendrier
