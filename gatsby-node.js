@@ -16,7 +16,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   }
 };
 
-// create homePage dynamically
+// create pages dynamically using templates
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
@@ -51,13 +51,4 @@ exports.createPages = async ({ graphql, actions }) => {
       context: { slug, lang, regx: `/.${lang}.md$/` },
     });
   });
-};
-
-exports.onCreatePage = async ({ page, actions }) => {
-  const { createPage } = actions;
-
-  if (page.path.match(/^\/account/)) {
-    page.matchPath = '/account/*';
-    createPage(page);
-  }
 };
