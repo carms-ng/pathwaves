@@ -9,7 +9,7 @@ export default function NavAuth({
     <NavAuthStyles id={id} className="btn-group">
       {navItemsAuth.map(({ linkAddress, linkText }) => (
         <LocalizedLink
-          className={`btn btn-auth ${slug === linkText.toLowerCase() ? 'active' : ''}`}
+          className={`btn btn-auth ${slug === linkAddress.substring(1) ? 'active' : ''}`}
           to={linkAddress}
           lang={lang}
           key={`nav-auth-${linkText}`}
