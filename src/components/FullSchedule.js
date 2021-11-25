@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import PhaseSchedule from './PhaseSchedule';
 
-export default function FullSchedule({ page, courses, lang }) {
+export default function FullSchedule({
+  page, courses, lang, labelPhases,
+}) {
   const [phase, setPhase] = useState(1);
 
   const phaseGroups = courses.nodes.reduce((groups, node) => {
@@ -33,11 +35,11 @@ export default function FullSchedule({ page, courses, lang }) {
             type="button"
             onClick={() => setPhase(1)}
           >
-            {page.labelPhaseOne}
+            {labelPhases.labelPhaseOne}
           </button>
 
-          <button className={`btn btn-auth ${phase === 2 ? 'active' : ''}`} type="button" onClick={() => setPhase(2)}>{page.labelPhaseTwo}</button>
-          <button className={`btn btn-auth ${phase === 3 ? 'active' : ''}`} type="button" onClick={() => setPhase(3)}>{page.labelPhaseThree}</button>
+          <button className={`btn btn-auth ${phase === 2 ? 'active' : ''}`} type="button" onClick={() => setPhase(2)}>{labelPhases.labelPhaseTwo}</button>
+          <button className={`btn btn-auth ${phase === 3 ? 'active' : ''}`} type="button" onClick={() => setPhase(3)}>{labelPhases.labelPhaseThree}</button>
         </div>
 
         <p className="font-lg">{page.description}</p>

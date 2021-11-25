@@ -38,6 +38,13 @@ nav:
       linkAddress: /schedule
     - linkText: Resources
       linkAddress: /resources
+  buttonDiscord:
+    url: https://discord.com/
+    linkText: Discord
+  labelPhases:
+    labelPhaseOne: Phase 1
+    labelPhaseTwo: Phase 2
+    labelPhaseThree: Phase 3
 footer:
   copyright: Pathwaves
   footerLinks:

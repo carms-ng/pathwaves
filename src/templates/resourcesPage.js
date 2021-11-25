@@ -2,16 +2,16 @@ import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { graphql } from 'gatsby';
 
+import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import Calendar from '../components/Calendar';
-import FullSchedule from '../components/FullSchedule';
+import NavAuth from '../components/NavAuth';
+import AuthHeroStyles from '../styles/InnerStyles';
+import Resources from '../components/Resources';
 
 // markup
-export default function SchedulePageTemplate({ pageContext: { lang, slug }, data }) {
-  const {
-    user, isAuthenticated, isLoading, loginWithRedirect,
-  } = useAuth0();
+export default function ResourcesPageTemplate({ pageContext: { lang, slug }, data }) {
+  const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
 
   if (isLoading) {
     return <div>Authenticating...</div>;
@@ -24,8 +24,7 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
   // Prepare Content
   const {
     title,
-    sectionOne,
-    sectionTwo,
+    description,
   } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
@@ -37,27 +36,39 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
       <Layout lang={lang} slug={slug} settings={settings}>
         <Seo title={`${title}`} lang={lang} />
 
-        {/* Section One */}
-        <Calendar
-          page={sectionOne}
-          courses={data.courses}
-          user={user}
-          lang={lang}
-          nav={nav}
-          slug={slug}
-        />
+        <AuthHeroStyles>
+          <div className="wrapper-auth">
+            <NavAuth
+              id="nav-auth"
+              className="btn-group"
+              nav={nav}
+              slug={slug}
+              lang={lang}
+            />
+            <ResourcesStyles>
+              <h1 className="font-lg">{description}</h1>
 
-        {/* Section Two */}
-        <FullSchedule
-          page={sectionTwo}
-          courses={data.courses}
-          lang={lang}
-          labelPhases={nav.labelPhases}
-        />
+              {/* Resources Control and Cards */}
+              <Resources labels={nav.labelPhases} links={data.links} />
+
+            </ResourcesStyles>
+
+          </div>
+        </AuthHeroStyles>
       </Layout>
     )
   );
 }
+
+const ResourcesStyles = styled.div`
+  h1 {
+    font-weight: 400;
+    max-width: var(--maxWidthMd);
+    margin: 3rem auto;
+    text-align: center;
+  }
+
+`;
 
 export const query = graphql`
   query($regx: String) {
@@ -99,42 +110,23 @@ export const query = graphql`
         }
       }
     }
-    page: file(relativeDirectory: {eq: "schedule"}, base: {regex: $regx}) {
+    page: file(relativeDirectory: {eq: "resources"}, base: {regex: $regx}) {
       childMarkdownRemark {
         frontmatter {
           title
-          sectionOne {
-            header
-            labelCalendar
-            labelSchedule
-            labelZoom
-            description
-            noneText
-          }
-          sectionTwo {
-            header
-            description
-            labelTime
-            labelCourse
-            labelViewMore
-          }
+          description
         }
       }
     }
-    courses: allFile(
-      filter: {relativeDirectory: {eq: "courses"}, base: {regex: $regx}}
-      sort: {fields: childMarkdownRemark___frontmatter___start}
+    links: allFile(
+      filter: {relativeDirectory: {eq: "links"}, base: {regex: $regx}}
     ) {
       nodes {
         childMarkdownRemark {
           frontmatter {
             title
             description
-            presenter
-            start
-            end
-            linkCalendar
-            linkZoom
+            url
             phaseNumber
           }
         }
