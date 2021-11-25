@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import PhaseButtons from './PhaseButtons';
 import PhaseSchedule from './PhaseSchedule';
 
 export default function FullSchedule({
@@ -23,29 +24,16 @@ export default function FullSchedule({
     }, {});
   });
 
-  const dates = phaseGroups[phase];
-
   return (
     <FullScheduleStyles id="full-schedule">
       <div className="wrapper-auth">
         <h2>{page.header}</h2>
-        <div className="btn-group">
-          <button
-            className={`btn btn-auth ${phase === 1 ? 'active' : ''}`}
-            type="button"
-            onClick={() => setPhase(1)}
-          >
-            {labelPhases.labelPhaseOne}
-          </button>
 
-          <button className={`btn btn-auth ${phase === 2 ? 'active' : ''}`} type="button" onClick={() => setPhase(2)}>{labelPhases.labelPhaseTwo}</button>
-          <button className={`btn btn-auth ${phase === 3 ? 'active' : ''}`} type="button" onClick={() => setPhase(3)}>{labelPhases.labelPhaseThree}</button>
-        </div>
+        <PhaseButtons labels={labelPhases} phase={phase} setPhase={setPhase} />
 
         <p className="font-lg">{page.description}</p>
 
-        <PhaseSchedule dates={dates} lang={lang} page={page} />
-
+        <PhaseSchedule dates={phaseGroups[phase]} lang={lang} page={page} />
       </div>
     </FullScheduleStyles>
   );

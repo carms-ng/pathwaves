@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import PhaseButtons from './PhaseButtons';
 
 export default function Resources({ labels, links }) {
   const [phase, setPhase] = useState(1);
@@ -18,18 +19,7 @@ export default function Resources({ labels, links }) {
   return (
     <ResourcesStyles>
       {/* buttons */}
-      <div className="btn-group">
-        {Object.keys(labels).map((key, index) => (
-          <button
-            key={key}
-            type="button"
-            className={`btn btn-auth ${phase === index + 1 ? 'active' : ''}`}
-            onClick={() => setPhase(index + 1)}
-          >
-            {labels[key]}
-          </button>
-        ))}
-      </div>
+      <PhaseButtons labels={labels} phase={phase} setPhase={setPhase} />
 
       {/* cards */}
       <div className="cards-resources">
