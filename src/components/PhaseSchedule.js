@@ -20,8 +20,7 @@ export default function PhaseSchedule({ dates, lang, page }) {
             </div>
             <Accordion
               items={items}
-              labelTime={page.labelTime}
-              labelCourse={page.labelCourse}
+              page={page}
             />
           </div>
         );

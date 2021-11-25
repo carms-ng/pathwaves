@@ -33,6 +33,11 @@ nav:
           linkAddress: /schedule
         - linkText: Resources
           linkAddress: /resources
+  navItemsAuth:
+    - linkText: Schedule
+      linkAddress: /schedule
+    - linkText: Resources
+      linkAddress: /resources
 footer:
   copyright: Pathwaves
   footerLinks:

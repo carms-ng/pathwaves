@@ -30,6 +30,8 @@ const GlobalStyles = createGlobalStyle`
     --padMd: 8rem 3rem;
     --padLg: 12rem 3rem;
     --trans: all 0.7s ease;
+
+    scroll-behavior: smooth;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -126,6 +128,27 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
+  .btn-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  .btn-auth {
+    border: 0;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    background: transparent;
+
+    &:hover {
+      background: var(--blue);
+      color: var(--black);
+    }
+    &.active {
+      background: var(--blue);
+      font-weight:700;
+    }
+  }
+
   @media (min-width: 640px) {
     body {
       font-size: 1.7rem;
@@ -151,6 +174,13 @@ const GlobalStyles = createGlobalStyle`
     }
     .font-lg {
       font-size: 2.4rem;
+    }
+    .btn-group {
+      gap: 3rem;
+      padding: 1rem 0 3rem 0;
+    }
+    .btn-auth {
+      padding: 0.5rem 3rem;
     }
   }
 `;

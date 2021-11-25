@@ -24,10 +24,10 @@ export default function FullSchedule({ page, courses, lang }) {
   const dates = phaseGroups[phase];
 
   return (
-    <FullScheduleStyles>
+    <FullScheduleStyles id="full-schedule">
       <div className="wrapper-auth">
         <h2>{page.header}</h2>
-        <div className="button-group">
+        <div className="btn-group">
           <button
             className={`btn btn-auth ${phase === 1 ? 'active' : ''}`}
             type="button"
@@ -61,27 +61,8 @@ const FullScheduleStyles = styled.section`
     display: grid;
     gap: 4rem;
   }
-
-  .button-group {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+  .btn-group {
     margin: 0 auto;
-  }
-  .btn-auth {
-    border: 0;
-    font-weight: 400;
-    padding: 0.5rem 1rem;
-    background: transparent;
-
-    &:hover {
-      background: var(--blue);
-      color: var(--blck);
-    }
-    &.active {
-      background: var(--blue);
-      font-weight:700;
-    }
   }
   @media(min-width: 1024px) {
     max-width: var(--maxWidthLg);
@@ -92,14 +73,6 @@ const FullScheduleStyles = styled.section`
     h2, .font-lg {
       text-align: center;
       margin: 0 auto;
-    }
-    .button-group {
-      gap: 3rem;
-      padding: 1rem 0 3rem 0;
-
-    }
-    .btn-auth {
-      padding: 0.5rem 3rem;
     }
   }
 `;

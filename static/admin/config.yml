@@ -516,7 +516,7 @@ collections:
             summary: "{{linkText}}"
             fields:
             - {label: Link Text, name: linkText, widget: string}
-            - {label: Link Address, name: linkAddress, widget: string, required: false, hint: "Not applicable for dropdown menu"}
+            - {label: Link Address, name: linkAddress, widget: string}
 
       - label: "Footer (Contact)"
         name: footer

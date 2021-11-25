@@ -1,11 +1,8 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-// import { Router } from '@reach/router';
-
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-
 import Seo from '../components/Seo';
 import Calendar from '../components/Calendar';
 import FullSchedule from '../components/FullSchedule';
@@ -33,12 +30,21 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
+  const navItems = settings.nav.navItemsAuth;
+
   return (
     isAuthenticated && (
       <Layout lang={lang} slug={slug} settings={settings}>
         <Seo title={`${title}`} lang={lang} />
 
-        <Calendar page={sectionOne} courses={data.courses} user={user} lang={lang} />
+        <Calendar
+          page={sectionOne}
+          courses={data.courses}
+          user={user}
+          lang={lang}
+          navItems={navItems}
+          slug={slug}
+        />
         <FullSchedule page={sectionTwo} courses={data.courses} lang={lang} />
       </Layout>
     )
@@ -67,6 +73,10 @@ export const query = graphql`
                 linkAddress
                 linkText
               }
+            }
+            navItemsAuth {
+              linkAddress
+              linkText
             }
           }
         }

@@ -3,9 +3,10 @@ import 'react-datepicker/dist/react-datepicker.css';
 import styled from 'styled-components';
 import TimeTable from './TimeTable';
 import Picker from './Picker';
+import NavAuth from './NavAuth';
 
 export default function Calendar({
-  courses, page, user, lang,
+  courses, page, user, lang, navItems, slug,
 }) {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
@@ -33,11 +34,14 @@ export default function Calendar({
   return (
     <CalendarStyles>
       <div className="wrapper-auth">
-        {/* TODO: Navigation */}
-        <div id="nav-auth">
-          {/* discord button */}
-          <a className="btn" href={page.button.url} target="_blank" rel="noreferrer">{page.button.linkText}</a>
-        </div>
+        <NavAuth
+          id="nav-auth"
+          className="btn-group"
+          navItems={navItems}
+          slug={slug}
+          lang={lang}
+          page={page}
+        />
 
         <div id="greet">
           <h1>
@@ -73,7 +77,7 @@ export default function Calendar({
         <a
           className="btn"
           id="btn-schedule"
-          href="#schedule"
+          href="#full-schedule"
         >
           {page.labelSchedule}
 
@@ -89,6 +93,7 @@ const CalendarStyles = styled.section`
   display: grid;
   max-width: var(--maxWidthSm);
   padding: var(--padSm);
+  padding-top: 8rem;
   margin: 0 auto;
 
   #nav-auth{
@@ -170,11 +175,16 @@ const CalendarStyles = styled.section`
     }
   }
 
+  .btn-group {
+    justify-self: center;
+    .btn-auth:hover, .btn-auth.active {
+      background: rgba(245, 206, 122, 0.5);
+    }
+  }
 
   @media(min-width: 1024px) {
     max-width: var(--maxWidthLg);
     padding: var(--padLg);
-
 
     #greet {
       padding: 0 3rem;
@@ -196,6 +206,10 @@ const CalendarStyles = styled.section`
     }
     .react-datepicker {
       padding: 3rem;
+    }
+
+    .btn-group {
+      justify-self: flex-start;
     }
   }
 `;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
 import styled from 'styled-components';
 
-export default function Accordion({ items, labelTime, labelCourse }) {
+export default function Accordion({ items, page: { labelTime, labelCourse } }) {
   const [active, setActive] = useState(null);
 
   return (
@@ -127,7 +127,5 @@ const AccordionStyles = styled.div`
         padding-right: 3rem;
       }
     }
-
   }
-
 `;
