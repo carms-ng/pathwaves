@@ -8,6 +8,7 @@ import Layout from '../components/Layout';
 
 import Seo from '../components/Seo';
 import Calendar from '../components/Calendar';
+import FullSchedule from '../components/FullSchedule';
 
 // markup
 export default function SchedulePageTemplate({ pageContext: { lang, slug }, data }) {
@@ -27,7 +28,7 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
   const {
     title,
     sectionOne,
-    // sectionTwo,
+    sectionTwo,
   } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
@@ -38,6 +39,7 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
         <Seo title={`${title}`} lang={lang} />
 
         <Calendar page={sectionOne} courses={data.courses} user={user} lang={lang} />
+        <FullSchedule page={sectionTwo} courses={data.courses} lang={lang} />
       </Layout>
     )
   );
@@ -88,6 +90,7 @@ export const query = graphql`
           }
           sectionTwo {
             header
+            description
             labelPhaseOne
             labelPhaseTwo
             labelPhaseThree
@@ -110,8 +113,8 @@ export const query = graphql`
             presenter
             start
             end
-            calendarLink
-            zoomLink
+            linkCalendar
+            linkZoom
             phaseNumber
           }
         }
