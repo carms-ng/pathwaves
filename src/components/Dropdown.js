@@ -38,7 +38,7 @@ export default function Dropdown({
       {open && (
         <ul className="dropdown-menu">
           {items.map((item) => (
-            <li className="dropdown-menu-item">
+            <li className="dropdown-menu-item" key={item.linkAddress}>
               <LocalizedLink lang={lang} to={item.linkAddress}>
                 {item.linkText}
               </LocalizedLink>

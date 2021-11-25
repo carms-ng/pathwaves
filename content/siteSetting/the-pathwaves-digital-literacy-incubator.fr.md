@@ -26,9 +26,22 @@ nav:
         - linkText: Les présentatrices
           linkAddress: /presenters
       show: both
-    - linkText: sondage
+    - linkText: Sondage
       linkAddress: /survey
       show: both
+    - linkText: Mon compte
+      linkAddress: ""
+      show: private
+      childNavItems:
+        - linkText: Calendrier
+          linkAddress: /schedule
+        - linkText: Ressources
+          linkAddress: /resources
+  navItemsAuth:
+    - linkAddress: /schedule
+      linkText: Calendrier
+    - linkAddress: /resources
+      linkText: Ressources
 footer:
   copyright: Pathwaves
   footerLinks:

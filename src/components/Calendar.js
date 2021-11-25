@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
-import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import styled from 'styled-components';
-import Clipboard from './Clipbroad';
+import TimeTable from './TimeTable';
+import Picker from './Picker';
+import NavAuth from './NavAuth';
 
-export default function Calendar({ data }) {
+export default function Calendar({
+  courses, page, user, lang, navItems, slug,
+}) {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
   const dateFormatOptions = {
     weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
   };
 
-  // Group activities by Date
-  const dateGroups = data.allFile.nodes.reduce((groups, node) => {
+  // Group courses by Date
+  const dateGroups = courses.nodes.reduce((groups, node) => {
     const obj = node.childMarkdownRemark.frontmatter;
     const date = obj.start.split('T')[0];
     // Create Empty Array if Date key doesn't exist
@@ -22,7 +25,7 @@ export default function Calendar({ data }) {
     return groups;
   }, {});
 
-  // Get Activities on the selected date
+  // Get courses on the selected date
   const selectedDateString = selectedDate.toISOString().split('T')[0];
   const selectedDateGroup = dateGroups[selectedDateString]
     ? dateGroups[selectedDateString].sort((a, b) => new Date(b.start) - new Date(a.start))
@@ -30,88 +33,183 @@ export default function Calendar({ data }) {
 
   return (
     <CalendarStyles>
-      <h1>Calendar</h1>
-      <p>
-        Selected Date:
-        {' '}
-        {selectedDate.toLocaleDateString('en-US', dateFormatOptions)}
-      </p>
+      <div className="wrapper-auth">
+        <NavAuth
+          id="nav-auth"
+          className="btn-group"
+          navItems={navItems}
+          slug={slug}
+          lang={lang}
+          page={page}
+        />
 
-      <DatePicker
-        locale="en"
-        selected={selectedDate}
-        onChange={(date) => {
-          setSelectedDate(date);
-        }}
-        dayClassName={(date) => {
-          const dateString = date.toISOString().split('T')[0];
-          const hasEvent = Object.keys(dateGroups).includes(dateString);
-          return (hasEvent ? 'underlined' : '');
-        }}
-        inline
-      />
-      <div>
-        {selectedDateGroup?.map((activity) => (
-          <div key={activity.start}>
-            <p>{new Date(activity.start).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
-            <h3>{activity.title}</h3>
-            <Clipboard copyText={activity.activity_link} />
-          </div>
-        ))}
+        <div id="greet">
+          <h1>
+            {page.header}
+            {' '}
+            <span>{user.name}</span>
+            {' :)'}
+          </h1>
+          <p className="font-lg">
+            {page.description}
+            {' '}
+            {selectedDate.toLocaleDateString(
+              lang === 'en' ? 'en-US' : 'fr-CA',
+              dateFormatOptions,
+            )}
+          </p>
+        </div>
+
+        <TimeTable
+          selectedDateGroup={selectedDateGroup}
+          id="timetable"
+          page={page}
+        />
+
+        <Picker
+          id="picker"
+          lang={lang}
+          selectedDate={selectedDate}
+          setSelectedDate={setSelectedDate}
+          dateGroups={dateGroups}
+        />
+
+        <a
+          className="btn"
+          id="btn-schedule"
+          href="#full-schedule"
+        >
+          {page.labelSchedule}
+
+        </a>
       </div>
+
     </CalendarStyles>
   );
 }
 
-const CalendarStyles = styled.div`
+const CalendarStyles = styled.section`
   min-height: 100vh;
   display: grid;
-  place-content: center;
+  max-width: var(--maxWidthSm);
+  padding: var(--padSm);
+  padding-top: 8rem;
+  margin: 0 auto;
 
-  .react-datepicker {
-    border: 0;
-    padding: 1rem;
-    font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5rem;
+  #nav-auth{
+    grid-area: nav-auth;
   }
-  .react-datepicker__header {
-    border-bottom: 0;
-    background: transparent;
-  }
-  .react-datepicker__navigation {
-    top: 1.8rem;
-  }
-  .react-datepicker__current-month {
-    font-size: 2rem;
-  }
-  .react-datepicker__day--keyboard-selected {
-    background: 0;
-    color: #333333
-  }
-  .react-datepicker__day-name, .react-datepicker__day {
-    width: 3rem;
-    line-height: 3rem;
-    margin: 0.5rem;
-    border-radius: 50%;
-  }
-  .react-datepicker__day--selected {
-    background: #0DCB94;
-    color: #fff;
-    &.underlined::after {
-      background: #fff;
+  #greet {
+    grid-area: greet;
+    h1 {
+      margin-bottom: 2rem;
+      span {
+        text-decoration: underline;
+      }
     }
   }
-  .underlined {
-    position: relative;
+  #timetable {
+    grid-area: timetable;
+    display: grid;
+    gap: 4rem;
+    padding: 1rem;
+    > div {
+      display: grid;
+      align-content: flex-start;
+      gap: 0.75rem;
+      > div {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    pre {
+      color: var(--grey);
+    }
   }
-  .underlined::after {
-    content: "";
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    height: 1px;
-    width: 1rem;
-    transform: translateX(-50%);
-    background: #333333;
+  #picker {
+    grid-area: picker;
+    justify-self: center;
+    align-self: center;
+    overflow-x: auto;
+  }
+  #btn-schedule {
+    grid-area: btn-schedule;
+  }
+
+  .wrapper-auth {
+    padding: 2rem;
+    background-color: var(--offWhite);
+    background-image: radial-gradient(127.15% 127.15% at 50% 50%, rgba(245, 206, 122, 0.75) 0%, rgba(204, 162, 195, 0.5) 8.33%, rgba(193, 211, 236, 0.554434) 22.92%, rgba(193, 211, 236, 0.5) 33.27%, rgba(193, 211, 236, 0.480769) 51.18%);
+    border-radius: var(--br);
+    display: grid;
+    grid-template-areas:
+      "nav-auth"
+      "greet"
+      "picker"
+      "timetable"
+      "btn-schedule";
+    gap: 4rem;
+    position: relative;
+
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      z-index: 0;
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: var(--br);
+    }
+  }
+
+  .btn-group {
+    justify-self: center;
+    .btn-auth:hover, .btn-auth.active {
+      background: rgba(245, 206, 122, 0.5);
+    }
+  }
+
+  @media(min-width: 1024px) {
+    max-width: var(--maxWidthLg);
+    padding: var(--padLg);
+
+    #greet {
+      padding: 0 3rem;
+    }
+    #timetable {
+      padding: 0 3rem;
+      max-height: 40vh;
+      overflow-y: auto;
+    }
+    .wrapper-auth {
+      padding: 5rem;
+      grid-template-columns: 3fr 2fr;
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-areas:
+        "nav-auth picker"
+        "greet picker"
+        "timetable picker"
+        "timetable btn-schedule";
+    }
+    .react-datepicker {
+      padding: 3rem;
+    }
+
+    .btn-group {
+      justify-self: flex-start;
+    }
   }
 `;
