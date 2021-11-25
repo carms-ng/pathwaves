@@ -64,12 +64,16 @@ const AccordionStyles = styled.div`
   .btn-accordion {
     border: 0;
     width: 100%;
-    background: var(--neutral);
+    background-color: var(--neutral);
     padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--black);
+    &:hover {
+      background-color: #d6d8cb;
+      color: var(--black);
+    }
   }
 
   .accordion-dropdown {
