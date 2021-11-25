@@ -1,3 +1,5 @@
+import { cloneElement } from 'react';
+
 const getRedirectLanguage = () => {
   if (typeof navigator === 'undefined') {
     return 'en';
@@ -14,4 +16,15 @@ const getRedirectLanguage = () => {
   }
 };
 
-export { getRedirectLanguage };
+const dateBreakdowner = (dateObj, lang) => {
+  const locale = lang === 'en' ? 'en-us' : 'fr-ca';
+
+  return ({
+    day: dateObj.toLocaleString(locale, { weekday: 'short' }),
+    date: dateObj.getDate(),
+    month: dateObj.toLocaleString(locale, { month: 'short' }),
+    year: dateObj.getFullYear(),
+  });
+};
+
+export { getRedirectLanguage, dateBreakdowner };
