@@ -28,16 +28,20 @@ export default function Header({
       {/* Left: Auth button */}
       {isAuthenticated
         ? <LogoutButton className="btn btn-main" />
-        : <LoginButton className="btn btn-main" />}
+        : <LoginButton className="btn btn-main" lang={lang} />}
 
       {/* Center: Logo */}
-      <GatsbyImage
-        image={logo?.image.childImageSharp.gatsbyImageData}
-        alt={logo?.alt}
-        imgStyle={{ objectFit: 'contain' }}
+      <LocalizedLink
+        to="/"
+        lang={lang}
         className="logo"
-        style={{ backdropFilter: 'blur(2em)' }}
-      />
+      >
+        <GatsbyImage
+          image={logo?.image.childImageSharp.gatsbyImageData}
+          alt={logo?.alt}
+          imgStyle={{ objectFit: 'contain' }}
+        />
+      </LocalizedLink>
 
       {/* Right Nav Items & Lang Switcher */}
       <div className="header__right">
@@ -88,6 +92,7 @@ const HeaderStyles = styled.header`
   }
   .logo {
     grid-area: logo;
+    backdrop-filter: blur(2em);
   }
   .header__right {
     grid-area: menu;
