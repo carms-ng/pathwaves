@@ -14,7 +14,7 @@ export default function TimeTable({ selectedDateGroup, id, page }) {
   return (
     <div id={id}>
       {selectedDateGroup?.map(({
-        title, description, presenter, start, end, calendarLink, zoomLink,
+        title, description, presenter, start, end, linkCalendar, linkZoom,
       }) => (
         <div key={start}>
           <pre>
@@ -31,9 +31,9 @@ export default function TimeTable({ selectedDateGroup, id, page }) {
 
           <div>
             <Icon icon="grommet-icons:zoom" />
-            <Clipboard copyText={zoomLink} />
+            <Clipboard copyText={linkZoom} />
           </div>
-          <a className="link" href={calendarLink} target="_blank" rel="noreferrer">{page.labelCalendar}</a>
+          <a className="link" href={linkCalendar} target="_blank" rel="noreferrer">{page.labelCalendar}</a>
         </div>
       ))}
     </div>

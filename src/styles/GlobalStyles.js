@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     --grey: #666666;
     --gray: var(--grey);
     --darkblue: #325F9A;
+    --blud: #7BABF5;
     --blue: #C1D3EC;
     --lightblue: #E0E9F5;
     --xlightblue: #EFF4FA;
@@ -90,7 +91,7 @@ const GlobalStyles = createGlobalStyle`
       opacity: 1;
     }
   }
-  h1, h2 {
+  h1, h2, .h2 {
     font-size: 2.6rem;
   }
   .btn {
@@ -116,7 +117,6 @@ const GlobalStyles = createGlobalStyle`
     background: transparent;
     transition: var(--trans);
     backdrop-filter: blur(2em);
-
 
     &:hover {
       background: var(--black);

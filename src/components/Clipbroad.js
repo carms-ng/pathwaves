@@ -28,10 +28,7 @@ const ClipboardStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  a {
-    color: #333333;
 
-  }
   button {
     border: 0;
     border-radius: var(--br);
