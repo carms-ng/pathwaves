@@ -17,7 +17,7 @@ export default function Clipboard({ copyText }) {
       >
         {copyText}
       </a>
-      <button type="button" onClick={copyToClipBoard}>
+      <button className="btn" type="button" onClick={copyToClipBoard}>
         <Icon icon="carbon:copy" />
       </button>
     </ClipboardStyles>
@@ -29,16 +29,13 @@ const ClipboardStyles = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  a {
+    color: var(--black);
+  }
   button {
     border: 0;
-    border-radius: var(--br);
-    cursor: pointer;
-    background: white;
     padding: 1rem;
     display: grid;
     place-content: center;
-  }
-  button:hover {
-    background: var(--lightgrey);
   }
 `;

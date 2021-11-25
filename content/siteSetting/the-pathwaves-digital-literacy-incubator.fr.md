@@ -42,6 +42,13 @@ nav:
       linkText: Calendrier
     - linkAddress: /resources
       linkText: Ressources
+  buttonDiscord:
+    url: https://discord.com/
+    linkText: Discorde
+  labelPhases:
+    labelPhaseOne: Phase 1
+    labelPhaseTwo: Phase 2
+    labelPhaseThree: Phase 3
 footer:
   copyright: Pathwaves
   footerLinks:

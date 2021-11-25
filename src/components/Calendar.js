@@ -6,7 +6,7 @@ import Picker from './Picker';
 import NavAuth from './NavAuth';
 
 export default function Calendar({
-  courses, page, user, lang, navItems, slug,
+  courses, page, user, lang, nav, slug,
 }) {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
@@ -37,10 +37,9 @@ export default function Calendar({
         <NavAuth
           id="nav-auth"
           className="btn-group"
-          navItems={navItems}
+          nav={nav}
           slug={slug}
           lang={lang}
-          page={page}
         />
 
         <div id="greet">
@@ -175,13 +174,6 @@ const CalendarStyles = styled.section`
     }
   }
 
-  .btn-group {
-    justify-self: center;
-    .btn-auth:hover, .btn-auth.active {
-      background: rgba(245, 206, 122, 0.5);
-    }
-  }
-
   @media(min-width: 1024px) {
     max-width: var(--maxWidthLg);
     padding: var(--padLg);
@@ -203,13 +195,6 @@ const CalendarStyles = styled.section`
         "greet picker"
         "timetable picker"
         "timetable btn-schedule";
-    }
-    .react-datepicker {
-      padding: 3rem;
-    }
-
-    .btn-group {
-      justify-self: flex-start;
     }
   }
 `;

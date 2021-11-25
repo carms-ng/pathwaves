@@ -417,9 +417,6 @@ collections:
         fields:
         - {label: Header, name: header, widget: string, i18n: true}
         - {label: Description, name: description, widget: text, i18n: true}
-        - {label: Phase One Button Text, name: labelPhaseOne, widget: string, i18n: true}
-        - {label: Phase Two Button Text, name: labelPhaseTwo, widget: string, i18n: true}
-        - {label: Phase Three Button Text, name: labelPhaseThree, widget: string, i18n: true}
         - {label: Time Label, name: labelTime, widget: string, i18n: true}
         - {label: Course Label, name: labelCourse, widget: string, i18n: true}
         - {label: View More Button Text, name: labelViewMore, widget: string, i18n: true}
@@ -433,6 +430,7 @@ collections:
     fields:
       - {label: Template Key, name: templateKey, widget: hidden, default: "resourcesPage.js", i18n: duplicate}
       - {label: Page Title, name: title, widget: string, i18n: true}
+      - {label: Description, name: description, widget: text, i18n: true}
 
   - name: archive
     label: Archive Page
@@ -517,7 +515,21 @@ collections:
             fields:
             - {label: Link Text, name: linkText, widget: string}
             - {label: Link Address, name: linkAddress, widget: string}
-
+          - label: Discord Button
+            name: buttonDiscord
+            widget: object
+            i18n: true
+            fields:
+              - {label: Link text, name: linkText, widget: string, i18n: true}
+              - {label: URL, name: url, widget: string, i18n: true}
+          - label: Phases Button Label
+            name: labelPhases
+            widget: object
+            i18n: true
+            fields:
+            - {label: Phase One Button Text, name: labelPhaseOne, widget: string, i18n: true}
+            - {label: Phase Two Button Text, name: labelPhaseTwo, widget: string, i18n: true}
+            - {label: Phase Three Button Text, name: labelPhaseThree, widget: string, i18n: true}
       - label: "Footer (Contact)"
         name: footer
         widget: object
@@ -534,42 +546,6 @@ collections:
             - {label: Link Text, name: linkText, widget: string}
             - {label: "Internal Link?", name: isInterenal, widget: boolean, required: false}
             - {label: Link Address, name: linkAddress, widget: string}
-
-  - name: activity
-    label: Activity
-    folder: content/activity
-    create: true
-    delete: false
-    i18n: true
-    fields:
-      - {label: Title, name: title, widget: string, i18n: true}
-      - {label: Add To Calendar Link, name: linkCalendar, widget: string, i18n: duplicate}
-      - {label: Zoom Link, name: linkZoom, widget: string, i18n: duplicate}
-      - label: Start time
-        name: start
-        widget: datetime
-        default: ""
-        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
-        time_format: "HH:mm" # e.g. 21:07
-        picker_utc: false
-        i18n: duplicate
-      - label: End time
-        name: end
-        widget: datetime
-        default: ""
-        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
-        time_format: "HH:mm" # e.g. 21:07
-        picker_utc: false
-        i18n: duplicate
-      - label: Phase
-        name: phase
-        widget: number
-        default: 1
-        value_type: "int"
-        min: 1
-        max: 3
-        step: 1
-        i18n: duplicate
 
   - name: courses
     label: Courses
@@ -608,3 +584,24 @@ collections:
         max: 3
         step: 1
         i18n: duplicate
+
+  - name: links
+    label: Links
+    folder: content/links
+    create: true
+    delete: true
+    i18n: true
+    fields:
+      - {label: Title, name: title, widget: string, i18n: true}
+      - {label: Description, name: description, widget: text, i18n: true}
+      - {label: Link, name: url, widget: string, i18n: true}
+      - label: Phase Number
+        name: phaseNumber
+        widget: number
+        default: 1
+        value_type: "int"
+        min: 1
+        max: 3
+        step: 1
+        i18n: duplicate
+
