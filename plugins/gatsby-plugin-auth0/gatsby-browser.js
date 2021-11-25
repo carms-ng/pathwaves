@@ -7,13 +7,17 @@ const onRedirectCallback = (appState) => {
 };
 
 // eslint-disable-next-line import/prefer-default-export
-export const wrapRootElement = ({ element }, pluginOptions) => (
-  <Auth0Provider
-    domain={pluginOptions.domain}
-    clientId={pluginOptions.clientId}
-    redirectUri={`${window.location.origin}`}
-    onRedirectCallback={onRedirectCallback}
-  >
-    {element}
-  </Auth0Provider>
-);
+export const wrapRootElement = ({ element }, pluginOptions) => {
+  const lang = localStorage.getItem('lang') || 'en';
+
+  return (
+    <Auth0Provider
+      domain={pluginOptions.domain}
+      clientId={pluginOptions.clientId}
+      redirectUri={`${window.location.origin}/${lang}/schedule`}
+      onRedirectCallback={onRedirectCallback}
+    >
+      {element}
+    </Auth0Provider>
+  );
+};
