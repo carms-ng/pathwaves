@@ -3,30 +3,39 @@ import { Icon } from '@iconify/react';
 import styled from 'styled-components';
 
 export default function Accordion({ items, labelTime, labelCourse }) {
-  console.log(items);
   const [active, setActive] = useState(null);
+
   return (
     <AccordionStyles>
       {items.map(({
         title, description, start, end, presenter, linkZoom,
       }, index) => (
-        <div key={start + end} className={active === index ? 'active' : ''}>
+        <div className="accordion-item" key={start + end}>
           {index === 0 && <h4>{labelTime}</h4>}
           {index === 0 && <h4>{labelCourse}</h4>}
           <div>
             <pre>{new Date(start).toLocaleTimeString([], { hour12: false, hour: '2-digit', minute: '2-digit' })}</pre>
             <pre style={{ color: 'var(--grey)' }}>{new Date(end).toLocaleTimeString([], { hour12: false, hour: '2-digit', minute: '2-digit' })}</pre>
           </div>
-          <div className="accordion-item">
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <Icon icon="bi:person" />
-              <p style={{ margin: 0, marginLeft: '1rem', padding: 0 }}>{presenter}</p>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <Icon icon="grommet-icons:zoom" />
-              <p style={{ margin: 0, marginLeft: '1rem', padding: 0 }}>{linkZoom}</p>
+          <div className={active === index ? 'expanded' : ''}>
+            <button
+              type="button"
+              className="btn btn-accordion"
+              onClick={() => setActive(active === index ? null : index)}
+            >
+              {title}
+              <Icon icon="akar-icons:chevron-down" className="icon-chevron" />
+            </button>
+            <div className="accordion-dropdown">
+              <p>{description}</p>
+              <div>
+                <Icon icon="bi:person" />
+                <p>{presenter}</p>
+              </div>
+              <div>
+                <Icon icon="grommet-icons:zoom" />
+                <p>{linkZoom}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -36,16 +45,89 @@ export default function Accordion({ items, labelTime, labelCourse }) {
 }
 
 const AccordionStyles = styled.div`
-  > * {
-    display: inline-grid;
+  h4 {
+    margin-bottom: 1rem;
+  }
+  .accordion-item {
+    width: 100%;
+    display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 4rem 0;
 
     > * {
-      padding: 0 1rem;
+      padding: 0.5rem 1rem;
     }
+
     > div:nth-child(odd) {
       border-right: 3px solid var(--black);
     }
   }
+  .btn-accordion {
+    border: 0;
+    width: 100%;
+    background: var(--neutral);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--black);
+  }
+
+  .accordion-dropdown {
+    height: auto;
+    max-height: 0;
+    transition: var(--trans);
+    overflow-y: hidden;
+    background: var(--neutral);
+    border-radius: 0 0 var(--br) var(--br);
+    display: grid;
+    gap: 1.5rem;
+    padding-left: 2rem;
+    > * {
+      padding-right: 1rem;
+    }
+    > div {
+      display: flex;
+      align-items: center;
+
+      > p {
+        margin: 0;
+        padding: 0;
+        margin-left: 1rem;
+      }
+    }
+    > div:last-child {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .icon-chevron {
+    transition: var(--trans);
+  }
+  .expanded {
+    .icon-chevron {
+      transform: rotate(-180deg);
+    }
+    .btn-accordion {
+      border-radius: var(--br) var(--br) 0 0;
+    }
+    .accordion-dropdown {
+      max-height: 300px; /* try to guess a max-height for your content */
+    }
+  }
+  @media(min-width: 1024px) {
+    .accordion-item > * {
+      padding: 1rem 4rem;
+    }
+    .btn-accordion, .accordion-dropdown {
+      padding-left: 5rem;
+    }
+    .accordion-dropdown {
+      padding-left: 5rem;
+      & > * {
+        padding-right: 3rem;
+      }
+    }
+
+  }
+
 `;

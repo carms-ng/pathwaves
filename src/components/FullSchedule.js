@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { dateBreakdowner } from '../utils/helper';
-import Accordion from './Accordion';
+import PhaseSchedule from './PhaseSchedule';
 
 export default function FullSchedule({ page, courses, lang }) {
   const [phase, setPhase] = useState(1);
-
-  // console.log(phase, courses);
 
   const phaseGroups = courses.nodes.reduce((groups, node) => {
     const obj = node.childMarkdownRemark.frontmatter;
@@ -24,16 +21,12 @@ export default function FullSchedule({ page, courses, lang }) {
     }, {});
   });
 
-  console.log(phaseGroups);
   const dates = phaseGroups[phase];
-  console.log(dates);
 
   return (
     <FullScheduleStyles>
       <div className="wrapper-auth">
         <h2>{page.header}</h2>
-        <p className="font-lg">{page.description}</p>
-
         <div className="button-group">
           <button
             className={`btn btn-auth ${phase === 1 ? 'active' : ''}`}
@@ -42,32 +35,14 @@ export default function FullSchedule({ page, courses, lang }) {
           >
             {page.labelPhaseOne}
           </button>
+
           <button className={`btn btn-auth ${phase === 2 ? 'active' : ''}`} type="button" onClick={() => setPhase(2)}>{page.labelPhaseTwo}</button>
           <button className={`btn btn-auth ${phase === 3 ? 'active' : ''}`} type="button" onClick={() => setPhase(3)}>{page.labelPhaseThree}</button>
         </div>
 
-        <div>
-          {Object.keys(dates).map((key) => {
-            const {
-              date, day, month, year,
-            } = dateBreakdowner(new Date(key), lang);
-            const items = dates[key];
-            return (
-              <div key={key}>
-                <div className="date">
-                  <h2>{date}</h2>
-                  <small>{day}</small>
-                  <small>{`${month} ${year}`}</small>
-                </div>
-                <Accordion
-                  items={items}
-                  labelTime={page.labelTime}
-                  labelCourse={page.labelCourse}
-                />
-              </div>
-            );
-          })}
-        </div>
+        <p className="font-lg">{page.description}</p>
+
+        <PhaseSchedule dates={dates} lang={lang} page={page} />
 
       </div>
     </FullScheduleStyles>
@@ -108,21 +83,23 @@ const FullScheduleStyles = styled.section`
       font-weight:700;
     }
   }
-  .date {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    gap: 0 1rem;
-    h2 {
-      font-weight: 400;
-      grid-row: 1 / -1;
+  @media(min-width: 1024px) {
+    max-width: var(--maxWidthLg);
+    padding: var(--padLg);
+    .wrapper-auth {
+      padding: 5rem;
     }
-    small {
-      margin: 0;
-      padding: 0;
-      color: var(--grey);
+    h2, .font-lg {
+      text-align: center;
+      margin: 0 auto;
+    }
+    .button-group {
+      gap: 3rem;
+      padding: 1rem 0 3rem 0;
+
+    }
+    .btn-auth {
+      padding: 0.5rem 3rem;
     }
   }
-
 `;

@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
     --blue: #C1D3EC;
     --lightblue: #E0E9F5;
     --xlightblue: #EFF4FA;
+    --neutral: #E4E5E0;
     --maxWidth: 1024px;
     --maxWidthText: 980px;
     --maxWidthSm: 600px;
