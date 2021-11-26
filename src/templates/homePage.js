@@ -10,7 +10,6 @@ import LogoGarden from '../components/LogoGarden';
 import Carousel from '../components/Carousel';
 import { SectionOneStyles, SectionThreeStyles, SectionFourStyles } from '../styles/HomePageStyles';
 
-// markup
 export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
   const {

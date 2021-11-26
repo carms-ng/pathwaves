@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { CardsThreesStyles } from '../styles/InnerStyles';
 import PhaseButtons from './PhaseButtons';
 
 export default function Resources({ labels, links }) {
@@ -22,7 +23,7 @@ export default function Resources({ labels, links }) {
       <PhaseButtons labels={labels} phase={phase} setPhase={setPhase} />
 
       {/* cards */}
-      <div className="cards-resources">
+      <CardsThreesStyles>
         {phaseGroups[phase].map(({ title, description, url }) => (
           <a
             key={`${title}-${url}`}
@@ -34,7 +35,7 @@ export default function Resources({ labels, links }) {
             <p>{description}</p>
           </a>
         ))}
-      </div>
+      </CardsThreesStyles>
     </ResourcesStyles>
   );
 }
@@ -42,34 +43,21 @@ export default function Resources({ labels, links }) {
 const ResourcesStyles = styled.div`
   display: grid;
   gap: 3rem;
+
   .btn-group {
     margin: 0 auto;
   }
-  .cards-resources {
-    display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(260px, 1fr) );
-    justify-items: center;
-    grid-gap: 3rem;
-  }
-  a {
-    padding: 2rem;
-    background: var(--white);
-    border-radius: var(--br);
-    color: var(--black);
-    transition: var(--trans);
 
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-  h3 {
-    margin-bottom: 1.5rem;
+  a {
+    border-radius: var(--br);
+    background: var(--white);
+    padding: 2rem;
   }
   @media (min-width: 1024px) {
     gap: 5rem;
-
     a {
       padding: 3rem;
     }
   }
+
 `;

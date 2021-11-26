@@ -2,11 +2,11 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
+
 import Layout from '../components/Layout';
 import LocalizedLink from '../components/LocalizedLink';
 import Seo from '../components/Seo';
 
-// markup
 export default function GenericPageTemplate({ pageContext, data }) {
   const {
     frontmatter,

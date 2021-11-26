@@ -1,16 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-// import ReactMarkdown from 'react-markdown';
-
 import styled from 'styled-components';
-import Layout from '../components/Layout';
 
-// import LocalizedLink from '../components/LocalizedLink';
+import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import CardsMember from '../components/CardsMember';
 
-// markup
 export default function TeamPageTemplate({ pageContext, data }) {
   // Prepare Content
   const {

@@ -1,16 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-// import { GatsbyImage } from 'gatsby-plugin-image';
-// import ReactMarkdown from 'react-markdown';
 
 import Layout from '../components/Layout';
-
-// import LocalizedLink from '../components/LocalizedLink';
 import Seo from '../components/Seo';
 import Hero from '../components/Hero';
 import CardsMember from '../components/CardsMember';
 
-// markup
 export default function PresentersPageTemplate({ pageContext, data }) {
   // Prepare Content
   const {
