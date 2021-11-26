@@ -45,4 +45,26 @@ const AuthHeroStyles = styled.section`
   }
 `;
 
-export default AuthHeroStyles;
+const CardsThreesStyles = styled.div`
+  display: grid;
+  justify-items: center;
+  grid-gap: 3rem;
+  a {
+    color: var(--black);
+    transition: var(--trans);
+    display: grid;
+    gap: 1.5rem;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;
+
+export { AuthHeroStyles, CardsThreesStyles };

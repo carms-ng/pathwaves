@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import NavAuth from '../components/NavAuth';
-import AuthHeroStyles from '../styles/InnerStyles';
+import { AuthHeroStyles } from '../styles/InnerStyles';
 import Resources from '../components/Resources';
 
 // markup

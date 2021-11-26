@@ -23,6 +23,8 @@ export function CarouselItem({
         <h3>{name}</h3>
         <h4>{nameAlt}</h4>
         <p>{description}</p>
+        {button
+        && (
         <LocalizedLink
           className="btn"
           to={button.url}
@@ -31,6 +33,7 @@ export function CarouselItem({
           {button.linkText}
 
         </LocalizedLink>
+        )}
         <button
           type="button"
           className="link"
