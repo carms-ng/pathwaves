@@ -2,11 +2,11 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
+
 import Layout from '../components/Layout';
 import LocalizedLink from '../components/LocalizedLink';
 import Seo from '../components/Seo';
 
-// markup
 export default function NotFoundPageTemplate({ pageContext, data }) {
   const {
     title, header, img, linkText,

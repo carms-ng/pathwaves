@@ -7,7 +7,6 @@ import Seo from '../components/Seo';
 import Calendar from '../components/Calendar';
 import FullSchedule from '../components/FullSchedule';
 
-// markup
 export default function SchedulePageTemplate({ pageContext: { lang, slug }, data }) {
   const {
     user, isAuthenticated, isLoading, loginWithRedirect,

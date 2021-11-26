@@ -1,12 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
 
+import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import CardsArtist from '../components/CardsArtist';
 import Hero from '../components/Hero';
 
-// markup
 export default function MusiciansPageTemplate({ pageContext, data }) {
   // Prepare Content
   const {

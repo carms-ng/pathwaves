@@ -1,14 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
-
 import styled from 'styled-components';
-import Layout from '../components/Layout';
 
-// import LocalizedLink from '../components/LocalizedLink';
+import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
-// markup
 export default function IncubatorPageTemplate({ pageContext, data }) {
   // Prepare Content
   const {

@@ -1,13 +1,14 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { graphql } from 'gatsby';
-
 import styled from 'styled-components';
+
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import NavAuth from '../components/NavAuth';
-import { AuthHeroStyles } from '../styles/InnerStyles';
 import Resources from '../components/Resources';
+
+import { AuthHeroStyles } from '../styles/InnerStyles';
 
 // markup
 export default function ResourcesPageTemplate({ pageContext: { lang, slug }, data }) {

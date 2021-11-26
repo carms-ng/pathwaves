@@ -1,18 +1,16 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
+
 import Layout from '../components/Layout';
-import LocalizedLink from '../components/LocalizedLink';
 import Seo from '../components/Seo';
 import Carousel from '../components/Carousel';
-import { CardsThreesStyles } from '../styles/InnerStyles';
 import Gallery from '../components/Gallery';
-// import { SectionOneStyles, SectionThreeStyles, SectionFourStyles } from '../styles/HomePageStyles';
 
-// markup
+import { CardsThreesStyles } from '../styles/InnerStyles';
+
 export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
   const {
