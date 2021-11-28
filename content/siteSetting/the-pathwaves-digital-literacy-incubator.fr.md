@@ -8,9 +8,6 @@ logo:
   alt: logo
 nav:
   navItems:
-    - linkText: Accueil
-      linkAddress: /
-      show: both
     - linkText: A propos
       linkAddress: ""
       childNavItems:

@@ -24,7 +24,7 @@ const HeroStyles = styled.section`
     top: 10vmin;
     left: 55%;
     padding-right: 1rem;
-    word-break: break-all;
+    word-break: break-word;
   }
   @media (min-width: 640px) {
     margin-top: 10vmin;
