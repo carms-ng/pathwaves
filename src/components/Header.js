@@ -132,7 +132,7 @@ const HeaderStyles = styled.header`
   }
   grid-template-areas: "logo menu";
 
-  @media (min-width: 1024px) {
+  @media (min-width: 840px) {
     grid-template-columns: 1fr auto auto;
     grid-template-areas: "logo nav-items auth";
     .logo {
@@ -164,6 +164,9 @@ const HeaderStyles = styled.header`
     .btn-main {
       display: block;
       justify-self: flex-start;
+    }
+    .header__right {
+      justify-self: flex-end;
     }
   }
 `;

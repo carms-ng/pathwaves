@@ -25,7 +25,7 @@ nav:
       show: both
     - linkText: Sondage
       linkAddress: /survey
-      show: both
+      show: public
     - linkText: Mon compte
       linkAddress: ""
       show: private

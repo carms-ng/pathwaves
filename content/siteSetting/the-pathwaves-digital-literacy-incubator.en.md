@@ -24,7 +24,7 @@ nav:
       show: both
     - linkText: Survey
       linkAddress: /survey
-      show: both
+      show: public
       childNavItems: []
     - linkText: My Account
       show: private
