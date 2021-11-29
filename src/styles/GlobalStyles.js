@@ -111,7 +111,7 @@ const GlobalStyles = createGlobalStyle`
     border: none;
     font-size: 1.6rem;
     padding: 0.5rem 1rem;
-    margin: 1rem;
+    margin: 0.5rem;
     display: grid;
     place-content: center;
     text-transform: uppercase;

@@ -2,13 +2,17 @@ import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import styled from 'styled-components';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import { Icon } from '@iconify/react';
+
 import LocalizedLink from './LocalizedLink';
 import LogoutButton from './LogoutButton';
 import LoginButton from './LoginButton';
 import NavItem from './NavItem';
+import Menu from './Menu';
+import DarkOverlay from './DarkOverlay';
 
 export default function Header({
-  lang, slug, logo, navItems,
+  lang, slug, logo, navItems, isMenuOpen, setMenuOpen,
 }) {
   const { isAuthenticated } = useAuth0();
 
@@ -51,6 +55,7 @@ export default function Header({
             <NavItem
               key={linkText}
               linkAddress={linkAddress}
+              slug={slug}
               lang={lang}
               linkText={linkText}
               childNavItems={childNavItems}
@@ -63,7 +68,27 @@ export default function Header({
         <LocalizedLink className="btn-blur" lang={toLang} to={to}>
           {toLang}
         </LocalizedLink>
+
       </div>
+      {/* Hamburger */}
+      <div id="menu">
+        <button
+          className="btn-menu"
+          type="button"
+          onClick={() => setMenuOpen(!isMenuOpen)}
+          aria-label="Open or Close Menu"
+        >
+          <Icon icon="gg:menu" style={{ fontSize: '3rem' }} />
+        </button>
+        <Menu
+          isMenuOpen={isMenuOpen}
+          setMenuOpen={setMenuOpen}
+          items={items}
+          lang={lang}
+          slug={slug}
+        />
+      </div>
+      {isMenuOpen && <DarkOverlay isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />}
 
     </HeaderStyles>
   );
@@ -95,19 +120,27 @@ const HeaderStyles = styled.header`
     backdrop-filter: blur(2em);
   }
   .header__right {
-    grid-area: menu;
+    grid-area: nav-items;
     display: none;
   }
+  #menu {
+    grid-area: menu;
+    > button {
+      border: 0;
+      background: transparent;
+    }
+  }
+  grid-template-areas: "logo menu";
 
-  grid-template-areas: "logo";
-
-  /* display only logo and NavMenu */
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-template-columns: 1fr auto auto;
-    grid-template-areas: "logo menu auth";
+    grid-template-areas: "logo nav-items auth";
     .logo {
       justify-self: flex-start;
     }
+     #menu {
+       display: none;
+     }
     .btn-main, .header__right {
       display: block;
     }
@@ -117,13 +150,14 @@ const HeaderStyles = styled.header`
       .nav-items {
         display: flex;
         align-items: flex-start;
+        white-space: nowrap;
       }
     }
   }
   @media (min-width: 1280px) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "auth logo menu";
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas: "auth logo nav-items";
     .logo {
       justify-self: center;
     }

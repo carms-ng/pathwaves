@@ -1,10 +1,9 @@
 import React from 'react';
-// import styled from 'styled-components';
 import Dropdown from './Dropdown';
 import LocalizedLink from './LocalizedLink';
 
 export default function NavItem({
-  linkAddress, linkText, lang, childNavItems, className,
+  linkAddress, linkText, lang, childNavItems, className, slug,
 }) {
   if (linkAddress) {
     return (
@@ -12,6 +11,7 @@ export default function NavItem({
         key={linkText}
         lang={lang}
         to={linkAddress}
+        style={{ fontWeight: slug === linkAddress.substring(1) ? '700' : '400' }}
         className={className}
       >
         {linkText}
@@ -25,8 +25,7 @@ export default function NavItem({
       text={linkText}
       items={childNavItems}
       className={className}
+      slug={slug}
     />
   );
 }
-
-// const NavItemStyles = styled.div``;

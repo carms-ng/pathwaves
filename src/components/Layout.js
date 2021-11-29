@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import EqualWeb from './EqualWeb';
@@ -12,6 +12,9 @@ function Layout({
   children, noFooter, lang, slug, settings,
 }) {
   const { logo, nav: { navItems } } = settings;
+
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       {/* Equal Web Widget */}
@@ -20,7 +23,14 @@ function Layout({
       </Helmet>
       <Typography />
       <GlobalStyles />
-      <Header lang={lang} slug={slug} logo={logo} navItems={navItems} />
+      <Header
+        lang={lang}
+        slug={slug}
+        logo={logo}
+        navItems={navItems}
+        isMenuOpen={isMenuOpen}
+        setMenuOpen={setMenuOpen}
+      />
       <main>{children}</main>
       {!noFooter && <Footer lang={lang} />}
     </>
