@@ -79,7 +79,7 @@ collections:
             - {label: Name, name: name, widget: string, i18n: true}
             - {label: Spotlight Type, name: type, widget: string, i18n: true}
             - {label: Alternative Name, name: nameAlt, widget: string, i18n: true}
-            - {label: Description, name: description, widget: text, i18n: true}
+            - {label: Description, name: description, widget: text, i18n: true, pattern: ['^.{1,240}$', "Maximum 240 characters"]}
             - label: Carousel Image
               name: img
               widget: object

@@ -15,7 +15,6 @@ export function CarouselItem({
       <GatsbyImage
         image={img.image.childImageSharp.gatsbyImageData}
         alt={img.alt}
-        style={{ borderRadius: 'var(--br)' }}
         className="carousel-img"
       />
       <div className="carousel-text">
@@ -91,22 +90,14 @@ const CarouselItemStyles = styled.div`
       text-transform: uppercase;
     }
     > p {
-      height: 20vh;
+      min-height: 18vh;
       margin-bottom: 2rem;
-      overflow-y: scroll;
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-
-      &::-webkit-scrollbar {
-        display: none;
-      }
     }
     > a {
       justify-self: start;
     }
     > button {
       justify-self: end;
-      padding: 1rem 2rem;
     }
   }
 
