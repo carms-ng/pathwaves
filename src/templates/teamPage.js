@@ -57,7 +57,7 @@ export default function TeamPageTemplate({ pageContext, data }) {
 }
 
 const TeamPageStyles = styled.section`
-  padding: var(--padSm);
+  padding: var(--padMd);
   padding-top: 8rem;
   padding-bottom: 8rem;
 
@@ -67,7 +67,6 @@ const TeamPageStyles = styled.section`
   }
 
   section#collaborators {
-    margin-top: 4rem;
     display: grid;
     align-content: center;
     justify-items: center;
@@ -109,9 +108,10 @@ const TeamPageStyles = styled.section`
   }
 
   @media (min-width: 1024px) {
-    section#collaborators {
-      margin-top: 12rem;
+    padding: var(--padLg);
 
+    section#collaborators {
+      margin-bottom: 8rem;
       .font-lg {
         text-align: center;
       }

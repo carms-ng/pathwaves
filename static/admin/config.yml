@@ -165,6 +165,21 @@ collections:
             summary: "{{description}}"
             fields:
             - {label: Description, name: description, widget: text, i18n: true}
+          - label: Background Image (TOP)
+            name: backgroundImageTop
+            widget: object
+            i18n: true
+            fields:
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+          - label: Background Image (Bottom)
+            name: backgroundImageBottom
+            widget: object
+            i18n: true
+            fields:
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
       - label: Program Section
         name: sectionTwo
         widget: object

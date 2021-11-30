@@ -4,7 +4,7 @@ title: Musicians
 sectionOne:
   header: Meet the Musicians
   backgroundImage:
-    image: /assets/lines-reverse.png
+    image: /assets/meetmusicians_0.5black.png
     alt: lines
 sectionTwo:
   members:

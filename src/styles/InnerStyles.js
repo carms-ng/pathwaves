@@ -67,4 +67,17 @@ const CardsThreesStyles = styled.div`
   }
 `;
 
-export { AuthHeroStyles, CardsThreesStyles };
+const CardsSectionStyles = styled.section`
+  padding: var(--padMd);
+  margin: 0 auto;
+
+  @media(min-width: 1024px) {
+    max-width: var(--maxWidth);
+  }
+  @media(min-width: 1280px) {
+    padding: var(--padLg);
+    max-width: var(--maxWidthLg);
+  }
+`;
+
+export { AuthHeroStyles, CardsThreesStyles, CardsSectionStyles };
