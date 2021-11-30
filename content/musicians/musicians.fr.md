@@ -3,7 +3,7 @@ templateKey: musiciansPage.js
 title: Les musiciens
 sectionOne:
   backgroundImage:
-    image: /assets/lines-reverse.png
+    image: /assets/meetmusicians_0.5black.png
     alt: lignes
   header: Rencontrez les musiciens
 sectionTwo:

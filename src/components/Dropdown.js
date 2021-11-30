@@ -65,6 +65,7 @@ const DropdownStyles = styled.div`
   button {
     display: flex;
     align-items: center;
+    text-transform: lowercase;
   }
   ul {
     padding: 0.5rem

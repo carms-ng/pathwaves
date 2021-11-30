@@ -26,9 +26,9 @@ const GlobalStyles = createGlobalStyle`
                       linear-gradient(217deg, rgb(161, 189, 226, 0), var(--lightblue) 50%);
     box-sizing: border-box;
     font-size: 62.5%;
-    --padSm: 5rem 1rem;
-    --padMd: 8rem 3rem;
-    --padLg: 12rem 3rem;
+    --padSm: 5rem 2rem;
+    --padMd: 8rem 2rem;
+    --padLg: 12rem 3rem 16rem 3rem;
     --trans: all 0.7s ease;
 
     scroll-behavior: smooth;
@@ -83,15 +83,16 @@ const GlobalStyles = createGlobalStyle`
     }
   }
   .link {
-    color: var(--black);
     border: 0;
     background: transparent;
     cursor: pointer;
-    opacity: 0.7;
+    color: var(--black);
+    opacity: 1;
+    transition: var(--trans);
 
     &:hover {
       color: var(--black);
-      opacity: 1;
+      opacity: 0.8;
     }
   }
   h1, h2, .h2 {

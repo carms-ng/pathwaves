@@ -122,6 +122,9 @@ const HeaderStyles = styled.header`
   .header__right {
     grid-area: nav-items;
     display: none;
+    .nav-items .btn-blur {
+      text-transform: lowercase;
+    }
   }
   #menu {
     grid-area: menu;
@@ -164,6 +167,9 @@ const HeaderStyles = styled.header`
     .btn-main {
       display: block;
       justify-self: flex-start;
+    }
+    .header__right {
+      justify-self: flex-end;
     }
   }
 `;

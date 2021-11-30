@@ -3,7 +3,7 @@ templateKey: presentersPage.js
 title: Les présentateurs.rices
 sectionOne:
   backgroundImage:
-    image: /assets/lines-reverse.png
+    image: /assets/meetpresenters_1.0black.png
     alt: lignes
   header: Rencontrez les présentateurs.rices
 sectionTwo:

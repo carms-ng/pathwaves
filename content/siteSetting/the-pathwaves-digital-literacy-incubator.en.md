@@ -12,7 +12,7 @@ nav:
       childNavItems:
         - linkText: Incubator
           linkAddress: /incubator
-        - linkText: team
+        - linkText: Team
           linkAddress: /team
       show: both
     - linkText: Participants
@@ -24,7 +24,7 @@ nav:
       show: both
     - linkText: Survey
       linkAddress: /survey
-      show: both
+      show: public
       childNavItems: []
     - linkText: My Account
       show: private

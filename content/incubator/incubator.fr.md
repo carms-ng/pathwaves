@@ -14,6 +14,12 @@ sectionOne:
         une nouvelle réflexion axée sur les solutions entourant la création et
         le partage de la musique.
   header: A propo d'incubator
+  backgroundImageTop:
+    image: /assets/aboutincubatortop.png
+    alt: lines top
+  backgroundImageBottom:
+    image: /assets/aboutincubatorbottom.png
+    alt: lines bottom
 sectionTwo:
   phases:
     - header: La conférence de lancement

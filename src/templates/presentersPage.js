@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Hero from '../components/Hero';
-import CardsMember from '../components/CardsMember';
+import CardsPresenter from '../components/CardsPresenter';
 
 export default function PresentersPageTemplate({ pageContext, data }) {
   // Prepare Content
@@ -21,9 +21,7 @@ export default function PresentersPageTemplate({ pageContext, data }) {
       <Seo title={`${title}`} lang={pageContext.lang} />
       <Hero header={sectionOne.header} backgroundImage={sectionOne.backgroundImage} />
 
-      <div style={{ padding: 'var(--padSm)' }}>
-        <CardsMember members={sectionTwo.members} />
-      </div>
+      <CardsPresenter members={sectionTwo.members} />
     </Layout>
   );
 }
@@ -86,7 +84,7 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 360,
+                      width: 400,
                       height: 240,
                       placeholder: TRACED_SVG,
                       layout: CONSTRAINED,

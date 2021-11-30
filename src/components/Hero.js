@@ -17,7 +17,7 @@ export default function Hero({ header, backgroundImage }) {
 const HeroStyles = styled.section`
   position: relative;
   display: grid;
-  margin-top: 15vmin;
+  margin-top: 10vmax;
 
   h1 {
     position: absolute;
@@ -26,16 +26,10 @@ const HeroStyles = styled.section`
     padding-right: 1rem;
     word-break: break-word;
   }
-  @media (min-width: 640px) {
-    margin-top: 10vmin;
-    h1 {
-      top: 20vmin;
-    }
-  }
   @media (min-width: 1024px) {
     margin: 0;
     h1 {
-      top: 30vmin;
+      top: 20vmax;
     }
   }
 `;

@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
@@ -20,55 +21,117 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
       <Seo title={`${title}`} lang={pageContext.lang} />
-      <IncubatorPageStyles>
-        <section>
-          <h1 className="h2">{sectionOne.header}</h1>
+      <SectionOneStyles>
+        <h1 className="h2">{sectionOne.header}</h1>
+        <div className="grid-ladder-wrapper">
+          <GatsbyImage
+            image={sectionOne.backgroundImageTop.image.childImageSharp.gatsbyImageData}
+            alt={sectionOne.backgroundImageTop.alt}
+            className="background"
+          />
           <div className="grid-ladder">
             {sectionOne.descriptions.map(({ description }) => (
               <p key={description}>{description}</p>
             ))}
           </div>
-        </section>
-        <section>
-          <h2>{sectionTwo.header}</h2>
+          <GatsbyImage
+            image={sectionOne.backgroundImageBottom.image.childImageSharp.gatsbyImageData}
+            alt={sectionOne.backgroundImageBottom.alt}
+            className="background"
+          />
+        </div>
+      </SectionOneStyles>
 
-          <div className="timeline">
-            {sectionTwo.phases.map(({ header, date, description }, index) => (
-              <div key={header} className="phase">
-                <h3>{index + 1}</h3>
-                <h4>{header}</h4>
-                <small>{date}</small>
-                <p>{description}</p>
-              </div>
-            ))}
-          </div>
-          <p className="font-lg">{sectionTwo.endNote}</p>
-        </section>
-        <section>
-          <h2>{sectionThree.header}</h2>
-          <ReactMarkdown>{sectionThree.landAcknowledgement}</ReactMarkdown>
-        </section>
-      </IncubatorPageStyles>
+      <SectionSecondaryStyles>
+        <h2>{sectionTwo.header}</h2>
+
+        <div className="timeline">
+          {sectionTwo.phases.map(({ header, date, description }, index) => (
+            <div key={header} className="phase">
+              <h3>{index + 1}</h3>
+              <h4>{header}</h4>
+              <small>{date}</small>
+              <p>{description}</p>
+            </div>
+          ))}
+        </div>
+        <p className="font-lg">{sectionTwo.endNote}</p>
+      </SectionSecondaryStyles>
+      <SectionSecondaryStyles>
+        <h2>{sectionThree.header}</h2>
+        <ReactMarkdown>{sectionThree.landAcknowledgement}</ReactMarkdown>
+      </SectionSecondaryStyles>
 
     </Layout>
   );
 }
 
-const IncubatorPageStyles = styled.div`
+const SectionOneStyles = styled.section`
+  margin-bottom: 8rem;
+
+  h1 {
+    padding: var(--padMd);
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .grid-ladder {
+    position: relative;
+    max-width: var(--maxWidthSm);
+    margin: 0 auto;
+    padding: 0 2rem;
+    p {
+      margin: 2rem 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      padding: var(--padLg);
+      padding-bottom: 0;
+    }
+    .grid-ladder-wrapper {
+      position: relative;
+      .background {
+        position: absolute;
+        left: 0;
+        right: 0;
+        &:first-child {
+          top: 0;
+        }
+        &:last-child {
+          bottom: 0;
+        }
+      }
+    }
+    .grid-ladder {
+      max-width: var(--maxWidthLg);
+      padding: 25vmax 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 1fr;
+      gap: 1rem 0;
+
+      p:nth-child(2) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+      p:last-child {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+      }
+    }
+  }
+`;
+
+const SectionSecondaryStyles = styled.div`
+  max-width: var(--maxWidthLg);
+  margin: 0 auto;
   padding: var(--padMd);
 
-  section {
-    max-width: var(--maxWidth);
-    margin: 0 auto;
-  }
-
-  h1, h2 {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-
   h2 {
-    margin-top: 8rem;
+    margin-bottom: 4rem;
+    text-align: center;
   }
 
   .font-lg {
@@ -77,24 +140,19 @@ const IncubatorPageStyles = styled.div`
     margin-top: 6rem;
   }
 
-  .grid-ladder {
-    max-width: var(--maxWidthSm);
-    margin: 0 auto;
-  }
   .timeline {
     position: relative;
     margin-left: 1rem;
     padding-left: 2rem;
     max-width: var(--maxWidthSm);
 
-    /* The actual timeline (the vertical ruler) */
     &::after {
       content: '';
       position: absolute;
       width: 3px;
       background: var(--black);
-      top: 3rem;
-      bottom: 3rem;
+      top: 0;
+      bottom: 0;
       left: 0;
       transform: translateX(-50%);
     }
@@ -105,11 +163,11 @@ const IncubatorPageStyles = styled.div`
       > h3 {
         font-weight: 400;
         font-size: 5rem;
+        line-height: 4rem;
       }
       > * {
         margin-bottom: 1rem;
       }
-
       > p {
         margin-top: 1rem;
       }
@@ -125,31 +183,12 @@ const IncubatorPageStyles = styled.div`
 
   @media (min-width: 1024px) {
     padding: var(--padLg);
-
-    .grid-ladder {
-      max-width: unset;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem 0;
-
-      p:nth-child(2) {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-      }
-      p:nth-child(3) {
-        grid-column: 3 / 4;
-        grid-row: 3 / 4;
-      }
-    }
-
-    h1, h2 {
-      margin-bottom: 8rem;
-    }
+    max-width: var(--maxWidthLg);
 
     h2 {
-      margin-top: 16rem;
+      margin-bottom: 8rem;
+      max-width: unset;
     }
-
     .timeline {
       margin: 0 auto;
       padding-left: 0rem;
@@ -160,7 +199,7 @@ const IncubatorPageStyles = styled.div`
       }
       .phase {
         width: 50%;
-        padding: 1rem 4rem;
+        padding: 0rem 4rem;
       }
       .phase:nth-child(odd) {
         text-align: right;
@@ -209,6 +248,30 @@ export const query = graphql`
             header
             descriptions {
               description
+            }
+            backgroundImageTop {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: TRACED_SVG,
+                    layout: FULL_WIDTH,
+                    quality: 100
+                  )
+                }
+              }
+              alt
+            }
+            backgroundImageBottom {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: TRACED_SVG,
+                    layout: FULL_WIDTH,
+                    quality: 100
+                  )
+                }
+              }
+              alt
             }
           }
           sectionTwo {
