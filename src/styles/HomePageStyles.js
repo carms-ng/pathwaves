@@ -100,12 +100,18 @@ const SectionOneStyles = styled.section`
 
 const SectionThreeStyles = styled.section`
   position: relative;
+  text-align: center;
   padding: var(--padSm);
   .text__left {
+    margin: 0 auto;
     position: relative;
     display: grid;
     gap: 5rem;
     max-width: calc(var(--maxWidth) / 5 * 3);
+  }
+  .btn {
+    justify-self: center;
+    padding: 0.5rem 6rem;
   }
   .bg-image__right {
     position: absolute;
@@ -118,14 +124,14 @@ const SectionThreeStyles = styled.section`
 
   @media (min-width: 640px) {
     padding: var(--padLg);
-    .btn {
-      padding: 0.5rem 6rem;
-      justify-self: start;
-    }
   }
   @media (min-width: 1024px) {
+    text-align: left;
     .text__left {
       margin-left: calc((100vw - var(--maxWidth)) / 2);
+    }
+    .btn {
+      justify-self: start;
     }
     .bg-image__right {
       opacity: 1;
@@ -139,6 +145,9 @@ const SectionFourStyles = styled.section`
   margin: 0 auto;
   text-align: center;
 
+  p {
+    max-width: var(--maxWidthMd);
+  }
   > * {
     margin-bottom: 5rem;
   }
@@ -151,15 +160,22 @@ const SectionFourStyles = styled.section`
     margin-top: 0.5rem;
 
     input {
-      padding: 1rem;
+      padding: 1.2rem;
       border: 1px solid var(--lightgrey);
       border-radius: var(--br);
+      font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     button {
+      border: 2px solid var(--black);
       border-radius: var(--br);
       background: var(--black);
       color: var(--white);
       padding: 0.5rem;
+      transition: var(--trans);
+      &:hover {
+        color: var(--black);
+        background: var(--offWhite);
+      }
     }
   }
   @media (min-width: 640px) {

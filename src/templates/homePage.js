@@ -92,7 +92,7 @@ export default function HomePageTemplate({ pageContext, data }) {
           <input type="hidden" name="form-name" value="contact" />
           <input type="name" name="name" id="name" placeholder={sectionFour.form.inputPlaceholderName} />
           <input type="email" name="email" id="email" placeholder={sectionFour.form.inputPlaceholderEmail} />
-          <button type="submit">{sectionFour.form.buttonText}</button>
+          <button type="submit" className="btn">{sectionFour.form.buttonText}</button>
           {/* <input type="reset" value="Clear" /> */}
         </form>
       </SectionFourStyles>

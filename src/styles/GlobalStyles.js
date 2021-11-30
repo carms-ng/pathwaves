@@ -83,15 +83,16 @@ const GlobalStyles = createGlobalStyle`
     }
   }
   .link {
-    color: var(--black);
     border: 0;
     background: transparent;
     cursor: pointer;
-    opacity: 0.7;
+    color: var(--black);
+    opacity: 1;
+    transition: var(--trans);
 
     &:hover {
       color: var(--black);
-      opacity: 1;
+      opacity: 0.8;
     }
   }
   h1, h2, .h2 {
