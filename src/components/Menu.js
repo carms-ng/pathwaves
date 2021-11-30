@@ -29,6 +29,9 @@ const MenuStyles = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+  > a {
+    text-transform: lowercase;
+  }
 
   display: grid;
   transition: var(--slow);

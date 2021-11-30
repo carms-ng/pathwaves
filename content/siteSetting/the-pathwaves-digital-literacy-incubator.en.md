@@ -12,7 +12,7 @@ nav:
       childNavItems:
         - linkText: Incubator
           linkAddress: /incubator
-        - linkText: team
+        - linkText: Team
           linkAddress: /team
       show: both
     - linkText: Participants

@@ -122,6 +122,9 @@ const HeaderStyles = styled.header`
   .header__right {
     grid-area: nav-items;
     display: none;
+    .nav-items .btn-blur {
+      text-transform: lowercase;
+    }
   }
   #menu {
     grid-area: menu;
@@ -132,7 +135,7 @@ const HeaderStyles = styled.header`
   }
   grid-template-areas: "logo menu";
 
-  @media (min-width: 840px) {
+  @media (min-width: 1024px) {
     grid-template-columns: 1fr auto auto;
     grid-template-areas: "logo nav-items auth";
     .logo {
