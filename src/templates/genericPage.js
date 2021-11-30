@@ -20,7 +20,7 @@ export default function GenericPageTemplate({ pageContext, data }) {
     <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
       <Seo title={title} lang={pageContext.lang} />
       <GenericStyles>
-        <h1>{title}</h1>
+        <h1 className="h2">{title}</h1>
         <ReactMarkdown>{rawMarkdownBody}</ReactMarkdown>
         <div className="btns-group">
           {options?.map((opt) => {
@@ -57,14 +57,14 @@ export default function GenericPageTemplate({ pageContext, data }) {
 
 const GenericStyles = styled.div`
   background: var(--linearGradient);
-  padding: 10vmin 20px;
+  padding: var(--padMd);
   > * {
     margin: 0 auto;
     max-width: var(--maxWidthText);
   }
   h1 {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
   }
   h3 {
     padding-top: 2rem;
@@ -78,6 +78,12 @@ const GenericStyles = styled.div`
   }
   li {
     padding-bottom: 0.5rem;
+  }
+  @media (min-width: 1024px) {
+    padding: var(--padLg);
+    h1 {
+      margin-bottom: 8rem;
+    }
   }
 `;
 
