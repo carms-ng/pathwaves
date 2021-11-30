@@ -70,6 +70,13 @@ collections:
         collapsed: true
         fields:
           - {label: Next Button Label, name: buttonLabel, widget: string, i18n: true}
+          - label: Background Image
+            name: backgroundImage
+            widget: object
+            i18n: true
+            fields:
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
           - label: Carousel Items
             name: carouselItems
             widget: list

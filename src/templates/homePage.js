@@ -8,7 +8,9 @@ import LocalizedLink from '../components/LocalizedLink';
 import Seo from '../components/Seo';
 import LogoGarden from '../components/LogoGarden';
 import Carousel from '../components/Carousel';
-import { SectionOneStyles, SectionThreeStyles, SectionFourStyles } from '../styles/HomePageStyles';
+import {
+  SectionOneStyles, SectionThreeStyles, SectionFourStyles, SectionTwoStyles,
+} from '../styles/HomePageStyles';
 
 export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
@@ -30,35 +32,47 @@ export default function HomePageTemplate({ pageContext, data }) {
 
       {/* Hero */}
       <SectionOneStyles>
-        <div className="hero-content">
+        <GatsbyImage
+          image={sectionOne.backgroundImage.image.childImageSharp.gatsbyImageData}
+          alt={sectionOne.backgroundImage.alt}
+          className="background"
+        />
+
+        <div className="hero-wrapper">
           <h1>{sectionOne.header}</h1>
-          <p>{sectionOne.description}</p>
-          <GatsbyImage
-            image={sectionOne.backgroundImage.image.childImageSharp.gatsbyImageData}
-            alt={sectionOne.backgroundImage.alt}
-            className="background"
-          />
-          <div className="hero-buttons">
-            {sectionOne.buttons.map(({ linkText, url }) => (
-              <LocalizedLink
-                className="btn"
-                key={url}
-                to={url}
-                lang={pageContext.lang}
-              >
-                {linkText}
-              </LocalizedLink>
-            ))}
+          <div>
+            <p>{sectionOne.description}</p>
+            <div className="hero-buttons">
+              {sectionOne.buttons.map(({ linkText, url }) => (
+                <LocalizedLink
+                  className="btn"
+                  key={url}
+                  to={url}
+                  lang={pageContext.lang}
+                >
+                  {linkText}
+                </LocalizedLink>
+              ))}
+            </div>
           </div>
         </div>
+
       </SectionOneStyles>
 
+      <SectionTwoStyles>
+        <GatsbyImage
+          image={sectionTwo.backgroundImage.image.childImageSharp.gatsbyImageData}
+          alt={sectionTwo.backgroundImage.alt}
+          className="background"
+        />
+
+        <Carousel
+          items={sectionTwo.carouselItems}
+          lang={pageContext.lang}
+          buttonLabel={sectionTwo.buttonLabel}
+        />
+      </SectionTwoStyles>
       {/* Carousel */}
-      <Carousel
-        items={sectionTwo.carouselItems}
-        lang={pageContext.lang}
-        buttonLabel={sectionTwo.buttonLabel}
-      />
 
       {/* Survey */}
       <SectionThreeStyles>
@@ -144,7 +158,6 @@ export const query = graphql`
                   gatsbyImageData(
                     placeholder: TRACED_SVG,
                     layout: FULL_WIDTH,
-                    transformOptions: {fit: COVER},
                     quality: 100
                   )
                 }
@@ -159,6 +172,18 @@ export const query = graphql`
           }
           sectionTwo {
             buttonLabel
+            backgroundImage {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: TRACED_SVG,
+                    layout: FULL_WIDTH,
+                    quality: 100
+                  )
+                }
+              }
+              alt
+            }
             carouselItems {
               name
               type
@@ -201,6 +226,7 @@ export const query = graphql`
                     width: 500,
                     placeholder: TRACED_SVG,
                     layout: CONSTRAINED,
+                    quality: 100
                   )
                 }
               }
