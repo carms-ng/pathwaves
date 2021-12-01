@@ -1,7 +1,12 @@
 import React from 'react';
-import DatePicker from 'react-datepicker';
+import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import styled from 'styled-components';
+import en from 'date-fns/locale/en-CA';
+import fr from 'date-fns/locale/fr-CA';
+
+registerLocale('en', en);
+registerLocale('fr', fr);
 
 export default function Picker({
   id, lang, selectedDate, setSelectedDate, dateGroups,

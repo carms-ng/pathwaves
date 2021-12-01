@@ -17,6 +17,7 @@
   "dependencies": {
     "@auth0/auth0-react": "^1.8.0",
     "babel-plugin-styled-components": "^1.13.2",
+    "date-fns": "^2.27.0",
     "gatsby": "^3.10.2",
     "gatsby-plugin-image": "^1.11.0",
     "gatsby-plugin-manifest": "^3.11.0",
