@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { graphql } from 'gatsby';
 
@@ -8,6 +8,8 @@ import Calendar from '../components/Calendar';
 import FullSchedule from '../components/FullSchedule';
 
 export default function SchedulePageTemplate({ pageContext: { lang, slug }, data }) {
+  const [showFullSchedule, setShowFullSchedule] = useState(false);
+
   const {
     user, isAuthenticated, isLoading, loginWithRedirect,
   } = useAuth0();
@@ -44,15 +46,20 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
           lang={lang}
           nav={nav}
           slug={slug}
+          showFullSchedule={showFullSchedule}
+          setShowFullSchedule={setShowFullSchedule}
         />
 
         {/* Section Two */}
-        <FullSchedule
-          page={sectionTwo}
-          courses={data.courses}
-          lang={lang}
-          labelPhases={nav.labelPhases}
-        />
+        {showFullSchedule
+          && (
+          <FullSchedule
+            page={sectionTwo}
+            courses={data.courses}
+            lang={lang}
+            labelPhases={nav.labelPhases}
+          />
+          )}
       </Layout>
     )
   );
@@ -81,9 +88,18 @@ export const query = graphql`
                 linkText
               }
             }
-            navItemsAuth {
+            navItemsSecondary {
               linkAddress
               linkText
+            }
+            menuAuth {
+              labelLogin
+              labelLogout
+              labelMenu
+              navItemsAuth {
+                linkAddress
+                linkText
+              }
             }
             buttonDiscord {
               linkText
@@ -104,8 +120,8 @@ export const query = graphql`
           title
           sectionOne {
             header
-            labelCalendar
-            labelSchedule
+            labelScheduleShow
+            labelScheduleHide
             labelZoom
             description
             noneText
@@ -115,6 +131,7 @@ export const query = graphql`
             description
             labelTime
             labelCourse
+            labelCalendar
             labelViewMore
           }
         }

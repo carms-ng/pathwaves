@@ -2,9 +2,10 @@ import React, { useEffect, useState, useRef } from 'react';
 import styled from 'styled-components';
 import { Icon } from '@iconify/react';
 import LocalizedLink from './LocalizedLink';
+import LogoutButton from './LogoutButton';
 
-export default function Dropdown({
-  text, lang, items, className, slug,
+export default function MenuAuth({
+  lang, slug, btnClassName, menuAuth: { labelMenu, labelLogout, navItemsAuth: items },
 }) {
   const node = useRef();
 
@@ -31,17 +32,17 @@ export default function Dropdown({
     <DropdownStyles ref={node}>
       <button
         type="button"
-        className={className}
+        className={btnClassName}
         onClick={() => setOpen(!open)}
         style={{ fontWeight: items.some((child) => slug === child.linkAddress.substring(1)) ? '700' : '400' }}
       >
-        {text}
+        {labelMenu}
         <Icon icon="akar-icons:chevron-down" style={{ marginLeft: '0.5rem' }} />
       </button>
       {open && (
         <ul className="dropdown-menu">
           {items.map(({ linkText, linkAddress }) => (
-            <li key={linkAddress}>
+            <li className="dropdown-menu-item" key={linkAddress}>
               <LocalizedLink
                 lang={lang}
                 to={linkAddress}
@@ -51,6 +52,9 @@ export default function Dropdown({
               </LocalizedLink>
             </li>
           ))}
+          <li>
+            <LogoutButton className="btn" label={labelLogout} />
+          </li>
         </ul>
       )}
     </DropdownStyles>
@@ -58,8 +62,6 @@ export default function Dropdown({
 }
 
 const DropdownStyles = styled.div`
-  display: grid;
-  grid-auto-flow: row;
   position: relative;
 
   button {
@@ -87,5 +89,4 @@ const DropdownStyles = styled.div`
       border-radius: var(--br);
     }
   }
-
 `;

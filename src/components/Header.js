@@ -5,21 +5,19 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import { Icon } from '@iconify/react';
 
 import LocalizedLink from './LocalizedLink';
-import LogoutButton from './LogoutButton';
 import LoginButton from './LoginButton';
 import NavItem from './NavItem';
 import Menu from './Menu';
 import DarkOverlay from './DarkOverlay';
+import LanguageSwitcher from './LanguageSwitcher';
+import MenuAuth from './MenuAuth';
 
 export default function Header({
-  lang, slug, logo, navItems, isMenuOpen, setMenuOpen,
+  lang, slug, logo, navItems, isMenuOpen, setMenuOpen, menuAuth,
 }) {
   const { isAuthenticated } = useAuth0();
 
-  // Language Switcher
-  const toLang = lang === 'en' ? 'fr' : 'en';
-  const to = slug === 'home' ? '/' : `/${slug}`;
-
+  // Nav Items
   const items = navItems.filter(({ show }) => (
     show === 'both'
     || (isAuthenticated && show === 'private')
@@ -31,8 +29,8 @@ export default function Header({
     <HeaderStyles>
       {/* Left: Auth button */}
       {isAuthenticated
-        ? <LogoutButton className="btn btn-main" />
-        : <LoginButton className="btn btn-main" lang={lang} />}
+        ? <MenuAuth lang={lang} slug={slug} menuAuth={menuAuth} btnClassName="btn btn-main btn-auth" />
+        : <LoginButton lang={lang} label={menuAuth.labelLogin} className="btn btn-main btn-auth" />}
 
       {/* Center: Logo */}
       <LocalizedLink
@@ -65,9 +63,7 @@ export default function Header({
         </div>
 
         {/* Language Switcher */}
-        <LocalizedLink className="btn-blur" lang={toLang} to={to}>
-          {toLang}
-        </LocalizedLink>
+        <LanguageSwitcher lang={lang} slug={slug} />
 
       </div>
       {/* Hamburger */}
@@ -86,6 +82,7 @@ export default function Header({
           items={items}
           lang={lang}
           slug={slug}
+          menuAuth={menuAuth}
         />
       </div>
       {isMenuOpen && <DarkOverlay isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />}
@@ -105,15 +102,12 @@ const HeaderStyles = styled.header`
 
   /* layout */
   display: grid;
-  grid-auto-flow: column;
   align-items: center;
   justify-content: space-between;
 
-  .btn-main {
+  .btn-auth {
     grid-area: auth;
     display: none;
-    font-weight: 400;
-    padding: 0.25rem 2rem;
   }
   .logo {
     grid-area: logo;
@@ -133,18 +127,25 @@ const HeaderStyles = styled.header`
       background: transparent;
     }
   }
-  grid-template-areas: "logo menu";
 
-  @media (min-width: 1024px) {
+  grid-template-areas:
+    "logo menu";
+
+  @media (min-width: 768px) {
     grid-template-columns: 1fr auto auto;
     grid-template-areas: "logo nav-items auth";
+    align-items: start;
+
     .logo {
       justify-self: flex-start;
     }
      #menu {
        display: none;
      }
-    .btn-main, .header__right {
+    .btn-auth {
+      display: flex;
+    }
+    .header__right {
       display: block;
     }
     .header__right {
@@ -164,8 +165,7 @@ const HeaderStyles = styled.header`
     .logo {
       justify-self: center;
     }
-    .btn-main {
-      display: block;
+    .btn-auth {
       justify-self: flex-start;
     }
     .header__right {

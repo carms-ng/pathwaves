@@ -43,6 +43,7 @@ export default function Resources({ labels, links }) {
 const ResourcesStyles = styled.div`
   display: grid;
   gap: 3rem;
+  padding-bottom: 3rem;
 
   .btn-group {
     margin: 0 auto;

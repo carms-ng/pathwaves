@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import LocalizedLink from './LocalizedLink';
 
 export default function NavAuth({
-  id, slug, lang, nav: { navItemsAuth, buttonDiscord },
+  id, slug, lang, nav: { navItemsSecondary, buttonDiscord },
 }) {
   return (
     <NavAuthStyles id={id} className="btn-group">
-      {navItemsAuth.map(({ linkAddress, linkText }) => (
+      {navItemsSecondary.map(({ linkAddress, linkText }) => (
         <LocalizedLink
-          className={`btn btn-auth ${slug === linkAddress.substring(1) ? 'active' : ''}`}
+          className={`btn btn-sub ${slug === linkAddress.substring(1) ? 'active' : ''}`}
           to={linkAddress}
           lang={lang}
           key={`nav-auth-${linkText}`}
@@ -19,7 +19,7 @@ export default function NavAuth({
       ))}
       {/* discord button */}
       <a
-        className="btn btn-auth"
+        className="btn btn-sub"
         href={buttonDiscord.url}
         target="_blank"
         rel="noreferrer"
@@ -34,7 +34,7 @@ export default function NavAuth({
 const NavAuthStyles = styled.div`
   justify-self: center;
   align-self: start;
-  .btn-auth:hover, .btn-auth.active {
+  .btn-sub:hover, .btn-sub.active {
     background: rgba(245, 206, 122, 0.5);
   }
   @media(min-width: 1024px) {

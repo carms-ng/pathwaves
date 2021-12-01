@@ -7,7 +7,7 @@ export default function PhaseButtons({ labels, phase, setPhase }) {
         <button
           key={key}
           type="button"
-          className={`btn btn-auth ${phase === index + 1 ? 'active' : ''}`}
+          className={`btn btn-sub ${phase === index + 1 ? 'active' : ''}`}
           onClick={() => setPhase(index + 1)}
         >
           {labels[key]}

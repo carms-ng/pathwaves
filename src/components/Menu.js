@@ -1,10 +1,15 @@
+import { useAuth0 } from '@auth0/auth0-react';
 import React from 'react';
 import styled from 'styled-components';
+import LanguageSwitcher from './LanguageSwitcher';
+import LoginButton from './LoginButton';
+import MenuAuth from './MenuAuth';
 import NavItem from './NavItem';
 
 export default function Menu({
-  isMenuOpen, items, lang, slug,
+  isMenuOpen, items, lang, slug, menuAuth,
 }) {
+  const { isAuthenticated } = useAuth0();
   return (
     <MenuStyles isMenuOpen={isMenuOpen}>
       {items.map(({ linkAddress, linkText, childNavItems }) => (
@@ -18,6 +23,11 @@ export default function Menu({
           slug={slug}
         />
       ))}
+      {isAuthenticated
+        ? <MenuAuth lang={lang} slug={slug} menuAuth={menuAuth} btnClassName="btn btn-main" />
+        : <LoginButton lang={lang} label={menuAuth.labelLogin} className="btn btn-main" />}
+
+      <LanguageSwitcher lang={lang} slug={slug} />
     </MenuStyles>
   );
 }

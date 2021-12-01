@@ -163,9 +163,7 @@ export const query = graphql`
           logo {
             image {
               childImageSharp {
-                gatsbyImageData(
-                  width: 180, placeholder: BLURRED, layout: CONSTRAINED
-                )
+                gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
               }
             }
             alt
@@ -179,6 +177,28 @@ export const query = graphql`
                 linkAddress
                 linkText
               }
+            }
+            navItemsSecondary {
+              linkAddress
+              linkText
+            }
+            menuAuth {
+              labelLogin
+              labelLogout
+              labelMenu
+              navItemsAuth {
+                linkAddress
+                linkText
+              }
+            }
+            buttonDiscord {
+              linkText
+              url
+            }
+            labelPhases {
+              labelPhaseOne
+              labelPhaseTwo
+              labelPhaseThree
             }
           }
         }

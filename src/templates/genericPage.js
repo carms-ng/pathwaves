@@ -89,7 +89,7 @@ const GenericStyles = styled.div`
 
 export const query = graphql`
   query($regx: String, $slug: String) {
-      settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+    settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
       childMarkdownRemark {
         frontmatter {
           logo {
@@ -109,6 +109,28 @@ export const query = graphql`
                 linkAddress
                 linkText
               }
+            }
+            navItemsSecondary {
+              linkAddress
+              linkText
+            }
+            menuAuth {
+              labelLogin
+              labelLogout
+              labelMenu
+              navItemsAuth {
+                linkAddress
+                linkText
+              }
+            }
+            buttonDiscord {
+              linkText
+              url
+            }
+            labelPhases {
+              labelPhaseOne
+              labelPhaseTwo
+              labelPhaseThree
             }
           }
         }

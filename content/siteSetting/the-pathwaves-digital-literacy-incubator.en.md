@@ -26,14 +26,7 @@ nav:
       linkAddress: /survey
       show: public
       childNavItems: []
-    - linkText: My Account
-      show: private
-      childNavItems:
-        - linkText: Schedule
-          linkAddress: /schedule
-        - linkText: Resources
-          linkAddress: /resources
-  navItemsAuth:
+  navItemsSecondary:
     - linkText: Schedule
       linkAddress: /schedule
     - linkText: Resources
@@ -45,6 +38,15 @@ nav:
     labelPhaseOne: Phase 1
     labelPhaseTwo: Phase 2
     labelPhaseThree: Phase 3
+  menuAuth:
+    labelLogin: Log in
+    labelLogout: Log out
+    navItemsAuth:
+      - linkText: Schedule
+        linkAddress: /schedule
+      - linkText: Resources
+        linkAddress: /resources
+    labelMenu: Account
 footer:
   copyright: Pathwaves
   footerLinks:

@@ -1,7 +1,12 @@
 import React from 'react';
-import DatePicker from 'react-datepicker';
+import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import styled from 'styled-components';
+import en from 'date-fns/locale/en-CA';
+import fr from 'date-fns/locale/fr-CA';
+
+registerLocale('en', en);
+registerLocale('fr', fr);
 
 export default function Picker({
   id, lang, selectedDate, setSelectedDate, dateGroups,
@@ -49,6 +54,9 @@ const PickerStyles = styled.section`
     background: 0;
     color: #333333
   }
+  .react-datepicker__day--outside-month {
+    color: var(--grey);
+  }
   .react-datepicker__day-name, .react-datepicker__day {
     width: 3rem;
     line-height: 3rem;
@@ -56,6 +64,16 @@ const PickerStyles = styled.section`
     border-radius: 50%;
   }
   .react-datepicker__day--selected {
+
+    &.underlined::after {
+      background: #000;
+    }
+  }
+  .react-datepicker__day--selected:not(.react-datepicker__day--today) {
+    background: rgba(13, 203, 148, 0.5);
+    color: #000;
+  }
+  .react-datepicker__day--today {
     background: #0DCB94;
     color: #fff;
     &.underlined::after {

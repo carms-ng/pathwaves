@@ -421,8 +421,8 @@ collections:
         - {label: Greetings, name: header, widget: string, i18n: true}
         - {label: "Sub Greetings (Date)", name: description, widget: string, i18n: true}
         - {label: Zoom Label, name: labelZoom, widget: string, i18n: true}
-        - {label: Calendar Label, name: labelCalendar, widget: string, i18n: true}
-        - {label: Schedule Button Text, name: labelSchedule, widget: string, i18n: true}
+        - {label: Show Schedule Button Text, name: labelScheduleShow, widget: string, i18n: true}
+        - {label: Hide Schedule Button Text, name: labelScheduleHide, widget: string, i18n: true}
         - {label: No Courses Text, name: noneText, widget: string, i18n: true}
         - label: Discord Button
           name: button
@@ -441,6 +441,7 @@ collections:
         - {label: Description, name: description, widget: text, i18n: true}
         - {label: Time Label, name: labelTime, widget: string, i18n: true}
         - {label: Course Label, name: labelCourse, widget: string, i18n: true}
+        - {label: Calendar Label, name: labelCalendar, widget: string, i18n: true}
         - {label: View More Button Text, name: labelViewMore, widget: string, i18n: true}
 
   - name: resources
@@ -606,7 +607,7 @@ collections:
         widget: object
         i18n: true
         fields:
-          - label: Nav Items
+          - label: Nav Items (Main)
             name: navItems
             widget: list
             i18n: true
@@ -630,8 +631,25 @@ collections:
               fields:
               - {label: Link Text, name: linkText, widget: string}
               - {label: Link Address, name: linkAddress, widget: string}
-          - label: Nav Items Authenticated
-            name: navItemsAuth
+          - label: Authenticated Menu
+            name: menuAuth
+            widget: object
+            i18n: true
+            summary: "{{linkText}}"
+            fields:
+            - {label: Login Label, name: labelLogin, widget: string, i18n: true}
+            - {label: Logout Label, name: labelLogout, widget: string, i18n: true}
+            - {label: Menu Label, name: labelMenu, widget: string, i18n: true}
+            - label: Nav Items Authenticated
+              name: navItemsAuth
+              widget: list
+              i18n: true
+              summary: "{{linkText}}"
+              fields:
+              - {label: Link Text, name: linkText, widget: string}
+              - {label: Link Address, name: linkAddress, widget: string}
+          - label: Nav Items Secondary (Private Pages)
+            name: navItemsSecondary
             widget: list
             i18n: true
             summary: "{{linkText}}"

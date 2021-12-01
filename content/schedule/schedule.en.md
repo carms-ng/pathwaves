@@ -5,12 +5,13 @@ sectionOne:
   header: Hello
   description: Here is the schedule for
   labelZoom: Zoom link
-  labelCalendar: Add to Calendar
-  labelSchedule: See full schedule
+  labelScheduleShow: See full schedule
+  labelScheduleHide: Hide full schedule
   noneText: Woohoo no classes on your select day!
 sectionTwo:
   header: See full schedule
   labelTime: Time
+  labelCalendar: Add to Calendar
   labelCourse: Course
   labelViewMore: View more
   description: Delivered virtually from January to March 2022, the Pathwaves
