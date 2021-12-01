@@ -49,6 +49,9 @@ const PickerStyles = styled.section`
     background: 0;
     color: #333333
   }
+  .react-datepicker__day--outside-month {
+    color: var(--grey);
+  }
   .react-datepicker__day-name, .react-datepicker__day {
     width: 3rem;
     line-height: 3rem;
@@ -56,6 +59,16 @@ const PickerStyles = styled.section`
     border-radius: 50%;
   }
   .react-datepicker__day--selected {
+
+    &.underlined::after {
+      background: #000;
+    }
+  }
+  .react-datepicker__day--selected:not(.react-datepicker__day--today) {
+    background: rgba(13, 203, 148, 0.5);
+    color: #000;
+  }
+  .react-datepicker__day--today {
     background: #0DCB94;
     color: #fff;
     &.underlined::after {

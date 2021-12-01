@@ -6,7 +6,7 @@ import Picker from './Picker';
 import NavAuth from './NavAuth';
 
 export default function Calendar({
-  courses, page, user, lang, nav, slug,
+  courses, page, user, lang, nav, slug, showFullSchedule, setShowFullSchedule,
 }) {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
@@ -31,6 +31,24 @@ export default function Calendar({
     ? dateGroups[selectedDateString].sort((a, b) => new Date(b.start) - new Date(a.start))
     : [];
 
+  console.log(selectedDate, typeof (selectedDate), selectedDateString);
+
+  // Handle display full schedule
+  const toggleFullSchedule = () => {
+    const updatedShow = !showFullSchedule;
+    setShowFullSchedule(updatedShow);
+    // smoothscroll 100vh;
+    const scrollTop = window.scrollY + window.innerHeight;
+    if (updatedShow) {
+      setTimeout(() => {
+        window.scrollTo({
+          top: scrollTop,
+          behavior: 'smooth',
+        });
+      }, 50);
+    }
+  };
+
   return (
     <CalendarStyles>
       <div className="wrapper-auth">
@@ -43,13 +61,13 @@ export default function Calendar({
         />
 
         <div id="greet">
-          <h1>
+          <h1 className="h2">
             {page.header}
             {' '}
             <span>{user.name}</span>
             {' :)'}
           </h1>
-          <p className="font-lg">
+          <p style={{ fontSize: '2rem' }}>
             {page.description}
             {' '}
             {selectedDate.toLocaleDateString(
@@ -73,14 +91,14 @@ export default function Calendar({
           dateGroups={dateGroups}
         />
 
-        <a
+        <button
+          type="button"
           className="btn"
           id="btn-schedule"
-          href="#full-schedule"
+          onClick={toggleFullSchedule}
         >
-          {page.labelSchedule}
-
-        </a>
+          {showFullSchedule ? page.labelScheduleHide : page.labelScheduleShow}
+        </button>
       </div>
 
     </CalendarStyles>
@@ -139,9 +157,12 @@ const CalendarStyles = styled.section`
   }
   #btn-schedule {
     grid-area: btn-schedule;
+    place-self: center;
+    padding: 0.5rem 6rem;
   }
 
   .wrapper-auth {
+    text-align: center;
     padding: 2rem;
     background-color: var(--offWhite);
     background-image: radial-gradient(127.15% 127.15% at 50% 50%, rgba(245, 206, 122, 0.75) 0%, rgba(204, 162, 195, 0.5) 8.33%, rgba(193, 211, 236, 0.554434) 22.92%, rgba(193, 211, 236, 0.5) 33.27%, rgba(193, 211, 236, 0.480769) 51.18%);
@@ -177,17 +198,17 @@ const CalendarStyles = styled.section`
   @media(min-width: 1024px) {
     max-width: var(--maxWidthLg);
     padding: var(--padLg);
-
     #greet {
       padding: 0 3rem;
     }
     #timetable {
       padding: 0 3rem;
-      max-height: 40vh;
+      height: 40vh;
       overflow-y: auto;
     }
     .wrapper-auth {
-      padding: 5rem;
+      padding-bottom: 5rem;
+      text-align: left;
       grid-template-columns: 3fr 2fr;
       grid-template-rows: auto auto 1fr auto;
       grid-template-areas:

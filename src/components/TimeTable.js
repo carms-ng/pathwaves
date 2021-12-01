@@ -14,14 +14,14 @@ export default function TimeTable({ selectedDateGroup, id, page }) {
   return (
     <div id={id}>
       {selectedDateGroup?.map(({
-        title, description, presenter, start, end, linkCalendar, linkZoom,
+        title, description, presenter, start, end, linkZoom,
       }) => (
-        <div key={start}>
-          <pre>
+        <div key={start} style={{ textAlign: 'left' }}>
+          <p style={{ color: 'var(--grey)' }}>
             <span>{new Date(start).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
             {' - '}
             <span>{new Date(end).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
-          </pre>
+          </p>
           <h3>{title}</h3>
           <p>{description}</p>
           <div>
@@ -33,7 +33,6 @@ export default function TimeTable({ selectedDateGroup, id, page }) {
             <Icon icon="grommet-icons:zoom" />
             <Clipboard copyText={linkZoom} />
           </div>
-          <a className="link" href={linkCalendar} target="_blank" rel="noreferrer">{page.labelCalendar}</a>
         </div>
       ))}
     </div>

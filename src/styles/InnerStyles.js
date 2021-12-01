@@ -38,10 +38,6 @@ const AuthHeroStyles = styled.section`
   @media(min-width: 1024px) {
     max-width: var(--maxWidthLg);
     padding: var(--padLg);
-
-    .wrapper-auth {
-      padding: 5rem;
-    }
   }
 `;
 

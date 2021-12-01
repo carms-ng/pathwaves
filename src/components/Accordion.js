@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
 import styled from 'styled-components';
 
-export default function Accordion({ items, page: { labelTime, labelCourse } }) {
+export default function Accordion({ items, page: { labelTime, labelCourse, labelCalendar } }) {
   const [active, setActive] = useState(null);
 
   return (
     <AccordionStyles>
       {items.map(({
-        title, description, start, end, presenter, linkZoom,
+        title, description, start, end, presenter, linkCalendar,
       }, index) => (
         <div className="accordion-item" key={start + end}>
           {index === 0 && <h4>{labelTime}</h4>}
@@ -27,15 +27,21 @@ export default function Accordion({ items, page: { labelTime, labelCourse } }) {
               <Icon icon="akar-icons:chevron-down" className="icon-chevron" />
             </button>
             <div className="accordion-dropdown">
-              <p>{description}</p>
+              <p style={{ paddingTop: '2rem' }}>{description}</p>
               <div>
                 <Icon icon="bi:person" />
                 <p>{presenter}</p>
               </div>
-              <div>
-                <Icon icon="grommet-icons:zoom" />
-                <p>{linkZoom}</p>
-              </div>
+              <a
+                className="link"
+                href={linkCalendar}
+                target="_blank"
+                rel="noreferrer"
+                style={{ padding: '1rem 0 2rem 0' }}
+              >
+                {labelCalendar}
+
+              </a>
             </div>
           </div>
         </div>
@@ -84,7 +90,7 @@ const AccordionStyles = styled.div`
     background: var(--neutral);
     border-radius: 0 0 var(--br) var(--br);
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem;
     padding-left: 2rem;
     > * {
       padding-right: 1rem;
@@ -115,7 +121,7 @@ const AccordionStyles = styled.div`
       border-radius: var(--br) var(--br) 0 0;
     }
     .accordion-dropdown {
-      max-height: 300px; /* try to guess a max-height for your content */
+      max-height: 500px; /* try to guess a max-height for your content */
     }
   }
   @media(min-width: 1024px) {
