@@ -26,12 +26,14 @@ export default function Calendar({
   }, {});
 
   // Get courses on the selected date
-  const selectedDateString = selectedDate.toISOString().split('T')[0];
+  // offset for timezone
+  const tzoffset = selectedDate.getTimezoneOffset() * 60000; // offset in milliseconds
+  const localISOTime = (new Date(selectedDate - tzoffset)).toISOString().slice(0, -1);
+
+  const selectedDateString = localISOTime.split('T')[0];
   const selectedDateGroup = dateGroups[selectedDateString]
     ? dateGroups[selectedDateString].sort((a, b) => new Date(b.start) - new Date(a.start))
     : [];
-
-  console.log(selectedDate, typeof (selectedDate), selectedDateString);
 
   // Handle display full schedule
   const toggleFullSchedule = () => {
