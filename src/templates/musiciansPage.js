@@ -50,6 +50,28 @@ export const query = graphql`
                 linkText
               }
             }
+            navItemsSecondary {
+              linkAddress
+              linkText
+            }
+            menuAuth {
+              labelLogin
+              labelLogout
+              labelMenu
+              navItemsAuth {
+                linkAddress
+                linkText
+              }
+            }
+            buttonDiscord {
+              linkText
+              url
+            }
+            labelPhases {
+              labelPhaseOne
+              labelPhaseTwo
+              labelPhaseThree
+            }
           }
         }
       }

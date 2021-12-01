@@ -134,7 +134,7 @@ const GlobalStyles = createGlobalStyle`
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
   }
-  .btn-auth {
+  .btn-sub {
     border: 0;
     font-weight: 400;
     padding: 0.5rem 1rem;
@@ -148,6 +148,13 @@ const GlobalStyles = createGlobalStyle`
       background: var(--blue);
       font-weight:700;
     }
+  }
+  .btn-main {
+    align-items: center;
+    padding: 0.5rem 2rem;
+    margin: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
   }
 
   @media (min-width: 640px) {
@@ -180,7 +187,7 @@ const GlobalStyles = createGlobalStyle`
       gap: 3rem;
       padding: 1rem 0 3rem 0;
     }
-    .btn-auth {
+    .btn-sub {
       padding: 0.5rem 3rem;
     }
   }

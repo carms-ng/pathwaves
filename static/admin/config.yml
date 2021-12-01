@@ -607,7 +607,7 @@ collections:
         widget: object
         i18n: true
         fields:
-          - label: Nav Items
+          - label: Nav Items (Main)
             name: navItems
             widget: list
             i18n: true
@@ -631,8 +631,25 @@ collections:
               fields:
               - {label: Link Text, name: linkText, widget: string}
               - {label: Link Address, name: linkAddress, widget: string}
-          - label: Nav Items Authenticated
-            name: navItemsAuth
+          - label: Authenticated Menu
+            name: menuAuth
+            widget: object
+            i18n: true
+            summary: "{{linkText}}"
+            fields:
+            - {label: Login Label, name: labelLogin, widget: string, i18n: true}
+            - {label: Logout Label, name: labelLogout, widget: string, i18n: true}
+            - {label: Menu Label, name: labelMenu, widget: string, i18n: true}
+            - label: Nav Items Authenticated
+              name: navItemsAuth
+              widget: list
+              i18n: true
+              summary: "{{linkText}}"
+              fields:
+              - {label: Link Text, name: linkText, widget: string}
+              - {label: Link Address, name: linkAddress, widget: string}
+          - label: Nav Items Secondary (Private Pages)
+            name: navItemsSecondary
             widget: list
             i18n: true
             summary: "{{linkText}}"

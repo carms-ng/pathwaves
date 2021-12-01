@@ -94,9 +94,18 @@ export const query = graphql`
                 linkText
               }
             }
-            navItemsAuth {
+            navItemsSecondary {
               linkAddress
               linkText
+            }
+            menuAuth {
+              labelLogin
+              labelLogout
+              labelMenu
+              navItemsAuth {
+                linkAddress
+                linkText
+              }
             }
             buttonDiscord {
               linkText
