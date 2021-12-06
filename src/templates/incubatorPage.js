@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
@@ -17,6 +17,28 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
   } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
+
+  // Track moving dot
+  const timelineRef = useRef();
+
+  const handleScroll = () => {
+    const rect = timelineRef.current.getBoundingClientRect();
+    const height = window.innerHeight;
+
+    if (rect.top > height / 2) {
+      document.documentElement.style.setProperty('--top', '0');
+    } else if (rect.bottom < height / 2) {
+      document.documentElement.style.setProperty('--top', `${Math.round(rect.height)}px`);
+    } else {
+      document.documentElement.style.setProperty('--top', `${Math.round((height / 2) - rect.top)}px`);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('scroll', handleScroll);
+
+    return () => document.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
@@ -45,7 +67,7 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
       <SectionSecondaryStyles>
         <h2>{sectionTwo.header}</h2>
 
-        <div className="timeline">
+        <div className="timeline" ref={timelineRef}>
           {sectionTwo.phases.map(({ header, date, description }, index) => (
             <div key={header} className="phase">
               <h3>{index + 1}</h3>
@@ -149,6 +171,18 @@ const SectionSecondaryStyles = styled.div`
     &::after {
       content: '';
       position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: var(--black);
+      top: var(--top);
+      left: 0;
+      transform: translateX(-50%);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
       width: 3px;
       background: var(--black);
       top: 0;
@@ -194,9 +228,10 @@ const SectionSecondaryStyles = styled.div`
       padding-left: 0rem;
       max-width: unset;
 
-      &::after {
+      &::after, &::before {
         left: 50%;
       }
+
       .phase {
         width: 50%;
         padding: 0rem 4rem;
