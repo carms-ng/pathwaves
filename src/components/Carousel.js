@@ -72,7 +72,7 @@ const CarouselItemStyles = styled.div`
   max-width: 500px;
   margin: 0 auto;
   opacity: ${(props) => (props.active ? '1' : '0')};
-  transition: all 2s ease;
+  transition: all 1s ease-in-out;
 
   .carousel-img {
     position: relative;

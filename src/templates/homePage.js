@@ -7,9 +7,12 @@ import LocalizedLink from '../components/LocalizedLink';
 import Seo from '../components/Seo';
 import LogoGarden from '../components/LogoGarden';
 import Carousel from '../components/Carousel';
+
 import {
-  SectionOneStyles, SectionThreeStyles, SectionFourStyles, SectionTwoStyles,
+  SectionOneStyles, SectionThreeStyles, SectionFourStyles,
 } from '../styles/HomePageStyles';
+
+import { BgImageWrapper } from '../styles/InnerStyles';
 
 export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
@@ -58,7 +61,8 @@ export default function HomePageTemplate({ pageContext, data }) {
 
       </SectionOneStyles>
 
-      <SectionTwoStyles>
+      {/* Carousel */}
+      <BgImageWrapper>
         <GatsbyImage
           image={sectionTwo.backgroundImage.image.childImageSharp.gatsbyImageData}
           alt={sectionTwo.backgroundImage.alt}
@@ -70,8 +74,7 @@ export default function HomePageTemplate({ pageContext, data }) {
           lang={pageContext.lang}
           buttonLabel={sectionTwo.buttonLabel}
         />
-      </SectionTwoStyles>
-      {/* Carousel */}
+      </BgImageWrapper>
 
       {/* Survey */}
       <SectionThreeStyles>

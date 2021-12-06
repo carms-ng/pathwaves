@@ -9,7 +9,7 @@ import Seo from '../components/Seo';
 import Carousel from '../components/Carousel';
 import Gallery from '../components/Gallery';
 
-import { CardsThreesStyles } from '../styles/InnerStyles';
+import { CardsThreesStyles, BgImageWrapper, BgImageRightWrapper } from '../styles/InnerStyles';
 
 export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
@@ -27,20 +27,29 @@ export default function HomePageTemplate({ pageContext, data }) {
     <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
       <Seo title={`${title}`} lang={pageContext.lang} />
       {/* hero */}
-      <SectionOneStyles>
-        <div>
-          <h1>{sectionOne.header}</h1>
-          <ReactMarkdown>{sectionOne.description}</ReactMarkdown>
-        </div>
+      <BgImageRightWrapper>
         <GatsbyImage
-          image={sectionOne.imgPrimary.image.childImageSharp.gatsbyImageData}
-          alt={sectionOne.imgPrimary.alt}
+          image={sectionOne.backgroundImage.image.childImageSharp.gatsbyImageData}
+          alt={sectionOne.backgroundImage.alt}
+          imgStyle={{ objectFit: 'contain', width: 'unset', left: 'unset' }}
+          className="bg-image__right"
         />
-        <GatsbyImage
-          image={sectionOne.imgSecondary.image.childImageSharp.gatsbyImageData}
-          alt={sectionOne.imgPrimary.alt}
-        />
-      </SectionOneStyles>
+
+        <HeroStyles>
+          <div>
+            <h1>{sectionOne.header}</h1>
+            <ReactMarkdown>{sectionOne.description}</ReactMarkdown>
+          </div>
+          <GatsbyImage
+            image={sectionOne.imgPrimary.image.childImageSharp.gatsbyImageData}
+            alt={sectionOne.imgPrimary.alt}
+          />
+          <GatsbyImage
+            image={sectionOne.imgSecondary.image.childImageSharp.gatsbyImageData}
+            alt={sectionOne.imgPrimary.alt}
+          />
+        </HeroStyles>
+      </BgImageRightWrapper>
 
       <SectionSecondaryStyles>
         <h2>{sectionTwo.header}</h2>
@@ -59,16 +68,22 @@ export default function HomePageTemplate({ pageContext, data }) {
             </a>
           ))}
         </CardsThreesStyles>
-
-        {/* carousel */}
-        <div>
-          <Carousel
-            lang={pageContext.lang}
-            items={sectionTwo.carouselItems}
-            buttonLabel={sectionTwo.buttonLabel}
-          />
-        </div>
       </SectionSecondaryStyles>
+
+      {/* carousel */}
+      <BgImageWrapper>
+        <GatsbyImage
+          image={sectionTwo.backgroundImage.image.childImageSharp.gatsbyImageData}
+          alt={sectionTwo.backgroundImage.alt}
+          className="background"
+        />
+
+        <Carousel
+          lang={pageContext.lang}
+          items={sectionTwo.carouselItems}
+          buttonLabel={sectionTwo.buttonLabel}
+        />
+      </BgImageWrapper>
 
       <SectionSecondaryStyles>
         <h2>{sectionThree.header}</h2>
@@ -89,22 +104,31 @@ export default function HomePageTemplate({ pageContext, data }) {
         </CardsThreesStyles>
       </SectionSecondaryStyles>
 
-      <SectionSecondaryStyles>
-        <h2>{sectionFour.header}</h2>
-        {/* gallery */}
-        <Gallery images={sectionFour.images} />
+      <BgImageWrapper>
+        <GatsbyImage
+          image={sectionFour.backgroundImage.image.childImageSharp.gatsbyImageData}
+          alt={sectionFour.backgroundImage.alt}
+          className="background"
+        />
 
-      </SectionSecondaryStyles>
+        <SectionSecondaryStyles>
+          <h2>{sectionFour.header}</h2>
+          {/* gallery */}
+          <Gallery images={sectionFour.images} />
+
+        </SectionSecondaryStyles>
+      </BgImageWrapper>
     </Layout>
   );
 }
 
-const SectionOneStyles = styled.section`
+const HeroStyles = styled.div`
   padding: var(--padMd);
   max-width: var(--maxWidthMd);
   margin: 0 auto;
   display: grid;
   gap: 3rem;
+  position: relative;
 
   > div:not(:first-child) {
     justify-self: center;
@@ -211,6 +235,19 @@ export const query = graphql`
           sectionOne {
             header
             description
+            backgroundImage {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 500,
+                    placeholder: TRACED_SVG,
+                    layout: CONSTRAINED,
+                    quality: 100
+                  )
+                }
+              }
+              alt
+            }
             imgPrimary {
               alt
               image {
@@ -250,6 +287,18 @@ export const query = graphql`
               url
             }
             buttonLabel
+            backgroundImage {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: TRACED_SVG,
+                    layout: FULL_WIDTH,
+                    quality: 100
+                  )
+                }
+              }
+              alt
+            }
             carouselItems {
               name
               description
@@ -297,6 +346,18 @@ export const query = graphql`
           }
           sectionFour {
             header
+            backgroundImage {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: TRACED_SVG,
+                    layout: FULL_WIDTH,
+                    quality: 100
+                  )
+                }
+              }
+              alt
+            }
             images {
               image {
                 childImageSharp {

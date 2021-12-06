@@ -38,7 +38,7 @@ export default function Gallery({ images }) {
 }
 
 const GalleryImageStyles = styled.div`
-  transition: opacity 2s ease;
+  transition: all 1s ease-in-out;
   opacity: ${(props) => (props.isActive ? '1' : '0')};
   display: grid;
   > * {

@@ -79,18 +79,6 @@ const SectionOneStyles = styled.section`
   }
 `;
 
-const SectionTwoStyles = styled.section`
-  min-height: 100vh;
-  position: relative;
-  .background {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-  }
-`;
-
 const SectionThreeStyles = styled.section`
   position: relative;
   text-align: center;
@@ -111,7 +99,6 @@ const SectionThreeStyles = styled.section`
     top: 0;
     bottom: 0;
     right: 0;
-    opacity: 0.1;
     opacity: 0.1;
   }
 
@@ -187,5 +174,5 @@ const SectionFourStyles = styled.section`
 `;
 
 export {
-  SectionOneStyles, SectionTwoStyles, SectionThreeStyles, SectionFourStyles,
+  SectionOneStyles, SectionThreeStyles, SectionFourStyles,
 };
