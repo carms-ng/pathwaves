@@ -27,6 +27,9 @@ sectionOne:
 
     Netus et malesuada fames ac. Non pulvinar neque laoreet suspendisse. Odio eu feugiat pretium nibh ipsum consequat. Posuere ac ut consequat semper viverra nam libero. Euismod in pellentesque massa placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Amet justo donec enim diam vulputate ut pharetra. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Turpis egestas sed tempus urna et pharetra. Rhoncus aenean vel elit scelerisque mauris pellentesque. Mauris pharetra et ultrices neque ornare. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Egestas dui id ornare arcu odio.
   header: Resultat
+  backgroundImage:
+    image: /assets/waves-r.png
+    alt: waves fr
 sectionTwo:
   buttonLabel: Suiv.
   carouselItems:
@@ -36,14 +39,7 @@ sectionTwo:
         aliquam etiam erat velit scelerisque in dictum non. Sodales ut eu sem
         integer vitae justo eget magna. Pharetra pharetra massa massa ultricies
         mi quis hendrerit dolor magna. Mi quis hendrerit dolor magna eget est
-        lorem. Nunc vel risus commodo viverra maecenas accumsan lacus vel
-        facilisis. Nec dui nunc mattis enim ut tellus elementum sagittis vitae.
-        Porta non pulvinar neque laoreet suspendisse. Etiam dignissim diam quis
-        enim lobortis scelerisque. Congue quisque egestas diam in arcu cursus
-        euismod quis. Suspendisse sed nisi lacus sed viverra tellus. Amet tellus
-        cras adipiscing enim eu turpis egestas pretium. Neque egestas congue
-        quisque egestas diam. Vitae sapien pellentesque habitant morbi tristique
-        senectus et netus et.
+        lorem.
       type: Spotlight Type 1
       img:
         image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
@@ -54,6 +50,9 @@ sectionTwo:
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
       url: https://www.google.com/
   header: Findings FR
+  backgroundImage:
+    image: /assets/findingstop_1.0black.png
+    alt: lines
 sectionThree:
   cards:
     - title: placeholder 1
@@ -70,4 +69,7 @@ sectionFour:
   images:
     - image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
       alt: placeholder
+  backgroundImage:
+    image: /assets/findingsbottom_1.0black.png
+    alt: lines
 ---

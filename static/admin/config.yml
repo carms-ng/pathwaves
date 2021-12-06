@@ -493,6 +493,13 @@ collections:
           fields:
             - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
             - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+        - label: Background Image
+          name: backgroundImage
+          widget: object
+          i18n: true
+          fields:
+            - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+            - {label: Image Alt Text, name: alt, widget: string, i18n: true}
       - label: Findings Section
         name: sectionTwo
         widget: object
@@ -510,6 +517,13 @@ collections:
           - {label: Description, name: description, widget: text, i18n: true}
           - {label: Link, name: url, widget: string, i18n: true}
         - {label: Carousel Next Button Label, name: buttonLabel, widget: string, i18n: true}
+        - label: Background Image
+          name: backgroundImage
+          widget: object
+          i18n: true
+          fields:
+            - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+            - {label: Image Alt Text, name: alt, widget: string, i18n: true}
         - label: Carousel Items
           name: carouselItems
           widget: list
@@ -519,7 +533,7 @@ collections:
           fields:
           - {label: Title, name: name, widget: string, i18n: true}
           - {label: Spotlight Type, name: type, widget: string, i18n: true}
-          - {label: Description, name: description, widget: text, i18n: true}
+          - {label: Description, name: description, widget: text, i18n: true, pattern: ['^.{1,240}$', "Maximum 240 characters"]}
           - label: Carousel Image
             name: img
             widget: object
@@ -566,6 +580,14 @@ collections:
           fields:
             - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
             - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+        - label: Background Image
+          name: backgroundImage
+          widget: object
+          i18n: true
+          fields:
+            - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+            - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
   - name: fourOhFour
     label: 404 Page
     folder: content/fourOhFour

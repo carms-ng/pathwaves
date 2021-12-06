@@ -41,6 +41,35 @@ const AuthHeroStyles = styled.section`
   }
 `;
 
+const BgImageWrapper = styled.section`
+  position: relative;
+  .background {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+`;
+
+const BgImageRightWrapper = styled.section`
+  position: relative;
+
+  .bg-image__right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.1;
+  }
+
+  @media (min-width: 1024px) {
+    .bg-image__right {
+      opacity: 1;
+    }
+  }
+`;
+
 const CardsThreesStyles = styled.div`
   display: grid;
   justify-items: center;
@@ -76,4 +105,6 @@ const CardsSectionStyles = styled.section`
   }
 `;
 
-export { AuthHeroStyles, CardsThreesStyles, CardsSectionStyles };
+export {
+  AuthHeroStyles, BgImageWrapper, BgImageRightWrapper, CardsThreesStyles, CardsSectionStyles,
+};

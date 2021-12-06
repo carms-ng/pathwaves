@@ -27,6 +27,9 @@ sectionOne:
   imgSecondary:
     image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
     alt: placeholder
+  backgroundImage:
+    image: /assets/waves-r.png
+    alt: waves
 sectionTwo:
   buttonLabel: Next
   carouselItems:
@@ -36,14 +39,7 @@ sectionTwo:
         aliquam etiam erat velit scelerisque in dictum non. Sodales ut eu sem
         integer vitae justo eget magna. Pharetra pharetra massa massa ultricies
         mi quis hendrerit dolor magna. Mi quis hendrerit dolor magna eget est
-        lorem. Nunc vel risus commodo viverra maecenas accumsan lacus vel
-        facilisis. Nec dui nunc mattis enim ut tellus elementum sagittis vitae.
-        Porta non pulvinar neque laoreet suspendisse. Etiam dignissim diam quis
-        enim lobortis scelerisque. Congue quisque egestas diam in arcu cursus
-        euismod quis. Suspendisse sed nisi lacus sed viverra tellus. Amet tellus
-        cras adipiscing enim eu turpis egestas pretium. Neque egestas congue
-        quisque egestas diam. Vitae sapien pellentesque habitant morbi tristique
-        senectus et netus et.
+        lorem.
       type: Spotlight Type 1
       img:
         image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
@@ -58,14 +54,7 @@ sectionTwo:
         aliquam etiam erat velit scelerisque in dictum non. Sodales ut eu sem
         integer vitae justo eget magna. Pharetra pharetra massa massa ultricies
         mi quis hendrerit dolor magna. Mi quis hendrerit dolor magna eget est
-        lorem. Nunc vel risus commodo viverra maecenas accumsan lacus vel
-        facilisis. Nec dui nunc mattis enim ut tellus elementum sagittis vitae.
-        Porta non pulvinar neque laoreet suspendisse. Etiam dignissim diam quis
-        enim lobortis scelerisque. Congue quisque egestas diam in arcu cursus
-        euismod quis. Suspendisse sed nisi lacus sed viverra tellus. Amet tellus
-        cras adipiscing enim eu turpis egestas pretium. Neque egestas congue
-        quisque egestas diam. Vitae sapien pellentesque habitant morbi tristique
-        senectus et netus et.
+        lorem.
   cards:
     - title: Placeholder 1
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -80,6 +69,9 @@ sectionTwo:
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
   header: Findings
+  backgroundImage:
+    image: /assets/findingstop_1.0black.png
+    alt: lines
 sectionThree:
   cards:
     - title: placeholder 1
@@ -130,4 +122,7 @@ sectionFour:
       alt: placeholder 9
     - image: /assets/craig-mckay-jmurdhtm7ng-unsplash.jpg
       alt: placeholder 10
+  backgroundImage:
+    image: /assets/findingsbottom_1.0black.png
+    alt: lines
 ---
