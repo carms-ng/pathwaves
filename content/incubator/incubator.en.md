@@ -14,10 +14,10 @@ sectionOne:
         — with the goal of sparking new solutions-oriented thought surrounding
         the creation and sharing of music.
   backgroundImageTop:
-    image: /assets/aboutincubatortop.png
+    image: /assets/about-incubator.png
     alt: lines top
   backgroundImageBottom:
-    image: /assets/aboutincubatorbottom.png
+    image: /assets/about-incubator-2.png
     alt: lines bottom
 sectionTwo:
   header: The Pathwaves Incubator Program

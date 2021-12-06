@@ -15,10 +15,10 @@ sectionOne:
         le partage de la musique.
   header: A propo d'incubator
   backgroundImageTop:
-    image: /assets/aboutincubatortop.png
+    image: /assets/about-incubator.png
     alt: lines top
   backgroundImageBottom:
-    image: /assets/aboutincubatorbottom.png
+    image: /assets/about-incubator-2.png
     alt: lines bottom
 sectionTwo:
   phases:
