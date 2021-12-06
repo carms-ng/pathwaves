@@ -6,7 +6,7 @@ sectionOne:
   description: An initiative aimed at empowering Canadian musicians to make
     lifelong careers in music more possible and equitable.
   backgroundImage:
-    image: /assets/homehero_1.0black.png
+    image: /assets/home-1-.png
     alt: lines
   buttons:
     - linkText: About the incubator
@@ -43,7 +43,7 @@ sectionTwo:
         alt: placeholder
   buttonLabel: Next
   backgroundImage:
-    image: /assets/findingstop_1.0black.png
+    image: /assets/participant-spotlight.png
     alt: lines
 sectionThree:
   header: Share Your Opinion
@@ -58,7 +58,7 @@ sectionThree:
     participants tackle during the Pathwaves Incubator, along with the outcomes
     which will be shared with the public.
   backgroundImage:
-    image: /assets/homeshareopinion_1.0black.png
+    image: /assets/share-your-opinion.png
     alt: lines
 sectionFour:
   header: Stay in the loop
