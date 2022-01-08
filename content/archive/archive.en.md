@@ -28,18 +28,16 @@ sectionOne:
     image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
     alt: placeholder
   backgroundImage:
-    image: /assets/waves-r.png
+    image: /assets/gallery.png
     alt: waves
 sectionTwo:
   buttonLabel: Next
   carouselItems:
     - name: Placeholder 1
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit
         aliquam etiam erat velit scelerisque in dictum non. Sodales ut eu sem
-        integer vitae justo eget magna. Pharetra pharetra massa massa ultricies
-        mi quis hendrerit dolor magna. Mi quis hendrerit dolor magna eget est
-        lorem.
+        integer vitae justo eget magna. "
       type: Spotlight Type 1
       img:
         image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
@@ -49,12 +47,9 @@ sectionTwo:
       img:
         alt: placeholder
         image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit
-        aliquam etiam erat velit scelerisque in dictum non. Sodales ut eu sem
-        integer vitae justo eget magna. Pharetra pharetra massa massa ultricies
-        mi quis hendrerit dolor magna. Mi quis hendrerit dolor magna eget est
-        lorem.
+        aliquam etiam erat velit scelerisque in dictum non. "
   cards:
     - title: Placeholder 1
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -70,7 +65,7 @@ sectionTwo:
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
   header: Findings
   backgroundImage:
-    image: /assets/findingstop_1.0black.png
+    image: /assets/team.png
     alt: lines
 sectionThree:
   cards:
@@ -123,6 +118,6 @@ sectionFour:
     - image: /assets/craig-mckay-jmurdhtm7ng-unsplash.jpg
       alt: placeholder 10
   backgroundImage:
-    image: /assets/findingsbottom_1.0black.png
+    image: /assets/gallery.png
     alt: lines
 ---

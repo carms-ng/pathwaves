@@ -28,7 +28,7 @@ sectionOne:
     Netus et malesuada fames ac. Non pulvinar neque laoreet suspendisse. Odio eu feugiat pretium nibh ipsum consequat. Posuere ac ut consequat semper viverra nam libero. Euismod in pellentesque massa placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Amet justo donec enim diam vulputate ut pharetra. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Turpis egestas sed tempus urna et pharetra. Rhoncus aenean vel elit scelerisque mauris pellentesque. Mauris pharetra et ultrices neque ornare. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Egestas dui id ornare arcu odio.
   header: Resultat
   backgroundImage:
-    image: /assets/waves-r.png
+    image: /assets/gallery.png
     alt: waves fr
 sectionTwo:
   buttonLabel: Suiv.
@@ -51,7 +51,7 @@ sectionTwo:
       url: https://www.google.com/
   header: Findings FR
   backgroundImage:
-    image: /assets/findingstop_1.0black.png
+    image: /assets/team.png
     alt: lines
 sectionThree:
   cards:
@@ -70,6 +70,6 @@ sectionFour:
     - image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
       alt: placeholder
   backgroundImage:
-    image: /assets/findingsbottom_1.0black.png
+    image: /assets/gallery.png
     alt: lines
 ---
