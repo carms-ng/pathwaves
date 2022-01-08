@@ -22,10 +22,6 @@ nav:
         - linkText: Presenters
           linkAddress: /presenters
       show: both
-    - linkText: Survey
-      linkAddress: /survey
-      show: public
-      childNavItems: []
   navItemsSecondary:
     - linkText: Schedule
       linkAddress: /schedule

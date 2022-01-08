@@ -23,9 +23,6 @@ nav:
         - linkText: Les présentatrices
           linkAddress: /presenters
       show: both
-    - linkText: Sondage
-      linkAddress: /survey
-      show: public
   navItemsSecondary:
     - linkAddress: /schedule
       linkText: Calendrier
