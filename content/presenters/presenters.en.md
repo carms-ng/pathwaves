@@ -4,7 +4,7 @@ title: Presenters
 sectionOne:
   header: Meet the presenters
   backgroundImage:
-    image: /assets/meetpresenters_1.0black.png
+    image: /assets/meet-presenters.png
     alt: lines
 sectionTwo:
   members:
