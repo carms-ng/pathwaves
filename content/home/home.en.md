@@ -6,7 +6,7 @@ sectionOne:
   description: An initiative aimed at empowering Canadian musicians to make
     lifelong careers in music more possible and equitable.
   backgroundImage:
-    image: /assets/home-1-.png
+    image: /assets/home-2-.png
     alt: lines
   buttons:
     - linkText: About the incubator
@@ -43,7 +43,7 @@ sectionTwo:
         alt: placeholder
   buttonLabel: Next
   backgroundImage:
-    image: /assets/participant-spotlight.png
+    image: /assets/home2.png
     alt: lines
 sectionThree:
   header: Share Your Opinion
