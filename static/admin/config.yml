@@ -102,31 +102,8 @@ collections:
                 - {label: Link text, name: linkText, widget: string, i18n: true}
                 - {label: URL, name: url, widget: string, i18n: true}
 
-      - label: Survey Section
-        name: sectionThree
-        widget: object
-        i18n: true
-        collapsed: true
-        fields:
-          - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Primary Description, name: descriptionPrimary, widget: text, i18n: true}
-          - label: Button
-            name: button
-            widget: object
-            i18n: true
-            fields:
-              - {label: Link text, name: linkText, widget: string, i18n: true}
-              - {label: URL, name: url, widget: string, i18n: true}
-          - {label: Secondary Description, name: descriptionSecondary, widget: text, i18n: true}
-          - label: Background Image
-            name: backgroundImage
-            widget: object
-            i18n: true
-            fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
       - label: Newsletter Section
-        name: sectionFour
+        name: sectionThree
         widget: object
         i18n: true
         collapsed: true

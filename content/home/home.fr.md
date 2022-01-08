@@ -33,21 +33,6 @@ sectionTwo:
     image: /assets/home2.png
     alt: lines fr
 sectionThree:
-  header: Share Your Opinion
-  descriptionPrimary: Tell us how you think digital technologies are impacting
-    musical careers today. If you’re a musician, manager, promoter, booking
-    agent, or otherwise involved in Canada’s music industry, we’d love to hear
-    from you.
-  button:
-    linkText: Take the survey
-    url: /survey
-  descriptionSecondary: Your thoughts will help inform the issues that
-    participants tackle during the Pathwaves Incubator, along with the outcomes
-    which will be shared with the public.
-  backgroundImage:
-    image: /assets/share-your-opinion.png
-    alt: lines
-sectionFour:
   header: Stay in the loop
   description: We’ll pass on the knowledge and insights gained from the Pathwaves
     Incubator for your own use, or for you to share with your community.
