@@ -25,7 +25,6 @@ exports.createPages = async ({ graphql, actions }) => {
       allFile(filter: {
         relativeDirectory: {in: [
           "home",
-          "survey",
           "incubator",
           "team",
           "musicians",

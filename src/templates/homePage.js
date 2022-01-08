@@ -9,7 +9,7 @@ import LogoGarden from '../components/LogoGarden';
 import Carousel from '../components/Carousel';
 
 import {
-  SectionOneStyles, SectionThreeStyles, SectionFourStyles,
+  SectionOneStyles, SectionThreeStyles,
 } from '../styles/HomePageStyles';
 
 import { BgImageWrapper } from '../styles/InnerStyles';
@@ -21,7 +21,6 @@ export default function HomePageTemplate({ pageContext, data }) {
     sectionOne,
     sectionTwo,
     sectionThree,
-    sectionFour,
   } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
@@ -76,42 +75,19 @@ export default function HomePageTemplate({ pageContext, data }) {
         />
       </BgImageWrapper>
 
-      {/* Survey */}
-      <SectionThreeStyles>
-        <div className="text__left">
-          <h2>{sectionThree.header}</h2>
-          <p>{sectionThree.descriptionPrimary}</p>
-          <LocalizedLink
-            className="btn"
-            to={sectionThree.button.url}
-            lang={pageContext.lang}
-          >
-            {sectionThree.button.linkText}
-          </LocalizedLink>
-          <p>{sectionThree.descriptionSecondary}</p>
-        </div>
-
-        <GatsbyImage
-          image={sectionThree.backgroundImage.image.childImageSharp.gatsbyImageData}
-          alt={sectionThree.backgroundImage.alt}
-          imgStyle={{ objectFit: 'contain', width: 'unset', left: 'unset' }}
-          className="bg-image__right"
-        />
-      </SectionThreeStyles>
-
       {/* Newsletter */}
-      <SectionFourStyles>
-        <h2>{sectionFour.header}</h2>
-        <p>{sectionFour.description}</p>
+      <SectionThreeStyles>
+        <h2>{sectionThree.header}</h2>
+        <p>{sectionThree.description}</p>
         <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
-          <input type="name" name="name" id="name" placeholder={sectionFour.form.inputPlaceholderName} />
-          <input type="email" name="email" id="email" placeholder={sectionFour.form.inputPlaceholderEmail} />
-          <button type="submit" className="btn">{sectionFour.form.buttonText}</button>
+          <input type="name" name="name" id="name" placeholder={sectionThree.form.inputPlaceholderName} />
+          <input type="email" name="email" id="email" placeholder={sectionThree.form.inputPlaceholderEmail} />
+          <button type="submit" className="btn">{sectionThree.form.buttonText}</button>
           {/* <input type="reset" value="Clear" /> */}
         </form>
-      </SectionFourStyles>
+      </SectionThreeStyles>
 
       {/* Logo Garden */}
       <LogoGarden logos={collabs} />
@@ -234,28 +210,6 @@ export const query = graphql`
             }
           }
           sectionThree {
-            header
-            descriptionPrimary
-            button {
-              linkText
-              url
-            }
-            descriptionSecondary
-            backgroundImage {
-              alt
-              image {
-                childImageSharp {
-                  gatsbyImageData(
-                    width: 500,
-                    placeholder: TRACED_SVG,
-                    layout: CONSTRAINED,
-                    quality: 100
-                  )
-                }
-              }
-            }
-          }
-          sectionFour {
             header
             description
             form {

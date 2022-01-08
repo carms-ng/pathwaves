@@ -80,46 +80,6 @@ const SectionOneStyles = styled.section`
 `;
 
 const SectionThreeStyles = styled.section`
-  position: relative;
-  text-align: center;
-  padding: var(--padSm);
-  .text__left {
-    margin: 0 auto;
-    position: relative;
-    display: grid;
-    gap: 5rem;
-    max-width: calc(var(--maxWidth) / 5 * 3);
-  }
-  .btn {
-    justify-self: center;
-    padding: 0.5rem 6rem;
-  }
-  .bg-image__right {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.1;
-  }
-
-  @media (min-width: 640px) {
-    padding: var(--padLg);
-  }
-  @media (min-width: 1024px) {
-    text-align: left;
-    .text__left {
-      margin-left: calc((100vw - var(--maxWidth)) / 2);
-    }
-    .btn {
-      justify-self: start;
-    }
-    .bg-image__right {
-      opacity: 1;
-    }
-  }
-`;
-
-const SectionFourStyles = styled.section`
   padding: var(--padSm);
   max-width: var(--maxWidth);
   margin: 0 auto;
@@ -173,6 +133,4 @@ const SectionFourStyles = styled.section`
   }
 `;
 
-export {
-  SectionOneStyles, SectionThreeStyles, SectionFourStyles,
-};
+export { SectionOneStyles, SectionThreeStyles };

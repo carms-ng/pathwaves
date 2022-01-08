@@ -102,31 +102,8 @@ collections:
                 - {label: Link text, name: linkText, widget: string, i18n: true}
                 - {label: URL, name: url, widget: string, i18n: true}
 
-      - label: Survey Section
-        name: sectionThree
-        widget: object
-        i18n: true
-        collapsed: true
-        fields:
-          - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Primary Description, name: descriptionPrimary, widget: text, i18n: true}
-          - label: Button
-            name: button
-            widget: object
-            i18n: true
-            fields:
-              - {label: Link text, name: linkText, widget: string, i18n: true}
-              - {label: URL, name: url, widget: string, i18n: true}
-          - {label: Secondary Description, name: descriptionSecondary, widget: text, i18n: true}
-          - label: Background Image
-            name: backgroundImage
-            widget: object
-            i18n: true
-            fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
       - label: Newsletter Section
-        name: sectionFour
+        name: sectionThree
         widget: object
         i18n: true
         collapsed: true
@@ -372,36 +349,6 @@ collections:
               fields:
                 - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
                 - {label: Image Alt Text, name: alt, widget: string, i18n: true}
-
-  - name: survey
-    label: Survey Page
-    folder: content/survey
-    create: false
-    delete: false
-    i18n: true
-    fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "genericPage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
-      - label: Policy
-        name: body
-        widget: markdown
-        buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
-        editor_components: []
-        modes: [rich_text]
-        minimal: true
-        i18n: true
-      - label: Options
-        name: options
-        widget: list
-        min: 2
-        max: 2
-        i18n: true
-        summary: "{{linkText}} - {{linkAddress}}"
-        fields:
-        - {label: Link Text, name: linkText, widget: string}
-        - {label: "Internal Link?", name: isInterenal, widget: boolean, required: false}
-        - {label: Link Address, name: linkAddress, widget: string}
-      - {label: Thank You Note, name: endNote, widget: string, i18n: true}
 
   - name: schedule
     label: Schedule Page
