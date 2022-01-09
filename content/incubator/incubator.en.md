@@ -14,10 +14,10 @@ sectionOne:
         — with the goal of sparking new solutions-oriented thought surrounding
         the creation and sharing of music.
   backgroundImageTop:
-    image: /assets/aboutincubatortop.png
+    image: /assets/about-incubator-1_top.png
     alt: lines top
   backgroundImageBottom:
-    image: /assets/aboutincubatorbottom.png
+    image: /assets/about_incubator_bottom_flipped.png
     alt: lines bottom
 sectionTwo:
   header: The Pathwaves Incubator Program
@@ -64,4 +64,7 @@ sectionThree:
 
 
     Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Justo donec enim diam vulputate ut pharetra. Turpis massa tincidunt dui ut ornare lectus sit amet. Nullam eget felis eget nunc lobortis mattis. Augue eget arcu dictum varius duis at. Morbi enim nunc faucibus a pellentesque sit. Vulputate enim nulla aliquet porttitor. Maecenas volutpat blandit aliquam etiam erat velit. Volutpat maecenas volutpat blandit aliquam. Facilisi nullam vehicula ipsum a. Neque sodales ut etiam sit amet nisl purus. Porttitor massa id neque aliquam vestibulum. Sit amet porttitor eget dolor morbi. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Pretium quam vulputate dignissim suspendisse.
+  backgroundImage:
+    image: /assets/land-acknowledgement.png
+    alt: lines floating down
 ---

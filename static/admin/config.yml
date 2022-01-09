@@ -182,6 +182,7 @@ collections:
               - {label: Date, name: date, widget: string, i18n: true}
               - {label: Description, name: description, widget: text, i18n: true}
           - {label: End Note, name: endNote, widget: text, i18n: true}
+
       - label: Land Acknowledgement Section
         name: sectionThree
         widget: object
@@ -197,6 +198,13 @@ collections:
             modes: [rich_text]
             minimal: true
             i18n: true
+          - label: Background Image
+            name: backgroundImage
+            widget: object
+            i18n: true
+            fields:
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
 
   - name: team
     label: Team Page
