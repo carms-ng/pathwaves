@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SectionOneStyles = styled.section`
+const HomeHeroStyles = styled.section`
   position: relative;
   height: 100vh;
   margin-bottom: 5vh;
@@ -79,8 +79,9 @@ const SectionOneStyles = styled.section`
   }
 `;
 
-const SectionThreeStyles = styled.section`
+const NewsletterFormStyles = styled.form`
   padding: var(--padSm);
+  padding-bottom: 0;
   max-width: var(--maxWidth);
   margin: 0 auto;
   text-align: center;
@@ -92,7 +93,7 @@ const SectionThreeStyles = styled.section`
     margin-bottom: 5rem;
   }
 
-  form {
+  div:nth-child(3) {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -120,7 +121,8 @@ const SectionThreeStyles = styled.section`
   }
   @media (min-width: 640px) {
     padding: var(--padLg);
-    form {
+    padding-bottom: 0;
+    div:nth-child(3) {
       grid-template-columns: 1fr 1fr;
       gap: 5rem;
 
@@ -133,4 +135,4 @@ const SectionThreeStyles = styled.section`
   }
 `;
 
-export { SectionOneStyles, SectionThreeStyles };
+export { HomeHeroStyles, NewsletterFormStyles };

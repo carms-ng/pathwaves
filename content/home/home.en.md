@@ -53,4 +53,7 @@ sectionThree:
     inputPlaceholderName: name
     inputPlaceholderEmail: email address
     buttonText: SUBMIT
+  backgroundImage:
+    image: /assets/home-_-third-image.png
+    alt: lines flowing towards the right and down
 ---

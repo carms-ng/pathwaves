@@ -110,6 +110,13 @@ collections:
         fields:
           - {label: Header, name: header, widget: string, i18n: true}
           - {label: Description, name: description, widget: text, i18n: true}
+          - label: Background Image
+            name: backgroundImage
+            widget: object
+            i18n: true
+            fields:
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
           - label: Form
             name: form
             widget: object

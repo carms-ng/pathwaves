@@ -9,10 +9,10 @@ import LogoGarden from '../components/LogoGarden';
 import Carousel from '../components/Carousel';
 
 import {
-  SectionOneStyles, SectionThreeStyles,
+  HomeHeroStyles, NewsletterFormStyles,
 } from '../styles/HomePageStyles';
 
-import { BgImageWrapper } from '../styles/InnerStyles';
+import { BgImageWrapper, BgImageBetweenWrapper } from '../styles/InnerStyles';
 
 export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
@@ -32,7 +32,7 @@ export default function HomePageTemplate({ pageContext, data }) {
       <Seo title={`${title}`} lang={pageContext.lang} />
 
       {/* Hero */}
-      <SectionOneStyles>
+      <HomeHeroStyles>
         <GatsbyImage
           image={sectionOne.backgroundImage.image.childImageSharp.gatsbyImageData}
           alt={sectionOne.backgroundImage.alt}
@@ -58,7 +58,7 @@ export default function HomePageTemplate({ pageContext, data }) {
           </div>
         </div>
 
-      </SectionOneStyles>
+      </HomeHeroStyles>
 
       {/* Carousel */}
       <BgImageWrapper>
@@ -76,21 +76,27 @@ export default function HomePageTemplate({ pageContext, data }) {
       </BgImageWrapper>
 
       {/* Newsletter */}
-      <SectionThreeStyles>
-        <h2>{sectionThree.header}</h2>
-        <p>{sectionThree.description}</p>
-        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-          <input type="hidden" name="bot-field" />
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="name" name="name" id="name" placeholder={sectionThree.form.inputPlaceholderName} />
-          <input type="email" name="email" id="email" placeholder={sectionThree.form.inputPlaceholderEmail} />
-          <button type="submit" className="btn">{sectionThree.form.buttonText}</button>
+      <BgImageBetweenWrapper>
+        <NewsletterFormStyles method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+          <h2>{sectionThree.header}</h2>
+          <p>{sectionThree.description}</p>
+          <div className="">
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="name" name="name" id="name" placeholder={sectionThree.form.inputPlaceholderName} />
+            <input type="email" name="email" id="email" placeholder={sectionThree.form.inputPlaceholderEmail} />
+            <button type="submit" className="btn">{sectionThree.form.buttonText}</button>
+          </div>
           {/* <input type="reset" value="Clear" /> */}
-        </form>
-      </SectionThreeStyles>
-
-      {/* Logo Garden */}
-      <LogoGarden logos={collabs} />
+        </NewsletterFormStyles>
+        <GatsbyImage
+          image={sectionThree.backgroundImage.image.childImageSharp.gatsbyImageData}
+          alt={sectionThree.backgroundImage.alt}
+          className="background background__between"
+        />
+        {/* Logo Garden */}
+        <LogoGarden logos={collabs} />
+      </BgImageBetweenWrapper>
 
     </Layout>
   );
@@ -212,6 +218,18 @@ export const query = graphql`
           sectionThree {
             header
             description
+            backgroundImage {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: TRACED_SVG,
+                    layout: FULL_WIDTH,
+                    quality: 100
+                  )
+                }
+              }
+              alt
+            }
             form {
               inputPlaceholderName
               inputPlaceholderEmail
