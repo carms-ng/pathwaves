@@ -11,8 +11,9 @@ sectionOne:
   buttons:
     - linkText: About the incubator
       url: /incubator
-    - linkText: Meet the participants
-      url: /musicians
+      isVisible: true
+    - linkText: Result + Outcome
+      url: /archive
 sectionTwo:
   carouselItems:
     - name: Artist name

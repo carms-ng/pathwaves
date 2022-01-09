@@ -26,7 +26,7 @@ const HomeHeroStyles = styled.section`
     align-items: center;
     gap: 15vh;
 
-    h1, p {
+    > * {
       width: 460px;
       max-width: 70vw;
       margin: 0;
@@ -34,10 +34,12 @@ const HomeHeroStyles = styled.section`
     > div {
       display: grid;
       grid-auto-flow: row;
+      justify-self: end;
     }
     p {
-      text-align: right;
+      text-align: center;
       justify-self: end;
+      font-size: 1.7rem;
     }
     .hero-buttons {
       margin: 1rem 0;
@@ -55,10 +57,16 @@ const HomeHeroStyles = styled.section`
       width: 460px;
       justify-self: end;
     }
+    p {
+      font-size: 2rem;
+    }
     .hero-buttons {
-      justify-self: end;
-      width: 460px;
-      grid-template-columns: repeat(2, 1fr);
+      grid-auto-flow: column;
+      justify-items: center;
+      > .btn {
+        width: 100%;
+        max-width: 375px;
+      }
     }
   }
 
@@ -71,10 +79,12 @@ const HomeHeroStyles = styled.section`
       h1 {
         align-self: end;
       }
-      p, > div {
-        width: var(--maxWidthSm);
+      > div {
+        width: 580px;
       }
-
+      p {
+        font-size: 2.2rem;
+      }
     }
   }
 `;

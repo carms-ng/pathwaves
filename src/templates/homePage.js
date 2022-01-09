@@ -44,16 +44,18 @@ export default function HomePageTemplate({ pageContext, data }) {
           <div>
             <p>{sectionOne.description}</p>
             <div className="hero-buttons">
-              {sectionOne.buttons.map(({ linkText, url }) => (
-                <LocalizedLink
-                  className="btn"
-                  key={url}
-                  to={url}
-                  lang={pageContext.lang}
-                >
-                  {linkText}
-                </LocalizedLink>
-              ))}
+              {sectionOne.buttons
+                .filter(({ isVisible }) => isVisible)
+                .map(({ linkText, url }) => (
+                  <LocalizedLink
+                    className="btn"
+                    key={url}
+                    to={url}
+                    lang={pageContext.lang}
+                  >
+                    {linkText}
+                  </LocalizedLink>
+                ))}
             </div>
           </div>
         </div>
@@ -173,6 +175,7 @@ export const query = graphql`
             buttons {
               linkText
               url
+              isVisible
             }
           }
           sectionTwo {
