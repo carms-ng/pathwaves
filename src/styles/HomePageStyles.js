@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SectionOneStyles = styled.section`
+const HomeHeroStyles = styled.section`
   position: relative;
   height: 100vh;
   margin-bottom: 5vh;
@@ -26,7 +26,7 @@ const SectionOneStyles = styled.section`
     align-items: center;
     gap: 15vh;
 
-    h1, p {
+    > * {
       width: 460px;
       max-width: 70vw;
       margin: 0;
@@ -34,10 +34,12 @@ const SectionOneStyles = styled.section`
     > div {
       display: grid;
       grid-auto-flow: row;
+      justify-self: end;
     }
     p {
-      text-align: right;
+      text-align: center;
       justify-self: end;
+      font-size: 1.7rem;
     }
     .hero-buttons {
       margin: 1rem 0;
@@ -55,10 +57,16 @@ const SectionOneStyles = styled.section`
       width: 460px;
       justify-self: end;
     }
+    p {
+      font-size: 2rem;
+    }
     .hero-buttons {
-      justify-self: end;
-      width: 460px;
-      grid-template-columns: repeat(2, 1fr);
+      grid-auto-flow: column;
+      justify-items: center;
+      > .btn {
+        width: 100%;
+        max-width: 375px;
+      }
     }
   }
 
@@ -71,16 +79,19 @@ const SectionOneStyles = styled.section`
       h1 {
         align-self: end;
       }
-      p, > div {
-        width: var(--maxWidthSm);
+      > div {
+        width: 580px;
       }
-
+      p {
+        font-size: 2.2rem;
+      }
     }
   }
 `;
 
-const SectionThreeStyles = styled.section`
+const NewsletterFormStyles = styled.form`
   padding: var(--padSm);
+  padding-bottom: 0;
   max-width: var(--maxWidth);
   margin: 0 auto;
   text-align: center;
@@ -92,7 +103,7 @@ const SectionThreeStyles = styled.section`
     margin-bottom: 5rem;
   }
 
-  form {
+  div:nth-child(3) {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -120,7 +131,8 @@ const SectionThreeStyles = styled.section`
   }
   @media (min-width: 640px) {
     padding: var(--padLg);
-    form {
+    padding-bottom: 0;
+    div:nth-child(3) {
       grid-template-columns: 1fr 1fr;
       gap: 5rem;
 
@@ -133,4 +145,4 @@ const SectionThreeStyles = styled.section`
   }
 `;
 
-export { SectionOneStyles, SectionThreeStyles };
+export { HomeHeroStyles, NewsletterFormStyles };

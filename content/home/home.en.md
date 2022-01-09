@@ -11,8 +11,9 @@ sectionOne:
   buttons:
     - linkText: About the incubator
       url: /incubator
-    - linkText: Meet the participants
-      url: /musicians
+      isVisible: true
+    - linkText: Result + Outcome
+      url: /archive
 sectionTwo:
   carouselItems:
     - name: Artist name
@@ -53,4 +54,7 @@ sectionThree:
     inputPlaceholderName: name
     inputPlaceholderEmail: email address
     buttonText: SUBMIT
+  backgroundImage:
+    image: /assets/home-_-third-image.png
+    alt: lines flowing towards the right and down
 ---
