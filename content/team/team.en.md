@@ -57,13 +57,14 @@ sectionTwo:
   header: Team
   subHeader: Glad you're taking the time to get to know us better
   members:
-    - name: placeholder 1
-      pronouns: placeholder 1
-      role: placeholder 1
-      entity: placeholder 1
+    - name: Lesya Nakoneczny
+      pronouns: she/her
+      role: Codesigner, Project Manager
+      entity: Envision Management and Production
       portrait:
-        image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
-        alt: placeholder 1
+        image: /assets/lesya_lowres-1.jpg
+        alt: Lesya is a project manager and co-designer for the Pathwaves Digital
+          Literacy Incubator.
     - name: placeholder 2
       pronouns: placeholder 2
       role: placeholder 2
