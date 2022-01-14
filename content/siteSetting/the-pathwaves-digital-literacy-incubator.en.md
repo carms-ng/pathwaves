@@ -28,7 +28,7 @@ nav:
     - linkText: Resources
       linkAddress: /resources
   buttonDiscord:
-    url: https://discord.com/
+    url: https://discord.gg/xzBYznTaFm
     linkText: Discord
   labelPhases:
     labelPhaseOne: Phase 1
