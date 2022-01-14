@@ -7,7 +7,10 @@ sectionOne:
   labelZoom: Zoom link
   labelScheduleShow: See full schedule
   labelScheduleHide: Hide full schedule
-  noneText: Woohoo no classes on your select day!
+  noneText: No classes on your select day!
+  button:
+    url: https://discord.gg/xzBYznTaFm
+    linkText: Pathwaves Discord
 sectionTwo:
   header: See full schedule
   labelTime: Time
