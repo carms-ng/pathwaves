@@ -1,7 +1,6 @@
 ---
 title: History of the Future - Writing
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: History of the Future individual writing exercise.
 presenter: Individual work
 linkCalendar: https://www.google.com/
 linkZoom: " https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09"
