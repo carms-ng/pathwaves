@@ -11,7 +11,7 @@ sectionTwo:
     - name: Blanche Israël
       pronouns: she/her
       role: Lead Guide
-      entity: "  "
+      entity: proScenium Services
       portrait:
         image: /assets/cookedphotography_bi_portraits_2021-8-blanche-israël.jpg
         alt: Blanche Israël is a multilingual Canadian consultant, cellist, and the
@@ -29,7 +29,7 @@ sectionTwo:
     - name: Nicolas Bernier
       pronouns: he/him
       role: Lead Guide
-      entity: "  "
+      entity: "  Université de Montréal"
       portrait:
         image: /assets/bernier-2017-no-credit-nicolas-bernier.jpg
         alt: "Nicolas Bernier creates audiovisual performances and installations aiming
@@ -42,4 +42,26 @@ sectionTwo:
           the prestigious Golden Nica at Prix Ars Electronica 2013 (Austria),
           his work widely recognize, presented all over the world. He is
           teaching in the Digital Music program of the Université de Montréal."
+    - name: Chloe Alexandra Thompson
+      pronouns: placeholder
+      role: Lead Guide
+      entity: "  "
+      portrait:
+        image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
+        alt: Bio
+    - name: Claire L. Evans
+      pronouns: she/her
+      role: Presenter
+      entity: YACHT
+      portrait:
+        image: /assets/itme-claire-evans.jpg
+        alt: "Claire L. Evans is a writer and musician. She is the singer and coauthor
+          of the Grammy-nominated pop group YACHT, the author of Broad Band: The
+          Untold Story of the Women Who Made the Internet (Penguin Random
+          House), and the co-editor of the upcoming speculative fiction
+          anthology Terraform (MCD Books). She is the former futures editor of
+          Motherboard, and a contributor to VICE, Rhizome, The Guardian, WIRED,
+          the Los Angeles Review of Books, Eye on Design, Quartz, OneZero, and
+          Aeon. She lives in Los Angeles, where she is an advisor to graduate
+          design students at Art Center College of Design."
 ---
