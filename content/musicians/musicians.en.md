@@ -70,4 +70,9 @@ sectionTwo:
       portrait:
         image: /assets/storry-junos-2021-photo-storry.jpg
         alt: Picture of STORRY
+    - artistName: Tough Sell
+      pronouns: they/them and/or she/her
+      portrait:
+        image: /assets/img_7726-emerson-gaglardi.jpg
+        alt: Image of Tough Sell
 ---
