@@ -52,18 +52,19 @@ sectionTwo:
 sectionThree:
   header: Land Acknowledgement
   landAcknowledgement: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam
-    phasellus. Eget velit aliquet sagittis id consectetur purus. Pellentesque
-    massa placerat duis ultricies lacus sed. Eu scelerisque felis imperdiet
-    proin fermentum. Posuere ac ut consequat semper viverra nam libero justo
-    laoreet. Eget gravida cum sociis natoque penatibus et magnis dis parturient.
-    Sem integer vitae justo eget. Quis enim lobortis scelerisque fermentum dui
-    faucibus. Iaculis at erat pellentesque adipiscing. Et tortor at risus
-    viverra adipiscing at. Varius morbi enim nunc faucibus a pellentesque sit.
+    Pathwaves is an initiative that has been designed to connect and reach
+    peoples across Turtle Island which is home to many First Nations and Metis
+    peoples, from Mi’kmaki in the east to Haida Gwaii in the west, Dene in the
+    north to Anishinabee nations in the south, and Inuit Nunangat which
+    comprises the four Inuit territories. We express our gratitude to the
+    Indigenous peoples for their stewardship of these lands from which we
+    benefit today.
 
 
-    Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Justo donec enim diam vulputate ut pharetra. Turpis massa tincidunt dui ut ornare lectus sit amet. Nullam eget felis eget nunc lobortis mattis. Augue eget arcu dictum varius duis at. Morbi enim nunc faucibus a pellentesque sit. Vulputate enim nulla aliquet porttitor. Maecenas volutpat blandit aliquam etiam erat velit. Volutpat maecenas volutpat blandit aliquam. Facilisi nullam vehicula ipsum a. Neque sodales ut etiam sit amet nisl purus. Porttitor massa id neque aliquam vestibulum. Sit amet porttitor eget dolor morbi. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Pretium quam vulputate dignissim suspendisse.
+    We wish to recognize that Pathwaves is being produced out of Envision’s headquarters in Tiohtià:ke, on the ancestral territory of the Kanien’kehá:ka nation. The region, since time immemorial, has served as a gathering place marking the area a key site of diplomacy, as well as for the exchange of culture, language, goods, and technological knowledge. It is in this spirit that we convene for Pathwaves, in a space of sharing and exchange. 
+
+
+    In our endeavors together, we wish to be cognizant of the ongoing impacts of colonialism and our responsibility to actively work towards change through recognizing, honouring, reconciling and partnering with Indigenous people. We are committed to making space in this program for Indigenous participation and knowledge and to facilitate sharing back to Indigenous and settler communities.
   backgroundImage:
     image: /assets/land-acknowledgement.png
     alt: lines floating down

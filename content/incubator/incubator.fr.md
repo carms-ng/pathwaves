@@ -52,20 +52,21 @@ sectionTwo:
     distribution des apprentissages dans plusieurs formats médiatiques aux
     communautés créatives du Canada.
 sectionThree:
-  header: Acknowledgement de land
+  header: Reconnaissance du territoire
   landAcknowledgement: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam
-    phasellus. Eget velit aliquet sagittis id consectetur purus. Pellentesque
-    massa placerat duis ultricies lacus sed. Eu scelerisque felis imperdiet
-    proin fermentum. Posuere ac ut consequat semper viverra nam libero justo
-    laoreet. Eget gravida cum sociis natoque penatibus et magnis dis parturient.
-    Sem integer vitae justo eget. Quis enim lobortis scelerisque fermentum dui
-    faucibus. Iaculis at erat pellentesque adipiscing. Et tortor at risus
-    viverra adipiscing at. Varius morbi enim nunc faucibus a pellentesque sit.
+    Pathwaves est une initiative visant à mettre en lien et à rejoindre les
+    habitant·e·s de l’Île de la Tortue, berceau de nombreuses Premières Nations
+    et des Métis, des Mi’kmaq de l’Est jusqu’aux Haïda Gwaii de l’Ouest, des
+    Dénés du Nord jusqu’aux Anishnabe du Sud, sans oublier les quatre
+    territoires de l’Inuit Nunangat. Nous souhaitons exprimer notre
+    reconnaissance aux peuples autochtones pour leur protection de ces
+    territoires dont nous profitons aujourd’hui.
 
 
-    Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Justo donec enim diam vulputate ut pharetra. Turpis massa tincidunt dui ut ornare lectus sit amet. Nullam eget felis eget nunc lobortis mattis. Augue eget arcu dictum varius duis at. Morbi enim nunc faucibus a pellentesque sit. Vulputate enim nulla aliquet porttitor. Maecenas volutpat blandit aliquam etiam erat velit. Volutpat maecenas volutpat blandit aliquam. Facilisi nullam vehicula ipsum a. Neque sodales ut etiam sit amet nisl purus. Porttitor massa id neque aliquam vestibulum. Sit amet porttitor eget dolor morbi. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Pretium quam vulputate dignissim suspendisse.
+    Nous reconnaissons que Pathwaves est une initiative issue du siège social d’Envision à Tiohtià:ke, situé sur le territoire ancestral de la Nation Kanien’kehá:ka. La région est historiquement connue comme lieu de rencontre et de diplomatie, d’échange culturel, linguistique et technologique, de biens et de savoir. C’est dans cet esprit que Pathwaves nous rassemble dans un lieu de partage et d’échange.
+
+
+    Nous souhaitons que nos efforts communs se fassent en toute conscience des répercussions continues du colonialisme. Il nous revient donc d’œuvrer activement à opérer un changement en reconnaissant, en honorant, en nous réconciliant et en travaillant en partenariat avec les Peuples autochtones. Nous nous engageons à ce qu’il y ait de la place dans ce programme pour les participant·e·s et les connaissances autochtones ainsi qu’à faciliter son partage avec les communautés autochtones et coloniales.
   backgroundImage:
     image: /assets/land-acknowledgement.png
     alt: Des lignes qui coulent
