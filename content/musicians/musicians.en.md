@@ -45,4 +45,9 @@ sectionTwo:
       portrait:
         image: /assets/img_2243-felix-idigbe.jpg
         alt: Image of Kwiat
+    - artistName: Mattmac
+      pronouns: placeholder
+      portrait:
+        image: /assets/mattmac-2022-press-picture-1-david-hodges.jpg
+        alt: Image of Mattmac
 ---
