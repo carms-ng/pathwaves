@@ -60,4 +60,9 @@ sectionTwo:
       portrait:
         image: /assets/remy-rodden-2019-full-remy-rodden.jpg
         alt: Picture of Remy Rodden
+    - artistName: Ruby Singh
+      pronouns: he/hymn
+      portrait:
+        image: /assets/rup-6-ruby-singh.jpg
+        alt: Image of Ruby Singh
 ---
