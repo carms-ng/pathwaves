@@ -14,12 +14,12 @@ sectionTwo:
       portrait:
         image: /assets/adrian-headshot-a-fung.png
         alt: Picture of Adrian Fung
-    - artistName: placeholder 2
-      pronouns: placeholder 2
-      name: placeholder 2
+    - artistName: choi
+      pronouns: He/Him
+      name: ""
       portrait:
-        image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
-        alt: placeholder 2
+        image: /assets/img_7671-liam-choi.jpg
+        alt: Picture of choi
     - artistName: placeholder 3
       pronouns: placeholder 3
       portrait:
