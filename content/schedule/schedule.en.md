@@ -7,7 +7,7 @@ sectionOne:
   labelZoom: Zoom link
   labelScheduleShow: See full schedule
   labelScheduleHide: Hide full schedule
-  noneText: Nothing happening on your select day!
+  noneText: Nothing happening on your selected day!
   button:
     url: https://discord.gg/xzBYznTaFm
     linkText: Pathwaves Discord
