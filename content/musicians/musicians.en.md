@@ -30,4 +30,14 @@ sectionTwo:
       portrait:
         image: /assets/e.-kennedy-pc-sarah-kierstead-emily-kennedy.jpg
         alt: Picture of Emily Kennedy
+    - artistName: Fraud Perry
+      pronouns: she/her
+      portrait:
+        image: /assets/fraud-perry-pic-melinda-massolas.jpg
+        alt: Picture of Fraud Perry
+    - artistName: Ida Toninato
+      pronouns: she/her
+      portrait:
+        alt: Picture of Ida Toninato
+        image: /assets/_x4a3837-ida-toninato.jpg
 ---
