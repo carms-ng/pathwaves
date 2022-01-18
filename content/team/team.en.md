@@ -83,6 +83,20 @@ sectionOne:
           interactivity, he often uses it to promote connections between
           audiences, objects and the environment.
       pronouns: he
+    - name: Magally Zelaya
+      pronouns: she/her
+      role: Communications Officer
+      portrait:
+        image: /assets/mzelaya-magally-zelaya.jpg
+        alt: Magally Zelaya is a writer, multimedia journalist, and communications
+          specialist. Her work has appeared in such publications as The
+          Guardian, Al-Jazeera America, the Toronto Star, msnbc.com, and
+          Cosmopolitan UK,. As a fiction writer, she's received support from the
+          Banff Centre for the Arts, Ontario Arts Council, and the Toronto Arts
+          Council. She holds an MFA in Creative Writing from Rutgers
+          University–Newark and a Master of Journalism degree from the
+          University of British Columbia.
+      entity: "  "
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
