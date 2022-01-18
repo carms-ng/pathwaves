@@ -50,4 +50,9 @@ sectionTwo:
       portrait:
         image: /assets/mattmac-2022-press-picture-1-david-hodges.jpg
         alt: Image of Mattmac
+    - artistName: Minkworks
+      pronouns: she/her
+      portrait:
+        alt: Picture of Minkworks
+        image: /assets/photo-profil-plateformes-coralie-gauthier.jpg
 ---
