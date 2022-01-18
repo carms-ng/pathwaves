@@ -5,7 +5,7 @@ sectionOne:
   header: Team
   members:
     - name: Ryhna Thompson
-      pronouns: placeholder
+      pronouns: she/her/elle
       role: Producer, Co-Designer
       entity: Envision Management and Production
       portrait:
@@ -37,7 +37,7 @@ sectionOne:
           Lesya joins Pathwaves as a project manager and co-designer from
           Envision Management and Production.
     - name: Patti Schmidt
-      pronouns: placeholder 3
+      pronouns: she/her
       role: Speaker Liaison, Co-Designer
       entity: Envision Management and Production
       portrait:
@@ -56,7 +56,7 @@ sectionOne:
           variety of organizations including, The British Council Canada, Pride
           Toronto and Envision Management. "
     - name: Suzanne Stein
-      pronouns: placeholder 4
+      pronouns: she/they
       role: Facilitator, Futurist, Co-Designer
       entity: "OCAD "
       portrait:
@@ -82,7 +82,7 @@ sectionOne:
           electronics. Drawn to the altered perspectives one can provoke with
           interactivity, he often uses it to promote connections between
           audiences, objects and the environment.
-      pronouns: placeholder
+      pronouns: he
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
