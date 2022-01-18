@@ -27,12 +27,12 @@ export default function Calendar({
 
   // Get courses on the selected date
   // offset for timezone
-  const tzoffset = selectedDate.getTimezoneOffset() * 60000; // offset in milliseconds
-  const localISOTime = (new Date(selectedDate - tzoffset)).toISOString().slice(0, -1);
+  // const tzoffset = selectedDate.getTimezoneOffset() * 60000; // offset in milliseconds
+  // const localISOTime = (new Date(selectedDate - tzoffset)).toISOString().slice(0, -1);
 
-  const selectedDateString = localISOTime.split('T')[0];
+  const selectedDateString = selectedDate.toISOString().split('T')[0];
   const selectedDateGroup = dateGroups[selectedDateString]
-    ? dateGroups[selectedDateString].sort((a, b) => new Date(b.start) - new Date(a.start))
+    ? dateGroups[selectedDateString]
     : [];
 
   // Handle display full schedule
@@ -108,7 +108,7 @@ export default function Calendar({
 }
 
 const CalendarStyles = styled.section`
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
   display: grid;
   max-width: var(--maxWidthSm);
   padding: var(--padSm);
@@ -200,6 +200,7 @@ const CalendarStyles = styled.section`
   @media(min-width: 1024px) {
     max-width: var(--maxWidthLg);
     padding: var(--padLg);
+    padding-bottom: 5rem;
     #greet {
       padding: 0 3rem;
     }

@@ -31,8 +31,6 @@ export default function FullSchedule({
 
         <PhaseButtons labels={labelPhases} phase={phase} setPhase={setPhase} />
 
-        <p className="font-lg">{page.description}</p>
-
         <PhaseSchedule dates={phaseGroups[phase]} lang={lang} page={page} />
       </div>
     </FullScheduleStyles>
@@ -57,10 +55,11 @@ const FullScheduleStyles = styled.section`
   @media(min-width: 1024px) {
     max-width: var(--maxWidthLg);
     padding: var(--padLg);
+    padding-top: 1rem;
     .wrapper-auth {
       padding: 5rem;
     }
-    h2, .font-lg {
+    h2 {
       text-align: center;
       margin: 0 auto;
     }
