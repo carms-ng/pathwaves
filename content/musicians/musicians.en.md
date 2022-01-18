@@ -20,9 +20,9 @@ sectionTwo:
       portrait:
         image: /assets/img_7671-liam-choi.jpg
         alt: Picture of choi
-    - artistName: placeholder 3
-      pronouns: placeholder 3
+    - artistName: Della Orrey
+      pronouns: she/her/hers/elle
       portrait:
-        image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
-        alt: placeholder 3
+        image: /assets/open-studio-sep22-53-della-orrey.jpg
+        alt: Picture of Della Orrey
 ---
