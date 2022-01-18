@@ -65,11 +65,21 @@ sectionTwo:
       portrait:
         image: /assets/rup-6-ruby-singh.jpg
         alt: Image of Ruby Singh
+    - artistName: Samuel Harvey
+      pronouns: He
+      portrait:
+        image: /assets/thinking-samuel-harvey.jpg
+        alt: Image of Samuel Harvey
     - artistName: STORRY
       pronouns: she/her
       portrait:
         image: /assets/storry-junos-2021-photo-storry.jpg
         alt: Picture of STORRY
+    - artistName: Susan O’Quinn / ShadowWolf
+      pronouns: she/her
+      portrait:
+        image: /assets/c680ab95-19fc-40dc-9322-d9cbd252d6e7-susan-o-quinn.jpg
+        alt: Image of Susan O’Quinn / ShadowWolf
     - artistName: Tough Sell
       pronouns: they/them and/or she/her
       portrait:
@@ -90,9 +100,4 @@ sectionTwo:
       portrait:
         image: /assets/img_2243-felix-idigbe.jpg
         alt: Image of Zuki
-    - artistName: Susan O’Quinn / ShadowWolf
-      pronouns: she/her
-      portrait:
-        image: /assets/c680ab95-19fc-40dc-9322-d9cbd252d6e7-susan-o-quinn.jpg
-        alt: Image of Susan O’Quinn / ShadowWolf
 ---
