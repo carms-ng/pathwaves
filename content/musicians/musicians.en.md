@@ -25,4 +25,9 @@ sectionTwo:
       portrait:
         image: /assets/open-studio-sep22-53-della-orrey.jpg
         alt: Picture of Della Orrey
+    - artistName: Emily Kennedy
+      pronouns: she/her/they
+      portrait:
+        image: /assets/e.-kennedy-pc-sarah-kierstead-emily-kennedy.jpg
+        alt: Picture of Emily Kennedy
 ---
