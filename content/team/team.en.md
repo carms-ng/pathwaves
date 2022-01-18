@@ -109,6 +109,20 @@ sectionOne:
           Industry and the recipient of the 2019 Brian Chater Industry Award,
           recognizing a transformative commitment to the Canadian music
           industry.
+    - name: Le Lin
+      pronouns: he/they
+      role: Graphic Designer
+      entity: "  "
+      portrait:
+        image: /assets/bio-le-lin.jpg
+        alt: "My name is Le Lin (pronouns: he/they). I am a transgender Teochew-Canadian
+          multi-disciplinary artist, designer, activist, and researcher based
+          from Montréal. I love expanding and finding new ways to create art
+          through print-making, book-making, tattooing, ceramics, and digital
+          web interventions. I am happy to be part of Pathwaves, helping with
+          branding and graphic design. I am a firm believer that
+          art/design/music should be tools of resistance, acts of vulnerability,
+          and community empowerment."
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
