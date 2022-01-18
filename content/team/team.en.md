@@ -4,21 +4,38 @@ title: Team
 sectionOne:
   header: Team
   members:
-    - name: Lesya Nakoneczny
-      pronouns: she/her
-      role: Codesigner, Project Manager
+    - name: Ryhna Thompson
+      pronouns: placeholder
+      role: Producer, Co-Designer
       entity: Envision Management and Production
       portrait:
-        image: /assets/lesya_lowres-1.jpg
-        alt: Lesya is a project manager and co-designer for the Pathwaves Digital
-          Literacy Incubator.
-    - name: placeholder 2
-      pronouns: placeholder 2
-      role: placeholder 2
-      entity: placeholder 2
+        image: /assets/ryhna-thompson-photo-ryhna-thompson.jpg
+        alt: Over more than two decades, Ryhna has been an artist, entrepreneur, leader
+          and change maker in the Canadian and international cultural and
+          creative industries. Under the banner of Envision Management &
+          Production, Ryhna works with artists to conceive, produce and manage
+          musical projects, often in the realm where music intersects with film,
+          animation, theatre, literature and new technologies - and all in the
+          context of building authentic, long-term careers. Always keen to
+          contribute to her communities, Ryhna has sat on numerous non-profit
+          boards and committees to support a healthy, sustainable, positive and
+          innovative creative economy.
+    - name: Lesya Maria Nakoneczny
+      pronouns: she/her
+      role: Project Manager, Co-Designer
+      entity: Envision Management and Production
       portrait:
-        image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
-        alt: placeholder 2
+        image: /assets/lesya_lowres-1_pathwaves.jpg
+        alt: Lesya Maria Nakoneczny is an intermedia artist and arts professional based
+          in Montreal. With a background in both geography and fine art, she has
+          worked on various projects in film, music, the arts, and academia,
+          including co-directing Art Matters Festival, working on the
+          documentary films “A Time To Swim” and “Lament for the Land,” and
+          more. Her current interests include internet culture and ethics, and
+          how capitalism and technology interact with and influence identity,
+          the psyche, collective experience and interpersonal relationships.
+          Lesya joins Pathwaves as a project manager and co-designer from
+          Envision Management and Production.
     - name: placeholder 3
       pronouns: placeholder 3
       role: placeholder 3
