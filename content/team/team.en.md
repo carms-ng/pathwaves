@@ -55,13 +55,23 @@ sectionOne:
           Centre. She continues to work in digital arts and culture for a
           variety of organizations including, The British Council Canada, Pride
           Toronto and Envision Management. "
-    - name: placeholder 4
+    - name: Suzanne Stein
       pronouns: placeholder 4
-      role: placeholder 4
-      entity: placeholder 4
+      role: Facilitator, Futurist, Co-Designer
+      entity: "OCAD "
       portrait:
-        alt: placeholder 4
-        image: /assets/20200310.jpg
+        alt: Stein is a Foresight Analyst, Mentor, and Educator. She is Lab Director of
+          OCAD's Super Ordinary, which focusses on complex problem solving, new
+          technologies and research methods. She is a founding faculty member of
+          OCAD U’s Digital Futures and Strategic Foresight & Innovation graduate
+          programs. Stein has been an adjunct Faculty at AHO (Norway), the CFC
+          (Canada), and the Unfinished Business School (virtual). Previously
+          acting as Deputy Director and Principal Research Fellow in Technology
+          Futures at SMARTlab (United Kingdom) and part of Nokia Corporate
+          Strategy’s Insight & Foresight group. Earlier work included Sapient
+          Corporation, as Discipline Lead for the Experience Modeling (XMod)
+          group in London, and Director of the User Experience Group.
+        image: /assets/stein-suzanne-stein.jpg
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
