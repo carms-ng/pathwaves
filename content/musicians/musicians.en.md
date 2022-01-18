@@ -65,4 +65,9 @@ sectionTwo:
       portrait:
         image: /assets/rup-6-ruby-singh.jpg
         alt: Image of Ruby Singh
+    - artistName: STORRY
+      pronouns: she/her
+      portrait:
+        image: /assets/storry-junos-2021-photo-storry.jpg
+        alt: Picture of STORRY
 ---
