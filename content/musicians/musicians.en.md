@@ -75,4 +75,9 @@ sectionTwo:
       portrait:
         image: /assets/img_7726-emerson-gaglardi.jpg
         alt: Image of Tough Sell
+    - artistName: Wake Island
+      pronouns: he/him
+      portrait:
+        image: /assets/philippe-manasseh-photo-by-mohamad-abdouni-styling-by-charles-nicola-philippe-m.jpg
+        alt: Image of Wake Island
 ---
