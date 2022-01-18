@@ -20,14 +20,22 @@ export default function TeamPageTemplate({ pageContext, data }) {
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
       <Seo title={`${title}`} lang={pageContext.lang} />
+      <TeamHeroStyles>
+        <GatsbyImage
+          image={sectionOne.backgroundImage.image.childImageSharp.gatsbyImageData}
+          alt={sectionOne.backgroundImage.alt}
+          className="background"
+        />
+        <h1>{sectionOne.header}</h1>
+      </TeamHeroStyles>
+
+      <CardsMember members={sectionOne.members} />
 
       <TeamPageStyles>
-
-        {/* Section About */}
         <section id="collaborators">
-          <p className="font-lg">{sectionOne.description}</p>
+          <p className="font-lg">{sectionTwo.description}</p>
           <div className="cards">
-            {sectionOne.collaborators.map(({
+            {sectionTwo.collaborators.map(({
               name, url, logo, description,
             }) => (
               <div key={name} className="card">
@@ -43,22 +51,23 @@ export default function TeamPageTemplate({ pageContext, data }) {
             ))}
           </div>
         </section>
-
-        {/* Section Team */}
-        <section id="team">
-          <h1>{sectionTwo.header}</h1>
-          <p>{sectionTwo.subHeader}</p>
-          <CardsMember members={sectionTwo.members} />
-
-        </section>
       </TeamPageStyles>
     </Layout>
   );
 }
 
-const TeamPageStyles = styled.section`
+const TeamHeroStyles = styled.section`
+  position: relative;
+  h1 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+`;
+
+const TeamPageStyles = styled.div`
   padding: var(--padMd);
-  padding-top: 8rem;
   padding-bottom: 8rem;
 
   section {
@@ -96,28 +105,17 @@ const TeamPageStyles = styled.section`
     }
   }
 
-  section#team {
-    text-align: center;
-    margin: 0 auto;
-    > p {
-      margin-bottom: 5rem;
-    }
-  }
   @media (min-width: 640px) {
     padding: var(--padMd);
   }
 
   @media (min-width: 1024px) {
-    padding: var(--padLg);
-
     section#collaborators {
-      margin-bottom: 8rem;
       .font-lg {
         text-align: center;
       }
       .cards {
         max-width: var(--maxWidth);
-
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-auto-flow: column;
@@ -180,7 +178,7 @@ export const query = graphql`
       childMarkdownRemark {
         frontmatter {
           title
-          sectionOne {
+          sectionTwo {
             description
             collaborators {
               url
@@ -202,9 +200,20 @@ export const query = graphql`
               }
             }
           }
-          sectionTwo {
+          sectionOne {
             header
-            subHeader
+            backgroundImage {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: TRACED_SVG,
+                    layout: FULL_WIDTH,
+                    quality: 100
+                  )
+                }
+              }
+              alt
+            }
             members {
               name
               pronouns
@@ -214,7 +223,7 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 320,
+                      width: 400,
                       height: 240,
                       placeholder: TRACED_SVG,
                       layout: CONSTRAINED,

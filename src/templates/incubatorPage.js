@@ -79,6 +79,11 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
         </div>
         <p className="font-lg">{sectionTwo.endNote}</p>
       </SectionSecondaryStyles>
+      <GatsbyImage
+        image={sectionThree.backgroundImage.image.childImageSharp.gatsbyImageData}
+        alt={sectionThree.backgroundImage.alt}
+        style={{ marginTop: '-12vw', marginBottom: '-12vw' }}
+      />
       <SectionSecondaryStyles>
         <h2>{sectionThree.header}</h2>
         <ReactMarkdown>{sectionThree.landAcknowledgement}</ReactMarkdown>
@@ -113,16 +118,18 @@ const SectionOneStyles = styled.section`
       padding-bottom: 0;
     }
     .grid-ladder-wrapper {
-      position: relative;
       .background {
-        position: absolute;
-        left: 0;
-        right: 0;
+        margin-top: -10vw;
+        margin-bottom: -10vw;
+      }
+      .background {
         &:first-child {
-          top: 0;
+          margin-top: -10vw;
+          margin-bottom: -36vw;
         }
         &:last-child {
-          bottom: 0;
+          margin-top: -36vw;
+          margin-bottom: -10vw;
         }
       }
     }
@@ -343,6 +350,18 @@ export const query = graphql`
           sectionThree {
             header
             landAcknowledgement
+            backgroundImage {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: TRACED_SVG,
+                    layout: FULL_WIDTH,
+                    quality: 100
+                  )
+                }
+              }
+              alt
+            }
           }
         }
       }

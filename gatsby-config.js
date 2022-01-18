@@ -8,17 +8,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-auth0',
-      options: {
-        domain: process.env.AUTH0_DOMAIN,
-        clientId: process.env.AUTH0_CLIENT_ID,
-      },
-    },
-    'gatsby-plugin-netlify-cms',
-    'gatsby-plugin-styled-components',
-    'gatsby-plugin-image',
-    'gatsby-plugin-react-helmet',
-    {
       resolve: 'gatsby-plugin-sharp',
       options: {
         defaults: {
@@ -38,6 +27,32 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          // gatsby-remark-relative-images must go before gatsby-remark-images
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-auth0',
+      options: {
+        domain: process.env.AUTH0_DOMAIN,
+        clientId: process.env.AUTH0_CLIENT_ID,
+      },
+    },
+    'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/assets`,
@@ -55,21 +70,6 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/assets/images/icon.png',
-      },
-    },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          // gatsby-remark-relative-images must go before gatsby-remark-images
-          'gatsby-remark-relative-images',
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 590,
-            },
-          },
-        ],
       },
     },
   ],

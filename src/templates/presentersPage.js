@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Hero from '../components/Hero';
-import CardsPresenter from '../components/CardsPresenter';
+import CardsMember from '../components/CardsMember';
 
 export default function PresentersPageTemplate({ pageContext, data }) {
   // Prepare Content
@@ -21,7 +21,7 @@ export default function PresentersPageTemplate({ pageContext, data }) {
       <Seo title={`${title}`} lang={pageContext.lang} />
       <Hero header={sectionOne.header} backgroundImage={sectionOne.backgroundImage} />
 
-      <CardsPresenter members={sectionTwo.members} />
+      <CardsMember members={sectionTwo.members} />
     </Layout>
   );
 }

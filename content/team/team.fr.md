@@ -2,6 +2,19 @@
 templateKey: teamPage.js
 title: L'equipe
 sectionOne:
+  header: L'equipe
+  members:
+    - name: Carms Ng
+      pronouns: fr them/them
+      role: fr Dev
+      entity: fr Some Entity
+      portrait:
+        image: /assets/lines.png
+        alt: placeholder
+  backgroundImage:
+    image: /assets/team2.png
+    alt: ligne hoverer
+sectionTwo:
   collaborators:
     - name: Envision
       description: Envision Management & Production est une compagnie de gestion
@@ -54,24 +67,4 @@ sectionOne:
   description: L'incubateur Pathwaves est produit par Envision Management &
     Production en partenariat avec le Centre Phi et l'Université OCAD, et avec
     le soutien financier du Conseil des Arts du Canada.
-sectionTwo:
-  subHeader: Content de ....
-  header: L'equipe de co-design
-  members:
-    - name: Carms Ng
-      pronouns: fr them/them
-      role: fr Dev
-      entity: fr Some Entity
-      portrait:
-        image: /assets/lines.png
-        alt: placeholder
-sectionThree:
-  header: FR Land Acknowledgements
-  description: FR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-    est laborum.
 ---

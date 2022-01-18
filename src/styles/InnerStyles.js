@@ -52,13 +52,6 @@ const BgImageWrapper = styled.section`
   }
 `;
 
-const BgImageBetweenWrapper = styled.section`
-  .background {
-    margin-top: -10vw;
-    margin-bottom: -10vw;
-  }
-`;
-
 const BgImageRightWrapper = styled.section`
   position: relative;
 
@@ -115,7 +108,6 @@ const CardsSectionStyles = styled.section`
 export {
   AuthHeroStyles,
   BgImageWrapper,
-  BgImageBetweenWrapper,
   BgImageRightWrapper,
   CardsThreesStyles,
   CardsSectionStyles,

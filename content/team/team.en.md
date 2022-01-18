@@ -2,6 +2,41 @@
 templateKey: teamPage.js
 title: Team
 sectionOne:
+  header: Team
+  members:
+    - name: Lesya Nakoneczny
+      pronouns: she/her
+      role: Codesigner, Project Manager
+      entity: Envision Management and Production
+      portrait:
+        image: /assets/lesya_lowres-1.jpg
+        alt: Lesya is a project manager and co-designer for the Pathwaves Digital
+          Literacy Incubator.
+    - name: placeholder 2
+      pronouns: placeholder 2
+      role: placeholder 2
+      entity: placeholder 2
+      portrait:
+        image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
+        alt: placeholder 2
+    - name: placeholder 3
+      pronouns: placeholder 3
+      role: placeholder 3
+      entity: placeholder 3
+      portrait:
+        image: /assets/craig-mckay-jmurdhtm7ng-unsplash.jpg
+        alt: placeholder 3
+    - name: placeholder 4
+      pronouns: placeholder 4
+      role: placeholder 4
+      entity: placeholder 4
+      portrait:
+        alt: placeholder 4
+        image: /assets/20200310.jpg
+  backgroundImage:
+    image: /assets/team2.png
+    alt: lines hovering
+sectionTwo:
   description: Pathwaves is being produced by Envision Management & Production in
     partnership with the Phi Centre and OCAD University, with financial support
     from the Canada Council for the Arts.
@@ -53,46 +88,4 @@ sectionOne:
       description: The Canada Council for the Arts is Canada’s public arts funder,
         with a mandate to foster and promote the study and enjoyment of, and the
         production of works in, the arts.
-sectionTwo:
-  header: Team
-  subHeader: Glad you're taking the time to get to know us better
-  members:
-    - name: Lesya Nakoneczny
-      pronouns: she/her
-      role: Codesigner, Project Manager
-      entity: Envision Management and Production
-      portrait:
-        image: /assets/lesya_lowres-1.jpg
-        alt: Lesya is a project manager and co-designer for the Pathwaves Digital
-          Literacy Incubator.
-    - name: placeholder 2
-      pronouns: placeholder 2
-      role: placeholder 2
-      entity: placeholder 2
-      portrait:
-        image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
-        alt: placeholder 2
-    - name: placeholder 3
-      pronouns: placeholder 3
-      role: placeholder 3
-      entity: placeholder 3
-      portrait:
-        image: /assets/craig-mckay-jmurdhtm7ng-unsplash.jpg
-        alt: placeholder 3
-    - name: placeholder 4
-      pronouns: placeholder 4
-      role: placeholder 4
-      entity: placeholder 4
-      portrait:
-        alt: placeholder 4
-        image: /assets/20200310.jpg
-sectionThree:
-  header: Land Acknowledgements
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-    est laborum.
 ---
