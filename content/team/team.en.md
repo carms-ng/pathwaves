@@ -97,6 +97,18 @@ sectionOne:
           University–Newark and a Master of Journalism degree from the
           University of British Columbia.
       entity: "  "
+    - name: Allison Outhit
+      pronouns: she/her/hers
+      role: Equity & Inclusion Consultant
+      entity: "  "
+      portrait:
+        image: /assets/allisonouthit-credit-katherine-kwan-allison-outhit.jpg
+        alt: Allison Outhit LL.B is a Canadian Certified Inclusion Practitioner (CCIP)
+          and former music industry executive with 30+ years in the cultural
+          industries. She the founder of the Alliance for Equity in the Music
+          Industry and the recipient of the 2019 Brian Chater Industry Award,
+          recognizing a transformative commitment to the Canadian music
+          industry.
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
