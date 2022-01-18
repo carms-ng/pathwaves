@@ -398,7 +398,6 @@ collections:
         collapsed: true
         fields:
         - {label: Header, name: header, widget: string, i18n: true}
-        - {label: Description, name: description, widget: text, i18n: true}
         - {label: Time Label, name: labelTime, widget: string, i18n: true}
         - {label: Course Label, name: labelCourse, widget: string, i18n: true}
         - {label: Calendar Label, name: labelCalendar, widget: string, i18n: true}
@@ -676,6 +675,8 @@ collections:
     create: true
     delete: true
     i18n: true
+    summary: "{{title}} | Phase {{phaseNumber}} | {{start}}"
+    sortable_fields: ['title', 'description', 'start', 'phaseNumber']
     fields:
       - {label: Title, name: title, widget: string, i18n: true}
       - {label: Description, name: description, widget: text, i18n: true}

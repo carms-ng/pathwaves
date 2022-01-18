@@ -27,7 +27,7 @@ export default function Accordion({ items, page: { labelTime, labelCourse, label
               <Icon icon="akar-icons:chevron-down" className="icon-chevron" />
             </button>
             <div className="accordion-dropdown">
-              <p style={{ paddingTop: '2rem' }}>{description}</p>
+              <p style={{ paddingTop: '2rem', margin: 'unset' }}>{description}</p>
               <div>
                 <Icon icon="bi:person" />
                 <p>{presenter}</p>
@@ -72,10 +72,13 @@ const AccordionStyles = styled.div`
     width: 100%;
     background-color: var(--neutral);
     padding: 1.5rem 2rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 16px;
     align-items: center;
     color: var(--black);
+    white-space: unset;
+    text-align: left;
+    gap: 0.5rem;
     &:hover {
       background-color: #d6d8cb;
       color: var(--black);

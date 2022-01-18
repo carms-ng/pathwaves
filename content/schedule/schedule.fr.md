@@ -14,7 +14,4 @@ sectionTwo:
   labelCourse: Cours
   labelCalendar: Ajouter au calendrier
   labelViewMore: Voir plus
-  description: FR Delivered virtually from January to March 2022, the Pathwaves
-    Incubator consists of conferences, mentorship, master classes, workshops,
-    individual work, and knowledge-exchange.
 ---
