@@ -80,4 +80,9 @@ sectionTwo:
       portrait:
         image: /assets/philippe-manasseh-photo-by-mohamad-abdouni-styling-by-charles-nicola-philippe-m.jpg
         alt: Image of Wake Island
+    - artistName: x/o
+      pronouns: they/them
+      portrait:
+        image: /assets/xo_credit_katrin_braga_001-web-veron-xio.jpg
+        alt: Picture of x/o
 ---
