@@ -8,12 +8,12 @@ sectionOne:
     alt: lines
 sectionTwo:
   members:
-    - artistName: placeholder 1
-      pronouns: placeholder 1
-      name: placeholder 1
+    - artistName: Adrian Fung
+      pronouns: He/Him/His
+      name: ""
       portrait:
-        image: /assets/craig-mckay-jmurdhtm7ng-unsplash.jpg
-        alt: placeholder 1
+        image: /assets/adrian-headshot-a-fung.png
+        alt: Picture of Adrian Fung
     - artistName: placeholder 2
       pronouns: placeholder 2
       name: placeholder 2
