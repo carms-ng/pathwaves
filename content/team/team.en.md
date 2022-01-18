@@ -123,6 +123,20 @@ sectionOne:
           branding and graphic design. I am a firm believer that
           art/design/music should be tools of resistance, acts of vulnerability,
           and community empowerment."
+    - name: Rebecca Black
+      pronouns: she/her
+      role: Researcher, Foresight Analyst
+      entity: OCAD University
+      portrait:
+        image: /assets/rebeccablackheadshot.2018-black-current.jpg
+        alt: Rebecca is a sustainable business specialist who has been co-creating
+          strategies to address the climate crisis with international clients
+          for 15+ years. She is Founder of eco-communications and design agency
+          Black Current, Co-Founder of DEI championing nonprofit Women in
+          Renewable Energy WiRE and Director at TREC Renewable Energy incubator.
+          Rebecca holds a Master of Environmental Studies specializing in
+          Business & Sustainability (York University), and a Master of Design in
+          Strategic Foresight & Innovation (OCADU).
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
