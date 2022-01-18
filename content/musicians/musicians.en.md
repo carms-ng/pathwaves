@@ -40,4 +40,9 @@ sectionTwo:
       portrait:
         alt: Picture of Ida Toninato
         image: /assets/_x4a3837-ida-toninato.jpg
+    - artistName: Kwiat
+      pronouns: placeholder
+      portrait:
+        image: /assets/img_2243-felix-idigbe.jpg
+        alt: Image of Kwiat
 ---
