@@ -85,4 +85,9 @@ sectionTwo:
       portrait:
         image: /assets/xo_credit_katrin_braga_001-web-veron-xio.jpg
         alt: Picture of x/o
+    - artistName: Zuki
+      pronouns: placeholder
+      portrait:
+        image: /assets/img_2243-felix-idigbe.jpg
+        alt: Image of Zuki
 ---
