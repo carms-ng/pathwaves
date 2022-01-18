@@ -1,6 +1,5 @@
 ---
 templateKey: resourcesPage.js
 title: Resources
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: Here you can find useful resources for the different phases of the incubator!
 ---
