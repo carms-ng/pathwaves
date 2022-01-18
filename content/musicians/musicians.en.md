@@ -43,7 +43,7 @@ sectionTwo:
     - artistName: Kwiat
       pronouns: placeholder
       portrait:
-        image: /assets/img_2243-felix-idigbe.jpg
+        image: /assets/lightsredux-4-kwiat.jpg
         alt: Image of Kwiat
     - artistName: Mattmac
       pronouns: placeholder
