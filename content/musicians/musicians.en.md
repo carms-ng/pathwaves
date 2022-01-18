@@ -90,4 +90,9 @@ sectionTwo:
       portrait:
         image: /assets/img_2243-felix-idigbe.jpg
         alt: Image of Zuki
+    - artistName: Susan O’Quinn / ShadowWolf
+      pronouns: she/her
+      portrait:
+        image: /assets/c680ab95-19fc-40dc-9322-d9cbd252d6e7-susan-o-quinn.jpg
+        alt: Image of Susan O’Quinn / ShadowWolf
 ---
