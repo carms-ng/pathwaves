@@ -72,6 +72,17 @@ sectionOne:
           Corporation, as Discipline Lead for the Experience Modeling (XMod)
           group in London, and Director of the User Experience Group.
         image: /assets/stein-suzanne-stein.jpg
+    - name: Dan Freder
+      role: Technical Producer
+      entity: "  "
+      portrait:
+        image: /assets/danfreder-1-dan.jpg
+        alt: Dan's a new media artist, teacher and tinkerer based in Montreal, actively
+          developing works in time-based media; including video, programming and
+          electronics. Drawn to the altered perspectives one can provoke with
+          interactivity, he often uses it to promote connections between
+          audiences, objects and the environment.
+      pronouns: placeholder
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
