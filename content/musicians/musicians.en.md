@@ -55,4 +55,9 @@ sectionTwo:
       portrait:
         alt: Picture of Minkworks
         image: /assets/photo-profil-plateformes-coralie-gauthier.jpg
+    - artistName: Remy Rodden
+      pronouns: he/him
+      portrait:
+        image: /assets/remy-rodden-2019-full-remy-rodden.jpg
+        alt: Picture of Remy Rodden
 ---
