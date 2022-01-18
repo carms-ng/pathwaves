@@ -36,13 +36,25 @@ sectionOne:
           the psyche, collective experience and interpersonal relationships.
           Lesya joins Pathwaves as a project manager and co-designer from
           Envision Management and Production.
-    - name: placeholder 3
+    - name: Patti Schmidt
       pronouns: placeholder 3
-      role: placeholder 3
-      entity: placeholder 3
+      role: Speaker Liaison, Co-Designer
+      entity: Envision Management and Production
       portrait:
-        image: /assets/craig-mckay-jmurdhtm7ng-unsplash.jpg
-        alt: placeholder 3
+        image: /assets/_mg_3684-edit-p-s.jpg
+        alt: "Patti has been deeply involved in Canada's independent, underground music
+          and contemporary art communities for more than  25 years—from running
+          labels to performing, making radio and programming events. She joined
+          Brave New Waves on CBC Radio 2 in 1991, becoming Host and Executive
+          Producer, until the program ended in 2007. Until 2012, she continued
+          to front various CBC radio programs that illuminated music, arts and
+          culture across the country. For 11 years she worked as a curator and
+          producer for the MUTEK Montreal festival of electronic music and
+          digital creativity. In 2016 she was the Artistic Director of the
+          Convergence: Electronic Music + Visual Arts residency at the Banff
+          Centre. She continues to work in digital arts and culture for a
+          variety of organizations including, The British Council Canada, Pride
+          Toronto and Envision Management. "
     - name: placeholder 4
       pronouns: placeholder 4
       role: placeholder 4
