@@ -25,7 +25,7 @@ export default function HomePageTemplate({ pageContext, data }) {
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
-  const collabs = data.logos.childMarkdownRemark.frontmatter.sectionOne.collaborators;
+  const collabs = data.logos.childMarkdownRemark.frontmatter.sectionTwo.collaborators;
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
@@ -245,7 +245,7 @@ export const query = graphql`
     logos: file(relativeDirectory: {eq: "team"}, base: {regex: $regx}) {
       childMarkdownRemark {
         frontmatter {
-          sectionOne {
+          sectionTwo {
             collaborators {
               name
               url
