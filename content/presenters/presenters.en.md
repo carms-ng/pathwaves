@@ -64,4 +64,16 @@ sectionTwo:
           the Los Angeles Review of Books, Eye on Design, Quartz, OneZero, and
           Aeon. She lives in Los Angeles, where she is an advisor to graduate
           design students at Art Center College of Design."
+    - name: Cherie Hu
+      pronouns: she/her/hers
+      role: Presenter
+      entity: "  "
+      portrait:
+        image: /assets/cherie-hu-head-shot-2021-cherie-hu.jpg
+        alt: Cherie Hu is the founder and publisher of Water & Music, a newsletter and
+          research DAO on a mission to empower the music industry with the
+          knowledge, network and skills to do more collaborative, innovative and
+          progressive work with technology. Previously, she wrote about music
+          and tech for publications including Billboard, Forbes, Pitchfork and
+          NPR Music.
 ---
