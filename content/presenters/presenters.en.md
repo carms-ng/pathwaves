@@ -76,4 +76,15 @@ sectionTwo:
           progressive work with technology. Previously, she wrote about music
           and tech for publications including Billboard, Forbes, Pitchfork and
           NPR Music.
+    - name: '"Parkside" Mike Renaud'
+      pronouns: he/him
+      role: Presenter
+      entity: Hidden Pony Records & Management
+      portrait:
+        image: /assets/mike-1-parkside-h.p..jpg
+        alt: "Mike “Parkside'' Renaud is the Executive Creative Director of Hidden Pony
+          Records & Management, one of the premiere talent development companies
+          in Canada. To-date, artists under Renaud’s guidance have been
+          nominated for over 20 JUNO Awards, including three JUNO Award wins in
+          the artist development categories.  "
 ---
