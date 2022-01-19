@@ -87,4 +87,20 @@ sectionTwo:
           in Canada. To-date, artists under Renaud’s guidance have been
           nominated for over 20 JUNO Awards, including three JUNO Award wins in
           the artist development categories.  "
+    - name: Jeff Waye
+      pronouns: he/him
+      role: Presenter
+      entity: Third Side Music
+      portrait:
+        image: /assets/048-third-side-music-photo-susan-moss-copy-jeff-waye.jpg
+        alt: Jeff Waye is a 35 year + music business lifer, and currently C.O.O and
+          co-owner of independent, international, music publisher Third Side
+          Music. The company currently represents over 70 000 songs from a wide
+          ranging roster, including Kurt Vile, Courtney Barnett, Pharoah
+          Sanders, Colin Stetson, SOFI TUKKER, BADBADNOTGOOD, Cinematic
+          Orchestra, Unknown Mortal Orchestra, Flying Lotus, Beverly
+          Glenn-Copeland, Studio One, Soundway and many more. His previous
+          experience includes label manager for Ninja Tune Records, production
+          lead for Amon Tobin ISAM Live, buyer at Cargo Records, show booker,
+          record retail and all other manner of general music nerdery.
 ---
