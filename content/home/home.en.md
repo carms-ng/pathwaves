@@ -19,9 +19,9 @@ sectionTwo:
     - name: Della Orrey
       nameAlt: "    "
       type: Participant Spotlight
-      description: I think that the intersection of music and technology is essential
-        in the democratization of being able to access and create in the spirit
-        of DIY exploration.
+      description: '"I think that the intersection of music and technology is
+        essential in the democratization of being able to access and create in
+        the spirit of DIY exploration."'
       button:
         linkText: Meet the participants
         url: /musicians
@@ -31,19 +31,19 @@ sectionTwo:
     - name: choi
       nameAlt: "    "
       type: Participant Spotlight
-      description: This technological advancement (the digital home studio) has
+      description: '"This technological advancement (the digital home studio) has
         created a tremendous shift in the music industry and opened doors for so
         many people who otherwise would not have the available resources to
-        create music.
+        create music."'
       button:
         linkText: Meet the participants
         url: /musicians
       img:
         image: /assets/img_7671-liam-choi.jpg
         alt: Picture of choi
-    - description: Artists have access to so much technological power compared to the
-        first phonograph, opening up vast possibilities in both how we create
-        and how we share music.
+    - description: '"Artists have access to so much technological power compared to
+        the first phonograph, opening up vast possibilities in both how we
+        create and how we share music."'
       name: Emily Kennedy
       type: Participant Spotlight
       img:
