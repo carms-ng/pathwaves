@@ -17,7 +17,7 @@ export default function Calendar({
   // Group courses by Date
   const dateGroups = courses.nodes.reduce((groups, node) => {
     const obj = node.childMarkdownRemark.frontmatter;
-    const date = obj.start.split('T')[0];
+    const date = new Date(obj.start).toLocaleDateString();
     // Create Empty Array if Date key doesn't exist
     if (!groups[date]) { groups[date] = []; }
     // Push artivity to the array
@@ -25,12 +25,7 @@ export default function Calendar({
     return groups;
   }, {});
 
-  // Get courses on the selected date
-  // offset for timezone
-  // const tzoffset = selectedDate.getTimezoneOffset() * 60000; // offset in milliseconds
-  // const localISOTime = (new Date(selectedDate - tzoffset)).toISOString().slice(0, -1);
-
-  const selectedDateString = selectedDate.toISOString().split('T')[0];
+  const selectedDateString = selectedDate.toLocaleDateString();
   const selectedDateGroup = dateGroups[selectedDateString]
     ? dateGroups[selectedDateString]
     : [];
@@ -39,7 +34,6 @@ export default function Calendar({
   const toggleFullSchedule = () => {
     const updatedShow = !showFullSchedule;
     setShowFullSchedule(updatedShow);
-    // smoothscroll 100vh;
     const scrollTop = window.scrollY + window.innerHeight;
     if (updatedShow) {
       setTimeout(() => {

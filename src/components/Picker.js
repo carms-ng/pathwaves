@@ -20,7 +20,7 @@ export default function Picker({
           setSelectedDate(date);
         }}
         dayClassName={(date) => {
-          const dateString = date.toISOString().split('T')[0];
+          const dateString = date.toLocaleDateString();
           const hasEvent = Object.keys(dateGroups).includes(dateString);
           return (hasEvent ? 'underlined' : '');
         }}

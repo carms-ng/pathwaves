@@ -17,7 +17,7 @@ export default function FullSchedule({
 
   Object.keys(phaseGroups).forEach((key) => {
     phaseGroups[key] = phaseGroups[key].reduce((group, entry) => {
-      const date = entry.start.split('T')[0];
+      const date = new Date(entry.start).toLocaleDateString();
       if (!group[date]) { group[date] = []; }
       group[date].push(entry);
       return group;
