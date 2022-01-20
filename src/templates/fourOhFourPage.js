@@ -1,32 +1,34 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import { GatsbyImage } from "gatsby-plugin-image"
-import styled from "styled-components"
-import LocalizedLink from "../components/LocalizedLink"
-import Seo from "../components/Seo"
+import React from 'react';
+import { graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import styled from 'styled-components';
 
-// markup
-export default function NotFoundPageTemplate({ pageContext, data: { page } }) {
-  const { title, header, img, linkText } = page.childMarkdownRemark.frontmatter
+import Layout from '../components/Layout';
+import LocalizedLink from '../components/LocalizedLink';
+import Seo from '../components/Seo';
+
+export default function NotFoundPageTemplate({ pageContext, data }) {
+  const {
+    title, header, img, linkText,
+  } = data.page.childMarkdownRemark.frontmatter;
+
+  const settings = data.settings.childMarkdownRemark.frontmatter;
 
   return (
-    <Layout noFooter={true} lang={pageContext.lang} slug={pageContext.slug} >
+    <Layout noFooter lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
       <FourOhFourStyles>
         <Seo title={title} lang={pageContext.lang} />
         <GatsbyImage
           image={img.image.childImageSharp.gatsbyImageData}
-          alt={img.alt} />
-        <h1>{header}</h1>
-        <LocalizedLink
-          className="btn"
-          lang={pageContext.lang}
-          to="/"
-          text={linkText}
+          alt={img.alt}
         />
+        <h1>{header}</h1>
+        <LocalizedLink className="btn" lang={pageContext.lang} to="/">
+          {linkText}
+        </LocalizedLink>
       </FourOhFourStyles>
     </Layout>
-  )
+  );
 }
 
 const FourOhFourStyles = styled.div`
@@ -43,10 +45,57 @@ const FourOhFourStyles = styled.div`
     padding-left: 2rem;
     padding-right: 2rem;
   }
-`
+`;
 
 export const query = graphql`
   query($regx: String) {
+    settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+      childMarkdownRemark {
+        frontmatter {
+          logo {
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
+              }
+            }
+            alt
+          }
+          nav {
+            navItems {
+              linkAddress
+              linkText
+              show
+              childNavItems {
+                linkAddress
+                linkText
+              }
+            }
+            navItemsSecondary {
+              linkAddress
+              linkText
+            }
+            menuAuth {
+              labelLogin
+              labelLogout
+              labelMenu
+              navItemsAuth {
+                linkAddress
+                linkText
+              }
+            }
+            buttonDiscord {
+              linkText
+              url
+            }
+            labelPhases {
+              labelPhaseOne
+              labelPhaseTwo
+              labelPhaseThree
+            }
+          }
+        }
+      }
+    }
     page: file(relativeDirectory: {eq: "fourOhFour"}, base: {regex: $regx}) {
       childMarkdownRemark {
         frontmatter {
@@ -69,4 +118,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

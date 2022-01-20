@@ -32,5 +32,6 @@ const EqualWeb = `
     coreCall.setAttribute('data-cfasync', true );
     body? body.appendChild(coreCall) : head.appendChild(coreCall);
   })(document, document.head, document.body);
-`
-export { EqualWeb }
+`;
+
+export default EqualWeb;

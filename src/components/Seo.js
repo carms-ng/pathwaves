@@ -1,10 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
-import ogImage from "../assets/images/og-pathwaves.png"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
+import ogImage from '../assets/images/og-pathwaves.png';
 
-function Seo({ description, lang, meta, title }) {
+function Seo({
+  description, lang, meta, title,
+}) {
   // query site data from CMS
   const { site, siteSetting } = useStaticQuery(
     graphql`
@@ -26,22 +28,21 @@ function Seo({ description, lang, meta, title }) {
           }
         }
       }
-    `
-  )
+    `,
+  );
 
   // Prepare data
-  const siteInfo = siteSetting.nodes.map(node => {
-    const locale = node.base.split('.')[1]
-    const frontmatter = node.childMarkdownRemark.frontmatter
+  const siteInfo = siteSetting.nodes.map((node) => {
+    const locale = node.base.split('.')[1];
+    const { frontmatter } = node.childMarkdownRemark;
     return ({
       locale,
       frontmatter,
-    })
-  }).find(elem => lang === elem.locale).frontmatter
+    });
+  }).find((elem) => lang === elem.locale).frontmatter;
 
-
-  const metaDescription = description || siteInfo.description
-  const defaultTitle = siteInfo.title
+  const metaDescription = description || siteInfo.description;
+  const defaultTitle = siteInfo.title;
 
   return (
     <Helmet
@@ -53,61 +54,61 @@ function Seo({ description, lang, meta, title }) {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
-          name: `description`,
+          name: 'description',
           content: metaDescription,
         },
         {
-          property: `og:title`,
+          property: 'og:title',
           content: defaultTitle,
         },
         {
-          property: `og:description`,
+          property: 'og:description',
           content: metaDescription,
         },
         {
-          property: `og:image`,
+          property: 'og:image',
           content: `${site.siteMetadata.siteUrl}${ogImage}`,
         },
         {
-          property: `og:url`,
+          property: 'og:url',
           content: `${site.siteMetadata.siteUrl}/${lang}/`,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: 'og:type',
+          content: 'website',
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          name: 'twitter:card',
+          content: 'summary',
         },
         {
-          name: `twitter:creator`,
-          content: siteInfo?.author || ``,
+          name: 'twitter:creator',
+          content: siteInfo?.author || '',
         },
         {
-          name: `twitter:title`,
+          name: 'twitter:title',
           content: defaultTitle,
         },
         {
-          name: `twitter:description`,
+          name: 'twitter:description',
           content: metaDescription,
         },
       ].concat(meta)}
     />
-  )
+  );
 }
 
 Seo.defaultProps = {
-  lang: `en`,
+  lang: 'en',
   meta: [],
-  description: ``,
-}
+  description: '',
+};
 
 Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-}
+};
 
-export default Seo
+export default Seo;

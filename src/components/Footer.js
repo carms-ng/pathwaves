@@ -1,7 +1,7 @@
-import { graphql, useStaticQuery } from 'gatsby'
-import React from 'react'
-import styled from 'styled-components'
-import LocalizedLink from './LocalizedLink'
+import { graphql, useStaticQuery } from 'gatsby';
+import React from 'react';
+import styled from 'styled-components';
+import LocalizedLink from './LocalizedLink';
 
 export default function Footer({ lang }) {
   const { allFile } = useStaticQuery(graphql`
@@ -24,52 +24,53 @@ export default function Footer({ lang }) {
         }
       }
     }
-  `)
+  `);
 
-  const data = allFile.nodes.map(node => {
-    const locale = node.base.split('.')[1]
-    const frontmatter = node.childMarkdownRemark.frontmatter.footer
+  const data = allFile.nodes.map((node) => {
+    const locale = node.base.split('.')[1];
+    const frontmatter = node.childMarkdownRemark.frontmatter.footer;
     return ({
       locale,
       frontmatter,
-    })
-  }).find(elem => lang === elem.locale).frontmatter
+    });
+  }).find((elem) => lang === elem.locale).frontmatter;
 
-  const copyrightText = `©️ ${new Date().getFullYear()} ${data.copyright}`
+  const copyrightText = `©️ ${new Date().getFullYear()} ${data.copyright}`;
 
   return (
     <FooterStyles>
       <LocalizedLink
         id="copyright"
         lang={lang}
-        to='/'
-        text={copyrightText}
-      />
-      {data.footerLinks.map(link => {
+        to="/"
+      >
+        {copyrightText}
+      </LocalizedLink>
+      {data.footerLinks.map((link) => {
         if (link.isInterenal) {
           return (
             <LocalizedLink
               key={link.linkAddress}
               lang={lang}
               to={link.linkAddress}
-              text={link.linkText}
-            />
-          )
-        } else {
-          return (
-            <a
-              key={link.linkAddress}
-              href={link.linkAddress}
-              target="_blank"
-              rel="noreferrer"
             >
               {link.linkText}
-            </a>
-          )
+            </LocalizedLink>
+          );
         }
+        return (
+          <a
+            key={link.linkAddress}
+            href={link.linkAddress}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {link.linkText}
+          </a>
+        );
       })}
     </FooterStyles>
-  )
+  );
 }
 
 const FooterStyles = styled.footer`
@@ -103,4 +104,4 @@ const FooterStyles = styled.footer`
       justify-self: flex-end;
     }
   }
-`
+`;
