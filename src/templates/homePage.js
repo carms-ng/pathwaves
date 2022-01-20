@@ -38,7 +38,6 @@ export default function HomePageTemplate({ pageContext, data }) {
           alt={sectionOne.backgroundImage.alt}
           className="background"
         />
-
         <div className="hero-wrapper">
           <h1>{sectionOne.header}</h1>
           <div>
@@ -99,7 +98,6 @@ export default function HomePageTemplate({ pageContext, data }) {
         {/* Logo Garden */}
         <LogoGarden logos={collabs} />
       </section>
-
     </Layout>
   );
 }

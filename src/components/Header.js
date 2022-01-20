@@ -86,7 +86,6 @@ export default function Header({
         />
       </div>
       {isMenuOpen && <DarkOverlay isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />}
-
     </HeaderStyles>
   );
 }

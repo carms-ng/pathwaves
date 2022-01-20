@@ -157,7 +157,6 @@ const GlobalStyles = createGlobalStyle`
     text-transform: uppercase;
     font-weight: 400;
   }
-
   @media (min-width: 640px) {
     body {
       font-size: 1.7rem;
