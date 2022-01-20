@@ -38,7 +38,7 @@ sectionOne:
           Envision Management and Production.
     - name: Patti Schmidt
       pronouns: she/her
-      role: Speaker Liaison, Co-Designer
+      role: Programmer, Co-Designer
       entity: Envision Management and Production
       portrait:
         image: /assets/_mg_3684-edit-p-s.jpg
