@@ -21,7 +21,7 @@ const HeroStyles = styled.section`
 
   h1 {
     position: absolute;
-    top: 10vmin;
+    top: 0;
     left: 55%;
     padding-right: 1rem;
     word-break: break-word;
@@ -29,7 +29,8 @@ const HeroStyles = styled.section`
   @media (min-width: 1024px) {
     margin: 0;
     h1 {
-      top: 20vmax;
+      top: unset;
+      bottom: 25vmax;
     }
   }
 `;
