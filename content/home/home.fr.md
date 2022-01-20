@@ -34,13 +34,14 @@ sectionTwo:
     image: /assets/home2.png
     alt: lines fr
 sectionThree:
-  header: Stay in the loop
-  description: We’ll pass on the knowledge and insights gained from the Pathwaves
-    Incubator for your own use, or for you to share with your community.
+  header: Restez informé·e
+  description: Nous partagerons avec vous les savoirs et réflexions recueillis
+    lors de l’incubateur Pathwaves pour votre usage personnel et pour que vous
+    les partagiez avec votre communauté.
   form:
-    inputPlaceholderName: name
-    inputPlaceholderEmail: email address
-    buttonText: SUBMIT
+    inputPlaceholderName: nom
+    inputPlaceholderEmail: courriel
+    buttonText: Envoyer
   backgroundImage:
     image: /assets/home-_-third-image.png
     alt: ligns vers la droite et vers le bas
