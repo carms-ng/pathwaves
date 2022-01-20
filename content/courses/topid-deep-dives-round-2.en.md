@@ -1,5 +1,5 @@
 ---
-title: Topid Deep Dives - Round 2
+title: Topic Deep Dives - Round 2
 description: >-
   Multiverse Stagecrafting: VR AR XR as Live, Immersive Performance Modes  
 
