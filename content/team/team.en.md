@@ -55,6 +55,13 @@ sectionOne:
           Centre. She continues to work in digital arts and culture for a
           variety of organizations including, The British Council Canada, Pride
           Toronto and Envision Management. "
+    - name: Renelle Desjardins Chiasson
+      pronouns: she/her
+      role: Co-Designer
+      entity: PHI
+      portrait:
+        image: /assets/renelle_phi_-renelle-desjardins.jpg
+        alt: Photo of Renelle
     - name: Suzanne Stein
       pronouns: she/they
       role: Facilitator, Futurist, Co-Designer
@@ -72,13 +79,13 @@ sectionOne:
           Corporation, as Discipline Lead for the Experience Modeling (XMod)
           group in London, and Director of the User Experience Group.
         image: /assets/stein-suzanne-stein.jpg
-    - name: Renelle Desjardins Chiasson
-      pronouns: she/her
+    - name: Aaron Williamson
+      pronouns: he/him
       role: Co-Designer
-      entity: PHI
+      entity: OCAD University
       portrait:
-        image: /assets/renelle_phi_-renelle-desjardins.jpg
-        alt: Photo of Renelle
+        image: /assets/aaron.jpg
+        alt: Image of Aaron
     - name: Dan Freder
       role: Technical Producer
       entity: "  "
@@ -144,13 +151,6 @@ sectionOne:
           Rebecca holds a Master of Environmental Studies specializing in
           Business & Sustainability (York University), and a Master of Design in
           Strategic Foresight & Innovation (OCADU).
-    - name: Aaron Williamson
-      pronouns: he/him
-      role: Co-Designer
-      entity: OCAD University
-      portrait:
-        image: /assets/aaron.jpg
-        alt: Image of Aaron
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
