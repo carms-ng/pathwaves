@@ -144,6 +144,13 @@ sectionOne:
           Rebecca holds a Master of Environmental Studies specializing in
           Business & Sustainability (York University), and a Master of Design in
           Strategic Foresight & Innovation (OCADU).
+    - name: Aaron Williamson
+      pronouns: he/him
+      role: Co-Designer
+      entity: OCAD University
+      portrait:
+        image: /assets/aaron.jpg
+        alt: Image of Aaron
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
