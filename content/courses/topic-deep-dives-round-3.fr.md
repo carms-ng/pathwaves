@@ -19,9 +19,6 @@ description: >-
   Charlie Wall-Andrews
 
   Les données sont un atout et peuvent améliorer les flux de revenus et les opportunités stratégiques. Cette présentation met en avant les opportunités et les tendances de l'industrie musicale basées sur les données qui permettent de construire des carrières durables en tant qu'artistes indépendants. 
-
-
-  Traduit avec www.DeepL.com/Translator (version gratuite)
 presenter: Various
 linkCalendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=M2FzOTVoMXMxZXNwMWY5bmptYXVtMXRmajcgbGVzeWFAZW52aXNpb25tYW5hZ2VtZW50LmNvbQ&tmsrc=lesya%40envisionmanagement.com
 linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
