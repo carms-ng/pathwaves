@@ -96,7 +96,7 @@ sectionOne:
           electronics. Drawn to the altered perspectives one can provoke with
           interactivity, he often uses it to promote connections between
           audiences, objects and the environment.
-      pronouns: he
+      pronouns: he/him
     - name: Magally Zelaya
       pronouns: she/her
       role: Communications Officer
@@ -112,7 +112,7 @@ sectionOne:
           University of British Columbia.
       entity: "  "
     - name: Allison Outhit
-      pronouns: she/her/hers
+      pronouns: she/her
       role: Equity & Inclusion Consultant
       entity: "  "
       portrait:
@@ -159,14 +159,14 @@ sectionOne:
         image: /assets/20200310.jpg
         alt: Photo of Carms
     - name: Cecilia Portillo
-      pronouns: She / her
+      pronouns: she/her
       role: Website Designer
       entity: Mutual Design
       portrait:
         image: /assets/cecilia-chris-16.jpg
         alt: Photo of Ceci
     - name: Christian Scott
-      pronouns: he / they
+      pronouns: he/they
       role: Website Researcher
       entity: Mutual Design
       portrait:

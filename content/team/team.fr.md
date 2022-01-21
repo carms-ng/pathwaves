@@ -5,25 +5,25 @@ sectionOne:
   header: L'equipe
   members:
     - name: Ryhna Thompson
-      pronouns: elle
+      pronouns: elle/elles
       role: Producteur, co-concepteur
       entity: Envision Management and Production
       portrait:
         image: /assets/ryhna-thompson-photo-ryhna-thompson.jpg
     - name: Lesya Maria Nakoneczny
-      pronouns: elle
+      pronouns: elle/elles
       role: Chef de projet, co-concepteur
       entity: Envision Management and Production
       portrait:
         image: /assets/lesya_lowres-1_pathwaves.jpg
     - role: Programmeur, co-concepteur
       entity: Envision Management and Production
-      pronouns: elle
+      pronouns: elle/elles
       name: Patti Schmidt
       portrait:
         image: /assets/_mg_3684-edit-p-s.jpg
     - name: Renelle Desjardins Chiasson
-      pronouns: elle
+      pronouns: elle/elles
       role: Co-concepteur
       entity: PHI
       portrait:
@@ -35,23 +35,23 @@ sectionOne:
       portrait:
         image: /assets/stein-suzanne-stein.jpg
     - name: Aaron Williamson
-      pronouns: il
+      pronouns: il/ils
       role: Co-concepteur
       entity: OCAD University
       portrait:
         image: /assets/aaron.jpg
     - name: Dan Freder
-      pronouns: il
+      pronouns: il/ils
       role: Technical Producer
       portrait:
         image: /assets/danfreder-1-dan.jpg
     - name: Magally Zelaya
-      pronouns: elle
+      pronouns: elle/elles
       role: Communications Officer
       portrait:
         image: /assets/mzelaya-magally-zelaya.jpg
     - name: Allison Outhit
-      pronouns: elle
+      pronouns: elle/elles
       role: Equity & Inclusion Consultant
       portrait:
         image: /assets/allisonouthit-credit-katherine-kwan-allison-outhit.jpg
@@ -61,13 +61,13 @@ sectionOne:
       portrait:
         image: /assets/bio-le-lin.jpg
     - name: Rebecca Black
-      pronouns: elle
+      pronouns: elle/elles
       role: Researcher, Foresight Analyst
       entity: OCAD University
       portrait:
         image: /assets/rebeccablackheadshot.2018-black-current.jpg
     - name: Carms Ng
-      pronouns: illes
+      pronouns: iel/ illes
       role: Développeur de sites web
       entity: Mutual Design
       portrait:
@@ -75,7 +75,7 @@ sectionOne:
         alt: placeholder
     - entity: Mutual Design
       role: Concepteur de sites web
-      pronouns: elle
+      pronouns: elle/elles
       name: Cecilia Portillo
       portrait:
         image: /assets/cecilia-chris-16.jpg
