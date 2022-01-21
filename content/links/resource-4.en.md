@@ -1,6 +1,6 @@
 ---
 title: Phase 2 Resource
-description: "    "
-url: https://www.google.com/
+description: Nothing here yet :)
+url: www.google.com
 phaseNumber: 2
 ---
