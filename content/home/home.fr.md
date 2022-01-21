@@ -40,6 +40,18 @@ sectionTwo:
       button:
         linkText: Rencontrez les participants
         url: /musicians
+    - button:
+        linkText: Rencontrez les participants
+        url: /musicians
+      name: Emily Kennedy
+      type: Participant
+      description: '"Les artistes ont accès à une telle puissance technologique par
+        rapport au premier phonographe, ce qui ouvre de vastes possibilités tant
+        dans la façon dont nous créons que dans celle dont nous partageons la
+        musique."'
+      img:
+        image: /assets/e.-kennedy-pc-sarah-kierstead-emily-kennedy.jpg
+        alt: Photo de Emily Kennedy
   buttonLabel: Prochain
   backgroundImage:
     image: /assets/home2.png
