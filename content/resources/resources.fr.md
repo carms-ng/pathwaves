@@ -1,5 +1,6 @@
 ---
 templateKey: resourcesPage.js
 title: Ressources
-description: Here you can find useful resources for the different phases of the incubator!
+description: Vous trouverez ici des ressources utiles pour les différentes
+  phases de l'incubateur !
 ---
