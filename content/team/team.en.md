@@ -38,7 +38,7 @@ sectionOne:
           Envision Management and Production.
     - name: Patti Schmidt
       pronouns: she/her
-      role: Speaker Liaison, Co-Designer
+      role: Programmer, Co-Designer
       entity: Envision Management and Production
       portrait:
         image: /assets/_mg_3684-edit-p-s.jpg
@@ -58,7 +58,7 @@ sectionOne:
     - name: Suzanne Stein
       pronouns: she/they
       role: Facilitator, Futurist, Co-Designer
-      entity: "OCAD "
+      entity: OCAD University
       portrait:
         alt: Stein is a Foresight Analyst, Mentor, and Educator. She is Lab Director of
           OCAD's Super Ordinary, which focusses on complex problem solving, new

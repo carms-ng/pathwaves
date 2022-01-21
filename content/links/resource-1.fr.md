@@ -1,7 +1,7 @@
 ---
-title: Resource 1 FR
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. FR
-url: https://www.google.com/
+title: Horizon Scan
+description: A collection of drivers of change and shifting trends that are set
+  to influence the future of music in Canada.
+url: https://drive.google.com/file/d/1Q0PlqOV0jSt8OXvUTMHdwhjReTS-fIlY/view?usp=sharing
 phaseNumber: 1
 ---

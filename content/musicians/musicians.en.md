@@ -41,12 +41,12 @@ sectionTwo:
         alt: Picture of Ida Toninato
         image: /assets/_x4a3837-ida-toninato.jpg
     - artistName: Kwiat
-      pronouns: placeholder
+      pronouns: "  "
       portrait:
         image: /assets/lightsredux-4-kwiat.jpg
         alt: Image of Kwiat
     - artistName: Mattmac
-      pronouns: placeholder
+      pronouns: "  "
       portrait:
         image: /assets/mattmac-2022-press-picture-1-david-hodges.jpg
         alt: Image of Mattmac
@@ -96,7 +96,7 @@ sectionTwo:
         image: /assets/xo_credit_katrin_braga_001-web-veron-xio.jpg
         alt: Picture of x/o
     - artistName: Zuki
-      pronouns: placeholder
+      pronouns: he/him
       portrait:
         image: /assets/img_2243-felix-idigbe.jpg
         alt: Image of Zuki

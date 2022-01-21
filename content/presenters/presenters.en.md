@@ -42,13 +42,6 @@ sectionTwo:
           the prestigious Golden Nica at Prix Ars Electronica 2013 (Austria),
           his work widely recognize, presented all over the world. He is
           teaching in the Digital Music program of the Université de Montréal."
-    - name: Chloe Alexandra Thompson
-      pronouns: placeholder
-      role: Lead Guide
-      entity: "  "
-      portrait:
-        image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
-        alt: Bio
     - name: Claire L. Evans
       pronouns: she/her
       role: Presenter
