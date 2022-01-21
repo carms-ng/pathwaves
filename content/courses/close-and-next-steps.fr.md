@@ -1,5 +1,5 @@
 ---
-title: Close and Next Steps
+title: Conclusion et prochaines étapes
 presenter: Ryhna
 linkCalendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=NDByMDQ3c2ExYXA0bHJtYXZzdWxnN2o3OGwgbGVzeWFAZW52aXNpb25tYW5hZ2VtZW50LmNvbQ&tmsrc=lesya%40envisionmanagement.com
 linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
