@@ -16,13 +16,6 @@ sectionOne:
       entity: Envision Management and Production
       portrait:
         image: /assets/lesya_lowres-1_pathwaves.jpg
-    - name: Carms Ng
-      pronouns: fr them/them
-      role: fr Dev
-      entity: fr Some Entity
-      portrait:
-        image: /assets/lines.png
-        alt: placeholder
     - role: Programmeur, co-concepteur
       entity: Envision Management and Production
       pronouns: elle
@@ -35,6 +28,64 @@ sectionOne:
       entity: PHI
       portrait:
         image: /assets/renelle_phi_-renelle-desjardins.jpg
+    - name: Suzanne Stein
+      pronouns: elle/illes
+      entity: OCAD University
+      role: Facilitateur, Futuriste, Co-concepteur
+      portrait:
+        image: /assets/stein-suzanne-stein.jpg
+    - name: Aaron Williamson
+      pronouns: il
+      role: Co-concepteur
+      entity: OCAD University
+      portrait:
+        image: /assets/aaron.jpg
+    - name: Dan Freder
+      pronouns: il
+      role: Technical Producer
+      portrait:
+        image: /assets/danfreder-1-dan.jpg
+    - name: Magally Zelaya
+      pronouns: elle
+      role: Communications Officer
+      portrait:
+        image: /assets/mzelaya-magally-zelaya.jpg
+    - name: Allison Outhit
+      pronouns: elle
+      role: Equity & Inclusion Consultant
+      portrait:
+        image: /assets/allisonouthit-credit-katherine-kwan-allison-outhit.jpg
+    - name: Le Lin
+      pronouns: il/ illes
+      role: Designer graphique
+      portrait:
+        image: /assets/bio-le-lin.jpg
+    - name: Rebecca Black
+      pronouns: elle
+      role: Researcher, Foresight Analyst
+      entity: OCAD University
+      portrait:
+        image: /assets/rebeccablackheadshot.2018-black-current.jpg
+    - name: Carms Ng
+      pronouns: illes
+      role: Développeur de sites web
+      entity: Mutual Design
+      portrait:
+        image: /assets/20200310.jpg
+        alt: placeholder
+    - entity: Mutual Design
+      role: Concepteur de sites web
+      pronouns: elle
+      name: Cecilia Portillo
+      portrait:
+        image: /assets/cecilia-chris-16.jpg
+    - name: Christian Scott
+      pronouns: il / illes
+      role: Chercheur de site web
+      entity: Mutual Design
+      portrait:
+        image: /assets/cecilia-chris-20.jpg
+        alt: Photos of Chris
   backgroundImage:
     image: /assets/team2.png
     alt: ligne hoverer

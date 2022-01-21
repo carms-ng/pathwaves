@@ -151,6 +151,27 @@ sectionOne:
           Rebecca holds a Master of Environmental Studies specializing in
           Business & Sustainability (York University), and a Master of Design in
           Strategic Foresight & Innovation (OCADU).
+    - name: Carms Ng
+      pronouns: they/ them
+      role: Website Developer
+      entity: Mutual Design
+      portrait:
+        image: /assets/20200310.jpg
+        alt: Photo of Carms
+    - name: Cecilia Portillo
+      pronouns: She / her
+      role: Website Designer
+      entity: Mutual Design
+      portrait:
+        image: /assets/cecilia-chris-16.jpg
+        alt: Photo of Ceci
+    - name: Christian Scott
+      pronouns: he / they
+      role: Website Researcher
+      entity: Mutual Design
+      portrait:
+        image: /assets/cecilia-chris-20.jpg
+        alt: Photos of Chris
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
