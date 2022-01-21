@@ -72,6 +72,13 @@ sectionOne:
           Corporation, as Discipline Lead for the Experience Modeling (XMod)
           group in London, and Director of the User Experience Group.
         image: /assets/stein-suzanne-stein.jpg
+    - name: Renelle Desjardins Chiasson
+      pronouns: she/her
+      role: Co-Designer
+      entity: PHI
+      portrait:
+        image: /assets/renelle_phi_-renelle-desjardins.jpg
+        alt: Photo of Renelle
     - name: Dan Freder
       role: Technical Producer
       entity: "  "
