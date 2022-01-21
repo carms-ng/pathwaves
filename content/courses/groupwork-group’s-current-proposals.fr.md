@@ -1,5 +1,5 @@
 ---
-title: "Groupwork: Group’s Current Proposals"
+title: "Travail de groupe : Propositions actuelles du groupe"
 description: "    "
 presenter: Facilitators
 linkCalendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=M2xiNXByMjE1NGs2b2l2ODI5OHBjNjZ2MjEgbGVzeWFAZW52aXNpb25tYW5hZ2VtZW50LmNvbQ&tmsrc=lesya%40envisionmanagement.com
