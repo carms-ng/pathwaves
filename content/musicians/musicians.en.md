@@ -61,12 +61,12 @@ sectionTwo:
         image: /assets/remy-rodden-2019-full-remy-rodden.jpg
         alt: Picture of Remy Rodden
     - artistName: Ruby Singh
-      pronouns: he/hymn
+      pronouns: he/him
       portrait:
         image: /assets/rup-6-ruby-singh.jpg
         alt: Image of Ruby Singh
     - artistName: Samuel Harvey
-      pronouns: He
+      pronouns: he/him
       portrait:
         image: /assets/thinking-samuel-harvey.jpg
         alt: Image of Samuel Harvey
