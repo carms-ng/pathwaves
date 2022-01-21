@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: Carms-dev/pathwaves
-  branch: dev
+  branch: master
   commit_messages:
     create: '[ADD][CMS] {{collection}} “{{slug}}”'
     update: '[UPD][CMS] {{collection}} “{{slug}}”'
