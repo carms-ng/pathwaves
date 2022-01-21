@@ -139,7 +139,7 @@ sectionOne:
           and community empowerment."
     - name: Rebecca Black
       pronouns: she/her
-      role: Researcher, Foresight Analyst
+      role: Facilitator, Researcher, Foresight Analyst
       entity: OCAD University
       portrait:
         image: /assets/rebeccablackheadshot.2018-black-current.jpg
@@ -172,6 +172,20 @@ sectionOne:
       portrait:
         image: /assets/cecilia-chris-20.jpg
         alt: Photos of Chris
+    - name: Fran Quintero Rawlings
+      pronouns: she/her
+      role: Facilitator, Researcher, Foresight Analyst
+      entity: OCAD University
+      portrait:
+        image: /assets/img_7176-fran-r-1-.jpg
+        alt: Picture of Fran
+    - name: Ziyan Hossain
+      pronouns: he/him
+      role: Facilitator, Researcher, Foresight Analyst
+      entity: OCAD University
+      portrait:
+        image: /assets/0fcb9a47-57c5-4176-8b5d-fd3bf4b16fbe-ziyan-hossain.jpg
+        alt: Image of Ziyan
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
