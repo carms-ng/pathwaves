@@ -1,6 +1,6 @@
 ---
 title: Phase 2 Scheduled Activity
-description: "   "
+description: "   This is a test description"
 presenter: Various
 linkCalendar: google.com
 linkZoom: google.com
