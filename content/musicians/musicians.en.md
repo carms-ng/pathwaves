@@ -41,12 +41,12 @@ sectionTwo:
         alt: Picture of Ida Toninato
         image: /assets/_x4a3837-ida-toninato.jpg
     - artistName: Kwiat
-      pronouns: "  "
+      pronouns: "  she/her"
       portrait:
         image: /assets/lightsredux-4-kwiat.jpg
         alt: Image of Kwiat
     - artistName: Mattmac
-      pronouns: "  "
+      pronouns: "  he/him"
       portrait:
         image: /assets/mattmac-2022-press-picture-1-david-hodges.jpg
         alt: Image of Mattmac

@@ -35,9 +35,11 @@ sectionTwo:
     - artistName: Kwiat
       portrait:
         image: /assets/lightsredux-4-kwiat.jpg
+      pronouns: elle/elles
     - artistName: Mattmac
       portrait:
         image: /assets/mattmac-2022-press-picture-1-david-hodges.jpg
+      pronouns: il/ils
     - artistName: Minkworks
       pronouns: elle/elles
       portrait:
@@ -59,8 +61,8 @@ sectionTwo:
       portrait:
         image: /assets/storry-junos-2021-photo-storry.jpg
     - pronouns: elle/elles
-      artistName: ShadowWolf
-      name: Susan O’Quinn
+      artistName: Susan O’Quinn/ShadowWolf
+      name: ""
       portrait:
         image: /assets/c680ab95-19fc-40dc-9322-d9cbd252d6e7-susan-o-quinn.jpg
     - artistName: Tough Sell
