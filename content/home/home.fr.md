@@ -9,26 +9,37 @@ sectionOne:
     image: /assets/home-2-.png
     alt: lines
   buttons:
-    - linkText: About the incubator
+    - linkText: A propos de l'incubateur
       url: /incubator
       isVisible: true
     - linkText: Résultat
       url: /archive
 sectionTwo:
   carouselItems:
-    - name: Artist name
-      nameAlt: Birth name
-      type: Participant Spotlight
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.
+    - name: Della Orrey
+      nameAlt: ""
+      type: Participant
+      description: "\"Je pense que l'intersection de la musique et de la technologie
+        est essentielle dans la démocratisation de la possibilité d'accéder et
+        de créer dans l'esprit de l'exploration DIY.\""
       button:
-        linkText: Meet the participants
+        linkText: Rencontrez les participants
         url: /musicians
       img:
-        image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
-        alt: placeholder
+        image: /assets/open-studio-sep22-53-della-orrey.jpg
+        alt: Photo de Della Orrey
+    - name: choi
+      type: Participant
+      description: "\"Cette avancée technologique (le home studio) a créé un
+        formidable changement dans l'industrie musicale et a ouvert des portes à
+        tant de personnes qui, autrement, n'auraient pas eu les ressources
+        disponibles pour créer de la musique.\""
+      img:
+        image: /assets/img_7671-liam-choi.jpg
+        alt: Photo de choi
+      button:
+        linkText: Rencontrez les participants
+        url: /musicians
   buttonLabel: Prochain
   backgroundImage:
     image: /assets/home2.png
