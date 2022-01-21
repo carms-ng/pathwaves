@@ -42,6 +42,13 @@ sectionTwo:
           the prestigious Golden Nica at Prix Ars Electronica 2013 (Austria),
           his work widely recognize, presented all over the world. He is
           teaching in the Digital Music program of the Université de Montréal."
+    - name: Chloe Alexandra Thompson
+      pronouns: "   "
+      role: Lead Guide
+      entity: "   "
+      portrait:
+        image: /assets/screen-shot-2021-12-26-at-11.20.jpg
+        alt: Picture of Chloe
     - name: Claire L. Evans
       pronouns: she/her
       role: Presenter
@@ -96,4 +103,11 @@ sectionTwo:
           experience includes label manager for Ninja Tune Records, production
           lead for Amon Tobin ISAM Live, buyer at Cargo Records, show booker,
           record retail and all other manner of general music nerdery.
+    - name: Charlie Wall-Andrews
+      pronouns: "   "
+      role: Presenter
+      entity: "   "
+      portrait:
+        image: /assets/f2-headshot-charlie-wall-andrews.jpg
+        alt: Image of Charlie
 ---
