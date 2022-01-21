@@ -110,4 +110,11 @@ sectionTwo:
       portrait:
         image: /assets/f2-headshot-charlie-wall-andrews.jpg
         alt: Image of Charlie
+    - name: Michaela Ternasky-Holland
+      pronouns: she/her
+      role: Presenter
+      entity: Consultant
+      portrait:
+        image: /assets/michaela-ternasky-holland-color-headshot-michaela-ternasky-holland.jpg
+        alt: Picture of Michaela Ternasky-Holland
 ---
