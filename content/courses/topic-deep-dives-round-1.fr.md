@@ -1,6 +1,6 @@
 ---
 title: Topic Deep Dives - Round 1
-description: >-
+description: >
   Le paysage du streaming : Virtualisation des performances	 
 
   Blanche Israël
@@ -18,10 +18,6 @@ description: >-
   Cherie Hu
 
   Un tour d'horizon de trois modèles mentaux toujours d'actualité pour penser à naviguer dans l'industrie musicale en évolution rapide, de la stratégie au niveau de l'artiste et de la construction de la communauté à la dynamique du pouvoir dans l'industrie musicale au sens large. Nous combinerons la théorie avec des études de cas sur le terrain afin de donner aux artistes les outils et le contexte historique pour prendre des décisions plus intelligentes sur les priorités de leurs carrières.
-
-
-
-  Traduit avec www.DeepL.com/Translator (version gratuite)
 presenter: Various
 linkCalendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=NGVhdGI5bW5jdnBpbXVhamFhaHZpZDg5bG8gbGVzeWFAZW52aXNpb25tYW5hZ2VtZW50LmNvbQ&tmsrc=lesya%40envisionmanagement.com
 linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
