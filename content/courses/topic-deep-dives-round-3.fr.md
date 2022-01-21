@@ -1,24 +1,27 @@
 ---
-title: Topic Deep Dives - Round 3
+title: Plongées dans les sujets - Round 3
 description: >-
-  Sing the Body AI: Songcraft and Algorithm Everything     
+  Sing the Body AI : Songcraft et Algorithme Tout     
 
   Claire L. Evans
 
-  AI is rapidly reshaping what it means to make music. But as musicians, how do we stay in control of our own process when the technology is evolving so quickly? Claire will share her own experience using machine learning tools to compose music, write lyrics, and record YACHT’s GRAMMY-nominated album Chain Tripping and discuss ways to bring AI into your work without losing its integrity. 
+  L'IA est en train de remodeler rapidement ce que signifie faire de la musique. Mais en tant que musiciens, comment pouvons-nous garder le contrôle de notre propre processus lorsque la technologie évolue si rapidement ? Claire Evans partagera sa propre expérience de l'utilisation d'outils d'apprentissage automatique pour composer de la musique, écrire des paroles et enregistrer l'album Chain Tripping de YACHT, nominé pour les GRAMMYs, et discutera des moyens d'intégrer l'IA dans votre travail sans en perdre l'intégrité. 
 
 
-  Bytes, Rights and Publishing 
+  Octets, droits et édition 
 
   Jeff Waye
 
-  A primer on all the in’s and outs of music publishing. Generating revenue via sync licensing, registration of works, best practices, how to collect all those dollars! From mechanical royalties to The Metaverse, to “what do you mean Tik-Tok doesn’t pay by the view?”. Jeff will unshroud some of the mystery around the confusion wrapped in the chaos. 
+  Une introduction à tous les tenants et aboutissants de l'édition musicale. Générer des revenus via les licences de synchronisation, l'enregistrement des œuvres, les meilleures pratiques, comment collecter tous ces dollars ! Des redevances mécaniques au Metaverse, en passant par "comment ça, Tik-Tok ne paie pas à la séance ? Jeff lèvera le voile sur le mystère qui entoure la confusion qui règne dans le chaos. 
      	 
-  Digital Musicpreneur: Data to Dollars 
+  Entrepreneur de musique numérique : Des données aux dollars 
 
   Charlie Wall-Andrews
 
-  Data is an asset and can enhance revenues streams and strategic opportunities. This presentation showcases data-driven opportunities and trends in the music industry that support ways to build sustainable careers as independent artists. 
+  Les données sont un atout et peuvent améliorer les flux de revenus et les opportunités stratégiques. Cette présentation met en avant les opportunités et les tendances de l'industrie musicale basées sur les données qui permettent de construire des carrières durables en tant qu'artistes indépendants. 
+
+
+  Traduit avec www.DeepL.com/Translator (version gratuite)
 presenter: Various
 linkCalendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=M2FzOTVoMXMxZXNwMWY5bmptYXVtMXRmajcgbGVzeWFAZW52aXNpb25tYW5hZ2VtZW50LmNvbQ&tmsrc=lesya%40envisionmanagement.com
 linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
