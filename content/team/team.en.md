@@ -5,7 +5,7 @@ sectionOne:
   header: Team
   members:
     - name: Ryhna Thompson
-      pronouns: she/her/elle
+      pronouns: she/her
       role: Producer, Co-Designer
       entity: Envision Management and Production
       portrait:

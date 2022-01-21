@@ -4,6 +4,18 @@ title: L'equipe
 sectionOne:
   header: L'equipe
   members:
+    - name: Ryhna Thompson
+      pronouns: elle
+      role: Producteur, co-concepteur
+      entity: Envision Management and Production
+      portrait:
+        image: /assets/ryhna-thompson-photo-ryhna-thompson.jpg
+    - name: Lesya Maria Nakoneczny
+      pronouns: elle
+      role: Chef de projet, co-concepteur
+      entity: Envision Management and Production
+      portrait:
+        image: /assets/lesya_lowres-1_pathwaves.jpg
     - name: Carms Ng
       pronouns: fr them/them
       role: fr Dev
@@ -11,6 +23,18 @@ sectionOne:
       portrait:
         image: /assets/lines.png
         alt: placeholder
+    - role: Programmeur, co-concepteur
+      entity: Envision Management and Production
+      pronouns: elle
+      name: Patti Schmidt
+      portrait:
+        image: /assets/_mg_3684-edit-p-s.jpg
+    - name: Renelle Desjardins Chiasson
+      pronouns: elle
+      role: Co-concepteur
+      entity: PHI
+      portrait:
+        image: /assets/renelle_phi_-renelle-desjardins.jpg
   backgroundImage:
     image: /assets/team2.png
     alt: ligne hoverer
