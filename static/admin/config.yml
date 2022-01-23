@@ -679,7 +679,14 @@ collections:
     sortable_fields: ['title', 'description', 'start', 'phaseNumber']
     fields:
       - {label: Title, name: title, widget: string, i18n: true}
-      - {label: Description, name: description, widget: text, i18n: true}
+      - label: Description
+        name: description
+        widget: markdown
+        buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+        editor_components: []
+        modes: [rich_text]
+        minimal: true
+        i18n: true
       - {label: Presenter Name, name: presenter, widget: string, i18n: true}
       - {label: Add To Calendar Link, name: linkCalendar, widget: string, i18n: duplicate}
       - {label: Zoom Link, name: linkZoom, widget: string, i18n: duplicate}

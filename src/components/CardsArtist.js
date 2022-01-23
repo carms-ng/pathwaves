@@ -13,7 +13,7 @@ export default function CardsArtist({ artists }) {
             key={artistName}
             header={artistName}
             subHeader={name ? `${name} ` : ''}
-            postSubHeader={`(${pronouns})`}
+            postSubHeader={pronouns}
             img={portrait}
           />
         ))}
