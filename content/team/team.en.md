@@ -86,6 +86,34 @@ sectionOne:
       portrait:
         image: /assets/aaron.jpg
         alt: Image of Aaron
+    - name: Ziyan Hossain
+      pronouns: he/him
+      role: Facilitator, Researcher, Foresight Analyst
+      entity: OCAD University
+      portrait:
+        image: /assets/0fcb9a47-57c5-4176-8b5d-fd3bf4b16fbe-ziyan-hossain.jpg
+        alt: Image of Ziyan
+    - name: Fran Quintero Rawlings
+      pronouns: she/her
+      role: Facilitator, Researcher, Foresight Analyst
+      entity: OCAD University
+      portrait:
+        image: /assets/img_7176-fran-r-1-.jpg
+        alt: Picture of Fran
+    - name: Rebecca Black
+      pronouns: she/her
+      role: Facilitator, Researcher, Foresight Analyst
+      entity: OCAD University
+      portrait:
+        image: /assets/rebeccablackheadshot.2018-black-current.jpg
+        alt: Rebecca is a sustainable business specialist who has been co-creating
+          strategies to address the climate crisis with international clients
+          for 15+ years. She is Founder of eco-communications and design agency
+          Black Current, Co-Founder of DEI championing nonprofit Women in
+          Renewable Energy WiRE and Director at TREC Renewable Energy incubator.
+          Rebecca holds a Master of Environmental Studies specializing in
+          Business & Sustainability (York University), and a Master of Design in
+          Strategic Foresight & Innovation (OCADU).
     - name: Dan Freder
       role: Technical Producer
       entity: "  "
@@ -137,20 +165,6 @@ sectionOne:
           branding and graphic design. I am a firm believer that
           art/design/music should be tools of resistance, acts of vulnerability,
           and community empowerment."
-    - name: Rebecca Black
-      pronouns: she/her
-      role: Facilitator, Researcher, Foresight Analyst
-      entity: OCAD University
-      portrait:
-        image: /assets/rebeccablackheadshot.2018-black-current.jpg
-        alt: Rebecca is a sustainable business specialist who has been co-creating
-          strategies to address the climate crisis with international clients
-          for 15+ years. She is Founder of eco-communications and design agency
-          Black Current, Co-Founder of DEI championing nonprofit Women in
-          Renewable Energy WiRE and Director at TREC Renewable Energy incubator.
-          Rebecca holds a Master of Environmental Studies specializing in
-          Business & Sustainability (York University), and a Master of Design in
-          Strategic Foresight & Innovation (OCADU).
     - name: Carms Ng
       pronouns: they/ them
       role: Website Developer
@@ -172,20 +186,6 @@ sectionOne:
       portrait:
         image: /assets/cecilia-chris-20.jpg
         alt: Photos of Chris
-    - name: Fran Quintero Rawlings
-      pronouns: she/her
-      role: Facilitator, Researcher, Foresight Analyst
-      entity: OCAD University
-      portrait:
-        image: /assets/img_7176-fran-r-1-.jpg
-        alt: Picture of Fran
-    - name: Ziyan Hossain
-      pronouns: he/him
-      role: Facilitator, Researcher, Foresight Analyst
-      entity: OCAD University
-      portrait:
-        image: /assets/0fcb9a47-57c5-4176-8b5d-fd3bf4b16fbe-ziyan-hossain.jpg
-        alt: Image of Ziyan
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
