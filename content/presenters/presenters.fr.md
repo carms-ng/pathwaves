@@ -53,7 +53,7 @@ sectionTwo:
       name: Charlie Wall-Andrews
       pronouns: ""
       portrait:
-        image: /assets/f2-headshot-charlie-wall-andrews.jpg
+        image: /assets/unnamed-4-.jpg
     - role: Présentateur
       name: Michaela Ternasky-Holland
       pronouns: elle/elles
