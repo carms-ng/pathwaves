@@ -75,6 +75,7 @@ const CardsThreesStyles = styled.div`
   justify-items: center;
   grid-gap: 3rem;
   a {
+    width: 100%;
     color: var(--black);
     transition: var(--trans);
     display: grid;
@@ -83,6 +84,9 @@ const CardsThreesStyles = styled.div`
     &:hover {
       transform: scale(1.05);
     }
+  }
+  p {
+    margin: unset;
   }
   @media (min-width: 640px) {
     grid-template-columns: repeat(2, 1fr);

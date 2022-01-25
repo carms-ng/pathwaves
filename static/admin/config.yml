@@ -303,11 +303,10 @@ collections:
             name: members
             widget: list
             i18n: true
-            summary: "{{artistName}} - {{pronouns}}"
+            summary: "{{name}} - {{pronouns}}"
             fields:
-            - {label: Artist Name, name: artistName, widget: string, i18n: duplicate}
+            - {label: Artist Name, name: name, widget: string, i18n: duplicate}
             - {label: Pronouns, name: pronouns, widget: string, i18n: true}
-            - {label: Name, name: name, widget: string, i18n: true, required: false, hint: "Applicable if name defers from artist name"}
             - label: Portrait
               name: portrait
               widget: object

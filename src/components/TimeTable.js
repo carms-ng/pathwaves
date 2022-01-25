@@ -1,6 +1,5 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-import ReactMarkdown from 'react-markdown';
 import Clipboard from './Clipbroad';
 
 export default function TimeTable({ selectedDateGroup, id, page }) {
@@ -15,7 +14,7 @@ export default function TimeTable({ selectedDateGroup, id, page }) {
   return (
     <div id={id}>
       {selectedDateGroup?.map(({
-        title, description, presenter, start, end, linkZoom,
+        title, presenter, start, end, linkZoom,
       }) => (
         <div key={start} style={{ textAlign: 'left' }}>
           <p style={{ color: 'var(--grey)' }}>
@@ -24,7 +23,6 @@ export default function TimeTable({ selectedDateGroup, id, page }) {
             <span>{new Date(end).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
           </p>
           <h3>{title}</h3>
-          <ReactMarkdown>{description}</ReactMarkdown>
           <div>
             <Icon icon="bi:person" />
             <p>{presenter}</p>

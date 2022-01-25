@@ -3,8 +3,8 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import CardsArtist from '../components/CardsArtist';
 import Hero from '../components/Hero';
+import CardsMember from '../components/CardsMember';
 
 export default function MusiciansPageTemplate({ pageContext, data }) {
   // Prepare Content
@@ -22,7 +22,7 @@ export default function MusiciansPageTemplate({ pageContext, data }) {
 
       <Hero header={sectionOne.header} backgroundImage={sectionOne.backgroundImage} />
 
-      <CardsArtist artists={sectionTwo.members} />
+      <CardsMember members={sectionTwo.members} />
     </Layout>
   );
 }
@@ -99,7 +99,6 @@ export const query = graphql`
           sectionTwo {
             header
             members {
-              artistName
               name
               pronouns
               portrait {

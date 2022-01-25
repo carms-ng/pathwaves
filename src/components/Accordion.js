@@ -98,13 +98,13 @@ const AccordionStyles = styled.div`
     padding-left: 2rem;
     > * {
       padding-right: 1rem;
+      margin: unset;
     }
     > div {
       display: flex;
       align-items: center;
 
       > p {
-        margin: 0;
         padding: 0;
         margin-left: 1rem;
       }
