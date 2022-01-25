@@ -29,7 +29,7 @@ nav:
     - linkAddress: /resources
       linkText: Ressources
   buttonDiscord:
-    url: https://discord.com/
+    url: https://discord.com/invite/xzBYznTaFm
     linkText: Discorde
   labelPhases:
     labelPhaseOne: Phase 1
