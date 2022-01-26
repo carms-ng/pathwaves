@@ -1,5 +1,5 @@
 ---
-title: Topic Deep Dives - Round 1
+title: Plongées dans les sujets - Round 1
 description: >
   Le paysage du streaming : Virtualisation des performances	 
 
