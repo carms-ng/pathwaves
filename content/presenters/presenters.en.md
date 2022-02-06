@@ -26,6 +26,19 @@ sectionTwo:
           Opera Company, Jeunesses Musicales Canada, and Orchestras Canada. As a
           musician, Blanche has performed and toured with JUNO Award-winning
           Indigenous operatic tenor and composer Jeremy Dutcher since 2018.
+      url: https://ca.linkedin.com/in/blancheis
+      description: Blanche Israël is a multilingual Canadian consultant, cellist, and
+        the founder of proScenium Services, which specializes in strategy,
+        development, and virtualizing in the performing arts. After studying
+        cello in Montreal for nearly two decades, Blanche graduated from the
+        Arts Management Specialist program at the University of Toronto in 2014,
+        where she later returned as an instructor. During the pandemic, Blanche
+        launched Streamium, a livestream technician service for Canadian artists
+        and arts organizations. Consulting clients have included Hill
+        Strategies, The Arts Firm, Dadan Sivunivut, the Canadian Opera Company,
+        Jeunesses Musicales Canada, and Orchestras Canada. As a musician,
+        Blanche has performed and toured with JUNO Award-winning Indigenous
+        operatic tenor and composer Jeremy Dutcher since 2018.
     - name: Nicolas Bernier
       pronouns: he/him
       role: Lead Guide
@@ -117,4 +130,5 @@ sectionTwo:
       portrait:
         image: /assets/michaela-ternasky-holland-color-headshot-michaela-ternasky-holland.jpg
         alt: Picture of Michaela Ternasky-Holland
+  cardLinkLabel: Link
 ---

@@ -103,6 +103,7 @@ sectionOne:
   backgroundImage:
     image: /assets/team2.png
     alt: ligne hoverer
+  cardLinkLabel: Ligne
 sectionTwo:
   collaborators:
     - name: Envision
