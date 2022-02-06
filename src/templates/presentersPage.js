@@ -21,7 +21,7 @@ export default function PresentersPageTemplate({ pageContext, data }) {
       <Seo title={`${title}`} lang={pageContext.lang} />
       <Hero header={sectionOne.header} backgroundImage={sectionOne.backgroundImage} />
 
-      <CardsMember members={sectionTwo.members} />
+      <CardsMember members={sectionTwo.members} cardLinkLabel={sectionTwo.cardLinkLabel} />
     </Layout>
   );
 }
@@ -97,11 +97,14 @@ export const query = graphql`
           }
           sectionTwo {
             header
+            cardLinkLabel
             members {
               name
               pronouns
               role
               entity
+              description
+              url
               portrait {
                 image {
                   childImageSharp {
