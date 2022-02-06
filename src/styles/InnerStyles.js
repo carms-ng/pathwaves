@@ -74,6 +74,7 @@ const CardsThreesStyles = styled.div`
   display: grid;
   justify-items: center;
   grid-gap: 3rem;
+  grid-auto-rows: 1fr;
   a {
     width: 100%;
     color: var(--black);
