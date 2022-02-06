@@ -53,6 +53,9 @@ const ResourcesStyles = styled.div`
     border-radius: var(--br);
     background: var(--white);
     padding: 2rem;
+    &:hover {
+       transform: scale(1.05);
+    }
   }
   @media (min-width: 1024px) {
     gap: 5rem;

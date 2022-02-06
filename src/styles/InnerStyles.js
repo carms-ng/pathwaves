@@ -80,10 +80,6 @@ const CardsThreesStyles = styled.div`
     transition: var(--trans);
     display: grid;
     gap: 1.5rem;
-
-    &:hover {
-      transform: scale(1.05);
-    }
   }
   p {
     margin: unset;
