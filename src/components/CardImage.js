@@ -58,7 +58,7 @@ export default function CardImage({
           </span>
           {postSubHeader}
         </p>
-        <p>{entity}</p>
+        <p style={{ marginTop: '-0.7rem' }}>{entity}</p>
         {open
         && (
         <div className="card-text__popup">
@@ -77,13 +77,15 @@ export default function CardImage({
 
 const CardStyles = styled.div`
   position: relative;
+  > *, h3 {
+      margin: 0.5rem 0;
+  }
   span {
     font-size: 1.6rem;
     font-weight: 400;
   }
-  p {
+  p, h3 {
     max-width: unset;
-    padding-bottom: 0.5rem;
   }
   button {
     border: 0;
@@ -92,20 +94,18 @@ const CardStyles = styled.div`
     line-height: 0;
   }
   .card-text {
-    padding: ${(props) => (props.open ? '2rem' : '1.5rem')};
+    padding: ${(props) => (props.open ? '1rem 1.5rem' : '1rem')};
     border-radius: var(--br);
     background-color: ${(props) => (props.open ? '#C1D3EC' : 'transparent')};
-    transform: scale(${(props) => (props.open ? 1.07 : 1)});
-    transition: var(--trans);
+    transform: scale(${(props) => (props.open ? 1.1 : 1)});
+    transition: ${(props) => (props.open ? 'var(--trans)' : 'unset')};
     position: ${(props) => (props.open ? 'absolute' : 'relative')};
     z-index: ${(props) => (props.open ? 1 : 0)};
     width: 100%;
   }
   .card-text__popup {
     font-size: 14px;
-    * {
-      margin: 0.5rem 0;
-    }
+
     a {
       color: darkblue;
       cursor: pointer;
