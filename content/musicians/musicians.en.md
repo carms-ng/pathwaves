@@ -13,6 +13,17 @@ sectionTwo:
       portrait:
         image: /assets/adrian-headshot-a-fung.png
         alt: Picture of Adrian Fung
+      url: http://www.adrianfung.com/bio/
+      description: Recognized as one of Musical America’s 30 Innovators of the Year,
+        Adrian Fung is an award-winning cellist, educator, and arts executive.
+        As Senior Vice President of RCM Learning Systems at The Royal
+        Conservatory, Mr. Fung oversees the continuing development of the RCM’s
+        comprehensive system of music study which provides integrated curriculum
+        and assessment to hundreds of thousands of students, teachers, and music
+        schools each year. Mr. Fung manages all activity related to the
+        maintenance of curricula, training, and certification of teachers and
+        examiners, printed and digital learning assets, and provision of
+        examinations.
     - name: choi
       pronouns: He/Him
       portrait:
@@ -98,4 +109,5 @@ sectionTwo:
       portrait:
         image: /assets/img_2243-felix-idigbe.jpg
         alt: Image of Zuki
+  cardLinkLabel: Link
 ---

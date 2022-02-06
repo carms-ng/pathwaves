@@ -74,16 +74,13 @@ const CardsThreesStyles = styled.div`
   display: grid;
   justify-items: center;
   grid-gap: 3rem;
+  grid-auto-rows: 1fr;
   a {
     width: 100%;
     color: var(--black);
     transition: var(--trans);
     display: grid;
     gap: 1.5rem;
-
-    &:hover {
-      transform: scale(1.05);
-    }
   }
   p {
     margin: unset;

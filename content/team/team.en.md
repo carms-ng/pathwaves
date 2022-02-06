@@ -20,6 +20,16 @@ sectionOne:
           contribute to her communities, Ryhna has sat on numerous non-profit
           boards and committees to support a healthy, sustainable, positive and
           innovative creative economy.
+      description: Over more than two decades, Ryhna has been an artist, entrepreneur,
+        leader and change maker in the Canadian and international cultural and
+        creative industries. Under the banner of Envision Management &
+        Production, Ryhna works with artists to conceive, produce and manage
+        musical projects, often in the realm where music intersects with film,
+        animation, theatre, literature and new technologies - and all in the
+        context of building authentic, long-term careers. Always keen to
+        contribute to her communities, Ryhna has sat on numerous non-profit
+        boards and committees to support a healthy, sustainable, positive and
+        innovative creative economy.
     - name: Lesya Maria Nakoneczny
       pronouns: she/her
       role: Project Manager, Co-Designer
@@ -36,6 +46,16 @@ sectionOne:
           the psyche, collective experience and interpersonal relationships.
           Lesya joins Pathwaves as a project manager and co-designer from
           Envision Management and Production.
+      description: Lesya Maria Nakoneczny is an intermedia artist and arts
+        professional based in Montreal. With a background in both geography and
+        fine art, she has worked on various projects in film, music, the arts,
+        and academia, including co-directing Art Matters Festival, working on
+        the documentary films “A Time To Swim” and “Lament for the Land,” and
+        more. Her current interests include internet culture and ethics, and how
+        capitalism and technology interact with and influence identity, the
+        psyche, collective experience and interpersonal relationships. Lesya
+        joins Pathwaves as a project manager and co-designer from Envision
+        Management and Production.
     - name: Patti Schmidt
       pronouns: she/her
       role: Programmer, Co-Designer
@@ -166,12 +186,17 @@ sectionOne:
           art/design/music should be tools of resistance, acts of vulnerability,
           and community empowerment."
     - name: Carms Ng
-      pronouns: they/ them
-      role: Website Developer
+      pronouns: they/them
+      role: Web Developer
       entity: Mutual Design
       portrait:
         image: /assets/20200310.jpg
         alt: Photo of Carms
+      description: Carms is a full-stack developer based in Tiohtiá:ke aka Montréal.
+        They are passionate about building impactful applications to improve
+        lives around them. They are climate and social justice-minded,
+        communicative, fun, curious, adaptive and always up for a new challenge!
+      url: https://www.carms-ng.com/
     - name: Cecilia Portillo
       pronouns: she/her
       role: Website Designer
@@ -189,6 +214,7 @@ sectionOne:
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
+  cardLinkLabel: Link
 sectionTwo:
   description: Pathwaves is being produced by Envision Management & Production in
     partnership with the Phi Centre and OCAD University, with financial support

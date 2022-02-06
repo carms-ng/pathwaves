@@ -229,16 +229,19 @@ collections:
             fields:
               - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
               - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+          - {label: Popup link label, name: cardLinkLabel, widget: string, i18n: true}
           - label: Members
             name: members
             widget: list
             i18n: true
             summary: "{{name}} - {{role}}"
             fields:
-            - {label: Full Name, name: name, widget: string, i18n: duplicate}
-            - {label: Pronouns, name: pronouns, widget: string, i18n: true}
-            - {label: Role, name: role, widget: string, i18n: true}
-            - {label: Entity, name: entity, widget: string, i18n: true}
+            - {label: Full Name, name: name, widget: string}
+            - {label: Pronouns, name: pronouns, widget: string}
+            - {label: Role, name: role, widget: string}
+            - {label: Entity, name: entity, widget: string}
+            - {label: Description, name: description, widget: text, required: false}
+            - {label: Url, name: url, widget: string, required: false}
             - label: Portrait
               name: portrait
               widget: object
@@ -299,6 +302,7 @@ collections:
         i18n: true
         collapsed: true
         fields:
+          - {label: Popup link label, name: cardLinkLabel, widget: string, i18n: true}
           - label: Members
             name: members
             widget: list
@@ -307,6 +311,8 @@ collections:
             fields:
             - {label: Artist Name, name: name, widget: string, i18n: duplicate}
             - {label: Pronouns, name: pronouns, widget: string, i18n: true}
+            - {label: Description, name: description, widget: text, required: false}
+            - {label: Url, name: url, widget: string, required: false}
             - label: Portrait
               name: portrait
               widget: object
@@ -344,6 +350,7 @@ collections:
         i18n: true
         collapsed: true
         fields:
+          - {label: Popup link label, name: cardLinkLabel, widget: string, i18n: true}
           - label: Members
             name: members
             widget: list
@@ -354,6 +361,8 @@ collections:
             - {label: Pronouns, name: pronouns, widget: string, i18n: true}
             - {label: Role, name: role, widget: string, i18n: true}
             - {label: Entity, name: entity, widget: string, i18n: true}
+            - {label: Description, name: description, widget: text, required: false}
+            - {label: Url, name: url, widget: string, required: false}
             - label: Portrait
               name: portrait
               widget: object

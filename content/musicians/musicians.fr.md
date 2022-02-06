@@ -80,4 +80,5 @@ sectionTwo:
       pronouns: il/ils
       portrait:
         image: /assets/img_2243-felix-idigbe.jpg
+  cardLinkLabel: Ligne
 ---

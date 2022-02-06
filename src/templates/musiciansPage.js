@@ -22,7 +22,7 @@ export default function MusiciansPageTemplate({ pageContext, data }) {
 
       <Hero header={sectionOne.header} backgroundImage={sectionOne.backgroundImage} />
 
-      <CardsMember members={sectionTwo.members} />
+      <CardsMember members={sectionTwo.members} cardLinkLabel={sectionTwo.cardLinkLabel} />
     </Layout>
   );
 }
@@ -98,9 +98,12 @@ export const query = graphql`
           }
           sectionTwo {
             header
+            cardLinkLabel
             members {
               name
               pronouns
+              description
+              url
               portrait {
                 image {
                   childImageSharp {

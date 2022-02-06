@@ -60,4 +60,5 @@ sectionTwo:
       entity: Consultant
       portrait:
         image: /assets/michaela-ternasky-holland-color-headshot-michaela-ternasky-holland.jpg
+  cardLinkLabel: Ligne
 ---
