@@ -20,10 +20,8 @@ export default function CardImage({
 
   const handleClick = (e) => {
     if (node.current.contains(e.target)) {
-      // inside click
       return;
     }
-    // outside click
     setOpen(false);
   };
 
@@ -39,29 +37,29 @@ export default function CardImage({
       <GatsbyImage
         image={img.image.childImageSharp.gatsbyImageData}
         alt={img.alt}
-        style={{ borderRadius: 'var(--br)' }}
       />
       <div className="card-text">
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 3rem' }}>
+        <div className="card-text-header">
           <h3>
             {header}
             {' '}
-            <span>{postHeader}</span>
+            {postHeader && (<span>{postHeader}</span>)}
           </h3>
           <button type="button" onClick={() => setOpen(!open)}>
             <Icon icon={open ? 'akar-icons:cross' : 'akar-icons:chevron-down'} />
           </button>
         </div>
-        <p>
-          <span style={{ textTransform: 'uppercase' }}>
-            {subHeader}
-          </span>
-          {postSubHeader}
-        </p>
-        <p style={{ marginTop: '-0.7rem' }}>{entity}</p>
-        {open
-        && (
-        <div className="card-text__popup">
+        {(!!subHeader || !!postSubHeader) && (
+          <p>
+            <span style={{ textTransform: 'uppercase' }}>
+              {subHeader}
+            </span>
+            {postSubHeader}
+          </p>
+        )}
+        {entity && <p>{entity}</p>}
+        {open && (
+        <div className="card-text-open">
           {description && (
             <p>{description}</p>
           )}
@@ -77,9 +75,6 @@ export default function CardImage({
 
 const CardStyles = styled.div`
   position: relative;
-  > *, h3 {
-      margin: 0.5rem 0;
-  }
   span {
     font-size: 1.6rem;
     font-weight: 400;
@@ -94,21 +89,24 @@ const CardStyles = styled.div`
     line-height: 0;
   }
   .card-text {
-    padding: ${(props) => (props.open ? '1rem 1.5rem' : '1rem')};
-    border-radius: var(--br);
+    padding: 1rem 1.5rem;
     background-color: ${(props) => (props.open ? '#C1D3EC' : 'transparent')};
-    transform: scale(${(props) => (props.open ? 1.1 : 1)});
     transition: ${(props) => (props.open ? 'var(--trans)' : 'unset')};
     position: ${(props) => (props.open ? 'absolute' : 'relative')};
     z-index: ${(props) => (props.open ? 1 : 0)};
     width: 100%;
   }
-  .card-text__popup {
-    font-size: 14px;
-
+  .card-text-header {
+    display: grid;
+    grid-template-columns: 1fr 3rem;
+    padding-bottom: 10px;
+  }
+  .card-text-open {
+    font-size: 16px;
     a {
       color: darkblue;
       cursor: pointer;
+      padding-bottom: 10px;
     }
   }
 `;
