@@ -30,6 +30,7 @@ sectionOne:
         contribute to her communities, Ryhna has sat on numerous non-profit
         boards and committees to support a healthy, sustainable, positive and
         innovative creative economy.
+      url: https://envisionmanagement.com/
     - name: Lesya Maria Nakoneczny
       pronouns: she/her
       role: Project Manager, Co-Designer
@@ -56,6 +57,7 @@ sectionOne:
         psyche, collective experience and interpersonal relationships. Lesya
         joins Pathwaves as a project manager and co-designer from Envision
         Management and Production.
+      url: https://www.linkedin.com/in/lesya-maria-nakoneczny-4b840645/
     - name: Patti Schmidt
       pronouns: she/her
       role: Programmer, Co-Designer
@@ -88,6 +90,7 @@ sectionOne:
         Centre. She continues to work in digital arts and culture for a variety
         of organizations including, The British Council Canada, Pride Toronto
         and Envision Management."
+      url: https://soundcloud.com/wheelie-houdini
     - name: Renelle Desjardins Chiasson
       pronouns: she/her
       role: Co-Designer
@@ -103,6 +106,7 @@ sectionOne:
         soundstage where musicians and artists of international repute converge.
         Renelle continues to bridge relationships between artists and the PHI
         Centre.
+      url: https://phi.ca/fr/centre/
     - name: Suzanne Stein
       pronouns: she/they
       role: Facilitator, Futurist, Co-Designer
@@ -132,6 +136,7 @@ sectionOne:
         included Sapient Corporation, as Discipline Lead for the Experience
         Modeling (XMod) group in London, and Director of the User Experience
         Group.
+      url: https://www2.ocadu.ca/research/superordinary/home
     - name: Aaron Williamson
       pronouns: he/him
       role: Co-Designer
@@ -153,6 +158,7 @@ sectionOne:
         Queen’s University graduate in sociology he conducted research into
         information security and participatory technology, focusing on hacking
         as a mode of interacting with a technology rich environment. "
+      url: https://goal17.co/
     - name: Ziyan Hossain
       pronouns: he/him
       role: Facilitator, Researcher, Foresight Analyst
@@ -167,6 +173,7 @@ sectionOne:
         has worked with major musical equipment companies such as Strandberg
         guitars and Eventide Audio on aspects ranging from community development
         to product design.
+      url: www.methodcollective.ca
     - name: Fran Quintero Rawlings
       pronouns: she/her
       role: Facilitator, Researcher, Foresight Analyst
@@ -176,13 +183,15 @@ sectionOne:
         alt: Picture of Fran
       description: >
         Fran Quintero Rawlings is a deeply curious innovator passionate about
-        working on projects that improve both the human and design experience. 
-
-
-        She is a Co-Lead at Method Collective, a foresight and design consultancy that works with organizations, institutions, and individuals to explore the complex interactions between people, technologies, and their environment.  As an artist she enjoys curating and provoking conversations around equity, wellness and gender through curated public installations and events.  
-
-
-        In her free time Fran loves to dance, travel and cycle around the city.
+        working on projects that improve both the human and design experience.
+        She is a Co-Lead at Method Collective, a foresight and design
+        consultancy that works with organizations, institutions, and individuals
+        to explore the complex interactions between people, technologies, and
+        their environment.  As an artist she enjoys curating and provoking
+        conversations around equity, wellness and gender through curated public
+        installations and events. In her free time Fran loves to dance, travel
+        and cycle around the city.
+      url: www.methodcollective.ca
     - name: Rebecca Black
       pronouns: she/her
       role: Facilitator, Researcher, Foresight Analyst
@@ -205,6 +214,7 @@ sectionOne:
         Rebecca holds a Master of Environmental Studies specializing in Business
         & Sustainability (York University), and a Master of Design in Strategic
         Foresight & Innovation (OCADU).
+      url: https://www.linkedin.com/in/reblacka/
     - name: Dan Freder
       role: Technical Producer
       entity: "  "
@@ -225,6 +235,7 @@ sectionOne:
 
 
         He's excited to be participating as Technical Producer in Pathwaves.
+      url: danielfreder.com
     - name: Magally Zelaya
       pronouns: she/her
       role: Communications Officer
@@ -289,6 +300,7 @@ sectionOne:
         with branding and graphic design. I am a firm believer that
         art/design/music should be tools of resistance, acts of vulnerability,
         and community empowerment.
+      url: https://behance.net/lelin123
     - name: Carms Ng
       pronouns: they/them
       role: Web Developer
