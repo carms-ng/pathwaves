@@ -1,13 +1,13 @@
 ---
 title: "BEYOND NFTs: Potential of the Blockchain for Artist Development "
-description: "Description: Mike will start by presenting his “Authentic Voice”
-  artist development theory and then will focus on various aspects of Blockchain
+description: Mike will start by presenting his “Authentic Voice” artist
+  development theory and then will focus on various aspects of Blockchain
   technology and how it can be used to build your career. “NFT’s” are the
   buzzword right now but how can this technology coupled with the wave of
   decentralized apps that are coming really move the needle in terms of audience
   building. Mike will take a critical look at the current music ecosystem and
   show how the potential of this exciting technology could revolutionize even
-  further our industry."
+  further our industry.
 presenter: Mike Renaud
 linkCalendar: google.com
 linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
