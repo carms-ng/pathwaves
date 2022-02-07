@@ -55,6 +55,16 @@ sectionTwo:
           the prestigious Golden Nica at Prix Ars Electronica 2013 (Austria),
           his work widely recognize, presented all over the world. He is
           teaching in the Digital Music program of the Université de Montréal."
+      description: "Nicolas Bernier creates audiovisual performances and installations
+        aiming to carve a dialogue between sound and tangible matter. Shaped by
+        his work within the fields of cinema, literature, dance and theatre
+        companies, his own language blend together elements of music,
+        photography, design, science, video art, architecture, light design and
+        scenography. In the midst of this eclecticism, concerns remain constant:
+        the balance between the cerebral and the sensual. Awardee of the
+        prestigious Golden Nica at Prix Ars Electronica 2013 (Austria), his work
+        widely recognize, presented all over the world. He is teaching in the
+        Digital Music program of the Université de Montréal."
     - name: Chloe Alexandra Thompson
       pronouns: "   "
       role: Lead Guide
@@ -62,6 +72,13 @@ sectionTwo:
       portrait:
         image: /assets/screen-shot-2021-12-26-at-11.20.jpg
         alt: Picture of Chloe
+      description: Chloe Alexandra Thompson is a Cree, Canadian interdisciplinary
+        artist and sound designer. Her work engages tactics of material
+        minimalism to create site-specific installations that sculpt droning,
+        maximalist experiences out of space and sound. Using audio programming
+        software, computational processing, and acoustic instruments, Thompson’s
+        works envelop audiences into a state of equilibrium and fill rooms with
+        discrete frequencies that engage physical and auditory sensation.
     - name: Claire L. Evans
       pronouns: she/her
       role: Presenter
@@ -77,10 +94,19 @@ sectionTwo:
           the Los Angeles Review of Books, Eye on Design, Quartz, OneZero, and
           Aeon. She lives in Los Angeles, where she is an advisor to graduate
           design students at Art Center College of Design."
+      description: "Claire L. Evans is a writer and musician. She is the singer and
+        coauthor of the Grammy-nominated pop group YACHT, the author of Broad
+        Band: The Untold Story of the Women Who Made the Internet (Penguin
+        Random House), and the co-editor of the upcoming speculative fiction
+        anthology Terraform (MCD Books). She is the former futures editor of
+        Motherboard, and a contributor to VICE, Rhizome, The Guardian, WIRED,
+        the Los Angeles Review of Books, Eye on Design, Quartz, OneZero, and
+        Aeon. She lives in Los Angeles, where she is an advisor to graduate
+        design students at Art Center College of Design."
     - name: Cherie Hu
       pronouns: she/her/hers
       role: Presenter
-      entity: "  "
+      entity: "Water & Music  "
       portrait:
         image: /assets/cherie-hu-head-shot-2021-cherie-hu.jpg
         alt: Cherie Hu is the founder and publisher of Water & Music, a newsletter and
@@ -89,6 +115,12 @@ sectionTwo:
           progressive work with technology. Previously, she wrote about music
           and tech for publications including Billboard, Forbes, Pitchfork and
           NPR Music.
+      description: Cherie Hu is the founder and publisher of Water & Music, a
+        newsletter and research DAO on a mission to empower the music industry
+        with the knowledge, network and skills to do more collaborative,
+        innovative and progressive work with technology. Previously, she wrote
+        about music and tech for publications including Billboard, Forbes,
+        Pitchfork and NPR Music.
     - name: '"Parkside" Mike Renaud'
       pronouns: he/him
       role: Presenter
@@ -100,6 +132,12 @@ sectionTwo:
           in Canada. To-date, artists under Renaud’s guidance have been
           nominated for over 20 JUNO Awards, including three JUNO Award wins in
           the artist development categories.  "
+      description: >
+        Mike “Parkside'' Renaud is the Executive Creative Director of Hidden
+        Pony Records & Management, one of the premiere talent development
+        companies in Canada. To-date, artists under Renaud’s guidance have been
+        nominated for over 20 JUNO Awards, including three JUNO Award wins in
+        the artist development categories.
     - name: Jeff Waye
       pronouns: he/him
       role: Presenter
@@ -116,6 +154,16 @@ sectionTwo:
           experience includes label manager for Ninja Tune Records, production
           lead for Amon Tobin ISAM Live, buyer at Cargo Records, show booker,
           record retail and all other manner of general music nerdery.
+      description: Jeff Waye is a 35 year + music business lifer, and currently C.O.O
+        and co-owner of independent, international, music publisher Third Side
+        Music. The company currently represents over 70 000 songs from a wide
+        ranging roster, including Kurt Vile, Courtney Barnett, Pharoah Sanders,
+        Colin Stetson, SOFI TUKKER, BADBADNOTGOOD, Cinematic Orchestra, Unknown
+        Mortal Orchestra, Flying Lotus, Beverly Glenn-Copeland, Studio One,
+        Soundway and many more. His previous experience includes label manager
+        for Ninja Tune Records, production lead for Amon Tobin ISAM Live, buyer
+        at Cargo Records, show booker, record retail and all other manner of
+        general music nerdery.
     - name: Charlie Wall-Andrews
       pronouns: "   "
       role: Presenter
@@ -123,6 +171,16 @@ sectionTwo:
       portrait:
         image: /assets/unnamed-4-.jpg
         alt: Image of Charlie
+      description: Charlie Wall-Andrews (MBA, MA, BA, CCIP) is a scholar, music
+        industry leader, and lecturer at the University of Toronto. In her role
+        at SOCAN Foundation, she established many programs such as the Creative
+        Entrepreneur Incubator and Equity X Production Development Program which
+        prepares artists to turn their passion and talent into a sustainable
+        career. She is a Management Ph.D. candidate at Ted Rogers School of
+        Management, where she specializes in strategy, innovation, and
+        entrepreneurship. She is on the Board of Directors of WorkInCulture, and
+        TELUS Community Investment Board, and is the inaugural Vice-Chair of
+        Music Canada’s Advisory Council.
     - name: Michaela Ternasky-Holland
       pronouns: she/her
       role: Presenter
@@ -130,5 +188,14 @@ sectionTwo:
       portrait:
         image: /assets/michaela-ternasky-holland-color-headshot-michaela-ternasky-holland.jpg
         alt: Picture of Michaela Ternasky-Holland
+      description: Michaela Ternasky-Holland is a multi-racial Emmy, Webby, and
+        Sheffield Doc/Fest award-winning creative, who combines immersive and
+        interactive technology with non-fiction and socially impactful stories.
+        Recently named as one of the 100 Original Voices of XR, she works with
+        clients as a consultant, specializing in creative strategy and impact
+        production. In short, she works for the impact of the projects to move
+        beyond the project itself. Her work has been featured by TIME, Forbes,
+        The Guardian, Cannes Film Festival, New York Public Library, Tribeca
+        Film Festival.
   cardLinkLabel: Link
 ---
