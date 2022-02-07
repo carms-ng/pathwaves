@@ -75,6 +75,19 @@ sectionOne:
           Centre. She continues to work in digital arts and culture for a
           variety of organizations including, The British Council Canada, Pride
           Toronto and Envision Management. "
+      description: "Patti has been deeply involved in Canada's independent,
+        underground music and contemporary art communities for more than  25
+        years—from running labels to performing, making radio and programming
+        events. She joined Brave New Waves on CBC Radio 2 in 1991, becoming Host
+        and Executive Producer, until the program ended in 2007. Until 2012, she
+        continued to front various CBC radio programs that illuminated music,
+        arts and culture across the country. For 11 years she worked as a
+        curator and producer for the MUTEK Montreal festival of electronic music
+        and digital creativity. In 2016 she was the Artistic Director of the
+        Convergence: Electronic Music + Visual Arts residency at the Banff
+        Centre. She continues to work in digital arts and culture for a variety
+        of organizations including, The British Council Canada, Pride Toronto
+        and Envision Management."
     - name: Renelle Desjardins Chiasson
       pronouns: she/her
       role: Co-Designer
@@ -82,6 +95,14 @@ sectionOne:
       portrait:
         image: /assets/renelle_phi_-renelle-desjardins.jpg
         alt: Photo of Renelle
+      description: With more than 25 years of music industry experience, Renelle
+        toured as a musician and was PHI's Label Manager before becoming
+        Director of Programming. In her 15 years at PHI, she has become a key
+        figure in the music program. Charged with various roles, she was
+        instrumental in developing and positioning the PHI Centre’s renowned
+        soundstage where musicians and artists of international repute converge.
+        Renelle continues to bridge relationships between artists and the PHI
+        Centre.
     - name: Suzanne Stein
       pronouns: she/they
       role: Facilitator, Futurist, Co-Designer
@@ -99,6 +120,18 @@ sectionOne:
           Corporation, as Discipline Lead for the Experience Modeling (XMod)
           group in London, and Director of the User Experience Group.
         image: /assets/stein-suzanne-stein.jpg
+      description: Stein is a Foresight Analyst, Mentor, and Educator. She is Lab
+        Director of OCAD's Super Ordinary, which focusses on complex problem
+        solving, new technologies and research methods. She is a founding
+        faculty member of OCAD U’s Digital Futures and Strategic Foresight &
+        Innovation graduate programs. Stein has been an adjunct Faculty at AHO
+        (Norway), the CFC (Canada), and the Unfinished Business School
+        (virtual). Previously acting as Deputy Director and Principal Research
+        Fellow in Technology Futures at SMARTlab (United Kingdom) and part of
+        Nokia Corporate Strategy’s Insight & Foresight group. Earlier work
+        included Sapient Corporation, as Discipline Lead for the Experience
+        Modeling (XMod) group in London, and Director of the User Experience
+        Group.
     - name: Aaron Williamson
       pronouns: he/him
       role: Co-Designer
@@ -106,6 +139,20 @@ sectionOne:
       portrait:
         image: /assets/aaron.jpg
         alt: Image of Aaron
+      description: "Aaron brings 15 years of experience to strategy and transformation
+        processes in his work across a multitude of spheres from Fortune 500s,
+        international NGOs and the United Nations, as well as cultural
+        organizations. He is the founder of Goal17, a data, strategy and design
+        agency focused on tackling the world’s most challenging problems through
+        collaborative, network-based approaches. Through deep research,
+        cutting-edge analytics and world-class co-creative techniques, he work
+        with clients in government, civil-society and private enterprise to
+        tackle issues in their full context. He was Program Director for the
+        Canadian Film Centre’s IDEABOOST Accelerator, founded the CoDesignLab
+        and provided workshops and consulting across a vast array of contexts. A
+        Queen’s University graduate in sociology he conducted research into
+        information security and participatory technology, focusing on hacking
+        as a mode of interacting with a technology rich environment. "
     - name: Ziyan Hossain
       pronouns: he/him
       role: Facilitator, Researcher, Foresight Analyst
@@ -113,6 +160,13 @@ sectionOne:
       portrait:
         image: /assets/0fcb9a47-57c5-4176-8b5d-fd3bf4b16fbe-ziyan-hossain.jpg
         alt: Image of Ziyan
+      description: Ziyan is an artist, co-founder at consultancy firm Method
+        Collective and Acting Managing Director at OCADU CO. He has performed
+        guitars and bass with renowned Bangladeshi artists Ashiquzzaman Tulu,
+        Ajob and his recent album Gale by Sundecay was critically acclaimed. He
+        has worked with major musical equipment companies such as Strandberg
+        guitars and Eventide Audio on aspects ranging from community development
+        to product design.
     - name: Fran Quintero Rawlings
       pronouns: she/her
       role: Facilitator, Researcher, Foresight Analyst
@@ -120,6 +174,15 @@ sectionOne:
       portrait:
         image: /assets/img_7176-fran-r-1-.jpg
         alt: Picture of Fran
+      description: >
+        Fran Quintero Rawlings is a deeply curious innovator passionate about
+        working on projects that improve both the human and design experience. 
+
+
+        She is a Co-Lead at Method Collective, a foresight and design consultancy that works with organizations, institutions, and individuals to explore the complex interactions between people, technologies, and their environment.  As an artist she enjoys curating and provoking conversations around equity, wellness and gender through curated public installations and events.  
+
+
+        In her free time Fran loves to dance, travel and cycle around the city.
     - name: Rebecca Black
       pronouns: she/her
       role: Facilitator, Researcher, Foresight Analyst
@@ -134,6 +197,14 @@ sectionOne:
           Rebecca holds a Master of Environmental Studies specializing in
           Business & Sustainability (York University), and a Master of Design in
           Strategic Foresight & Innovation (OCADU).
+      description: Rebecca is a sustainable business specialist who has been
+        co-creating strategies to address the climate crisis with international
+        clients for 15+ years. She is Founder of eco-communications and design
+        agency Black Current, Co-Founder of DEI championing nonprofit Women in
+        Renewable Energy WiRE and Director at TREC Renewable Energy incubator.
+        Rebecca holds a Master of Environmental Studies specializing in Business
+        & Sustainability (York University), and a Master of Design in Strategic
+        Foresight & Innovation (OCADU).
     - name: Dan Freder
       role: Technical Producer
       entity: "  "
@@ -145,6 +216,15 @@ sectionOne:
           interactivity, he often uses it to promote connections between
           audiences, objects and the environment.
       pronouns: he/him
+      description: >-
+        Dan's a new media artist, teacher and tinkerer based in Montreal,
+        actively developing works in time-based media; including video,
+        programming and electronics. Drawn to the altered perspectives one can
+        provoke with interactivity, he often uses it to promote connections
+        between audiences, objects and the environment.
+
+
+        He's excited to be participating as Technical Producer in Pathwaves.
     - name: Magally Zelaya
       pronouns: she/her
       role: Communications Officer
@@ -159,6 +239,14 @@ sectionOne:
           University–Newark and a Master of Journalism degree from the
           University of British Columbia.
       entity: "  "
+      description: Magally Zelaya is a writer, multimedia journalist, and
+        communications specialist. Her work has appeared in such publications as
+        The Guardian, Al-Jazeera America, the Toronto Star, msnbc.com, and
+        Cosmopolitan UK,. As a fiction writer, she's received support from the
+        Banff Centre for the Arts, Ontario Arts Council, and the Toronto Arts
+        Council. She holds an MFA in Creative Writing from Rutgers
+        University–Newark and a Master of Journalism degree from the University
+        of British Columbia.
     - name: Allison Outhit
       pronouns: she/her
       role: Equity & Inclusion Consultant
@@ -171,6 +259,13 @@ sectionOne:
           Industry and the recipient of the 2019 Brian Chater Industry Award,
           recognizing a transformative commitment to the Canadian music
           industry.
+      description: >
+        Allison Outhit LL.B is a Canadian Certified Inclusion Practitioner
+        (CCIP) and former music industry executive with 30+ years in the
+        cultural industries. She the founder of the Alliance for Equity in the
+        Music Industry and the recipient of the 2019 Brian Chater Industry
+        Award, recognizing a transformative commitment to the Canadian music
+        industry.
     - name: Le Lin
       pronouns: he/they
       role: Graphic Designer
@@ -185,6 +280,15 @@ sectionOne:
           branding and graphic design. I am a firm believer that
           art/design/music should be tools of resistance, acts of vulnerability,
           and community empowerment."
+      description: >
+        My name is Le Lin (pronouns: he/they). I am a transgender
+        Teochew-Canadian multi-disciplinary artist, designer, activist, and
+        researcher based from Montréal. I love expanding and finding new ways to
+        create art through print-making, book-making, tattooing, ceramics, and
+        digital web interventions. I am happy to be part of Pathwaves, helping
+        with branding and graphic design. I am a firm believer that
+        art/design/music should be tools of resistance, acts of vulnerability,
+        and community empowerment.
     - name: Carms Ng
       pronouns: they/them
       role: Web Developer
@@ -204,6 +308,12 @@ sectionOne:
       portrait:
         image: /assets/cecilia-chris-16.jpg
         alt: Photo of Ceci
+      description: I am a social entrepreneur, artist, and designer amplifying the
+        impact of purpose driven orgnizations, artists, and institutions. Over
+        the past 10 years I have been co-designing products, projects, and
+        websites that are good for the earth and people. I hold a BSc in Global
+        Food Security and Economics from McGill University.
+      url: https://www.mutualdesign.cc/
     - name: Christian Scott
       pronouns: he/they
       role: Website Researcher
@@ -211,6 +321,13 @@ sectionOne:
       portrait:
         image: /assets/cecilia-chris-20.jpg
         alt: Photos of Chris
+      description: >-
+        i am a designer and artist-researcher developing community-centred
+        sustainability initiatives—be it games, websites, irl co-design
+        processes, or action-oriented research.
+
+        i hold a MA in Sociology and International Development from McGill University and am undertaking a PhD in Design/Urban Studies at Concordia University.
+      url: https://www.mutualdesign.cc/
   backgroundImage:
     image: /assets/team2.png
     alt: lines hovering
