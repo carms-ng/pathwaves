@@ -13,7 +13,7 @@ sectionTwo:
       portrait:
         image: /assets/adrian-headshot-a-fung.png
         alt: Picture of Adrian Fung
-      url: http://www.adrianfung.com/bio/
+      url: adrianfung.com
       description: Recognized as one of Musical America’s 30 Innovators of the Year,
         Adrian Fung is an award-winning cellist, educator, and arts executive.
         As Senior Vice President of RCM Learning Systems at The Royal
@@ -38,6 +38,7 @@ sectionTwo:
         freelance engineer. choi’s work experience ranges from live-FOH mixing
         to post-production for internationally distributed TV. He works closely
         with a small circle of artists that go by Sweet 16 Records.
+      url: soundcloud.com/choi-wav
     - name: Della Orrey
       pronouns: she/her/hers/elle
       portrait:
@@ -53,6 +54,7 @@ sectionTwo:
         Themes of identity, fantasy, beauty, healing and the modern expanse of blackness have been central to the projects her skills support.
 
         Orrey is currently poised to release a solo project in attempts to compile a deeply personal representation of her journey of healing for herself and community at large.
+      url: https://dellaorrey.com/
     - name: Emily Kennedy
       pronouns: she/her/they
       portrait:
@@ -67,17 +69,19 @@ sectionTwo:
         and effect pedals to expand the possibilities of her instrument. In
         addition to her solo work, she performs with the Elm City String
         Quartet, and writes and sings for the chamber-pop duo Pallmer.
+      url: http://www.emily-kennedy.com
     - name: Fraud Perry
       pronouns: she/her
       portrait:
         image: /assets/fraud-perry-pic-melinda-massolas.jpg
         alt: Picture of Fraud Perry
-      description: The best way to describe MTL artist, Fraud Perry, is as the on the
-        tip of your tongue; something you know but can’t quite put your finger
-        on. Eclectic soundscapes and electrifying beats lay out the groundwork
-        for Perry's sophisticated fusion of hardcore punk, hip hop, pop and R&B.
-        Perry's infectious flow, sharp lyricism and playful attitude make her a
-        new staple in Montreal's music scene.
+      description: The best way to describe MTL artist, Fraud Perry, is as the word on
+        the tip of your tongue; something you know but can’t quite put your
+        finger on. Eclectic soundscapes and electrifying beats lay out the
+        groundwork for Perry's sophisticated fusion of hardcore punk, hip hop,
+        pop and R&B. Perry's infectious flow, sharp lyricism and playful
+        attitude make her a new staple in Montreal's music scene.
+      url: https://www.instagram.com/fraudperry/?hl=en
     - name: Ida Toninato
       pronouns: she/her
       portrait:
@@ -99,6 +103,7 @@ sectionTwo:
         Reality as a way to connect deeply with an audience. This led to the
         creation of Listening to the Walls, a VR series based on reverberant
         places, developed with Studio TREBUCHET, in Montreal.
+      url: https://idatoninato.com
     - name: Kwiat
       pronouns: "  she/her"
       portrait:
@@ -118,10 +123,11 @@ sectionTwo:
 
 
 
-        Kwiat dedicates her time to building up other artists through a plethora of other endeavours. She is the creator and host of Songsmiths, formally the Western Canada Music Awards-nominated program Winnipeg Music Project, and in 2022 re-ignites the weekly case study series to spotlight Canada’s songwriters. Under Songsmiths, she also facilitates monthly virtual songwriting development and networking camp opportunities for emerging artists. Kwiat has worked at Manitoba Music, a non-profit music industry association, since 2018 and currently holds the role as the interim Indigenous Music Program Coordinator, creating professional development and export opportunities for Indigenous artists across Manitoba and Canada. In recent years, Kwiat has joined the juries for Polaris Music Prize, Prism Music Prize, FACTOR, Manitoba Arts Council, and the Western Canada Music Awards. She holds a Bachelor of Music degree in Classical Piano from the University of Manitoba and is currently on the 101.5 UMFM Radio and Rainbow Trout Music Festival Board of Directors.
+        Kwiat dedicates her time to building up other artists through a plethora of other endeavours. She is the creator and host of Songsmiths, formerly known as the Western Canada Music Awards-nominated program Winnipeg Music Project, and in 2022 re-ignites the weekly case study series to spotlight Canada’s songwriters. Under Songsmiths, she also facilitates monthly virtual songwriting development and networking camp opportunities for emerging artists. Kwiat has worked at Manitoba Music, a non-profit music industry association, since 2018 and currently holds the role as the interim Indigenous Music Program Coordinator, creating professional development and export opportunities for Indigenous artists across Manitoba and Canada. In recent years, Kwiat has joined the juries for Polaris Music Prize, Prism Music Prize, FACTOR, Manitoba Arts Council, and the Western Canada Music Awards. She holds a Bachelor of Music degree in Classical Piano from the University of Manitoba and is currently on the 101.5 UMFM Radio and Rainbow Trout Music Festival Board of Directors.
 
 
         Kwiat plans to make her official debut in the Fall of 2022.
+      url: https://peaceandkwiat.com/
     - name: Mattmac
       pronouns: "  he/him"
       portrait:
@@ -129,14 +135,15 @@ sectionTwo:
         alt: Image of Mattmac
       description: Mattmac is a blind music producer and recording artist hailing from
         Garden Hill First Nation, Manitoba. A self-taught artist, using screen
-        reader and logic pro x has harnessed his melodic pop-trap beats and
-        inspiring story, to quickly establish himself as ‘one to watch’ on the
-        national scene. HIs debut release, 20/20 has gardener over 500,000
-        streams and with heavy local support from Virgin Radio Winnipeg &
-        NCI-FM, his songs have become both a national and local sensations —
-        including features with CBC Indigenous, CTV National News, Winnipeg Sun,
-        and more. He recently won Rap/Electronic Album of The Year at the Summer
+        reader and Logic Pro X has harnessed his melodic pop-trap beats and
+        inspiring story to quickly establish himself as "one to watch" on the
+        national scene. HIs debut release 20/20 has garnered over 500,000
+        streams and with heavy local support from Virgin Radio Winnipeg & NCI-FM
+        his songs have become both a national and local sensation — including
+        features with CBC Indigenous, CTV National News, the Winnipeg Sun, and
+        more. He recently won Rap/Electronic Album of The Year at the Summer
         Solstice Indigenous Music Awards 2021.
+      url: https://mattmacmusic.com/
     - name: Minkworks
       pronouns: she/her
       portrait:
@@ -148,6 +155,7 @@ sectionTwo:
         submersed by captivating and unpredictable atmospheres created by an
         electronically processed harp. Challenging perceptions, deconstructing
         expectations… that’s what Minkworks is about.
+      url: https://www.instagram.com/minkworks.music/?hl=en
     - name: Remy Rodden
       pronouns: he/him
       portrait:
@@ -164,6 +172,7 @@ sectionTwo:
         inspire people of all ages to be responsible environmental citizens
         through high-quality entertaining and learning-filled audio, video and
         interactive concerts."
+      url: https://remyrodden.com/
     - name: Ruby Singh
       pronouns: he/him
       portrait:
@@ -186,15 +195,15 @@ sectionTwo:
       portrait:
         image: /assets/thinking-samuel-harvey.jpg
         alt: Image of Samuel Harvey
-      description: En 2017, Samuel Harvey s’est mérité trois hits sur les ondes radio
-        ainsi qu’une nomination à l’Adisq pour « Album de l’année » en 2018. En
-        2019, il lance les Big Blue Sessions, une série de sessions “live”
-        filmées en direct de son studio de production musicale, le Studio Big
-        Blue. Réalisateur aguerri, il lance ensuite en 2020 VOÏO, un projet de
-        musique électronique à travers lequel il fait valoir ses talents de
-        producteur de gros son lourd. L’auteur-compositeur-interprète et
-        producteur nous revient en force en 2022, cette fois avec un tout
-        nouveau projet francophone aux saveurs électroniques.
+      description: In 2017, Samuel Harvey created three radio hits and earned himself
+        an “Album of the Year” ADISQ nomination in 2018. In 2019, he launched
+        the Big Blue Sessions, a series of sessions broadcasted live from Studio
+        Big Blue, his music production studio. In 2020, the seasoned sound
+        designer launched VOÏO, an electronic music project that allowed him to
+        showcase his talent as a producer of big, heavy sound. The
+        singer-songwriter-producer is back in force in 2022, this time with a
+        brand-new French-language project with an electronic vibe.
+      url: https://www.samuelharveymusic.com
     - name: STORRY
       pronouns: she/her
       portrait:
@@ -216,6 +225,7 @@ sectionTwo:
 
 
         Born and raised in Toronto, Canada to Lebanese and Greek parents, STORRY is a sex-positive, queer, feminist, left-brained artist who is pushing culture forward. Her art is raw and honest to the max. If it doesn’t touch you, it’ll hit you in the face.
+      url: www.storrymusic.com
     - name: Susan O’Quinn / ShadowWolf
       pronouns: she/her
       portrait:
@@ -229,6 +239,7 @@ sectionTwo:
         recorded a 3 song EP with award winning producer Chris Birkett (Sinead
         O’Connor, Buffy Sainte Marie, et al) and returned to the stage. She is
         excited to be working on new music which will be released in 2022.
+      url: https://www.susanoquinn.com/
     - name: Tough Sell
       pronouns: they/them and/or she/her
       portrait:
@@ -242,6 +253,7 @@ sectionTwo:
         inspiration from disparate musical genres (folk, pop, noise, and
         electronic/electroacoustic music) to create works that document,
         archive, and abstract the places and headspaces I find myself in.
+      url: https://toughsell.ca
     - name: Wake Island
       pronouns: he/him
       portrait:
@@ -256,6 +268,7 @@ sectionTwo:
         possibilities of digital interactive media and is pursuing a number of
         projects, challenging how music can be used to tell stories and
         communicate emotions and ideas in a modern, technological world.
+      url: https://wakeislandmusic.com/
     - name: x/o
       pronouns: they/them
       portrait:
@@ -270,18 +283,20 @@ sectionTwo:
 
 
         Described by Wire Magazine as having "…a complex, compelling affect hardly heard in digital music...", x/o has presented work internationally, including 3HD Festival, Vivid Sydney, and MUTEK Montreal, and was selected for the AMPLIFY residency at Somerset House Studios in 2019.
+      url: http://veronx.io
     - name: Zuki
       pronouns: he/him
       portrait:
         image: /assets/img_2243-felix-idigbe.jpg
         alt: Image of Zuki
       description: >-
-        That’s how Zuki describes his purpose as a DJ. With his eclectic musical
-        taste inspired by his travels, you're guaranteed to go on a musical
-        journey and ultimately be left wondering how you ended up on the dance
-        floor. Growing up to his Mother’s 70’s funk essentials box set and his
-        Dad’s Fela Kuti tapes playing in the household, his range of musical
-        influence is wide.
+        “It's simple, I’m here to make you dance, feel good or both.” That’s how
+        Zuki describes his purpose as a DJ. With his eclectic musical taste
+        inspired by his travels, you're guaranteed to go on a musical journey
+        and ultimately be left wondering how you ended up on the dance floor.
+        Growing up to his Mother’s 70’s funk essentials box set and his Dad’s
+        Fela Kuti tapes playing in the household, his range of musical influence
+        is wide.
 
 
         Zuki can take the hypnotizing drums of South African house, saxophone samples from afrobeat hits and blend them effortlessly with your favourite rhythm, funk and hip-hop tunes.
