@@ -91,7 +91,10 @@ const CardStyles = styled.div`
   .card-text {
     padding: 1rem 1.5rem;
     background-color: ${(props) => (props.open ? '#C1D3EC' : 'transparent')};
-    transition: ${(props) => (props.open ? 'var(--trans)' : 'unset')};
+    height: auto;
+    max-height: ${(props) => (props.open ? '1000px' : '150px')};
+    transition: max-height 1.7s ease-out, background-color 0.7s ease-out;
+    overflow-y: hidden;
     position: ${(props) => (props.open ? 'absolute' : 'relative')};
     z-index: ${(props) => (props.open ? 1 : 0)};
     width: 100%;
