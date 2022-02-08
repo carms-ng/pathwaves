@@ -12,7 +12,7 @@ description: >-
   Preparation: You MUST download and install the Max software BEFORE the session. It is  free and unrestricted for 30 days. version 8 preferred, but 5 and up is a-ok) installed. You can download the demo for free from: https://cycling74.com/downloads
 presenter: Dan Freder and Chloe Alexandra Thompson
 linkCalendar: google.com
-linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
+linkZoom: https://vimeo.com/manage/videos/674692994
 start: 2022-02-07T16:00:00.000Z
 end: 2022-02-07T19:00:00.000Z
 phaseNumber: 2
