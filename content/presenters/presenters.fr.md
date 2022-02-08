@@ -10,10 +10,24 @@ sectionTwo:
   members:
     - name: Blanche Israël
       pronouns: elle/elles
-      role: Guide principal
+      role: Guide en chef
       entity: proScenium Services
       portrait:
         image: /assets/cookedphotography_bi_portraits_2021-8-blanche-israël.jpg
+      description: Blanche Israël est une consultante et une violoncelliste polyglotte
+        canadienne et la fondatrice de proScenium Services, qui se spécialise en
+        stratégie, développement et virtualisation dans le secteur des arts de
+        la scène. Après avoir étudié le violoncelle à Montréal pendant près de
+        deux décennies, elle obtient en 2014 un diplôme en gestion artistique de
+        l’Université de Toronto. Pendant la pandémie, Blanche lance Streamium,
+        un service de technicien·ne·s en diffusion continue en direct pour les
+        artistes et organismes artistiques du Canada. Elle offre ses
+        services-conseils à de nombreux clients dont Hill Strategies, The Art
+        Film, Dadan Sivunivut, la Canadian Opera Company, Jeunesses Muciales
+        Canada et Orchestres Canada. Depuis 2018, elle se produit et effectue
+        des tournées en tant que violoncelliste avec le ténor d’opéra et
+        compositeur autochtone Jeremy Dutcher, lauréat d’un prix Juno.
+      url: www.prosceniumservices.com
     - name: Nicolas Bernier
       pronouns: il/ils
       role: Guide principal

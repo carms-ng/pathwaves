@@ -26,7 +26,7 @@ sectionTwo:
           Opera Company, Jeunesses Musicales Canada, and Orchestras Canada. As a
           musician, Blanche has performed and toured with JUNO Award-winning
           Indigenous operatic tenor and composer Jeremy Dutcher since 2018.
-      url: https://ca.linkedin.com/in/blancheis
+      url: www.prosceniumservices.com
       description: Blanche Israël is a multilingual Canadian consultant, cellist, and
         the founder of proScenium Services, which specializes in strategy,
         development, and virtualizing in the performing arts. After studying
