@@ -63,10 +63,11 @@ sectionTwo:
         scenography. In the midst of this eclecticism, concerns remain constant:
         the balance between the cerebral and the sensual. Awardee of the
         prestigious Golden Nica at Prix Ars Electronica 2013 (Austria), his work
-        widely recognize, presented all over the world. He is teaching in the
+        widely recognized, presented all over the world. He is teaching in the
         Digital Music program of the Université de Montréal."
+      url: http://www.nicolasbernier.com
     - name: Chloe Alexandra Thompson
-      pronouns: "   "
+      pronouns: "she/her   "
       role: Lead Guide
       entity: "   "
       portrait:
@@ -79,30 +80,24 @@ sectionTwo:
         software, computational processing, and acoustic instruments, Thompson’s
         works envelop audiences into a state of equilibrium and fill rooms with
         discrete frequencies that engage physical and auditory sensation.
+      url: https://www.chloealexandra.info/
     - name: Claire L. Evans
       pronouns: she/her
       role: Presenter
       entity: YACHT
       portrait:
         image: /assets/itme-claire-evans.jpg
-        alt: "Claire L. Evans is a writer and musician. She is the singer and coauthor
-          of the Grammy-nominated pop group YACHT, the author of Broad Band: The
-          Untold Story of the Women Who Made the Internet (Penguin Random
-          House), and the co-editor of the upcoming speculative fiction
-          anthology Terraform (MCD Books). She is the former futures editor of
-          Motherboard, and a contributor to VICE, Rhizome, The Guardian, WIRED,
-          the Los Angeles Review of Books, Eye on Design, Quartz, OneZero, and
-          Aeon. She lives in Los Angeles, where she is an advisor to graduate
-          design students at Art Center College of Design."
-      description: "Claire L. Evans is a writer and musician. She is the singer and
-        coauthor of the Grammy-nominated pop group YACHT, the author of Broad
-        Band: The Untold Story of the Women Who Made the Internet (Penguin
+        alt: Claire Evans
+      description: 'Claire L. Evans is a writer and musician. She is the singer and
+        coauthor of the Grammy-nominated pop group YACHT, the author of "Broad
+        Band: The Untold Story of the Women Who Made the Internet" (Penguin
         Random House), and the co-editor of the upcoming speculative fiction
-        anthology Terraform (MCD Books). She is the former futures editor of
+        anthology "Terraform" (MCD Books). She is the former futures editor of
         Motherboard, and a contributor to VICE, Rhizome, The Guardian, WIRED,
         the Los Angeles Review of Books, Eye on Design, Quartz, OneZero, and
         Aeon. She lives in Los Angeles, where she is an advisor to graduate
-        design students at Art Center College of Design."
+        design students at Art Center College of Design.'
+      url: https://teamyacht.com
     - name: Cherie Hu
       pronouns: she/her/hers
       role: Presenter
@@ -121,6 +116,7 @@ sectionTwo:
         innovative and progressive work with technology. Previously, she wrote
         about music and tech for publications including Billboard, Forbes,
         Pitchfork and NPR Music.
+      url: https://waterandmusic.com
     - name: '"Parkside" Mike Renaud'
       pronouns: he/him
       role: Presenter
@@ -164,6 +160,7 @@ sectionTwo:
         for Ninja Tune Records, production lead for Amon Tobin ISAM Live, buyer
         at Cargo Records, show booker, record retail and all other manner of
         general music nerdery.
+      url: www.thirdsidemusic.com
     - name: Charlie Wall-Andrews
       pronouns: "   "
       role: Presenter
@@ -197,5 +194,6 @@ sectionTwo:
         beyond the project itself. Her work has been featured by TIME, Forbes,
         The Guardian, Cannes Film Festival, New York Public Library, Tribeca
         Film Festival.
+      url: http://michaelaternaskyholland.com/
   cardLinkLabel: Link
 ---
