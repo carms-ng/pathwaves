@@ -300,5 +300,6 @@ sectionTwo:
 
 
         Zuki can take the hypnotizing drums of South African house, saxophone samples from afrobeat hits and blend them effortlessly with your favourite rhythm, funk and hip-hop tunes.
+      url: https://www.zukimusic.com/music
   cardLinkLabel: Link
 ---
