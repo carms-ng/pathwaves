@@ -1,16 +1,16 @@
 ---
-title: "Intro to Max MSP "
+title: "Introduction à l'univers Max MSP "
 description: >-
-  Learn to navigate the software, patch-along in real-time, create a simple
-  sequencer and explore Max's capabilities for interfacing audio, video and
-  electronics.
+  Apprenez à naviguer dans le logiciel, à faire du ‘patch-along’ en temps réel,
+  à créer un séquenceur simple et à explorer les capacités de Max pour
+  interfacer l'audio, la vidéo et l'électronique.
 
 
-  Please note: This workshop is an essential element to help participants interested in taking the Spatial Audio masterclass with Chloe later.
+  Remarque : Cet atelier est un élément essentiel pour aider les participants intéressés à suivre plus tard la masterclass Spatial Audio avec Chloe.
 
 
-  Preparation: You MUST download and install the Max software BEFORE the session. It is  free and unrestricted for 30 days. version 8 preferred, but 5 and up is a-ok) installed. You can download the demo for free from: https://cycling74.com/downloads
-presenter: Dan Freder and Chloe Alexandra Thompson
+  Préparation : Vous DEVEZ télécharger et installer le logiciel Max AVANT la session. Il est gratuit et sans restriction pendant 30 jours. La version 8 est préférable, mais la 5 et les suivantes sont acceptables. Vous pouvez télécharger la démo gratuitement à l'adresse suivante : https://cycling74.com/downloads
+presenter: Dan Freder et Chloe Alexandra Thompson
 linkCalendar: google.com
 linkZoom: https://vimeo.com/manage/videos/674692994
 start: 2022-02-07T16:00:00.000Z
