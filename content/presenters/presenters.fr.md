@@ -154,5 +154,36 @@ sectionTwo:
         projets. Son travail s’est retrouvé dans le TIME, Forbes, The Guardian,
         au Festival de Cannes, à la New York Public Library et au Tribeca Film
         Festival.
+    - name: James Benjamin
+      description: James Benjamin is one of the owners of Breakglass Studios, where he
+        works as a music producer, Grammy winning mixer and composer. He also
+        serves as the host of Live Analog Dance Rhythms, and is involved in a
+        number of his own musical and art projects. In March 2020, alongside
+        partners Ian Cameron and Guillaume Sabourin, they launched TRANSMISSION
+        MTL, a new and immersive Montreal based portal for the digestion of
+        audio visual artistic work.
+      entity: Breakglass Studios
+      role: présentateur
+      pronouns: "  "
+      portrait:
+        image: /assets/james-benjamin.jpg
+        alt: "   "
+    - name: Ian Cameron
+      pronouns: "   "
+      role: présentateur
+      entity: "  "
+      description: Ian Cameron has made his career working where video and music
+        intersect, from VR, art installations, video projections, art direction,
+        and music videos, to live multi-camera direction, exploring new media
+        has been a constant part of his practice. As a director, he has worked
+        with the l’Orchestre Métropolitain, l’Orchestre symphonique de Montréal,
+        I Musici de Montréal, as well as other soloists and ensembles. Ian has
+        worked with artists in across an array of genres from Kendrick Lamar to
+        Arcade Fire. He has also created video projections for many notable
+        electronic acts. A musician himself, he is a founding member of
+        multimedia band The National Parcs.
+      portrait:
+        image: /assets/ian-cameron.jpeg
+        alt: "    "
   cardLinkLabel: Ligne
 ---
