@@ -9,7 +9,7 @@ description: AI is rapidly reshaping what it means to make music. But as
 presenter: Claire L. Evans
 linkCalendar: google.com
 linkZoom: https://vimeo.com/670916955
-start: 2022-01-26T17:20:00.000Z
-end: 2022-01-26T18:05:00.000Z
+start: 2022-01-27T17:20:00.000Z
+end: 2022-01-27T18:05:00.000Z
 phaseNumber: 1
 ---

@@ -11,7 +11,7 @@ description: L'IA est en train de remodeler rapidement ce que signifie faire de
 presenter: Claire L. Evans
 linkCalendar: google.com
 linkZoom: https://vimeo.com/670916955
-start: 2022-01-26T17:20:00.000Z
-end: 2022-01-26T18:05:00.000Z
+start: 2022-01-27T17:20:00.000Z
+end: 2022-01-27T18:05:00.000Z
 phaseNumber: 1
 ---
