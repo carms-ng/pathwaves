@@ -1,27 +1,34 @@
 ---
-title: Spatial Sound
+title: Spatialisation audio
 description: >-
-  Description: Interactive workshop for audio spatialization to output to
-  binaural or multi-channel arrays by routing audio from your preferred audio
-  software into Max. We will focus on binaural, but discuss how the methods we
-  build in this session can be tailored to work with speakers. We will use open
-  source the ICST Ambisonics Packages and HISS Impulse Response Tool Kit
-  dependent on participant responses to the survey.
+  Description : Atelier interactif sur l’utilisation de la spatialisation audio
+  afin de produire des réseaux binauraux ou multicanaux en routant l'audio de
+  votre logiciel audio préféré dans Max. Nous nous concentrerons sur le
+  binaural, mais nous discuterons de la façon dont les méthodes que nous
+  construisons dans cet atelier peuvent être adaptées pour travailler avec des
+  haut-parleurs. Nous utiliserons ICST Ambisonics Packages et HISS Impulse
+  Response Tool Kit, deux outils open source,  en fonction des réponses des
+  participants à l'enquête.
 
 
-  Participant Preparation: Please fill out this survey to let me build a class to best suit your needs <https://forms.gle/A52FX9VtTqHC6zYy7>
+  Préparation des participants : Veuillez remplir ce questionnaire pour me permettre d'élaborer un cours répondant au mieux à vos besoins <https://forms.gle/A52FX9VtTqHC6zYy7>
 
 
-  Before class, download and install Blackhole or Jack to route audio on your computer (this is also useful for streaming with OBS or Zoom!): 
+  Avant le cours, téléchargez et installez Blackhole ou Jack pour acheminer l'audio sur votre ordinateur (ils sont également utiles pour la diffusion en continu avec OBS ou Zoom !)
 
 
-  Blackhole Audio for Mac <https://existential.audio/blackhole/> 
+  Blackhole Audio pour Mac : <https://existential.audio/blackhole/>
 
 
-  Jack Audio for Windows or Linux: <https://jackaudio.org/downloads/>
+  Jack Audio pour Windows ou Linux : <https://jackaudio.org/downloads/>
 
 
-  Max - (use 30 day free trial): <https://cycling74.com/downloads>
+  Max - (utilisez la version d'essai gratuite de 30 jours) :[ https://cycling74.com/downloads](https://cycling74.com/downloads)
+
+
+
+
+  <!--EndFragment-->
 presenter: Chloe Alexandra Thompson
 linkCalendar: google.com
 linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
