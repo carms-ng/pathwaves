@@ -6,7 +6,7 @@ import Picker from './Picker';
 import NavAuth from './NavAuth';
 
 export default function Calendar({
-  courses, page, user, lang, nav, slug, showFullSchedule, setShowFullSchedule,
+  events, page, user, lang, nav, slug, showFullSchedule, setShowFullSchedule,
 }) {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
@@ -14,21 +14,12 @@ export default function Calendar({
     weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
   };
 
-  // Group courses by Date
-  const dateGroups = courses.nodes.reduce((groups, node) => {
-    const obj = node.childMarkdownRemark.frontmatter;
-    const date = new Date(obj.start).toLocaleDateString();
-    // Create Empty Array if Date key doesn't exist
-    if (!groups[date]) { groups[date] = []; }
-    // Push artivity to the array
-    groups[date].push(obj);
+  const selectedDateString = selectedDate.toLocaleDateString();
+
+  const eventsByDate = events.reduce((groups, event) => {
+    groups[event.date] = [...(groups[event.date] || []), event];
     return groups;
   }, {});
-
-  const selectedDateString = selectedDate.toLocaleDateString();
-  const selectedDateGroup = dateGroups[selectedDateString]
-    ? dateGroups[selectedDateString]
-    : [];
 
   // Handle display full schedule
   const toggleFullSchedule = () => {
@@ -74,7 +65,8 @@ export default function Calendar({
         </div>
 
         <TimeTable
-          selectedDateGroup={selectedDateGroup}
+          selectedEvents={eventsByDate[selectedDateString] || []}
+          eventsByDate={eventsByDate}
           id="timetable"
           page={page}
         />
@@ -84,7 +76,7 @@ export default function Calendar({
           lang={lang}
           selectedDate={selectedDate}
           setSelectedDate={setSelectedDate}
-          dateGroups={dateGroups}
+          eventDates={Object.keys(eventsByDate)}
         />
 
         <button

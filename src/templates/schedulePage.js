@@ -33,6 +33,17 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
 
   const { nav } = settings;
 
+  const events = data.courses.nodes.map((node) => {
+    const event = node.childMarkdownRemark.frontmatter;
+
+    return ({
+      ...event,
+      date: new Date(event.start).toLocaleDateString(),
+      start: new Date(event.start),
+      end: new Date(event.end),
+    });
+  }).sort((a, b) => a.start - b.start);
+
   return (
     isAuthenticated && (
       <Layout lang={lang} slug={slug} settings={settings}>
@@ -41,7 +52,7 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
         {/* Section One */}
         <Calendar
           page={sectionOne}
-          courses={data.courses}
+          events={events}
           user={user}
           lang={lang}
           nav={nav}
@@ -55,7 +66,7 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
           && (
           <FullSchedule
             page={sectionTwo}
-            courses={data.courses}
+            events={events}
             lang={lang}
             labelPhases={nav.labelPhases}
           />
@@ -139,7 +150,6 @@ export const query = graphql`
     }
     courses: allFile(
       filter: {relativeDirectory: {eq: "courses"}, base: {regex: $regx}}
-      sort: {fields: childMarkdownRemark___frontmatter___start}
     ) {
       nodes {
         childMarkdownRemark {
