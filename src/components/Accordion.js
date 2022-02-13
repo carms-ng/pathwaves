@@ -11,7 +11,7 @@ export default function Accordion({ items, page: { labelTime, labelCourse, label
       {items.map(({
         title, description, start, end, presenter, linkCalendar,
       }, index) => (
-        <div className="accordion-item" key={start + end}>
+        <div className="accordion-item" key={title + end}>
           {index === 0 && <h4>{labelTime}</h4>}
           {index === 0 && <h4>{labelCourse}</h4>}
           <div>
