@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { graphql } from 'gatsby';
 
+import { TailSpin } from 'react-loader-spinner';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Calendar from '../components/Calendar';
 import FullSchedule from '../components/FullSchedule';
+import { LoadingStyles } from '../styles/InnerStyles';
 
 export default function SchedulePageTemplate({ pageContext: { lang, slug }, data }) {
   const [showFullSchedule, setShowFullSchedule] = useState(false);
@@ -15,7 +17,11 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
   } = useAuth0();
 
   if (isLoading) {
-    return <div>Authenticating...</div>;
+    return (
+      <LoadingStyles>
+        <TailSpin color="#333333" height={80} width={80} />
+      </LoadingStyles>
+    );
   }
 
   if (!isAuthenticated) {
