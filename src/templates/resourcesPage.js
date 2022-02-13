@@ -3,19 +3,24 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
+import { TailSpin } from 'react-loader-spinner';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import NavAuth from '../components/NavAuth';
 import Resources from '../components/Resources';
 
-import { AuthHeroStyles } from '../styles/InnerStyles';
+import { AuthHeroStyles, LoadingStyles } from '../styles/InnerStyles';
 
 // markup
 export default function ResourcesPageTemplate({ pageContext: { lang, slug }, data }) {
   const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
 
   if (isLoading) {
-    return <div>Authenticating...</div>;
+    return (
+      <LoadingStyles>
+        <TailSpin color="#333333" height={80} width={80} />
+      </LoadingStyles>
+    );
   }
 
   if (!isAuthenticated) {
