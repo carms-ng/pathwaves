@@ -31,6 +31,7 @@ const ClipboardStyles = styled.div`
 
   a {
     color: var(--black);
+    overflow-wrap: anywhere;
   }
   button {
     border: 0;
