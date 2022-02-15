@@ -1,5 +1,5 @@
 ---
-title: " Audiovisual Scenography Technical Masterclass"
+title: "Classe de maître  technique sur la scénographie audiovisuelle "
 description: >-
   Cette session fait suite à ma présentation lors de la conférence, qui portait
   sur les concepts et stratégies visant à créer un "art total" pour les
