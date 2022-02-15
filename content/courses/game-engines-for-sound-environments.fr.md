@@ -1,5 +1,5 @@
 ---
-title: " Game Engines for Sound Environments"
+title: Moteurs de jeux pour environnements sonores
 description: >-
   Apprenez les méthodes pour incorporer des instruments de musique et des
   interfaces dans les moteurs de jeu pour les performances, les visualisateurs
