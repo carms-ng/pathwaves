@@ -10,7 +10,7 @@ description: Mike will start by presenting his “Authentic Voice” artist
   further our industry.
 presenter: Mike Renaud
 linkCalendar: google.com
-linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
+linkZoom: https://vimeo.com/673773367
 start: 2022-02-10T19:00:00.000Z
 end: 2022-02-10T21:00:00.000Z
 phaseNumber: 2
