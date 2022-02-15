@@ -1,14 +1,17 @@
 ---
-title: "XR and live performance "
+title: XR et performance live
 description: >-
-  Description: For the first hour workshop attendees will take a deep dive into
-  the tools used to create, produce, and publish digitally immersive and
-  interactive experiences. For the second hour workshop attendees will discuss
-  the field trip experiences from the preparation material and explore how it
-  can be translated into live performances.
+  Pendant la première heure de l'atelier, les participants exploreront les
+  outils utilisés pour créer, produire et publier des expériences numériques
+  immersives et interactives. Pendant la deuxième heure, les participants
+  discuteront des expériences de terrain à partir du matériel de préparation et
+  exploreront comment elles peuvent être traduites en performances live.
 
 
-  Quest 2 headset advised but not needed.
+  Un casque Quest 2 est conseillé mais pas nécessaire.
+
+
+  Préparation des participants : [Voir le lien vers le pdf ici](https://drive.google.com/file/d/1ah5uY-6ct_Fv-AuuwvAqq1iFIxbKGFMe/view), il est conseillé de regarder les expériences avant l'atelier mais ce n'est pas obligatoire.
 presenter: "Michaela Ternasky "
 linkCalendar: google.com
 linkZoom: https://vimeo.com/manage/videos/673773367

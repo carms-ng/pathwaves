@@ -9,6 +9,9 @@ description: >-
 
 
   Quest 2 headset advised but not needed.
+
+
+  Participant Preparation: [See link to pdf here](https://drive.google.com/file/d/1ah5uY-6ct_Fv-AuuwvAqq1iFIxbKGFMe/view?usp=sharing), it is advised you watch the experiences before the workshop but not mandatory
 presenter: "Michaela Ternasky "
 linkCalendar: google.com
 linkZoom: https://vimeo.com/manage/videos/673773367
