@@ -23,7 +23,7 @@ description: >-
   Preparation: Download the latest version of OBS and create a Twitch account. Webcam, soundcard, and microphone encouraged, but the built-in webcam and mic can be used for the purpose of the workshop.
 presenter: James Benjamin and Ian Cameron
 linkCalendar: google.com
-linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
+linkZoom: https://vimeo.com/677441541
 start: 2022-02-14T18:00:00.000Z
 end: 2022-02-14T20:30:00.000Z
 phaseNumber: 2

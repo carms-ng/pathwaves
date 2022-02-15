@@ -22,7 +22,7 @@ description: >-
   Préparation : Téléchargez la dernière version d'OBS et créez un compte Twitch. Webcam, carte son et microphone un plus, mais la webcam et le micro intégrés peuvent être utilisés dans cet atelier.
 presenter: James Benjamin et Ian Cameron
 linkCalendar: google.com
-linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
+linkZoom: https://vimeo.com/677441541
 start: 2022-02-14T18:00:00.000Z
 end: 2022-02-14T20:30:00.000Z
 phaseNumber: 2
