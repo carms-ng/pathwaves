@@ -23,7 +23,7 @@ description: >-
 
   Max - (use 30 day free trial): <https://cycling74.com/downloads>
 presenter: Chloe Alexandra Thompson
-linkCalendar: google.com
+linkCalendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=MG5hbGtub2lpb2Q5amo5Nzg0bW1qZ2w1OTYgY19tcnJybXZ0ZWhqcThyc3A2ajJmdHVjbGJyc0Bn&tmsrc=c_mrrrmvtehjq8rsp6j2ftuclbrs%40group.calendar.google.com
 linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
 start: 2022-02-18T18:00:00.000Z
 end: 2022-02-18T21:00:00.000Z
