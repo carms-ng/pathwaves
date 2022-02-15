@@ -1,15 +1,15 @@
 ---
 title: " Audiovisual Scenography Technical Masterclass"
 description: >-
-  This session is a follow up to my presentation during the conference, which
-  was concerned with concepts and strategies towards creating a “total art” for
-  stage performances. In this masterclass I will use these examples as cases in
-  order to provide a more technical overview. This will range from how to build
-  a cheap transportable video screen, to the communication protocols that
-  control lighting.
+  Cette session fait suite à ma présentation lors de la conférence, qui portait
+  sur les concepts et stratégies visant à créer un "art total" pour les
+  performances scéniques. Dans cette classe de maître, j'utiliserai ces exemples
+  comme des cas afin de fournir un aperçu plus technique. Cela ira de la
+  construction d'un écran vidéo transportable bon marché aux protocoles de
+  communication qui contrôlent l'éclairage.
 
 
-  Participant Preparation: n/a
+  Préparation des participants : n/a
 presenter: Nicolas Bernier
 linkCalendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=NDJhYnVmNDRoMDdwMmllaHAxYmxncnNrbWwgY19tcnJybXZ0ZWhqcThyc3A2ajJmdHVjbGJyc0Bn&tmsrc=c_mrrrmvtehjq8rsp6j2ftuclbrs%40group.calendar.google.com
 linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
