@@ -185,5 +185,24 @@ sectionTwo:
       portrait:
         image: /assets/ian-cameron.jpeg
         alt: "    "
+    - name: Dorothée Parent-Roy
+      pronouns: "   "
+      role: présentatrice
+      entity: "   "
+      description: Dorothée Parent-Roy discovered the inner workings of digital
+        distribution in 2012 when she started working for Believe Digital within
+        their trade marketing team. She then joined Distribution Select in 2017,
+        where she led the digital distribution team, while continuing to help
+        labels build their digital marketing strategies. Over the years, she
+        participated in various conferences or training workshops (FEQ,
+        PopMontreal, CMW, MaMa, ECMA, BreakOut West), which allowed her to share
+        the knowledge she accumulated over the years. Since 2020, she spends her
+        time between La Swell Musique, a digital marketing coaching and
+        consulting company she founded, Distribution Amplitude, a non-profit
+        digital distribution company she helped co-found, and sits on the board
+        of Quebec's city Phoque Off Festival.
+      portrait:
+        image: /assets/unnamed-2-.jpg
+        alt: "     "
   cardLinkLabel: Ligne
 ---
