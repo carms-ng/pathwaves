@@ -38,7 +38,7 @@ sectionTwo:
         freelance engineer. choi’s work experience ranges from live-FOH mixing
         to post-production for internationally distributed TV. He works closely
         with a small circle of artists that go by Sweet 16 Records.
-      url: soundcloud.com/choi-wav
+      url: https://soundcloud.com/ljcbc
     - name: Della Orrey
       pronouns: she/her/hers/elle
       portrait:

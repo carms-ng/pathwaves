@@ -29,7 +29,7 @@ sectionTwo:
       pronouns: il/ils
       portrait:
         image: /assets/img_7671-liam-choi.jpg
-      url: soundcloud.com/choi-wav
+      url: https://soundcloud.com/ljcbc
       description: choi est un producteur et ingénieur du son-mixage canadien de 23
         ans spécialisé en R&B, hip-hop, musique ambiante et piano. À l’âge de
         cinq ans, il étudiera le piano classique pendant dix ans avant de
