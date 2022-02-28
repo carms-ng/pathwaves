@@ -204,5 +204,25 @@ sectionTwo:
       portrait:
         image: /assets/unnamed-2-.jpg
         alt: "     "
+    - name: Peter Kirn
+      pronouns: "   "
+      role: présentateur
+      entity: "   "
+      description: PETER KIRN is a composer and media artist, with releases on Detroit
+        Underground, Industrial Complexx, Wunderblock Records, Kotä Records, and
+        his own Establishment, among others. He has built and writes daily at
+        CDM.link, a site about creative live music and visual tech and culture,
+        and is co-creator of the MeeBlip hardware synthesiser line. He has
+        worked on collaborative laboratories and talks with TED, European Space
+        Agency, Sonar+D, MUTEK, Artypical, and others, and continues to direct
+        the MusicMakers Hacklab with CTM Festival since its first edition in
+        2013. With curator Natalia Fuchs, he co-facilitated AI Art Labs at MUTEK
+        Montreal and Japan and GAMMA in St. Petersburg, and is a lecturer and
+        author on emerging creative technologies in a wide range of contexts
+        worldwide.
+      url: https://cdm.link/
+      portrait:
+        image: /assets/unnamed-9-.jpg
+        alt: "                 "
   cardLinkLabel: Ligne
 ---
