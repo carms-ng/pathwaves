@@ -224,5 +224,24 @@ sectionTwo:
       portrait:
         image: /assets/unnamed-9-.jpg
         alt: "                 "
+    - description: >+
+        Jean-Patrice Rémillard, known primarily for his artist alias Pheek, is a
+        Canadian electronic musician and audio engineer based in Montreal,
+        Canada.
+
+
+        Pheek has been producing music and running his own label, Archipel, for over 20 years. Over this time Pheek has released over 13 albums and a wide variety of singles and EPs, and has played shows all over the world.
+
+
+        In addition to creating his own work, he also runs AudioServices.Studio, a hub for his mastering and mixing services run out of his Quebec studio.
+
+      name: Jean-Patrice Rémillard
+      pronouns: "      "
+      role: présentateur
+      url: https://audioservices.studio/
+      entity: AudioServices.Studio
+      portrait:
+        image: /assets/jean-parice-rémillard_mai_2021_26-1.jpeg
+        alt: "    "
   cardLinkLabel: Ligne
 ---
