@@ -63,7 +63,7 @@ sectionTwo:
       url: https://www.chloealexandra.info/
     - name: Claire L. Evans
       pronouns: elle/elles
-      role: présentatrice
+      role: Présentatrice
       entity: YACHT
       portrait:
         image: /assets/itme-claire-evans.jpg
@@ -81,7 +81,7 @@ sectionTwo:
         l’Art Center College of Design."
     - name: Cherie Hu
       pronouns: elle/elles
-      role: présentatrice
+      role: Présentatrice
       entity: Water & Music
       portrait:
         image: /assets/cherie-hu-head-shot-2021-cherie-hu.jpg
@@ -122,7 +122,7 @@ sectionTwo:
         Live, acheteur pour Cargo Records, impresario, etc., et a touché à peu
         près à tout ce qui est en lien avec la musique.
       url: www.thirdsidemusic.com
-    - role: présentatrice
+    - role: Présentatrice
       name: Charlie Wall-Andrews
       pronouns: ""
       portrait:
@@ -138,7 +138,7 @@ sectionTwo:
         l’entrepreneuriat. Elle siège aux conseils d’administration de
         WorkInCulture et du comité d’investissement communautaire de TELUS et
         est la première vice-présidente du comité consultatif de Music Canada.
-    - role: présentatrice
+    - role: Présentatrice
       name: Michaela Ternasky-Holland
       pronouns: elle/elles
       entity: Consultant
@@ -163,14 +163,14 @@ sectionTwo:
         MTL, a new and immersive Montreal based portal for the digestion of
         audio visual artistic work.
       entity: Breakglass Studios
-      role: présentateur
+      role: Présentateur
       pronouns: "  "
       portrait:
         image: /assets/james-benjamin.jpg
         alt: "   "
     - name: Ian Cameron
       pronouns: "   "
-      role: présentateur
+      role: Présentateur
       entity: "  "
       description: Ian Cameron has made his career working where video and music
         intersect, from VR, art installations, video projections, art direction,
@@ -187,7 +187,7 @@ sectionTwo:
         alt: "    "
     - name: Dorothée Parent-Roy
       pronouns: "   "
-      role: présentatrice
+      role: Présentatrice
       entity: "   "
       description: Dorothée Parent-Roy discovered the inner workings of digital
         distribution in 2012 when she started working for Believe Digital within
@@ -237,7 +237,7 @@ sectionTwo:
 
       name: Jean-Patrice Rémillard
       pronouns: "      "
-      role: présentateur
+      role: Présentateur
       url: https://audioservices.studio/
       entity: AudioServices.Studio
       portrait:
