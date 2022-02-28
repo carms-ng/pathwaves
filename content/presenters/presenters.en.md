@@ -284,5 +284,29 @@ sectionTwo:
       portrait:
         image: /assets/jean-parice-rémillard_mai_2021_26-1.jpeg
         alt: "      "
+    - description: "Tao is the Founder/Agent at Blue Crane Agency (@bluecraneagency),
+        a music booking agency seeking to prioritize women, artists of color,
+        and LGBTQ+ musicians in North America and abroad. The roster was founded
+        with artists like Zaki Ibrahim, DJ NDN (Co-Founder of A Tribe Called
+        Red), Shay Lia, Narcy, Too Attached (members Vivek Shraya and Shamik
+        Bilgi), BAMBII, Shay Lia, Clerel, Le Ren, and more. The agency has
+        programmed festivals such as Pride Toronto and curated events for Nuit
+        Blanche, Royal Ontario Museum, Toronto International Film Festival
+        (TIFF), and more. Tao is a board director at Polaris Music Prize and
+        Canadian Live Music Association, Music Ontario's Prism LGBTQ2S+
+        Committee, and was chosen as a Rising Star in Toronto Life Magazine's 50
+        Most Influential Torontonians of 2018.  Previously, she was at
+        Chicago-based touring agency Billions, Universal Music Canada, and got
+        her start with Carly Rae Jepsen's management and label in Vancouver
+        where she was born and raised. Tao is a queer woman of colour seeking to
+        open more doors and establish better infrastructure for under
+        represented talent.  "
+      name: Tao-ming Lau
+      pronouns: "   "
+      role: Presenter
+      entity: Blue Crane Agency
+      portrait:
+        image: /assets/tao-press-photo-credit-christina-yi.jpg
+        alt: "    "
   cardLinkLabel: Link
 ---
