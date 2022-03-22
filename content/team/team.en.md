@@ -346,8 +346,8 @@ sectionOne:
   cardLinkLabel: Link
 sectionTwo:
   description: Pathwaves is being produced by Envision Management & Production in
-    partnership with the Phi Centre and OCAD University, with financial support
-    from the Canada Council for the Arts.
+    partnership with PHI and OCAD University, with financial support from the
+    Canada Council for the Arts.
   collaborators:
     - name: Envision
       description: Envision is an artist management and cultural production company

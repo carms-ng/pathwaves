@@ -325,6 +325,6 @@ sectionTwo:
         a pour mandat de favoriser et de promouvoir l’étude et la diffusion des
         arts ainsi que la production d’œuvres d’art.
   description: L'incubateur Pathwaves est produit par Envision Management &
-    Production en partenariat avec le Centre Phi et l'Université OCAD, et avec
-    le soutien financier du Conseil des Arts du Canada.
+    Production en partenariat avec PHI et l'Université OCAD, et avec le soutien
+    financier du Conseil des Arts du Canada.
 ---
