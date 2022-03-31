@@ -1,40 +1,42 @@
 ---
-title: Digital Audio Production and Workflow Tuneup
+title: "Mise au point sur la production audio numérique et son processus de travail "
 description: >-
-  For many people, the whole digital music production process seems like a
-  crazy, disorganized back-and-forth of constant tweaking. Many artists embrace
-  the chaos of going back and forth between the stages, or working without a
-  plan. This is fine if you think it’s the best way for you to remain creative.
-  But if you look at the most common modus operandi, the stages actually go like
-  this:
+  Pour beaucoup de gens, le processus de production de musique numérique
+  ressemble à un va-et-vient fou et désorganisé de réglages constants. De
+  nombreux artistes acceptent le chaos des allers-retours entre les différentes
+  étapes et beaucoup d'entre eux travaillent sans plan. C'est très bien si vous
+  pensez que c'est la meilleure façon pour vous de rester créatif. Mais si vous
+  regardez le modus operandi le plus courant, les étapes se déroulent en fait
+  comme suit :
 
 
-  Sound design/recording. This is where you either create new sounds or select the existing ones that you’ll be using in your next song.
+  * Conception sonore/enregistrement : C'est ici que vous créez de nouveaux sons ou que vous sélectionnez les sons existants que vous utiliserez dans votre prochaine création.
 
-  Production. Once you have all the sounds, you try to decide your hook. This stage involves deciding the structure and working on the arrangements.
+  * Production : Une fois que vous avez tous les sons, vous essayez de décider de votre accroche. Cette étape consiste à choisir la structure et à travailler sur les arrangements.
 
-  Mixing. Once your song is canned, you mix the component parts so you get the best sound possible.
+  * Le mixage : Une fois que votre chanson est mise en boîte, vous mixez les éléments qui la composent afin d'obtenir le meilleur son possible.
 
-  Pre-mastering: shine and polish. Adjusting so it sounds best, everywhere.
+  * Pré-mastering : brillance et polissage. Ajustement pour que le son soit optimal, partout.
 
-  Mastering. Preparing the master copy for duplication.
-
-
-  If you want the best out of your sound quality, it might be a good idea to adopt a more ordered approach. This session will help you tuneup your workflow and fundamentals.  Applying a methodology to your music production can provide many benefits. It can take years to hone your craft and get it to the highest levels, and so this workshop will walkthrough the phases above, and offer advice and strategies to identify the issues, challenges and some solutions. We’ll also look at understanding what makes a song a demo vs. ready to publish.
+  * Le mastering : Préparation de la copie maîtresse pour la duplication.
 
 
-  This session will focus on: 
+  Si vous souhaitez obtenir le meilleur de votre qualité sonore, il peut être judicieux d'adopter une approche plus ordonnée. Cette session vous aidera à mettre au point votre processus de travail et vos principes fondamentaux.  L'application d'une méthodologie à votre production musicale peut présenter de nombreux avantages. Il faut parfois des années pour affiner son art et l'amener au plus haut niveau. Cet atelier passera en revue les phases ci-dessus et offrira des conseils et des stratégies pour identifier les problèmes, les défis et certaines solutions. Nous verrons également ce qui fait d'une chanson une démo ou une chanson prête à être publiée.
 
 
-  How to approach production generally
+  Cette session se concentrera sur :
 
-  Identifying references, understanding what is doable or not, using a reverse-engineering approach
 
-  How to prepare to make music
+  * Comment aborder la production en général
 
-  How to organize your workflow in music-making, to ensure you have solid sessions with solid results.
-   	 
-  Preparation: Share your current roadblocks, these will be used to start the session.
+  * Identifier les références, comprendre ce qui est faisable ou non, utiliser une approche de rétro-ingénierie.
+
+  * Comment se préparer à faire de la musique
+
+  * Comment organiser votre processus de travail dans la production musicale, pour vous assurer d'avoir des sessions solides avec des résultats solides.
+
+
+  Préparation : Partagez vos difficultées et blocages actuels, ils seront utilisés pour commencer la session.
 presenter: "Jean-Patrice Remillard "
 linkCalendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=NDF2dGZkMTE0NDN2YTB2OXF1ZnM1ODVvc2MgY19tcnJybXZ0ZWhqcThyc3A2ajJmdHVjbGJyc0Bn&tmsrc=c_mrrrmvtehjq8rsp6j2ftuclbrs%40group.calendar.google.com
 linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
