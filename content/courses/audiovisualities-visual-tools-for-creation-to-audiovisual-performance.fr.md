@@ -1,68 +1,64 @@
 ---
-title: "Audiovisualities: Visual Tools for Creation to Audiovisual Performance"
+title: "Audiovisualités : Outils visuels de création pour performance audiovisuelle  "
 description: >-
-  During this theoretical and technical workshop, the participant will explore
-  the video creation tools for performance context. With the example of some
-  audiovisual works, we will establish the workflow and look through the major
-  platforms and how they differ and their advantages (price, audio reactivity
-  and liveness); the aesthetic aspect of performance, and how sound and image
-  will be related in the audiovisual performance. Various projection devices in
-  a performance context will be presented, like digital projectors. 
+  Au cours de cet atelier théorique et technique, le participant explorera les
+  outils de création vidéo dans un contexte de performance. A l'aide de quelques
+  exemples de travaux audiovisuels, nous établirons le flux de travail et
+  examinerons les principales plateformes, leurs différences et leurs avantages
+  (prix, réactivité audio et vivacité) ; l'aspect esthétique de la performance,
+  et comment le son et l'image seront liés dans la performance audiovisuelle.
+  Les différents dispositifs de projection dans un contexte de performance
+  seront présentés, comme par exemple les projecteurs numériques.
 
 
-  Software:
+  Logiciels :
 
 
-  VJ/Software
+  ·   VJ/Software
 
 
   ·   VDMX
 
 
-  ·   Resolume Demo
+  ·   Démonstration de Resolume
 
 
   ·   Modul 8
 
 
-  ·   Touch design
+  ·   Touch Designer
 
 
+  Logiciel de montage :
 
 
-  Editing software :
+  ·   davincI (GRATUIT)
 
 
-  ·   davincI (FREE) ,
+  ·   Premiere
 
 
-  ·   Premiere,
+  ·   After Effects
 
 
-  ·   After effect
+  Matériel :
 
 
+  ·   Organite
 
 
-  Hardware:
+  ·   Synthèse vidéo
 
 
-  ·   Organelle
+  ·   Choix du contrôleur\
+
+  Flux de travail :
 
 
-  ·   Video synth
+  Visualisez votre performance de manière audio
 
 
-  ·   Choice of controller
-
-
-  Workflow:
-
-
-  Audio visualize your performance
-
-
-  How to Create a video loop
+  Comment créer une boucle vidéo
 presenter: Nelly-Eve Rajotte
 linkCalendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=NXVsdWU4MGVqNXJtYzh1cDdyMHRvZGtsNzkgY19tcnJybXZ0ZWhqcThyc3A2ajJmdHVjbGJyc0Bn&tmsrc=c_mrrrmvtehjq8rsp6j2ftuclbrs%40group.calendar.google.com
 linkZoom: https://us02web.zoom.us/j/87534481475?pwd=cUF0dHJDSjFGVXNqTnNiNm9HSC9NUT09
