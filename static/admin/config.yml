@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: Carms-dev/pathwaves
+  repo: carms-ng/pathwaves
   branch: master
   commit_messages:
     create: '[ADD][CMS] {{collection}} “{{slug}}”'
