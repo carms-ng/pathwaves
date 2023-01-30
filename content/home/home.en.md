@@ -14,7 +14,7 @@ sectionOne:
       isVisible: true
     - linkText: Result + Outcome
       url: /archive
-      isVisible: false
+      isVisible: true
 sectionTwo:
   carouselItems:
     - name: Della Orrey
