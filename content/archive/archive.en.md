@@ -55,6 +55,7 @@ sectionTwo:
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
       url: https://www.google.com/
+      pdf: /assets/untitled-document.pdf
     - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
       title: Placeholder 2
