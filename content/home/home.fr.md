@@ -1,6 +1,6 @@
 ---
 templateKey: homePage.js
-title: Acceuil
+title: Accueil
 sectionOne:
   header: L’Incubateur De Littératie Numérique Pathwaves
   description: Une initiative visant à aider les musiciens canadiens à développer
