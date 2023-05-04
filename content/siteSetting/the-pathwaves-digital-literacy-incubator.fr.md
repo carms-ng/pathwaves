@@ -50,6 +50,6 @@ footer:
     - linkAddress: mailto:jen@envisionmanagement.com
       linkText: Nous contacter
     - linkAddress: https://www.mutualdesign.cc/
-      linkText: Par Mutual Design
+      linkText: Site web par Mutual Design
       isInterenal: true
 ---
