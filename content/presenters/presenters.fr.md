@@ -143,7 +143,7 @@ sectionTwo:
     - role: Présentatrice
       name: Michaela Ternasky-Holland
       pronouns: elle/elles
-      entity: Consultant
+      entity: XR Creative Consultant
       portrait:
         image: /assets/michaela-ternasky-holland-color-headshot-michaela-ternasky-holland.jpg
       url: http://michaelaternaskyholland.com/
