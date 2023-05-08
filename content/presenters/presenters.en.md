@@ -362,7 +362,7 @@ sectionTwo:
 
         He has exhibited lighting installations at festivals and galleries including: Lumens (2021), Up Here Urban Arts & Music (2019), Otis Mountain Get Down (2016-2019), The Montreal Neurological Institute (2017), Studio XX (2017), and Eastern Bloc (2016).
       portrait:
-        image: /assets/maxresdefault.jpg
+        image: /assets/danfreder-1-dan.jpg
         alt: Dan Freder
   cardLinkLabel: Link
 ---
