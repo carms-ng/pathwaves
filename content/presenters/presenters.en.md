@@ -69,7 +69,7 @@ sectionTwo:
     - name: Chloe Alexandra Thompson
       pronouns: "she/her   "
       role: Lead Guide
-      entity: "   "
+      entity: "Artist    "
       portrait:
         image: /assets/screen-shot-2021-12-26-at-11.20.jpg
         alt: Picture of Chloe
