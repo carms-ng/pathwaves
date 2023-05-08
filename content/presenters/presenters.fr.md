@@ -193,7 +193,7 @@ sectionTwo:
     - name: Dorothée Parent-Roy
       pronouns: "   "
       role: Présentatrice
-      entity: "   "
+      entity: "Believe Digital   "
       description: Dorothée Parent-Roy discovered the inner workings of digital
         distribution in 2012 when she started working for Believe Digital within
         their trade marketing team. She then joined Distribution Select in 2017,
