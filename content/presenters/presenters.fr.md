@@ -127,6 +127,7 @@ sectionTwo:
       pronouns: ""
       portrait:
         image: /assets/unnamed-4-.jpg
+        alt: Charlie
       description: Charlie Wall-Andrews (MBA, MA, BA, SIAC) est une intellectuelle,
         cheffe de file de l’industrie musicale, et chargée de cours à
         l’Université de Toronto. Elle a créé de nombreux programmes pour la
@@ -138,6 +139,7 @@ sectionTwo:
         l’entrepreneuriat. Elle siège aux conseils d’administration de
         WorkInCulture et du comité d’investissement communautaire de TELUS et
         est la première vice-présidente du comité consultatif de Music Canada.
+      entity: University of Toronto / SOCAN
     - role: Présentatrice
       name: Michaela Ternasky-Holland
       pronouns: elle/elles
