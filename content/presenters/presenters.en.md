@@ -164,7 +164,7 @@ sectionTwo:
     - name: Charlie Wall-Andrews
       pronouns: "   "
       role: Presenter
-      entity: "   "
+      entity: "University of Toronto / SOCAN   "
       portrait:
         image: /assets/unnamed-4-.jpg
         alt: Image of Charlie
@@ -205,10 +205,10 @@ sectionTwo:
         audio visual artistic work.
       pronouns: "   "
       role: Presenter
-      entity: Breakglass Studios
+      entity: Breakglass Studios / Transmission MTL
       portrait:
         image: /assets/james-benjamin.jpg
-        alt: "    "
+        alt: "James Benjamin    "
     - name: Ian Cameron
       description: Ian Cameron has made his career working where video and music
         intersect, from VR, art installations, video projections, art direction,
@@ -222,10 +222,10 @@ sectionTwo:
         multimedia band The National Parcs.
       pronouns: "   "
       role: Presenter
-      entity: "   "
+      entity: "Transmission MTL   "
       portrait:
         image: /assets/ian-cameron.jpeg
-        alt: "    "
+        alt: "Ian Cameron    "
     - name: Dorothée Parent-Roy
       pronouns: "   "
       role: Presenter
@@ -244,7 +244,7 @@ sectionTwo:
         of Quebec's city Phoque Off Festival.
       portrait:
         image: /assets/unnamed-2-.jpg
-        alt: "        "
+        alt: "Dorothée Parent-Roy        "
     - name: Peter Kirn
       pronouns: "    "
       role: Presenter
@@ -264,7 +264,7 @@ sectionTwo:
       url: https://cdm.link/
       portrait:
         image: /assets/unnamed-9-.jpg
-        alt: "            "
+        alt: "Peter Kirn            "
     - description: >+
         Jean-Patrice Rémillard, known primarily for his artist alias Pheek, is a
         Canadian electronic musician and audio engineer based in Montreal,
@@ -283,7 +283,7 @@ sectionTwo:
       entity: AudioServices.Studio
       portrait:
         image: /assets/jean-parice-rémillard_mai_2021_26-1.jpeg
-        alt: "      "
+        alt: "Jean-Patrice Rémillard      "
     - description: "Tao is the Founder/Agent at Blue Crane Agency (@bluecraneagency),
         a music booking agency seeking to prioritize women, artists of color,
         and LGBTQ+ musicians in North America and abroad. The roster was founded
@@ -307,6 +307,47 @@ sectionTwo:
       entity: Blue Crane Agency
       portrait:
         image: /assets/tao-press-photo-credit-christina-yi.jpg
-        alt: "    "
+        alt: "Tao-ming Lau    "
+    - name: Nelly-eve Rajotte
+      pronouns: (she/her)
+      role: Presenter
+      description: >
+        Nelly-eve creates dynamic visual projections at the intersection of
+        sound, video and performance, and transmits the immersive, trance like,
+        and anxiety-producing elements of the natural world directly into our
+        minds. Her audiovisual works of extreme “end spaces” (from sprawling
+        architecture to endless frozen tundra) cause both physical and emotional
+        reactions in the viewer, offering a world-piercing gaze that
+
+        awes and unsettles at the same time. While Rajotte’s practice began with an art history degree in the mid-90’s, her desire for hands-on artmaking led to a masters degree in visual arts at UQAM School of Visual and Media Arts. Exploring ideas of how to navigate and manipulate the physical states and psychological perceptions of the
+
+        viewer, her work transports you amongst sprawling desert landscapes and desolate northern patches of forest. Recognition for her dynamic footage has poured in worldwide, with her work shown at ISEA2020, Transmediale (Berlin), Artlab (Argentina) and Lab30 festival in Germany.
+      portrait:
+        image: /assets/nelly-everajotte_photo_cl.jpg
+        alt: Nelly-eve Rajotte
+      entity: Audiovisual Artist
+    - name: "Matthew Edwards "
+      pronouns: (he/him/they)
+      role: Presenter
+      description: >
+        Matthew is a multidisciplinary artist melding installation art, music
+        production, film, performance, and virtual reality. He has a long
+        history working with the experimental artist community in Portland, OR
+        as founder of the DIY performance venue, Xhurch (2010-present). Back in
+        2014, he entered the immersive technologies space when the Oculus Rift
+        DK2 started to emerge. Soon after, he co-formed Portland Immersive Media
+        Group, a collective of digital artists and game designers eager to
+        explore experiential art in virtual reality. Since then, he has
+        refocused on his own practice billing as *aesthetic.stalemate* while
+        producing interactive visuals and doing live performances with the likes
+        of Visible Cloaks, Dolphin Midwives, Golden Retriever, S.E.C.R.E.T.S.,
+        Crystal Quartez, and Chloe Alexandra Thompson, with whom he recently
+        released an interactive audio-visual album/music visualizer called Moiré
+        (Sounds, et al, 2021). He is currently Instructor of Virtual & Augmented
+        Realities at Portland Community College, Cascade STEAM Spaces.
+      portrait:
+        image: /assets/matt-point-cloud-reversed.jpeg
+        alt: Matthew
+      entity: Portland Community College, Cascade STEAM Spaces.
   cardLinkLabel: Link
 ---
