@@ -266,7 +266,7 @@ sectionTwo:
         image: /assets/unnamed-9-.jpg
         alt: "Peter Kirn            "
     - name: "Matthew Edwards "
-      pronouns: (he/him/they)
+      pronouns: he/him/they
       role: Presenter
       description: >
         Matthew is a multidisciplinary artist melding installation art, music
@@ -287,7 +287,7 @@ sectionTwo:
       portrait:
         image: /assets/matt-point-cloud-reversed.jpeg
         alt: Matthew
-      entity: Portland Community College, Cascade STEAM Spaces.
+      entity: Portland Community College, Cascade STEAM Spaces
     - name: Nelly-eve Rajotte
       pronouns: (she/her)
       role: Presenter

@@ -208,7 +208,7 @@ sectionTwo:
         of Quebec's city Phoque Off Festival.
       portrait:
         image: /assets/unnamed-2-.jpg
-        alt: "     "
+        alt: Dorothée
     - name: Peter Kirn
       pronouns: "   "
       role: présentateur
@@ -286,5 +286,10 @@ sectionTwo:
       portrait:
         image: /assets/danfreder-1-dan.jpg
         alt: Dan Freder
+    - name: Matthew Edwards
+      role: Présentateur
+      entity: Portland Community College, Cascade STEAM Spaces
+      portrait:
+        image: /assets/matt-point-cloud-reversed.jpeg
   cardLinkLabel: Ligne
 ---
