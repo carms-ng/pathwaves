@@ -61,6 +61,7 @@ sectionTwo:
         remplissent les salles de fréquences discrètes qui provoquent des
         sensations physiques et auditives.
       url: https://www.chloealexandra.info/
+      entity: Artiste
     - name: Claire L. Evans
       pronouns: elle/elles
       role: Présentatrice
