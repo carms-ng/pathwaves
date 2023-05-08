@@ -155,19 +155,20 @@ sectionTwo:
         au Festival de Cannes, à la New York Public Library et au Tribeca Film
         Festival.
     - name: James Benjamin
-      description: James Benjamin is one of the owners of Breakglass Studios, where he
-        works as a music producer, Grammy winning mixer and composer. He also
-        serves as the host of Live Analog Dance Rhythms, and is involved in a
-        number of his own musical and art projects. In March 2020, alongside
-        partners Ian Cameron and Guillaume Sabourin, they launched TRANSMISSION
-        MTL, a new and immersive Montreal based portal for the digestion of
-        audio visual artistic work.
-      entity: Breakglass Studios
+      description: James Benjamin est l'un des propriétaires du studio Breakglass, où
+        il travaille en tant que producteur de musique, mixeur et compositeur
+        recipiendaire d’un Grammy. Il est également l'animateur de Live Analog
+        Dance Rhythms, et travaille en parallèle sur divers  projets musicaux et
+        artistiques. En mars 2020, aux côtés de ses partenaires Ian Cameron et
+        Guillaume Sabourin, il lance TRANSMISSION MTL, un nouveau portail
+        immersif basé à Montréal qui facilite la diffusion d'œuvres artistiques
+        audiovisuelles.
+      entity: Breakglass Studios / TRANSMISSION MTL
       role: Présentateur
       pronouns: "  "
       portrait:
         image: /assets/james-benjamin.jpg
-        alt: "   "
+        alt: "James Benjamin   "
     - name: Ian Cameron
       pronouns: "   "
       role: Présentateur
