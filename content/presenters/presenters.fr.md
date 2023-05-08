@@ -291,5 +291,11 @@ sectionTwo:
       entity: Portland Community College, Cascade STEAM Spaces
       portrait:
         image: /assets/matt-point-cloud-reversed.jpeg
+    - name: Nelly-eve Rajotte
+      role: Présentatrice
+      entity: Artiste audiovisuel
+      portrait:
+        image: /assets/nelly-everajotte_photo_cl.jpg
+        alt: Nelly-eve
   cardLinkLabel: Ligne
 ---
