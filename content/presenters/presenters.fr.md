@@ -172,17 +172,19 @@ sectionTwo:
     - name: Ian Cameron
       pronouns: "   "
       role: Présentateur
-      entity: "  "
-      description: Ian Cameron has made his career working where video and music
-        intersect, from VR, art installations, video projections, art direction,
-        and music videos, to live multi-camera direction, exploring new media
-        has been a constant part of his practice. As a director, he has worked
-        with the l’Orchestre Métropolitain, l’Orchestre symphonique de Montréal,
-        I Musici de Montréal, as well as other soloists and ensembles. Ian has
-        worked with artists in across an array of genres from Kendrick Lamar to
-        Arcade Fire. He has also created video projections for many notable
-        electronic acts. A musician himself, he is a founding member of
-        multimedia band The National Parcs.
+      entity: "TRANSMISSION MTL  "
+      description: Ian Cameron a developpé sa carrière en travaillant à l'intersection
+        d’une multitude d’outils et de médiums. De la vidéo à la musique, de la
+        RV, des installations artistiques et des projections vidéo à la
+        direction artistique, vidéoclips ainsi qu'à la réalisation multicaméra
+        en direct, l'exploration des nouveaux médias a toujours fait partie de
+        sa pratique. En tant que réalisateur, il a travaillé avec l'Orchestre
+        Métropolitain, l'Orchestre symphonique de Montréal, I Musici de
+        Montréal, ainsi qu'avec d'autres solistes et ensembles. Ian a collaboré
+        avec des artistes de tous les genres, de Kendrick Lamar à Arcade Fire.
+        Il a également créé des projections vidéo pour de nombreux artistes
+        électroniques célèbres. Enfin, musicien lui-même, il est membre
+        fondateur du groupe multimédia The National Parcs.
       portrait:
         image: /assets/ian-cameron.jpeg
         alt: "    "
