@@ -212,7 +212,7 @@ sectionTwo:
     - name: Peter Kirn
       pronouns: "   "
       role: présentateur
-      entity: "   "
+      entity: "Create Digital Music   "
       description: PETER KIRN is a composer and media artist, with releases on Detroit
         Underground, Industrial Complexx, Wunderblock Records, Kotä Records, and
         his own Establishment, among others. He has built and writes daily at
@@ -228,7 +228,7 @@ sectionTwo:
       url: https://cdm.link/
       portrait:
         image: /assets/unnamed-9-.jpg
-        alt: "                 "
+        alt: "Peter Kirn                 "
     - description: >+
         Jean-Patrice Rémillard, known primarily for his artist alias Pheek, is a
         Canadian electronic musician and audio engineer based in Montreal,
