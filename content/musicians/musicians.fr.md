@@ -293,17 +293,19 @@ sectionTwo:
       pronouns: il/ils
       portrait:
         image: /assets/img_2243-felix-idigbe.jpg
-      description: >-
-        “It's simple, I’m here to make you dance, feel good or both.” That’s how
-        Zuki describes his purpose as a DJ. With his eclectic musical taste
-        inspired by his travels, you're guaranteed to go on a musical journey
-        and ultimately be left wondering how you ended up on the dance floor.
-        Growing up to his Mother’s 70’s funk essentials box set and his Dad’s
-        Fela Kuti tapes playing in the household, his range of musical influence
-        is wide.
+      description: >+
+        « C’est simple. Je suis là pour vous faire danser et/ou faire en sorte
+        que vous vous sentiez bien. » C’est ainsi que Zuki décrit sa mission de
+        DJ. Avec ses goûts musicaux éclectiques inspirés de ses voyages, vous
+        découvrirez tout un univers musical qui vous transportera directement
+        sur le plancher de danse. Ayant grandi au son des grands classiques du
+        funk des années 70 dont raffolait sa mère et des chansons de Fela Kuti
+        que son père aimait jouer à la maison, Zuki puise dans une vaste gamme
+        d’influences. 
 
 
-        Zuki can take the hypnotizing drums of South African house, saxophone samples from afrobeat hits and blend them effortlessly with your favourite rhythm, funk and hip-hop tunes.
+        C’est tout naturellement que Zaki mêle les rythmes de la house sud-africaine, le saxophone des grands succès de l’afrobeat et vos mélodies funk et hip-hop préférées.
+
       url: https://www.zukimusic.com/music
   cardLinkLabel: Ligne
 ---
