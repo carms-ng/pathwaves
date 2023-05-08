@@ -247,7 +247,7 @@ sectionTwo:
       entity: AudioServices.Studio
       portrait:
         image: /assets/jean-parice-rémillard_mai_2021_26-1.jpeg
-        alt: "    "
+        alt: "JP Remillard    "
     - description: "Tao is the Founder/Agent at Blue Crane Agency (@bluecraneagency),
         a music booking agency seeking to prioritize women, artists of color,
         and LGBTQ+ musicians in North America and abroad. The roster was founded
