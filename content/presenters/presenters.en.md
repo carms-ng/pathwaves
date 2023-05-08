@@ -248,7 +248,7 @@ sectionTwo:
     - name: Peter Kirn
       pronouns: "    "
       role: Presenter
-      entity: "   "
+      entity: "Create Digital Music   "
       description: PETER KIRN is a composer and media artist, with releases on Detroit
         Underground, Industrial Complexx, Wunderblock Records, Kotä Records, and
         his own Establishment, among others. He has built and writes daily at
