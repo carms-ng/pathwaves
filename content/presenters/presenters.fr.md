@@ -272,5 +272,19 @@ sectionTwo:
       portrait:
         image: /assets/tao-press-photo-credit-christina-yi.jpg
         alt: "    "
+    - name: Dan Freder
+      role: Présentateur
+      entity: "Artist "
+      description: >+
+        Dan est un artiste des nouveaux médias, un enseignant et un bricoleur
+        basé à Montréal, qui élabore des œuvres sur des supports médiatiques
+        temporels dont la vidéo, la programmation et l'électronique. Il
+        s’intéresse à la manière dont l’interactivité peut modifier les
+        perceptions et s’en sert dans ses œuvres pour créer des contacts entre
+        le public, les objets et leur environnement. 
+
+      portrait:
+        image: /assets/danfreder-1-dan.jpg
+        alt: Dan Freder
   cardLinkLabel: Ligne
 ---
