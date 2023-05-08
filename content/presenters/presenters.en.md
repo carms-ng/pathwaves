@@ -349,5 +349,20 @@ sectionTwo:
       portrait:
         image: /assets/tao-press-photo-credit-christina-yi.jpg
         alt: "Tao-ming Lau    "
+    - name: Dan Freder
+      pronouns: (he/him)
+      role: Presenter
+      entity: Artist / Teacher
+      description: >-
+        Dan is a new media artist, teacher and tinkerer based in Montreal,
+        actively developing works in time-based media; including video,
+        programming and electronics. Drawn to the altered perspectives one can
+        provoke with interactivity, he often uses it to promote connections
+        between audiences, objects and the environment.
+
+        He has exhibited lighting installations at festivals and galleries including: Lumens (2021), Up Here Urban Arts & Music (2019), Otis Mountain Get Down (2016-2019), The Montreal Neurological Institute (2017), Studio XX (2017), and Eastern Bloc (2016).
+      portrait:
+        image: /assets/maxresdefault.jpg
+        alt: Dan Freder
   cardLinkLabel: Link
 ---
