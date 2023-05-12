@@ -288,12 +288,12 @@ sectionOne:
       portrait:
         image: /assets/cecilia-chris-20.jpg
         alt: Photos of Chris
-      description: >-
-        i am a designer and artist-researcher developing community-centred
-        sustainability initiatives—be it games, websites, irl co-design
-        processes, or action-oriented research.
-
-        i hold a MA in Sociology and International Development from McGill University and am undertaking a PhD in Design/Urban Studies at Concordia University.
+      description: Je suis un designer et artiste-chercheur qui développe des
+        initiatives de durabilité axées sur la communauté, que ce soit des jeux,
+        des sites web, des processus de co-conception dans la vie réelle ou de
+        la recherche axée sur l'action. J'ai une maîtrise en sociologie et en
+        développement international de l'Université McGill et je poursuis un
+        doctorat en design/études urbaines à l'Université Concordia.
   backgroundImage:
     image: /assets/team2.png
     alt: ligne hoverer
