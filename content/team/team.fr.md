@@ -270,6 +270,29 @@ sectionOne:
         processes, or action-oriented research.
 
         i hold a MA in Sociology and International Development from McGill University and am undertaking a PhD in Design/Urban Studies at Concordia University.
+    - name: Kianah Lécuyer
+      role: Consultante en marketing numérique
+      entity: Jelot Consultation
+      description: >-
+        Fière de régner dans les profondeurs du centre-ville de Toronto, elle
+        est la propriétaire et fondatrice de Jelot Consultation, ainsi que
+        l'actuelle consultante en marketing numérique chez Envision Management &
+        Production. Lécuyer est diplômée de la faculté des arts et des sciences
+        de l'Université Queen's et a obtenu un baccalauréat ès arts (avec
+        distinction) en études du développement mondial avec une mineure en
+        études religieuses en 2019. Avec plus de 3 ans d'expérience en
+        consultation sur les médias sociaux, Lécuyer a consulté avec succès des
+        dizaines de petites entreprises qui cherchaient à élever leur présence
+        sur les médias sociaux par le biais d'une stratégie de marque, de
+        conception et de médias sociaux. Elle est une experte en conception
+        Canva, mais elle est reconnue pour ses compétences diverses avec
+        d'autres outils de conception en ligne tels que Biteable, Piktochart,
+        Smart Mockups, PhotoPea (photoshop en ligne), et bien d'autres.
+
+
+        Amoureuse des arts, Kianah a une grande expérience des événements en direct et a travaillé comme assistante de production pour plusieurs productions de FULLCC Music Group, notamment le Big Ticket Concert de Family Channel et The Next Step : Absolute Dance Tour.
+      portrait:
+        image: /assets/kianah.jpg
   backgroundImage:
     image: /assets/team2.png
     alt: ligne hoverer
