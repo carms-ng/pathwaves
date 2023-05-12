@@ -277,6 +277,19 @@ sectionOne:
         Music Industry and the recipient of the 2019 Brian Chater Industry
         Award, recognizing a transformative commitment to the Canadian music
         industry.
+    - name: Kianah Lécuyer
+      role: "Digital Marketing Consultant "
+      entity: Jelot Consultation
+      description: >
+        
+        Proudly reigning from the depths of downtown Toronto, she is the owner and founder of Jelot Consultation, as well as the current Digital Marketing Consultant at Envision Management & Production. Lécuyer graduated from the Faculty of Arts & Science at Queen's University and earned a Bachelor of Arts (Honours) in Global Development Studies with a minor in Religious Studies in 2019. With 3+ years of experience in social media consultation, Lécuyer has successfully consulted dozens of small businesses seeking to elevate their social media presence through strategic branding, designing, and social media strategy. She is an expert Canva designer but is credited for her diverse skillset with other online designing tools such as Biteable, Piktochart, Smart Mockups, PhotoPea (online photoshop), and many more.
+
+
+        A lover of the arts, Kianah has an extensive background in live events and has worked as a Production Assistant for several FULLCC Music Group productions including Family Channel’s Big Ticket Concert, and The Next Step: Absolute Dance Tour.
+      portrait:
+        image: /assets/kianah.jpg
+        alt: Kianah
+      pronouns: she/her
     - name: Le Lin
       pronouns: he/they
       role: Graphic Designer
