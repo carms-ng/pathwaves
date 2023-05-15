@@ -3,16 +3,27 @@ templateKey: incubatorPage.js
 title: Incubator
 sectionOne:
   descriptions:
-    - description: Offert virtuellement de janvier à mars 2022, l'incubateur Pathwaves
-        se compose de conférences, de mentorat, de classes de maître,
-        d’ateliers, de sessions de travail individuel et d’échanges.
-    - description: Dix-huit musiciens reflétant les nombreux axes de la diversité au
-        Canada seront sélectionnés et rémunérés pour leur participation.
-    - description: Ensemble, ils exploreront des questions liées aux nouvelles
-        technologies - logiciels de streaming, spectacles VR, NFTs (jetons non
-        fongibles) et composition assistée par l'IA - dans le but de susciter
-        une nouvelle réflexion axée sur les solutions entourant la création et
-        le partage de la musique.
+    - description: Pathwaves a été créé en réponse à l'observation selon laquelle les
+        musiciens n'étaient pas impliqués dans les prises de décisions
+        concernant l'évolution des technologies numériques, et ne bénéficiaient
+        donc pas équitablement de cette transformation numérique de l'industrie.
+        Pour permettre à leurs voix et perspectives de faire partie de la
+        mixité, les musiciens avaient besoin d'opportunités pour améliorer leur
+        alphabétisation numérique.
+    - description: >
+        L'incubateur de littératie numérique Pathwaves a soutenu 18 musiciens
+        venant des quatres coins du Canada et de Turtle Island pour exploiter
+        les opportunités de l'ère numérique. L'objectif était de considérer les
+        technologies pour une perturbation positive et d'autonomiser les
+        musiciens canadiens et autochtones grâce à la littératie numérique, et
+        de soutenir l'innovation numérique des musiciens individuels.
+    - description: >
+        L'incubateur de littératie numérique Pathwaves a soutenu 18 musiciens
+        venant des quatres coins du Canada et de Turtle Island pour exploiter
+        les opportunités de l'ère numérique. L'objectif était de considérer les
+        technologies pour une perturbation positive et d'autonomiser les
+        musiciens canadiens et autochtones grâce à la littératie numérique, et
+        de soutenir l'innovation numérique des musiciens individuels.
   header: A propo d'incubator
   backgroundImageTop:
     image: /assets/about-incubator-1_top.png
