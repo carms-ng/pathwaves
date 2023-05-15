@@ -195,18 +195,20 @@ sectionTwo:
       pronouns: "   "
       role: Présentatrice
       entity: "Believe Digital   "
-      description: Dorothée Parent-Roy discovered the inner workings of digital
-        distribution in 2012 when she started working for Believe Digital within
-        their trade marketing team. She then joined Distribution Select in 2017,
-        where she led the digital distribution team, while continuing to help
-        labels build their digital marketing strategies. Over the years, she
-        participated in various conferences or training workshops (FEQ,
-        PopMontreal, CMW, MaMa, ECMA, BreakOut West), which allowed her to share
-        the knowledge she accumulated over the years. Since 2020, she spends her
-        time between La Swell Musique, a digital marketing coaching and
-        consulting company she founded, Distribution Amplitude, a non-profit
-        digital distribution company she helped co-found, and sits on the board
-        of Quebec's city Phoque Off Festival.
+      description: Dorothée Parent-Roy a découvert les rouages de la distribution
+        numérique en 2012 lorsqu'elle a commencé à travailler pour Believe
+        Digital au sein de leur équipe de marketing commercial. Elle a ensuite
+        rejoint Distribution Select en 2017, où elle a dirigé l'équipe de
+        distribution numérique tout en continuant à aider les labels à élaborer
+        leurs stratégies de marketing numérique. Au fil des ans, elle a
+        participé à diverses conférences ou ateliers de formation (FEQ,
+        PopMontreal, CMW, MaMa, ECMA, BreakOut West), ce qui lui a permis de
+        partager les connaissances qu'elle a accumulées dans sa carrière. Depuis
+        2020, elle passe son temps entre La Swell Musique, une entreprise de
+        coaching et de consultation en marketing numérique qu'elle a fondée,
+        Distribution Amplitude, une entreprise de distribution numérique à but
+        non lucratif qu'elle a aidé à co-fonder, et elle siège au conseil
+        d'administration du festival Phoque Off de la ville de Québec.
       portrait:
         image: /assets/unnamed-2-.jpg
         alt: Dorothée
@@ -214,32 +216,31 @@ sectionTwo:
       pronouns: "   "
       role: présentateur
       entity: "Create Digital Music   "
-      description: PETER KIRN is a composer and media artist, with releases on Detroit
-        Underground, Industrial Complexx, Wunderblock Records, Kotä Records, and
-        his own Establishment, among others. He has built and writes daily at
-        CDM.link, a site about creative live music and visual tech and culture,
-        and is co-creator of the MeeBlip hardware synthesiser line. He has
-        worked on collaborative laboratories and talks with TED, European Space
-        Agency, Sonar+D, MUTEK, Artypical, and others, and continues to direct
-        the MusicMakers Hacklab with CTM Festival since its first edition in
-        2013. With curator Natalia Fuchs, he co-facilitated AI Art Labs at MUTEK
-        Montreal and Japan and GAMMA in St. Petersburg, and is a lecturer and
-        author on emerging creative technologies in a wide range of contexts
-        worldwide.
+      description: Peter est un compositeur et artiste multimédia, avec des sorties
+        sur Detroit Underground, Industrial Complexx, Wunderblock Records, Kotä
+        Records, et son propre label Establishment, entre autres. Il a créé et
+        écrit quotidiennement sur CDM.link, un site dédié à la musique LIVE, la
+        technologie visuelle et la culture, et est co-créateur de la ligne de
+        synthétiseurs MeeBlip. Il a travaillé sur des laboratoires collaboratifs
+        et des conférences avec TED, l'Agence spatiale européenne, Sonar+D,
+        MUTEK, Artypical, et d'autres, et continue de diriger le MusicMakers
+        Hacklab avec le CTM Festival depuis sa première édition en 2013. Avec la
+        conservatrice Natalia Fuchs, il a co-animé les AI Art Labs à MUTEK
+        Montréal et au Japon et GAMMA à Saint-Pétersbourg, et est conférencier
+        et auteur sur les technologies créatives émergentes dans de nombreux
+        contextes dans le monde entier.
       url: https://cdm.link/
       portrait:
         image: /assets/unnamed-9-.jpg
         alt: "Peter Kirn                 "
     - description: >+
-        Jean-Patrice Rémillard, known primarily for his artist alias Pheek, is a
-        Canadian electronic musician and audio engineer based in Montreal,
-        Canada.
+        Jean-Patrice Rémillard, connu principalement sous son alias d'artiste
+        Pheek, est un musicien électronique et ingénieur du son canadien basé à
+        Montréal, au Canada.
 
+        Pheek produit de la musique et gère son propre label, Archipel, depuis plus de 20 ans. Au cours de cette période, Pheek a sorti plus de 13 albums ainsi qu'une grande variété de singles et d'EP, et a joué partout dans le monde.
 
-        Pheek has been producing music and running his own label, Archipel, for over 20 years. Over this time Pheek has released over 13 albums and a wide variety of singles and EPs, and has played shows all over the world.
-
-
-        In addition to creating his own work, he also runs AudioServices.Studio, a hub for his mastering and mixing services run out of his Quebec studio.
+        En plus de créer sa propre musique, il dirige également AudioServices.Studio, un hub pour ses services de mastering et de mixage basé dans son studio au Québec.
 
       name: Jean-Patrice Rémillard
       pronouns: "      "
@@ -249,23 +250,25 @@ sectionTwo:
       portrait:
         image: /assets/jean-parice-rémillard_mai_2021_26-1.jpeg
         alt: "JP Remillard    "
-    - description: "Tao is the Founder/Agent at Blue Crane Agency (@bluecraneagency),
-        a music booking agency seeking to prioritize women, artists of color,
-        and LGBTQ+ musicians in North America and abroad. The roster was founded
-        with artists like Zaki Ibrahim, DJ NDN (Co-Founder of A Tribe Called
-        Red), Shay Lia, Narcy, Too Attached (members Vivek Shraya and Shamik
-        Bilgi), BAMBII, Shay Lia, Clerel, Le Ren, and more. The agency has
-        programmed festivals such as Pride Toronto and curated events for Nuit
-        Blanche, Royal Ontario Museum, Toronto International Film Festival
-        (TIFF), and more. Tao is a board director at Polaris Music Prize and
-        Canadian Live Music Association, Music Ontario's Prism LGBTQ2S+
-        Committee, and was chosen as a Rising Star in Toronto Life Magazine's 50
-        Most Influential Torontonians of 2018.  Previously, she was at
-        Chicago-based touring agency Billions, Universal Music Canada, and got
-        her start with Carly Rae Jepsen's management and label in Vancouver
-        where she was born and raised. Tao is a queer woman of colour seeking to
-        open more doors and establish better infrastructure for under
-        represented talent.  "
+    - description: Tao est la fondatrice / agente de Blue Crane Agency
+        (@bluecraneagency), une agence de booking musical cherchant à donner la
+        priorité aux femmes, artistes de couleur et musiciens LGBTQ+ en Amérique
+        du Nord et à l'étranger. L’agence travaille avec des artistes tels que
+        Zaki Ibrahim, DJ NDN (cofondateur de A Tribe Called Red), Shay Lia,
+        Narcy, Too Attached (membres Vivek Shraya et Shamik Bilgi), BAMBII, Shay
+        Lia, Clerel, Le Ren et plus. L'agence a programmé des festivals tels que
+        Pride Toronto et a organisé des événements pour Nuit Blanche, le Musée
+        royal de l'Ontario, le Festival international du film de Toronto (TIFF),
+        entre autres. Tao est administratrice du conseil d'administration du
+        prix de musique Polaris et de l'association canadienne de musique LIVE,
+        du comité Prism LGBTQ2S+ de Music Ontario et a été choisie comme étoile
+        montante dans la liste des 50 Torontoniens les plus influents de 2018
+        par le magazine Toronto Life. Auparavant, elle était chez Billions, une
+        agence de tournée basée à Chicago, Universal Music Canada et a commencé
+        sa carrière avec la gestion du label de Carly Rae Jepsen à Vancouver, où
+        elle est née et a grandi. Tao est une femme queer de couleur cherchant à
+        ouvrir plus de portes et à établir une meilleure infrastructure pour les
+        talents sous-représentés.
       name: Tao-ming Lau
       pronouns: "   "
       role: Présentatrice
@@ -292,11 +295,46 @@ sectionTwo:
       entity: Portland Community College, Cascade STEAM Spaces
       portrait:
         image: /assets/matt-point-cloud-reversed.jpeg
+      description: Matthew est un artiste multidisciplinaire qui mêle l'installation
+        d'art, la production musicale, le film, la performance et la réalité
+        virtuelle. Il a une longue histoire de travail avec la communauté
+        d'artistes expérimentaux à Portland, OR en tant que fondateur du lieu de
+        performance DIY, Xhurch (2010-présent). En 2014, il a commencé à
+        travailler dans le domaine des technologies immersives lorsque l'Oculus
+        Rift DK2 a commencé à émerger. Peu de temps après, il a co-fondé
+        Portland Immersive Media Group, un collectif d'artistes numériques et de
+        concepteurs de jeux désireux d'explorer l'art expérientiel en réalité
+        virtuelle. Depuis lors, il s'est recentré sur sa propre pratique en se
+        présentant sous le nom aesthetic.stalemate tout en produisant des
+        visuels interactifs et en effectuant des performances en direct avec des
+        artistes tels que Visible Cloaks, Dolphin Midwives, Golden Retriever,
+        S.E.C.R.E.T.S., Crystal Quartez et Chloe Alexandra Thompson, avec qui il
+        a récemment sorti un album audio-visuel interactif/visualiseur musical
+        appelé Moiré (Sounds, et al, 2021). Il est actuellement instructeur de
+        réalités virtuelles et augmentées au Portland Community College, Cascade
+        STEAM Spaces.
     - name: Nelly-eve Rajotte
       role: Présentatrice
       entity: Artiste audiovisuel
       portrait:
         image: /assets/nelly-everajotte_photo_cl.jpg
         alt: Nelly-eve
+      description: Nelly-Eve crée des projections visuelles dynamiques à
+        l'intersection du son, de la vidéo et de la performance, et transmet les
+        éléments immersifs, hypnotiques et anxiogènes du monde naturel
+        directement dans nos esprits. Ses œuvres audiovisuelles d'extrêmes
+        "espaces finaux" (de l'architecture tentaculaire aux étendues glacées
+        infinies) provoquent des réactions physiques et émotionnelles chez le
+        spectateur, offrant un regard transperçant sur un monde qui émerveille
+        et dérange en même temps. Bien que la pratique de Rajotte ait commencé
+        avec une licence en histoire de l'art au milieu des années 90, son désir
+        de création artistique l'a conduite à un master en arts visuels à
+        l'École des arts visuels et médiatiques de l'UQAM. En explorant les
+        idées de comment naviguer et manipuler les états physiques et les
+        perceptions psychologiques du spectateur, son travail vous transporte
+        parmi les vastes paysages désertiques et les zones forestières désolées
+        du nord. La reconnaissance pour ses images dynamiques est venue du monde
+        entier, avec ses œuvres présentées à l'ISEA2020, Transmediale (Berlin),
+        Artlab (Argentine) et au festival Lab30 en Allemagne.
   cardLinkLabel: Ligne
 ---
