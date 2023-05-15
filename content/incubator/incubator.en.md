@@ -4,15 +4,25 @@ title: Incubator
 sectionOne:
   header: About the incubator
   descriptions:
-    - description: Delivered virtually from January to March 2022, the Pathwaves
-        Incubator consists of conferences, mentorship, master classes,
-        workshops, individual work, and knowledge-exchange.
-    - description: A cohort of 18 musicians reflecting the many axes of diversity in
-        this country will be selected and paid for their participation.
-    - description: Together they will dive into today’s new technologies — from
-        streaming software and VR live shows to NFTs and AI-assisted composition
-        — with the goal of sparking new solutions-oriented thought surrounding
-        the creation and sharing of music.
+    - description: >
+        Pathwaves was created in response to the observation that musicians were
+        not at the decision making table as digital technologies were evolving,
+        and were subsequently not benefiting equitably from this digital
+        transformation of the industry. To create the opportunity to have their
+        voices and perspectives in the mix, musicians needed to have
+        opportunities to increase their digital literacy.
+    - description: The Pathwaves Digital Literacy Incubator supported 18 musicians
+        from across Canada/Turtle Island to harness opportunities of the digital
+        era. It aimed to consider technologies for positive disruption to
+        empower Canadian and Indigenous musicians through digital literacy and
+        support the digital innovation of individual musicians.
+    - description: >
+        Delivered virtually from January to March 2022, the Pathwaves Incubator
+        consisted of conferences, mentorship, master classes, workshops,
+        individual work, and knowledge-exchange.
+
+
+        Together they dove into today’s new technologies - from streaming software and VR live shows to NFTs and AI assisted composition - with the goal of sparking new solutions-oriented thought surrounding the creation and sharing of music. 
   backgroundImageTop:
     image: /assets/about-incubator-1_top.png
     alt: lines top
