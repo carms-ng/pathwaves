@@ -240,6 +240,7 @@ sectionOne:
         Amoureuse des arts, Kianah a une grande expérience des événements en direct et a travaillé comme assistante de production pour plusieurs productions de FULLCC Music Group, notamment le Big Ticket Concert de Family Channel et The Next Step : Absolute Dance Tour.
       portrait:
         image: /assets/kianah.jpg
+      pronouns: elle/elles
     - name: Le Lin
       pronouns: il/iel
       role: Graphiste
