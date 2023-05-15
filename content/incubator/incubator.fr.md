@@ -62,10 +62,19 @@ sectionTwo:
         Les échanges ont permis de constater que chaque individu créatif a exploré une vaste gamme d'outils numériques et d'approches diverses tout au long de l'apprentissage. Ces outils et approches incluent l'audio spatial, les plugins Ableton, les pédales d'effet, les expériences immersives, le processus de création musicale, l'enregistrement de musique, l'activation des médias sociaux, l'intégration et la planification commerciale, ainsi qu'une multitude d'autres investigations. La présence de ces technologies et méthodes innovantes ont permis aux artistes d'avoir accès à un large éventail de possibilités pour la création musicale et la production audio.
     - header: Héritage et partage
       date: mai 2023
+      description: >-
+        Bien que le programme soit terminé, les résultats et les apprentissages
+        perdurent grâce à la publication et à la distribution du rapport
+        Pathwaves, ainsi qu'au partage de l'analyse d’horizon de l'incubateur -
+        disponible pour les communautés à travers le pays.
+
+
+        L'équipe et les ambassadeurs de Pathwaves présenteront et faciliteront désormais des ateliers lors de conférences et d'événements à travers le pays. Si vous êtes intéressé par un partenariat avec nous, veuillez nous contacter !
   header: LE PROGRAMME DE L'INCUBATEUR PATHWAVES
-  endNote: L'héritage Pathwaves clôturera le programme avec la publication et la
-    distribution des apprentissages dans plusieurs formats médiatiques aux
-    communautés créatives du Canada.
+  endNote: L'objectif de partager ces actifs d'héritage est de se connecter avec
+    les communautés à travers le pays dans l'espoir qu'elles soient inspirées
+    par les résultats et qu'elles soient incitées à poursuivre les
+    conversations.
 sectionThree:
   header: Reconnaissance du territoire
   landAcknowledgement: >-
