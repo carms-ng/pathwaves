@@ -34,28 +34,35 @@ sectionTwo:
   phases:
     - header: The KickOff Conference
       date: JANUARY 2022
-      description: Unites musicians, tech professionals, and music industry
-        professionals for three days of cross-pollinating dialogue in a virtual
-        laboratory. The conference will delve into the forces shaping music
-        creation, performance, and business in today’s digital world, while
-        equipping musicians with the tools, knowledge, and resources to conceive
+      description: >
+        United musicians, tech professionals, and music industry professionals
+        for three days of cross-pollinating dialogue in a virtual laboratory.
+        The conference delved into the forces shaping music creation,
+        performance, and business in today’s digital world, while equipping
+        musicians with the tools, knowledge, and resources to conceive
         trailblazing projects that reimagine the way music is made and shared in
         Canada and around the world.
+
+
+        They were introduced to forces shaping music creation and business in today’s digital world, to inspire musicians to conceive and consider new ways to explore and share their art through digital tools. The conference was designed as a co-learning environment led by guides and mentors, facilitated through interactive exercises.
     - header: The Learning Engine
       date: FEBRUARY - MARCH 2022
       description: >+
-        Takes musicians on a two-month guided journey to develop their projects.
-        Participants will work in small teams with the help of mentors, and will
-        receive master classes and workshops to spark innovative advancements in
-        their digital literacy.
+        Took musicians on a two-month guided journey to develop their projects.
+        Participants worked in small teams with the help of mentors, and
+        received master classes and workshops to spark innovative advancements
+        in their digital literacy.
+
 
     - header: The Learning Exchange
       date: MARCH 2022
-      description: >+
-        Convenes participants once more to share their results and learnings,
-        leading to the creation of an accessible repository of
+      description: >
+        Convened participants once more to share their results and learnings,
+        which led to the creation of an accessible repository of
         collaboratively-created knowledge.
 
+
+        The exchanges provided a glimpse into how each creative individual explored the expansive range of digital tools and diverse approaches that had been touched upon during the learning journey—everything from spatial audio, Ableton plugins, effect pedals, immersive experiences, creation process, recorded music, to social media activation, integration and business planning, to a myriad of other investigations.
   endNote: The Pathwaves Legacy closes the program with the publication and
     distribution of learnings in several media formats to creative communities
     across the country.
