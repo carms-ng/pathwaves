@@ -63,9 +63,26 @@ sectionTwo:
 
 
         The exchanges provided a glimpse into how each creative individual explored the expansive range of digital tools and diverse approaches that had been touched upon during the learning journey—everything from spatial audio, Ableton plugins, effect pedals, immersive experiences, creation process, recorded music, to social media activation, integration and business planning, to a myriad of other investigations.
-  endNote: The Pathwaves Legacy closes the program with the publication and
-    distribution of learnings in several media formats to creative communities
-    across the country.
+    - header: Legacy and Sharing
+      date: May 2023
+      description: >
+        While the program has been completed, findings and learnings live on
+        with the publication and distribution of the Pathwaves Report, and the
+        sharing of the incubator’s Horizon Scan—available to communities across
+        the country.
+
+
+        Documents are available for download in the Results and Outcomes section.
+
+
+        Beginning later this year, the Pathwaves Team and Ambassadors will now be presenting and facilitating workshops at conferences and events across the country. If you are interested in partnering with us, please be in touch!
+
+
+        Find out where we'll be in the Events section.
+  endNote: >
+    The aim of sharing these legacy assets is to connect with communities across
+    the country in the hope that they are inspired by the outcomes, and are
+    compelled to continue the conversations. 
 sectionThree:
   header: Land Acknowledgement
   landAcknowledgement: >-
