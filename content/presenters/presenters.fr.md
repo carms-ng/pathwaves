@@ -168,12 +168,12 @@ sectionTwo:
         audiovisuelles.
       entity: Breakglass Studios / TRANSMISSION MTL
       role: Présentateur
-      pronouns: "  "
+      pronouns: "il/ils  "
       portrait:
         image: /assets/james-benjamin.jpg
         alt: "James Benjamin   "
     - name: Ian Cameron
-      pronouns: "   "
+      pronouns: "il/ils   "
       role: Présentateur
       entity: "TRANSMISSION MTL  "
       description: Ian Cameron a developpé sa carrière en travaillant à l'intersection
