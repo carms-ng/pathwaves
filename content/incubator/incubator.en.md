@@ -72,10 +72,13 @@ sectionTwo:
         the country.
 
 
+
         Documents are available for download in the Results and Outcomes section.
 
 
-        Beginning later this year, the Pathwaves Team and Ambassadors will now be presenting and facilitating workshops at conferences and events across the country. If you are interested in partnering with us, please be in touch!
+
+        Beginning later this year, the Pathwaves Team and Ambassadors will be presenting and facilitating workshops at conferences and events across the country. If you are interested in partnering with us, please be in touch!
+
 
 
         Find out where we'll be in the Events section.
