@@ -192,7 +192,7 @@ sectionTwo:
         image: /assets/ian-cameron.jpeg
         alt: "    "
     - name: Dorothée Parent-Roy
-      pronouns: "   "
+      pronouns: "elle/elles   "
       role: Présentatrice
       entity: "Believe Digital   "
       description: Dorothée Parent-Roy a découvert les rouages de la distribution
@@ -213,7 +213,7 @@ sectionTwo:
         image: /assets/unnamed-2-.jpg
         alt: Dorothée
     - name: Peter Kirn
-      pronouns: "   "
+      pronouns: "il/ils   "
       role: présentateur
       entity: "Create Digital Music   "
       description: Peter est un compositeur et artiste multimédia, avec des sorties
@@ -243,7 +243,7 @@ sectionTwo:
         En plus de créer sa propre musique, il dirige également AudioServices.Studio, un hub pour ses services de mastering et de mixage basé dans son studio au Québec.
 
       name: Jean-Patrice Rémillard
-      pronouns: "      "
+      pronouns: "il/ils      "
       role: Présentateur
       url: https://audioservices.studio/
       entity: AudioServices.Studio
@@ -270,7 +270,7 @@ sectionTwo:
         ouvrir plus de portes et à établir une meilleure infrastructure pour les
         talents sous-représentés.
       name: Tao-ming Lau
-      pronouns: "   "
+      pronouns: "elle/elles   "
       role: Présentatrice
       entity: Blue Crane Agency
       portrait:
@@ -290,6 +290,7 @@ sectionTwo:
       portrait:
         image: /assets/danfreder-1-dan.jpg
         alt: Dan Freder
+      pronouns: il/ils
     - name: Matthew Edwards
       role: Présentateur
       entity: Portland Community College, Cascade STEAM Spaces
@@ -313,6 +314,7 @@ sectionTwo:
         appelé Moiré (Sounds, et al, 2021). Il est actuellement instructeur de
         réalités virtuelles et augmentées au Portland Community College, Cascade
         STEAM Spaces.
+      pronouns: il/iels
     - name: Nelly-eve Rajotte
       role: Présentatrice
       entity: Artiste audiovisuel
@@ -336,5 +338,6 @@ sectionTwo:
         du nord. La reconnaissance pour ses images dynamiques est venue du monde
         entier, avec ses œuvres présentées à l'ISEA2020, Transmediale (Berlin),
         Artlab (Argentine) et au festival Lab30 en Allemagne.
+      pronouns: elle/elles
   cardLinkLabel: Ligne
 ---
