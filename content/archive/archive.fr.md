@@ -31,18 +31,7 @@ sectionOne:
     alt: waves fr
 sectionTwo:
   buttonLabel: Suiv.
-  carouselItems:
-    - name: Placeholder 1
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit
-        aliquam etiam erat velit scelerisque in dictum non. Sodales ut eu sem
-        integer vitae justo eget magna. Pharetra pharetra massa massa ultricies
-        mi quis hendrerit dolor magna. Mi quis hendrerit dolor magna eget est
-        lorem.
-      type: Spotlight Type 1
-      img:
-        image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
-        alt: placeholder
+  carouselItems: []
   cards:
     - title: Rapport
       description: Cliquez ici pour lire et télécharger
@@ -55,21 +44,11 @@ sectionTwo:
     image: /assets/meetmusicians_0.5black.png
     alt: lines
 sectionThree:
-  cards:
-    - title: placeholder 1
-      subtitle: placeholder 1
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      url: https://www.google.com/
-      img:
-        image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
-        alt: placeholder
-  header: Ressources
+  cards: []
+  header: Événements Pathwaves (à venir)
 sectionFour:
   header: Gallery
-  images:
-    - image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
-      alt: placeholder
+  images: []
   backgroundImage:
     image: /assets/gallery.png
     alt: lines
