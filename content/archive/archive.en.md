@@ -20,13 +20,13 @@ sectionOne:
 
     Beginning later this year, the Pathwaves Team and Ambassadors will now be presenting and facilitating workshops at conferences and events across the country. If you are interested in partnering with us, please be in touch!
   imgPrimary:
-    image: /assets/about-incubator-2.png
+    image: /assets/pathwaves-report.a-13-dragged-.jpg
     alt: placeholder
   imgSecondary:
     image: /assets/about-incubator.png
     alt: placeholder
   backgroundImage:
-    image: /assets/gallery.png
+    image: /assets/waves-tr.png
     alt: waves
 sectionTwo:
   buttonLabel: Next

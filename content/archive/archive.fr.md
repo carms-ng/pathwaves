@@ -3,7 +3,7 @@ templateKey: archivePage.js
 title: Archive FR
 sectionOne:
   imgPrimary:
-    image: /assets/about-incubator-2.png
+    image: /assets/pathwaves-report.a-13-dragged-.jpg
     alt: placeholder
   imgSecondary:
     image: /assets/about-incubator.png
@@ -27,7 +27,7 @@ sectionOne:
     L'équipe et les ambassadeurs de Pathwaves présenteront et faciliteront désormais des ateliers lors de conférences et d'événements à travers le pays. Si vous êtes intéressé par un partenariat avec nous, veuillez nous contacter !
   header: Résultats et Impact
   backgroundImage:
-    image: /assets/gallery.png
+    image: /assets/waves-tr.png
     alt: waves fr
 sectionTwo:
   buttonLabel: Suiv.
