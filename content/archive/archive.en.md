@@ -18,7 +18,7 @@ sectionOne:
     The aim of sharing these legacy assets is to connect with communities across the country in the hope that they are inspired by the outcomes, and are compelled to continue the conversations. 
 
 
-    Beginning later this year, the Pathwaves Team and Ambassadors will now be presenting and facilitating workshops at conferences and events across the country. If you are interested in partnering with us, please be in touch!
+    Beginning later this year, the Pathwaves Team and Ambassadors will be presenting and facilitating workshops at conferences and events across the country. If you are interested in partnering with us, please be in touch!
   imgPrimary:
     image: /assets/pathwaves-report.a-13-dragged-.jpg
     alt: placeholder
