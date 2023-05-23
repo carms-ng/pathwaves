@@ -50,7 +50,7 @@ sectionTwo:
       url: https://www.google.com/
   header: Findings FR
   backgroundImage:
-    image: /assets/team.png
+    image: /assets/pathwaves-report.a-13-dragged-.jpg
     alt: lines
 sectionThree:
   cards:
