@@ -12,9 +12,9 @@ sectionOne:
     - linkText: About the incubator
       url: /incubator
       isVisible: true
-    - linkText: Result + Outcome
+    - linkText: Results + Outcomes
       url: /archive
-      isVisible: false
+      isVisible: true
 sectionTwo:
   carouselItems:
     - name: Della Orrey
