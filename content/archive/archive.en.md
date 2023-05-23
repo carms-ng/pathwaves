@@ -47,7 +47,7 @@ sectionThree:
   cards: []
   header: Pathwaves Events (Coming Soon)
 sectionFour:
-  header: .
+  header: + + + +
   images: []
   backgroundImage:
     image: /assets/gallery.png
