@@ -44,11 +44,13 @@ sectionTwo:
         image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
         alt: placeholder
   cards:
-    - title: Placeholder 1
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      url: https://www.google.com/
-  header: Findings FR
+    - title: Rapport
+      description: Cliquez ici pour lire et télécharger
+      url: https://drive.google.com/file/d/1HNcG6wn_VqWfELRMRq_r_5yzqvgysGLU/view?usp=sharing
+    - description: Cliquez ici pour lire et télécharger
+      title: Analyse prospective
+      url: https://drive.google.com/file/d/1vEbjXdJteSEqE_QHFfJyagPKq12WxZ1G/view?usp=sharing
+  header: Téléchargements
   backgroundImage:
     image: /assets/meetmusicians_0.5black.png
     alt: lines
