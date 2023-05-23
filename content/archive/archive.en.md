@@ -2,25 +2,23 @@
 templateKey: archivePage.js
 title: Archive
 sectionOne:
-  header: Result + Outcome
+  header: Results + Outcomes
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Magna fringilla urna
-    porttitor rhoncus. Gravida dictum fusce ut placerat orci. Egestas tellus
-    rutrum tellus pellentesque eu tincidunt tortor aliquam. Sagittis vitae et
-    leo duis ut diam quam. Mauris commodo quis imperdiet massa. Est ullamcorper
-    eget nulla facilisi etiam dignissim diam quis enim. Eget mauris pharetra et
-    ultrices neque ornare. Id eu nisl nunc mi ipsum faucibus vitae aliquet. In
-    fermentum et sollicitudin ac orci phasellus. Pellentesque sit amet porttitor
-    eget dolor morbi non arcu. Vel pretium lectus quam id leo in. Facilisi etiam
-    dignissim diam quis enim lobortis scelerisque fermentum. Malesuada bibendum
-    arcu vitae elementum curabitur vitae. Lectus arcu bibendum at varius vel
-    pharetra vel turpis nunc. Arcu ac tortor dignissim convallis aenean et
-    tortor at risus. Curabitur gravida arcu ac tortor dignissim. Sagittis
-    aliquam malesuada bibendum arcu vitae.
+    While the program has been completed, findings and learnings live on with
+    the publication and distribution of the Pathwaves Report, and the sharing of
+    the incubator’s Horizon Scan—available to communities across the country.
 
 
-    Netus et malesuada fames ac. Non pulvinar neque laoreet suspendisse. Odio eu feugiat pretium nibh ipsum consequat. Posuere ac ut consequat semper viverra nam libero. Euismod in pellentesque massa placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Amet justo donec enim diam vulputate ut pharetra. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Turpis egestas sed tempus urna et pharetra. Rhoncus aenean vel elit scelerisque mauris pellentesque. Mauris pharetra et ultrices neque ornare. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Egestas dui id ornare arcu odio.
+    The Report documents the design, journey and outcomes for participants. 
+
+
+    The comprehensive Horizon Scan which provided participants with an understanding of the digital drivers of change and trends—and the social, technological, environmental, economic, political, values and legal shifts influencing the future of music in Canada and other markets around the world, is also available for download. 
+
+
+    The aim of sharing these legacy assets is to connect with communities across the country in the hope that they are inspired by the outcomes, and are compelled to continue the conversations. 
+
+
+    Beginning later this year, the Pathwaves Team and Ambassadors will now be presenting and facilitating workshops at conferences and events across the country. If you are interested in partnering with us, please be in touch!
   imgPrimary:
     image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
     alt: placeholder

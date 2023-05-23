@@ -9,24 +9,23 @@ sectionOne:
     image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
     alt: placeholder
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Magna fringilla urna
-    porttitor rhoncus. Gravida dictum fusce ut placerat orci. Egestas tellus
-    rutrum tellus pellentesque eu tincidunt tortor aliquam. Sagittis vitae et
-    leo duis ut diam quam. Mauris commodo quis imperdiet massa. Est ullamcorper
-    eget nulla facilisi etiam dignissim diam quis enim. Eget mauris pharetra et
-    ultrices neque ornare. Id eu nisl nunc mi ipsum faucibus vitae aliquet. In
-    fermentum et sollicitudin ac orci phasellus. Pellentesque sit amet porttitor
-    eget dolor morbi non arcu. Vel pretium lectus quam id leo in. Facilisi etiam
-    dignissim diam quis enim lobortis scelerisque fermentum. Malesuada bibendum
-    arcu vitae elementum curabitur vitae. Lectus arcu bibendum at varius vel
-    pharetra vel turpis nunc. Arcu ac tortor dignissim convallis aenean et
-    tortor at risus. Curabitur gravida arcu ac tortor dignissim. Sagittis
-    aliquam malesuada bibendum arcu vitae.
+    Bien que le programme soit terminé, les résultats et les apprentissages
+    perdurent grâce à la publication et à la distribution du rapport Pathwaves,
+    ainsi qu'au partage de l'analyse d’horizon de l'incubateur - disponible pour
+    les communautés à travers le pays.
 
 
-    Netus et malesuada fames ac. Non pulvinar neque laoreet suspendisse. Odio eu feugiat pretium nibh ipsum consequat. Posuere ac ut consequat semper viverra nam libero. Euismod in pellentesque massa placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Amet justo donec enim diam vulputate ut pharetra. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Turpis egestas sed tempus urna et pharetra. Rhoncus aenean vel elit scelerisque mauris pellentesque. Mauris pharetra et ultrices neque ornare. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Egestas dui id ornare arcu odio.
-  header: Resultat
+    Le rapport documente la conception, le parcours et les résultats pour les participants.
+
+
+    L'analyse d’horizon complète est disponible en téléchargement. Elle a fourni aux participants une compréhension des moteurs numériques de changement et des tendances, ainsi que les changements sociaux, technologiques, environnementaux, économiques, politiques, de valeurs et juridiques qui influencent l'avenir de la musique. Cette analyse concerne le Canada et d'autres marchés à travers le monde.
+
+
+    L'objectif de partager ces actifs d'héritage est de se connecter avec les communautés à travers le pays dans l'espoir qu'elles soient inspirées par les résultats et qu'elles soient incitées à poursuivre les conversations.
+
+
+    L'équipe et les ambassadeurs de Pathwaves présenteront et faciliteront désormais des ateliers lors de conférences et d'événements à travers le pays. Si vous êtes intéressé par un partenariat avec nous, veuillez nous contacter !
+  header: Résultats et Impact
   backgroundImage:
     image: /assets/gallery.png
     alt: waves fr
