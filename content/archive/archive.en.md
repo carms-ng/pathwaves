@@ -51,7 +51,7 @@ sectionTwo:
   cards:
     - title: "Pathwaves Final Report "
       description: Download
-      url: https://www.google.com/
+      url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
       pdf: /assets/untitled-document.pdf
     - description: Download
       title: Pathwaves Horizon Scan
