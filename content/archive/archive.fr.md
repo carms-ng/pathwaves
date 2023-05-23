@@ -3,10 +3,10 @@ templateKey: archivePage.js
 title: Archive FR
 sectionOne:
   imgPrimary:
-    image: /assets/homeshareopinion_1.0black.png
+    image: /assets/about-incubator-2.png
     alt: placeholder
   imgSecondary:
-    image: /assets/homeshareopinion_1.0black.png
+    image: /assets/about-incubator.png
     alt: placeholder
   description: >-
     Bien que le programme soit terminé, les résultats et les apprentissages
@@ -50,7 +50,7 @@ sectionTwo:
       url: https://www.google.com/
   header: Findings FR
   backgroundImage:
-    image: /assets/pathwaves-report.a-13-dragged-.jpg
+    image: /assets/meetmusicians_0.5black.png
     alt: lines
 sectionThree:
   cards:

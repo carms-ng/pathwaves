@@ -20,10 +20,10 @@ sectionOne:
 
     Beginning later this year, the Pathwaves Team and Ambassadors will now be presenting and facilitating workshops at conferences and events across the country. If you are interested in partnering with us, please be in touch!
   imgPrimary:
-    image: /assets/homeshareopinion_1.0black.png
+    image: /assets/about-incubator-2.png
     alt: placeholder
   imgSecondary:
-    image: /assets/homeshareopinion_1.0black.png
+    image: /assets/about-incubator.png
     alt: placeholder
   backgroundImage:
     image: /assets/gallery.png
@@ -58,14 +58,13 @@ sectionTwo:
       url: https://www.google.com/
   header: Findings
   backgroundImage:
-    image: /assets/pathwaves-report.a-13-dragged-.jpg
+    image: /assets/meetmusicians_0.5black.png
     alt: lines
 sectionThree:
   cards:
     - title: placeholder 1
       subtitle: placeholder 1
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      description: test
       url: https://www.google.com/
       img:
         image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
