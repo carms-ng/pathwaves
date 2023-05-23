@@ -23,7 +23,7 @@ sectionOne:
     image: /assets/pathwaves-report.a-13-dragged-.jpg
     alt: placeholder
   imgSecondary:
-    image: /assets/about-incubator.png
+    image: /assets/accessible_pathwaves_horizon_scan_jan_18_2022-dragged-.jpg
     alt: placeholder
   backgroundImage:
     image: /assets/waves-tr.png
@@ -38,13 +38,13 @@ sectionTwo:
         integer vitae justo eget magna. "
       type: Spotlight Type 1
       img:
-        image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
+        image: /assets/about-incubator-2.png
         alt: placeholder
     - name: Placeholder 2
       type: Spotlight Type 2
       img:
         alt: placeholder
-        image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
+        image: /assets/about-incubator.png
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit
         aliquam etiam erat velit scelerisque in dictum non. "
@@ -67,7 +67,7 @@ sectionThree:
       description: test
       url: https://www.google.com/
       img:
-        image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
+        image: /assets/about-incubator.png
         alt: placeholder
     - title: placeholder 2
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -81,7 +81,7 @@ sectionThree:
       subtitle: placeholder
       img:
         alt: placeholder
-        image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
+        image: /assets/about-incubator-2.png
       url: https://www.google.com/
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
