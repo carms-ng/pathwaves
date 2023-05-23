@@ -17,13 +17,12 @@ sectionOne:
         technologies pour une perturbation positive et d'autonomiser les
         musiciens canadiens et autochtones grâce à la littératie numérique, et
         de soutenir l'innovation numérique des musiciens individuels.
-    - description: >
-        L'incubateur de littératie numérique Pathwaves a soutenu 18 musiciens
-        venant des quatres coins du Canada et de Turtle Island pour exploiter
-        les opportunités de l'ère numérique. L'objectif était de considérer les
-        technologies pour une perturbation positive et d'autonomiser les
-        musiciens canadiens et autochtones grâce à la littératie numérique, et
-        de soutenir l'innovation numérique des musiciens individuels.
+    - description: >-
+        Présenté virtuellement de janvier à mars 2022, l'incubateur Pathwaves
+        consistait des conférences, mentorat, "master classes", ateliers,
+        travail individuel et échange de connaissances.
+
+        Ensemble, ils se sont plongés dans les nouvelles technologies d'aujourd'hui - des logiciels de streaming et des émissions en direct VR aux NFT et à la composition assistée par l'IA - dans le but de susciter de nouvelles réflexions axées sur les solutions autour de la création et du partage de musique.
   header: A propo d'incubator
   backgroundImageTop:
     image: /assets/about-incubator-1_top.png
