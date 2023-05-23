@@ -50,7 +50,7 @@ sectionTwo:
         aliquam etiam erat velit scelerisque in dictum non. "
   cards:
     - title: "Pathwaves Final Report "
-      description: Download
+      description: Click Here To Download
       url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
       pdf: /assets/untitled-document.pdf
     - description: Download
