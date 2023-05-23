@@ -53,9 +53,9 @@ sectionTwo:
       description: Click Here To Download
       url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
       pdf: /assets/untitled-document.pdf
-    - description: Download
+    - description: Click Here To Download
       title: Pathwaves Horizon Scan
-      url: https://www.google.com/
+      url: https://drive.google.com/file/d/1a7_7ivc7QOucna2gKmtaV4f5yMdsj0Ak/view?usp=sharing
   header: DOWNLOADS
   backgroundImage:
     image: /assets/meetmusicians_0.5black.png
