@@ -56,7 +56,7 @@ sectionTwo:
     - description: Download
       title: Pathwaves Horizon Scan
       url: https://www.google.com/
-  header: Findings
+  header: DOWNLOADS
   backgroundImage:
     image: /assets/meetmusicians_0.5black.png
     alt: lines
