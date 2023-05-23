@@ -3,10 +3,10 @@ templateKey: archivePage.js
 title: Archive FR
 sectionOne:
   imgPrimary:
-    image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
+    image: /assets/homeshareopinion_1.0black.png
     alt: placeholder
   imgSecondary:
-    image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
+    image: /assets/homeshareopinion_1.0black.png
     alt: placeholder
   description: >-
     Bien que le programme soit terminé, les résultats et les apprentissages

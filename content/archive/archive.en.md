@@ -20,10 +20,10 @@ sectionOne:
 
     Beginning later this year, the Pathwaves Team and Ambassadors will now be presenting and facilitating workshops at conferences and events across the country. If you are interested in partnering with us, please be in touch!
   imgPrimary:
-    image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
+    image: /assets/homeshareopinion_1.0black.png
     alt: placeholder
   imgSecondary:
-    image: /assets/ospan-ali-6xv4a1va1ru-unsplash.jpg
+    image: /assets/homeshareopinion_1.0black.png
     alt: placeholder
   backgroundImage:
     image: /assets/gallery.png
@@ -49,19 +49,13 @@ sectionTwo:
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit
         aliquam etiam erat velit scelerisque in dictum non. "
   cards:
-    - title: Placeholder 1
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    - title: "Pathwaves Final Report "
+      description: Download
       url: https://www.google.com/
       pdf: /assets/untitled-document.pdf
-    - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      title: Placeholder 2
+    - description: Download
+      title: Pathwaves Horizon Scan
       url: https://www.google.com/
-    - url: https://www.google.com/
-      title: Placeholder 3
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
   header: Findings
   backgroundImage:
     image: /assets/team.png
