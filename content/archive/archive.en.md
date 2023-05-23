@@ -50,10 +50,10 @@ sectionTwo:
         aliquam etiam erat velit scelerisque in dictum non. "
   cards:
     - title: "Pathwaves Final Report "
-      description: Click Here To Download
+      description: Click Here to Read and Download
       url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
       pdf: /assets/untitled-document.pdf
-    - description: Click Here To Download
+    - description: Click Here to Read and Download
       title: Pathwaves Horizon Scan
       url: https://drive.google.com/file/d/1a7_7ivc7QOucna2gKmtaV4f5yMdsj0Ak/view?usp=sharing
   header: DOWNLOADS
