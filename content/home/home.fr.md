@@ -12,7 +12,7 @@ sectionOne:
     - linkText: A propos de l'incubateur
       url: /incubator
       isVisible: true
-    - linkText: Résultat
+    - linkText: Résultats
       url: /archive
       isVisible: true
 sectionTwo:
