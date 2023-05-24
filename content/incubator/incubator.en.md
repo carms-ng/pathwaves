@@ -82,57 +82,12 @@ sectionTwo:
 
 
         Find out where we'll be in the Events section.
-  endNote: >
+  endNote: >+
     The aim of sharing these legacy assets is to connect with communities across
     the country in the hope that they are inspired by the outcomes, and are
     compelled to continue the conversations. 
 
 
-
-    Conference Topics:
-
-
-    The Digital Landscape: Virtualizing Performances    
-
-    Blanche Israël
-       	 
-    Live Stagecrafting: Video, Lighting, Object and Scenography
-
-    Nicolas Bernier
-       	 
-    A Digital Industry: Navigating Business and Mental Models
-
-    Cherie Hu
-
-
-    Multiverse Stagecrafting: VR AR XR as Live, Immersive Performance Modes  
-
-    Michaela Ternasky-Holland
-
-
-    Post Stereo New Sonics: Spatial, Ambiophonics, Immersive Audio     
-
-    Chloe Alexandra Thompson
-
-
-    Blocks, Chains and Utopias? Web3, DAOs NFTs 	 
-
-    Mike Renaud
-
-
-    Sing the Body AI: Songcraft and Algorithm Everything	 
-
-    Claire L. Evans
-
-
-    Bytes, Rights and Publishing
-
-    Jeff Waye
-
-
-    Digital Musicpreneur: Data to Dollars
-
-    Charlie Wall-Andrews
 sectionThree:
   header: Land Acknowledgement
   landAcknowledgement: >-
