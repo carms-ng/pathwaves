@@ -2,7 +2,7 @@
 templateKey: incubatorPage.js
 title: Incubator
 sectionOne:
-  header: About the incubator
+  header: About the Incubator
   descriptions:
     - description: >
         Pathwaves was created in response to the observation that musicians were
