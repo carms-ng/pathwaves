@@ -48,7 +48,7 @@ nav:
 footer:
   copyright: Pathwaves
   footerLinks:
-    - linkAddress: mailto:jen@envisionmanagement.com
+    - linkAddress: mailto:info@pathwaves.com
       linkText: Contact Us
     - linkText: Made by Mutual Design
       isInterenal: false
