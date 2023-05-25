@@ -58,10 +58,12 @@ sectionTwo:
     image: /assets/home2.png
     alt: lines fr
 sectionThree:
-  header: Restez informé·e
-  description: Nous partagerons avec vous les savoirs et réflexions recueillis
-    lors de l’incubateur Pathwaves pour votre usage personnel et pour que vous
-    les partagiez avec votre communauté.
+  header: Get in touch!
+  description: >-
+    Pathwaves welcomes your feedback and comments, as well as inquiries for
+    collaboration, presentations, workshops—and to keep the conversation going. 
+
+    Contact us: info@pathwaves.com
   form:
     inputPlaceholderName: nom
     inputPlaceholderEmail: courriel
