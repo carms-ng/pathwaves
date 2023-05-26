@@ -1,6 +1,6 @@
 ---
 title: The Pathwaves Digital Literacy Incubator
-description: Pathwaves is being produced by Envision Management & Production in
+description: Pathwaves is produced by Envision Management & Production in
   partnership with the Phi Centre and OCAD University, with financial support
   from the Canada Council for the Arts.
 logo:
