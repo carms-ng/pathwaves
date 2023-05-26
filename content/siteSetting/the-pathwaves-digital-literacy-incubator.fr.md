@@ -51,5 +51,5 @@ footer:
       linkText: Nous contacter
     - linkAddress: https://www.mutualdesign.cc/
       linkText: Site web par Mutual Design
-      isInterenal: true
+      isInterenal: false
 ---
