@@ -64,7 +64,7 @@ sectionTwo:
 
         The exchanges provided a glimpse into how each creative individual explored the expansive range of digital tools and diverse approaches that had been touched upon during the learning journey—everything from spatial audio, Ableton plugins, effect pedals, immersive experiences, creation process, recorded music, to social media activation, integration and business planning, to a myriad of other investigations.
     - header: Legacy and Sharing
-      date: May 2023
+      date: MAY 2023
       description: >
         While the program has been completed, findings and learnings live on
         with the publication and distribution of the Pathwaves Report, and the
