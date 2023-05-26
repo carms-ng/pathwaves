@@ -14,8 +14,10 @@ nav:
           linkAddress: /incubator
         - linkText: Team
           linkAddress: /team
-        - linkText: Past Programmiing
+        - linkText: Past Programming
           linkAddress: /archive/gallery
+        - linkText: Upcoming Events
+          linkAddress: /archive/resources
       show: both
     - linkText: Participants
       childNavItems:
