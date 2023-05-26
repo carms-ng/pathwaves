@@ -41,8 +41,8 @@ nav:
     labelPhaseTwo: Phase 2
     labelPhaseThree: Phase 3
   menuAuth:
-    labelLogin: "-"
-    labelLogout: info@pathwaves.com
+    labelLogin: Log in
+    labelLogout: Log out
     navItemsAuth:
       - linkText: Schedule
         linkAddress: /schedule
