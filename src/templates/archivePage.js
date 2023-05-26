@@ -6,10 +6,8 @@ import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import Carousel from '../components/Carousel';
-import Gallery from '../components/Gallery';
 
-import { CardsThreesStyles, BgImageWrapper, BgImageRightWrapper } from '../styles/InnerStyles';
+import { CardsThreesStyles, BgImageRightWrapper } from '../styles/InnerStyles';
 
 export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
@@ -17,8 +15,6 @@ export default function HomePageTemplate({ pageContext, data }) {
     title,
     sectionOne,
     sectionTwo,
-    sectionThree,
-    sectionFour,
   } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
@@ -70,54 +66,6 @@ export default function HomePageTemplate({ pageContext, data }) {
         </CardsThreesStyles>
       </SectionSecondaryStyles>
 
-      {/* carousel */}
-      <BgImageWrapper>
-        <GatsbyImage
-          image={sectionTwo.backgroundImage.image.childImageSharp.gatsbyImageData}
-          alt={sectionTwo.backgroundImage.alt}
-          className="background"
-        />
-
-        <Carousel
-          lang={pageContext.lang}
-          items={sectionTwo.carouselItems}
-          buttonLabel={sectionTwo.buttonLabel}
-        />
-      </BgImageWrapper>
-
-      <SectionSecondaryStyles>
-        <h2>{sectionThree.header}</h2>
-        {/* cards */}
-        <CardsThreesStyles>
-          {sectionThree.cards.map((card) => (
-            <a key={`resources-${card.title}`} href={card.url} target="_blank" rel="noreferrer">
-              <GatsbyImage
-                image={card.img.image.childImageSharp.gatsbyImageData}
-                alt={card.img.alt}
-                style={{ borderRadius: 'var(--br)' }}
-              />
-              <h3>{card.title}</h3>
-              <pre>{card.subtitle}</pre>
-              <p>{card.description}</p>
-            </a>
-          ))}
-        </CardsThreesStyles>
-      </SectionSecondaryStyles>
-
-      <BgImageWrapper>
-        <GatsbyImage
-          image={sectionFour.backgroundImage.image.childImageSharp.gatsbyImageData}
-          alt={sectionFour.backgroundImage.alt}
-          className="background"
-        />
-
-        <SectionSecondaryStyles>
-          <h2>{sectionFour.header}</h2>
-          {/* gallery */}
-          <Gallery images={sectionFour.images} />
-
-        </SectionSecondaryStyles>
-      </BgImageWrapper>
     </Layout>
   );
 }
@@ -285,93 +233,6 @@ export const query = graphql`
               description
               title
               url
-            }
-            buttonLabel
-            backgroundImage {
-              image {
-                childImageSharp {
-                  gatsbyImageData(
-                    placeholder: TRACED_SVG,
-                    layout: FULL_WIDTH,
-                    quality: 100
-                  )
-                }
-              }
-              alt
-            }
-            carouselItems {
-              name
-              description
-              type
-              img {
-                alt
-                image {
-                  childImageSharp {
-                    gatsbyImageData(
-                      width: 500,
-                      height: 500,
-                      placeholder: TRACED_SVG,
-                      layout: CONSTRAINED,
-                      transformOptions: {fit: COVER},
-                      quality: 100
-                    )
-                  }
-                }
-              }
-            }
-          }
-          sectionThree {
-            header
-            cards {
-              title
-              subtitle
-              description
-              url
-              img {
-                alt
-                image {
-                  childImageSharp {
-                    gatsbyImageData(
-                      width: 320,
-                      height: 240,
-                      placeholder: TRACED_SVG,
-                      layout: CONSTRAINED,
-                      transformOptions: {fit: COVER},
-                      quality: 100
-                    )
-                  }
-                }
-              }
-            }
-          }
-          sectionFour {
-            header
-            backgroundImage {
-              image {
-                childImageSharp {
-                  gatsbyImageData(
-                    placeholder: TRACED_SVG,
-                    layout: FULL_WIDTH,
-                    quality: 100
-                  )
-                }
-              }
-              alt
-            }
-            images {
-              image {
-                childImageSharp {
-                  gatsbyImageData(
-                    width: 1000,
-                    height: 600,
-                    placeholder: TRACED_SVG,
-                    layout: CONSTRAINED,
-                    transformOptions: {fit: COVER},
-                    quality: 100
-                  )
-                }
-              }
-              alt
             }
           }
         }
