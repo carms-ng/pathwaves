@@ -30,7 +30,13 @@ sectionOne:
     alt: waves
 sectionTwo:
   buttonLabel: Next
-  carouselItems: []
+  carouselItems:
+    - name: Upcoming Events
+      img:
+        image: /assets/lines-reverse.png
+        alt: placeholder
+      type: s
+      description: Check here for upcoming events.
   cards:
     - title: "Pathwaves Final Report "
       description: Click Here to Read and Download
