@@ -15,11 +15,11 @@ nav:
         - linkText: Team
           linkAddress: /team
         - linkText: Past Programming
-          linkAddress: /incubator/end note
+          linkAddress: /incubator/program/endnote
         - linkText: Upcoming Events
           linkAddress: /archive/resources
         - linkText: Land Acknowledgement
-          linkAddress: /incubator/landacknowledgement
+          linkAddress: /incubator/program/landacknowledgement
       show: both
     - linkText: Participants
       childNavItems:
