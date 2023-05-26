@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { graphql } from 'gatsby';
 
+import { TailSpin } from 'react-loader-spinner';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Calendar from '../components/Calendar';
 import FullSchedule from '../components/FullSchedule';
+import { LoadingStyles } from '../styles/InnerStyles';
 
 export default function SchedulePageTemplate({ pageContext: { lang, slug }, data }) {
   const [showFullSchedule, setShowFullSchedule] = useState(false);
@@ -15,7 +17,11 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
   } = useAuth0();
 
   if (isLoading) {
-    return <div>Authenticating...</div>;
+    return (
+      <LoadingStyles>
+        <TailSpin color="#333333" height={80} width={80} />
+      </LoadingStyles>
+    );
   }
 
   if (!isAuthenticated) {
@@ -33,6 +39,17 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
 
   const { nav } = settings;
 
+  const events = data.courses.nodes.map((node) => {
+    const event = node.childMarkdownRemark.frontmatter;
+
+    return ({
+      ...event,
+      date: new Date(event.start).toLocaleDateString(),
+      start: new Date(event.start),
+      end: new Date(event.end),
+    });
+  }).sort((a, b) => a.start - b.start);
+
   return (
     isAuthenticated && (
       <Layout lang={lang} slug={slug} settings={settings}>
@@ -41,7 +58,7 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
         {/* Section One */}
         <Calendar
           page={sectionOne}
-          courses={data.courses}
+          events={events}
           user={user}
           lang={lang}
           nav={nav}
@@ -55,7 +72,7 @@ export default function SchedulePageTemplate({ pageContext: { lang, slug }, data
           && (
           <FullSchedule
             page={sectionTwo}
-            courses={data.courses}
+            events={events}
             lang={lang}
             labelPhases={nav.labelPhases}
           />
@@ -139,7 +156,6 @@ export const query = graphql`
     }
     courses: allFile(
       filter: {relativeDirectory: {eq: "courses"}, base: {regex: $regx}}
-      sort: {fields: childMarkdownRemark___frontmatter___start}
     ) {
       nodes {
         childMarkdownRemark {

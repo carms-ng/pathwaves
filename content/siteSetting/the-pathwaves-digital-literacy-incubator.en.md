@@ -14,6 +14,8 @@ nav:
           linkAddress: /incubator
         - linkText: Team
           linkAddress: /team
+        - linkText: Past Programmiing
+          linkAddress: /archive/gallery
       show: both
     - linkText: Participants
       childNavItems:
@@ -28,7 +30,7 @@ nav:
     - linkText: Resources
       linkAddress: /resources
   buttonDiscord:
-    url: https://discord.gg/xzBYznTaFm
+    url: https://discord.com/invite/xzBYznTaFm
     linkText: Discord
   labelPhases:
     labelPhaseOne: Phase 1
@@ -46,7 +48,7 @@ nav:
 footer:
   copyright: Pathwaves
   footerLinks:
-    - linkAddress: mailto:lesya@envisionmanagement.com
+    - linkAddress: mailto:info@pathwaves.com
       linkText: Contact Us
     - linkText: Made by Mutual Design
       isInterenal: false

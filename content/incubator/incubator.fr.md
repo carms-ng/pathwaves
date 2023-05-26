@@ -3,16 +3,26 @@ templateKey: incubatorPage.js
 title: Incubator
 sectionOne:
   descriptions:
-    - description: Offert virtuellement de janvier à mars 2022, l'incubateur Pathwaves
-        se compose de conférences, de mentorat, de classes de maître,
-        d’ateliers, de sessions de travail individuel et d’échanges.
-    - description: Dix-huit musiciens reflétant les nombreux axes de la diversité au
-        Canada seront sélectionnés et rémunérés pour leur participation.
-    - description: Ensemble, ils exploreront des questions liées aux nouvelles
-        technologies - logiciels de streaming, spectacles VR, NFTs (jetons non
-        fongibles) et composition assistée par l'IA - dans le but de susciter
-        une nouvelle réflexion axée sur les solutions entourant la création et
-        le partage de la musique.
+    - description: Pathwaves a été créé en réponse à l'observation selon laquelle les
+        musiciens n'étaient pas impliqués dans les prises de décisions
+        concernant l'évolution des technologies numériques, et ne bénéficiaient
+        donc pas équitablement de cette transformation numérique de l'industrie.
+        Pour permettre à leurs voix et perspectives de faire partie de la
+        mixité, les musiciens avaient besoin d'opportunités pour améliorer leur
+        alphabétisation numérique.
+    - description: >
+        L'incubateur de littératie numérique Pathwaves a soutenu 18 musiciens
+        venant des quatres coins du Canada et de Turtle Island pour exploiter
+        les opportunités de l'ère numérique. L'objectif était de considérer les
+        technologies pour une perturbation positive et d'autonomiser les
+        musiciens canadiens et autochtones grâce à la littératie numérique, et
+        de soutenir l'innovation numérique des musiciens individuels.
+    - description: >-
+        Présenté virtuellement de janvier à mars 2022, l'incubateur Pathwaves
+        consistait des conférences, mentorat, "master classes", ateliers,
+        travail individuel et échange de connaissances.
+
+        Ensemble, ils se sont plongés dans les nouvelles technologies d'aujourd'hui - des logiciels de streaming et des émissions en direct VR aux NFT et à la composition assistée par l'IA - dans le but de susciter de nouvelles réflexions axées sur les solutions autour de la création et du partage de musique.
   header: A propo d'incubator
   backgroundImageTop:
     image: /assets/about-incubator-1_top.png
@@ -24,33 +34,46 @@ sectionTwo:
   phases:
     - header: La conférence de lancement
       date: JANVIER 2022
-      description: >+
-        La conférence de lancement réunira des musiciens, des professionnels de
-        la technologie et des professionnels de l'industrie musicale pour trois
-        jours de dialogue croisé dans un laboratoire virtuel. La conférence se
-        penchera sur les forces qui façonnent la création, l'interprétation et
-        le commerce de la musique dans le monde numérique, tout en fournissant
-        aux musiciens les outils, les connaissances et les ressources
-        nécessaires pour concevoir des projets novateurs qui ré-imaginent la
-        façon dont la musique est créée et partagée au Canada et dans le monde.
+      description: >
+        Musiciens, professionnels de la technologie et professionnels de
+        l'industrie musicale se sont réunis pendant trois jours de dialogue
+        croisé dans un laboratoire virtuel. La conférence a exploré les forces
+        qui façonnent la création musicale, la performance et les affaires dans
+        le monde numérique d'aujourd'hui, tout en équipant les musiciens des
+        outils, des connaissances et des ressources nécessaires pour concevoir
+        des projets novateurs qui réinventent la façon dont la musique est créée
+        et partagée au Canada et partout dans le monde.
 
+        Ils ont été introduits aux forces qui façonnent la création musicale et les affaires dans le monde numérique d'aujourd'hui. Ils ont également été poussés à concevoir et à envisager de nouvelles façons d'explorer et de partager leur art grâce aux outils numériques. La conférence a été conçue comme un environnement d'apprentissage mutuel animé par des guides et des mentors, facilité par des exercices interactifs.
     - header: Le moteur d'apprentissage
       date: FÉVRIER - MARS 2022
-      description: Le moteur d'apprentissage proposera aux musiciens une formation
-        guidée de deux mois pour développer leurs projets. Les participants
-        travailleront en petites équipes avec l'aide de mentors, et
-        bénéficieront de classes de maître et d'ateliers pour provoquer des
-        avancées innovantes dans leurs connaissances numériques.
+      description: >
+        FÉVRIER-MARS 2022 
+
+        Les musiciens ont été guidés pendant deux mois pour développer leurs projets. Ils ont travaillé en petites équipes avec l'aide de mentors, et ont reçu des classes de maître et des ateliers pour susciter des avancées innovantes dans leur littératie numérique.
     - header: L'échange de connaissances
       date: MARS 2022
-      description: L'échange de connaissances réunira une fois de plus les
-        participants pour qu'ils partagent leurs résultats et leurs
-        enseignements, aboutissant à la création d'un référentiel accessible de
-        connaissances créées en collaboration.
+      description: >
+        Les participants se sont réunis une fois de plus pour partager leurs
+        résultats et leurs apprentissages, ce qui a conduit à la création d'un
+        référentiel accessible de connaissances créées en collaboration.
+
+        Les échanges ont permis de constater que chaque individu créatif a exploré une vaste gamme d'outils numériques et d'approches diverses tout au long de l'apprentissage. Ces outils et approches incluent l'audio spatial, les plugins Ableton, les pédales d'effet, les expériences immersives, le processus de création musicale, l'enregistrement de musique, l'activation des médias sociaux, l'intégration et la planification commerciale, ainsi qu'une multitude d'autres investigations. La présence de ces technologies et méthodes innovantes ont permis aux artistes d'avoir accès à un large éventail de possibilités pour la création musicale et la production audio.
+    - header: Héritage et partage
+      date: mai 2023
+      description: >-
+        Bien que le programme soit terminé, les résultats et les apprentissages
+        perdurent grâce à la publication et à la distribution du rapport
+        Pathwaves, ainsi qu'au partage de l'analyse d’horizon de l'incubateur -
+        disponible pour les communautés à travers le pays.
+
+
+        L'équipe et les ambassadeurs de Pathwaves présenteront et faciliteront désormais des ateliers lors de conférences et d'événements à travers le pays. Si vous êtes intéressé par un partenariat avec nous, veuillez nous contacter !
   header: LE PROGRAMME DE L'INCUBATEUR PATHWAVES
-  endNote: L'héritage Pathwaves clôturera le programme avec la publication et la
-    distribution des apprentissages dans plusieurs formats médiatiques aux
-    communautés créatives du Canada.
+  endNote: L'objectif de partager ces actifs d'héritage est de se connecter avec
+    les communautés à travers le pays dans l'espoir qu'elles soient inspirées
+    par les résultats et qu'elles soient incitées à poursuivre les
+    conversations.
 sectionThree:
   header: Reconnaissance du territoire
   landAcknowledgement: >-

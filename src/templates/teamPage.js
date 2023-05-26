@@ -29,7 +29,7 @@ export default function TeamPageTemplate({ pageContext, data }) {
         <h1>{sectionOne.header}</h1>
       </TeamHeroStyles>
 
-      <CardsMember members={sectionOne.members} />
+      <CardsMember members={sectionOne.members} cardLinkLabel={sectionOne.cardLinkLabel} />
 
       <TeamPageStyles>
         <section id="collaborators">
@@ -202,6 +202,7 @@ export const query = graphql`
           }
           sectionOne {
             header
+            cardLinkLabel
             backgroundImage {
               image {
                 childImageSharp {
@@ -219,6 +220,8 @@ export const query = graphql`
               pronouns
               role
               entity
+              description
+              url
               portrait {
                 image {
                   childImageSharp {

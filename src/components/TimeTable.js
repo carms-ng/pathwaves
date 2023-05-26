@@ -2,8 +2,8 @@ import React from 'react';
 import { Icon } from '@iconify/react';
 import Clipboard from './Clipbroad';
 
-export default function TimeTable({ selectedDateGroup, id, page }) {
-  if (selectedDateGroup.length === 0) {
+export default function TimeTable({ selectedEvents, id, page }) {
+  if (selectedEvents.length === 0) {
     return (
       <div id={id}>
         <h3>{page.noneText}</h3>
@@ -12,21 +12,20 @@ export default function TimeTable({ selectedDateGroup, id, page }) {
   }
 
   return (
-    <div id={id}>
-      {selectedDateGroup?.map(({
-        title, description, presenter, start, end, linkZoom,
+    <div id={id} style={{ width: '100%' }}>
+      {selectedEvents?.map(({
+        title, presenter, start, end, linkZoom,
       }) => (
-        <div key={start} style={{ textAlign: 'left' }}>
-          <p style={{ color: 'var(--grey)' }}>
-            <span>{new Date(start).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
+        <div key={title + start} style={{ textAlign: 'left' }}>
+          <p style={{ color: 'var(--grey)', maxWidth: 'unset' }}>
+            <span>{start.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
             {' - '}
-            <span>{new Date(end).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
+            <span>{end.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
           </p>
-          <h3>{title}</h3>
-          <p>{description}</p>
+          <h3 style={{ maxWidth: 'unset' }}>{title}</h3>
           <div>
             <Icon icon="bi:person" />
-            <p>{presenter}</p>
+            <p style={{ maxWidth: 'unset' }}>{presenter}</p>
           </div>
 
           <div>

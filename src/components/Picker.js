@@ -9,7 +9,7 @@ registerLocale('en', en);
 registerLocale('fr', fr);
 
 export default function Picker({
-  id, lang, selectedDate, setSelectedDate, dateGroups,
+  id, lang, selectedDate, setSelectedDate, eventDates,
 }) {
   return (
     <PickerStyles id={id}>
@@ -21,7 +21,7 @@ export default function Picker({
         }}
         dayClassName={(date) => {
           const dateString = date.toLocaleDateString();
-          const hasEvent = Object.keys(dateGroups).includes(dateString);
+          const hasEvent = eventDates.includes(dateString);
           return (hasEvent ? 'underlined' : '');
         }}
         inline

@@ -7,7 +7,7 @@ sectionOne:
   labelZoom: Lien zoom
   labelScheduleShow: Voir l'horaire complet
   labelScheduleHide: Cache l'horaire complet
-  noneText: Woohoo no classes on your select day! FR
+  noneText: Rien de prévu pour la journée sélectionnée!
 sectionTwo:
   header: Voir l'horaire complet
   labelTime: Temp

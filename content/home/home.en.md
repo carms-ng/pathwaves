@@ -12,8 +12,9 @@ sectionOne:
     - linkText: About the incubator
       url: /incubator
       isVisible: true
-    - linkText: Result + Outcome
+    - linkText: Results + Outcomes
       url: /archive
+      isVisible: true
 sectionTwo:
   carouselItems:
     - name: Della Orrey
@@ -58,9 +59,12 @@ sectionTwo:
     image: /assets/home2.png
     alt: lines
 sectionThree:
-  header: Stay in the loop
-  description: We’ll pass on the knowledge and insights gained from the Pathwaves
-    Incubator for your own use, or for you to share with your community.
+  header: Get in touch!
+  description: >
+    Pathwaves welcomes your feedback and comments, as well as inquiries for
+    collaboration, presentations, workshops—and to keep the conversation going. 
+
+    Contact us: info@pathwaves.com
   form:
     inputPlaceholderName: name
     inputPlaceholderEmail: email address

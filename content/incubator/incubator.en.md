@@ -2,17 +2,27 @@
 templateKey: incubatorPage.js
 title: Incubator
 sectionOne:
-  header: About the incubator
+  header: About the Incubator
   descriptions:
-    - description: Delivered virtually from January to March 2022, the Pathwaves
-        Incubator consists of conferences, mentorship, master classes,
-        workshops, individual work, and knowledge-exchange.
-    - description: A cohort of 18 musicians reflecting the many axes of diversity in
-        this country will be selected and paid for their participation.
-    - description: Together they will dive into today’s new technologies — from
-        streaming software and VR live shows to NFTs and AI-assisted composition
-        — with the goal of sparking new solutions-oriented thought surrounding
-        the creation and sharing of music.
+    - description: >
+        Pathwaves was created in response to the observation that musicians were
+        not at the decision making table as digital technologies were evolving,
+        and were subsequently not benefiting equitably from this digital
+        transformation of the industry. To create the opportunity to have their
+        voices and perspectives in the mix, musicians needed to have
+        opportunities to increase their digital literacy.
+    - description: The Pathwaves Digital Literacy Incubator supported 18 musicians
+        from across Canada/Turtle Island to harness opportunities of the digital
+        era. It aimed to consider technologies for positive disruption to
+        empower Canadian and Indigenous musicians through digital literacy and
+        support the digital innovation of individual musicians.
+    - description: >
+        Delivered virtually from January to March 2022, the Pathwaves Incubator
+        consisted of conferences, mentorship, master classes, workshops,
+        individual work, and knowledge-exchange.
+
+
+        Together they dove into today’s new technologies - from streaming software and VR live shows to NFTs and AI assisted composition - with the goal of sparking new solutions-oriented thought surrounding the creation and sharing of music. 
   backgroundImageTop:
     image: /assets/about-incubator-1_top.png
     alt: lines top
@@ -24,31 +34,60 @@ sectionTwo:
   phases:
     - header: The KickOff Conference
       date: JANUARY 2022
-      description: Unites musicians, tech professionals, and music industry
-        professionals for three days of cross-pollinating dialogue in a virtual
-        laboratory. The conference will delve into the forces shaping music
-        creation, performance, and business in today’s digital world, while
-        equipping musicians with the tools, knowledge, and resources to conceive
+      description: >
+        United musicians, tech professionals, and music industry professionals
+        for three days of cross-pollinating dialogue in a virtual laboratory.
+        The conference delved into the forces shaping music creation,
+        performance, and business in today’s digital world, while equipping
+        musicians with the tools, knowledge, and resources to conceive
         trailblazing projects that reimagine the way music is made and shared in
         Canada and around the world.
+
+
+        They were introduced to forces shaping music creation and business in today’s digital world, to inspire musicians to conceive and consider new ways to explore and share their art through digital tools. The conference was designed as a co-learning environment led by guides and mentors, facilitated through interactive exercises.
     - header: The Learning Engine
       date: FEBRUARY - MARCH 2022
       description: >+
-        Takes musicians on a two-month guided journey to develop their projects.
-        Participants will work in small teams with the help of mentors, and will
-        receive master classes and workshops to spark innovative advancements in
-        their digital literacy.
+        Took musicians on a two-month guided journey to develop their projects.
+        Participants worked in small teams with the help of mentors, and
+        received master classes and workshops to spark innovative advancements
+        in their digital literacy.
+
 
     - header: The Learning Exchange
       date: MARCH 2022
-      description: >+
-        Convenes participants once more to share their results and learnings,
-        leading to the creation of an accessible repository of
+      description: >
+        Convened participants once more to share their results and learnings,
+        which led to the creation of an accessible repository of
         collaboratively-created knowledge.
 
-  endNote: The Pathwaves Legacy closes the program with the publication and
-    distribution of learnings in several media formats to creative communities
-    across the country.
+
+        The exchanges provided a glimpse into how each creative individual explored the expansive range of digital tools and diverse approaches that had been touched upon during the learning journey—everything from spatial audio, Ableton plugins, effect pedals, immersive experiences, creation process, recorded music, to social media activation, integration and business planning, to a myriad of other investigations.
+    - header: Legacy and Sharing
+      date: May 2023
+      description: >
+        While the program has been completed, findings and learnings live on
+        with the publication and distribution of the Pathwaves Report, and the
+        sharing of the incubator’s Horizon Scan—available to communities across
+        the country.
+
+
+
+        Documents are available for download in the Results and Outcomes section.
+
+
+
+        Beginning later this year, the Pathwaves Team and Ambassadors will be presenting and facilitating workshops at conferences and events across the country. If you are interested in partnering with us, please be in touch!
+
+
+
+        Find out where we'll be in the Events section.
+  endNote: >+
+    The aim of sharing these legacy assets is to connect with communities across
+    the country in the hope that they are inspired by the outcomes, and are
+    compelled to continue the conversations. 
+
+
 sectionThree:
   header: Land Acknowledgement
   landAcknowledgement: >-

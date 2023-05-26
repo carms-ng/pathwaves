@@ -12,7 +12,7 @@ export default function PhaseSchedule({ dates, lang, page }) {
         } = dateBreakdowner(new Date(key), lang);
         const items = dates[key];
         return (
-          <div key={key}>
+          <div key={`phase-schedule${key}`}>
             <div className="date">
               <h2>{date}</h2>
               <small>{day}</small>

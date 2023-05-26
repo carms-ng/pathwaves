@@ -4,34 +4,28 @@ import PhaseButtons from './PhaseButtons';
 import PhaseSchedule from './PhaseSchedule';
 
 export default function FullSchedule({
-  page, courses, lang, labelPhases,
+  page, events, lang, labelPhases,
 }) {
-  const [phase, setPhase] = useState(1);
+  const [selectedPhase, setSelectedPhase] = useState(1);
 
-  const phaseGroups = courses.nodes.reduce((groups, node) => {
-    const obj = node.childMarkdownRemark.frontmatter;
-    if (!groups[obj.phaseNumber]) { groups[obj.phaseNumber] = []; }
-    groups[obj.phaseNumber].push(obj);
+  const eventsByPhase = events.reduce((groups, event) => {
+    const { date, phaseNumber } = event;
+    if (!groups[phaseNumber]) {
+      groups[phaseNumber] = { [date]: [event] };
+    } else {
+      groups[phaseNumber][date] = [...(groups[phaseNumber][date] || []), event];
+    }
     return groups;
   }, {});
-
-  Object.keys(phaseGroups).forEach((key) => {
-    phaseGroups[key] = phaseGroups[key].reduce((group, entry) => {
-      const date = new Date(entry.start).toLocaleDateString();
-      if (!group[date]) { group[date] = []; }
-      group[date].push(entry);
-      return group;
-    }, {});
-  });
 
   return (
     <FullScheduleStyles id="full-schedule">
       <div className="wrapper-auth">
         <h2>{page.header}</h2>
 
-        <PhaseButtons labels={labelPhases} phase={phase} setPhase={setPhase} />
+        <PhaseButtons labels={labelPhases} phase={selectedPhase} setPhase={setSelectedPhase} />
 
-        <PhaseSchedule dates={phaseGroups[phase]} lang={lang} page={page} />
+        <PhaseSchedule dates={eventsByPhase[selectedPhase]} lang={lang} page={page} />
       </div>
     </FullScheduleStyles>
   );

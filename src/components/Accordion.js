@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
 import styled from 'styled-components';
+import ReactMarkdown from 'react-markdown';
 
 export default function Accordion({ items, page: { labelTime, labelCourse, labelCalendar } }) {
   const [active, setActive] = useState(null);
@@ -10,7 +11,7 @@ export default function Accordion({ items, page: { labelTime, labelCourse, label
       {items.map(({
         title, description, start, end, presenter, linkCalendar,
       }, index) => (
-        <div className="accordion-item" key={start + end}>
+        <div className="accordion-item" key={title + end}>
           {index === 0 && <h4>{labelTime}</h4>}
           {index === 0 && <h4>{labelCourse}</h4>}
           <div>
@@ -27,7 +28,7 @@ export default function Accordion({ items, page: { labelTime, labelCourse, label
               <Icon icon="akar-icons:chevron-down" className="icon-chevron" />
             </button>
             <div className="accordion-dropdown">
-              <p style={{ paddingTop: '2rem', margin: 'unset' }}>{description}</p>
+              <ReactMarkdown>{description}</ReactMarkdown>
               <div>
                 <Icon icon="bi:person" />
                 <p>{presenter}</p>
@@ -97,13 +98,13 @@ const AccordionStyles = styled.div`
     padding-left: 2rem;
     > * {
       padding-right: 1rem;
+      margin: unset;
     }
     > div {
       display: flex;
       align-items: center;
 
       > p {
-        margin: 0;
         padding: 0;
         margin-left: 1rem;
       }
@@ -124,7 +125,7 @@ const AccordionStyles = styled.div`
       border-radius: var(--br) var(--br) 0 0;
     }
     .accordion-dropdown {
-      max-height: 500px; /* try to guess a max-height for your content */
+      max-height: 1000px; /* try to guess a max-height for your content */
     }
   }
   @media(min-width: 1024px) {

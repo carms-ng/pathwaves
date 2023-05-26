@@ -29,7 +29,7 @@ nav:
     - linkAddress: /resources
       linkText: Ressources
   buttonDiscord:
-    url: https://discord.com/
+    url: https://discord.com/invite/xzBYznTaFm
     linkText: Discorde
   labelPhases:
     labelPhaseOne: Phase 1
@@ -47,9 +47,9 @@ nav:
 footer:
   copyright: Pathwaves
   footerLinks:
-    - linkAddress: mailto:lesya@envisionmanagement.com
+    - linkAddress: mailto:info@pathwaves.com
       linkText: Nous contacter
     - linkAddress: https://www.mutualdesign.cc/
-      linkText: Par Mutual Design
-      isInterenal: true
+      linkText: Site web par Mutual Design
+      isInterenal: false
 ---
