@@ -47,7 +47,7 @@ nav:
 footer:
   copyright: Pathwaves
   footerLinks:
-    - linkAddress: mailto:jen@envisionmanagement.com
+    - linkAddress: mailto:info@pathwaves.com
       linkText: Nous contacter
     - linkAddress: https://www.mutualdesign.cc/
       linkText: Site web par Mutual Design
