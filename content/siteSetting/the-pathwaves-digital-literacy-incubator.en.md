@@ -28,6 +28,8 @@ nav:
         - linkText: Presenters
           linkAddress: /presenters
       show: both
+    - linkText: Events
+      show: both
   navItemsSecondary:
     - linkText: Schedule
       linkAddress: /schedule
