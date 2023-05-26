@@ -35,8 +35,8 @@ sectionTwo:
       img:
         image: /assets/lines-reverse.png
         alt: placeholder
-      type: s
-      description: Check here for upcoming events.
+      type: Upcoming Events
+      description: Check back here for Pathwaves Events
   cards:
     - title: "Pathwaves Final Report "
       description: Click Here to Read and Download
