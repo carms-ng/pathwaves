@@ -91,19 +91,27 @@ sectionTwo:
 sectionThree:
   header: Land Acknowledgement
   landAcknowledgement: >-
-    Pathwaves is an initiative that has been designed to connect and reach
-    peoples across Turtle Island which is home to many First Nations and Metis
-    peoples, from Mi’kmaki in the east to Haida Gwaii in the west, Dene in the
-    north to Anishinabee nations in the south, and Inuit Nunangat which
-    comprises the four Inuit territories. We express our gratitude to the
-    Indigenous peoples for their stewardship of these lands from which we
-    benefit today.
+    Pathwaves is an initiative designed to connect and reach peoples across
+    Turtle Island which is home to many First Nations and Metis peoples, from
+    Mi′kma′ki in the east to Haida Gwaii in the west, Dene in the north to
+    Anishinabee nations in the south, and Inuit Nunangat which comprises the
+    four Inuit territories. We express our gratitude to the Indigenous peoples
+    for their stewardship of these lands from which we benefit today.
 
 
-    We wish to recognize that Pathwaves is being produced out of Envision’s headquarters in Tiohtià:ke, on the ancestral territory of the Kanien’kehá:ka nation. The region, since time immemorial, has served as a gathering place marking the area a key site of diplomacy, as well as for the exchange of culture, language, goods, and technological knowledge. It is in this spirit that we convene for Pathwaves, in a space of sharing and exchange. 
+    We wish to recognize that Pathwaves has been produced out of Envision Management & Production and PHI Centre’s headquarters in Tiohtià:ke, on the ancestral territory of the Kanien’kehá:ka nation. The region, since time immemorial, has served as a gathering place marking the area a key site of diplomacy, as well as for the exchange of culture, language, goods, and technological knowledge.
 
 
-    In our endeavors together, we wish to be cognizant of the ongoing impacts of colonialism and our responsibility to actively work towards change through recognizing, honouring, reconciling and partnering with Indigenous people. We are committed to making space in this program for Indigenous participation and knowledge and to facilitate sharing back to Indigenous and settler communities.
+    OCAD University acknowledges the ancestral and traditional territories of the Mississaugas of the Credit, the Haudenosaunee, the Anishinaabe and the Huron-Wendat, who are the original owners and custodians of the land on which we stand and create.
+
+
+    For the Pathwaves project, diversity, equity and inclusion was a conscious objective of the program and was intentionally considered at every step of outreach and selection. This work involved proactively engaging Indigenous people, communities and channels in the outreach and selection processes, and intentionally engaging a set proportion of participants and mentors who identified as Indigenous.
+
+
+    At the program design level, we sought the advice and skills of an inclusion consultant and a music industry professional working with Indigenous communities to better understand, approach and engage diverse audiences including indigenous people and communities, and design for potential challenges and opportunities for indigenous program participation. This included access to technology infrastructure and hardware, as well as a participant driven curriculum that followed the interests and aspirations of the musicians, as artists and community members. These were all essential features of the Pathwaves program.
+
+
+    Our hope was that in developing and facilitating a co-created journey that all would learn from each other and that all voices would be heard and included and shared.
   backgroundImage:
     image: /assets/land-acknowledgement.png
     alt: lines floating down
