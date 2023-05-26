@@ -67,8 +67,8 @@ sectionThree:
     Contact us: info@pathwaves.com
   form:
     inputPlaceholderName: name
-    inputPlaceholderEmail: email address
-    buttonText: SUBMIT
+    inputPlaceholderEmail: email
+    buttonText: submit
   backgroundImage:
     image: /assets/home-_-third-image.png
     alt: lines flowing towards the right and down
