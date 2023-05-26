@@ -15,7 +15,7 @@ nav:
         - linkText: Team
           linkAddress: /team
         - linkText: Past Programming
-          linkAddress: /archive/gallery
+          linkAddress: /incubator/end note
         - linkText: Upcoming Events
           linkAddress: /archive/resources
         - linkText: Land Acknowledgement
