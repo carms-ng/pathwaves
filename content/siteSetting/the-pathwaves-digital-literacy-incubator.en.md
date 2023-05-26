@@ -43,7 +43,7 @@ nav:
     labelPhaseTwo: Phase 2
     labelPhaseThree: Phase 3
   menuAuth:
-    labelLogin: Contact Us
+    labelLogin: "-"
     labelLogout: info@pathwaves.com
     navItemsAuth:
       - linkText: Schedule
