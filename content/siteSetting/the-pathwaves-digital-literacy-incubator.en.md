@@ -18,6 +18,8 @@ nav:
           linkAddress: /archive/gallery
         - linkText: Upcoming Events
           linkAddress: /archive/resources
+        - linkText: Land Acknowledgement
+          linkAddress: /home/Land Acknowledgement
       show: both
     - linkText: Participants
       childNavItems:
@@ -39,7 +41,7 @@ nav:
     labelPhaseTwo: Phase 2
     labelPhaseThree: Phase 3
   menuAuth:
-    labelLogin: Log in
+    labelLogin: Contact Us
     labelLogout: Log out
     navItemsAuth:
       - linkText: Schedule
