@@ -19,7 +19,7 @@ nav:
         - linkText: Upcoming Events
           linkAddress: /archive/resources
         - linkText: Land Acknowledgement
-          linkAddress: /incubator/Land Acknowledgement
+          linkAddress: /incubator/landacknowledgement
       show: both
     - linkText: Participants
       childNavItems:
