@@ -59,13 +59,12 @@ sectionTwo:
     image: /assets/home2.png
     alt: lines
 sectionThree:
-  header: Get in touch!
-  description: >
+  header: "Contact us: info@pathwaves.com"
+  description: >+
     Pathwaves welcomes your feedback and comments, as well as inquiries for
     collaboration, presentations, workshops—and to keep the conversation going. 
 
 
-    Contact us: info@pathwaves.com
   form:
     inputPlaceholderName: name
     inputPlaceholderEmail: email
