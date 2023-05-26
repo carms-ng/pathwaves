@@ -64,6 +64,7 @@ sectionThree:
     Pathwaves welcomes your feedback and comments, as well as inquiries for
     collaboration, presentations, workshops—and to keep the conversation going. 
 
+
     Contact us: info@pathwaves.com
   form:
     inputPlaceholderName: name
