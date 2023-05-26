@@ -58,12 +58,14 @@ sectionTwo:
     image: /assets/home2.png
     alt: lines fr
 sectionThree:
-  header: Get in touch!
+  header: Contactez-nous !
   description: >-
-    Pathwaves welcomes your feedback and comments, as well as inquiries for
-    collaboration, presentations, workshops—and to keep the conversation going. 
+    Pathwaves vous invite à nous faire part de vos commentaires et de vos
+    suggestions, ainsi qu'à nous contacter pour des collaborations, des
+    présentations, des ateliers - afin de continuer la conversation. 
 
-    Contact us: info@pathwaves.com
+
+    Contactez-nous: info@pathwaves.ca 
   form:
     inputPlaceholderName: nom
     inputPlaceholderEmail: courriel
