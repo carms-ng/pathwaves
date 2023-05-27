@@ -33,7 +33,7 @@ export default function Dropdown({
         type="button"
         className={className}
         onClick={() => setOpen(!open)}
-        style={{ fontWeight: items.some((child) => slug === child.linkAddress.substring(1)) ? '700' : '400' }}
+        style={{ fontWeight: items?.some((child) => slug === child.linkAddress.substring(1)) ? '700' : '400' }}
       >
         {text}
         <Icon icon="akar-icons:chevron-down" style={{ marginLeft: '0.5rem' }} />
