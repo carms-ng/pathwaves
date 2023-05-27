@@ -81,14 +81,6 @@ export default function HomePageTemplate({ pageContext, data }) {
         <NewsletterFormStyles method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
           <h2>{sectionThree.header}</h2>
           <p>{sectionThree.description}</p>
-          <div className="">
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="name" name="name" id="name" placeholder={sectionThree.form.inputPlaceholderName} />
-            <input type="email" name="email" id="email" placeholder={sectionThree.form.inputPlaceholderEmail} />
-            <button type="submit" className="btn">{sectionThree.form.buttonText}</button>
-          </div>
-          {/* <input type="reset" value="Clear" /> */}
         </NewsletterFormStyles>
         <GatsbyImage
           image={sectionThree.backgroundImage.image.childImageSharp.gatsbyImageData}
@@ -230,11 +222,6 @@ export const query = graphql`
                 }
               }
               alt
-            }
-            form {
-              inputPlaceholderName
-              inputPlaceholderEmail
-              buttonText
             }
           }
         }

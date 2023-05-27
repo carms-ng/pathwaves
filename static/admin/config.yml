@@ -118,14 +118,6 @@ collections:
             fields:
               - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
               - {label: Image Alt Text, name: alt, widget: string, i18n: true}
-          - label: Form
-            name: form
-            widget: object
-            i18n: true
-            fields:
-              - {label: Name Input Placeholder, name: inputPlaceholderName, widget: string, i18n: true}
-              - {label: Email Input Placeholder, name: inputPlaceholderEmail, widget: string, i18n: true}
-              - {label: Submit Button Label, name: buttonText, widget: string, i18n: true}
 
   - name: incubator
     label: Incubator Page
