@@ -55,7 +55,9 @@ sectionThree:
   header: Événements Pathwaves (à venir)
 sectionFour:
   header: + + + +
-  images: []
+  images:
+    - image: /assets/itme-claire-evans.jpg
+      alt: Placeholder
   backgroundImage:
     image: /assets/gallery.png
     alt: lines
