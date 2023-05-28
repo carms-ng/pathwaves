@@ -4,10 +4,11 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 
+import Gallery from '../components/Gallery';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
-import { CardsThreesStyles, BgImageRightWrapper } from '../styles/InnerStyles';
+import { CardsThreesStyles, BgImageRightWrapper, BgImageWrapper } from '../styles/InnerStyles';
 
 export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
@@ -15,6 +16,8 @@ export default function HomePageTemplate({ pageContext, data }) {
     title,
     sectionOne,
     sectionTwo,
+    sectionThree,
+    sectionFour,
   } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
@@ -66,6 +69,38 @@ export default function HomePageTemplate({ pageContext, data }) {
         </CardsThreesStyles>
       </SectionSecondaryStyles>
 
+      <SectionSecondaryStyles>
+        <h2>{sectionThree.header}</h2>
+        {/* cards */}
+        <CardsThreesStyles>
+          {sectionThree?.cards?.map((card) => (
+            <a key={`resources-${card.title}`} href={card.url} target="_blank" rel="noreferrer">
+              <GatsbyImage
+                image={card.img.image.childImageSharp.gatsbyImageData}
+                alt={card.img.alt}
+                style={{ borderRadius: 'var(--br)' }}
+              />
+              <h3>{card.title}</h3>
+              <pre>{card.subtitle}</pre>
+              <p>{card.description}</p>
+            </a>
+          ))}
+        </CardsThreesStyles>
+      </SectionSecondaryStyles>
+
+      <BgImageWrapper>
+        <GatsbyImage
+          image={sectionFour?.backgroundImage.image.childImageSharp.gatsbyImageData}
+          alt={sectionFour?.backgroundImage.alt}
+          className="background"
+        />
+
+        <SectionSecondaryStyles>
+          <h2>{sectionFour.header}</h2>
+          <Gallery images={sectionFour.images} />
+
+        </SectionSecondaryStyles>
+      </BgImageWrapper>
     </Layout>
   );
 }
@@ -233,6 +268,60 @@ export const query = graphql`
               description
               title
               url
+            }
+          }
+          sectionThree {
+            header
+            cards {
+              title
+              subtitle
+              description
+              url
+              img {
+                alt
+                image {
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 320,
+                      height: 240,
+                      placeholder: TRACED_SVG,
+                      layout: CONSTRAINED,
+                      transformOptions: {fit: COVER},
+                      quality: 100
+                    )
+                  }
+                }
+              }
+            }
+          }
+          sectionFour {
+            header
+            backgroundImage {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: TRACED_SVG,
+                    layout: FULL_WIDTH,
+                    quality: 100
+                  )
+                }
+              }
+              alt
+            }
+            images {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 1000,
+                    height: 600,
+                    placeholder: TRACED_SVG,
+                    layout: CONSTRAINED,
+                    transformOptions: {fit: COVER},
+                    quality: 100
+                  )
+                }
+              }
+              alt
             }
           }
         }
