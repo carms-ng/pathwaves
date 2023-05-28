@@ -14,10 +14,6 @@ nav:
           linkAddress: /incubator
         - linkText: Team
           linkAddress: /team
-        - linkText: Past Programming
-          linkAddress: program/endnote
-        - linkText: Upcoming Events
-          linkAddress: /archive/resources
       show: both
     - linkText: Participants
       childNavItems:
@@ -25,8 +21,6 @@ nav:
           linkAddress: /musicians
         - linkText: Presenters
           linkAddress: /presenters
-      show: both
-    - linkText: Events
       show: both
   navItemsSecondary:
     - linkText: Schedule
