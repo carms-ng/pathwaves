@@ -6,7 +6,7 @@ sectionOne:
     image: /assets/pathwaves-report.a-13-dragged-.jpg
     alt: placeholder
   imgSecondary:
-    image: /assets/accessible_pathwaves_horizon_scan_jan_18_2022-dragged-.jpg
+    image: /assets/pathwaves_digital-literacy-incubator-horizon-scan-cover-page.png
     alt: placeholder
   description: >-
     Bien que le programme soit terminé, les résultats et les apprentissages
