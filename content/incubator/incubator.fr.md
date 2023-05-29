@@ -77,28 +77,15 @@ sectionTwo:
 sectionThree:
   header: Reconnaissance des terres
   landAcknowledgement: >-
-    Pathwaves est une initiative conçue pour relier et atteindre les peuples de
-    l’île de la Tortue, où vivent de nombreuses Premières nations et de
-    nombreux Métis, des Mi′kma′ki à l’est à Haida Gwaii à l’ouest, des
-    Dénés au nord aux nations Anishinaabe au sud, et des Inuits du Nunangat,
-    qui comprend les quatre territoires inuits. Nous exprimons notre gratitude
-    aux peuples autochtones pour leur gestion de ces terres dont nous
-    bénéficions aujourd’hui.
-
-
-    Nous tenons à souligner que Pathwaves a été produit par Envision Management & Production et par le Centre PHI à Tiohtià:ke, sur le territoire ancestral de la nation Kanien’kehá:ka. La région, depuis des temps immémoriaux, a servi de lieu de rassemblement marquant la zone comme un site clé de la diplomatie, ainsi que pour l’échange de culture, de langue, de biens et de connaissances technologiques.
+    Nous tenons à souligner que Pathwaves a été produit par Envision
+    Management & Production et par le Centre PHI à Tiohtià:ke, sur le
+    territoire ancestral de la nation Kanien’kehá:ka. La région, depuis des
+    temps immémoriaux, a servi de lieu de rassemblement marquant la zone comme
+    un site clé de la diplomatie, ainsi que pour l’échange de culture, de
+    langue, de biens et de connaissances technologiques.
 
 
     L’Université de l’OCAD reconnaît les territoires ancestraux et traditionnels des Mississaugas de Credit, des Haudenosaunee, des Anishinaabe et des Hurons-Wendat, qui sont les premiers propriétaires et gardiens de la terre sur laquelle nous nous tenons et créons.
-
-
-    Pour le projet Pathwaves, la diversité, l’équité et l’inclusion étaient un objectif conscient du programme et ont été intentionnellement prises en compte à chaque étape de la sensibilisation et de la sélection. Ce travail a impliqué l’engagement proactif de personnes, de communautés indigènes dans les processus de sensibilisation et de sélection, et l’engagement intentionnel d’une proportion déterminée de participants et de mentors qui s’identifient comme indigènes.
-
-
-    Au niveau de la conception du programme, nous avons sollicité les conseils et les compétences d’un consultant en inclusion et d’un professionnel de l’industrie musicale travaillant avec des communautés indigènes pour mieux comprendre, approcher et engager divers publics, y compris les personnes et les communautés indigènes, et concevoir des défis et des opportunités potentielles pour la participation au programme des indigènes. Cela comprenait l’accès à l’infrastructure technologique et au matériel, ainsi qu’un programme d’études axé sur les participants, qui suivait les intérêts et les aspirations des musiciens, en tant qu’artistes et membres de la communauté.
-
-
-    Ce sont là des caractéristiques essentielles du programme Pathwaves. Nous espérions qu’en développant et en facilitant un voyage co-créé, tous apprendraient les uns des autres et que toutes les voix seraient entendues, incluses et partagées.
   backgroundImage:
     image: /assets/land-acknowledgement.png
     alt: Des lignes qui coulent
