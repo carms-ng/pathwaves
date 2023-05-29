@@ -44,7 +44,7 @@ sectionTwo:
       pdf: /assets/untitled-document.pdf
     - description: Click Here to Read and Download
       title: Pathwaves Horizon Scan
-      url: https://drive.google.com/file/d/1a7_7ivc7QOucna2gKmtaV4f5yMdsj0Ak/view?usp=sharing
+      url: https://drive.google.com/file/d/11tsLHHwMD3OsrBOKhSIvpO3TKljFGjDO/view?usp=sharing
   header: Downloads
   backgroundImage:
     image: /assets/meetmusicians_0.5black.png
