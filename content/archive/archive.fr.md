@@ -7,7 +7,7 @@ sectionOne:
     alt: placeholder
   imgSecondary:
     image: /assets/pathwaves_digital-literacy-incubator-horizon-scan-cover-page.png
-    alt: placeholder
+    alt: FR
   description: >-
     Bien que le programme soit terminé, les résultats et les apprentissages
     perdurent grâce à la publication et à la distribution du rapport Pathwaves,
