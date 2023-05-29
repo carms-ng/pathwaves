@@ -44,20 +44,11 @@ sectionTwo:
     image: /assets/meetmusicians_0.5black.png
     alt: lines
 sectionThree:
-  cards:
-    - title: Event 2
-      subtitle: Lorem
-      description: Lorem Ipsum
-      url: https://www.google.com/
-      img:
-        image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
-        alt: placeholder
-  header: Événements Pathwaves (à venir)
+  cards: []
+  header: Past Programming
 sectionFour:
-  header: + + + +
-  images:
-    - image: /assets/itme-claire-evans.jpg
-      alt: Placeholder
+  header: Événements Pathwaves (à venir)
+  images: []
   backgroundImage:
     image: /assets/gallery.png
     alt: lines
