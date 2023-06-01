@@ -44,7 +44,7 @@ sectionTwo:
     image: /assets/meetmusicians_0.5black.png
     alt: lines
 sectionThree:
-  header: Pathwaves Events (Coming Soon)
+  header: Programmation passée
   cards:
     - title: Event 1
       subtitle: Lorem
@@ -54,9 +54,9 @@ sectionThree:
         image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
         alt: placeholder
 sectionFour:
-  header: + + + +
+  header: Événements Pathwaves (à venir !)
   images:
-    - image: /assets/itme-claire-evans.jpg
+    - image: /assets/lines-reverse.png
       alt: placeholder
   backgroundImage:
     image: /assets/gallery.png
