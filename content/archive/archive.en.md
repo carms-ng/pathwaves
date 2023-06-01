@@ -61,7 +61,7 @@ sectionThree:
         alt: placeholder
     - title: Masterclasses February—March 2022
       subtitle: "*"
-      description: Click Here
+      description: "*"
       img:
         image: /assets/about-incubator-2.png
         alt: placeholder
