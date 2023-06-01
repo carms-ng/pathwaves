@@ -53,7 +53,7 @@ sectionThree:
   header: Past Programming
   cards:
     - title: Conference Presentations January 2022
-      subtitle: .
+      subtitle: "*"
       description: "Click Here "
       url: https://drive.google.com/file/d/1JQZiss1Ojwn_Gy5gO6nqXBjLetfMu65V/view?usp=sharing
       img:
