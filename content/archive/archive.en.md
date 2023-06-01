@@ -52,9 +52,9 @@ sectionTwo:
 sectionThree:
   header: Past Programming
   cards:
-    - title: Conference Presentations
+    - title: Conference Presentations January 2022
       subtitle: "*          "
-      description: " January 2022"
+      description: "*"
       url: https://drive.google.com/file/d/1JQZiss1Ojwn_Gy5gO6nqXBjLetfMu65V/view?usp=sharing
       img:
         image: /assets/findingstop_1.0black.png
