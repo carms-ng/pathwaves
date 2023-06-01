@@ -52,20 +52,20 @@ sectionTwo:
 sectionThree:
   header: Past Programming
   cards:
-    - title: "Conference Topics "
-      subtitle: Pathwaves Digital Literacy Incubator
-      description: Click Here
-      url: https://drive.google.com/drive/folders/1JfAQZF7xHHVV0NkNA8mbDMsBP6M7o4sl
+    - title: "Conference Presentations "
+      subtitle: Pathwaves Digital Literacy Incubator January 2022
+      description: "Click Here "
+      url: https://drive.google.com/file/d/1JQZiss1Ojwn_Gy5gO6nqXBjLetfMu65V/view?usp=sharing
       img:
-        image: /assets/waves-r.png
+        image: /assets/findingstop_1.0black.png
         alt: placeholder
-    - title: Event 2
-      subtitle: ...
-      description: asdf
+    - title: "Masterclasses "
+      subtitle: Pathwaves Digital Literacy Incubator February—March 2022
+      description: Click Here
       img:
-        image: /assets/0fcb9a47-57c5-4176-8b5d-fd3bf4b16fbe-ziyan-hossain.jpg
-        alt: asdf
-      url: https://www.pathwaves.ca/en/archive
+        image: /assets/about-incubator-2.png
+        alt: placeholder
+      url: https://drive.google.com/file/d/1B5GXUSsUYoGungxV7hxVxoEEJXNYMFCn/view?usp=sharing
 sectionFour:
   header: Pathwaves Events (Coming Soon!)
   images:
