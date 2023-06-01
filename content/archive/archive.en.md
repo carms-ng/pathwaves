@@ -50,7 +50,7 @@ sectionTwo:
     image: /assets/meetmusicians_0.5black.png
     alt: lines
 sectionThree:
-  header: Pathwaves Events (Coming Soon)
+  header: Past Programming
   cards:
     - title: Event 1
       subtitle: Lorem
@@ -67,9 +67,9 @@ sectionThree:
         alt: asdf
       url: https://www.pathwaves.ca/en/archive
 sectionFour:
-  header: + + + +
+  header: Pathwaves Events (Coming Soon!)
   images:
-    - image: /assets/itme-claire-evans.jpg
+    - image: /assets/lines.png
       alt: placeholder
   backgroundImage:
     image: /assets/gallery.png
