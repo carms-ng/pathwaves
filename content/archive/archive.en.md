@@ -59,6 +59,13 @@ sectionThree:
       img:
         image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
         alt: placeholder
+    - title: Event 2
+      subtitle: ...
+      description: asdf
+      img:
+        image: /assets/0fcb9a47-57c5-4176-8b5d-fd3bf4b16fbe-ziyan-hossain.jpg
+        alt: asdf
+      url: https://www.pathwaves.ca/en/archive
 sectionFour:
   header: + + + +
   images:
