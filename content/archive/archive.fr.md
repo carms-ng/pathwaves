@@ -46,17 +46,17 @@ sectionTwo:
 sectionThree:
   header: Programmation passée
   cards:
-    - title: présentations
+    - title: Présentations
       subtitle: Janvier 2022
-      description: Clickez-vous ici!
+      description: Cliquez ici
       url: https://drive.google.com/file/d/1tKpa-PpOf_hkx4yJ2wvap_YMZYNmON1F/view?usp=sharing
       img:
         image: /assets/meetpresenters_1.0black.png
         alt: placeholder
     - url: https://drive.google.com/file/d/1OrRMb_jg3vtXw8x7BLb0NwPcFCESJvE7/view?usp=sharing
       title: Classes de maître
-      subtitle: Fev-Mars 2022
-      description: Clickez-vous ici
+      subtitle: Fevrier—Mars 2022
+      description: Cliquez ici
       img:
         image: /assets/about-incubator.png
         alt: placeholder
