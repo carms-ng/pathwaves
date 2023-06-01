@@ -54,54 +54,10 @@ sectionThree:
   cards:
     - title: "Conference Topics "
       subtitle: Pathwaves Digital Literacy Incubator
-      description: >
-        Conference Topics:
-
-
-        The Digital Landscape: Virtualizing Performances    
-
-        Blanche Israël
-           	 
-        Live Stagecrafting: Video, Lighting, Object and Scenography
-
-        Nicolas Bernier
-           	 
-        A Digital Industry: Navigating Business and Mental Models
-
-        Cherie Hu
-
-
-        Multiverse Stagecrafting: VR AR XR as Live, Immersive Performance Modes  
-
-        Michaela Ternasky-Holland
-
-
-        Post Stereo New Sonics: Spatial, Ambiophonics, Immersive Audio     
-
-        Chloe Alexandra Thompson
-
-
-        Blocks, Chains and Utopias? Web3, DAOs NFTs 	 
-
-        Mike Renaud
-
-
-        Sing the Body AI: Songcraft and Algorithm Everything	 
-
-        Claire L. Evans
-
-
-        Bytes, Rights and Publishing
-
-        Jeff Waye
-
-
-        Digital Musicpreneur: Data to Dollars
-
-        Charlie Wall-Andrews
-      url: https://www.google.com/
+      description: Click Here
+      url: https://drive.google.com/drive/folders/1JfAQZF7xHHVV0NkNA8mbDMsBP6M7o4sl
       img:
-        image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
+        image: /assets/waves-r.png
         alt: placeholder
     - title: Event 2
       subtitle: ...
