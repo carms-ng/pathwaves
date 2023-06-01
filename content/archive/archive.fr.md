@@ -66,6 +66,6 @@ sectionFour:
     - image: /assets/lines-reverse.png
       alt: placeholder
   backgroundImage:
-    image: /assets/gallery.png
+    image: /assets/blank.jpg
     alt: lines
 ---

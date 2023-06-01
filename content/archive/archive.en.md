@@ -69,9 +69,9 @@ sectionThree:
 sectionFour:
   header: Pathwaves Events (Coming Soon!)
   images:
-    - image: /assets/blank.jpg
+    - image: /assets/gallery.png
       alt: placeholder
   backgroundImage:
-    image: /assets/gallery.png
+    image: /assets/blank.jpg
     alt: lines
 ---
