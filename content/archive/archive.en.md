@@ -60,7 +60,7 @@ sectionThree:
         image: /assets/findingstop_1.0black.png
         alt: placeholder
     - title: Masterclasses February—March 2022
-      subtitle: .
+      subtitle: "*"
       description: Click Here
       img:
         image: /assets/about-incubator-2.png
