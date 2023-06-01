@@ -72,6 +72,6 @@ sectionFour:
     - image: /assets/gallery.png
       alt: placeholder
   backgroundImage:
-    image: /assets/blank.jpg
-    alt: lines
+    image: /assets/blank-2-.png
+    alt: placeholder
 ---
