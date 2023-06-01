@@ -59,8 +59,8 @@ sectionThree:
       img:
         image: /assets/findingstop_1.0black.png
         alt: placeholder
-    - title: "Masterclasses "
-      subtitle: Pathwaves Digital Literacy Incubator February—March 2022
+    - title: Masterclasses February—March 2022
+      subtitle: .
       description: Click Here
       img:
         image: /assets/about-incubator-2.png
