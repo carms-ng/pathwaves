@@ -46,12 +46,19 @@ sectionTwo:
 sectionThree:
   header: Programmation passée
   cards:
-    - title: Event 1
-      subtitle: Lorem
-      description: Lorem Ipsum
-      url: https://www.google.com/
+    - title: présentations
+      subtitle: Janvier 2022
+      description: Clickez-vous ici!
+      url: https://drive.google.com/file/d/1tKpa-PpOf_hkx4yJ2wvap_YMZYNmON1F/view?usp=sharing
       img:
-        image: /assets/jake-nackos-if9tk5uy-ki-unsplash.jpg
+        image: /assets/meetpresenters_1.0black.png
+        alt: placeholder
+    - url: https://drive.google.com/file/d/1OrRMb_jg3vtXw8x7BLb0NwPcFCESJvE7/view?usp=sharing
+      title: Classes de maître
+      subtitle: Fev-Mars 2022
+      description: Clickez-vous ici
+      img:
+        image: /assets/about-incubator.png
         alt: placeholder
 sectionFour:
   header: Événements Pathwaves (à venir !)
