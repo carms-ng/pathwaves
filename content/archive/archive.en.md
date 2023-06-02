@@ -54,14 +54,14 @@ sectionThree:
   cards:
     - title: Conference Presentations January 2022
       subtitle: _
-      description: _
+      description: click the image
       url: https://drive.google.com/file/d/1JQZiss1Ojwn_Gy5gO6nqXBjLetfMu65V/view?usp=sharing
       img:
         image: /assets/squiggle.png
         alt: placeholder
     - title: Masterclasses February—March 2022
-      subtitle: "*"
-      description: "*"
+      subtitle: "-"
+      description: click the image
       img:
         image: /assets/squiggle.png
         alt: placeholder
