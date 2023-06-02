@@ -57,13 +57,13 @@ sectionThree:
       description: "*"
       url: https://drive.google.com/file/d/1JQZiss1Ojwn_Gy5gO6nqXBjLetfMu65V/view?usp=sharing
       img:
-        image: /assets/findingstop_1.0black.png
+        image: /assets/squiggle.png
         alt: placeholder
     - title: Masterclasses February—March 2022
       subtitle: "*"
       description: "*"
       img:
-        image: /assets/about-incubator-2.png
+        image: /assets/squiggle.png
         alt: placeholder
       url: https://drive.google.com/file/d/1B5GXUSsUYoGungxV7hxVxoEEJXNYMFCn/view?usp=sharing
 sectionFour:
