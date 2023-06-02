@@ -53,8 +53,8 @@ sectionThree:
   header: Past Programming
   cards:
     - title: Conference Presentations January 2022
-      subtitle: "*          "
-      description: "*"
+      subtitle: "Click on image          "
+      description: Click on image
       url: https://drive.google.com/file/d/1JQZiss1Ojwn_Gy5gO6nqXBjLetfMu65V/view?usp=sharing
       img:
         image: /assets/squiggle.png
