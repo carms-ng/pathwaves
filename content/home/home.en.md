@@ -59,7 +59,7 @@ sectionTwo:
     image: /assets/home2.png
     alt: lines
 sectionThree:
-  header: "Contact us: info@pathwaves.com"
+  header: "Contact us: info@pathwaves.ca"
   description: >+
     Pathwaves welcomes your feedback and comments, as well as inquiries for
     collaboration, presentations, workshops—and to keep the conversation going. 
