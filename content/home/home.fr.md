@@ -17,6 +17,18 @@ sectionOne:
       isVisible: true
 sectionTwo:
   carouselItems:
+    - name: Della Orrey
+      nameAlt: ""
+      type: Participant
+      description: "\"Je pense que l'intersection de la musique et de la technologie
+        est essentielle dans la démocratisation de la possibilité d'accéder et
+        de créer dans l'esprit de l'exploration DIY.\""
+      button:
+        linkText: Rencontrez les participants
+        url: /musicians
+      img:
+        image: /assets/open-studio-sep22-53-della-orrey.jpg
+        alt: Photo de Della Orrey
     - button:
         linkText: Rencontrez les participants
         url: /musicians
@@ -41,18 +53,6 @@ sectionTwo:
       button:
         linkText: Rencontrez les participants
         url: /musicians
-    - name: Della Orrey
-      nameAlt: ""
-      type: Participant
-      description: "\"Je pense que l'intersection de la musique et de la technologie
-        est essentielle dans la démocratisation de la possibilité d'accéder et
-        de créer dans l'esprit de l'exploration DIY.\""
-      button:
-        linkText: Rencontrez les participants
-        url: /musicians
-      img:
-        image: /assets/open-studio-sep22-53-della-orrey.jpg
-        alt: Photo de Della Orrey
   buttonLabel: Prochain
   backgroundImage:
     image: /assets/home2.png

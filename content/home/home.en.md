@@ -17,6 +17,18 @@ sectionOne:
       isVisible: true
 sectionTwo:
   carouselItems:
+    - name: Della Orrey
+      nameAlt: "    "
+      type: Participant Spotlight
+      description: '"I think that the intersection of music and technology is
+        essential in the democratization of being able to access and create in
+        the spirit of DIY exploration."'
+      button:
+        linkText: Meet the participants
+        url: /musicians
+      img:
+        image: /assets/open-studio-sep22-53-della-orrey.jpg
+        alt: Picture of Della Orrey
     - description: '"Artists have access to so much technological power compared to
         the first phonograph, opening up vast possibilities in both how we
         create and how we share music."'
@@ -42,18 +54,6 @@ sectionTwo:
       img:
         image: /assets/img_7671-liam-choi.jpg
         alt: Picture of choi
-    - name: Della Orrey
-      nameAlt: "    "
-      type: Participant Spotlight
-      description: '"I think that the intersection of music and technology is
-        essential in the democratization of being able to access and create in
-        the spirit of DIY exploration."'
-      button:
-        linkText: Meet the participants
-        url: /musicians
-      img:
-        image: /assets/open-studio-sep22-53-della-orrey.jpg
-        alt: Picture of Della Orrey
   buttonLabel: Next
   backgroundImage:
     image: /assets/home2.png
