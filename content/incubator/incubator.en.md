@@ -88,15 +88,18 @@ sectionTwo:
 sectionThree:
   header: Land Acknowledgement
   landAcknowledgement: >-
-    We wish to recognize that Pathwaves has been produced out of Envision
-    Management & Production and PHI Centre’s headquarters in Tiohtià:ke, on the
-    ancestral territory of the Kanien’kehá:ka nation. The region, since time
-    immemorial, has served as a gathering place marking the area a key site of
-    diplomacy, as well as for the exchange of culture, language, goods, and
-    technological knowledge.
+    Pathwaves is an initiative designed to connect and reach peoples across
+    Turtle Island which is home to many First Nations and Metis peoples, from
+    Mi′kma′ki in the east to Haida Gwaii in the west, Dene in the north to
+    Anishinabee nations in the south, and Inuit Nunangat which comprises the
+    four Inuit territories. We express our gratitude to the Indigenous peoples
+    for their stewardship of these lands from which we benefit today.
 
 
-    OCAD University acknowledges the ancestral and traditional territories of the Mississaugas of the Credit, the Haudenosaunee, the Anishinaabe and the Huron-Wendat, who are the original owners and custodians of the land on which we stand and create.
+    We wish to recognize that Pathwaves has been produced out of Envision Management & Production and PHI Centre’s headquarters in Tiohtià:ke, on the ancestral territory of the Kanien’kehá:ka nation. The region, sincetime immemorial, has served as a gathering place marking the area a key site of diplomacy, as well as for the exchange of culture, language, goods, and technological knowledge.
+
+
+    OCAD University acknowledges the ancestral and traditional territories of the Mississaugas of the Credit, the Haudenosaunee, the Anishinaabe and the Huron-Wendat, who are the original owners and custodians of theland on which we stand and create.
   backgroundImage:
     image: /assets/land-acknowledgement.png
     alt: lines floating down

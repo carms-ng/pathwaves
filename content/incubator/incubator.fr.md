@@ -77,15 +77,19 @@ sectionTwo:
 sectionThree:
   header: Reconnaissance des terres
   landAcknowledgement: >-
-    Nous tenons à souligner que Pathwaves a été produit par Envision
-    Management & Production et par le Centre PHI à Tiohtià:ke, sur le
-    territoire ancestral de la nation Kanien’kehá:ka. La région, depuis des
-    temps immémoriaux, a servi de lieu de rassemblement marquant la zone comme
-    un site clé de la diplomatie, ainsi que pour l’échange de culture, de
-    langue, de biens et de connaissances technologiques.
+    Pathwaves est une initiative conçue pour relier et atteindre les peuples de
+    l’île de la Tortue, où vivent de nombreuses Premières nations et de nombreux
+    Métis, des Mi′kma′ki à l’est à Haida Gwaii à l’ouest, des Dénés au nord aux
+    nations Anishinaabe au sud, et des Inuits du Nunangat, qui comprend les
+    quatre territoires inuits. Nous exprimons notre gratitude aux peuples
+    autochtones pour leur gestion de ces terres dont nous bénéficions
+    aujourd’hui.
 
 
-    L’Université de l’OCAD reconnaît les territoires ancestraux et traditionnels des Mississaugas de Credit, des Haudenosaunee, des Anishinaabe et des Hurons-Wendat, qui sont les premiers propriétaires et gardiens de la terre sur laquelle nous nous tenons et créons.
+    Nous tenons à souligner que Pathwaves a été produit par Envision Management & Production et par le Centre PHI à Tiohtià:ke, sur le territoire ancestral de la nation Kanien’kehá:ka. La région, depuis des temps immémoriaux, a servi de lieu de rassemblement marquant la zone comme un site clé de la diplomatie, ainsi que pour l’échange de culture, de langue, de biens et de connaissances technologiques.
+
+
+    L’Université de l’OCAD reconnaît les territoires ancestraux et traditionnels des Mississaugas de Credit, des Haudenosaunee, des Anishinaabe et des Hurons-Wendat, qui sont les premiers propriétaires et gardiens de la terre sur laquelle nous nous tenons et créons.
   backgroundImage:
     image: /assets/land-acknowledgement.png
     alt: Des lignes qui coulent
