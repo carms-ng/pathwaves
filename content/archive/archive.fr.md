@@ -9,7 +9,7 @@ sectionOne:
     image: /assets/pathwaves_digital-literacy-incubator-horizon-scan-cover-page.png
     alt: FR
   description: >-
-    **FAITES DÉFILER VERS LE BAS POUR LES TÉLÉCHARGEMENTS**
+    **Descendez pour les téléchargements**
 
 
     Bien que le programme soit terminé, les résultats et les apprentissages perdurent grâce à la publication et à la distribution du rapport Pathwaves, ainsi qu'au partage de l'analyse d’horizon de l'incubateur - disponible pour les communautés à travers le pays.
