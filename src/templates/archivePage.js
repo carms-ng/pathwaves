@@ -223,9 +223,9 @@ export const query = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     width: 500,
-                    placeholder: TRACED_SVG,
+                    placeholder: NONE
                     layout: CONSTRAINED,
-                    quality: 100
+                    quality: 50
                   )
                 }
               }
@@ -238,10 +238,10 @@ export const query = graphql`
                   gatsbyImageData(
                     width: 360,
                     height: 360,
-                    placeholder: TRACED_SVG,
+                    placeholder: NONE
                     layout: CONSTRAINED,
                     transformOptions: {fit: COVER},
-                    quality: 100
+                    quality: 50
                   )
                 }
               }
@@ -253,10 +253,10 @@ export const query = graphql`
                   gatsbyImageData(
                     width: 360,
                     height: 360,
-                    placeholder: TRACED_SVG,
+                    placeholder: NONE
                     layout: CONSTRAINED,
                     transformOptions: {fit: COVER},
-                    quality: 100
+                    quality: 50
                   )
                 }
               }
@@ -284,10 +284,10 @@ export const query = graphql`
                     gatsbyImageData(
                       width: 320,
                       height: 240,
-                      placeholder: TRACED_SVG,
+                      placeholder: NONE
                       layout: CONSTRAINED,
                       transformOptions: {fit: COVER},
-                      quality: 100
+                      quality: 50
                     )
                   }
                 }
@@ -300,9 +300,9 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData(
-                    placeholder: TRACED_SVG,
+                    placeholder: NONE
                     layout: FULL_WIDTH,
-                    quality: 100
+                    quality: 50
                   )
                 }
               }
@@ -314,10 +314,10 @@ export const query = graphql`
                   gatsbyImageData(
                     width: 1000,
                     height: 600,
-                    placeholder: TRACED_SVG,
+                    placeholder: NONE
                     layout: CONSTRAINED,
                     transformOptions: {fit: COVER},
-                    quality: 100
+                    quality: 50
                   )
                 }
               }

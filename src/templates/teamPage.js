@@ -190,10 +190,10 @@ export const query = graphql`
                   childImageSharp {
                     gatsbyImageData(
                       height: 80,
-                      placeholder: TRACED_SVG,
+                      placeholder: NONE
                       layout: CONSTRAINED,
                       transformOptions: {fit: CONTAIN},
-                      quality: 100
+                      quality: 50
                     )
                   }
                 }
@@ -207,9 +207,9 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData(
-                    placeholder: TRACED_SVG,
+                    placeholder: NONE
                     layout: FULL_WIDTH,
-                    quality: 100
+                    quality: 50
                   )
                 }
               }
@@ -228,10 +228,10 @@ export const query = graphql`
                     gatsbyImageData(
                       width: 400,
                       height: 240,
-                      placeholder: TRACED_SVG,
+                      placeholder: NONE
                       layout: CONSTRAINED,
                       transformOptions: {fit: COVER},
-                      quality: 100
+                      quality: 50
                     )
                   }
                 }

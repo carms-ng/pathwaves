@@ -317,9 +317,9 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData(
-                    placeholder: TRACED_SVG,
+                    placeholder: NONE
                     layout: FULL_WIDTH,
-                    quality: 100
+                    quality: 50
                   )
                 }
               }
@@ -329,9 +329,9 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData(
-                    placeholder: TRACED_SVG,
+                    placeholder: NONE
                     layout: FULL_WIDTH,
-                    quality: 100
+                    quality: 50
                   )
                 }
               }
@@ -354,9 +354,9 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData(
-                    placeholder: TRACED_SVG,
+                    placeholder: NONE
                     layout: FULL_WIDTH,
-                    quality: 100
+                    quality: 50
                   )
                 }
               }
