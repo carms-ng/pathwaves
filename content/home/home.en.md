@@ -7,7 +7,7 @@ sectionOne:
     lifelong careers in music more possible and equitable.
   backgroundImage:
     image: /assets/home-2-.png
-    alt: lines
+    alt: line
   buttons:
     - linkText: About the incubator
       url: /incubator
