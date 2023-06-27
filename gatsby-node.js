@@ -1,5 +1,5 @@
-const { graphql } = require('gatsby');
 const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (['build-html', 'develop-html'].includes(stage)) {
@@ -59,4 +59,17 @@ exports.createPages = async ({ graphql, actions }) => {
       context: { slug, lang, regx: `/.${lang}.md$/` },
     });
   });
+};
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
+
+  if (node.internal.type === 'MarkdownRemark') {
+    const value = createFilePath({ node, getNode });
+    createNodeField({
+      name: 'slug',
+      node,
+      value,
+    });
+  }
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import Layout from '../components/Layout';
 import LocalizedLink from '../components/LocalizedLink';
@@ -34,7 +34,7 @@ export default function HomePageTemplate({ pageContext, data }) {
       {/* Hero */}
       <HomeHeroStyles>
         <GatsbyImage
-          image={sectionOne.backgroundImage.image.childImageSharp.gatsbyImageData}
+          image={getImage(sectionOne.backgroundImage.image)}
           alt={sectionOne.backgroundImage.alt}
           className="background"
         />
@@ -64,7 +64,7 @@ export default function HomePageTemplate({ pageContext, data }) {
       {/* Carousel */}
       <BgImageWrapper>
         <GatsbyImage
-          image={sectionTwo.backgroundImage.image.childImageSharp.gatsbyImageData}
+          image={getImage(sectionTwo.backgroundImage.image)}
           alt={sectionTwo.backgroundImage.alt}
           className="background"
         />
@@ -83,7 +83,7 @@ export default function HomePageTemplate({ pageContext, data }) {
           <p>{sectionThree.description}</p>
         </NewsletterFormStyles>
         <GatsbyImage
-          image={sectionThree.backgroundImage.image.childImageSharp.gatsbyImageData}
+          image={getImage(sectionThree.backgroundImage.image)}
           alt={sectionThree.backgroundImage.alt}
           style={{ marginTop: '-10vw', marginBottom: '-10vw' }}
         />

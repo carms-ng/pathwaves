@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { Icon } from '@iconify/react';
 
@@ -35,7 +35,7 @@ export default function CardImage({
   return (
     <CardStyles ref={node} open={open}>
       <GatsbyImage
-        image={img.image.childImageSharp.gatsbyImageData}
+        image={getImage(img.image)}
         alt={img.alt}
       />
       <div className="card-text">

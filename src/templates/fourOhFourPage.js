@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
 import Layout from '../components/Layout';
@@ -19,7 +19,7 @@ export default function NotFoundPageTemplate({ pageContext, data }) {
       <FourOhFourStyles>
         <Seo title={title} lang={pageContext.lang} />
         <GatsbyImage
-          image={img.image.childImageSharp.gatsbyImageData}
+          image={getImage(img.image)}
           alt={img.alt}
         />
         <h1>{header}</h1>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
 export default function Gallery({ images }) {
@@ -12,7 +12,7 @@ export default function Gallery({ images }) {
         {images.map(({ image, alt }, index) => (
           <GalleryImageStyles isActive={index === active} key={`img-gallery-${alt}`}>
             <GatsbyImage
-              image={image.childImageSharp.gatsbyImageData}
+              image={getImage(image)}
               alt={alt}
             />
           </GalleryImageStyles>
@@ -27,7 +27,7 @@ export default function Gallery({ images }) {
             onClick={() => setActive(index)}
           >
             <GatsbyImage
-              image={image.childImageSharp.gatsbyImageData}
+              image={getImage(image)}
               alt={alt}
             />
           </button>

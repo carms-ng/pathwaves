@@ -8,24 +8,19 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-sharp',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        defaults: {
-          formats: ['auto', 'webp'],
-          placeholder: 'dominantColor',
-          quality: 50,
-          breakpoints: [750, 1080, 1366, 1920],
-          backgroundColor: 'transparent',
-          tracedSVGOptions: {},
-          blurredOptions: {},
-          jpgOptions: {},
-          pngOptions: {},
-          webpOptions: {},
-          avifOptions: {},
-        },
+        path: `${__dirname}/static/assets`,
+        name: 'assets',
       },
     },
-    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content`,
+        name: 'content',
+      },
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -41,6 +36,33 @@ module.exports = {
         ],
       },
     },
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          formats: ['auto', 'webp'],
+          placeholder: 'none',
+          quality: 50,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: 'transparent',
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/assets/images/icon.png',
+      },
+    },
+    'gatsby-plugin-image',
+
     {
       resolve: 'gatsby-plugin-auth0',
       options: {
@@ -50,27 +72,7 @@ module.exports = {
     },
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/static/assets`,
-        name: 'assets',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/content`,
-        name: 'content',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        icon: 'src/assets/images/icon.png',
-      },
-    },
+
   ],
 };

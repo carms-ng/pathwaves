@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 
@@ -28,7 +28,7 @@ export default function HomePageTemplate({ pageContext, data }) {
       {/* hero */}
       <BgImageRightWrapper>
         <GatsbyImage
-          image={sectionOne.backgroundImage.image.childImageSharp.gatsbyImageData}
+          image={getImage(sectionOne.backgroundImage.image)}
           alt={sectionOne.backgroundImage.alt}
           imgStyle={{ objectFit: 'contain', width: 'unset', left: 'unset' }}
           className="bg-image__right"
@@ -40,11 +40,11 @@ export default function HomePageTemplate({ pageContext, data }) {
             <ReactMarkdown>{sectionOne.description}</ReactMarkdown>
           </div>
           <GatsbyImage
-            image={sectionOne.imgPrimary.image.childImageSharp.gatsbyImageData}
+            image={getImage(sectionOne.imgPrimary.image)}
             alt={sectionOne.imgPrimary.alt}
           />
           <GatsbyImage
-            image={sectionOne.imgSecondary.image.childImageSharp.gatsbyImageData}
+            image={getImage(sectionOne.imgSecondary.image)}
             alt={sectionOne.imgPrimary.alt}
           />
         </HeroStyles>
@@ -76,7 +76,7 @@ export default function HomePageTemplate({ pageContext, data }) {
           {sectionThree?.cards?.map((card) => (
             <a key={`resources-${card.title}`} href={card.url} target="_blank" rel="noreferrer">
               <GatsbyImage
-                image={card.img.image.childImageSharp.gatsbyImageData}
+                image={getImage(card.img.image)}
                 alt={card.img.alt}
                 style={{ borderRadius: 'var(--br)' }}
               />
@@ -90,7 +90,7 @@ export default function HomePageTemplate({ pageContext, data }) {
 
       <BgImageWrapper>
         <GatsbyImage
-          image={sectionFour?.backgroundImage.image.childImageSharp.gatsbyImageData}
+          image={getImage(sectionFour?.backgroundImage.image)}
           alt={sectionFour?.backgroundImage.alt}
           className="background"
         />

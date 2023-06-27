@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
 import Layout from '../components/Layout';
@@ -22,7 +22,7 @@ export default function TeamPageTemplate({ pageContext, data }) {
       <Seo title={`${title}`} lang={pageContext.lang} />
       <TeamHeroStyles>
         <GatsbyImage
-          image={sectionOne.backgroundImage.image.childImageSharp.gatsbyImageData}
+          image={getImage(sectionOne.backgroundImage.image)}
           alt={sectionOne.backgroundImage.alt}
           className="background"
         />
@@ -41,7 +41,7 @@ export default function TeamPageTemplate({ pageContext, data }) {
               <div key={name} className="card">
                 <a href={url} target="_blank" rel="noreferrer">
                   <GatsbyImage
-                    image={logo.image.childImageSharp.gatsbyImageData}
+                    image={getImage(logo.image)}
                     alt={logo.alt}
                     style={{ maxWidth: '300px' }}
                   />

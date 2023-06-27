@@ -1,5 +1,5 @@
 import React from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
 export default function Hero({ header, backgroundImage }) {
@@ -7,7 +7,7 @@ export default function Hero({ header, backgroundImage }) {
     <HeroStyles>
       <h1>{header}</h1>
       <GatsbyImage
-        image={backgroundImage.image.childImageSharp.gatsbyImageData}
+        image={getImage(backgroundImage.image)}
         alt={backgroundImage.alt}
       />
     </HeroStyles>

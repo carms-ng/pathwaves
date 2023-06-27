@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-import { GatsbyImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
@@ -47,7 +47,7 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
         <h1 className="h2">{sectionOne.header}</h1>
         <div className="grid-ladder-wrapper">
           <GatsbyImage
-            image={sectionOne.backgroundImageTop.image.childImageSharp.gatsbyImageData}
+            image={getImage(sectionOne.backgroundImageTop.image)}
             alt={sectionOne.backgroundImageTop.alt}
             className="background"
           />
@@ -57,7 +57,7 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
             ))}
           </div>
           <GatsbyImage
-            image={sectionOne.backgroundImageBottom.image.childImageSharp.gatsbyImageData}
+            image={getImage(sectionOne.backgroundImageBottom.image)}
             alt={sectionOne.backgroundImageBottom.alt}
             className="background"
           />
@@ -80,7 +80,7 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
         <p className="font-lg">{sectionTwo.endNote}</p>
       </SectionSecondaryStyles>
       <GatsbyImage
-        image={sectionThree.backgroundImage.image.childImageSharp.gatsbyImageData}
+        image={getImage(sectionThree.backgroundImage.image)}
         alt={sectionThree.backgroundImage.alt}
         style={{ marginTop: '-12vw', marginBottom: '-12vw' }}
       />

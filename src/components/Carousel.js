@@ -1,5 +1,5 @@
-import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import LocalizedLink from './LocalizedLink';
 
@@ -13,7 +13,7 @@ export function CarouselItem({
   return (
     <CarouselItemStyles active={index === activeItem}>
       <GatsbyImage
-        image={img.image.childImageSharp.gatsbyImageData}
+        image={getImage(img.image)}
         alt={img.alt}
         className="carousel-img"
       />

@@ -1,5 +1,5 @@
-import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
 export default function LogoGarden({ logos }) {
@@ -8,7 +8,7 @@ export default function LogoGarden({ logos }) {
       {logos.map(({ name, url, logo }) => (
         <a key={name} href={url} target="_blank" rel="noreferrer">
           <GatsbyImage
-            image={logo.image.childImageSharp.gatsbyImageData}
+            image={getImage(logo.image)}
             alt={logo.alt}
             imgStyle={{ objectFit: 'contain' }}
             style={{ height: '100%', maxWidth: '300px' }}

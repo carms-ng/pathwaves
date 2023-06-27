@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import styled from 'styled-components';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Icon } from '@iconify/react';
 
 import LocalizedLink from './LocalizedLink';
@@ -39,7 +39,7 @@ export default function Header({
         className="logo"
       >
         <GatsbyImage
-          image={logo?.image.childImageSharp.gatsbyImageData}
+          image={getImage(logo?.image)}
           alt={logo?.alt}
           imgStyle={{ objectFit: 'contain' }}
         />
