@@ -25,6 +25,8 @@ const GlobalStyles = createGlobalStyle`
     --linearGradient: linear-gradient(127deg, var(--blue), rgb(224, 233, 245, 0) 50%),
                       linear-gradient(336deg, rgb(239, 244, 250, 0), var(--xlightblue) 50%),
                       linear-gradient(217deg, rgb(161, 189, 226, 0), var(--lightblue) 50%);
+    --radialGradient: radial-gradient(#f7c997, #f7c7a3, #f7bfc3, #e1c4eb);
+
     box-sizing: border-box;
     font-size: 62.5%;
     --padSm: 5rem 2rem;
@@ -47,6 +49,9 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     color: var(--black);
     background: var(--lightblue);
+  }
+  body {
+    background: var(--radialGradient);
   }
   h1, h2, h3, h4, h5, h6, pre {
     line-height: 1.2;
