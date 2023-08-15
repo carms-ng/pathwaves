@@ -4,11 +4,10 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 
-import Gallery from '../components/Gallery';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
-import { CardsThreesStyles, BgImageRightWrapper, BgImageWrapper } from '../styles/InnerStyles';
+import { CardsThreesStyles, BgImageRightWrapper } from '../styles/InnerStyles';
 
 export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
@@ -16,8 +15,6 @@ export default function HomePageTemplate({ pageContext, data }) {
     title,
     sectionOne,
     sectionTwo,
-    sectionThree,
-    sectionFour,
   } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
@@ -39,14 +36,25 @@ export default function HomePageTemplate({ pageContext, data }) {
             <h1>{sectionOne.header}</h1>
             <ReactMarkdown>{sectionOne.description}</ReactMarkdown>
           </div>
-          <GatsbyImage
-            image={getImage(sectionOne.imgPrimary.image)}
-            alt={sectionOne.imgPrimary.alt}
-          />
-          <GatsbyImage
-            image={getImage(sectionOne.imgSecondary.image)}
-            alt={sectionOne.imgPrimary.alt}
-          />
+          <a href={sectionOne.imgLinkPrimary.url} target="_blank" rel="noreferrer">
+            <GatsbyImage
+              image={getImage(sectionOne.imgLinkPrimary.image)}
+              alt={sectionOne.imgLinkPrimary.alt}
+            />
+            <div>
+              <h3>{sectionOne.imgLinkPrimary.title}</h3>
+            </div>
+          </a>
+          <a href={sectionOne.imgLinkSecondary.url} target="_blank" rel="noreferrer">
+            <GatsbyImage
+              image={getImage(sectionOne.imgLinkSecondary.image)}
+              alt={sectionOne.imgLinkPrimary.alt}
+            />
+            <div>
+              <h3>{sectionOne.imgLinkSecondary.title}</h3>
+            </div>
+
+          </a>
         </HeroStyles>
       </BgImageRightWrapper>
 
@@ -54,26 +62,7 @@ export default function HomePageTemplate({ pageContext, data }) {
         <h2>{sectionTwo.header}</h2>
         {/* cards */}
         <CardsThreesStyles>
-          {sectionTwo.cards.map((card) => (
-            <a
-              key={`findings-${card.title}`}
-              href={card.url}
-              target="_blank"
-              rel="noreferrer"
-              style={{ borderRadius: 'var(--br)', background: 'var(--white)', padding: '3rem' }}
-            >
-              <h3>{card.title}</h3>
-              <p>{card.description}</p>
-            </a>
-          ))}
-        </CardsThreesStyles>
-      </SectionSecondaryStyles>
-
-      <SectionSecondaryStyles>
-        <h2>{sectionThree.header}</h2>
-        {/* cards */}
-        <CardsThreesStyles>
-          {sectionThree?.cards?.map((card) => (
+          {sectionTwo?.cards?.map((card) => (
             <a key={`resources-${card.title}`} href={card.url} target="_blank" rel="noreferrer">
               <GatsbyImage
                 image={getImage(card.img.image)}
@@ -87,20 +76,6 @@ export default function HomePageTemplate({ pageContext, data }) {
           ))}
         </CardsThreesStyles>
       </SectionSecondaryStyles>
-
-      <BgImageWrapper>
-        <GatsbyImage
-          image={getImage(sectionFour?.backgroundImage.image)}
-          alt={sectionFour?.backgroundImage.alt}
-          className="background"
-        />
-
-        <SectionSecondaryStyles>
-          <h2>{sectionFour.header}</h2>
-          <Gallery images={sectionFour.images} />
-
-        </SectionSecondaryStyles>
-      </BgImageWrapper>
     </Layout>
   );
 }
@@ -113,9 +88,15 @@ const HeroStyles = styled.div`
   gap: 3rem;
   position: relative;
 
-  > div:not(:first-child) {
+  > a {
     justify-self: center;
-    border-radius: var(--br);
+    img {
+      border-radius: var(--br);
+    }
+    h3 {
+      color: var(--black);
+      margin-top: 1rem;
+    }
   }
 
   h1, p {
@@ -231,7 +212,9 @@ export const query = graphql`
               }
               alt
             }
-            imgPrimary {
+            imgLinkPrimary {
+              title
+              url
               alt
               image {
                 childImageSharp {
@@ -246,7 +229,9 @@ export const query = graphql`
                 }
               }
             }
-            imgSecondary {
+            imgLinkSecondary {
+              title
+              url
               alt
               image {
                 childImageSharp {
@@ -263,14 +248,6 @@ export const query = graphql`
             }
           }
           sectionTwo {
-            header
-            cards {
-              description
-              title
-              url
-            }
-          }
-          sectionThree {
             header
             cards {
               title
@@ -292,36 +269,6 @@ export const query = graphql`
                   }
                 }
               }
-            }
-          }
-          sectionFour {
-            header
-            backgroundImage {
-              image {
-                childImageSharp {
-                  gatsbyImageData(
-                    placeholder: NONE
-                    layout: FULL_WIDTH,
-                    quality: 50
-                  )
-                }
-              }
-              alt
-            }
-            images {
-              image {
-                childImageSharp {
-                  gatsbyImageData(
-                    width: 1000,
-                    height: 600,
-                    placeholder: NONE
-                    layout: CONSTRAINED,
-                    transformOptions: {fit: COVER},
-                    quality: 50
-                  )
-                }
-              }
-              alt
             }
           }
         }

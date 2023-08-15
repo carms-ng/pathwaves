@@ -2,12 +2,7 @@
 templateKey: archivePage.js
 title: Archive FR
 sectionOne:
-  imgPrimary:
-    image: /assets/pathwaves-report.a-13-dragged-.jpg
-    alt: placeholder
-  imgSecondary:
-    image: /assets/pathwaves_digital-literacy-incubator-horizon-scan-cover-page.png
-    alt: FR
+  header: Résultats et Impact
   description: >-
     **Descendez pour les téléchargements**
 
@@ -25,25 +20,20 @@ sectionOne:
 
 
     L'équipe et les ambassadeurs de Pathwaves présenteront et faciliteront désormais des ateliers lors de conférences et d'événements à travers le pays. Si vous êtes intéressé par un partenariat avec nous, veuillez nous contacter !
-  header: Résultats et Impact
+  imgLinkPrimary:
+    image: /assets/pathwaves-report.a-13-dragged-.jpg
+    alt: placeholder
+    title: Pathwaves Final Report
+    url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
+  imgLinkSecondary:
+    image: /assets/pathwaves_digital-literacy-incubator-horizon-scan-cover-page.png
+    alt: placeholder
+    title: Pathwaves Horizon Scan
+    url: https://drive.google.com/file/d/11tsLHHwMD3OsrBOKhSIvpO3TKljFGjDO/view?usp=sharing
   backgroundImage:
     image: /assets/waves-tr.png
-    alt: waves fr
+    alt: vagues
 sectionTwo:
-  buttonLabel: Suiv.
-  carouselItems: []
-  cards:
-    - title: Rapport
-      description: Cliquez ici pour lire et télécharger
-      url: https://drive.google.com/file/d/1HNcG6wn_VqWfELRMRq_r_5yzqvgysGLU/view?usp=sharing
-    - description: Cliquez ici pour lire et télécharger
-      title: Analyse prospective
-      url: https://drive.google.com/file/d/1lvuJ6nrK6ITXBq4JX6_JNxAFUm5YIdPs/view?usp=sharing
-  header: Téléchargements
-  backgroundImage:
-    image: /assets/meetmusicians_0.5black.png
-    alt: lines
-sectionThree:
   header: Programmation passée
   cards:
     - title: Présentations Janvier 2022
@@ -60,12 +50,4 @@ sectionThree:
       img:
         image: /assets/squiggle.png
         alt: placeholder
-sectionFour:
-  header: Événements Pathwaves (à venir !)
-  images:
-    - image: /assets/lines-reverse.png
-      alt: placeholder
-  backgroundImage:
-    image: /assets/blank-2-.png
-    alt: lines
 ---

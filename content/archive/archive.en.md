@@ -20,37 +20,20 @@ sectionOne:
 
 
     Beginning later this year, the Pathwaves Team and Ambassadors will be presenting and facilitating workshops at conferences and events across the country. If you are interested in partnering with us, please be in touch!
-  imgPrimary:
+  imgLinkPrimary:
     image: /assets/pathwaves-report.a-13-dragged-.jpg
     alt: placeholder
-  imgSecondary:
+    title: Pathwaves Final Report
+    url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
+  imgLinkSecondary:
     image: /assets/pathwaves_digital-literacy-incubator-horizon-scan-cover-page.png
     alt: placeholder
+    title: Pathwaves Horizon Scan
+    url: https://drive.google.com/file/d/11tsLHHwMD3OsrBOKhSIvpO3TKljFGjDO/view?usp=sharing
   backgroundImage:
     image: /assets/waves-tr.png
     alt: waves
 sectionTwo:
-  buttonLabel: Next
-  carouselItems:
-    - name: Upcoming Events
-      img:
-        image: /assets/lines-reverse.png
-        alt: placeholder
-      type: Upcoming Events
-      description: Check back here for Pathwaves Events
-  cards:
-    - title: "Pathwaves Final Report "
-      description: Click Here to Read and Download
-      url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
-      pdf: /assets/untitled-document.pdf
-    - description: Click Here to Read and Download
-      title: Pathwaves Horizon Scan
-      url: https://drive.google.com/file/d/11tsLHHwMD3OsrBOKhSIvpO3TKljFGjDO/view?usp=sharing
-  header: Downloads
-  backgroundImage:
-    image: /assets/meetmusicians_0.5black.png
-    alt: lines
-sectionThree:
   header: Past Programming
   cards:
     - title: Conference Presentations January 2022
@@ -67,12 +50,4 @@ sectionThree:
         image: /assets/squiggle.png
         alt: placeholder
       url: https://drive.google.com/file/d/1B5GXUSsUYoGungxV7hxVxoEEJXNYMFCn/view?usp=sharing
-sectionFour:
-  header: Pathwaves Events (Coming Soon!)
-  images:
-    - image: /assets/lines-reverse.png
-      alt: placeholder
-  backgroundImage:
-    image: /assets/blank-2-.png
-    alt: placeholder
 ---
