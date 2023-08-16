@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
+import { Icon } from '@iconify/react';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
@@ -43,6 +44,7 @@ export default function HomePageTemplate({ pageContext, data }) {
             />
             <div>
               <h3>{sectionOne.imgLinkPrimary.title}</h3>
+              <Icon icon="material-symbols:download" width={30} height={30} />
             </div>
           </a>
           <a href={sectionOne.imgLinkSecondary.url} target="_blank" rel="noreferrer">
@@ -52,6 +54,7 @@ export default function HomePageTemplate({ pageContext, data }) {
             />
             <div>
               <h3>{sectionOne.imgLinkSecondary.title}</h3>
+              <Icon icon="material-symbols:download" width={30} height={30} />
             </div>
 
           </a>
@@ -90,13 +93,19 @@ const HeroStyles = styled.div`
 
   > a {
     justify-self: center;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
     img {
       border-radius: var(--br);
     }
-    h3 {
+    h3, svg {
       color: var(--black);
-      margin-top: 1rem;
-    }
+    }      margin-top: 1rem;
   }
 
   h1, p {
