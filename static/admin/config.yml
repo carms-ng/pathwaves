@@ -493,7 +493,7 @@ collections:
   - name: news
     label: News+Event Page
     folder: content/news
-    create: true
+    create: false
     delete: false
     i18n: true
     fields:
@@ -517,10 +517,10 @@ collections:
             name: news
             widget: list
             i18n: true
-            summary: "{{name}} - {{role}}"
+            summary: "{{title}}"
             fields:
             - {label: Title, name: title, widget: string}
-            - {label: Date, name: date, widget: date, required: false}
+            - {label: Subtitle, name: subtitle, widget: string, required: false}
             - {label: Url, name: url, widget: string, required: true}
             - label: Image
               name: img

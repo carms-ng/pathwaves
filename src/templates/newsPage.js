@@ -34,7 +34,7 @@ export default function NewsPageTemplate({ pageContext, data }) {
             <a key={n.title} href={n.url} target="_blank" rel="noreferrer">
               <CardImage
                 header={n.title}
-                // subHeader={n.date}
+                subHeader={n.subtitle}
                 img={n.img}
               />
             </a>
@@ -127,7 +127,7 @@ export const query = graphql`
             }
             news {
               title
-              # date
+              subtitle
               url
               img {
                 image {
