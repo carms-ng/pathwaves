@@ -489,6 +489,47 @@ collections:
               - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
               - {label: Image Alt Text, name: alt, widget: string, i18n: true}
 
+
+  - name: news
+    label: News+Event Page
+    folder: content/news
+    create: true
+    delete: false
+    i18n: true
+    fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "newsPage.js", i18n: duplicate}
+      - {label: Page Title, name: title, widget: string, i18n: true}
+      - label: News+Event Section
+        name: sectionOne
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - label: Background Image
+            name: backgroundImage
+            widget: object
+            i18n: true
+            fields:
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+          - label: News+Event
+            name: news
+            widget: list
+            i18n: true
+            summary: "{{name}} - {{role}}"
+            fields:
+            - {label: Title, name: title, widget: string}
+            - {label: Date, name: date, widget: date, required: false}
+            - {label: Url, name: url, widget: string, required: true}
+            - label: Image
+              name: img
+              widget: object
+              i18n: true
+              fields:
+                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
   - name: fourOhFour
     label: 404 Page
     folder: content/fourOhFour
