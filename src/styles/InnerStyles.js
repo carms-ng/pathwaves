@@ -97,6 +97,13 @@ const CardsSectionStyles = styled.section`
   padding: var(--padMd);
   margin: 0 auto;
 
+  h2 {
+    text-align: center;
+    @media (min-width: 640px) {
+      text-align: left;
+    }
+  }
+
   @media(min-width: 1024px) {
     max-width: var(--maxWidth);
   }

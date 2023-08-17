@@ -32,8 +32,9 @@ exports.createPages = async ({ graphql, actions }) => {
           "schedule",
           "resources",
           "archive",
-          "news"
-          "fourOhFour"
+          "news",
+          "participants",
+          "fourOhFour",
         ]}
       }) {
         distinct(field: relativeDirectory)

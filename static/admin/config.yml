@@ -530,6 +530,96 @@ collections:
                 - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
                 - {label: Image Alt Text, name: alt, widget: string, i18n: true}
 
+
+  - name: participants
+    label: Past Participants Page
+    folder: content/participants
+    create: false
+    delete: false
+    i18n: true
+    fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: "participantsPage.js", i18n: duplicate}
+      - {label: Page Title, name: title, widget: string, i18n: true}
+      - label: Hero Section
+        name: sectionOne
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - label: Background Image
+            name: backgroundImage
+            widget: object
+            i18n: true
+            fields:
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+      - label: Musicians Section
+        name: sectionTwo
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - {label: Popup link label, name: cardLinkLabel, widget: string, i18n: true}
+          - label: Members
+            name: members
+            widget: list
+            i18n: true
+            summary: "{{name}} - {{pronouns}}"
+            fields:
+            - {label: Artist Name, name: name, widget: string, i18n: duplicate}
+            - {label: Pronouns, name: pronouns, widget: string, i18n: true}
+            - {label: Description, name: description, widget: text, required: false}
+            - {label: Url, name: url, widget: string, required: false}
+            - label: Portrait
+              name: portrait
+              widget: object
+              i18n: true
+              fields:
+                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+      - label: Presenters Section
+        name: sectionThree
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - {label: Header, name: header, widget: string, i18n: true}
+          - {label: Popup link label, name: cardLinkLabel, widget: string, i18n: true}
+          - label: Members
+            name: members
+            widget: list
+            i18n: true
+            summary: "{{name}} - {{role}}"
+            fields:
+            - {label: Full Name, name: name, widget: string, i18n: duplicate}
+            - {label: Pronouns, name: pronouns, widget: string, i18n: true}
+            - {label: Role, name: role, widget: string, i18n: true}
+            - {label: Entity, name: entity, widget: string, i18n: true}
+            - {label: Description, name: description, widget: text, required: false}
+            - {label: Url, name: url, widget: string, required: false}
+            - label: Portrait
+              name: portrait
+              widget: object
+              i18n: true
+              fields:
+                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+      - label: Ending Section
+        name: sectionFour
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - label: Background Image
+            name: backgroundImage
+            widget: object
+            i18n: true
+            fields:
+              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
+              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+
   - name: fourOhFour
     label: 404 Page
     folder: content/fourOhFour
