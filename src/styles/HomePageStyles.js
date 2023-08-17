@@ -43,7 +43,9 @@ const HomeHeroStyles = styled.section`
     }
     .hero-buttons {
       margin: 1rem 0;
-      display: grid;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       gap: 1rem;
       width: 100%;
     }
@@ -53,19 +55,21 @@ const HomeHeroStyles = styled.section`
     .background {
       top: 50%;
     }
-    .hero-wrapper > div {
-      width: 460px;
-      justify-self: end;
-    }
-    p {
-      font-size: 2rem;
-    }
-    .hero-buttons {
-      grid-auto-flow: column;
-      justify-items: center;
-      > .btn {
-        width: 100%;
-        max-width: 375px;
+    .hero-wrapper {
+      > div {
+        width: 460px;
+        justify-self: end;
+      }
+      p {
+        font-size: 2rem;
+      }
+      .hero-buttons {
+        flex-direction: row;
+        justify-items: center;
+        > .btn {
+          width: 100%;
+          max-width: 375px;
+        }
       }
     }
   }
