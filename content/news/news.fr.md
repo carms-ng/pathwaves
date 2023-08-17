@@ -1,8 +1,8 @@
 ---
 templateKey: newsPage.js
-title: News + Event
+title: Actualités + Événements
 sectionOne:
-  header: News + Event
+  header: Actualités + Événements
   backgroundImage:
     image: /assets/team2.png
     alt: ligne hoverer

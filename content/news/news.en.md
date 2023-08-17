@@ -2,7 +2,7 @@
 templateKey: newsPage.js
 title: News + Events
 sectionOne:
-  header: News + Event
+  header: News + Events
   backgroundImage:
     image: /assets/team2.png
     alt: ligne hoverer
