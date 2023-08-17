@@ -21,12 +21,12 @@ sectionOne:
 
     L'équipe et les ambassadeurs de Pathwaves présenteront et faciliteront désormais des ateliers lors de conférences et d'événements à travers le pays. Si vous êtes intéressé par un partenariat avec nous, veuillez nous contacter !
   imgLinkPrimary:
-    image: /assets/pathwaves-report.a-13-dragged-.jpg
+    image: /assets/pathwaves-rapport.a-4-dragged-.jpg
     alt: placeholder
     title: Pathwaves Final Report
     url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
   imgLinkSecondary:
-    image: /assets/pathwaves_digital-literacy-incubator-horizon-scan-cover-page.png
+    image: /assets/pathwaves-horizon-scan-fr-dragged-.jpg
     alt: placeholder
     title: Pathwaves Horizon Scan
     url: https://drive.google.com/file/d/11tsLHHwMD3OsrBOKhSIvpO3TKljFGjDO/view?usp=sharing
