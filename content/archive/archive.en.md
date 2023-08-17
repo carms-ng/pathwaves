@@ -25,7 +25,7 @@ sectionOne:
     title: Pathwaves Final Report
     url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
   imgLinkSecondary:
-    image: /assets/cover_2.0.png
+    image: /assets/pathwaves-horizon-scan-cover-en.png
     alt: placeholder
     title: Pathwaves Horizon Scan
     url: https://drive.google.com/file/d/11tsLHHwMD3OsrBOKhSIvpO3TKljFGjDO/view?usp=sharing
