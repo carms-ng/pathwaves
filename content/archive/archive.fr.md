@@ -4,10 +4,10 @@ title: Archive FR
 sectionOne:
   header: Résultats et Impact
   description: >-
-    **Descendez pour les téléchargements**
-
-
-    Bien que le programme soit terminé, les résultats et les apprentissages perdurent grâce à la publication et à la distribution du rapport Pathwaves, ainsi qu'au partage de l'analyse d’horizon de l'incubateur - disponible pour les communautés à travers le pays.
+    Bien que le programme soit terminé, les résultats et les apprentissages
+    perdurent grâce à la publication et à la distribution du rapport Pathwaves,
+    ainsi qu'au partage de l'analyse d’horizon de l'incubateur - disponible pour
+    les communautés à travers le pays.
 
 
     Le rapport documente la conception, le parcours et les résultats pour les participants.

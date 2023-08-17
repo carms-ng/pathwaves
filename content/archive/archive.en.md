@@ -4,10 +4,9 @@ title: Archive
 sectionOne:
   header: Results + Outcomes
   description: >-
-    **SCROLL DOWN FOR DOWNLOADS**
-
-
-    While the program has been completed, findings and learnings live on with the publication and distribution of the Pathwaves Report, and the sharing of the incubator’s Horizon Scan—available to communities across the country.
+    While the program has been completed, findings and learnings live on with
+    the publication and distribution of the Pathwaves Report, and the sharing of
+    the incubator’s Horizon Scan—available to communities across the country.
 
 
     The Report documents the design, journey and outcomes for participants. 
