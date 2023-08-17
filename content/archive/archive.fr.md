@@ -23,12 +23,12 @@ sectionOne:
   imgLinkPrimary:
     image: /assets/pathwaves-rapport.a-4-dragged-.jpg
     alt: placeholder
-    title: Pathwaves Final Report
+    title: "Rapport Pathwaves "
     url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
   imgLinkSecondary:
     image: /assets/pathwaves-horizon-scan-fr-dragged-.jpg
     alt: placeholder
-    title: Pathwaves Horizon Scan
+    title: Analyse prospective
     url: https://drive.google.com/file/d/11tsLHHwMD3OsrBOKhSIvpO3TKljFGjDO/view?usp=sharing
   backgroundImage:
     image: /assets/waves-tr.png
