@@ -46,14 +46,21 @@ export default function HomePageTemplate({ pageContext, data }) {
               {sectionOne.buttons
                 .filter(({ isVisible }) => isVisible)
                 .map(({ linkText, url }) => (
-                  <LocalizedLink
-                    className="btn"
-                    key={url}
-                    to={url}
-                    lang={pageContext.lang}
-                  >
-                    {linkText}
-                  </LocalizedLink>
+                  url.startsWith('/')
+                    ? (
+                      <LocalizedLink
+                        className="btn"
+                        key={url}
+                        to={url}
+                        lang={pageContext.lang}
+                      >
+                        {linkText}
+                      </LocalizedLink>
+                    ) : (
+                      <a href={url} target="_blank" rel="noreferrer" className="btn">
+                        {linkText}
+                      </a>
+                    )
                 ))}
             </div>
           </div>

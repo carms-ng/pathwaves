@@ -9,11 +9,11 @@ sectionOne:
     image: /assets/home-2-.png
     alt: line
   buttons:
-    - linkText: About the incubator
-      url: /incubator
-      isVisible: true
     - linkText: Results + Outcomes
       url: /archive
+      isVisible: true
+    - linkText: Survey
+      url: http://www.google.com
       isVisible: true
 sectionTwo:
   carouselItems:
