@@ -28,7 +28,7 @@ export default function NewsPageTemplate({ pageContext, data }) {
         />
         <h1>{sectionOne.header}</h1>
       </NewsHeroStyles>
-      <CardsSectionStyles style={{ paddingTop: 0, marginTop: '-8vw' }}>
+      <CardsSectionStyles style={{ paddingTop: 0 }}>
         <CardsThreesStyles>
           {sectionOne.news.map((n) => (
             <a key={n.title} href={n.url} target="_blank" rel="noreferrer">
@@ -48,11 +48,11 @@ export default function NewsPageTemplate({ pageContext, data }) {
 const NewsHeroStyles = styled.section`
   position: relative;
   .background {
-    margin-top: 12vw;
+    margin-top: 14vw;
   }
   h1 {
     position: absolute;
-    top: 2vw;
+    top: 4vw;
     left: 15%;
   }
 `;
