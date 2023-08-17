@@ -9,19 +9,20 @@ logo:
 nav:
   navItems:
     - linkText: About
+      show: both
       childNavItems:
         - linkText: Incubator
           linkAddress: /incubator
         - linkText: Team
           linkAddress: /team
-      show: both
-    - linkText: Participants
-      childNavItems:
-        - linkText: Musicians
-          linkAddress: /musicians
-        - linkText: Presenters
-          linkAddress: /presenters
-      show: both
+        - linkText: Past Participants
+          linkAddress: /participants
+    - linkText: News+Events
+      show: public
+      linkAddress: /news
+    - linkText: results+outcome
+      show: public
+      linkAddress: /archive
   navItemsSecondary:
     - linkText: Schedule
       linkAddress: /schedule
