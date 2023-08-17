@@ -20,7 +20,7 @@ nav:
     - linkText: News+Events
       show: public
       linkAddress: /news
-    - linkText: results+outcome
+    - linkText: results+outcomes
       show: public
       linkAddress: /archive
   navItemsSecondary:
