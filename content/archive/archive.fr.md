@@ -21,12 +21,12 @@ sectionOne:
 
     L'équipe et les ambassadeurs de Pathwaves présenteront et faciliteront désormais des ateliers lors de conférences et d'événements à travers le pays. Si vous êtes intéressé par un partenariat avec nous, veuillez nous contacter !
   imgLinkPrimary:
-    image: /assets/report-fr.png
+    image: /assets/cover_fr_1.png
     alt: placeholder
     title: "Rapport Pathwaves "
     url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
   imgLinkSecondary:
-    image: /assets/horizon-fr.png
+    image: /assets/cover_fr_2.jpeg
     alt: placeholder
     title: Analyse prospective
     url: https://drive.google.com/file/d/11tsLHHwMD3OsrBOKhSIvpO3TKljFGjDO/view?usp=sharing
