@@ -2,9 +2,9 @@
 templateKey: homePage.js
 title: Home
 sectionOne:
-  header: The Pathwaves Digital Literacy Incubator
-  description: An initiative aimed at empowering Canadian musicians to make
-    lifelong careers in music more possible and equitable.
+  header: The Pathwaves Digital Literacy Initiative
+  description: Aimed at empowering Canadian musicians and artists to make lifelong
+    careers more possible and equitable.
   backgroundImage:
     image: /assets/home-2-.png
     alt: line
