@@ -1,6 +1,6 @@
 ---
 templateKey: newsPage.js
-title: News + Event
+title: News + Events
 sectionOne:
   header: News + Event
   backgroundImage:
