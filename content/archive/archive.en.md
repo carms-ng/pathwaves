@@ -20,7 +20,7 @@ sectionOne:
 
     Beginning later this year, the Pathwaves Team and Ambassadors will be presenting and facilitating workshops at conferences and events across the country. If you are interested in partnering with us, please be in touch!
   imgLinkPrimary:
-    image: /assets/pathwaves-dl-report-cover-en.png
+    image: /assets/cover_1.png
     alt: placeholder
     title: Pathwaves Final Report
     url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
