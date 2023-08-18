@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import { CardsSectionStyles, CardsThreesStyles } from '../styles/InnerStyles';
+import { CardsSectionStyles as DefaultCardsSection, CardsThreesStyles } from '../styles/InnerStyles';
 import CardImage from '../components/CardImage';
 
 export default function NewsPageTemplate({ pageContext, data }) {
@@ -28,7 +28,7 @@ export default function NewsPageTemplate({ pageContext, data }) {
         />
         <h1>{sectionOne.header}</h1>
       </NewsHeroStyles>
-      <CardsSectionStyles style={{ paddingTop: 0 }}>
+      <CardsSectionStyles>
         <CardsThreesStyles>
           {sectionOne.news.map((n) => (
             <a key={n.title} href={n.url} target="_blank" rel="noreferrer">
@@ -48,12 +48,41 @@ export default function NewsPageTemplate({ pageContext, data }) {
 const NewsHeroStyles = styled.section`
   position: relative;
   .background {
-    margin-top: 14vw;
+    margin-top: 30vw;
   }
   h1 {
     position: absolute;
-    top: 4vw;
+    top: -2vw;
     left: 15%;
+  }
+  @media (min-width: 640px) {
+    h1 {
+      top: 0vw;
+    }
+  }
+  @media (min-width: 768px) {
+    h1 {
+      top: 1vw;
+    }
+  }
+  @media (min-width: 1024px) {
+    .background {
+      margin-top: 15vw;
+    }
+    h1 {
+      top: 2vw;
+    }
+  }
+`;
+
+const CardsSectionStyles = styled(DefaultCardsSection)`
+  padding-top: 0;
+
+  @media (min-width: 640px) {
+    margin-top: 0;
+  }
+  @media (min-width: 768px) {
+    margin-top: -20vw;
   }
 `;
 
