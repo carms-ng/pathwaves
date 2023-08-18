@@ -26,7 +26,7 @@ sectionOne:
     title: "Rapport Pathwaves "
     url: https://drive.google.com/file/d/1L2VXnGZBYkFqkXhFIQB10dMnffyFdpjo/view?usp=sharing
   imgLinkSecondary:
-    image: /assets/cover_fr_c.jpeg
+    image: /assets/cover_fr_e.jpeg
     alt: placeholder
     title: Analyse prospective
     url: https://drive.google.com/file/d/11tsLHHwMD3OsrBOKhSIvpO3TKljFGjDO/view?usp=sharing
