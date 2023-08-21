@@ -13,7 +13,7 @@ sectionOne:
       img:
         image: /assets/pathwaves_digital-literacy-incubator-horizon-scan-cover-page.png
         alt: Placeholder
-    - title: " L'Oracle Pathwaves : Enquête Delphi "
+    - title: "Futurs alternatifs : une enquête pour les musiciens et les créatifs"
       subtitle: 22 août 2023
       url: https://docs.google.com/forms/d/e/1FAIpQLSeIPZu7iH6EfVTy3l_nw9RMuXnKjlcVii-FfalYsRLILlGl0w/viewform
       img:
