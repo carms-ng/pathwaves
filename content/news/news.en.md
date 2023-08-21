@@ -14,7 +14,7 @@ sectionOne:
         alt: Placeholder
       subtitle: August 22, 2023
     - title: "Pathwaves Oracle: A Delphi Survey for Musicians and Creatives"
-      subtitle: Aug 22, 2023
+      subtitle: August 22, 2023
       url: https://docs.google.com/forms/d/e/1FAIpQLSdUvQ4FMXKtTxGoJ9QdyZUGnSxFrnd6kOjtGMup6WIUGCy6xw/viewform?ts=64df89e1&edit_requested=true
       img:
         image: /assets/survey_en-2x.png
