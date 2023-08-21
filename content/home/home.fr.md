@@ -33,15 +33,16 @@ sectionTwo:
     - button:
         linkText: Rencontrez les participants
         url: /musicians
-      name: Emily Kennedy
+      name: Ruby Singh
       type: Participant
-      description: '"Les artistes ont accès à une telle puissance technologique par
-        rapport au premier phonographe, ce qui ouvre de vastes possibilités tant
-        dans la façon dont nous créons que dans celle dont nous partageons la
-        musique."'
+      description: «J’ai abordé une app de AR géolocalisée, une vidéo à 360°, et
+        l’idée de l’intelligence non pas de l’IA mais des plantes et de
+        l’écologie, ce qui m’a conduit à explorer et à créer de l’audio avec une
+        bio-sonification.»
       img:
-        image: /assets/e.-kennedy-pc-sarah-kierstead-emily-kennedy.jpg
-        alt: Photo de Emily Kennedy
+        image: /assets/rup-6-ruby-singh.jpg
+        alt: ruby
+      nameAlt: Ambassadeur Pathwaves
     - name: choi
       type: Participant
       description: "\"Cette avancée technologique (le home studio) a créé un
