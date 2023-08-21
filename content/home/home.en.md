@@ -13,7 +13,7 @@ sectionOne:
       url: /archive
       isVisible: true
     - linkText: Survey
-      url: http://www.google.com
+      url: https://docs.google.com/forms/d/1tVfRMTIlCo6BG6fTF9jeMAkHZStuUMxQHTHHh7yldhM/edit
       isVisible: true
 sectionTwo:
   carouselItems:
