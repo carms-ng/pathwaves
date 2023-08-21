@@ -42,18 +42,6 @@ sectionTwo:
       button:
         linkText: Meet the participants
         url: /musicians
-    - name: Della Orrey
-      nameAlt: "    "
-      type: Participant Spotlight
-      description: '"I think that the intersection of music and technology is
-        essential in the democratization of being able to access and create in
-        the spirit of DIY exploration."'
-      button:
-        linkText: Meet the participants
-        url: /musicians
-      img:
-        image: /assets/open-studio-sep22-53-della-orrey.jpg
-        alt: Picture of Della Orrey
     - name: KWiat
       description: “By hosting a livestream on Twitch, I explored and created some
         kind of visual experience that was interactive with the music, allowed
@@ -64,6 +52,18 @@ sectionTwo:
       img:
         image: /assets/lightsredux-4-kwiat.jpg
         alt: ashely
+      button:
+        linkText: Meet the participants
+        url: /musicians
+    - name: Remy Rodden
+      type: Participant Spotlight
+      nameAlt: Pathwaves Ambassador
+      description: '"I entered the incubator with a solid degree of comfort around
+        technology, but Pathwaves certainly opened up my eyes to a much broader
+        scope of the tech topic than I had before." '
+      img:
+        image: /assets/remy-rodden-2019-full-remy-rodden.jpg
+        alt: remy
       button:
         linkText: Meet the participants
         url: /musicians
