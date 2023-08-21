@@ -3,8 +3,9 @@ templateKey: homePage.js
 title: Accueil
 sectionOne:
   header: L’Initiative De Littératie Numérique Pathwaves
-  description: Une initiative visant à aider les musiciens et les créatifs
-    canadiens à développer une carrière durable et équitable.
+  description: Pathwaves est une initiative de littératie numérique qui a pour
+    objectif d'autonomiser les musicien.nes et les artistes canadien.nes pour
+    rendre les carrières musicales durables possibles et équitables.
   backgroundImage:
     image: /assets/home-2-.png
     alt: lines
