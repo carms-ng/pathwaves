@@ -9,7 +9,7 @@ sectionOne:
     image: /assets/home-2-.png
     alt: lines
   buttons:
-    - linkText: Résultats
+    - linkText: Résultats d'incubateur
       url: /archive
       isVisible: true
     - linkText: Enquête Delphi
