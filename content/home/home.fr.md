@@ -17,7 +17,7 @@ sectionOne:
       isVisible: true
 sectionTwo:
   carouselItems:
-    - name: Ida Toninanto
+    - name: Ida Toninato
       nameAlt: Ambassadrice Pathwaves
       type: Participant
       description: « ... J’ai réalisé que ce n’est pas un problème que je ne sois pas
