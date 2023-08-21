@@ -43,18 +43,19 @@ sectionTwo:
         image: /assets/rup-6-ruby-singh.jpg
         alt: ruby
       nameAlt: Ambassadeur Pathwaves
-    - name: choi
+    - name: KWiat
       type: Participant
-      description: "\"Cette avancée technologique (le home studio) a créé un
-        formidable changement dans l'industrie musicale et a ouvert des portes à
-        tant de personnes qui, autrement, n'auraient pas eu les ressources
-        disponibles pour créer de la musique.\""
+      description: « Sur Twitch, j’ai exploré et créé une sorte d’expérience visuelle
+        interactive avec la musique, permettant aux spectateurs de s’engager, et
+        m’offrant une nouvelle façon de construire et de me fondre dans ma
+        marque. »
       img:
-        image: /assets/img_7671-liam-choi.jpg
-        alt: Photo de choi
+        image: /assets/lightsredux-4-kwiat.jpg
+        alt: ashley
       button:
         linkText: Rencontrez les participants
         url: /musicians
+      nameAlt: Ambassadrice Pathwaves
   buttonLabel: Prochain
   backgroundImage:
     image: /assets/home2.png
