@@ -69,6 +69,19 @@ sectionTwo:
       button:
         linkText: Rencontrez les participants
         url: /musicians
+    - name: "Ziyan Hossain "
+      type: Participant
+      nameAlt: Ambassadeur Pathwaves
+      description: "Directeur général par intérim d’OCAD U CO, et cofondateur de
+        Method Collective, Il est également compositeur pour Space for Grief, un
+        projet artistique auquel participent la bibliothèque publique de Toronto
+        et le CAC. "
+      img:
+        image: /assets/0fcb9a47-57c5-4176-8b5d-fd3bf4b16fbe-ziyan-hossain.jpg
+        alt: ziyan
+      button:
+        linkText: Rencontrez les participants
+        url: /team
   buttonLabel: Prochain
   backgroundImage:
     image: /assets/home2.png
