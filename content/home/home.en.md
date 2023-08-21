@@ -54,6 +54,18 @@ sectionTwo:
       img:
         image: /assets/img_7671-liam-choi.jpg
         alt: Picture of choi
+    - name: Ida Toninato
+      type: Participant Spotlight
+      description: “ I realized it’s not a problem that I’m not a tech expert, but
+        that as an artist I can be a better director in what I create...what do
+        I want to tell, to whom and across which platforms.”
+      img:
+        image: /assets/_x4a3837-ida-toninato.jpg
+        alt: Ida
+      button:
+        linkText: Meet the participants
+        url: /musicians
+      nameAlt: .
   buttonLabel: Next
   backgroundImage:
     image: /assets/home2.png
