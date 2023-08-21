@@ -9,7 +9,7 @@ sectionOne:
     image: /assets/home-2-.png
     alt: line
   buttons:
-    - linkText: Results + Outcomes
+    - linkText: Incubator Results + Outcomes
       url: /archive
       isVisible: true
     - linkText: Take the Delphi Survey!
