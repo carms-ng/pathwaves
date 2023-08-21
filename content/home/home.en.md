@@ -65,7 +65,17 @@ sectionTwo:
       button:
         linkText: Meet the participants
         url: /musicians
-      nameAlt: .
+      nameAlt: Pathwaves Ambassador
+    - name: Ruby Singh
+      description: dddddd
+      nameAlt: Pathwaves Ambassador
+      type: Participant Spotlight
+      img:
+        image: /assets/rup-6-ruby-singh.jpg
+        alt: ruby
+      button:
+        linkText: Meet the participants
+        url: /musicians
   buttonLabel: Next
   backgroundImage:
     image: /assets/home2.png
