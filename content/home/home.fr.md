@@ -17,18 +17,19 @@ sectionOne:
       isVisible: true
 sectionTwo:
   carouselItems:
-    - name: Della Orrey
-      nameAlt: ""
+    - name: Ida Toninanto
+      nameAlt: Ambassadrice Pathwaves
       type: Participant
-      description: "\"Je pense que l'intersection de la musique et de la technologie
-        est essentielle dans la démocratisation de la possibilité d'accéder et
-        de créer dans l'esprit de l'exploration DIY.\""
+      description: « ... J’ai réalisé que ce n’est pas un problème que je ne sois pas
+        une experte en technologie, mais qu’en tant qu’artiste je pouvais être
+        une meilleure créatrice... ce que je veux raconter, à qui et à travers
+        quelles plateformes. »
       button:
         linkText: Rencontrez les participants
         url: /musicians
       img:
-        image: /assets/open-studio-sep22-53-della-orrey.jpg
-        alt: Photo de Della Orrey
+        image: /assets/_x4a3837-ida-toninato.jpg
+        alt: ida
     - button:
         linkText: Rencontrez les participants
         url: /musicians
