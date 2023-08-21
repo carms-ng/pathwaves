@@ -7,13 +7,13 @@ sectionOne:
     image: /assets/team2.png
     alt: ligne hoverer
   news:
-    - title: Press Release
+    - title: Communiqué de presse
       subtitle: 22 août 2023
       url: https://www.google.com/
       img:
         image: /assets/pathwaves_digital-literacy-incubator-horizon-scan-cover-page.png
         alt: Placeholder
-    - title: Sondage
+    - title: " L'Oracle Pathwaves : Enquête Delphi "
       subtitle: 22 août 2023
       url: https://docs.google.com/forms/d/e/1FAIpQLSeIPZu7iH6EfVTy3l_nw9RMuXnKjlcVii-FfalYsRLILlGl0w/viewform
       img:
