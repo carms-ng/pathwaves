@@ -9,11 +9,11 @@ sectionOne:
     image: /assets/home-2-.png
     alt: lines
   buttons:
-    - linkText: A propos de l'incubateur
-      url: /incubator
-      isVisible: true
     - linkText: Résultats
       url: /archive
+      isVisible: true
+    - linkText: Enquête Delphi
+      url: /incubator
       isVisible: true
 sectionTwo:
   carouselItems:
