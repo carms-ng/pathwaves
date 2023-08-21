@@ -7,7 +7,8 @@ sectionOne:
     image: /assets/team2.png
     alt: ligne hoverer
   news:
-    - title: Communiqué de presse
+    - title: "Communiqué de presse : Phase suivante de l'initiative de littératie
+        numérique Pathwaves lancée au MUTEK"
       subtitle: 22 août 2023
       url: https://www.google.com/
       img:
