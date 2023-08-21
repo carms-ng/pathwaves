@@ -67,6 +67,19 @@ sectionTwo:
       button:
         linkText: Meet the participants
         url: /musicians
+    - name: Ziyan Hossain
+      type: Facilitator participant
+      nameAlt: Pathwaves Ambassador
+      description: Acting Managing Director at OCAD U CO, the consultancy arm of OCAD
+        University, he's also co-founder of Method Collective, and composer on
+        Space for Grief, an arts project involving the Toronto Public Library
+        and Canada Arts Council.
+      img:
+        image: /assets/0fcb9a47-57c5-4176-8b5d-fd3bf4b16fbe-ziyan-hossain.jpg
+        alt: ziyan
+      button:
+        linkText: Meet the participants
+        url: /team
   buttonLabel: Next
   backgroundImage:
     image: /assets/home2.png
