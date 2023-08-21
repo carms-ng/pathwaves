@@ -56,6 +56,19 @@ sectionTwo:
         linkText: Rencontrez les participants
         url: /musicians
       nameAlt: Ambassadrice Pathwaves
+    - name: Remy Rodden
+      type: Participant
+      nameAlt: Ambassadeur Pathwaves
+      description: « Je suis entré dans l’incubateur avec un solide degré de confort
+        autour de la technologie, mais Pathwaves m’a certainement ouvert les
+        yeux sur une portée beaucoup plus large du sujet technologique que je ne
+        l’avais auparavant.»
+      img:
+        image: /assets/remy-rodden-2019-full-remy-rodden.jpg
+        alt: remy
+      button:
+        linkText: Rencontrez les participants
+        url: /musicians
   buttonLabel: Prochain
   backgroundImage:
     image: /assets/home2.png
