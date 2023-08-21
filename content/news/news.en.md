@@ -8,7 +8,7 @@ sectionOne:
     alt: ligne hoverer
   news:
     - title: "Press Release: Pathwaves Launches Next Phase at MUTEK "
-      url: https://www.google.com/
+      url: https://drive.google.com/file/d/1NH5-3UwCG4ppzc27ZxrF6tmf4hj2hQvY/view
       img:
         image: /assets/newsletter_en-2x.png
         alt: Placeholder
