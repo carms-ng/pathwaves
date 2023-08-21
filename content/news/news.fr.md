@@ -10,7 +10,7 @@ sectionOne:
     - title: "Communiqué de presse : Phase suivante de l'initiative de littératie
         numérique Pathwaves lancée au MUTEK"
       subtitle: 22 août 2023
-      url: https://www.google.com/
+      url: https://drive.google.com/file/d/1hVezLss572MivEIpS04DZoxQIjoA7PA9/view
       img:
         image: /assets/pathwaves_digital-literacy-incubator-horizon-scan-cover-page.png
         alt: Placeholder
