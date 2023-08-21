@@ -54,6 +54,19 @@ sectionTwo:
       img:
         image: /assets/open-studio-sep22-53-della-orrey.jpg
         alt: Picture of Della Orrey
+    - name: KWiat
+      description: “By hosting a livestream on Twitch, I explored and created some
+        kind of visual experience that was interactive with the music, allowed
+        viewers to engage, and provided a new way for me to build and blend into
+        my brand.”
+      type: Participant Spotlight
+      nameAlt: Pathwaves Ambassador
+      img:
+        image: /assets/lightsredux-4-kwiat.jpg
+        alt: ashely
+      button:
+        linkText: Meet the participants
+        url: /musicians
   buttonLabel: Next
   backgroundImage:
     image: /assets/home2.png
