@@ -10,7 +10,7 @@ sectionOne:
     - title: "Press Release: Pathwaves Delphi Survey Launch at MUTEK "
       url: https://www.google.com/
       img:
-        image: /assets/pathwaves_digital-literacy-incubator-horizon-scan-cover-page.png
+        image: /assets/newsletter_en-2x.png
         alt: Placeholder
       subtitle: August 22, 2023
     - title: "Pathwaves Oracle: A Delphi Survey for Musicians and Creatives"
