@@ -38,7 +38,7 @@ sectionTwo:
   cards:
     - title: "Présentations "
       subtitle: Janvier 2022
-      description: .
+      description: "        "
       url: https://drive.google.com/file/d/1tKpa-PpOf_hkx4yJ2wvap_YMZYNmON1F/view?usp=sharing
       img:
         image: /assets/results_download-2x.png
@@ -46,7 +46,7 @@ sectionTwo:
     - url: https://drive.google.com/file/d/1OrRMb_jg3vtXw8x7BLb0NwPcFCESJvE7/view?usp=sharing
       title: "Classes de maître "
       subtitle: Fevrier—Mars 2022
-      description: .
+      description: "        "
       img:
         image: /assets/results_download-2x.png
         alt: placeholder

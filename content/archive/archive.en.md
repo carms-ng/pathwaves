@@ -37,14 +37,14 @@ sectionTwo:
   cards:
     - title: Kick Off Conference Presentations
       subtitle: " January 2022"
-      description: .
+      description: "        "
       url: https://drive.google.com/file/d/1JQZiss1Ojwn_Gy5gO6nqXBjLetfMu65V/view?usp=sharing
       img:
         image: /assets/results_download-2x.png
         alt: placeholder
     - title: "Masterclasses "
       subtitle: February—March 2022
-      description: .
+      description: "        "
       img:
         image: /assets/results_download-2x.png
         alt: placeholder
