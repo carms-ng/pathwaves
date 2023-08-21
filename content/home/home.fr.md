@@ -12,7 +12,7 @@ sectionOne:
     - linkText: Résultats d'incubateur
       url: /archive
       isVisible: true
-    - linkText: Enquête Delphi
+    - linkText: Participer à l'enquête Delphi!
       url: https://docs.google.com/forms/d/e/1FAIpQLSeIPZu7iH6EfVTy3l_nw9RMuXnKjlcVii-FfalYsRLILlGl0w/viewform
       isVisible: true
 sectionTwo:
