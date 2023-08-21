@@ -36,18 +36,18 @@ sectionOne:
 sectionTwo:
   header: Programmation passée
   cards:
-    - title: Présentations Janvier 2022
-      subtitle: "-"
-      description: cliquez sur l'image
+    - title: "Présentations "
+      subtitle: Janvier 2022
+      description: .
       url: https://drive.google.com/file/d/1tKpa-PpOf_hkx4yJ2wvap_YMZYNmON1F/view?usp=sharing
       img:
-        image: /assets/squiggle.png
+        image: /assets/results_download-2x.png
         alt: placeholder
     - url: https://drive.google.com/file/d/1OrRMb_jg3vtXw8x7BLb0NwPcFCESJvE7/view?usp=sharing
-      title: Classes de maître Fevrier—Mars 2022
-      subtitle: "-"
-      description: cliquez sur l'image
+      title: "Classes de maître "
+      subtitle: Fevrier—Mars 2022
+      description: .
       img:
-        image: /assets/squiggle.png
+        image: /assets/results_download-2x.png
         alt: placeholder
 ---
