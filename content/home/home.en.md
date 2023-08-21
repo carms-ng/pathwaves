@@ -67,7 +67,10 @@ sectionTwo:
         url: /musicians
       nameAlt: Pathwaves Ambassador
     - name: Ruby Singh
-      description: dddddd
+      description: '“Stuff I got into: a geolocated AR app in a local park with
+        6-channel system, a binaural version of an album, a 360 video, and the
+        idea of not AI, but plant and ecological intelligence which lead me to
+        create audio with bio-sonification."'
       nameAlt: Pathwaves Ambassador
       type: Participant Spotlight
       img:
