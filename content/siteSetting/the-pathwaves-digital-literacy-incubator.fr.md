@@ -14,7 +14,7 @@ nav:
           linkAddress: /incubator
         - linkText: Equipe
           linkAddress: /team
-        - linkText: Les anciens participants
+        - linkText: Anciens participants
           linkAddress: /participants
       show: both
     - linkText: Actualités+Événements
