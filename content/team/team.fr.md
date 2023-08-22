@@ -1,6 +1,6 @@
 ---
 templateKey: teamPage.js
-title: L'equipe
+title: L'équipe
 sectionOne:
   header: L'equipe
   members:
