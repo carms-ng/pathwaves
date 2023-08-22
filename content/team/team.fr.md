@@ -2,7 +2,7 @@
 templateKey: teamPage.js
 title: L'équipe
 sectionOne:
-  header: L'equipe
+  header: L'équipe
   members:
     - name: Ryhna Thompson
       pronouns: elle/elles
