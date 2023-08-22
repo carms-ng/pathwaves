@@ -20,7 +20,7 @@ sectionTwo:
   carouselItems:
     - name: Ida Toninato
       nameAlt: Ambassadrice Pathwaves
-      type: Participant
+      type: Participante
       description: « ... J’ai réalisé que ce n’est pas un problème que je ne sois pas
         une experte en technologie, mais qu’en tant qu’artiste je pouvais être
         une meilleure créatrice... ce que je veux raconter, à qui et à travers
@@ -45,7 +45,7 @@ sectionTwo:
         alt: ruby
       nameAlt: Ambassadeur Pathwaves
     - name: KWiat
-      type: Participant
+      type: Participante
       description: « Sur Twitch, j’ai exploré et créé une sorte d’expérience visuelle
         interactive avec la musique, permettant aux spectateurs de s’engager, et
         m’offrant une nouvelle façon de construire et de me fondre dans ma
@@ -74,7 +74,7 @@ sectionTwo:
       type: Participant
       nameAlt: Ambassadeur Pathwaves
       description: "Directeur général par intérim d’OCAD U CO, et cofondateur de
-        Method Collective, Il est également compositeur pour Space for Grief, un
+        Method Collective, il est également compositeur pour Space for Grief, un
         projet artistique auquel participent la bibliothèque publique de Toronto
         et le CAC. "
       img:
