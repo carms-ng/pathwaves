@@ -48,6 +48,6 @@ sectionTwo:
       subtitle: Fevrier—Mars 2022
       description: "        "
       img:
-        image: /assets/results_download-2x.png
+        image: /assets/download_3-2x.png
         alt: placeholder
 ---

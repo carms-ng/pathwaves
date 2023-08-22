@@ -46,7 +46,7 @@ sectionTwo:
       subtitle: February—March 2022
       description: "        "
       img:
-        image: /assets/results_download-2x.png
+        image: /assets/download_3-2x.png
         alt: placeholder
       url: https://drive.google.com/file/d/1B5GXUSsUYoGungxV7hxVxoEEJXNYMFCn/view?usp=sharing
 ---
