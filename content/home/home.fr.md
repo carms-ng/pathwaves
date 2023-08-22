@@ -83,7 +83,7 @@ sectionTwo:
       button:
         linkText: Rencontrez les participants
         url: /team
-  buttonLabel: Prochain
+  buttonLabel: Suivant
   backgroundImage:
     image: /assets/home2.png
     alt: lines fr
