@@ -12,7 +12,7 @@ nav:
       childNavItems:
         - linkText: Incubateur
           linkAddress: /incubator
-        - linkText: Equipe
+        - linkText: Équipe
           linkAddress: /team
         - linkText: Anciens participants
           linkAddress: /participants
