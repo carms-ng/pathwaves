@@ -23,7 +23,7 @@ sectionOne:
         travail individuel et échange de connaissances.
 
         Ensemble, ils se sont plongés dans les nouvelles technologies d'aujourd'hui - des logiciels de streaming et des émissions en direct VR aux NFT et à la composition assistée par l'IA - dans le but de susciter de nouvelles réflexions axées sur les solutions autour de la création et du partage de musique.
-  header: A propo d'incubator
+  header: À propos de l'incubateur
   backgroundImageTop:
     image: /assets/about-incubator-1_top.png
     alt: lines top
