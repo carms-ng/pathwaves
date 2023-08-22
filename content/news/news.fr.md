@@ -12,7 +12,7 @@ sectionOne:
       subtitle: 22 août 2023
       url: https://drive.google.com/file/d/1hVezLss572MivEIpS04DZoxQIjoA7PA9/view
       img:
-        image: /assets/survey_fr-2x.png
+        image: /assets/newsletter_fr_3-2x.png
         alt: Placeholder
     - title: "Futurs alternatifs : une enquête pour les musiciens et les créatifs"
       subtitle: 22 août 2023
