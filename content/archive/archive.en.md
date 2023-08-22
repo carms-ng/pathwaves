@@ -40,7 +40,7 @@ sectionTwo:
       description: "        "
       url: https://drive.google.com/file/d/1JQZiss1Ojwn_Gy5gO6nqXBjLetfMu65V/view?usp=sharing
       img:
-        image: /assets/download-2x.png
+        image: /assets/download_3-2x.png
         alt: placeholder
     - title: "Masterclasses "
       subtitle: February—March 2022
