@@ -7,7 +7,7 @@ sectionOne:
     alt: lignes
   header: Rencontrez les anciens participants
 sectionTwo:
-  header: Les musiciens
+  header: Les musicien.nes
   cardLinkLabel: Ligne
   members:
     - name: Adrian Fung
