@@ -48,7 +48,7 @@ footer:
   copyright: Pathwaves
   footerLinks:
     - linkAddress: mailto:info@pathwaves.ca
-      linkText: Nous contacter
+      linkText: Contactez-nous
     - linkAddress: https://www.mutualdesign.cc/
       linkText: Site web par Mutual Design
       isInterenal: false
