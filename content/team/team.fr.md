@@ -297,7 +297,7 @@ sectionOne:
         doctorat en design/études urbaines à l'Université Concordia.
   backgroundImage:
     image: /assets/team2.png
-    alt: ligne hoverer
+    alt: lignes flottantes
   cardLinkLabel: Ligne
 sectionTwo:
   collaborators:
