@@ -100,5 +100,5 @@ sectionThree:
     buttonText: Envoyer
   backgroundImage:
     image: /assets/home-_-third-image.png
-    alt: ligns vers la droite et vers le bas
+    alt: lignes vers la droite et vers le bas
 ---
