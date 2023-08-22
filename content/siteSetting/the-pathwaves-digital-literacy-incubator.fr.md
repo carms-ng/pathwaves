@@ -10,11 +10,11 @@ nav:
   navItems:
     - linkText: à propos
       childNavItems:
-        - linkText: Incubator
+        - linkText: Incubateur
           linkAddress: /incubator
         - linkText: Equipe
           linkAddress: /team
-        - linkText: Les ancien participantes
+        - linkText: Les anciens participants
           linkAddress: /participants
       show: both
     - linkText: Actualités+Événements
