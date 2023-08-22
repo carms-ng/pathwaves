@@ -8,7 +8,7 @@ logo:
   alt: logo
 nav:
   navItems:
-    - linkText: A propos
+    - linkText: À propos
       childNavItems:
         - linkText: Incubator
           linkAddress: /incubator
