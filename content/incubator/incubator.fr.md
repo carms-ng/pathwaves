@@ -60,7 +60,7 @@ sectionTwo:
 
         Les échanges ont permis de constater que chaque individu créatif a exploré une vaste gamme d'outils numériques et d'approches diverses tout au long de l'apprentissage. Ces outils et approches incluent l'audio spatial, les plugins Ableton, les pédales d'effet, les expériences immersives, le processus de création musicale, l'enregistrement de musique, l'activation des médias sociaux, l'intégration et la planification commerciale, ainsi qu'une multitude d'autres investigations. La présence de ces technologies et méthodes innovantes ont permis aux artistes d'avoir accès à un large éventail de possibilités pour la création musicale et la production audio.
     - header: Héritage et partage
-      date: mai 2023
+      date: MAI 2023
       description: >-
         Bien que le programme soit terminé, les résultats et les apprentissages
         perdurent grâce à la publication et à la distribution du rapport
