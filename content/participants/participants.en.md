@@ -668,4 +668,3 @@ sectionFour:
     image: /assets/meet-presenters.png
     alt: lignes
 ---
-
