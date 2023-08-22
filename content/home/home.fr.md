@@ -10,7 +10,7 @@ sectionOne:
     image: /assets/home-2-.png
     alt: lines
   buttons:
-    - linkText: Résultats d'incubateur
+    - linkText: Résultats de l'incubateur
       url: /archive
       isVisible: true
     - linkText: Participer à l'enquête Delphi!
