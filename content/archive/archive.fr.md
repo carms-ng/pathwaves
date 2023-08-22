@@ -41,7 +41,7 @@ sectionTwo:
       description: "        "
       url: https://drive.google.com/file/d/1tKpa-PpOf_hkx4yJ2wvap_YMZYNmON1F/view?usp=sharing
       img:
-        image: /assets/results_download-2x.png
+        image: /assets/download-2x.png
         alt: placeholder
     - url: https://drive.google.com/file/d/1OrRMb_jg3vtXw8x7BLb0NwPcFCESJvE7/view?usp=sharing
       title: "Classes de maître "
