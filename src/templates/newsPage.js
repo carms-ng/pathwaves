@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import styled from "styled-components";
@@ -10,12 +10,15 @@ import {
   CardsThreesStyles,
 } from "../styles/InnerStyles";
 import CardImage from "../components/CardImage";
+import Modal from "../components/Modal";
 
 export default function NewsPageTemplate({ pageContext, data }) {
   // Prepare Content
   const { title, sectionOne } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
@@ -31,12 +34,17 @@ export default function NewsPageTemplate({ pageContext, data }) {
       <CardsSectionStyles>
         <CardsThreesStyles>
           {sectionOne.news.map((n) => (
-            <a key={n.title} href={n.url} target="_blank" rel="noreferrer">
+            <button
+              key={n.title}
+              type="button"
+              onClick={() => setIsModalOpen(true)}
+            >
               <CardImage header={n.title} subHeader={n.subtitle} img={n.img} />
-            </a>
+            </button>
           ))}
         </CardsThreesStyles>
       </CardsSectionStyles>
+      <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
     </Layout>
   );
 }
@@ -73,6 +81,11 @@ const NewsHeroStyles = styled.section`
 
 const CardsSectionStyles = styled(DefaultCardsSection)`
   padding-top: 0;
+  button {
+    border: unset;
+    cursor: pointer;
+    text-align: unset;
+  }
 
   @media (min-width: 640px) {
     margin-top: 0;
