@@ -35,6 +35,7 @@ exports.createPages = async ({ graphql, actions }) => {
               "resources"
               "archive"
               "news"
+              "pastProgramming"
               "participants"
               "fourOhFour"
             ]
