@@ -35,7 +35,7 @@ function Layout({ children, noFooter, lang, slug, settings }) {
         setMenuOpen={setMenuOpen}
       />
       <main>{children}</main>
-      {!noFooter && <Footer lang={lang} />}
+      {!noFooter && <Footer lang={lang} menuAuth={menuAuth} />}
     </>
   );
 }
