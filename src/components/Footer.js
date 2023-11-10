@@ -1,12 +1,17 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import React from 'react';
-import styled from 'styled-components';
-import LocalizedLink from './LocalizedLink';
+import { graphql, useStaticQuery } from "gatsby";
+import React from "react";
+import styled from "styled-components";
+import LocalizedLink from "./LocalizedLink";
+import MenuAuth from "./MenuAuth";
+import LoginButton from "./LoginButton";
+import { useAuth0 } from "@auth0/auth0-react";
 
-export default function Footer({ lang }) {
+export default function Footer({ lang, menuAuth }) {
+  const { isAuthenticated } = useAuth0();
+
   const { allFile } = useStaticQuery(graphql`
     query {
-      allFile(filter: {relativeDirectory: {eq: "siteSetting"}}) {
+      allFile(filter: { relativeDirectory: { eq: "siteSetting" } }) {
         nodes {
           childMarkdownRemark {
             frontmatter {
@@ -26,26 +31,38 @@ export default function Footer({ lang }) {
     }
   `);
 
-  const data = allFile.nodes.map((node) => {
-    const locale = node.base.split('.')[1];
-    const frontmatter = node.childMarkdownRemark.frontmatter.footer;
-    return ({
-      locale,
-      frontmatter,
-    });
-  }).find((elem) => lang === elem.locale).frontmatter;
+  const data = allFile.nodes
+    .map((node) => {
+      const locale = node.base.split(".")[1];
+      const frontmatter = node.childMarkdownRemark.frontmatter.footer;
+      return {
+        locale,
+        frontmatter,
+      };
+    })
+    .find((elem) => lang === elem.locale).frontmatter;
 
   const copyrightText = `©️ ${new Date().getFullYear()} ${data.copyright}`;
 
   return (
     <FooterStyles>
-      <LocalizedLink
-        id="copyright"
-        lang={lang}
-        to="/"
-      >
+      <LocalizedLink id="copyright" lang={lang} to="/">
         {copyrightText}
       </LocalizedLink>
+
+      {isAuthenticated ? (
+        <MenuAuth
+          lang={lang}
+          menuAuth={menuAuth}
+          menuBtnClassName="btn-footer"
+        />
+      ) : (
+        <LoginButton
+          lang={lang}
+          label={menuAuth.labelLogin}
+          className="btn-footer"
+        />
+      )}
       {data.footerLinks.map((link) => {
         if (link.isInterenal) {
           return (
@@ -80,16 +97,30 @@ const FooterStyles = styled.footer`
   color: var(--white);
   padding: 1vh 2vw;
   font-size: 1.6rem;
-  a {
+
+  .btn-footer {
+    background: unset;
+    border: unset;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    width: fit-content;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  > a {
     padding: 0.5rem;
     color: var(--white);
     white-space: nowrap;
     &:hover {
       text-decoration: underline;
     }
-  }
-  a:last-child {
-    opacity: 0.7;
+    &:last-child {
+      opacity: 0.7;
+    }
   }
   @media (min-width: 640px) {
     grid-template-columns: repeat(3, 1fr);
