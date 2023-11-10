@@ -19,7 +19,7 @@ export default function NewsPageTemplate({ pageContext, data }) {
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const [selectedCardIndex, setSelectedCardIndex] = useState(0);
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
       <Seo title={`${title}`} lang={pageContext.lang} />
@@ -33,18 +33,27 @@ export default function NewsPageTemplate({ pageContext, data }) {
       </NewsHeroStyles>
       <CardsSectionStyles>
         <CardsThreesStyles>
-          {sectionOne.news.map((n) => (
+          {sectionOne.news.map((n, i) => (
             <button
               key={n.title}
               type="button"
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => {
+                setIsModalOpen(true);
+                setSelectedCardIndex(i);
+              }}
             >
               <CardImage header={n.title} subHeader={n.subtitle} img={n.img} />
             </button>
           ))}
         </CardsThreesStyles>
       </CardsSectionStyles>
-      <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
+      <Modal
+        isOpen={isModalOpen}
+        setIsOpen={setIsModalOpen}
+        img={sectionOne.news[selectedCardIndex].img}
+        title={sectionOne.news[selectedCardIndex].title}
+        body={sectionOne.news[selectedCardIndex].modalBody}
+      />
     </Layout>
   );
 }
@@ -174,6 +183,7 @@ export const query = graphql`
             news {
               title
               subtitle
+              modalBody
               url
               img {
                 image {
