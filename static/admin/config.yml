@@ -3,11 +3,11 @@ backend:
   repo: carms-ng/pathwaves
   branch: master
   commit_messages:
-    create: '[ADD][CMS] {{collection}} “{{slug}}”'
-    update: '[UPD][CMS] {{collection}} “{{slug}}”'
-    delete: '[REM][CMS] {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+    create: "[ADD][CMS] {{collection}} “{{slug}}”"
+    update: "[UPD][CMS] {{collection}} “{{slug}}”"
+    delete: "[REM][CMS] {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
 
 local_backend: true
 
@@ -35,23 +35,35 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "homePage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: "homePage.js",
+          i18n: duplicate,
+        }
+      - { label: Page Title, name: title, widget: string, i18n: true }
       - label: Hero Section
         name: sectionOne
         widget: object
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Description, name: description, widget: text, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
+          - { label: Description, name: description, widget: text, i18n: true }
           - label: Background Image
             name: backgroundImage
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
           - label: Buttons
             name: buttons
             widget: list
@@ -60,9 +72,14 @@ collections:
             min: 1
             max: 2
             fields:
-              - {label: Link text, name: linkText, widget: string}
-              - {label: URL, name: url, widget: string}
-              - {label: Is visiable?, name: isVisible, widget: boolean, required: false}
+              - { label: Link text, name: linkText, widget: string }
+              - { label: URL, name: url, widget: string }
+              - {
+                  label: Is visiable?,
+                  name: isVisible,
+                  widget: boolean,
+                  required: false,
+                }
 
       - label: Carousel Section
         name: sectionTwo
@@ -70,38 +87,81 @@ collections:
         i18n: true
         collapsed: true
         fields:
-          - {label: Next Button Label, name: buttonLabel, widget: string, i18n: true}
+          - {
+              label: Next Button Label,
+              name: buttonLabel,
+              widget: string,
+              i18n: true,
+            }
           - label: Background Image
             name: backgroundImage
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
           - label: Carousel Items
             name: carouselItems
             widget: list
             i18n: true
             summary: "{{name}} - {{type}}"
             fields:
-            - {label: Name, name: name, widget: string, i18n: true}
-            - {label: Spotlight Type, name: type, widget: string, i18n: true}
-            - {label: Alternative Name, name: nameAlt, widget: string, i18n: true}
-            - {label: Description, name: description, widget: text, i18n: true, pattern: ['^.{1,240}$', "Maximum 240 characters"]}
-            - label: Carousel Image
-              name: img
-              widget: object
-              i18n: true
-              fields:
-                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
-            - label: Button
-              name: button
-              widget: object
-              i18n: true
-              fields:
-                - {label: Link text, name: linkText, widget: string, i18n: true}
-                - {label: URL, name: url, widget: string, i18n: true}
+              - { label: Name, name: name, widget: string, i18n: true }
+              - {
+                  label: Spotlight Type,
+                  name: type,
+                  widget: string,
+                  i18n: true,
+                }
+              - {
+                  label: Alternative Name,
+                  name: nameAlt,
+                  widget: string,
+                  i18n: true,
+                }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  i18n: true,
+                  pattern: ["^.{1,240}$", "Maximum 240 characters"],
+                }
+              - label: Carousel Image
+                name: img
+                widget: object
+                i18n: true
+                fields:
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      choose_url: false,
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: Image Alt Text,
+                      name: alt,
+                      widget: string,
+                      i18n: true,
+                    }
+              - label: Button
+                name: button
+                widget: object
+                i18n: true
+                fields:
+                  - {
+                      label: Link text,
+                      name: linkText,
+                      widget: string,
+                      i18n: true,
+                    }
+                  - { label: URL, name: url, widget: string, i18n: true }
 
       - label: Newsletter Section
         name: sectionThree
@@ -109,15 +169,21 @@ collections:
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Description, name: description, widget: text, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
+          - { label: Description, name: description, widget: text, i18n: true }
           - label: Background Image
             name: backgroundImage
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
 
   - name: incubator
     label: Incubator Page
@@ -126,36 +192,59 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "incubatorPage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: "incubatorPage.js",
+          i18n: duplicate,
+        }
+      - { label: Page Title, name: title, widget: string, i18n: true }
       - label: Incubator Section
         name: sectionOne
         widget: object
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
           - label: Descriptions
             name: descriptions
             widget: list
             i18n: true
             summary: "{{description}}"
             fields:
-            - {label: Description, name: description, widget: text, i18n: true}
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  i18n: true,
+                }
           - label: Background Image (TOP)
             name: backgroundImageTop
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
           - label: Background Image (Bottom)
             name: backgroundImageBottom
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
 
       - label: Program Section
         name: sectionTwo
@@ -163,17 +252,22 @@ collections:
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
           - label: Phases
             name: phases
             widget: list
             i18n: true
-            summary: '{{header}} - {{date}}'
+            summary: "{{header}} - {{date}}"
             fields:
-              - {label: Header, name: header, widget: string, i18n: true}
-              - {label: Date, name: date, widget: string, i18n: true}
-              - {label: Description, name: description, widget: text, i18n: true}
-          - {label: End Note, name: endNote, widget: text, i18n: true}
+              - { label: Header, name: header, widget: string, i18n: true }
+              - { label: Date, name: date, widget: string, i18n: true }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  i18n: true,
+                }
+          - { label: End Note, name: endNote, widget: text, i18n: true }
 
       - label: Land Acknowledgement Section
         name: sectionThree
@@ -181,11 +275,20 @@ collections:
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
           - label: Land Acknowledgement
             name: landAcknowledgement
             widget: markdown
-            buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+            buttons:
+              [
+                bold,
+                italic,
+                link,
+                bulleted-list,
+                numbered-list,
+                heading-three,
+                heading-four,
+              ]
             editor_components: []
             modes: [rich_text]
             minimal: true
@@ -195,8 +298,14 @@ collections:
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
 
   - name: team
     label: Team Page
@@ -205,65 +314,114 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "teamPage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: "teamPage.js",
+          i18n: duplicate,
+        }
+      - { label: Page Title, name: title, widget: string, i18n: true }
       - label: Team Section
         name: sectionOne
         widget: object
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
           - label: Background Image
             name: backgroundImage
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
-          - {label: Popup link label, name: cardLinkLabel, widget: string, i18n: true}
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
+          - {
+              label: Popup link label,
+              name: cardLinkLabel,
+              widget: string,
+              i18n: true,
+            }
           - label: Members
             name: members
             widget: list
             i18n: true
             summary: "{{name}} - {{role}}"
             fields:
-            - {label: Full Name, name: name, widget: string}
-            - {label: Pronouns, name: pronouns, widget: string}
-            - {label: Role, name: role, widget: string}
-            - {label: Entity, name: entity, widget: string}
-            - {label: Description, name: description, widget: text, required: false}
-            - {label: Url, name: url, widget: string, required: false}
-            - label: Portrait
-              name: portrait
-              widget: object
-              i18n: true
-              fields:
-                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - { label: Full Name, name: name, widget: string }
+              - { label: Pronouns, name: pronouns, widget: string }
+              - { label: Role, name: role, widget: string }
+              - { label: Entity, name: entity, widget: string }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - { label: Url, name: url, widget: string, required: false }
+              - label: Portrait
+                name: portrait
+                widget: object
+                i18n: true
+                fields:
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      choose_url: false,
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: Image Alt Text,
+                      name: alt,
+                      widget: string,
+                      i18n: true,
+                    }
       - label: Collaborators Section
         name: sectionTwo
         widget: object
         i18n: true
         collapsed: true
         fields:
-          - {label: Description, name: description, widget: text, i18n: true}
+          - { label: Description, name: description, widget: text, i18n: true }
           - label: Collaborators
             name: collaborators
             widget: list
             i18n: true
             summary: "{{name}} - {{url}}"
             fields:
-            - {label: Name, name: name, widget: string, i18n: true}
-            - {label: Description, name: description, widget: text, i18n: true}
-            - {label: URL, name: url, widget: string, i18n: duplicate}
-            - label: Logo
-              name: logo
-              widget: object
-              i18n: true
-              fields:
-                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - { label: Name, name: name, widget: string, i18n: true }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  i18n: true,
+                }
+              - { label: URL, name: url, widget: string, i18n: duplicate }
+              - label: Logo
+                name: logo
+                widget: object
+                i18n: true
+                fields:
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      choose_url: false,
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: Image Alt Text,
+                      name: alt,
+                      widget: string,
+                      i18n: true,
+                    }
 
   - name: musicians
     label: Musicians Page
@@ -272,46 +430,84 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "musiciansPage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: "musiciansPage.js",
+          i18n: duplicate,
+        }
+      - { label: Page Title, name: title, widget: string, i18n: true }
       - label: Hero Section
         name: sectionOne
         widget: object
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
           - label: Background Image
             name: backgroundImage
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
       - label: Artists Section
         name: sectionTwo
         widget: object
         i18n: true
         collapsed: true
         fields:
-          - {label: Popup link label, name: cardLinkLabel, widget: string, i18n: true}
+          - {
+              label: Popup link label,
+              name: cardLinkLabel,
+              widget: string,
+              i18n: true,
+            }
           - label: Members
             name: members
             widget: list
             i18n: true
             summary: "{{name}} - {{pronouns}}"
             fields:
-            - {label: Artist Name, name: name, widget: string, i18n: duplicate}
-            - {label: Pronouns, name: pronouns, widget: string, i18n: true}
-            - {label: Description, name: description, widget: text, required: false}
-            - {label: Url, name: url, widget: string, required: false}
-            - label: Portrait
-              name: portrait
-              widget: object
-              i18n: true
-              fields:
-                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Artist Name,
+                  name: name,
+                  widget: string,
+                  i18n: duplicate,
+                }
+              - { label: Pronouns, name: pronouns, widget: string, i18n: true }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - { label: Url, name: url, widget: string, required: false }
+              - label: Portrait
+                name: portrait
+                widget: object
+                i18n: true
+                fields:
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      choose_url: false,
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: Image Alt Text,
+                      name: alt,
+                      widget: string,
+                      i18n: true,
+                    }
 
   - name: presenters
     label: Presenters Page
@@ -320,48 +516,86 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "presentersPage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: "presentersPage.js",
+          i18n: duplicate,
+        }
+      - { label: Page Title, name: title, widget: string, i18n: true }
       - label: Hero Section
         name: sectionOne
         widget: object
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
           - label: Background Image
             name: backgroundImage
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
       - label: Presenters Section
         name: sectionTwo
         widget: object
         i18n: true
         collapsed: true
         fields:
-          - {label: Popup link label, name: cardLinkLabel, widget: string, i18n: true}
+          - {
+              label: Popup link label,
+              name: cardLinkLabel,
+              widget: string,
+              i18n: true,
+            }
           - label: Members
             name: members
             widget: list
             i18n: true
             summary: "{{name}} - {{role}}"
             fields:
-            - {label: Full Name, name: name, widget: string, i18n: duplicate}
-            - {label: Pronouns, name: pronouns, widget: string, i18n: true}
-            - {label: Role, name: role, widget: string, i18n: true}
-            - {label: Entity, name: entity, widget: string, i18n: true}
-            - {label: Description, name: description, widget: text, required: false}
-            - {label: Url, name: url, widget: string, required: false}
-            - label: Portrait
-              name: portrait
-              widget: object
-              i18n: true
-              fields:
-                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Full Name,
+                  name: name,
+                  widget: string,
+                  i18n: duplicate,
+                }
+              - { label: Pronouns, name: pronouns, widget: string, i18n: true }
+              - { label: Role, name: role, widget: string, i18n: true }
+              - { label: Entity, name: entity, widget: string, i18n: true }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - { label: Url, name: url, widget: string, required: false }
+              - label: Portrait
+                name: portrait
+                widget: object
+                i18n: true
+                fields:
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      choose_url: false,
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: Image Alt Text,
+                      name: alt,
+                      widget: string,
+                      i18n: true,
+                    }
 
   - name: schedule
     label: Schedule Page
@@ -370,38 +604,79 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "schedulePage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: "schedulePage.js",
+          i18n: duplicate,
+        }
+      - { label: Page Title, name: title, widget: string, i18n: true }
       - label: Calendar Section
         name: sectionOne
         widget: object
         i18n: true
         collapsed: true
         fields:
-        - {label: Greetings, name: header, widget: string, i18n: true}
-        - {label: "Sub Greetings (Date)", name: description, widget: string, i18n: true}
-        - {label: Zoom Label, name: labelZoom, widget: string, i18n: true}
-        - {label: Show Schedule Button Text, name: labelScheduleShow, widget: string, i18n: true}
-        - {label: Hide Schedule Button Text, name: labelScheduleHide, widget: string, i18n: true}
-        - {label: No Courses Text, name: noneText, widget: string, i18n: true}
-        - label: Discord Button
-          name: button
-          widget: object
-          i18n: true
-          fields:
-            - {label: Link text, name: linkText, widget: string, i18n: true}
-            - {label: URL, name: url, widget: string, i18n: true}
+          - { label: Greetings, name: header, widget: string, i18n: true }
+          - {
+              label: "Sub Greetings (Date)",
+              name: description,
+              widget: string,
+              i18n: true,
+            }
+          - { label: Zoom Label, name: labelZoom, widget: string, i18n: true }
+          - {
+              label: Show Schedule Button Text,
+              name: labelScheduleShow,
+              widget: string,
+              i18n: true,
+            }
+          - {
+              label: Hide Schedule Button Text,
+              name: labelScheduleHide,
+              widget: string,
+              i18n: true,
+            }
+          - {
+              label: No Courses Text,
+              name: noneText,
+              widget: string,
+              i18n: true,
+            }
+          - label: Discord Button
+            name: button
+            widget: object
+            i18n: true
+            fields:
+              - { label: Link text, name: linkText, widget: string, i18n: true }
+              - { label: URL, name: url, widget: string, i18n: true }
       - label: Schedule Section
         name: sectionTwo
         widget: object
         i18n: true
         collapsed: true
         fields:
-        - {label: Header, name: header, widget: string, i18n: true}
-        - {label: Time Label, name: labelTime, widget: string, i18n: true}
-        - {label: Course Label, name: labelCourse, widget: string, i18n: true}
-        - {label: Calendar Label, name: labelCalendar, widget: string, i18n: true}
-        - {label: View More Button Text, name: labelViewMore, widget: string, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
+          - { label: Time Label, name: labelTime, widget: string, i18n: true }
+          - {
+              label: Course Label,
+              name: labelCourse,
+              widget: string,
+              i18n: true,
+            }
+          - {
+              label: Calendar Label,
+              name: labelCalendar,
+              widget: string,
+              i18n: true,
+            }
+          - {
+              label: View More Button Text,
+              name: labelViewMore,
+              widget: string,
+              i18n: true,
+            }
 
   - name: resources
     label: Resources Page
@@ -410,9 +685,15 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "resourcesPage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
-      - {label: Description, name: description, widget: text, i18n: true}
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: "resourcesPage.js",
+          i18n: duplicate,
+        }
+      - { label: Page Title, name: title, widget: string, i18n: true }
+      - { label: Description, name: description, widget: text, i18n: true }
 
   - name: archive
     label: Archive Page
@@ -421,48 +702,81 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "archivePage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: "archivePage.js",
+          i18n: duplicate,
+        }
+      - { label: Page Title, name: title, widget: string, i18n: true }
       - label: Hero Section
         name: sectionOne
         widget: object
         i18n: true
         collapsed: true
         fields:
-        - {label: Header, name: header, widget: string, i18n: true}
-        - label: Description
-          name: description
-          widget: markdown
-          buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
-          editor_components: []
-          modes: [rich_text]
-          minimal: true
-          i18n: true
-        - label: First Hero Image
-          name: imgLinkPrimary
-          widget: object
-          i18n: true
-          fields:
-            - {label: Image, name: image, widget: image, choose_url: false, i18n: true}
-            - {label: Image Alt Text, name: alt, widget: string, i18n: true}
-            - {label: Title, name: title, widget: string, i18n: true}
-            - {label: Link, name: url, widget: string, i18n: true}
-        - label: Second Hero Image
-          name: imgLinkSecondary
-          widget: object
-          i18n: true
-          fields:
-            - {label: Image, name: image, widget: image, choose_url: false, i18n: true}
-            - {label: Image Alt Text, name: alt, widget: string, i18n: true}
-            - {label: Title, name: title, widget: string, i18n: true}
-            - {label: Link, name: url, widget: string, i18n: true}
-        - label: Background Image
-          name: backgroundImage
-          widget: object
-          i18n: true
-          fields:
-            - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-            - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
+          - label: Description
+            name: description
+            widget: markdown
+            buttons:
+              [
+                bold,
+                italic,
+                link,
+                bulleted-list,
+                numbered-list,
+                heading-three,
+                heading-four,
+              ]
+            editor_components: []
+            modes: [rich_text]
+            minimal: true
+            i18n: true
+          - label: First Hero Image
+            name: imgLinkPrimary
+            widget: object
+            i18n: true
+            fields:
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: true,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
+              - { label: Title, name: title, widget: string, i18n: true }
+              - { label: Link, name: url, widget: string, i18n: true }
+          - label: Second Hero Image
+            name: imgLinkSecondary
+            widget: object
+            i18n: true
+            fields:
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: true,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
+              - { label: Title, name: title, widget: string, i18n: true }
+              - { label: Link, name: url, widget: string, i18n: true }
+          - label: Background Image
+            name: backgroundImage
+            widget: object
+            i18n: true
+            fields:
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
 
       - label: Programming Section
         name: sectionTwo
@@ -470,25 +784,40 @@ collections:
         i18n: true
         collapsed: true
         fields:
-        - {label: Header, name: header, widget: string, i18n: true}
-        - label: Resources Cards
-          name: cards
-          widget: list
-          i18n: true
-          summary: "{{title}} - {{description}}"
-          fields:
-          - {label: Title, name: title, widget: string, i18n: true}
-          - {label: Subtitle, name: subtitle, widget: string, i18n: true}
-          - {label: Description, name: description, widget: text, i18n: true}
-          - {label: Link, name: url, widget: string, i18n: true}
-          - label: Image
-            name: img
-            widget: object
+          - { label: Header, name: header, widget: string, i18n: true }
+          - label: Resources Cards
+            name: cards
+            widget: list
             i18n: true
+            summary: "{{title}} - {{description}}"
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
-
+              - { label: Title, name: title, widget: string, i18n: true }
+              - { label: Subtitle, name: subtitle, widget: string, i18n: true }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  i18n: true,
+                }
+              - { label: Link, name: url, widget: string, i18n: true }
+              - label: Image
+                name: img
+                widget: object
+                i18n: true
+                fields:
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      choose_url: false,
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: Image Alt Text,
+                      name: alt,
+                      widget: string,
+                      i18n: true,
+                    }
 
   - name: news
     label: News+Event Page
@@ -497,39 +826,66 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "newsPage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: "newsPage.js",
+          i18n: duplicate,
+        }
+      - { label: Page Title, name: title, widget: string, i18n: true }
       - label: News+Event Section
         name: sectionOne
         widget: object
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
           - label: Background Image
             name: backgroundImage
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
           - label: News+Event
             name: news
             widget: list
             i18n: true
             summary: "{{title}}"
             fields:
-            - {label: Title, name: title, widget: string}
-            - {label: Subtitle, name: subtitle, widget: string, required: false}
-            - {label: Url, name: url, widget: string, required: true}
-            - label: Image
-              name: img
-              widget: object
-              i18n: true
-              fields:
-                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
-
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Subtitle,
+                  name: subtitle,
+                  widget: string,
+                  required: false,
+                }
+              - { label: Url, name: url, widget: string, required: true }
+              - label: Image
+                name: img
+                widget: object
+                i18n: true
+                fields:
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      choose_url: false,
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: Image Alt Text,
+                      name: alt,
+                      widget: string,
+                      i18n: true,
+                    }
 
   - name: participants
     label: Past Participants Page
@@ -538,74 +894,138 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "participantsPage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: "participantsPage.js",
+          i18n: duplicate,
+        }
+      - { label: Page Title, name: title, widget: string, i18n: true }
       - label: Hero Section
         name: sectionOne
         widget: object
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
           - label: Background Image
             name: backgroundImage
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
       - label: Musicians Section
         name: sectionTwo
         widget: object
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Popup link label, name: cardLinkLabel, widget: string, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
+          - {
+              label: Popup link label,
+              name: cardLinkLabel,
+              widget: string,
+              i18n: true,
+            }
           - label: Members
             name: members
             widget: list
             i18n: true
             summary: "{{name}} - {{pronouns}}"
             fields:
-            - {label: Artist Name, name: name, widget: string, i18n: duplicate}
-            - {label: Pronouns, name: pronouns, widget: string, i18n: true}
-            - {label: Description, name: description, widget: text, required: false}
-            - {label: Url, name: url, widget: string, required: false}
-            - label: Portrait
-              name: portrait
-              widget: object
-              i18n: true
-              fields:
-                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Artist Name,
+                  name: name,
+                  widget: string,
+                  i18n: duplicate,
+                }
+              - { label: Pronouns, name: pronouns, widget: string, i18n: true }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - { label: Url, name: url, widget: string, required: false }
+              - label: Portrait
+                name: portrait
+                widget: object
+                i18n: true
+                fields:
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      choose_url: false,
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: Image Alt Text,
+                      name: alt,
+                      widget: string,
+                      i18n: true,
+                    }
       - label: Presenters Section
         name: sectionThree
         widget: object
         i18n: true
         collapsed: true
         fields:
-          - {label: Header, name: header, widget: string, i18n: true}
-          - {label: Popup link label, name: cardLinkLabel, widget: string, i18n: true}
+          - { label: Header, name: header, widget: string, i18n: true }
+          - {
+              label: Popup link label,
+              name: cardLinkLabel,
+              widget: string,
+              i18n: true,
+            }
           - label: Members
             name: members
             widget: list
             i18n: true
             summary: "{{name}} - {{role}}"
             fields:
-            - {label: Full Name, name: name, widget: string, i18n: duplicate}
-            - {label: Pronouns, name: pronouns, widget: string, i18n: true}
-            - {label: Role, name: role, widget: string, i18n: true}
-            - {label: Entity, name: entity, widget: string, i18n: true}
-            - {label: Description, name: description, widget: text, required: false}
-            - {label: Url, name: url, widget: string, required: false}
-            - label: Portrait
-              name: portrait
-              widget: object
-              i18n: true
-              fields:
-                - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-                - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Full Name,
+                  name: name,
+                  widget: string,
+                  i18n: duplicate,
+                }
+              - { label: Pronouns, name: pronouns, widget: string, i18n: true }
+              - { label: Role, name: role, widget: string, i18n: true }
+              - { label: Entity, name: entity, widget: string, i18n: true }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - { label: Url, name: url, widget: string, required: false }
+              - label: Portrait
+                name: portrait
+                widget: object
+                i18n: true
+                fields:
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      choose_url: false,
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: Image Alt Text,
+                      name: alt,
+                      widget: string,
+                      i18n: true,
+                    }
       - label: Ending Section
         name: sectionFour
         widget: object
@@ -617,8 +1037,14 @@ collections:
             widget: object
             i18n: true
             fields:
-              - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-              - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
 
   - name: fourOhFour
     label: 404 Page
@@ -627,17 +1053,29 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: "fourOhFourPage.js", i18n: duplicate}
-      - {label: Page Title, name: title, widget: string, i18n: true}
-      - {label: Header, name: header, widget: string, i18n: true}
-      - {label: Link Text, name: linkText, widget: string, i18n: true}
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: "fourOhFourPage.js",
+          i18n: duplicate,
+        }
+      - { label: Page Title, name: title, widget: string, i18n: true }
+      - { label: Header, name: header, widget: string, i18n: true }
+      - { label: Link Text, name: linkText, widget: string, i18n: true }
       - label: Image
         name: img
         widget: object
         i18n: true
         fields:
-          - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-          - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+          - {
+              label: Image,
+              name: image,
+              widget: image,
+              choose_url: false,
+              i18n: duplicate,
+            }
+          - { label: Image Alt Text, name: alt, widget: string, i18n: true }
 
   - name: siteSetting
     label: Site Setting
@@ -646,15 +1084,21 @@ collections:
     delete: false
     i18n: true
     fields:
-      - {label: Site Title, name: title, widget: string, i18n: true}
-      - {label: Site Description, name: description, widget: text, i18n: true}
+      - { label: Site Title, name: title, widget: string, i18n: true }
+      - { label: Site Description, name: description, widget: text, i18n: true }
       - label: Logo
         name: logo
         widget: object
         i18n: true
         fields:
-          - {label: Image, name: image, widget: image, choose_url: false, i18n: duplicate}
-          - {label: Image Alt Text, name: alt, widget: string, i18n: true}
+          - {
+              label: Image,
+              name: image,
+              widget: image,
+              choose_url: false,
+              i18n: duplicate,
+            }
+          - { label: Image Alt Text, name: alt, widget: string, i18n: true }
 
       - label: Navigation
         name: nav
@@ -667,70 +1111,106 @@ collections:
             i18n: true
             summary: "{{linkText}}"
             fields:
-            - {label: Link Text, name: linkText, widget: string}
-            - {label: Link Address, name: linkAddress, widget: string, required: false, hint: "Not applicable for dropdown menu"}
-            - label: Show
-              name: show
-              widget: select
-              hint: Show different nav items if user is authenticated.
-              options:
-              - { label: "Public Only", value: "public" }
-              - { label: "Private Only", value: "private" }
-              - { label: "Both", value: "both" }
-            - label: Nested Nav Items
-              name: childNavItems
-              widget: list
-              i18n: true
-              summary: "{{linkText}} - {{linkAddress}}"
-              fields:
-              - {label: Link Text, name: linkText, widget: string}
-              - {label: Link Address, name: linkAddress, widget: string}
+              - { label: Link Text, name: linkText, widget: string }
+              - {
+                  label: Link Address,
+                  name: linkAddress,
+                  widget: string,
+                  required: false,
+                  hint: "Not applicable for dropdown menu",
+                }
+              - label: Show
+                name: show
+                widget: select
+                hint: Show different nav items if user is authenticated.
+                options:
+                  - { label: "Public Only", value: "public" }
+                  - { label: "Private Only", value: "private" }
+                  - { label: "Both", value: "both" }
+              - label: Nested Nav Items
+                name: childNavItems
+                widget: list
+                i18n: true
+                summary: "{{linkText}} - {{linkAddress}}"
+                fields:
+                  - { label: Link Text, name: linkText, widget: string }
+                  - { label: Link Address, name: linkAddress, widget: string }
           - label: Authenticated Menu
             name: menuAuth
             widget: object
             i18n: true
             summary: "{{linkText}}"
             fields:
-            - {label: Login Label, name: labelLogin, widget: string, i18n: true}
-            - {label: Logout Label, name: labelLogout, widget: string, i18n: true}
-            - {label: Menu Label, name: labelMenu, widget: string, i18n: true}
-            - label: Nav Items Authenticated
-              name: navItemsAuth
-              widget: list
-              i18n: true
-              summary: "{{linkText}}"
-              fields:
-              - {label: Link Text, name: linkText, widget: string}
-              - {label: Link Address, name: linkAddress, widget: string}
+              - {
+                  label: Login Label,
+                  name: labelLogin,
+                  widget: string,
+                  i18n: true,
+                }
+              - {
+                  label: Logout Label,
+                  name: labelLogout,
+                  widget: string,
+                  i18n: true,
+                }
+              - {
+                  label: Menu Label,
+                  name: labelMenu,
+                  widget: string,
+                  i18n: true,
+                }
+              - label: Nav Items Authenticated
+                name: navItemsAuth
+                widget: list
+                i18n: true
+                summary: "{{linkText}}"
+                fields:
+                  - { label: Link Text, name: linkText, widget: string }
+                  - { label: Link Address, name: linkAddress, widget: string }
           - label: Nav Items Secondary (Private Pages)
             name: navItemsSecondary
             widget: list
             i18n: true
             summary: "{{linkText}}"
             fields:
-            - {label: Link Text, name: linkText, widget: string}
-            - {label: Link Address, name: linkAddress, widget: string}
+              - { label: Link Text, name: linkText, widget: string }
+              - { label: Link Address, name: linkAddress, widget: string }
           - label: Discord Button
             name: buttonDiscord
             widget: object
             i18n: true
             fields:
-              - {label: Link text, name: linkText, widget: string, i18n: true}
-              - {label: URL, name: url, widget: string, i18n: true}
+              - { label: Link text, name: linkText, widget: string, i18n: true }
+              - { label: URL, name: url, widget: string, i18n: true }
           - label: Phases Button Label
             name: labelPhases
             widget: object
             i18n: true
             fields:
-            - {label: Phase One Button Text, name: labelPhaseOne, widget: string, i18n: true}
-            - {label: Phase Two Button Text, name: labelPhaseTwo, widget: string, i18n: true}
-            - {label: Phase Three Button Text, name: labelPhaseThree, widget: string, i18n: true}
+              - {
+                  label: Phase One Button Text,
+                  name: labelPhaseOne,
+                  widget: string,
+                  i18n: true,
+                }
+              - {
+                  label: Phase Two Button Text,
+                  name: labelPhaseTwo,
+                  widget: string,
+                  i18n: true,
+                }
+              - {
+                  label: Phase Three Button Text,
+                  name: labelPhaseThree,
+                  widget: string,
+                  i18n: true,
+                }
       - label: "Footer (Contact)"
         name: footer
         widget: object
         i18n: true
         fields:
-          - {label: Copyright To, name: copyright, widget: string, i18n: true}
+          - { label: Copyright To, name: copyright, widget: string, i18n: true }
           - label: Footer Links
             name: footerLinks
             widget: list
@@ -738,9 +1218,14 @@ collections:
             i18n: true
             summary: "{{linkText}} - {{linkAddress}}"
             fields:
-            - {label: Link Text, name: linkText, widget: string}
-            - {label: "Internal Link?", name: isInterenal, widget: boolean, required: false}
-            - {label: Link Address, name: linkAddress, widget: string}
+              - { label: Link Text, name: linkText, widget: string }
+              - {
+                  label: "Internal Link?",
+                  name: isInterenal,
+                  widget: boolean,
+                  required: false,
+                }
+              - { label: Link Address, name: linkAddress, widget: string }
 
   - name: courses
     label: Courses
@@ -749,20 +1234,34 @@ collections:
     delete: true
     i18n: true
     summary: "{{title}} | Phase {{phaseNumber}} | {{start}}"
-    sortable_fields: ['title', 'description', 'start', 'phaseNumber']
+    sortable_fields: ["title", "description", "start", "phaseNumber"]
     fields:
-      - {label: Title, name: title, widget: string, i18n: true}
+      - { label: Title, name: title, widget: string, i18n: true }
       - label: Description
         name: description
         widget: markdown
-        buttons: [bold, italic, link, bulleted-list, numbered-list, heading-three, heading-four]
+        buttons:
+          [
+            bold,
+            italic,
+            link,
+            bulleted-list,
+            numbered-list,
+            heading-three,
+            heading-four,
+          ]
         editor_components: []
         modes: [rich_text]
         minimal: true
         i18n: true
-      - {label: Presenter Name, name: presenter, widget: string, i18n: true}
-      - {label: Add To Calendar Link, name: linkCalendar, widget: string, i18n: duplicate}
-      - {label: Zoom Link, name: linkZoom, widget: string, i18n: duplicate}
+      - { label: Presenter Name, name: presenter, widget: string, i18n: true }
+      - {
+          label: Add To Calendar Link,
+          name: linkCalendar,
+          widget: string,
+          i18n: duplicate,
+        }
+      - { label: Zoom Link, name: linkZoom, widget: string, i18n: duplicate }
       - label: Start time
         name: start
         widget: datetime
@@ -796,9 +1295,9 @@ collections:
     delete: true
     i18n: true
     fields:
-      - {label: Title, name: title, widget: string, i18n: true}
-      - {label: Description, name: description, widget: text, i18n: true}
-      - {label: Link, name: url, widget: string, i18n: true}
+      - { label: Title, name: title, widget: string, i18n: true }
+      - { label: Description, name: description, widget: text, i18n: true }
+      - { label: Link, name: url, widget: string, i18n: true }
       - label: Phase Number
         name: phaseNumber
         widget: number
@@ -808,4 +1307,3 @@ collections:
         max: 3
         step: 1
         i18n: duplicate
-
