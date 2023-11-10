@@ -1196,6 +1196,18 @@ collections:
         widget: object
         i18n: true
         fields:
+          - label: Contact Us Button
+            name: btnContact
+            widget: object
+            i18n: true
+            fields:
+              - { label: Label, name: label, widget: string, i18n: true }
+              - {
+                  label: Email address,
+                  name: mailTo,
+                  widget: string,
+                  i18n: duplicate,
+                }
           - label: Nav Items (Main)
             name: navItems
             widget: list
