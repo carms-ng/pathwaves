@@ -1,47 +1,61 @@
-import React from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
-import styled from 'styled-components';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { Icon } from '@iconify/react';
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+import styled from "styled-components";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Icon } from "@iconify/react";
 
-import LocalizedLink from './LocalizedLink';
-import LoginButton from './LoginButton';
-import NavItem from './NavItem';
-import Menu from './Menu';
-import DarkOverlay from './DarkOverlay';
-import LanguageSwitcher from './LanguageSwitcher';
-import MenuAuth from './MenuAuth';
+import LocalizedLink from "./LocalizedLink";
+import LoginButton from "./LoginButton";
+import NavItem from "./NavItem";
+import Menu from "./Menu";
+import DarkOverlay from "./DarkOverlay";
+import LanguageSwitcher from "./LanguageSwitcher";
+import MenuAuth from "./MenuAuth";
 
 export default function Header({
-  lang, slug, logo, navItems, isMenuOpen, setMenuOpen, menuAuth,
+  lang,
+  slug,
+  logo,
+  navItems,
+  isMenuOpen,
+  setMenuOpen,
+  menuAuth,
 }) {
   const { isAuthenticated } = useAuth0();
 
   // Nav Items
-  const items = navItems.filter(({ show }) => (
-    show === 'both'
-    || (isAuthenticated && show === 'private')
-    || (!isAuthenticated && show === 'public')
-  ));
+  const items = navItems.filter(
+    ({ show }) =>
+      show === "both" ||
+      (isAuthenticated && show === "private") ||
+      (!isAuthenticated && show === "public")
+  );
 
   // Dropdown handling
   return (
     <HeaderStyles>
       {/* Left: Auth button */}
-      {isAuthenticated
-        ? <MenuAuth lang={lang} slug={slug} menuAuth={menuAuth} btnClassName="btn btn-main btn-auth" />
-        : <LoginButton lang={lang} label={menuAuth.labelLogin} className="btn btn-main btn-auth" />}
+      {isAuthenticated ? (
+        <MenuAuth
+          lang={lang}
+          slug={slug}
+          menuAuth={menuAuth}
+          btnClassName="btn btn-main btn-auth"
+        />
+      ) : (
+        <LoginButton
+          lang={lang}
+          label={menuAuth.labelLogin}
+          className="btn btn-main btn-auth"
+        />
+      )}
 
       {/* Center: Logo */}
-      <LocalizedLink
-        to="/"
-        lang={lang}
-        className="logo"
-      >
+      <LocalizedLink to="/" lang={lang} className="logo">
         <GatsbyImage
           image={getImage(logo?.image)}
           alt={logo?.alt}
-          imgStyle={{ objectFit: 'contain' }}
+          imgStyle={{ objectFit: "contain" }}
         />
       </LocalizedLink>
 
@@ -64,7 +78,6 @@ export default function Header({
 
         {/* Language Switcher */}
         <LanguageSwitcher lang={lang} slug={slug} />
-
       </div>
       {/* Hamburger */}
       <div id="menu">
@@ -74,7 +87,7 @@ export default function Header({
           onClick={() => setMenuOpen(!isMenuOpen)}
           aria-label="Open or Close Menu"
         >
-          <Icon icon="gg:menu" style={{ fontSize: '3rem' }} />
+          <Icon icon="gg:menu" style={{ fontSize: "3rem" }} />
         </button>
         <Menu
           isMenuOpen={isMenuOpen}
@@ -85,7 +98,9 @@ export default function Header({
           menuAuth={menuAuth}
         />
       </div>
-      {isMenuOpen && <DarkOverlay isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />}
+      {isMenuOpen && (
+        <DarkOverlay isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />
+      )}
     </HeaderStyles>
   );
 }
@@ -127,8 +142,7 @@ const HeaderStyles = styled.header`
     }
   }
 
-  grid-template-areas:
-    "logo menu";
+  grid-template-areas: "logo menu";
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr auto auto;
@@ -138,9 +152,9 @@ const HeaderStyles = styled.header`
     .logo {
       justify-self: flex-start;
     }
-     #menu {
-       display: none;
-     }
+    #menu {
+      display: none;
+    }
     .btn-auth {
       display: flex;
     }

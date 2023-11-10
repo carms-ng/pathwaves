@@ -1,20 +1,15 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import React from "react";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import Layout from '../components/Layout';
-import Seo from '../components/Seo';
-import Hero from '../components/Hero';
-import CardsMember from '../components/CardsMember';
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
+import Hero from "../components/Hero";
+import CardsMember from "../components/CardsMember";
 
 export default function ParticipantsPageTemplate({ pageContext, data }) {
-  const {
-    title,
-    sectionOne,
-    sectionTwo,
-    sectionThree,
-    sectionFour,
-  } = data.page.childMarkdownRemark.frontmatter;
+  const { title, sectionOne, sectionTwo, sectionThree, sectionFour } =
+    data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
@@ -22,7 +17,10 @@ export default function ParticipantsPageTemplate({ pageContext, data }) {
     <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
       <Seo title={`${title}`} lang={pageContext.lang} />
 
-      <Hero header={sectionOne.header} backgroundImage={sectionOne.backgroundImage} />
+      <Hero
+        header={sectionOne.header}
+        backgroundImage={sectionOne.backgroundImage}
+      />
 
       <CardsMember
         header={sectionTwo.header}
@@ -39,22 +37,28 @@ export default function ParticipantsPageTemplate({ pageContext, data }) {
       <GatsbyImage
         image={getImage(sectionFour.backgroundImage.image)}
         alt={sectionFour.backgroundImage.alt}
-        style={{ transform: 'scaleY(-1)' }}
+        style={{ transform: "scaleY(-1)" }}
       />
-
     </Layout>
   );
 }
 
 export const query = graphql`
-  query($regx: String) {
-    settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+  query ($regx: String) {
+    settings: file(
+      relativeDirectory: { eq: "siteSetting" }
+      base: { regex: $regx }
+    ) {
       childMarkdownRemark {
         frontmatter {
           logo {
             image {
               childImageSharp {
-                gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
+                gatsbyImageData(
+                  width: 180
+                  placeholder: BLURRED
+                  layout: CONSTRAINED
+                )
               }
             }
             alt
@@ -95,7 +99,10 @@ export const query = graphql`
         }
       }
     }
-    page: file(relativeDirectory: {eq: "participants"}, base: {regex: $regx}) {
+    page: file(
+      relativeDirectory: { eq: "participants" }
+      base: { regex: $regx }
+    ) {
       childMarkdownRemark {
         frontmatter {
           title
@@ -106,8 +113,8 @@ export const query = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: NONE
-                    layout: FULL_WIDTH,
-                    transformOptions: {fit: COVER},
+                    layout: FULL_WIDTH
+                    transformOptions: { fit: COVER }
                     quality: 50
                   )
                 }
@@ -127,11 +134,11 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 400,
-                      height: 240,
+                      width: 400
+                      height: 240
                       placeholder: NONE
-                      layout: CONSTRAINED,
-                      transformOptions: {fit: COVER},
+                      layout: CONSTRAINED
+                      transformOptions: { fit: COVER }
                       quality: 50
                     )
                   }
@@ -154,18 +161,17 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 400,
-                      height: 240,
+                      width: 400
+                      height: 240
                       placeholder: NONE
-                      layout: CONSTRAINED,
-                      transformOptions: {fit: COVER},
+                      layout: CONSTRAINED
+                      transformOptions: { fit: COVER }
                       quality: 50
                     )
                   }
                 }
                 alt
               }
-
             }
           }
           sectionFour {
@@ -174,8 +180,8 @@ export const query = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: NONE
-                    layout: FULL_WIDTH,
-                    transformOptions: {fit: COVER},
+                    layout: FULL_WIDTH
+                    transformOptions: { fit: COVER }
                     quality: 50
                   )
                 }
@@ -183,7 +189,6 @@ export const query = graphql`
               alt
             }
           }
-
         }
       }
     }

@@ -1,31 +1,26 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import React from "react";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import Layout from '../components/Layout';
-import LocalizedLink from '../components/LocalizedLink';
-import Seo from '../components/Seo';
-import LogoGarden from '../components/LogoGarden';
-import Carousel from '../components/Carousel';
+import Layout from "../components/Layout";
+import LocalizedLink from "../components/LocalizedLink";
+import Seo from "../components/Seo";
+import LogoGarden from "../components/LogoGarden";
+import Carousel from "../components/Carousel";
 
-import {
-  HomeHeroStyles, NewsletterFormStyles,
-} from '../styles/HomePageStyles';
+import { HomeHeroStyles, NewsletterFormStyles } from "../styles/HomePageStyles";
 
-import { BgImageWrapper } from '../styles/InnerStyles';
+import { BgImageWrapper } from "../styles/InnerStyles";
 
 export default function HomePageTemplate({ pageContext, data }) {
   // Prepare Content
-  const {
-    title,
-    sectionOne,
-    sectionTwo,
-    sectionThree,
-  } = data.page.childMarkdownRemark.frontmatter;
+  const { title, sectionOne, sectionTwo, sectionThree } =
+    data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
-  const collabs = data.logos.childMarkdownRemark.frontmatter.sectionTwo.collaborators;
+  const collabs =
+    data.logos.childMarkdownRemark.frontmatter.sectionTwo.collaborators;
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
@@ -45,27 +40,30 @@ export default function HomePageTemplate({ pageContext, data }) {
             <div className="hero-buttons">
               {sectionOne.buttons
                 .filter(({ isVisible }) => isVisible)
-                .map(({ linkText, url }) => (
-                  url.startsWith('/')
-                    ? (
-                      <LocalizedLink
-                        className="btn"
-                        key={url}
-                        to={url}
-                        lang={pageContext.lang}
-                      >
-                        {linkText}
-                      </LocalizedLink>
-                    ) : (
-                      <a href={url} target="_blank" rel="noreferrer" className="btn">
-                        {linkText}
-                      </a>
-                    )
-                ))}
+                .map(({ linkText, url }) =>
+                  url.startsWith("/") ? (
+                    <LocalizedLink
+                      className="btn"
+                      key={url}
+                      to={url}
+                      lang={pageContext.lang}
+                    >
+                      {linkText}
+                    </LocalizedLink>
+                  ) : (
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn"
+                    >
+                      {linkText}
+                    </a>
+                  )
+                )}
             </div>
           </div>
         </div>
-
       </HomeHeroStyles>
 
       {/* Carousel */}
@@ -85,14 +83,19 @@ export default function HomePageTemplate({ pageContext, data }) {
 
       {/* Newsletter */}
       <section>
-        <NewsletterFormStyles method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+        <NewsletterFormStyles
+          method="post"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+          name="contact"
+        >
           <h2>{sectionThree.header}</h2>
           <p>{sectionThree.description}</p>
         </NewsletterFormStyles>
         <GatsbyImage
           image={getImage(sectionThree.backgroundImage.image)}
           alt={sectionThree.backgroundImage.alt}
-          style={{ marginTop: '-10vw', marginBottom: '-10vw' }}
+          style={{ marginTop: "-10vw", marginBottom: "-10vw" }}
         />
         {/* Logo Garden */}
         <LogoGarden logos={collabs} />
@@ -102,14 +105,21 @@ export default function HomePageTemplate({ pageContext, data }) {
 }
 
 export const query = graphql`
-  query($regx: String) {
-    settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+  query ($regx: String) {
+    settings: file(
+      relativeDirectory: { eq: "siteSetting" }
+      base: { regex: $regx }
+    ) {
       childMarkdownRemark {
         frontmatter {
           logo {
             image {
               childImageSharp {
-                gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
+                gatsbyImageData(
+                  width: 180
+                  placeholder: BLURRED
+                  layout: CONSTRAINED
+                )
               }
             }
             alt
@@ -150,7 +160,7 @@ export const query = graphql`
         }
       }
     }
-    page: file(relativeDirectory: {eq: "home"}, base: {regex: $regx}) {
+    page: file(relativeDirectory: { eq: "home" }, base: { regex: $regx }) {
       childMarkdownRemark {
         frontmatter {
           title
@@ -161,7 +171,7 @@ export const query = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: NONE
-                    layout: FULL_WIDTH,
+                    layout: FULL_WIDTH
                     quality: 50
                   )
                 }
@@ -182,7 +192,7 @@ export const query = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: NONE
-                    layout: FULL_WIDTH,
+                    layout: FULL_WIDTH
                     quality: 50
                   )
                 }
@@ -198,11 +208,11 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 500,
-                      height: 500,
+                      width: 500
+                      height: 500
                       placeholder: NONE
-                      layout: CONSTRAINED,
-                      transformOptions: {fit: COVER},
+                      layout: CONSTRAINED
+                      transformOptions: { fit: COVER }
                       quality: 50
                     )
                   }
@@ -223,7 +233,7 @@ export const query = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: NONE
-                    layout: FULL_WIDTH,
+                    layout: FULL_WIDTH
                     quality: 50
                   )
                 }
@@ -234,7 +244,7 @@ export const query = graphql`
         }
       }
     }
-    logos: file(relativeDirectory: {eq: "team"}, base: {regex: $regx}) {
+    logos: file(relativeDirectory: { eq: "team" }, base: { regex: $regx }) {
       childMarkdownRemark {
         frontmatter {
           sectionTwo {
@@ -246,10 +256,10 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      height: 80,
+                      height: 80
                       placeholder: NONE
-                      layout: CONSTRAINED,
-                      transformOptions: {fit: CONTAIN},
+                      layout: CONSTRAINED
+                      transformOptions: { fit: CONTAIN }
                       quality: 50
                     )
                   }

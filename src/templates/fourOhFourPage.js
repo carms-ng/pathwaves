@@ -1,27 +1,28 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import styled from 'styled-components';
+import React from "react";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import styled from "styled-components";
 
-import Layout from '../components/Layout';
-import LocalizedLink from '../components/LocalizedLink';
-import Seo from '../components/Seo';
+import Layout from "../components/Layout";
+import LocalizedLink from "../components/LocalizedLink";
+import Seo from "../components/Seo";
 
 export default function NotFoundPageTemplate({ pageContext, data }) {
-  const {
-    title, header, img, linkText,
-  } = data.page.childMarkdownRemark.frontmatter;
+  const { title, header, img, linkText } =
+    data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
   return (
-    <Layout noFooter lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
+    <Layout
+      noFooter
+      lang={pageContext.lang}
+      slug={pageContext.slug}
+      settings={settings}
+    >
       <FourOhFourStyles>
         <Seo title={title} lang={pageContext.lang} />
-        <GatsbyImage
-          image={getImage(img.image)}
-          alt={img.alt}
-        />
+        <GatsbyImage image={getImage(img.image)} alt={img.alt} />
         <h1>{header}</h1>
         <LocalizedLink className="btn" lang={pageContext.lang} to="/">
           {linkText}
@@ -48,14 +49,21 @@ const FourOhFourStyles = styled.div`
 `;
 
 export const query = graphql`
-  query($regx: String) {
-    settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+  query ($regx: String) {
+    settings: file(
+      relativeDirectory: { eq: "siteSetting" }
+      base: { regex: $regx }
+    ) {
       childMarkdownRemark {
         frontmatter {
           logo {
             image {
               childImageSharp {
-                gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
+                gatsbyImageData(
+                  width: 180
+                  placeholder: BLURRED
+                  layout: CONSTRAINED
+                )
               }
             }
             alt
@@ -96,7 +104,10 @@ export const query = graphql`
         }
       }
     }
-    page: file(relativeDirectory: {eq: "fourOhFour"}, base: {regex: $regx}) {
+    page: file(
+      relativeDirectory: { eq: "fourOhFour" }
+      base: { regex: $regx }
+    ) {
       childMarkdownRemark {
         frontmatter {
           title
@@ -106,7 +117,7 @@ export const query = graphql`
             alt
             image {
               childImageSharp {
-                gatsbyImageData (
+                gatsbyImageData(
                   width: 200
                   placeholder: BLURRED
                   layout: CONSTRAINED

@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
-import EqualWeb from './EqualWeb';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import EqualWeb from "./EqualWeb";
 
-import Typography from '../styles/Typography';
-import GlobalStyles from '../styles/GlobalStyles';
-import Footer from './Footer';
-import Header from './Header';
+import Typography from "../styles/Typography";
+import GlobalStyles from "../styles/GlobalStyles";
+import Footer from "./Footer";
+import Header from "./Header";
 
-function Layout({
-  children, noFooter, lang, slug, settings,
-}) {
-  const { logo, nav: { navItems, menuAuth } } = settings;
+function Layout({ children, noFooter, lang, slug, settings }) {
+  const {
+    logo,
+    nav: { navItems, menuAuth },
+  } = settings;
 
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -46,6 +47,6 @@ Layout.propTypes = {
 
 Layout.defaultProps = {
   noFooter: false,
-  lang: 'en',
+  lang: "en",
 };
 export default Layout;
