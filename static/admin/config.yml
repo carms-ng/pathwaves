@@ -822,7 +822,7 @@ collections:
   - name: pastProgramming
     label: Past Programming Page
     folder: content/pastProgramming
-    create: true
+    create: false
     delete: false
     i18n: true
     fields:
