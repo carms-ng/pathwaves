@@ -5,7 +5,9 @@ import styled from "styled-components";
 export default function CardImage({ header, subHeader, img }) {
   return (
     <CardStyles>
-      <GatsbyImage image={getImage(img.image)} alt={img.alt} />
+      <CardImageWrapper>
+        <GatsbyImage image={getImage(img.image)} alt={img.alt} />
+      </CardImageWrapper>
       <div className="card-text">
         <h3>{header}</h3>
         {subHeader && <p>{subHeader}</p>}
@@ -17,6 +19,7 @@ export default function CardImage({ header, subHeader, img }) {
 const CardStyles = styled.div`
   position: relative;
   margin: 0 auto;
+  max-width: 400px;
 
   p,
   h3 {
@@ -25,4 +28,10 @@ const CardStyles = styled.div`
   .card-text {
     padding: 1rem 1.5rem;
   }
+`;
+
+const CardImageWrapper = styled.div`
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
 `;
