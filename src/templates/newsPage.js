@@ -1,19 +1,19 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import styled from 'styled-components';
+import React from "react";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import styled from "styled-components";
 
-import Layout from '../components/Layout';
-import Seo from '../components/Seo';
-import { CardsSectionStyles as DefaultCardsSection, CardsThreesStyles } from '../styles/InnerStyles';
-import CardImage from '../components/CardImage';
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
+import {
+  CardsSectionStyles as DefaultCardsSection,
+  CardsThreesStyles,
+} from "../styles/InnerStyles";
+import CardImage from "../components/CardImage";
 
 export default function NewsPageTemplate({ pageContext, data }) {
   // Prepare Content
-  const {
-    title,
-    sectionOne,
-  } = data.page.childMarkdownRemark.frontmatter;
+  const { title, sectionOne } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
@@ -32,11 +32,7 @@ export default function NewsPageTemplate({ pageContext, data }) {
         <CardsThreesStyles>
           {sectionOne.news.map((n) => (
             <a key={n.title} href={n.url} target="_blank" rel="noreferrer">
-              <CardImage
-                header={n.title}
-                subHeader={n.subtitle}
-                img={n.img}
-              />
+              <CardImage header={n.title} subHeader={n.subtitle} img={n.img} />
             </a>
           ))}
         </CardsThreesStyles>
@@ -87,14 +83,21 @@ const CardsSectionStyles = styled(DefaultCardsSection)`
 `;
 
 export const query = graphql`
-  query($regx: String) {
-    settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+  query ($regx: String) {
+    settings: file(
+      relativeDirectory: { eq: "siteSetting" }
+      base: { regex: $regx }
+    ) {
       childMarkdownRemark {
         frontmatter {
           logo {
             image {
               childImageSharp {
-                gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
+                gatsbyImageData(
+                  width: 180
+                  placeholder: BLURRED
+                  layout: CONSTRAINED
+                )
               }
             }
             alt
@@ -135,7 +138,7 @@ export const query = graphql`
         }
       }
     }
-    page: file(relativeDirectory: {eq: "news"}, base: {regex: $regx}) {
+    page: file(relativeDirectory: { eq: "news" }, base: { regex: $regx }) {
       childMarkdownRemark {
         frontmatter {
           title
@@ -147,7 +150,7 @@ export const query = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: NONE
-                    layout: FULL_WIDTH,
+                    layout: FULL_WIDTH
                     quality: 50
                   )
                 }
@@ -162,11 +165,11 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 400,
-                      height: 240,
+                      width: 400
+                      height: 240
                       placeholder: NONE
-                      layout: CONSTRAINED,
-                      transformOptions: {fit: COVER},
+                      layout: CONSTRAINED
+                      transformOptions: { fit: COVER }
                       quality: 50
                     )
                   }
