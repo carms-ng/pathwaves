@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const HomeHeroStyles = styled.section`
   position: relative;
@@ -93,13 +93,17 @@ const HomeHeroStyles = styled.section`
   }
 `;
 
-const NewsletterFormStyles = styled.form`
+const HomeContactUsStyles = styled.div`
   padding: var(--padSm);
   padding-bottom: 0;
   max-width: var(--maxWidth);
   margin: 0 auto;
   text-align: center;
 
+  a {
+    color: var(--black);
+    text-decoration: underline;
+  }
   p {
     max-width: var(--maxWidthMd);
   }
@@ -107,46 +111,10 @@ const NewsletterFormStyles = styled.form`
     margin-bottom: 5rem;
   }
 
-  div:nth-child(3) {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-top: 0.5rem;
-
-    input {
-      padding: 1.2rem;
-      border: 1px solid var(--lightgrey);
-      border-radius: var(--br);
-      font-family: 'ApfelGrotezk', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    button {
-      border: 2px solid var(--black);
-      border-radius: var(--br);
-      background: var(--black);
-      color: var(--white);
-      padding: 0.5rem;
-      transition: var(--trans);
-      &:hover {
-        color: var(--black);
-        background: var(--offWhite);
-      }
-    }
-  }
   @media (min-width: 640px) {
     padding: var(--padLg);
     padding-bottom: 0;
-    div:nth-child(3) {
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-
-      button {
-        grid-column: 1 / -1;
-        justify-self: center;
-        padding: 0.5rem 6rem;
-      }
-    }
   }
 `;
 
-export { HomeHeroStyles, NewsletterFormStyles };
+export { HomeHeroStyles, HomeContactUsStyles };

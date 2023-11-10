@@ -169,7 +169,14 @@ collections:
         i18n: true
         collapsed: true
         fields:
-          - { label: Header, name: header, widget: string, i18n: true }
+          - label: Header
+            name: header
+            widget: markdown
+            buttons: [heading-two, link]
+            editor_components: []
+            modes: [rich_text]
+            minimal: true
+            i18n: true
           - { label: Description, name: description, widget: text, i18n: true }
           - label: Background Image
             name: backgroundImage

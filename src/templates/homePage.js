@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
 import LocalizedLink from "../components/LocalizedLink";
@@ -8,7 +9,7 @@ import Seo from "../components/Seo";
 import LogoGarden from "../components/LogoGarden";
 import Carousel from "../components/Carousel";
 
-import { HomeHeroStyles, NewsletterFormStyles } from "../styles/HomePageStyles";
+import { HomeHeroStyles, HomeContactUsStyles } from "../styles/HomePageStyles";
 
 import { BgImageWrapper } from "../styles/InnerStyles";
 
@@ -83,15 +84,10 @@ export default function HomePageTemplate({ pageContext, data }) {
 
       {/* Newsletter */}
       <section>
-        <NewsletterFormStyles
-          method="post"
-          netlify-honeypot="bot-field"
-          data-netlify="true"
-          name="contact"
-        >
-          <h2>{sectionThree.header}</h2>
+        <HomeContactUsStyles>
+          <ReactMarkdown>{sectionThree.header}</ReactMarkdown>
           <p>{sectionThree.description}</p>
-        </NewsletterFormStyles>
+        </HomeContactUsStyles>
         <GatsbyImage
           image={getImage(sectionThree.backgroundImage.image)}
           alt={sectionThree.backgroundImage.alt}
