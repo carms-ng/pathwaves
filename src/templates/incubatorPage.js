@@ -1,20 +1,16 @@
-import React, { useEffect, useRef } from 'react';
-import { graphql } from 'gatsby';
-import ReactMarkdown from 'react-markdown';
-import styled from 'styled-components';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import React, { useEffect, useRef } from "react";
+import { graphql } from "gatsby";
+import ReactMarkdown from "react-markdown";
+import styled from "styled-components";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import Layout from '../components/Layout';
-import Seo from '../components/Seo';
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
 
 export default function IncubatorPageTemplate({ pageContext, data }) {
   // Prepare Content
-  const {
-    title,
-    sectionOne,
-    sectionTwo,
-    sectionThree,
-  } = data.page.childMarkdownRemark.frontmatter;
+  const { title, sectionOne, sectionTwo, sectionThree } =
+    data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
@@ -26,18 +22,24 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
     const height = window.innerHeight;
 
     if (rect.top > height / 2) {
-      document.documentElement.style.setProperty('--top', '0');
+      document.documentElement.style.setProperty("--top", "0");
     } else if (rect.bottom < height / 2) {
-      document.documentElement.style.setProperty('--top', `${Math.round(rect.height)}px`);
+      document.documentElement.style.setProperty(
+        "--top",
+        `${Math.round(rect.height)}px`
+      );
     } else {
-      document.documentElement.style.setProperty('--top', `${Math.round((height / 2) - rect.top)}px`);
+      document.documentElement.style.setProperty(
+        "--top",
+        `${Math.round(height / 2 - rect.top)}px`
+      );
     }
   };
 
   useEffect(() => {
-    document.addEventListener('scroll', handleScroll);
+    document.addEventListener("scroll", handleScroll);
 
-    return () => document.removeEventListener('scroll', handleScroll);
+    return () => document.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -82,13 +84,12 @@ export default function IncubatorPageTemplate({ pageContext, data }) {
       <GatsbyImage
         image={getImage(sectionThree.backgroundImage.image)}
         alt={sectionThree.backgroundImage.alt}
-        style={{ marginTop: '-12vw', marginBottom: '-12vw' }}
+        style={{ marginTop: "-12vw", marginBottom: "-12vw" }}
       />
       <SectionSecondaryStyles>
         <h2>{sectionThree.header}</h2>
         <ReactMarkdown>{sectionThree.landAcknowledgement}</ReactMarkdown>
       </SectionSecondaryStyles>
-
     </Layout>
   );
 }
@@ -176,7 +177,7 @@ const SectionSecondaryStyles = styled.div`
     max-width: var(--maxWidthSm);
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 1.5rem;
       height: 1.5rem;
@@ -188,7 +189,7 @@ const SectionSecondaryStyles = styled.div`
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 3px;
       background: var(--black);
@@ -235,7 +236,8 @@ const SectionSecondaryStyles = styled.div`
       padding-left: 0rem;
       max-width: unset;
 
-      &::after, &::before {
+      &::after,
+      &::before {
         left: 50%;
       }
 
@@ -256,14 +258,21 @@ const SectionSecondaryStyles = styled.div`
 `;
 
 export const query = graphql`
-  query($regx: String) {
-    settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+  query ($regx: String) {
+    settings: file(
+      relativeDirectory: { eq: "siteSetting" }
+      base: { regex: $regx }
+    ) {
       childMarkdownRemark {
         frontmatter {
           logo {
             image {
               childImageSharp {
-                gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
+                gatsbyImageData(
+                  width: 180
+                  placeholder: BLURRED
+                  layout: CONSTRAINED
+                )
               }
             }
             alt
@@ -304,7 +313,7 @@ export const query = graphql`
         }
       }
     }
-    page: file(relativeDirectory: {eq: "incubator"}, base: {regex: $regx}) {
+    page: file(relativeDirectory: { eq: "incubator" }, base: { regex: $regx }) {
       childMarkdownRemark {
         frontmatter {
           title
@@ -318,7 +327,7 @@ export const query = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: NONE
-                    layout: FULL_WIDTH,
+                    layout: FULL_WIDTH
                     quality: 50
                   )
                 }
@@ -330,7 +339,7 @@ export const query = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: NONE
-                    layout: FULL_WIDTH,
+                    layout: FULL_WIDTH
                     quality: 50
                   )
                 }
@@ -355,7 +364,7 @@ export const query = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: NONE
-                    layout: FULL_WIDTH,
+                    layout: FULL_WIDTH
                     quality: 50
                   )
                 }

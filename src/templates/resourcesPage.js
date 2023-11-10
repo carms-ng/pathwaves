@@ -1,18 +1,21 @@
-import React from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
-import { graphql } from 'gatsby';
-import styled from 'styled-components';
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+import { graphql } from "gatsby";
+import styled from "styled-components";
 
-import { TailSpin } from 'react-loader-spinner';
-import Layout from '../components/Layout';
-import Seo from '../components/Seo';
-import NavAuth from '../components/NavAuth';
-import Resources from '../components/Resources';
+import { TailSpin } from "react-loader-spinner";
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
+import NavAuth from "../components/NavAuth";
+import Resources from "../components/Resources";
 
-import { AuthHeroStyles, LoadingStyles } from '../styles/InnerStyles';
+import { AuthHeroStyles, LoadingStyles } from "../styles/InnerStyles";
 
 // markup
-export default function ResourcesPageTemplate({ pageContext: { lang, slug }, data }) {
+export default function ResourcesPageTemplate({
+  pageContext: { lang, slug },
+  data,
+}) {
   const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
 
   if (isLoading) {
@@ -24,14 +27,11 @@ export default function ResourcesPageTemplate({ pageContext: { lang, slug }, dat
   }
 
   if (!isAuthenticated) {
-    loginWithRedirect({ ui_locales: (lang === 'en' ? 'en' : 'fr-CA') });
+    loginWithRedirect({ ui_locales: lang === "en" ? "en" : "fr-CA" });
   }
 
   // Prepare Content
-  const {
-    title,
-    description,
-  } = data.page.childMarkdownRemark.frontmatter;
+  const { title, description } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
@@ -56,9 +56,7 @@ export default function ResourcesPageTemplate({ pageContext: { lang, slug }, dat
 
               {/* Resources Control and Cards */}
               <Resources labels={nav.labelPhases} links={data.links} />
-
             </ResourcesStyles>
-
           </div>
         </AuthHeroStyles>
       </Layout>
@@ -73,18 +71,24 @@ const ResourcesStyles = styled.div`
     margin: 3rem auto;
     text-align: center;
   }
-
 `;
 
 export const query = graphql`
-  query($regx: String) {
-    settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+  query ($regx: String) {
+    settings: file(
+      relativeDirectory: { eq: "siteSetting" }
+      base: { regex: $regx }
+    ) {
       childMarkdownRemark {
         frontmatter {
           logo {
             image {
               childImageSharp {
-                gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
+                gatsbyImageData(
+                  width: 180
+                  placeholder: BLURRED
+                  layout: CONSTRAINED
+                )
               }
             }
             alt
@@ -125,7 +129,7 @@ export const query = graphql`
         }
       }
     }
-    page: file(relativeDirectory: {eq: "resources"}, base: {regex: $regx}) {
+    page: file(relativeDirectory: { eq: "resources" }, base: { regex: $regx }) {
       childMarkdownRemark {
         frontmatter {
           title
@@ -134,7 +138,7 @@ export const query = graphql`
       }
     }
     links: allFile(
-      filter: {relativeDirectory: {eq: "links"}, base: {regex: $regx}}
+      filter: { relativeDirectory: { eq: "links" }, base: { regex: $regx } }
     ) {
       nodes {
         childMarkdownRemark {

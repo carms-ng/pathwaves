@@ -1,19 +1,16 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import styled from 'styled-components';
+import React from "react";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import styled from "styled-components";
 
-import Layout from '../components/Layout';
-import Seo from '../components/Seo';
-import CardsMember from '../components/CardsMember';
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
+import CardsMember from "../components/CardsMember";
 
 export default function TeamPageTemplate({ pageContext, data }) {
   // Prepare Content
-  const {
-    title,
-    sectionOne,
-    sectionTwo,
-  } = data.page.childMarkdownRemark.frontmatter;
+  const { title, sectionOne, sectionTwo } =
+    data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
@@ -29,26 +26,29 @@ export default function TeamPageTemplate({ pageContext, data }) {
         <h1>{sectionOne.header}</h1>
       </TeamHeroStyles>
 
-      <CardsMember members={sectionOne.members} cardLinkLabel={sectionOne.cardLinkLabel} />
+      <CardsMember
+        members={sectionOne.members}
+        cardLinkLabel={sectionOne.cardLinkLabel}
+      />
 
       <TeamPageStyles>
         <section id="collaborators">
           <p className="font-lg">{sectionTwo.description}</p>
           <div className="cards">
-            {sectionTwo.collaborators.map(({
-              name, url, logo, description,
-            }) => (
-              <div key={name} className="card">
-                <a href={url} target="_blank" rel="noreferrer">
-                  <GatsbyImage
-                    image={getImage(logo.image)}
-                    alt={logo.alt}
-                    style={{ maxWidth: '300px' }}
-                  />
-                </a>
-                <p>{description}</p>
-              </div>
-            ))}
+            {sectionTwo.collaborators.map(
+              ({ name, url, logo, description }) => (
+                <div key={name} className="card">
+                  <a href={url} target="_blank" rel="noreferrer">
+                    <GatsbyImage
+                      image={getImage(logo.image)}
+                      alt={logo.alt}
+                      style={{ maxWidth: "300px" }}
+                    />
+                  </a>
+                  <p>{description}</p>
+                </div>
+              )
+            )}
           </div>
         </section>
       </TeamPageStyles>
@@ -126,14 +126,21 @@ const TeamPageStyles = styled.div`
 `;
 
 export const query = graphql`
-  query($regx: String) {
-    settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+  query ($regx: String) {
+    settings: file(
+      relativeDirectory: { eq: "siteSetting" }
+      base: { regex: $regx }
+    ) {
       childMarkdownRemark {
         frontmatter {
           logo {
             image {
               childImageSharp {
-                gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
+                gatsbyImageData(
+                  width: 180
+                  placeholder: BLURRED
+                  layout: CONSTRAINED
+                )
               }
             }
             alt
@@ -174,7 +181,7 @@ export const query = graphql`
         }
       }
     }
-    page: file(relativeDirectory: {eq: "team"}, base: {regex: $regx}) {
+    page: file(relativeDirectory: { eq: "team" }, base: { regex: $regx }) {
       childMarkdownRemark {
         frontmatter {
           title
@@ -189,10 +196,10 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      height: 80,
+                      height: 80
                       placeholder: NONE
-                      layout: CONSTRAINED,
-                      transformOptions: {fit: CONTAIN},
+                      layout: CONSTRAINED
+                      transformOptions: { fit: CONTAIN }
                       quality: 50
                     )
                   }
@@ -208,7 +215,7 @@ export const query = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: NONE
-                    layout: FULL_WIDTH,
+                    layout: FULL_WIDTH
                     quality: 50
                   )
                 }
@@ -226,11 +233,11 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 400,
-                      height: 240,
+                      width: 400
+                      height: 240
                       placeholder: NONE
-                      layout: CONSTRAINED,
-                      transformOptions: {fit: COVER},
+                      layout: CONSTRAINED
+                      transformOptions: { fit: COVER }
                       quality: 50
                     )
                   }
