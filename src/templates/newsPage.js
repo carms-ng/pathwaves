@@ -84,6 +84,7 @@ const CardsSectionStyles = styled(DefaultCardsSection)`
   button {
     border: unset;
     cursor: pointer;
+    background: unset;
     text-align: unset;
   }
 
@@ -178,11 +179,8 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 400
-                      height: 240
                       placeholder: NONE
-                      layout: CONSTRAINED
-                      transformOptions: { fit: COVER }
+                      layout: FULL_WIDTH
                       quality: 50
                     )
                   }
