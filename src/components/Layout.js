@@ -11,7 +11,7 @@ import Header from "./Header";
 function Layout({ children, noFooter, lang, slug, settings }) {
   const {
     logo,
-    nav: { navItems, menuAuth },
+    nav: { navItems, menuAuth, btnContact },
   } = settings;
 
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -30,6 +30,7 @@ function Layout({ children, noFooter, lang, slug, settings }) {
         logo={logo}
         navItems={navItems}
         menuAuth={menuAuth}
+        btnContact={btnContact}
         isMenuOpen={isMenuOpen}
         setMenuOpen={setMenuOpen}
       />

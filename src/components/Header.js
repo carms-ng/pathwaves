@@ -5,12 +5,14 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Icon } from "@iconify/react";
 
 import LocalizedLink from "./LocalizedLink";
-import LoginButton from "./LoginButton";
 import NavItem from "./NavItem";
 import Menu from "./Menu";
 import DarkOverlay from "./DarkOverlay";
 import LanguageSwitcher from "./LanguageSwitcher";
 import MenuAuth from "./MenuAuth";
+import LoginButton from "./LoginButton";
+
+const SHOW_AUTH_MENU = false;
 
 export default function Header({
   lang,
@@ -20,6 +22,7 @@ export default function Header({
   isMenuOpen,
   setMenuOpen,
   menuAuth,
+  btnContact,
 }) {
   const { isAuthenticated } = useAuth0();
 
@@ -34,21 +37,22 @@ export default function Header({
   // Dropdown handling
   return (
     <HeaderStyles>
-      {/* Left: Auth button */}
-      {isAuthenticated ? (
-        <MenuAuth
-          lang={lang}
-          slug={slug}
-          menuAuth={menuAuth}
-          btnClassName="btn btn-main btn-auth"
-        />
-      ) : (
-        <LoginButton
-          lang={lang}
-          label={menuAuth.labelLogin}
-          className="btn btn-main btn-auth"
-        />
-      )}
+      {/* Left: Contact Button */}
+      <a
+        type="button"
+        href={`mailto:${btnContact.mailTo}`}
+        className="btn btn-main btn-contact"
+      >
+        {btnContact.label}
+      </a>
+
+      {/* Auth button */}
+      {SHOW_AUTH_MENU &&
+        (isAuthenticated ? (
+          <MenuAuth lang={lang} slug={slug} menuAuth={menuAuth} />
+        ) : (
+          <LoginButton lang={lang} label={menuAuth.labelLogin} />
+        ))}
 
       {/* Center: Logo */}
       <LocalizedLink to="/" lang={lang} className="logo">
@@ -95,7 +99,9 @@ export default function Header({
           items={items}
           lang={lang}
           slug={slug}
+          showAuthMenu={SHOW_AUTH_MENU}
           menuAuth={menuAuth}
+          btnContact={btnContact}
         />
       </div>
       {isMenuOpen && (
@@ -119,8 +125,8 @@ const HeaderStyles = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  .btn-auth {
-    grid-area: auth;
+  .btn-contact {
+    grid-area: contact;
     display: none;
   }
   .logo {
@@ -139,6 +145,7 @@ const HeaderStyles = styled.header`
     > button {
       border: 0;
       background: transparent;
+      cursor: pointer;
     }
   }
 
@@ -146,7 +153,7 @@ const HeaderStyles = styled.header`
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr auto auto;
-    grid-template-areas: "logo nav-items auth";
+    grid-template-areas: "logo nav-items contact";
     align-items: start;
 
     .logo {
@@ -155,7 +162,7 @@ const HeaderStyles = styled.header`
     #menu {
       display: none;
     }
-    .btn-auth {
+    .btn-contact {
       display: flex;
     }
     .header__right {
@@ -174,11 +181,11 @@ const HeaderStyles = styled.header`
   @media (min-width: 1280px) {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-areas: "auth logo nav-items";
+    grid-template-areas: "contact logo nav-items";
     .logo {
       justify-self: center;
     }
-    .btn-auth {
+    .btn-contact {
       justify-self: flex-start;
     }
     .header__right {
