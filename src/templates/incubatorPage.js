@@ -309,6 +309,10 @@ export const query = graphql`
               labelPhaseTwo
               labelPhaseThree
             }
+            btnContact {
+              label
+              mailTo
+            }
           }
         }
       }
