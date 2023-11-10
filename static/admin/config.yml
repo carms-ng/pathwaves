@@ -868,6 +868,14 @@ collections:
                   required: false,
                 }
               - { label: Url, name: url, widget: string, required: true }
+              - label: Modal Body
+                name: modalBody
+                widget: markdown
+                buttons: [bold, italic, link]
+                editor_components: []
+                modes: [rich_text]
+                minimal: true
+                i18n: true
               - label: Image
                 name: img
                 widget: object
