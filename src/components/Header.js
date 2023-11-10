@@ -39,7 +39,6 @@ export default function Header({
     <HeaderStyles>
       {/* Left: Contact Button */}
       <a
-        type="button"
         href={`mailto:${btnContact.mailTo}`}
         className="btn btn-main btn-contact"
       >
