@@ -48,7 +48,7 @@ nav:
     labelMenu: Compte
   btnContact:
     mailTo: info@pathwaves.ca
-    linkText: Contactez-nous
+    label: Contactez-nous
 footer:
   copyright: Pathwaves
   footerLinks:
