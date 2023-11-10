@@ -88,7 +88,7 @@ sectionTwo:
     image: /assets/home2.png
     alt: lines fr
 sectionThree:
-  header: "Contactez-nous: [info@pathwaves.ca](info@pathwaves.ca)"
+  header: "## Contactez-nous: [info@pathwaves.ca](info@pathwaves.ca)"
   description: >+
     Pathwaves vous invite à nous faire part de vos commentaires et de vos
     suggestions, ainsi qu'à nous contacter pour des collaborations, des
