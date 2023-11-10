@@ -17,6 +17,8 @@ nav:
           linkAddress: /team
         - linkText: Past Participants
           linkAddress: /participants
+        - linkText: Past Programming
+          linkAddress: /past-programming
     - linkText: News+Events
       show: public
       linkAddress: /news
