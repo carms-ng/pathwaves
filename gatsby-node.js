@@ -1,8 +1,8 @@
-const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  if (['build-html', 'develop-html'].includes(stage)) {
+  if (["build-html", "develop-html"].includes(stage)) {
     actions.setWebpackConfig({
       module: {
         rules: [
@@ -22,21 +22,25 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     query {
-      allFile(filter: {
-        relativeDirectory: {in: [
-          "home",
-          "incubator",
-          "team",
-          "musicians",
-          "presenters",
-          "schedule",
-          "resources",
-          "archive",
-          "news",
-          "participants",
-          "fourOhFour",
-        ]}
-      }) {
+      allFile(
+        filter: {
+          relativeDirectory: {
+            in: [
+              "home"
+              "incubator"
+              "team"
+              "musicians"
+              "presenters"
+              "schedule"
+              "resources"
+              "archive"
+              "news"
+              "participants"
+              "fourOhFour"
+            ]
+          }
+        }
+      ) {
         distinct(field: relativeDirectory)
         nodes {
           childMarkdownRemark {
@@ -51,12 +55,12 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
 
   result.data.allFile.nodes.forEach((node) => {
-    const slug = node.base.split('.')[0];
-    const lang = node.base.split('.')[1];
+    const slug = node.base.split(".")[0];
+    const lang = node.base.split(".")[1];
     const templateFile = node.childMarkdownRemark.frontmatter.templateKey;
 
     createPage({
-      path: slug === 'home' ? `/${lang}` : `/${lang}/${slug}`,
+      path: slug === "home" ? `/${lang}` : `/${lang}/${slug}`,
       component: path.resolve(`./src/templates/${templateFile}`),
       context: { slug, lang, regx: `/.${lang}.md$/` },
     });
@@ -66,10 +70,10 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === 'MarkdownRemark') {
+  if (node.internal.type === "MarkdownRemark") {
     const value = createFilePath({ node, getNode });
     createNodeField({
-      name: 'slug',
+      name: "slug",
       node,
       value,
     });

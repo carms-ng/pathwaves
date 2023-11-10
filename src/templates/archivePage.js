@@ -1,22 +1,19 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import ReactMarkdown from 'react-markdown';
-import styled from 'styled-components';
-import { Icon } from '@iconify/react';
+import React from "react";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import ReactMarkdown from "react-markdown";
+import styled from "styled-components";
+import { Icon } from "@iconify/react";
 
-import Layout from '../components/Layout';
-import Seo from '../components/Seo';
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
 
-import { CardsThreesStyles, BgImageRightWrapper } from '../styles/InnerStyles';
+import { CardsThreesStyles, BgImageRightWrapper } from "../styles/InnerStyles";
 
-export default function HomePageTemplate({ pageContext, data }) {
+export default function ArchivePageTemplate({ pageContext, data }) {
   // Prepare Content
-  const {
-    title,
-    sectionOne,
-    sectionTwo,
-  } = data.page.childMarkdownRemark.frontmatter;
+  const { title, sectionOne, sectionTwo } =
+    data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
@@ -28,7 +25,7 @@ export default function HomePageTemplate({ pageContext, data }) {
         <GatsbyImage
           image={getImage(sectionOne.backgroundImage.image)}
           alt={sectionOne.backgroundImage.alt}
-          imgStyle={{ objectFit: 'contain', width: 'unset', left: 'unset' }}
+          imgStyle={{ objectFit: "contain", width: "unset", left: "unset" }}
           className="bg-image__right"
         />
 
@@ -37,7 +34,11 @@ export default function HomePageTemplate({ pageContext, data }) {
             <h1>{sectionOne.header}</h1>
             <ReactMarkdown>{sectionOne.description}</ReactMarkdown>
           </div>
-          <a href={sectionOne.imgLinkPrimary.url} target="_blank" rel="noreferrer">
+          <a
+            href={sectionOne.imgLinkPrimary.url}
+            target="_blank"
+            rel="noreferrer"
+          >
             <GatsbyImage
               image={getImage(sectionOne.imgLinkPrimary.image)}
               alt={sectionOne.imgLinkPrimary.alt}
@@ -47,7 +48,11 @@ export default function HomePageTemplate({ pageContext, data }) {
               <Icon icon="material-symbols:download" width={30} height={30} />
             </div>
           </a>
-          <a href={sectionOne.imgLinkSecondary.url} target="_blank" rel="noreferrer">
+          <a
+            href={sectionOne.imgLinkSecondary.url}
+            target="_blank"
+            rel="noreferrer"
+          >
             <GatsbyImage
               image={getImage(sectionOne.imgLinkSecondary.image)}
               alt={sectionOne.imgLinkPrimary.alt}
@@ -56,7 +61,6 @@ export default function HomePageTemplate({ pageContext, data }) {
               <h3>{sectionOne.imgLinkSecondary.title}</h3>
               <Icon icon="material-symbols:download" width={30} height={30} />
             </div>
-
           </a>
         </HeroStyles>
       </BgImageRightWrapper>
@@ -66,11 +70,16 @@ export default function HomePageTemplate({ pageContext, data }) {
         {/* cards */}
         <CardsThreesStyles>
           {sectionTwo?.cards?.map((card) => (
-            <a key={`resources-${card.title}`} href={card.url} target="_blank" rel="noreferrer">
+            <a
+              key={`resources-${card.title}`}
+              href={card.url}
+              target="_blank"
+              rel="noreferrer"
+            >
               <GatsbyImage
                 image={getImage(card.img.image)}
                 alt={card.img.alt}
-                style={{ borderRadius: 'var(--br)' }}
+                style={{ borderRadius: "var(--br)" }}
               />
               <h3>{card.title}</h3>
               <pre>{card.subtitle}</pre>
@@ -103,15 +112,18 @@ const HeroStyles = styled.div`
     img {
       border-radius: var(--br);
     }
-    h3, svg {
+    h3,
+    svg {
       color: var(--black);
-    }      margin-top: 1rem;
+    }
+    margin-top: 1rem;
   }
 
-  h1, p {
+  h1,
+  p {
     margin-bottom: 2rem;
   }
-  @media(min-width: 1024px) {
+  @media (min-width: 1024px) {
     max-width: var(--maxWidth);
     padding: var(--padLg);
     gap: 4rem 8rem;
@@ -125,10 +137,10 @@ const HeroStyles = styled.div`
       grid-row: 1 / -1;
     }
   }
-  @media(min-width: 1280px) {
+  @media (min-width: 1280px) {
     max-width: var(--maxWidthLg);
   }
-  `;
+`;
 
 const SectionSecondaryStyles = styled.section`
   padding: var(--padMd);
@@ -141,26 +153,33 @@ const SectionSecondaryStyles = styled.section`
     margin-bottom: 3rem;
   }
 
-  @media(min-width: 1024px) {
+  @media (min-width: 1024px) {
     max-width: var(--maxWidth);
     h2 {
       margin-bottom: 8rem;
     }
   }
-  @media(min-width: 1280px) {
+  @media (min-width: 1280px) {
     max-width: var(--maxWidthLg);
   }
 `;
 
 export const query = graphql`
-  query($regx: String) {
-    settings: file(relativeDirectory: {eq: "siteSetting"}, base: {regex: $regx}) {
+  query ($regx: String) {
+    settings: file(
+      relativeDirectory: { eq: "siteSetting" }
+      base: { regex: $regx }
+    ) {
       childMarkdownRemark {
         frontmatter {
           logo {
             image {
               childImageSharp {
-                gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
+                gatsbyImageData(
+                  width: 180
+                  placeholder: BLURRED
+                  layout: CONSTRAINED
+                )
               }
             }
             alt
@@ -201,7 +220,7 @@ export const query = graphql`
         }
       }
     }
-    page: file(relativeDirectory: {eq: "archive"}, base: {regex: $regx}) {
+    page: file(relativeDirectory: { eq: "archive" }, base: { regex: $regx }) {
       childMarkdownRemark {
         frontmatter {
           title
@@ -212,9 +231,9 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData(
-                    width: 500,
+                    width: 500
                     placeholder: NONE
-                    layout: CONSTRAINED,
+                    layout: CONSTRAINED
                     quality: 50
                   )
                 }
@@ -228,11 +247,11 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData(
-                    width: 360,
-                    height: 360,
+                    width: 360
+                    height: 360
                     placeholder: NONE
-                    layout: CONSTRAINED,
-                    transformOptions: {fit: COVER},
+                    layout: CONSTRAINED
+                    transformOptions: { fit: COVER }
                     quality: 50
                   )
                 }
@@ -245,11 +264,11 @@ export const query = graphql`
               image {
                 childImageSharp {
                   gatsbyImageData(
-                    width: 360,
-                    height: 360,
+                    width: 360
+                    height: 360
                     placeholder: NONE
-                    layout: CONSTRAINED,
-                    transformOptions: {fit: COVER},
+                    layout: CONSTRAINED
+                    transformOptions: { fit: COVER }
                     quality: 50
                   )
                 }
@@ -268,11 +287,11 @@ export const query = graphql`
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 320,
-                      height: 240,
+                      width: 320
+                      height: 240
                       placeholder: NONE
-                      layout: CONSTRAINED,
-                      transformOptions: {fit: COVER},
+                      layout: CONSTRAINED
+                      transformOptions: { fit: COVER }
                       quality: 50
                     )
                   }
