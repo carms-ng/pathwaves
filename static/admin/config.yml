@@ -819,6 +819,89 @@ collections:
                       i18n: true,
                     }
 
+  - name: pastProgramming
+    label: Past Programming Page
+    folder: content/pastProgramming
+    create: true
+    delete: false
+    i18n: true
+    fields:
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: "pastProgrammingPage.js",
+          i18n: duplicate,
+        }
+      - { label: Page Title, name: title, widget: string, i18n: true }
+      - label: Hero Section
+        name: sectionOne
+        widget: object
+        i18n: true
+        collapsed: true
+        fields:
+          - { label: Header, name: header, widget: string, i18n: true }
+          - label: Description
+            name: description
+            widget: markdown
+            buttons:
+              [
+                bold,
+                italic,
+                link,
+                bulleted-list,
+                numbered-list,
+                heading-three,
+                heading-four,
+              ]
+            editor_components: []
+            modes: [rich_text]
+            minimal: true
+            i18n: true
+          - label: First Hero Image
+            name: imgLinkPrimary
+            widget: object
+            i18n: true
+            fields:
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: true,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
+              - { label: Title, name: title, widget: string, i18n: true }
+              - { label: Link, name: url, widget: string, i18n: true }
+          - label: Second Hero Image
+            name: imgLinkSecondary
+            widget: object
+            i18n: true
+            fields:
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: true,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
+              - { label: Title, name: title, widget: string, i18n: true }
+              - { label: Link, name: url, widget: string, i18n: true }
+          - label: Background Image
+            name: backgroundImage
+            widget: object
+            i18n: true
+            fields:
+              - {
+                  label: Image,
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                  i18n: duplicate,
+                }
+              - { label: Image Alt Text, name: alt, widget: string, i18n: true }
+
   - name: news
     label: News+Event Page
     folder: content/news
