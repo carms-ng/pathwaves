@@ -40,6 +40,7 @@ const HomeHeroStyles = styled.section`
       text-align: center;
       justify-self: end;
       font-size: 1.7rem;
+      max-width: unset;
     }
     .hero-buttons {
       margin: 1rem 0;
@@ -48,6 +49,9 @@ const HomeHeroStyles = styled.section`
       justify-content: center;
       gap: 1rem;
       width: 100%;
+      > .btn {
+        white-space: break-spaces;
+      }
     }
   }
 
@@ -64,11 +68,9 @@ const HomeHeroStyles = styled.section`
         font-size: 2rem;
       }
       .hero-buttons {
-        flex-direction: row;
         justify-items: center;
         > .btn {
           width: 100%;
-          max-width: 375px;
         }
       }
     }
