@@ -104,8 +104,8 @@ const ModalStyles = styled.div`
 
 const ModalImageWrapper = styled.div`
   width: 100%;
-  height: 25vh;
-  overflow: auto;
+  height: 40vh;
+  overflow: hidden;
 `;
 
 const ModalContentWrapper = styled.div`
