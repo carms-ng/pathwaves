@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const AuthHeroStyles = styled.section`
   min-height: 100vh;
@@ -13,7 +13,14 @@ const AuthHeroStyles = styled.section`
     grid-template-rows: auto 1fr;
     padding: 2rem;
     background-color: var(--offWhite);
-    background-image: radial-gradient(127.15% 127.15% at 50% 50%, rgba(245, 206, 122, 0.75) 0%, rgba(204, 162, 195, 0.5) 8.33%, rgba(193, 211, 236, 0.554434) 22.92%, rgba(193, 211, 236, 0.5) 33.27%, rgba(193, 211, 236, 0.480769) 51.18%);
+    background-image: radial-gradient(
+      127.15% 127.15% at 50% 50%,
+      rgba(245, 206, 122, 0.75) 0%,
+      rgba(204, 162, 195, 0.5) 8.33%,
+      rgba(193, 211, 236, 0.554434) 22.92%,
+      rgba(193, 211, 236, 0.5) 33.27%,
+      rgba(193, 211, 236, 0.480769) 51.18%
+    );
     border-radius: var(--br);
     position: relative;
 
@@ -25,7 +32,7 @@ const AuthHeroStyles = styled.section`
     &::after {
       z-index: 0;
       position: absolute;
-      content: '';
+      content: "";
       top: 0;
       bottom: 0;
       left: 0;
@@ -35,7 +42,7 @@ const AuthHeroStyles = styled.section`
     }
   }
 
-  @media(min-width: 1024px) {
+  @media (min-width: 1024px) {
     max-width: var(--maxWidthLg);
     padding: var(--padLg);
   }
@@ -73,6 +80,7 @@ const BgImageRightWrapper = styled.section`
 const CardsThreesStyles = styled.div`
   display: grid;
   justify-items: center;
+  align-items: start;
   grid-gap: 3rem;
   grid-auto-rows: 1fr;
   a {
@@ -104,10 +112,10 @@ const CardsSectionStyles = styled.section`
     }
   }
 
-  @media(min-width: 1024px) {
+  @media (min-width: 1024px) {
     max-width: var(--maxWidth);
   }
-  @media(min-width: 1280px) {
+  @media (min-width: 1280px) {
     padding: var(--padLg);
     max-width: var(--maxWidthLg);
   }
