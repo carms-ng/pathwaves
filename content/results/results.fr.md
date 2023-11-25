@@ -1,5 +1,5 @@
 ---
-templateKey: archivePage.js
+templateKey: resultsPage.js
 title: Résultats et Impact
 sectionOne:
   header: Résultats et Impact
