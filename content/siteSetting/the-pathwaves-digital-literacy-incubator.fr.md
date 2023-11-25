@@ -16,8 +16,6 @@ nav:
           linkAddress: /team
         - linkText: Anciens participants
           linkAddress: /participants
-        - linkText: Programmation passée
-          linkAddress: /past-programming
       show: both
     - linkText: Actualités+Événements
       show: public
