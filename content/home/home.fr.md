@@ -11,7 +11,7 @@ sectionOne:
     alt: lines
   buttons:
     - linkText: Résultats de l'incubateur
-      url: /archive
+      url: /results
       isVisible: true
     - linkText: Participer à l'enquête Delphi!
       url: https://docs.google.com/forms/d/e/1FAIpQLSeIPZu7iH6EfVTy3l_nw9RMuXnKjlcVii-FfalYsRLILlGl0w/viewform
@@ -21,7 +21,8 @@ sectionTwo:
     - name: Ida Toninato
       nameAlt: Ambassadrice Pathwaves
       type: Participante
-      description: « ... J’ai réalisé que ce n’est pas un problème que je ne sois pas
+      description:
+        « ... J’ai réalisé que ce n’est pas un problème que je ne sois pas
         une experte en technologie, mais qu’en tant qu’artiste je pouvais être
         une meilleure créatrice... ce que je veux raconter, à qui et à travers
         quelles plateformes. »
@@ -46,7 +47,8 @@ sectionTwo:
       nameAlt: Ambassadeur Pathwaves
     - name: KWiat
       type: Participante
-      description: « Sur Twitch, j’ai exploré et créé une sorte d’expérience visuelle
+      description:
+        « Sur Twitch, j’ai exploré et créé une sorte d’expérience visuelle
         interactive avec la musique, permettant aux spectateurs de s’engager, et
         m’offrant une nouvelle façon de construire et de me fondre dans ma
         marque. »
@@ -60,7 +62,8 @@ sectionTwo:
     - name: Remy Rodden
       type: Participant
       nameAlt: Ambassadeur Pathwaves
-      description: « Je suis entré dans l’incubateur avec un solide degré de confort
+      description:
+        « Je suis entré dans l’incubateur avec un solide degré de confort
         autour de la technologie, mais Pathwaves m’a certainement ouvert les
         yeux sur une portée beaucoup plus large du sujet technologique que je ne
         l’avais auparavant.»

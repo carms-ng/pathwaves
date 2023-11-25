@@ -702,9 +702,9 @@ collections:
       - { label: Page Title, name: title, widget: string, i18n: true }
       - { label: Description, name: description, widget: text, i18n: true }
 
-  - name: archive
-    label: Archive Page
-    folder: content/archive
+  - name: results
+    label: Results Page
+    folder: content/results
     create: false
     delete: false
     i18n: true
@@ -713,7 +713,7 @@ collections:
           label: Template Key,
           name: templateKey,
           widget: hidden,
-          default: "archivePage.js",
+          default: "resultsPage.js",
           i18n: duplicate,
         }
       - { label: Page Title, name: title, widget: string, i18n: true }

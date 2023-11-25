@@ -10,7 +10,7 @@ import Seo from "../components/Seo";
 
 import { CardsThreesStyles, BgImageRightWrapper } from "../styles/InnerStyles";
 
-export default function ArchivePageTemplate({ pageContext, data }) {
+export default function ResultsPageTemplate({ pageContext, data }) {
   // Prepare Content
   const { title, sectionOne, sectionTwo } =
     data.page.childMarkdownRemark.frontmatter;
@@ -224,7 +224,7 @@ export const query = graphql`
         }
       }
     }
-    page: file(relativeDirectory: { eq: "archive" }, base: { regex: $regx }) {
+    page: file(relativeDirectory: { eq: "results" }, base: { regex: $regx }) {
       childMarkdownRemark {
         frontmatter {
           title

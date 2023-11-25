@@ -1,5 +1,5 @@
 ---
-templateKey: archivePage.js
+templateKey: resultsPage.js
 title: Results + Outcomes
 sectionOne:
   header: Results + Outcomes

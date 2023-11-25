@@ -24,7 +24,7 @@ nav:
       linkAddress: /news
     - linkText: results+outcomes
       show: public
-      linkAddress: /archive
+      linkAddress: /results
   navItemsSecondary:
     - linkText: Schedule
       linkAddress: /schedule
