@@ -8,67 +8,101 @@ import { Icon } from "@iconify/react";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 
-import { BgImageRightWrapper } from "../styles/InnerStyles";
-
 export default function ResultsPageTemplate({ pageContext, data }) {
   // Prepare Content
-  const { title, sectionOne } = data.page.childMarkdownRemark.frontmatter;
+  const { title, sectionOne, sectionsProject } =
+    data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
   return (
     <Layout lang={pageContext.lang} slug={pageContext.slug} settings={settings}>
       <Seo title={`${title}`} lang={pageContext.lang} />
-      {/* hero */}
-      <BgImageRightWrapper>
-        <GatsbyImage
-          image={getImage(sectionOne.backgroundImage.image)}
-          alt={sectionOne.backgroundImage.alt}
-          imgStyle={{ objectFit: "contain", width: "unset", left: "unset" }}
-          className="bg-image__right"
-        />
 
-        <HeroStyles>
-          <div>
-            <h1>{sectionOne.header}</h1>
-            <ReactMarkdown>{sectionOne.description}</ReactMarkdown>
-          </div>
-          <a
-            href={sectionOne.imgLinkPrimary.url}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GatsbyImage
-              image={getImage(sectionOne.imgLinkPrimary.image)}
-              alt={sectionOne.imgLinkPrimary.alt}
-            />
-            <div>
-              <h3>{sectionOne.imgLinkPrimary.title}</h3>
-              <Icon icon="material-symbols:download" width={30} height={30} />
-            </div>
-          </a>
-          <a
-            href={sectionOne.imgLinkSecondary.url}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GatsbyImage
-              image={getImage(sectionOne.imgLinkSecondary.image)}
-              alt={sectionOne.imgLinkPrimary.alt}
-            />
-            <div>
-              <h3>{sectionOne.imgLinkSecondary.title}</h3>
-              <Icon icon="material-symbols:download" width={30} height={30} />
-            </div>
-          </a>
-        </HeroStyles>
-      </BgImageRightWrapper>
+      <HeaderStyles>{sectionOne.header}</HeaderStyles>
+
+      {sectionsProject.map((section) => {
+        if (section.isVisible) {
+          return (
+            <>
+              <ProjectSectionStyles>
+                <div>
+                  <h2>{section.title}</h2>
+                  <ReactMarkdown>{section.description}</ReactMarkdown>
+                </div>
+                <a
+                  href={section.imgLinkPrimary.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <GatsbyImage
+                    image={getImage(section.imgLinkPrimary.image)}
+                    alt={section.imgLinkPrimary.alt}
+                  />
+                  <div>
+                    <h3>{section.imgLinkPrimary.title}</h3>
+                    <Icon
+                      icon="material-symbols:download"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
+                </a>
+                <a
+                  href={section.imgLinkSecondary.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <GatsbyImage
+                    image={getImage(section.imgLinkSecondary.image)}
+                    alt={section.imgLinkPrimary.alt}
+                  />
+                  <div>
+                    <h3>{section.imgLinkSecondary.title}</h3>
+                    <Icon
+                      icon="material-symbols:download"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
+                </a>
+              </ProjectSectionStyles>
+
+              <GatsbyImage
+                image={getImage(section.backgroundImage.image)}
+                alt={section.backgroundImage.alt}
+              />
+            </>
+          );
+        }
+      })}
+
+      {/*  */}
     </Layout>
   );
 }
 
-const HeroStyles = styled.div`
+const HeaderStyles = styled.h1`
   padding: var(--padMd);
+  padding-bottom: 2rem;
+  max-width: var(--maxWidthMd);
+  margin: 0 auto;
+
+  @media (min-width: 1024px) {
+    max-width: var(--maxWidth);
+    padding: var(--padLg);
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: var(--maxWidthLg);
+  }
+`;
+
+const ProjectSectionStyles = styled.section`
+  padding: var(--padMd);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   max-width: var(--maxWidthMd);
   margin: 0 auto;
   display: grid;
@@ -101,6 +135,8 @@ const HeroStyles = styled.div`
   @media (min-width: 1024px) {
     max-width: var(--maxWidth);
     padding: var(--padLg);
+    padding-top: 0;
+    padding-bottom: 0;
     gap: 4rem 8rem;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 1fr;
@@ -183,14 +219,17 @@ export const query = graphql`
           title
           sectionOne {
             header
+          }
+          sectionsProject {
+            isVisible
+            title
             description
             backgroundImage {
               image {
                 childImageSharp {
                   gatsbyImageData(
-                    width: 500
                     placeholder: NONE
-                    layout: CONSTRAINED
+                    layout: FULL_WIDTH
                     quality: 50
                   )
                 }

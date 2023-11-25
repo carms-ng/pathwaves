@@ -724,6 +724,19 @@ collections:
         collapsed: true
         fields:
           - { label: Header, name: header, widget: string, i18n: true }
+      - label: Project Sections
+        name: sectionsProject
+        widget: list
+        i18n: true
+        summary: "{{title}}"
+        fields:
+          - {
+              label: Is visible?,
+              name: isVisible,
+              widget: boolean,
+              required: false,
+            }
+          - { label: Title, name: title, widget: string, i18n: true }
           - label: Description
             name: description
             widget: markdown
@@ -741,7 +754,7 @@ collections:
             modes: [rich_text]
             minimal: true
             i18n: true
-          - label: First Hero Image
+          - label: First Image
             name: imgLinkPrimary
             widget: object
             i18n: true
@@ -756,7 +769,7 @@ collections:
               - { label: Image Alt Text, name: alt, widget: string, i18n: true }
               - { label: Title, name: title, widget: string, i18n: true }
               - { label: Link, name: url, widget: string, i18n: true }
-          - label: Second Hero Image
+          - label: Second Image
             name: imgLinkSecondary
             widget: object
             i18n: true
