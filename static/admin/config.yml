@@ -785,47 +785,6 @@ collections:
                 }
               - { label: Image Alt Text, name: alt, widget: string, i18n: true }
 
-      - label: Programming Section
-        name: sectionTwo
-        widget: object
-        i18n: true
-        collapsed: true
-        fields:
-          - { label: Header, name: header, widget: string, i18n: true }
-          - label: Resources Cards
-            name: cards
-            widget: list
-            i18n: true
-            summary: "{{title}} - {{description}}"
-            fields:
-              - { label: Title, name: title, widget: string, i18n: true }
-              - { label: Subtitle, name: subtitle, widget: string, i18n: true }
-              - {
-                  label: Description,
-                  name: description,
-                  widget: text,
-                  i18n: true,
-                }
-              - { label: Link, name: url, widget: string, i18n: true }
-              - label: Image
-                name: img
-                widget: object
-                i18n: true
-                fields:
-                  - {
-                      label: Image,
-                      name: image,
-                      widget: image,
-                      choose_url: false,
-                      i18n: duplicate,
-                    }
-                  - {
-                      label: Image Alt Text,
-                      name: alt,
-                      widget: string,
-                      i18n: true,
-                    }
-
   - name: pastProgramming
     label: Past Programming Page
     folder: content/pastProgramming

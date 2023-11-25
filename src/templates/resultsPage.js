@@ -8,12 +8,11 @@ import { Icon } from "@iconify/react";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 
-import { CardsThreesStyles, BgImageRightWrapper } from "../styles/InnerStyles";
+import { BgImageRightWrapper } from "../styles/InnerStyles";
 
 export default function ResultsPageTemplate({ pageContext, data }) {
   // Prepare Content
-  const { title, sectionOne, sectionTwo } =
-    data.page.childMarkdownRemark.frontmatter;
+  const { title, sectionOne } = data.page.childMarkdownRemark.frontmatter;
 
   const settings = data.settings.childMarkdownRemark.frontmatter;
 
@@ -64,30 +63,6 @@ export default function ResultsPageTemplate({ pageContext, data }) {
           </a>
         </HeroStyles>
       </BgImageRightWrapper>
-
-      <SectionSecondaryStyles>
-        <h2>{sectionTwo.header}</h2>
-        {/* cards */}
-        <CardsThreesStyles>
-          {sectionTwo?.cards?.map((card) => (
-            <a
-              key={`resources-${card.title}`}
-              href={card.url}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GatsbyImage
-                image={getImage(card.img.image)}
-                alt={card.img.alt}
-                style={{ borderRadius: "var(--br)" }}
-              />
-              <h3>{card.title}</h3>
-              <pre>{card.subtitle}</pre>
-              <p>{card.description}</p>
-            </a>
-          ))}
-        </CardsThreesStyles>
-      </SectionSecondaryStyles>
     </Layout>
   );
 }
@@ -135,28 +110,6 @@ const HeroStyles = styled.div`
     }
     > div:first-child {
       grid-row: 1 / -1;
-    }
-  }
-  @media (min-width: 1280px) {
-    max-width: var(--maxWidthLg);
-  }
-`;
-
-const SectionSecondaryStyles = styled.section`
-  padding: var(--padMd);
-  max-width: var(--maxWidthMd);
-  margin: 0 auto;
-
-  h2 {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-  }
-
-  @media (min-width: 1024px) {
-    max-width: var(--maxWidth);
-    h2 {
-      margin-bottom: 8rem;
     }
   }
   @media (min-width: 1280px) {
@@ -275,30 +228,6 @@ export const query = graphql`
                     transformOptions: { fit: COVER }
                     quality: 50
                   )
-                }
-              }
-            }
-          }
-          sectionTwo {
-            header
-            cards {
-              title
-              subtitle
-              description
-              url
-              img {
-                alt
-                image {
-                  childImageSharp {
-                    gatsbyImageData(
-                      width: 320
-                      height: 240
-                      placeholder: NONE
-                      layout: CONSTRAINED
-                      transformOptions: { fit: COVER }
-                      quality: 50
-                    )
-                  }
                 }
               }
             }
