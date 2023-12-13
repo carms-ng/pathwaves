@@ -10,32 +10,26 @@ sectionOne:
     - title: "Press Release: Pathwaves Launches Next Phase at MUTEK "
       url: https://drive.google.com/file/d/1NH5-3UwCG4ppzc27ZxrF6tmf4hj2hQvY/view
       img:
-        image: /assets/newsletter_en-2x.png
+        image: /assets/screen-shot-2023-12-13-at-12.38.43-pm.png
         alt: Placeholder
       subtitle: August 22, 2023
       modalBody: >-
-        B﻿old: **this**
+        For immediate release. Montreal, August 22, 2023 
 
 
-        I﻿talic: *this*
+        What will the world look like for creative communities in Canada by  2035? How might digital tools and other new technologies continue to  influence our creativity, art, careers, and lives? 
 
 
-        l﻿ink: [link](https://www.google.com/)
+        The Pathwaves Digital Literacy Incubator was originally designed as an  incubator for musicians, aimed at empowering them to make lifelong  careers in music more possible and equitable. A [horizon scan of trends and drivers and an extensive report](https://www.pathwaves.ca/en/archive) on the initiative were made publicly  available this summer.  
 
 
-        B﻿old and Italic: ***this***
+        This next phase of Pathwaves continues its focus on encouraging a  learning mindset, continuing capacity-building, and seeding  futures-thinking. It begins with an open invitation for participation in a [Delphi Survey](https://docs.google.com/forms/d/e/1FAIpQLSdUvQ4FMXKtTxGoJ9QdyZUGnSxFrnd6kOjtGMup6WIUGCy6xw/viewform) that will launch at [MUTEK](https://forum.mutek.org/)’s Music Industry Forum Day on  August 25, 2023. A broad range of creative communities including  musicians, artists, creatives and technologists are being asked to  collectively imagine and speculate on ways that digital transformation  will continue to drive change.  
 
 
-        B﻿old and Italic and link: ***[this](https://www.google.com/)***
+        The Delphi Survey is a critical research and worldbuilding tool that will  capture all participants’ contributions. It will contribute to the collective  Pathwaves Oracle—a name that references the sacred location of the  prophetic Oracle, where consultations on important decisions related to  the future were sought. The Pathwaves Oracle will be made publicly  available and will evolve with ongoing contributions.
 
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        ![](https://lh7-us.googleusercontent.com/2C9szi_xbn7UkGd-VDqour95N3aqfXRsRPSw3HZupDNVKVYmJw1eoHHqlUvmRNl6DmRvk5e0MesUZkYVqceqDo0QBTPYUUO_9OKJ016-susJ3RRAUMWnwyjWE6VYTi4DAJ2RYknYGT8PtudoO2nSzHxHkdNXn6CnQ87OdBUfSRZ-EGIR9bQvebmSLp3bUA)
       modalImg:
         image: /assets/about-incubator-1_top.png
         alt: placeholder
